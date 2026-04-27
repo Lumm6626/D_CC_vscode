@@ -1,0 +1,7 @@
+{
+    "imap_server": "imap.163.com",
+    "smtp_server": "smtp.163.com",
+    "email": "lou_yao@163.com",
+    "password": "ULiyfiNaXfZ83DV8",
+    "output_folder": "D:/D_CC_vscode/secretary-team/daily-report/output"
+}

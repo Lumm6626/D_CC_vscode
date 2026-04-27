@@ -1,0 +1,438 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>自媒体内容分析 Dashboard</title>
+    <script src="https://cdn.jsdelivr.net/npm/echarts@5.4.3/dist/echarts.min.js"></script>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+            background: #0f172a;
+            color: #e2e8f0;
+            min-height: 100vh;
+        }
+        .header {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            padding: 20px 40px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            box-shadow: 0 4px 20px rgba(0,0,0,0.3);
+        }
+        .header h1 {
+            font-size: 24px;
+            font-weight: 600;
+        }
+        .header .subtitle {
+            font-size: 14px;
+            opacity: 0.9;
+            margin-top: 4px;
+        }
+        .refresh-btn {
+            background: rgba(255,255,255,0.2);
+            border: 1px solid rgba(255,255,255,0.3);
+            color: white;
+            padding: 10px 20px;
+            border-radius: 8px;
+            cursor: pointer;
+            font-size: 14px;
+            transition: all 0.3s;
+        }
+        .refresh-btn:hover {
+            background: rgba(255,255,255,0.3);
+        }
+        .container {
+            padding: 20px 40px;
+        }
+        .stats-grid {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 20px;
+            margin-bottom: 20px;
+        }
+        .stat-card {
+            background: #1e293b;
+            border-radius: 16px;
+            padding: 24px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.2);
+        }
+        .stat-card.platform {
+            border-left: 4px solid;
+        }
+        .stat-card.douyin {
+            border-color: #fe2c55;
+        }
+        .stat-card.xiaohongshu {
+            border-color: #ff2442;
+        }
+        .stat-card .label {
+            font-size: 14px;
+            color: #94a3b8;
+            margin-bottom: 8px;
+        }
+        .stat-card .value {
+            font-size: 32px;
+            font-weight: 700;
+        }
+        .stat-card .sub {
+            font-size: 12px;
+            color: #64748b;
+            margin-top: 8px;
+        }
+        .platform-section {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 20px;
+            margin-bottom: 20px;
+        }
+        .chart-container {
+            background: #1e293b;
+            border-radius: 16px;
+            padding: 20px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.2);
+        }
+        .chart-title {
+            font-size: 18px;
+            font-weight: 600;
+            margin-bottom: 20px;
+            padding-bottom: 10px;
+            border-bottom: 1px solid #334155;
+        }
+        .chart {
+            height: 300px;
+        }
+        .top-list {
+            max-height: 300px;
+            overflow-y: auto;
+        }
+        .top-item {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 12px 0;
+            border-bottom: 1px solid #334155;
+        }
+        .top-item:last-child {
+            border-bottom: none;
+        }
+        .top-item .rank {
+            width: 28px;
+            height: 28px;
+            background: #475569;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: 600;
+            font-size: 14px;
+            margin-right: 12px;
+        }
+        .top-item .rank.top1 { background: #fbbf24; color: #000; }
+        .top-item .rank.top2 { background: #94a3b8; color: #000; }
+        .top-item .rank.top3 { background: #cd7f32; color: #000; }
+        .top-item .info {
+            flex: 1;
+        }
+        .top-item .title {
+            font-size: 14px;
+            margin-bottom: 4px;
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            max-width: 300px;
+        }
+        .top-item .meta {
+            font-size: 12px;
+            color: #64748b;
+        }
+        .top-item .stats {
+            text-align: right;
+        }
+        .top-item .play-count {
+            font-size: 16px;
+            font-weight: 600;
+            color: #60a5fa;
+        }
+        .top-item .互动 {
+            font-size: 12px;
+            color: #94a3b8;
+        }
+        .loading {
+            text-align: center;
+            padding: 40px;
+            color: #64748b;
+        }
+        .error-msg {
+            background: #7f1d1d;
+            padding: 20px;
+            border-radius: 12px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <div>
+            <h1>自媒体内容分析 Dashboard</h1>
+            <div class="subtitle">抖音 & 小红书 数据分析</div>
+        </div>
+        <button class="refresh-btn" onclick="refreshData()">刷新数据</button>
+    </div>
+
+    <div class="container">
+        <!-- 总体统计 -->
+        <div class="stats-grid" id="statsGrid">
+            <div class="loading">加载中...</div>
+        </div>
+
+        <!-- 图表区域 -->
+        <div class="platform-section">
+            <div class="chart-container">
+                <div class="chart-title">发布趋势</div>
+                <div id="trendChart" class="chart"></div>
+            </div>
+            <div class="chart-container">
+                <div class="chart-title">互动对比</div>
+                <div id="engagementChart" class="chart"></div>
+            </div>
+        </div>
+
+        <!-- TOP内容 -->
+        <div class="platform-section">
+            <div class="chart-container">
+                <div class="chart-title">抖音播放量 TOP5</div>
+                <div id="dyTopList" class="top-list">
+                    <div class="loading">加载中...</div>
+                </div>
+            </div>
+            <div class="chart-container">
+                <div class="chart-title">小红书浏览量 TOP5</div>
+                <div id="xhsTopList" class="top-list">
+                    <div class="loading">加载中...</div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        // 全局图表实例
+        let trendChart, engagementChart;
+
+        // 格式化数字
+        function formatNumber(num) {
+            if (num >= 100000000) return (num / 100000000).toFixed(1) + '亿';
+            if (num >= 10000) return (num / 10000).toFixed(1) + '万';
+            return num.toLocaleString();
+        }
+
+        // 加载统计数据
+        async function loadStats() {
+            try {
+                const resp = await fetch('/api/stats');
+                const data = await resp.json();
+
+                let html = '';
+
+                // 抖音统计
+                if (data.douyin.content_count > 0) {
+                    const dy = data.douyin;
+                    html += `
+                        <div class="stat-card platform douyin">
+                            <div class="label">抖音内容数量</div>
+                            <div class="value">${dy.content_count}</div>
+                            <div class="sub">总播放 ${formatNumber(dy.total_plays)} · 获赞 ${formatNumber(dy.total_likes)}</div>
+                        </div>
+                        <div class="stat-card platform douyin">
+                            <div class="label">抖音总播放</div>
+                            <div class="value">${formatNumber(dy.total_plays)}</div>
+                            <div class="sub">平均 ${formatNumber(dy.avg_play)} · 点赞率 ${dy.avg_like_rate}%</div>
+                        </div>
+                    `;
+                }
+
+                // 小红书统计
+                if (data.xiaohongshu.content_count > 0) {
+                    const xhs = data.xiaohongshu;
+                    html += `
+                        <div class="stat-card platform xiaohongshu">
+                            <div class="label">小红书内容数量</div>
+                            <div class="value">${xhs.content_count}</div>
+                            <div class="sub">总曝光 ${formatNumber(xhs.total_exposures)} · 浏览 ${formatNumber(xhs.total_views)}</div>
+                        </div>
+                        <div class="stat-card platform xiaohongshu">
+                            <div class="label">小红书总浏览</div>
+                            <div class="value">${formatNumber(xhs.total_views)}</div>
+                            <div class="sub">看率 ${xhs.avg_view_rate}% · 获赞 ${formatNumber(xhs.total_likes)}</div>
+                        </div>
+                    `;
+                }
+
+                document.getElementById('statsGrid').innerHTML = html || '<div class="error-msg">暂无数据</div>';
+            } catch (e) {
+                document.getElementById('statsGrid').innerHTML = '<div class="error-msg">加载失败: ' + e.message + '</div>';
+            }
+        }
+
+        // 加载趋势图
+        async function loadTrend() {
+            try {
+                const resp = await fetch('/api/trend');
+                const data = await resp.json();
+
+                if (!trendChart) {
+                    trendChart = echarts.init(document.getElementById('trendChart'));
+                }
+
+                const option = {
+                    tooltip: { trigger: 'axis' },
+                    legend: { data: ['抖音', '小红书'], textStyle: { color: '#94a3b8' } },
+                    grid: { left: '3%', right: '4%', bottom: '3%', containLabel: true },
+                    xAxis: { type: 'category', data: data.dates, axisLine: { lineStyle: { color: '#475569' } }, axisLabel: { color: '#94a3b8' } },
+                    yAxis: { type: 'value', axisLine: { lineStyle: { color: '#475569' } }, splitLine: { lineStyle: { color: '#334155' } }, axisLabel: { color: '#94a3b8' } },
+                    series: [
+                        { name: '抖音', type: 'bar', data: data.dy_count, itemStyle: { color: '#fe2c55' }, barWidth: '35%' },
+                        { name: '小红书', type: 'bar', data: data.xhs_count, itemStyle: { color: '#ff2442' } }
+                    ]
+                };
+
+                trendChart.setOption(option);
+            } catch (e) {
+                console.error('趋势图加载失败:', e);
+            }
+        }
+
+        // 加载互动分析
+        async function loadEngagement() {
+            try {
+                const resp = await fetch('/api/engagement');
+                const data = await resp.json();
+
+                if (!engagementChart) {
+                    engagementChart = echarts.init(document.getElementById('engagementChart'));
+                }
+
+                // 合并两个平台的互动数据
+                const dyData = data.douyin.slice(0, 10);
+                const xhsData = data.xiaohongshu.slice(0, 10);
+
+                const option = {
+                    tooltip: { trigger: 'item' },
+                    legend: { data: ['抖音', '小红书'], textStyle: { color: '#94a3b8' }, top: 0 },
+                    radar: {
+                        indicator: [
+                            { name: '点赞', max: Math.max(...dyData.map(d => d.likes), ...xhsData.map(d => d.likes), 1) },
+                            { name: '评论', max: Math.max(...dyData.map(d => d.comments), ...xhsData.map(d => d.comments), 1) },
+                            { name: '收藏', max: Math.max(...dyData.map(d => d.favorites), ...xhsData.map(d => d.favorites), 1) },
+                            { name: '分享', max: Math.max(...dyData.map(d => d.shares), ...xhsData.map(d => d.shares), 1) }
+                        ],
+                        axisName: { color: '#94a3b8' },
+                        splitArea: { areaStyle: { color: ['#1e293b', '#0f172a'] } },
+                        splitLine: { lineStyle: { color: '#334155' } }
+                    },
+                    series: [{
+                        type: 'radar',
+                        data: [
+                            { value: [dyData.reduce((s, d) => s + d.likes, 0), dyData.reduce((s, d) => s + d.comments, 0), dyData.reduce((s, d) => s + d.favorites, 0), dyData.reduce((s, d) => s + d.shares, 0)], name: '抖音', itemStyle: { color: '#fe2c55' } },
+                            { value: [xhsData.reduce((s, d) => s + d.likes, 0), xhsData.reduce((s, d) => s + d.comments, 0), xhsData.reduce((s, d) => s + d.favorites, 0), xhsData.reduce((s, d) => s + d.shares, 0)], name: '小红书', itemStyle: { color: '#ff2442' } }
+                        ]
+                    }]
+                };
+
+                engagementChart.setOption(option);
+            } catch (e) {
+                console.error('互动图加载失败:', e);
+            }
+        }
+
+        // 加载TOP列表
+        async function loadTopLists() {
+            try {
+                const resp = await fetch('/api/top');
+                const data = await resp.json();
+
+                // 抖音TOP
+                let dyHtml = '';
+                data.douyin.forEach((item, i) => {
+                    const rankClass = i === 0 ? 'top1' : i === 1 ? 'top2' : i === 2 ? 'top3' : '';
+                    dyHtml += `
+                        <div class="top-item">
+                            <div class="rank ${rankClass}">${i + 1}</div>
+                            <div class="info">
+                                <div class="title">${item.标题}</div>
+                                <div class="meta">${item.发布时间}</div>
+                            </div>
+                            <div class="stats">
+                                <div class="play-count">${formatNumber(item.播放量)}</div>
+                                <div class="互动">赞 ${formatNumber(item.点赞数)} · 评 ${formatNumber(item.评论数 || 0)}</div>
+                            </div>
+                        </div>
+                    `;
+                });
+                document.getElementById('dyTopList').innerHTML = dyHtml || '<div class="loading">暂无数据</div>';
+
+                // 小红书TOP
+                let xhsHtml = '';
+                data.xiaohongshu.forEach((item, i) => {
+                    const rankClass = i === 0 ? 'top1' : i === 1 ? 'top2' : i === 2 ? 'top3' : '';
+                    xhsHtml += `
+                        <div class="top-item">
+                            <div class="rank ${rankClass}">${i + 1}</div>
+                            <div class="info">
+                                <div class="title">${item.笔记标题}</div>
+                                <div class="meta">${item.首次发布时间}</div>
+                            </div>
+                            <div class="stats">
+                                <div class="play-count">${formatNumber(item.浏览数)}</div>
+                                <div class="互动">赞 ${formatNumber(item.点赞数)} · 藏 ${formatNumber(item.收藏数)}</div>
+                            </div>
+                        </div>
+                    `;
+                });
+                document.getElementById('xhsTopList').innerHTML = xhsHtml || '<div class="loading">暂无数据</div>';
+            } catch (e) {
+                console.error('TOP列表加载失败:', e);
+            }
+        }
+
+        // 刷新数据
+        async function refreshData() {
+            try {
+                const btn = document.querySelector('.refresh-btn');
+                btn.textContent = '刷新中...';
+                btn.disabled = true;
+
+                await fetch('/api/refresh');
+                await loadStats();
+                await loadTrend();
+                await loadEngagement();
+                await loadTopLists();
+
+                btn.textContent = '刷新数据';
+                btn.disabled = false;
+            } catch (e) {
+                alert('刷新失败: ' + e.message);
+            }
+        }
+
+        // 窗口调整时重绘图表
+        window.addEventListener('resize', () => {
+            if (trendChart) trendChart.resize();
+            if (engagementChart) engagementChart.resize();
+        });
+
+        // 初始化
+        document.addEventListener('DOMContentLoaded', () => {
+            loadStats();
+            loadTrend();
+            loadEngagement();
+            loadTopLists();
+        });
+    </script>
+</body>
+</html>

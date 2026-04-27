@@ -1,0 +1,20 @@
+# Schedule Secretary Requirements
+
+# Web Framework
+Flask>=2.3.0
+Werkzeug>=2.3.0
+
+# Database
+# (Using built-in sqlite3, no external dependency needed)
+
+# Scheduling
+APScheduler>=3.10.0
+
+# HTTP Client
+requests>=2.31.0
+
+# Environment
+python-dotenv>=1.0.0
+
+# Date/Time handling
+# (Using built-in datetime, no external dependency needed)

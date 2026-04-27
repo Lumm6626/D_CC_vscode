@@ -1,0 +1,12 @@
+{
+    "output_folder": "D:/D_CC_vscode/secretary-team/pharma-news/output",
+    "email": "lou_yao@163.com",
+    "smtp_server": "smtp.163.com",
+    "smtp_port": 465,
+    "smtp_user": "lou_yao@163.com",
+    "smtp_password": "ULiyfiNaXfZ83DV8",
+    "recipient_email": "lou_yao@163.com",
+    "enable_email": true,
+    "openai_api_key": "",
+    "claude_api_key": ""
+}

@@ -1,0 +1,20 @@
+{
+  "hooks": {
+    "UserMessage": {
+      "command": "python",
+      "args": [
+        ".claude/save_conversation.py",
+        "user",
+        "{message}"
+      ]
+    },
+    "AssistantMessage": {
+      "command": "python",
+      "args": [
+        ".claude/save_conversation.py",
+        "assistant",
+        "{message}"
+      ]
+    }
+  }
+}

@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>日程秘书 - Schedule Secretary</title>
+    <link rel="stylesheet" href="/static/dashboard.css">
+</head>
+<body>
+    <div class="app">
+        <!-- Sidebar -->
+        <aside class="sidebar">
+            <div class="sidebar-header">
+                <h1>📅 日程秘书</h1>
+            </div>
+            <nav class="sidebar-nav">
+                <a href="#dashboard" class="nav-item active" data-section="dashboard">
+                    <span class="icon">📊</span> 概览
+                </a>
+                <a href="#tasks" class="nav-item" data-section="tasks">
+                    <span class="icon">📋</span> 任务池
+                </a>
+                <a href="#schedule" class="nav-item" data-section="schedule">
+                    <span class="icon">🗓️</span> 日程
+                </a>
+                <a href="#routines" class="nav-item" data-section="routines">
+                    <span class="icon">🔄</span> 日常
+                </a>
+                <a href="#email" class="nav-item" data-section="email">
+                    <span class="icon">📧</span> 邮件导入
+                </a>
+            </nav>
+            <div class="sidebar-footer">
+                <button id="refresh-btn" class="btn-secondary">🔄 刷新</button>
+            </div>
+        </aside>
+
+        <!-- Main Content -->
+        <main class="main-content">
+            <!-- Dashboard Section -->
+            <section id="dashboard-section" class="section active">
+                <h2>今日概览</h2>
+                <div class="stats-grid">
+                    <div class="stat-card">
+                        <div class="stat-value" id="stat-total-tasks">-</div>
+                        <div class="stat-label">总任务</div>
+                    </div>
+                    <div class="stat-card pending">
+                        <div class="stat-value" id="stat-pending-tasks">-</div>
+                        <div class="stat-label">待处理</div>
+                    </div>
+                    <div class="stat-card in-progress">
+                        <div class="stat-value" id="stat-inprogress-tasks">-</div>
+                        <div class="stat-label">进行中</div>
+                    </div>
+                    <div class="stat-card completed">
+                        <div class="stat-value" id="stat-completed-tasks">-</div>
+                        <div class="stat-label">已完成</div>
+                    </div>
+                    <div class="stat-card today">
+                        <div class="stat-value" id="stat-today-schedule">-</div>
+                        <div class="stat-label">今日日程</div>
+                    </div>
+                    <div class="stat-card routine">
+                        <div class="stat-value" id="stat-today-routines">-</div>
+                        <div class="stat-label">日常任务</div>
+                    </div>
+                </div>
+
+                <div class="dashboard-row">
+                    <div class="card">
+                        <h3>今日日程</h3>
+                        <div id="today-schedule-list" class="schedule-list">
+                            <div class="empty-state">加载中...</div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <h3>紧急任务</h3>
+                        <div id="high-priority-list" class="task-list">
+                            <div class="empty-state">加载中...</div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Tasks Section -->
+            <section id="tasks-section" class="section">
+                <div class="section-header">
+                    <h2>任务池</h2>
+                    <button class="btn-primary" id="add-task-btn">+ 添加任务</button>
+                </div>
+
+                <div class="filters">
+                    <select id="task-filter-status" class="filter-select">
+                        <option value="">全部状态</option>
+                        <option value="pending">待处理</option>
+                        <option value="in_progress">进行中</option>
+                        <option value="completed">已完成</option>
+                    </select>
+                    <select id="task-filter-source" class="filter-select">
+                        <option value="">全部来源</option>
+                        <option value="manual">手动</option>
+                        <option value="email">邮件</option>
+                        <option value="routine">日常</option>
+                    </select>
+                    <select id="task-filter-priority" class="filter-select">
+                        <option value="">全部优先级</option>
+                        <option value="high">紧急</option>
+                        <option value="normal">普通</option>
+                        <option value="low">低</option>
+                    </select>
+                </div>
+
+                <div id="task-list" class="task-list">
+                    <div class="empty-state">暂无任务</div>
+                </div>
+            </section>
+
+            <!-- Schedule Section -->
+            <section id="schedule-section" class="section">
+                <div class="section-header">
+                    <h2>日程安排</h2>
+                    <div class="header-actions">
+                        <input type="date" id="schedule-date" class="date-input">
+                        <button class="btn-secondary" id="ai-suggest-btn">🤖 AI 建议</button>
+                    </div>
+                </div>
+
+                <div class="schedule-container">
+                    <div class="time-grid">
+                        <div class="time-header">
+                            <div class="time-label"></div>
+                            <div class="schedule-header">日程</div>
+                        </div>
+                        <div id="schedule-timeline" class="timeline">
+                            <!-- Time slots will be rendered here -->
+                        </div>
+                    </div>
+                </div>
+
+                <div class="available-slots">
+                    <h3>可用时间段</h3>
+                    <div id="available-slots-list" class="slots-list">
+                        <div class="empty-state">选择日期查看可用时间</div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Routines Section -->
+            <section id="routines-section" class="section">
+                <div class="section-header">
+                    <h2>日常任务模板</h2>
+                    <button class="btn-primary" id="add-routine-btn">+ 添加日常</button>
+                </div>
+
+                <div id="routine-list" class="routine-list">
+                    <div class="empty-state">暂无日常任务</div>
+                </div>
+            </section>
+
+            <!-- Email Section -->
+            <section id="email-section" class="section">
+                <div class="section-header">
+                    <h2>邮件导入</h2>
+                    <button class="btn-primary" id="import-email-btn">📥 导入到任务池</button>
+                </div>
+
+                <div class="card">
+                    <h3>从邮件待办提取</h3>
+                    <div id="email-task-list" class="task-list">
+                        <div class="empty-state">点击按钮从邮件提取待办</div>
+                    </div>
+                </div>
+            </section>
+        </main>
+    </div>
+
+    <!-- Modals -->
+    <div id="task-modal" class="modal">
+        <div class="modal-content">
+            <h3 id="task-modal-title">添加任务</h3>
+            <form id="task-form">
+                <input type="hidden" id="task-id">
+                <div class="form-group">
+                    <label for="task-title">标题</label>
+                    <input type="text" id="task-title" required>
+                </div>
+                <div class="form-group">
+                    <label for="task-description">描述</label>
+                    <textarea id="task-description"></textarea>
+                </div>
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="task-priority">优先级</label>
+                        <select id="task-priority">
+                            <option value="high">紧急</option>
+                            <option value="normal" selected>普通</option>
+                            <option value="low">低</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="task-due-date">截止日期</label>
+                        <input type="date" id="task-due-date">
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="task-estimated-hours">预估时长（小时）</label>
+                    <input type="number" id="task-estimated-hours" step="0.5" min="0">
+                </div>
+                <div class="form-actions">
+                    <button type="button" class="btn-secondary" id="task-cancel-btn">取消</button>
+                    <button type="submit" class="btn-primary">保存</button>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <div id="schedule-modal" class="modal">
+        <div class="modal-content">
+            <h3>安排日程</h3>
+            <form id="schedule-form">
+                <input type="hidden" id="schedule-id">
+                <input type="hidden" id="schedule-task-id">
+                <div class="form-group">
+                    <label for="schedule-date-input">日期</label>
+                    <input type="date" id="schedule-date-input" required>
+                </div>
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="schedule-start-time">开始时间</label>
+                        <input type="time" id="schedule-start-time" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="schedule-end-time">结束时间</label>
+                        <input type="time" id="schedule-end-time" required>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="schedule-slot-type">类型</label>
+                    <select id="schedule-slot-type">
+                        <option value="task">任务</option>
+                        <option value="meeting">会议</option>
+                        <option value="break">休息</option>
+                        <option value="routine">日常</option>
+                    </select>
+                </div>
+                <div class="form-actions">
+                    <button type="button" class="btn-secondary" id="schedule-cancel-btn">取消</button>
+                    <button type="submit" class="btn-primary">保存</button>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <div id="routine-modal" class="modal">
+        <div class="modal-content">
+            <h3 id="routine-modal-title">添加日常任务</h3>
+            <form id="routine-form">
+                <input type="hidden" id="routine-id">
+                <div class="form-group">
+                    <label for="routine-title">标题</label>
+                    <input type="text" id="routine-title" required>
+                </div>
+                <div class="form-group">
+                    <label for="routine-description">描述</label>
+                    <textarea id="routine-description"></textarea>
+                </div>
+                <div class="form-group">
+                    <label for="routine-time">执行时间</label>
+                    <input type="time" id="routine-time" required>
+                </div>
+                <div class="form-group">
+                    <label for="routine-duration">持续时长（分钟）</label>
+                    <input type="number" id="routine-duration" value="60" min="5">
+                </div>
+                <div class="form-group">
+                    <label>重复日期</label>
+                    <div class="checkbox-group">
+                        <label><input type="checkbox" name="routine-days" value="1" checked> 周一</label>
+                        <label><input type="checkbox" name="routine-days" value="2" checked> 周二</label>
+                        <label><input type="checkbox" name="routine-days" value="3" checked> 周三</label>
+                        <label><input type="checkbox" name="routine-days" value="4" checked> 周四</label>
+                        <label><input type="checkbox" name="routine-days" value="5" checked> 周五</label>
+                        <label><input type="checkbox" name="routine-days" value="6"> 周六</label>
+                        <label><input type="checkbox" name="routine-days" value="7"> 周日</label>
+                    </div>
+                </div>
+                <div class="form-actions">
+                    <button type="button" class="btn-secondary" id="routine-cancel-btn">取消</button>
+                    <button type="submit" class="btn-primary">保存</button>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <div id="ai-suggest-modal" class="modal">
+        <div class="modal-content">
+            <h3>🤖 AI 排程建议</h3>
+            <div id="ai-suggest-content">
+                <div class="loading">正在生成建议...</div>
+            </div>
+            <div class="form-actions">
+                <button type="button" class="btn-secondary" id="ai-suggest-close-btn">关闭</button>
+                <button type="button" class="btn-primary" id="ai-suggest-apply-btn">应用建议</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="/static/dashboard.js"></script>
+</body>
+</html>

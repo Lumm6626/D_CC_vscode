@@ -1,0 +1,53 @@
+{
+    "output_folder": "D:/D_CC_vscode/secretary-team/medical-device-news/output",
+    "email": "lou_yao@163.com",
+    "deepseek_api_key": "sk-5b6edf2647fd43898aafeefe4c7763d8",
+    "search_keywords": [
+        "medical device", "medtech", "medical equipment", "medical instrument",
+        "implant", "prosthetic", "stent", "pacemaker", "defibrillator", "cochlear",
+        "surgical robot", "da Vinci", "robotic surgery", "minimally invasive",
+        "IVD", "in vitro diagnostic", "PCR", "rapid test", "blood glucose meter",
+        "disposable", "catheter", "syringe", "infusion", "wound care", "bandage",
+        "imaging", "MRI", "CT", "ultrasound", "X-ray", "PET scan",
+        "dialysis", "ventilator", "anesthesia", "monitor", "ECG", "EEG",
+        "cardiaccath", "angioplasty", "heart valve", "pacemaker lead",
+        "orthopedic", "spine", "knee", "hip", "joint replacement", "fracture",
+        "dental implant", "耗材", "设备", "器械", "植入物", "支架", "起搏器", "人工关节", "晶体",
+        "手术机器人", "腔镜", "微创", "体外诊断", "试剂", "检测", "血糖", "试纸",
+        "一次性耗材", "注射器", "输液器", "敷料", "缝合线", "导管",
+        "影像设备", "超声", "CT", "核磁", "内窥镜", "心电", "监护",
+        "透析", "呼吸机", "麻醉机", "血液净化", "除颤器",
+        "FDA批准", "FDA approval", "FDA clearance", "510(k)", "PMA", "De Novo",
+        "NMPA", "国家药监局", "器审中心", "创新器械", "优先审批",
+        "CE mark", "CE认证", "欧盟MDR", "ISO 13485",
+        "召回", "recall", "safety alert", "不良事件", "警戒",
+        "集采", "带量采购", "医保谈判", "DRG", "DIP",
+        "国产替代", "自主创新", "卡脖子", "关键零部件",
+        "并购", "acquisition", "investment", "funding", "IPO", "分拆"
+    ],
+    "search_sources": [
+        {"name": "Google News - Medical Device", "url": "https://news.google.com/rss/search?q=medical+device&hl=en-US&gl=US&ceid=US:en", "region": "Foreign"},
+        {"name": "Google News - MedTech FDA", "url": "https://news.google.com/rss/search?q=medtech+FDA+approval&hl=en-US&gl=US&ceid=US:en", "region": "Foreign"},
+        {"name": "Google News - Surgical Robot", "url": "https://news.google.com/rss/search?q=surgical+robot+medical&hl=en-US&gl=US&ceid=US:en", "region": "Foreign"},
+        {"name": "Google News - Implant Device", "url": "https://news.google.com/rss/search?q=implant+medical+device&hl=en-US&gl=US&ceid=US:en", "region": "Foreign"},
+        {"name": "Google News - China MedTech", "url": "https://news.google.com/rss/search?q=China+medical+device+NMPA&hl=en-US&gl=US&ceid=US:en", "region": "Foreign"},
+        {"name": "Google News - MedTech Funding", "url": "https://news.google.com/rss/search?q=medical+device+funding+investment&hl=en-US&gl=US&ceid=US:en", "region": "Foreign"},
+        {"name": "Google News - Healthcare Tech", "url": "https://news.google.com/rss/search?q=healthcare+technology&hl=en-US&gl=US&ceid=US:en", "region": "Foreign"}
+    ],
+    "foreign_sources": [
+        {"name": "FierceBiotech", "url": "https://www.fiercebiotech.com/rss/xml", "region": "Foreign"},
+        {"name": "BBC Health", "url": "https://feeds.bbci.co.uk/news/health/rss.xml", "region": "Foreign"},
+        {"name": "MedTech Europe", "url": "https://www.medtecheurope.org/feed/", "region": "Foreign"},
+        {"name": "AdvaMed", "url": "https://www.advamed.org/feed/", "region": "Foreign"},
+        {"name": "World Health News", "url": "https://worldhealth.net/feed/", "region": "Foreign"}
+    ],
+    "china_sources": [
+        {"name": "丁香园", "url": "https://www.dxy.cn/feed", "region": "China"}
+    ],
+    "smtp_server": "smtp.163.com",
+    "smtp_port": 465,
+    "smtp_user": "lou_yao@163.com",
+    "smtp_password": "ULiyfiNaXfZ83DV8",
+    "recipient_email": "lou_yao@163.com",
+    "enable_email": true
+}

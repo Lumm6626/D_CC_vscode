@@ -1,0 +1,470 @@
+{
+  "date": "2026-04-10",
+  "count": 58,
+  "news": [
+    {
+      "title": "Federal Court Denies Anthropic’s Motion to Lift ‘Supply Chain Risk’ Label",
+      "url": "https://www.nytimes.com/2026/04/08/technology/anthropic-pentagon-risk-circuit-court.html",
+      "snippet": "The ruling was a setback for the artificial intelligence start-up in its battle with the Defense Department over the use of A.I. in warfare.",
+      "keyword": "NYTimes",
+      "region": "Foreign",
+      "published": "Thu, 09 Apr 2026 00:19:59 +0000"
+    },
+    {
+      "title": "Anthropic Claims Its New A.I. Model, Mythos, Is a Cybersecurity ‘Reckoning’",
+      "url": "https://www.nytimes.com/2026/04/07/technology/anthropic-claims-its-new-ai-model-mythos-is-a-cybersecurity-reckoning.html",
+      "snippet": "The company said on Tuesday that it was holding back on releasing the new technology but was working with 40 companies to explore how it could prevent cyberattacks.",
+      "keyword": "NYTimes",
+      "region": "Foreign",
+      "published": "Tue, 07 Apr 2026 18:00:09 +0000"
+    },
+    {
+      "title": "Half of Gen Z Uses AI, but Their Feelings Are Souring, Study Shows",
+      "url": "https://www.nytimes.com/2026/04/09/style/gen-z-ai-gallup-study.html",
+      "snippet": "A new study from Gallup found that young adults have grown less hopeful and more angry about artificial intelligence.",
+      "keyword": "NYTimes",
+      "region": "Foreign",
+      "published": "Thu, 09 Apr 2026 16:01:35 +0000"
+    },
+    {
+      "title": "A.I. Is on Its Way to Upending Cybersecurity",
+      "url": "https://www.nytimes.com/2026/04/06/technology/ai-cybersecurity-hackers.html",
+      "snippet": "With new systems from companies like Anthropic and OpenAI, hackers can attack with greater speed. The defense is more A.I.",
+      "keyword": "NYTimes",
+      "region": "Foreign",
+      "published": "Tue, 07 Apr 2026 18:29:48 +0000"
+    },
+    {
+      "title": "Forget the A.I. Apocalypse. Memes Have Already Nuked Our Culture.",
+      "url": "https://www.nytimes.com/2026/04/06/magazine/ai-apocalypse-brain-rot-memes.html",
+      "snippet": "From our jokes and slang to the White House’s policy messaging, internet “brain rot” has escaped our phones to take over … well, everything.",
+      "keyword": "NYTimes",
+      "region": "Foreign",
+      "published": "Mon, 06 Apr 2026 14:54:30 +0000"
+    },
+    {
+      "title": "The Future of Addictive Design + Going Deep at DeepMind + HatGPT",
+      "url": "https://www.nytimes.com/2026/04/03/podcasts/hardfork-social-media-liable.html",
+      "snippet": "“The platforms should be absolutely begging Congress to regulate them, because the alternative is they get sued into oblivion by a bunch of law firms.”",
+      "keyword": "NYTimes",
+      "region": "Foreign",
+      "published": "Tue, 07 Apr 2026 17:57:16 +0000"
+    },
+    {
+      "title": "OpenAI Buys Streaming Show ‘TBPN,’ Aiming to Change Narrative on A.I.",
+      "url": "https://www.nytimes.com/2026/04/02/technology/openai-buys-tbpn.html",
+      "snippet": "OpenAI said the deal would help it “create a space for a real, constructive conversation about the changes A.I. creates.”",
+      "keyword": "NYTimes",
+      "region": "Foreign",
+      "published": "Fri, 03 Apr 2026 17:53:29 +0000"
+    },
+    {
+      "title": "OpenAI pauses UK data centre deal over energy costs and regulation",
+      "url": "https://www.bbc.com/news/articles/clyd032ej70o?at_medium=RSS&at_campaign=rss",
+      "snippet": "The project was part of a package of tech investment promising the UK could become an AI superpower.",
+      "keyword": "BBC",
+      "region": "Foreign",
+      "published": "Thu, 09 Apr 2026 20:36:41 GMT"
+    },
+    {
+      "title": "Greece to ban social media for under-15s from next year",
+      "url": "https://www.bbc.com/news/articles/ckgx1x742x5o?at_medium=RSS&at_campaign=rss",
+      "snippet": "It follows similar moves in other European countries, including France and Spain.",
+      "keyword": "BBC",
+      "region": "Foreign",
+      "published": "Wed, 08 Apr 2026 11:39:43 GMT"
+    },
+    {
+      "title": "Ex-Meta worker investigated for downloading 30,000 private Facebook photos",
+      "url": "https://www.bbc.com/news/articles/cvg049xz1ygo?at_medium=RSS&at_campaign=rss",
+      "snippet": "The former employee was fired from Meta after being suspected of downloading 30,000 photos, the company said.",
+      "keyword": "BBC",
+      "region": "Foreign",
+      "published": "Tue, 07 Apr 2026 15:39:33 GMT"
+    },
+    {
+      "title": "OpenAI encourages firms to trial four-day weeks to adapt to AI era",
+      "url": "https://www.bbc.com/news/articles/c8x71ejrp92o?at_medium=RSS&at_campaign=rss",
+      "snippet": "The ChatGPT-maker said its early policy ideas aim to prompt discussions about action needed as AI systems become more capable.",
+      "keyword": "BBC",
+      "region": "Foreign",
+      "published": "Tue, 07 Apr 2026 11:55:47 GMT"
+    },
+    {
+      "title": "Businesses scramble to get noticed by AI search",
+      "url": "https://www.bbc.com/news/articles/c70n2rjgxeyo?at_medium=RSS&at_campaign=rss",
+      "snippet": "Firms are changing the way they present information on their websites, so they get noticed by AI.",
+      "keyword": "BBC",
+      "region": "Foreign",
+      "published": "Mon, 06 Apr 2026 23:20:52 GMT"
+    },
+    {
+      "title": "China is winning one AI race, the US another - but either might pull ahead",
+      "url": "https://www.bbc.com/news/articles/c145enxln0go?at_medium=RSS&at_campaign=rss",
+      "snippet": "Both sides don't want to let their rival dominate. And the competition may yet be transformed further.",
+      "keyword": "BBC",
+      "region": "Foreign",
+      "published": "Tue, 07 Apr 2026 05:13:12 GMT"
+    },
+    {
+      "title": "How China fell for a lobster: What an AI assistant tells us about Beijing's ambition",
+      "url": "https://www.bbc.com/news/articles/cy41n17e23go?at_medium=RSS&at_campaign=rss",
+      "snippet": "The AI agent sparked a frenzy of \"raising lobsters\" in March, with users training the tool to suit their needs.",
+      "keyword": "BBC",
+      "region": "Foreign",
+      "published": "Sun, 05 Apr 2026 22:07:40 GMT"
+    },
+    {
+      "title": "Tech Life",
+      "url": "https://www.bbc.co.uk/sounds/play/w3ct8jxp?at_medium=RSS&at_campaign=rss",
+      "snippet": "Is there a way to fix AI's problem with trust?",
+      "keyword": "BBC",
+      "region": "Foreign",
+      "published": "Tue, 07 Apr 2026 20:00:00 GMT"
+    },
+    {
+      "title": "OpenAI Backs Bill That Would Limit Liability for AI-Enabled Mass Deaths or Financial Disasters",
+      "url": "https://www.wired.com/story/openai-backs-bill-exempt-ai-firms-model-harm-lawsuits/",
+      "snippet": "The ChatGPT-maker testified in favor of an Illinois bill that would limit when AI labs can be held liable—even in cases where their products cause “critical harm.”",
+      "keyword": "Wired",
+      "region": "Foreign",
+      "published": "Fri, 10 Apr 2026 00:19:53 +0000"
+    },
+    {
+      "title": "The 70-Person AI Image Startup Taking on Silicon Valley's Giants",
+      "url": "https://www.wired.com/story/black-forest-labs-ai-image-generation/",
+      "snippet": "Black Forest Labs has long punched above its weight in the AI image generation space. Its next move? Powering physical AI.",
+      "keyword": "Wired",
+      "region": "Foreign",
+      "published": "Thu, 09 Apr 2026 18:00:00 +0000"
+    },
+    {
+      "title": "John Deere Is Paying Farmers $99 Million for Allegedly Monopolizing Repair",
+      "url": "https://www.wired.com/story/john-deere-is-paying-farmers-99-million-for-allegedly-monopolizing-repair/",
+      "snippet": "The tractor maker is paying for its years as the central opponent of right-to-repair. Consumer advocates say it’s still not enough.",
+      "keyword": "Wired",
+      "region": "Foreign",
+      "published": "Thu, 09 Apr 2026 17:27:32 +0000"
+    },
+    {
+      "title": "The FBI Didn’t Answer Texts From Minnesota Investigators for Days After Renee Good’s Killing",
+      "url": "https://www.wired.com/story/the-fbi-didnt-answer-texts-from-minnesota-investigators-for-days-after-renee-goods-killing/",
+      "snippet": "Messages sent to the FBI by an investigator with the Minnesota Bureau of Criminal Apprehension went ignored for at least two days, per records obtained by WIRED.",
+      "keyword": "Wired",
+      "region": "Foreign",
+      "published": "Thu, 09 Apr 2026 13:44:01 +0000"
+    },
+    {
+      "title": "The Pro-Iran Meme Machine Trolling Trump With AI Lego Cartoons",
+      "url": "https://www.wired.com/story/inside-the-pro-iran-meme-machine-trolling-trump-with-ai-lego-cartoons/",
+      "snippet": "Since the beginning of the Iran war, the group Explosive Media has released over a dozen viral videos mocking Trump and the US.",
+      "keyword": "Wired",
+      "region": "Foreign",
+      "published": "Thu, 09 Apr 2026 13:25:21 +0000"
+    },
+    {
+      "title": "How Meta Cafeteria Workers Took on ICE—and Won",
+      "url": "https://www.wired.com/story/how-meta-cafeteria-workers-rallied-to-take-on-ice/",
+      "snippet": "In Seattle, activists inside tech giants are leaning into grassroots fundraising and peer support as petitions and protests draw little response from executives.",
+      "keyword": "Wired",
+      "region": "Foreign",
+      "published": "Thu, 09 Apr 2026 11:00:00 +0000"
+    },
+    {
+      "title": "This AI Wearable From Ex-Apple Engineers Looks Like an iPod Shuffle",
+      "url": "https://www.wired.com/story/this-ai-button-wearable-from-ex-apple-engineers-looks-like-an-ipod-shuffle/",
+      "snippet": "Two former Apple Vision Pro developers made an AI wearable that only listens when you tap it. They hope to win where other AI gadgets have fumbled: privacy.",
+      "keyword": "Wired",
+      "region": "Foreign",
+      "published": "Thu, 09 Apr 2026 09:30:00 +0000"
+    },
+    {
+      "title": "Florida AG to probe OpenAI, alleging possible connection to FSU shooting",
+      "url": "https://techcrunch.com/2026/04/09/florida-ag-to-probe-openai-alleging-possible-connection-to-fsu-shooting/",
+      "snippet": "Florida Attorney General James Uthmeier plans to investigate OpenAI for its alleged harm to minors, potential to threaten national security, and its possible link to a shooting at Florida State Univer",
+      "keyword": "TechCrunch",
+      "region": "Foreign",
+      "published": "Thu, 09 Apr 2026 22:13:26 +0000"
+    },
+    {
+      "title": "ChatGPT finally offers $100/month Pro plan",
+      "url": "https://techcrunch.com/2026/04/09/chatgpt-pro-plan-100-month-codex/",
+      "snippet": "OpenAI announced on Thursday something that power users have been asking for: a $100/month plan. Previously, subscriptions jumped from $20 to $200 per month.",
+      "keyword": "TechCrunch",
+      "region": "Foreign",
+      "published": "Thu, 09 Apr 2026 21:29:11 +0000"
+    },
+    {
+      "title": "Volkswagen drops all-electric ID.4 in the US in pivot back to gas SUVs",
+      "url": "https://techcrunch.com/2026/04/09/volkswagen-drops-all-electric-id-4-in-the-us-in-pivot-back-to-gas-suvs/",
+      "snippet": "All resources at its U.S. factory are aimed at the upcoming Atlas SUV.",
+      "keyword": "TechCrunch",
+      "region": "Foreign",
+      "published": "Thu, 09 Apr 2026 21:01:36 +0000"
+    },
+    {
+      "title": "Florida AG announces investigation into OpenAI over shooting that allegedly involved ChatGPT",
+      "url": "https://techcrunch.com/2026/04/09/florida-ag-investigation-openai-chatgpt-shooting/",
+      "snippet": "ChatGPT had reportedly been used to plan the attack that killed two and injured five at Florida State University last April. The family of one victim has said that they plan to sue OpenAI over the inc",
+      "keyword": "TechCrunch",
+      "region": "Foreign",
+      "published": "Thu, 09 Apr 2026 20:11:55 +0000"
+    },
+    {
+      "title": "StubHub to pay $10M to settle FTC allegations over ‘deceptive’ ticket pricing",
+      "url": "https://techcrunch.com/2026/04/09/stubhub-to-pay-10m-to-settle-ftc-allegations-over-deceptive-ticket-pricing/",
+      "snippet": "The consumer protection agency says the company violated the FTC Act and its Rule on Unfair or Deceptive Fees by \"deceptively\" advertising ticket prices on its website without clearly disclosing upfro",
+      "keyword": "TechCrunch",
+      "region": "Foreign",
+      "published": "Thu, 09 Apr 2026 20:04:12 +0000"
+    },
+    {
+      "title": "Meta AI app climbs to No. 5 on the App Store after Muse Spark launch",
+      "url": "https://techcrunch.com/2026/04/09/meta-ai-app-climbs-to-no-5-on-the-app-store-after-muse-spark-launch/",
+      "snippet": "The app was ranking No. 57 on the App Store just before Meta AI's new model launched. Now it's No. 5 — and rising.",
+      "keyword": "TechCrunch",
+      "region": "Foreign",
+      "published": "Thu, 09 Apr 2026 19:10:07 +0000"
+    },
+    {
+      "title": "Is Anthropic limiting the release of Mythos to protect the internet — or Anthropic?",
+      "url": "https://techcrunch.com/2026/04/09/is-anthropic-limiting-the-release-of-mythos-to-protect-the-internet-or-anthropic/",
+      "snippet": "Anthropic said this week that it limited the release of its newest model, dubbed Mythos, because it is too capable of finding security exploits in software relied upon by users around the world. Are r",
+      "keyword": "TechCrunch",
+      "region": "Foreign",
+      "published": "Thu, 09 Apr 2026 18:50:05 +0000"
+    },
+    {
+      "title": "Google and Intel deepen AI infrastructure partnership",
+      "url": "https://techcrunch.com/2026/04/09/google-and-intel-deepen-ai-infrastructure-partnership/",
+      "snippet": "The two tech giants are looking to co-develop custom chips, at a time when demand for CPUs is high due to a growing global shortage.",
+      "keyword": "TechCrunch",
+      "region": "Foreign",
+      "published": "Thu, 09 Apr 2026 18:27:47 +0000"
+    },
+    {
+      "title": "How to make the Startup Battlefield Top 20 — and what every company gets regardless",
+      "url": "https://techcrunch.com/2026/04/09/how-to-make-the-startup-battlefield-top-20-and-what-every-company-gets-regardless/",
+      "snippet": "Every founder who applies to Startup Battlefield wants the same thing: the Disrupt Main Stage. Here’s how to get there and why the opportunity starts well before the main stage.",
+      "keyword": "TechCrunch",
+      "region": "Foreign",
+      "published": "Thu, 09 Apr 2026 18:01:48 +0000"
+    },
+    {
+      "title": "You can now edit your Instagram comments",
+      "url": "https://techcrunch.com/2026/04/09/you-can-now-edit-your-instagram-comments/",
+      "snippet": "Instagram users can now edit comments, which is a long-awaited fix for anyone who’s ever had to delete and re-post a comment just to fix a typo.",
+      "keyword": "TechCrunch",
+      "region": "Foreign",
+      "published": "Thu, 09 Apr 2026 17:49:57 +0000"
+    },
+    {
+      "title": "Avec’s Tinder-style email app allows you to swipe through your inbox",
+      "url": "https://techcrunch.com/2026/04/09/avecs-tinder-styled-email-app-allows-you-to-swipe-through-your-inbox/",
+      "snippet": "Users can use the in-built voice transcription tool to reply to emails",
+      "keyword": "TechCrunch",
+      "region": "Foreign",
+      "published": "Thu, 09 Apr 2026 15:58:22 +0000"
+    },
+    {
+      "title": "早期项目 | 字节、OPPO、一加三重背景产品人，将软硬一体写入底层，要让AI看懂世界",
+      "url": "https://36kr.com/p/3760310709174784?f=rss",
+      "snippet": "作者丨欧雪\n  编辑丨袁斯来\n  过去两年，主流AI交互依赖于输入框——用户先组织语言提问，AI再给出答案。\n  这种“对话式”交互效率极高，却与人类最自然的认知路径相悖。我们认识世界，从来不是从“提问”开始，而是从“看见”开始。\n  一家成立于2025年的年轻公司Chance AI，正在尝试解决这个问题。它提出了另一种AI产品形态——",
+      "keyword": "36kr",
+      "region": "China",
+      "published": "2026-04-10 09:06:26  +0800"
+    },
+    {
+      "title": "8点1氪｜“张雪峰.skill”上线GitHub引争议；康师傅“再来一瓶”被曝多店不兑换；微信回应“夫妻用AI写公众号年赚200万”",
+      "url": "https://36kr.com/p/3760260422648327?f=rss",
+      "snippet": "今日热点导览\n  刘强东、章泽天成立新公司，名叫“天强”\n  NASA发布有史以来最清晰的月球照片\n  法国清空在美国的129吨黄金\n  李佳琦深夜发文否认退休\n  亚马逊将停止对旧款Kindle设备提供支持\n  美宜佳：已与606家加盟商解除合作关系\n  TOP3大新闻\n  <",
+      "keyword": "36kr",
+      "region": "China",
+      "published": "2026-04-10 08:17:47  +0800"
+    },
+    {
+      "title": "欣旺达装车特斯拉，供应全球车型｜36氪独家",
+      "url": "https://36kr.com/p/3759598959969030?f=rss",
+      "snippet": "特斯拉在中国的供应链布局还在扩大。\n  36氪汽车从多位产业人士处获悉，欣旺达旗下专注动力电池业务的子公司——欣旺达动力，已进入特斯拉全球供应链，成为特斯拉全球第五家动力电池供应商。\n  接触到项目的产业链人士透露，这款电池已从欣旺达浙江义乌工厂出货，搭载在特斯拉上海工厂销往海外的车型上，“已经出货有一阵子了。”\n  至于这款电池何时搭载于国内车型，",
+      "keyword": "36kr",
+      "region": "China",
+      "published": "2026-04-09 21:02:12  +0800"
+    },
+    {
+      "title": "对话美团GN06刘炯：美团为什么做了一款AI浏览器？",
+      "url": "https://36kr.com/p/3759372854706953?f=rss",
+      "snippet": "作者｜任彩茹\n  编辑｜乔芊\n  并入美团两年半，GN06（光年之外应团队并入美团后的名字）被赋予的使命始终是：在主营业务之外，找AI Native的增长点。今年3月，他们把这件事落到了一个具体的产品上——AI浏览器「Tabbit」正式进入公测。\n  为什么是浏览器？大公司在AI领域争展锋芒，行业如今的热词是“虾”、“Agent”、“Token”，浏",
+      "keyword": "36kr",
+      "region": "China",
+      "published": "2026-04-09 17:15:38  +0800"
+    },
+    {
+      "title": "一个225平方公里的“庄”，如何成为AI“顶流”",
+      "url": "https://36kr.com/p/3759269095113219?f=rss",
+      "snippet": "亦庄又“炸场”了。\n  <img src=\"https://img.36krcdn.com/hsossms/20260409/v2_a147f009c7f94a1a8381c89e2eabf462@337187376_oswg1665990oswg4000oswg2666_img_jpg?x-oss-process=image/qua",
+      "keyword": "36kr",
+      "region": "China",
+      "published": "2026-04-09 16:08:48  +0800"
+    },
+    {
+      "title": "OBSBOT寻影新品发布，在口袋直播摄像头中实现AI智能跟踪与4K画质｜最前线",
+      "url": "https://36kr.com/p/3759286934356744?f=rss",
+      "snippet": "作者｜黄楠\n  编辑｜袁斯来\n  直播与视频会议已成为日常工作和生活的一部分，创作者对设备的需求也从“能拍就行”转向了“随时随地专业开播”。\n  但当前市场上的常见方案各有短板：手机直播容易过热降频，且无法灵活多机位；传统网络摄像头画质一般、对焦慢、缺少智能跟踪；单反加采集卡虽然画质好，但整套设备笨重，还需要复杂的供电和推流设置，移动场景下很难即开即",
+      "keyword": "36kr",
+      "region": "China",
+      "published": "2026-04-09 15:45:46  +0800"
+    },
+    {
+      "title": "INAIR完成千万美元融资，便携空间主机适配多款 AR 眼镜｜最前线",
+      "url": "https://36kr.com/p/3759045427937793?f=rss",
+      "snippet": "近日，下一代移动计算平台公司 Inair 多屏未来（以下简称 Inair）宣布完成千万美元 A+ 轮融资。本轮融资由君联资本、高瓴创投、弘晖基金联合投资，资金将主要用于加速便携空间主机（PSS） 产品 Inair Pod 的生态拓展、空间操作系统研发及垂直行业应用落地。\n  Inair 多屏未来是一家专注于空间计算与移动生产力的科技公司，由两名在科技领域的连续创业者发起，初创团",
+      "keyword": "36kr",
+      "region": "China",
+      "published": "2026-04-09 11:53:44  +0800"
+    },
+    {
+      "title": "耀速科技获2亿人民币融资，将“AI+器官芯片”嵌入新药开发流程",
+      "url": "https://36kr.com/p/3758982738641670?f=rss",
+      "snippet": "文｜胡香赟\n  编辑｜海若镜\n  制药行业离“告别”动物实验又近了一步。\n  从2022年FDA的现代化法案2.0被批准开始，“替代动物实验”的监管战略一直在持续。今年3月中旬，FDA终于发文表态，开始接收非动物数据支撑新药评审，鼓励使用类器官/器官芯片、AI毒理学模型等新方法学（NAMs），逐步减少药企对动物实验的依赖。\n  <p clas",
+      "keyword": "36kr",
+      "region": "China",
+      "published": "2026-04-09 10:36:29  +0800"
+    },
+    {
+      "title": "对话前阿里高管、天猫设计家CEO：这些年烧掉千亿，家装行业还能怎么做？",
+      "url": "https://36kr.com/p/3758979573121538?f=rss",
+      "snippet": "文丨彭倩\n  编辑丨乔芊\n  “苦大仇深”是马学军对自己的形容。\n  他曾在传统行业和互联网创业十几年，任职阿里时期花名\"郭大路\"，操盘的都是实体行业互联网化的项目，从天猫超市、天猫医药、天猫家装、天猫预售、喵鲜生到喵街，无一例外。这些从0到1的创新型业务，都不是单靠淘宝流量能长出来的。\n  搞家装对他而言更是一场迟迟未决出胜负的赌局。",
+      "keyword": "36kr",
+      "region": "China",
+      "published": "2026-04-09 10:32:44  +0800"
+    },
+    {
+      "title": "港中文薛天帆团队：实现 4K 全景视频生成，普通视频也能「长出空间」丨CVPR 2026",
+      "url": "https://www.leiphone.com/category/ai/QyrS3v5dLYagMfDk.html",
+      "snippet": "很多人都经历过这样一种落差。现实里的空间是立体的，是包围人的，是可以转身、抬头、回望的，可一旦被手机或相机拍成视频，世界立刻被压缩成一个窄窄的取景框。暴雨来临前的天空并不只在镜头正前方，深夜街区的压迫感也不只来自路面，商场中庭、地下车站、展馆大厅、建筑内部，这些真正让人产生现场感的东西，往往恰恰存在于镜头之外。我们记录下了事件，却没有真正留住空间，保存了画面，却没有保存身处其中",
+      "keyword": "雷锋网",
+      "region": "China",
+      "published": "Thu, 09 Apr 2026 17:56:00 +0800"
+    },
+    {
+      "title": "2026淘宝直播三大主线：提效新品，造优质主播差异化，增优质内容曝光",
+      "url": "https://www.leiphone.com/category/industrynews/b8SiX6fHOakuNVyN.html",
+      "snippet": "4月8日，淘宝直播十周年盛典上宣布：2026年对品质直播的投入加码30%，通过增强优质主播差异化、加码优质新品和新品牌扶持、加投优质直播内容，实现品牌和达人的确定性增长。过去一年，淘宝直播以品质直播驱动店播与达播双爆发，直播对消费的驱动力持续增强。核心店播、达播确收均双位数增长；新品在直播间打爆效率提高，成交增长50%；引入更多“懂行”专业主播，如影视飓风TIM、李诞、曹颖等。",
+      "keyword": "雷锋网",
+      "region": "China",
+      "published": "Thu, 09 Apr 2026 14:46:00 +0800"
+    },
+    {
+      "title": "阿里云百炼上线Agent记忆库，让「龙虾」应用更懂用户",
+      "url": "https://www.leiphone.com/category/industrynews/L2TmFoF8gEw6pl0X.html",
+      "snippet": "4月9日消息，阿里云百炼推出「记忆库」功能，让Agent具备跨会话的长期记忆能力，真正实现「越聊越懂用户」的个性化体验。现在，「记忆库」功能限时免费向所有用户开放，用户可通过API直接调用， 或通过OpenClaw等Agent产品一键安装。 <img src=\"https://static.leipho",
+      "keyword": "雷锋网",
+      "region": "China",
+      "published": "Thu, 09 Apr 2026 14:23:00 +0800"
+    },
+    {
+      "title": "百度官宣！Create2026百度AI开发者大会定档5月13至14日",
+      "url": "https://www.leiphone.com/category/industrynews/ljciEjrbH8lCGB1X.html",
+      "snippet": "4月8日，百度官微正式官宣，Create 2026 百度AI开发者大会（以下简称“Create2026”）将于5月13日至14日在北京举办。据悉，百度或将发布在「芯-云-模-体」全栈AI布局、产业应用、AI生态等方面的最新进展。目前大会已开放售票通道（https://ai-conference.baidu.com/marketing/ai-conference/ticket/fullpass",
+      "keyword": "雷锋网",
+      "region": "China",
+      "published": "Thu, 09 Apr 2026 11:06:00 +0800"
+    },
+    {
+      "title": "印度禁止中国大陆产摄像头监控：花高价大批替换，国产厂商回应；传宇树科技与阿里达成出海战略合作；DeepSeek上线专家模式",
+      "url": "https://www.leiphone.com/category/zaobao/DHsa9yGegOpLxsAb.html",
+      "snippet": "要闻提示1.印度禁止中国大陆产摄像头监控：花高价大批替换，国产厂商回应2",
+      "keyword": "雷锋网",
+      "region": "China",
+      "published": "Thu, 09 Apr 2026 09:19:00 +0800"
+    },
+    {
+      "title": "20分钟破1000万！首日破3000万！创想三维2026全球3D打印类目众筹王者！AI+生态双向助推，3D打印布道者重新定义3D打印生态！",
+      "url": "https://www.leiphone.com/category/industrynews/sMdHrkJHN3fIisKk.html",
+      "snippet": "“众筹一开启，就挤垮了IGG服务器，20分钟众筹金额破1000万，首日破3000万！IGG历史最大3D打印项目，2026年全球3D打印众筹项目王者！”3月31日，全球消费级3D打印生态领创者创想三维（Creality）重磅推出的Creality Filament Maker M1&Shredder R1（耗材生成器M1 & 粉碎机R1）正式登陆全球最大科技众筹平",
+      "keyword": "雷锋网",
+      "region": "China",
+      "published": "Wed, 08 Apr 2026 17:28:00 +0800"
+    },
+    {
+      "title": "扣子宣布2.5版本升级，探索AI Agent从“工具”到“伙伴”的关键一步",
+      "url": "https://www.leiphone.com/category/industrynews/fHCljG3JWZXEpZPE.html",
+      "snippet": "4月7日，扣子宣布2.5版本升级，正式推出AI Agent协作平台Agent World，为AI Agent提供了包含人格、技能、装备三项支撑的“满配”运行基座，新增独立邮箱身份、云手机、云电脑等功能模块，并升级了视频创作Agent等能力。<img src=\"https://static.leiphone.com/uplo",
+      "keyword": "雷锋网",
+      "region": "China",
+      "published": "Wed, 08 Apr 2026 14:44:00 +0800"
+    },
+    {
+      "title": "仰望胡晓庆：仰望 U8 把越野“不确定性”做成硬指标",
+      "url": "https://www.ithome.com/0/937/683.htm",
+      "snippet": "IT之家 4 月 10 日消息，此前在 3 月初，比亚迪发布了 2026 款仰望 U7 、U8 和 U8L 鼎世版车型，新车搭载第二代刀片电池及闪充技术。此后比亚迪仰望销售事业部总经理胡晓庆曾在微博发文宣布，仰望 U8L 四座版汽车将于 4 月 24 日北京车展正式亮相。而今天，胡晓庆继续发文分享全新仰望 U8 系列背后的细节，在微博中，胡晓庆主要谈到了仰望挑战越野技术背后的一些故事，感叹越",
+      "keyword": "IT之家",
+      "region": "China",
+      "published": "Fri, 10 Apr 2026 02:52:17 GMT"
+    },
+    {
+      "title": "梁文锋：DeepSeek V4 将于 4 月下旬正式发布",
+      "url": "https://www.ithome.com/0/937/682.htm",
+      "snippet": "IT之家 4 月 10 日消息，DeepSeek 创始人梁文锋近日在内部沟通中透露，DeepSeek 新一代旗舰大模型 DeepSeek V4 将于 4 月下旬正式发布。综合IT之家此前报道，DeepSeek 近期被网友发现出现多项能力提升，<a href=\"https://www.ithome.com/0/934/645.htm\" targe",
+      "keyword": "IT之家",
+      "region": "China",
+      "published": "Fri, 10 Apr 2026 02:51:00 GMT"
+    },
+    {
+      "title": "消息称 OpenAI 的 AI 基建“星际之门”项目高管 Peter Hoeschele 离职",
+      "url": "https://www.ithome.com/0/937/681.htm",
+      "snippet": "IT之家 4 月 10 日消息，科技媒体 The Information 今天（4 月 10 日）发布博文，报道称负责 OpenAI“星际之门”（Stargate）基础设施项目的高管 Peter Hoeschele 已经离职。目前离职的具体原因尚未披露，OpenAI 表示相关工作将由现有团队承接。IT之家查询公开资料，Hoeschele 在加入",
+      "keyword": "IT之家",
+      "region": "China",
+      "published": "Fri, 10 Apr 2026 02:48:37 GMT"
+    },
+    {
+      "title": "2588 元，华为 WatchGT Runner 2 智能专业跑表开售",
+      "url": "https://www.ithome.com/0/937/678.htm",
+      "snippet": "IT之家 4 月 10 日消息，华为 WatchGT Runner 2 手表今日开售，提供破晓橙、驰光蓝、疾影黑三款配色，售价 2588 元，国补价 2199.8 元。<img class=\"no-alt-img\" src=\"https://img.ithome.com/newsuploadfiles/2026/4/d84",
+      "keyword": "IT之家",
+      "region": "China",
+      "published": "Fri, 10 Apr 2026 02:39:15 GMT"
+    },
+    {
+      "title": "利民 AI HydroNous R1 水冷迷你主机上市：128GB + 2TB 售 23990 元",
+      "url": "https://www.ithome.com/0/937/677.htm",
+      "snippet": "IT之家 4 月 10 日消息，Thermalright 利民昨日公布的 AI HydroNous R1 水冷迷你主机现已正式上市。其基于 AMD 锐龙 AI Max+ 395 \"Strix Halo\" 处理器，配备 128GB LPDDR5X-8000 内存和 2TB PCIe Gen4 SSD 存储，定价 23990 元。<p style=\"te",
+      "keyword": "IT之家",
+      "region": "China",
+      "published": "Fri, 10 Apr 2026 02:36:23 GMT"
+    },
+    {
+      "title": "摩托罗拉 Edge 70 Pro 手机渲染图曝光：3 种配色，6500mAh 电池",
+      "url": "https://www.ithome.com/0/937/676.htm",
+      "snippet": "IT之家 4 月 10 日消息，科技媒体 YtechB 昨日（4 月 9 日）发布博文，分享了一组高清渲染图，展示了摩托罗拉 Edge 70 Pro 手机，曝光 Pantone Titan、Pantone Zinfandel 及木纹三种配色，后续可能新增绿色缎面质感及云石纹理配色。配色方面，Pantone Titan 颜色接近蓝色，采用类尼龙定",
+      "keyword": "IT之家",
+      "region": "China",
+      "published": "Fri, 10 Apr 2026 02:34:15 GMT"
+    },
+    {
+      "title": "分享一个好用的Skill，企业背调、深度调研一键搞定！",
+      "url": "https://www.tmtpost.com/7946815.html",
+      "snippet": "你说一句话，AI 帮你查。秒级出结果，分钟级出报告、产业地图。",
+      "keyword": "钛媒体",
+      "region": "China",
+      "published": "Fri, 10 Apr 2026 10:55:24 +0800"
+    },
+    {
+      "title": "OpenAI美女高管离职：94年斯坦福学霸，亲手打造爆火的GPT-4o",
+      "url": "https://www.tmtpost.com/7947750.html",
+      "snippet": "“GPT-4o之母”离职。",
+      "keyword": "钛媒体",
+      "region": "China",
+      "published": "Fri, 10 Apr 2026 10:30:00 +0800"
+    },
+    {
+      "title": "对话两位AI创业者：在技术的快速变迁中，抓住那些“不变”的东西",
+      "url": "https://www.tmtpost.com/7947741.html",
+      "snippet": "从Next Token到Next State。",
+      "keyword": "钛媒体",
+      "region": "China",
+      "published": "Fri, 10 Apr 2026 10:23:00 +0800"
+    }
+  ]
+}

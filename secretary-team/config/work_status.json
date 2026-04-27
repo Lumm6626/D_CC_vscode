@@ -1,0 +1,16 @@
+{
+  "last_active": "2026-03-25 21:25",
+  "news_last_run": null,
+  "daily_last_run": null,
+  "md_news_last_run": null,
+  "pending_tasks": [],
+  "completed_tasks": [
+    {
+      "type": "news",
+      "status": "completed",
+      "details": "生成AI新闻早报",
+      "time": "2026-03-25 21:25"
+    }
+  ],
+  "user_goals": []
+}
