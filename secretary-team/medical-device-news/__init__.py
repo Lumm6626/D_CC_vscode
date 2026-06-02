@@ -1,1 +1,0 @@
-# Medical Device News Module
