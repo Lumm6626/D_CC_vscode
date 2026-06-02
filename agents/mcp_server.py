@@ -10,36 +10,30 @@ import subprocess
 
 # 服务映射
 SERVICES = {
-    "feishu-sync": {
-        "module": "feishu_sync.server",
-        "class": "FeishuSync",
+    "ai-news": {
+        "module": "news.ai_news.server",
+        "class": "AINewsServer",
         "methods": {
-            "sync": "同步飞书文档",
-            "test": "测试连接"
-        }
-    },
-    "news-daily": {
-        "module": "news_daily.server",
-        "class": "NewsDaily",
-        "methods": {
-            "generate": "生成新闻早报",
+            "generate": "生成AI新闻早报",
             "test": "测试搜索"
         }
     },
-    "daily-report": {
-        "module": "daily_report.server",
-        "class": "DailyReport",
+    "media-manager": {
+        "module": "media_manager.server",
+        "class": "MediaManager",
         "methods": {
-            "generate": "生成日报",
-            "check": "检查未回复邮件"
+            "scan": "扫描NAS媒体文件",
+            "classify": "分类媒体文件",
+            "search": "搜索媒体",
+            "stats": "获取统计信息"
         }
     },
-    "review-agent": {
-        "module": "review_agent.server",
-        "class": "ReviewAgent",
+    "code-review": {
+        "module": "engineering_agent.server",
+        "class": "CodeReviewAgent",
         "methods": {
-            "questions": "获取复盘问题",
-            "generate": "生成复盘文档"
+            "review": "审查代码质量和安全性",
+            "checklist": "查看审查清单"
         }
     },
     "video-subtitle": {

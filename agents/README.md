@@ -2,28 +2,16 @@
 
 ## 概述
 
-本项目包含5个Agent：
+本项目包含以下Agent：
 1. **LV (管家)** - 主协调者，协调所有子Agent
-2. **飞书助理** - 同步飞书云文档到本地
-3. **新闻助理** - 生成每日AI新闻早报
-4. **日报助理** - 查看未回复邮件并生成日报
-5. **复盘助理** - 引导式复盘对话
-
-## 配置
-
-### 1. 飞书配置
-编辑 `config/feishu_config.json`，填入您的飞书应用信息：
-```json
-{
-    "feishu_app_id": "您的App ID",
-    "feishu_app_secret": "您的App Secret"
-}
-```
-
-### 2. 邮箱配置
-编辑 `config/email_config.json`，已配置163邮箱：
-- IMAP: imap.163.com
-- SMTP: smtp.163.com
+2. **新闻助理** - 生成每日AI新闻早报
+3. **医疗器械新闻助理** - 生成医疗器械行业新闻
+4. **过敏新闻日报** - 过敏诊所行业新闻日报
+5. **媒体管家** - NAS媒体文件扫描、分类、重命名
+6. **设计师 (Designer)** - 前端界面设计、图片设计、UI/UX，输出设计规范和React代码
+7. **工程师 (Engineer)** - 后端功能和代码开发（FastAPI），按API契约交付
+8. **代码审查 (Code Review)** - 审查代码质量、安全漏洞、逻辑正确性
+9. **自我进化助理** - 记录和分析工作历史
 
 ## 使用方式
 
@@ -39,22 +27,33 @@ python agents/lv-coordinator/server.py --request "生成今日新闻早报"
 ### 单独使用各助理
 
 ```bash
-# 飞书同步
-python agents/feishu-sync/server.py --test
-
-# 新闻早报
+# AI新闻早报
 python agents/news/ai-news/server.py
 
-# 日报生成
-python agents/daily-report/server.py
+# 医疗器械新闻
+python agents/news/medical-device-news/server.py
+
+# 媒体管理
+python agents/media-manager/server.py
+
+# 设计师
+python agents/designer/server.py
+
+# 工程师
+python agents/engineer/server.py
 
 # 复盘对话
 python agents/review-agent/server.py --interactive
 ```
 
+## 配置
+
+编辑 `agents/config/` 下的对应配置文件。
+
 ## 输出目录
 
-- 飞书文档: `agents/feishu-sync/docs/`
 - 新闻早报: `agents/news/ai-news/output/YYYY-MM-DD/`
-- 日报: `agents/daily-report/output/`
+- 医疗器械新闻: `agents/news/medical-device-news/output/YYYY-MM-DD/`
+- 过敏新闻: `agents/news/allergy-news-daily/output/`
+- 媒体管理: `agents/media-manager/output/`
 - 复盘: `agents/review-agent/output/`

@@ -43,8 +43,8 @@ class WorkStatus:
         return {
             "last_active": None,
             "news_last_run": None,
-            "daily_last_run": None,
             "md_news_last_run": None,
+            "media_scan_last_run": None,
             "pending_tasks": [],
             "completed_tasks": [],
             "user_goals": []
@@ -69,10 +69,10 @@ class WorkStatus:
             # 更新对应任务的最后运行时间
             if task_type == "news":
                 self.data["news_last_run"] = now
-            elif task_type == "daily":
-                self.data["daily_last_run"] = now
             elif task_type == "md_news":
                 self.data["md_news_last_run"] = now
+            elif task_type == "media_scan":
+                self.data["media_scan_last_run"] = now
         else:
             self.data["pending_tasks"] = [t for t in self.data["pending_tasks"] if t.get("type") != task_type]
             self.data["pending_tasks"].append(entry)
@@ -154,16 +154,9 @@ class LVCoordinator:
         # 新闻早报状态
         news_last = self.work_status.data.get("news_last_run")
         if news_last:
-            print(f"  📰 新闻早报: 上次运行 {news_last}")
+            print(f"  📰 AI新闻早报: 上次运行 {news_last}")
         else:
-            print(f"  📰 新闻早报: 尚未运行")
-
-        # 日报状态
-        daily_last = self.work_status.data.get("daily_last_run")
-        if daily_last:
-            print(f"  📋 工作日报: 上次运行 {daily_last}")
-        else:
-            print(f"  📋 工作日报: 尚未运行")
+            print(f"  📰 AI新闻早报: 尚未运行")
 
         # 医疗器械新闻状态
         md_news_last = self.work_status.data.get("md_news_last_run")
@@ -171,6 +164,13 @@ class LVCoordinator:
             print(f"  🏥 医疗器械新闻: 上次运行 {md_news_last}")
         else:
             print(f"  🏥 医疗器械新闻: 尚未运行")
+
+        # 媒体管理状态
+        media_last = self.work_status.data.get("media_scan_last_run")
+        if media_last:
+            print(f"  🎬 媒体管理: 上次扫描 {media_last}")
+        else:
+            print(f"  🎬 媒体管理: 尚未扫描")
 
         # 待完成任务
         pending = self.work_status.data.get("pending_tasks", [])
@@ -193,11 +193,12 @@ class LVCoordinator:
         print("\n🤔 请问有什么我可以帮您的？")
         print("\n我可以帮您：")
         print("  1. 📰 生成AI新闻早报")
-        print("  2. 📋 查看邮件生成工作日报")
-        print("  3. 📁 同步飞书云文档")
-        print("  4. 🏥 生成医疗器械新闻早报")
-        print("  5. 🔄 执行多个任务")
-        print("  6. ❓ 告诉我您的需求，我来帮您规划")
+        print("  2. 🏥 生成医疗器械新闻早报")
+        print("  3. 🎬 扫描/管理NAS媒体文件")
+        print("  4. 🔍 代码审查（安全/质量/逻辑）")
+        print("  5. 🎨 Designer - 前端界面/图片设计")
+        print("  6. ⚙️ Engineer - 后端功能和代码开发")
+        print("  7. ❓ 告诉我您的需求，我来帮您规划")
         print("\n或者直接输入您想做的事，我来帮您安排 👇")
 
     def start_interview(self, initial_request):
@@ -216,12 +217,18 @@ class LVCoordinator:
         request_lower = initial_request.lower()
 
         # 检查是否涉及具体任务
-        if any(k in request_lower for k in ["新闻", "早报"]):
+        if any(k in request_lower for k in ["新闻", "早报", "ai"]):
             self.current_interview["answers"]["has_news"] = True
-        if any(k in request_lower for k in ["日报", "邮件"]):
-            self.current_interview["answers"]["has_daily"] = True
-        if any(k in request_lower for k in ["飞书", "文档"]):
-            self.current_interview["answers"]["has_feishu"] = True
+        if any(k in request_lower for k in ["医疗", "器械", "医械"]):
+            self.current_interview["answers"]["has_md_news"] = True
+        if any(k in request_lower for k in ["媒体", "nas", "素材"]):
+            self.current_interview["answers"]["has_media"] = True
+        if any(k in request_lower for k in ["审查", "review", "代码"]):
+            self.current_interview["answers"]["has_code_review"] = True
+        if any(k in request_lower for k in ["设计", "ui", "界面", "页面"]):
+            self.current_interview["answers"]["has_ui"] = True
+        if any(k in request_lower for k in ["后端", "api", "接口", "开发"]):
+            self.current_interview["answers"]["has_backend"] = True
 
         print(f"\n📝 您的需求: {initial_request}")
         print("\n为了更好地帮您，我需要了解一些信息：\n")
@@ -273,11 +280,17 @@ class LVCoordinator:
         tasks = []
 
         if answers.get("has_news"):
-            tasks.append(("news", "生成AI新闻早报", "news-daily/server.py"))
-        if answers.get("has_daily"):
-            tasks.append(("daily", "生成工作日报", "daily-report/server.py"))
-        if answers.get("has_feishu"):
-            tasks.append(("feishu", "同步飞书文档", "feishu-sync/server.py"))
+            tasks.append(("news", "生成AI新闻早报", "news/ai-news/server.py"))
+        if answers.get("has_md_news"):
+            tasks.append(("md_news", "生成医疗器械新闻早报", "news/medical-device-news/server.py"))
+        if answers.get("has_media"):
+            tasks.append(("media_scan", "扫描NAS媒体文件", "media-manager/server.py"))
+        if answers.get("has_code_review"):
+            tasks.append(("code_review", "代码审查", "engineering-agent/server.py"))
+        if answers.get("has_ui"):
+            tasks.append(("ui_design", "UI设计", "designer/server.py"))
+        if answers.get("has_backend"):
+            tasks.append(("backend_dev", "后端开发", "engineer/server.py"))
 
         if tasks:
             print(f"\n📌 行动计划:")
@@ -355,20 +368,28 @@ class LVCoordinator:
             )
 
         # 检查是否是简单命令
-        if request_lower in ["1", "新闻", "早报"]:
-            self.execute_tasks([("news", "生成AI新闻早报", "news-daily/server.py")])
+        if request_lower in ["1", "新闻", "早报", "ai新闻"]:
+            self.execute_tasks([("news", "生成AI新闻早报", "news/ai-news/server.py")])
             return
 
-        if request_lower in ["2", "日报", "邮件"]:
-            self.execute_tasks([("daily", "生成工作日报", "daily-report/server.py")])
+        if request_lower in ["2", "医疗器械", "医械", "医疗新闻"]:
+            self.execute_tasks([("md_news", "生成医疗器械新闻早报", "news/medical-device-news/server.py")])
             return
 
-        if request_lower in ["3", "飞书", "文档"]:
-            self.execute_tasks([("feishu", "同步飞书文档", "feishu-sync/server.py")])
+        if request_lower in ["3", "媒体", "nas", "素材", "扫描"]:
+            self.execute_tasks([("media_scan", "扫描NAS媒体文件", "media-manager/server.py")])
             return
 
-        if request_lower in ["4", "医疗器械", "医械", "医疗新闻"]:
-            self.execute_tasks([("md_news", "生成医疗器械新闻早报", "medical-device-news/server.py")])
+        if request_lower in ["4", "审查", "review", "代码审查", "code review"]:
+            self.execute_tasks([("code_review", "代码审查", "engineering-agent/server.py")])
+            return
+
+        if request_lower in ["5", "设计", "ui", "界面", "页面"]:
+            self.execute_tasks([("ui_design", "UI设计", "designer/server.py")])
+            return
+
+        if request_lower in ["6", "后端", "api", "接口", "开发"]:
+            self.execute_tasks([("backend_dev", "后端开发", "engineer/server.py")])
             return
 
         # 如果是复杂需求，开启采访模式
@@ -398,14 +419,15 @@ class LVCoordinator:
                         break
 
                     # 检查是否是命令
-                    if user_input in ["1", "2", "3", "4", "5", "6"]:
+                    if user_input in ["1", "2", "3", "4", "5", "6", "7"]:
                         commands = {
                             "1": "生成AI新闻早报",
-                            "2": "生成工作日报",
-                            "3": "同步飞书文档",
-                            "4": "生成医疗器械新闻早报",
-                            "5": "执行多个任务",
-                            "6": "告诉我需求"
+                            "2": "生成医疗器械新闻早报",
+                            "3": "扫描NAS媒体素材",
+                            "4": "审查代码",
+                            "5": "帮我做UI设计",
+                            "6": "帮我做后端开发",
+                            "7": "告诉我需求"
                         }
                         user_input = commands[user_input]
 
