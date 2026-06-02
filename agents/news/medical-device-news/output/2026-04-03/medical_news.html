@@ -1,0 +1,507 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>医疗器械新闻 - 2026-04-03</title>
+    <style>
+        body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; max-width: 800px; margin: 0 auto; padding: 20px; background: #f5f5f5; }
+        .header { background: linear-gradient(135deg, #00acc1 0%, #00838f 100%); color: white; padding: 30px; border-radius: 10px; margin-bottom: 20px; }
+        .header h1 { margin: 0; font-size: 28px; }
+        .header p { margin: 10px 0 0 0; opacity: 0.9; }
+        .top10-section { background: white; padding: 25px; margin-bottom: 25px; border-radius: 12px; box-shadow: 0 2px 8px rgba(0,0,0,0.1); }
+        .top10-section h2 { margin: 0 0 15px 0; color: #1a1a1a; font-size: 20px; padding-bottom: 10px; border-bottom: 2px solid #00acc1; }
+        .top10-china { border-left: 4px solid #e53935; }
+        .top10-china h2 { border-bottom-color: #e53935; }
+        .top10-china .top10-item { background: #fff5f5; border-left-color: #e53935; }
+        .top10-china .top10-num { background: #e53935; }
+        .top10-global { border-left: 4px solid #1976d2; }
+        .top10-global h2 { border-bottom-color: #1976d2; }
+        .top10-global .top10-item { background: #f0f7ff; border-left-color: #1976d2; }
+        .top10-global .top10-num { background: #1976d2; }
+        .top10-list { display: flex; flex-direction: column; gap: 10px; }
+        .top10-item { display: flex; gap: 12px; padding: 12px; border-radius: 8px; }
+        .top10-num { color: white; width: 24px; height: 24px; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 12px; font-weight: bold; flex-shrink: 0; }
+        .top10-content { flex: 1; }
+        .top10-title { font-size: 14px; font-weight: 600; color: #333; line-height: 1.4; }
+        .top10-title a { color: #333; text-decoration: none; }
+        .top10-title a:hover { color: #00acc1; }
+        .top10-desc { font-size: 13px; color: #444; line-height: 1.6; margin-top: 6px; font-weight: 500; }
+        .top10-meta { font-size: 12px; color: #888; margin-top: 4px; }
+        .summary-section { background: white; padding: 25px; margin-bottom: 25px; border-radius: 12px; box-shadow: 0 2px 8px rgba(0,0,0,0.1); }
+        .summary-section h2 { margin: 0 0 20px 0; color: #1a1a1a; font-size: 20px; padding-bottom: 15px; border-bottom: 2px solid #00acc1; }
+        .category-tags { display: flex; flex-wrap: wrap; gap: 10px; margin-bottom: 20px; }
+        .cat-tag { background: linear-gradient(135deg, #00acc1 0%, #00838f 100%); color: white; padding: 8px 16px; border-radius: 20px; font-size: 14px; }
+        .highlight-list { display: flex; flex-direction: column; gap: 12px; }
+        .highlight-item { display: flex; align-items: flex-start; gap: 12px; padding: 15px; background: #f8f9fa; border-radius: 10px; border-left: 4px solid #00acc1; }
+        .highlight-num { background: #00acc1; color: white; width: 28px; height: 28px; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 14px; font-weight: bold; flex-shrink: 0; }
+        .highlight-content { flex: 1; }
+        .highlight-title { font-size: 16px; font-weight: 600; color: #333; line-height: 1.5; margin-bottom: 5px; }
+        .highlight-snippet { font-size: 13px; color: #666; line-height: 1.5; margin: 5px 0; }
+        .highlight-meta { font-size: 13px; color: #888; }
+        .chinese-summary { margin-top: 20px; }
+        .chinese-summary h3 { color: #333; font-size: 18px; margin-bottom: 15px; }
+        .news-item { background: white; padding: 20px; margin-bottom: 15px; border-radius: 8px; box-shadow: 0 2px 4px rgba(0,0,0,0.1); }
+        .news-date { color: #999; font-size: 12px; margin-bottom: 5px; }
+        .news-item h3 { margin: 0 0 10px 0; color: #333; }
+        .news-item a { color: #00acc1; text-decoration: none; }
+        .snippet { color: #666; font-size: 14px; line-height: 1.6; }
+        .tag { display: inline-block; background: #e8f4f8; color: #2a7bb0; padding: 2px 8px; border-radius: 4px; font-size: 12px; margin-right: 8px; }
+        .tag-china { background: #ffeaea; color: #d32f2f; }
+        .tag-foreign { background: #e3f2fd; color: #1976d2; }
+        .news-meta { margin-top: 10px; display: flex; align-items: center; flex-wrap: wrap; gap: 5px; }
+        .section-title { font-size: 16px; font-weight: bold; color: #333; margin: 20px 0 15px 0; padding-bottom: 10px; border-bottom: 2px solid #00acc1; }
+        .footer { text-align: center; color: #999; margin-top: 30px; font-size: 12px; }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h1>医疗器械新闻 Daily</h1>
+        <p>2026-04-03 | 18 articles</p>
+    </div>
+
+    
+    <div class="top10-section top10-global">
+        <h2>🌍 海外医疗器械新闻 Top 10</h2>
+        <div class="top10-list">
+            <div class="top10-item">
+                <span class="top10-num">1</span>
+                <div class="top10-content">
+                    <div class="top10-title"><a href="https://www.fiercebiotech.com/medtech/epia-neuro-launches-bci-device-help-stroke-patients-rework-their-brain-signals" target="_blank">Epia Neuro推出BCI设备，帮助中风患者重新处理大脑信号</a></div>
+                    <div class="top10-desc">Epia Neuro是最新的医疗技术初创公司，旨在挖掘脑机接口技术的潜力，推出一款旨在将大脑信号转化为数字命令的设备。</div>
+                    <div class="top10-meta">
+                        <span class="top10-date">, 2026 9:15</span>
+                    </div>
+                </div>
+            </div>
+            <div class="top10-item">
+                <span class="top10-num">2</span>
+                <div class="top10-content">
+                    <div class="top10-title"><a href="https://www.medtecheurope.org/2026/03/05/eu-us-trade-framework-developments-on-us-tariff-measures/" target="_blank">欧盟-美国贸易框架：美国关税措施的发展</a></div>
+                    <div class="top10-desc">On 20 February 2026, the US Supreme Court ruled that the International Emergency Economic Powers Act (IEEPA) does not provide legal authority to</div>
+                    <div class="top10-meta">
+                        <span class="top10-date">03-05 07:00</span>
+                    </div>
+                </div>
+            </div>
+            <div class="top10-item">
+                <span class="top10-num">3</span>
+                <div class="top10-content">
+                    <div class="top10-title"><a href="https://www.medtecheurope.org/2026/03/05/medtech-europe-joins-first-in-person-hera-industrial-cooperation-forum/" target="_blank">MedTech Europe首次亲自参加HERA产业合作论坛</a></div>
+                    <div class="top10-desc">On 6 February 2026, MedTech Europe participated in the first in-person meeting of the HERA Industrial Cooperation Forum. Under its renewed mandate,</div>
+                    <div class="top10-meta">
+                        <span class="top10-date">03-05 07:00</span>
+                    </div>
+                </div>
+            </div>
+            <div class="top10-item">
+                <span class="top10-num">4</span>
+                <div class="top10-content">
+                    <div class="top10-title"><a href="https://www.medtecheurope.org/2026/03/05/eu-switzerland-relations-renewed-momentum-on-mutual-recognition/" target="_blank">欧盟-瑞士关系：相互承认的新势头</a></div>
+                    <div class="top10-desc">On 2 March 2026, the European Union and Switzerland signed a broad package of agreements aimed at strengthening cooperation and providing a more</div>
+                    <div class="top10-meta">
+                        <span class="top10-date">03-05 07:00</span>
+                    </div>
+                </div>
+            </div>
+            <div class="top10-item">
+                <span class="top10-num">5</span>
+                <div class="top10-content">
+                    <div class="top10-title"><a href="https://www.medtecheurope.org/2026/03/05/ihi-call-12-preparation-explore-in-kind-contributions-and-contributing-partners/" target="_blank">IHI CALL 12准备：探索实物捐助和捐助伙伴</a></div>
+                    <div class="top10-desc">The Innovative Health Initiative (IHI) office supports consortia preparing proposals for the call 12 – a single-stage, applicant-driven call – by</div>
+                    <div class="top10-meta">
+                        <span class="top10-date">03-05 07:00</span>
+                    </div>
+                </div>
+            </div>
+            <div class="top10-item">
+                <span class="top10-num">6</span>
+                <div class="top10-content">
+                    <div class="top10-title"><a href="https://www.medtecheurope.org/2026/03/05/climate-and-health-medtech-europe-participates-in-european-commission-consultation-on-integrated-climate-resilience-framework/" target="_blank">气候与健康：欧洲MedTech参与欧盟委员会关于综合气候适应力框架的磋商</a></div>
+                    <div class="top10-desc">In February 2026, MedTech Europe responded to the European Commission public consultation on the upcoming Integrated Climate Resilience Framework</div>
+                    <div class="top10-meta">
+                        <span class="top10-date">03-05 07:00</span>
+                    </div>
+                </div>
+            </div>
+            <div class="top10-item">
+                <span class="top10-num">7</span>
+                <div class="top10-content">
+                    <div class="top10-title"><a href="https://www.medtecheurope.org/2026/03/05/implementing-act-on-notified-bodies/" target="_blank">实施《公告机构法》要求：恢复可预测性的务实的第一步</a></div>
+                    <div class="top10-desc">Short-term measures are needed to stabilise the way in which Europe regulates medical technologies. It is critical to ensure that medical</div>
+                    <div class="top10-meta">
+                        <span class="top10-date">03-05 07:00</span>
+                    </div>
+                </div>
+            </div>
+            <div class="top10-item">
+                <span class="top10-num">8</span>
+                <div class="top10-content">
+                    <div class="top10-title"><a href="https://www.medtecheurope.org/2026/03/05/one-market-one-voice-industry-calls-for-common-rules-in-circular-economy-act/" target="_blank">一个市场，一个声音：行业呼吁循环经济法案中的共同规则</a></div>
+                    <div class="top10-desc">MedTech Europe joins 65 industry associations in their call for an internal market legal basis to drive waste management step-change in the New</div>
+                    <div class="top10-meta">
+                        <span class="top10-date">03-05 07:00</span>
+                    </div>
+                </div>
+            </div>
+            <div class="top10-item">
+                <span class="top10-num">9</span>
+                <div class="top10-content">
+                    <div class="top10-title"><a href="https://www.medtecheurope.org/2026/02/12/mecomed-and-medtech-europe-bring-global-and-regional-leaders-at-whx-dubai-2026-to-advance-medtech-collaboration-and-policy-alignment/" target="_blank">Mecomed和MedTech Europe携手全球和区域领导者参加WHX迪拜2026 ，推进医疗技术合作和政策协调</a></div>
+                    <div class="top10-desc">February 11, 2026: Dubai, United Arab Emirates – Mecomed, the Medical Technology Association in the Middle East and Africa, and MedTech Europe, the</div>
+                    <div class="top10-meta">
+                        <span class="top10-date">02-12 10:45</span>
+                    </div>
+                </div>
+            </div>
+            <div class="top10-item">
+                <span class="top10-num">10</span>
+                <div class="top10-content">
+                    <div class="top10-title"><a href="https://www.medtecheurope.org/2026/02/05/ready-for-the-next-medtech-forum-registrations-for-the-medtech-forum-2026-are-open/" target="_blank">准备好迎接下一届医疗技术论坛了吗？ MedTech Forum 2026的注册现已开放</a></div>
+                    <div class="top10-desc">Registrations for The MedTech Forum 2026 are officially open. Europe’s largest health and medical technology conference will take place in Stockholm</div>
+                    <div class="top10-meta">
+                        <span class="top10-date">02-05 10:32</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    
+    <div class="summary-section">
+        <h2>Medical Device Daily Highlights</h2>
+        <div class="category-tags"><span class="cat-tag">REG Regulatory/批准 (9)</span><span class="cat-tag">NEWS Other/其他 (8)</span><span class="cat-tag">BIZ Market/Business/市场商业 (1)</span></div>
+
+        <div class="chinese-summary">
+            <h3>Top 10 Medical Device News</h3>
+            
+            <div class="highlight-item">
+                <span class="highlight-num">1</span>
+                <div class="highlight-content">
+                    <div class="highlight-title">
+                        <a href="https://www.fiercebiotech.com/medtech/epia-neuro-launches-bci-device-help-stroke-patients-rework-their-brain-signals" target="_blank" style="color: #333; text-decoration: none;">Epia Neuro推出BCI设备，帮助中风患者重新处理大脑信号</a>
+                    </div>
+                    <p class="highlight-snippet" style="color: #444; font-size: 13px; margin: 8px 0; line-height: 1.5; font-weight: 500;">Epia Neuro是最新的医疗技术初创公司，旨在挖掘脑机接口技术的潜力，推出一款旨在将大脑信号转化为数字命令的设备。</p>
+                    <div class="highlight-meta">
+                        <span class="highlight-date">, 2026 9:15</span> |
+                        <span class="highlight-source">FierceBiotech</span> |
+                        <span style="color: #1976d2;">🌍 海外</span>
+                    </div>
+                </div>
+            </div>
+            <div class="highlight-item">
+                <span class="highlight-num">2</span>
+                <div class="highlight-content">
+                    <div class="highlight-title">
+                        <a href="https://www.medtecheurope.org/2026/03/05/eu-us-trade-framework-developments-on-us-tariff-measures/" target="_blank" style="color: #333; text-decoration: none;">欧盟-美国贸易框架：美国关税措施的发展</a>
+                    </div>
+                    <p class="highlight-snippet" style="color: #444; font-size: 13px; margin: 8px 0; line-height: 1.5; font-weight: 500;">On 20 February 2026, the US Supreme Court ruled that the International Emergency Economic Powers Act (IEEPA) does not provide legal authority to</p>
+                    <div class="highlight-meta">
+                        <span class="highlight-date">03-05 07:00</span> |
+                        <span class="highlight-source">MedTech Europe</span> |
+                        <span style="color: #1976d2;">🌍 海外</span>
+                    </div>
+                </div>
+            </div>
+            <div class="highlight-item">
+                <span class="highlight-num">3</span>
+                <div class="highlight-content">
+                    <div class="highlight-title">
+                        <a href="https://www.medtecheurope.org/2026/03/05/medtech-europe-joins-first-in-person-hera-industrial-cooperation-forum/" target="_blank" style="color: #333; text-decoration: none;">MedTech Europe首次亲自参加HERA产业合作论坛</a>
+                    </div>
+                    <p class="highlight-snippet" style="color: #444; font-size: 13px; margin: 8px 0; line-height: 1.5; font-weight: 500;">On 6 February 2026, MedTech Europe participated in the first in-person meeting of the HERA Industrial Cooperation Forum. Under its renewed mandate,</p>
+                    <div class="highlight-meta">
+                        <span class="highlight-date">03-05 07:00</span> |
+                        <span class="highlight-source">MedTech Europe</span> |
+                        <span style="color: #1976d2;">🌍 海外</span>
+                    </div>
+                </div>
+            </div>
+            <div class="highlight-item">
+                <span class="highlight-num">4</span>
+                <div class="highlight-content">
+                    <div class="highlight-title">
+                        <a href="https://www.medtecheurope.org/2026/03/05/eu-switzerland-relations-renewed-momentum-on-mutual-recognition/" target="_blank" style="color: #333; text-decoration: none;">欧盟-瑞士关系：相互承认的新势头</a>
+                    </div>
+                    <p class="highlight-snippet" style="color: #444; font-size: 13px; margin: 8px 0; line-height: 1.5; font-weight: 500;">On 2 March 2026, the European Union and Switzerland signed a broad package of agreements aimed at strengthening cooperation and providing a more</p>
+                    <div class="highlight-meta">
+                        <span class="highlight-date">03-05 07:00</span> |
+                        <span class="highlight-source">MedTech Europe</span> |
+                        <span style="color: #1976d2;">🌍 海外</span>
+                    </div>
+                </div>
+            </div>
+            <div class="highlight-item">
+                <span class="highlight-num">5</span>
+                <div class="highlight-content">
+                    <div class="highlight-title">
+                        <a href="https://www.medtecheurope.org/2026/03/05/ihi-call-12-preparation-explore-in-kind-contributions-and-contributing-partners/" target="_blank" style="color: #333; text-decoration: none;">IHI CALL 12准备：探索实物捐助和捐助伙伴</a>
+                    </div>
+                    <p class="highlight-snippet" style="color: #444; font-size: 13px; margin: 8px 0; line-height: 1.5; font-weight: 500;">The Innovative Health Initiative (IHI) office supports consortia preparing proposals for the call 12 – a single-stage, applicant-driven call – by</p>
+                    <div class="highlight-meta">
+                        <span class="highlight-date">03-05 07:00</span> |
+                        <span class="highlight-source">MedTech Europe</span> |
+                        <span style="color: #1976d2;">🌍 海外</span>
+                    </div>
+                </div>
+            </div>
+            <div class="highlight-item">
+                <span class="highlight-num">6</span>
+                <div class="highlight-content">
+                    <div class="highlight-title">
+                        <a href="https://www.medtecheurope.org/2026/03/05/climate-and-health-medtech-europe-participates-in-european-commission-consultation-on-integrated-climate-resilience-framework/" target="_blank" style="color: #333; text-decoration: none;">气候与健康：欧洲MedTech参与欧盟委员会关于综合气候适应力框架的磋商</a>
+                    </div>
+                    <p class="highlight-snippet" style="color: #444; font-size: 13px; margin: 8px 0; line-height: 1.5; font-weight: 500;">In February 2026, MedTech Europe responded to the European Commission public consultation on the upcoming Integrated Climate Resilience Framework</p>
+                    <div class="highlight-meta">
+                        <span class="highlight-date">03-05 07:00</span> |
+                        <span class="highlight-source">MedTech Europe</span> |
+                        <span style="color: #1976d2;">🌍 海外</span>
+                    </div>
+                </div>
+            </div>
+            <div class="highlight-item">
+                <span class="highlight-num">7</span>
+                <div class="highlight-content">
+                    <div class="highlight-title">
+                        <a href="https://www.medtecheurope.org/2026/03/05/implementing-act-on-notified-bodies/" target="_blank" style="color: #333; text-decoration: none;">实施《公告机构法》要求：恢复可预测性的务实的第一步</a>
+                    </div>
+                    <p class="highlight-snippet" style="color: #444; font-size: 13px; margin: 8px 0; line-height: 1.5; font-weight: 500;">Short-term measures are needed to stabilise the way in which Europe regulates medical technologies. It is critical to ensure that medical</p>
+                    <div class="highlight-meta">
+                        <span class="highlight-date">03-05 07:00</span> |
+                        <span class="highlight-source">MedTech Europe</span> |
+                        <span style="color: #1976d2;">🌍 海外</span>
+                    </div>
+                </div>
+            </div>
+            <div class="highlight-item">
+                <span class="highlight-num">8</span>
+                <div class="highlight-content">
+                    <div class="highlight-title">
+                        <a href="https://www.medtecheurope.org/2026/03/05/one-market-one-voice-industry-calls-for-common-rules-in-circular-economy-act/" target="_blank" style="color: #333; text-decoration: none;">一个市场，一个声音：行业呼吁循环经济法案中的共同规则</a>
+                    </div>
+                    <p class="highlight-snippet" style="color: #444; font-size: 13px; margin: 8px 0; line-height: 1.5; font-weight: 500;">MedTech Europe joins 65 industry associations in their call for an internal market legal basis to drive waste management step-change in the New</p>
+                    <div class="highlight-meta">
+                        <span class="highlight-date">03-05 07:00</span> |
+                        <span class="highlight-source">MedTech Europe</span> |
+                        <span style="color: #1976d2;">🌍 海外</span>
+                    </div>
+                </div>
+            </div>
+            <div class="highlight-item">
+                <span class="highlight-num">9</span>
+                <div class="highlight-content">
+                    <div class="highlight-title">
+                        <a href="https://www.medtecheurope.org/2026/02/12/mecomed-and-medtech-europe-bring-global-and-regional-leaders-at-whx-dubai-2026-to-advance-medtech-collaboration-and-policy-alignment/" target="_blank" style="color: #333; text-decoration: none;">Mecomed和MedTech Europe携手全球和区域领导者参加WHX迪拜2026 ，推进医疗技术合作和政策协调</a>
+                    </div>
+                    <p class="highlight-snippet" style="color: #444; font-size: 13px; margin: 8px 0; line-height: 1.5; font-weight: 500;">February 11, 2026: Dubai, United Arab Emirates – Mecomed, the Medical Technology Association in the Middle East and Africa, and MedTech Europe, the</p>
+                    <div class="highlight-meta">
+                        <span class="highlight-date">02-12 10:45</span> |
+                        <span class="highlight-source">MedTech Europe</span> |
+                        <span style="color: #1976d2;">🌍 海外</span>
+                    </div>
+                </div>
+            </div>
+            <div class="highlight-item">
+                <span class="highlight-num">10</span>
+                <div class="highlight-content">
+                    <div class="highlight-title">
+                        <a href="https://www.medtecheurope.org/2026/02/05/ready-for-the-next-medtech-forum-registrations-for-the-medtech-forum-2026-are-open/" target="_blank" style="color: #333; text-decoration: none;">准备好迎接下一届医疗技术论坛了吗？ MedTech Forum 2026的注册现已开放</a>
+                    </div>
+                    <p class="highlight-snippet" style="color: #444; font-size: 13px; margin: 8px 0; line-height: 1.5; font-weight: 500;">Registrations for The MedTech Forum 2026 are officially open. Europe’s largest health and medical technology conference will take place in Stockholm</p>
+                    <div class="highlight-meta">
+                        <span class="highlight-date">02-05 10:32</span> |
+                        <span class="highlight-source">MedTech Europe</span> |
+                        <span style="color: #1976d2;">🌍 海外</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="section-title">[All News]</div>
+    
+    <div class="news-item">
+        <div class="news-date">, 2026 9:15</div>
+        <h3>1. Epia Neuro 上市es with BCI 器械 to help stroke 患者s rework brain signals</h3>
+        <p class="snippet">Epia Neuro is the latest medtech startup looking to tap the potential of brain-computer interface technology, launching with a device that aims to turn brain signals into digital commands.</p>
+        <div class="news-meta">
+            <a href="https://www.fiercebiotech.com/medtech/epia-neuro-launches-bci-device-help-stroke-patients-rework-their-brain-signals" target="_blank">原文</a>
+            <span class="tag">FierceBiotech</span>
+            <span class="tag tag-foreign">EN</span>
+        </div>
+    </div>
+    <div class="news-item">
+        <div class="news-date">03-05 07:00</div>
+        <h3>2. EU–美国 trade framework: developments on 美国 tariff measures</h3>
+        <p class="snippet">On 20 February 2026, the US Supreme Court ruled that the International Emergency Economic Powers Act (IEEPA) does not provide legal authority to impose tariffs. The US Administration subsequently introduced 10% global tariffs under Section 122 of the Trade Act of 1974. Section 122 provides a lega</p>
+        <div class="news-meta">
+            <a href="https://www.medtecheurope.org/2026/03/05/eu-us-trade-framework-developments-on-us-tariff-measures/" target="_blank">原文</a>
+            <span class="tag">MedTech Europe</span>
+            <span class="tag tag-foreign">EN</span>
+        </div>
+    </div>
+    <div class="news-item">
+        <div class="news-date">03-05 07:00</div>
+        <h3>3. MedTech 欧洲 joins 首个 in‑person HERA Industrial Cooperation Forum</h3>
+        <p class="snippet">On 6 February 2026, MedTech Europe participated in the first in-person meeting of the HERA Industrial Cooperation Forum. Under its renewed mandate, the Forum aims to reinforce the participation of industry and EU Member States, creating a structured platform for dialogue between diverse stakehold</p>
+        <div class="news-meta">
+            <a href="https://www.medtecheurope.org/2026/03/05/medtech-europe-joins-first-in-person-hera-industrial-cooperation-forum/" target="_blank">原文</a>
+            <span class="tag">MedTech Europe</span>
+            <span class="tag tag-foreign">EN</span>
+        </div>
+    </div>
+    <div class="news-item">
+        <div class="news-date">03-05 07:00</div>
+        <h3>4. EU–Switzerland relations: re新ed momentum on mutual recognition</h3>
+        <p class="snippet">On 2 March 2026, the European Union and Switzerland signed a broad package of agreements aimed at strengthening cooperation and providing a more stable framework for market access. The package updates several existing agreements, including the Mutual Recognition Agreement (MRA). It provides for a</p>
+        <div class="news-meta">
+            <a href="https://www.medtecheurope.org/2026/03/05/eu-switzerland-relations-renewed-momentum-on-mutual-recognition/" target="_blank">原文</a>
+            <span class="tag">MedTech Europe</span>
+            <span class="tag tag-foreign">EN</span>
+        </div>
+    </div>
+    <div class="news-item">
+        <div class="news-date">03-05 07:00</div>
+        <h3>5. IHI call 12 preparation: explore in-kind contributions and contributing partners</h3>
+        <p class="snippet">The Innovative Health Initiative (IHI) office supports consortia preparing proposals for the call 12 – a single-stage, applicant-driven call – by offering a wide range of practical resources to help them submit strong proposals. One of these resources is the upcoming webinar on 11 March 2026, tit</p>
+        <div class="news-meta">
+            <a href="https://www.medtecheurope.org/2026/03/05/ihi-call-12-preparation-explore-in-kind-contributions-and-contributing-partners/" target="_blank">原文</a>
+            <span class="tag">MedTech Europe</span>
+            <span class="tag tag-foreign">EN</span>
+        </div>
+    </div>
+    <div class="news-item">
+        <div class="news-date">03-05 07:00</div>
+        <h3>6. Climate and health: MedTech 欧洲 participates in 欧洲an Commission consultation on Integrated Climate Resilience Framework</h3>
+        <p class="snippet">In February 2026, MedTech Europe responded to the European Commission public consultation on the upcoming Integrated Climate Resilience Framework calling for a holistic healthcare system response to pressures stemming from climate change. Smart investments, better co-ordination, consistent policy</p>
+        <div class="news-meta">
+            <a href="https://www.medtecheurope.org/2026/03/05/climate-and-health-medtech-europe-participates-in-european-commission-consultation-on-integrated-climate-resilience-framework/" target="_blank">原文</a>
+            <span class="tag">MedTech Europe</span>
+            <span class="tag tag-foreign">EN</span>
+        </div>
+    </div>
+    <div class="news-item">
+        <div class="news-date">03-05 07:00</div>
+        <h3>7. Implementing Act on Notified Bodies requirements: a pragmatic 首个 step to restore predictability</h3>
+        <p class="snippet">Short-term measures are needed to stabilise the way in which Europe regulates medical technologies. It is critical to ensure that medical technologies can reach patients in a timely manner. Companies also need to know how to plan in their resources and how long they need until they can get certif</p>
+        <div class="news-meta">
+            <a href="https://www.medtecheurope.org/2026/03/05/implementing-act-on-notified-bodies/" target="_blank">原文</a>
+            <span class="tag">MedTech Europe</span>
+            <span class="tag tag-foreign">EN</span>
+        </div>
+    </div>
+    <div class="news-item">
+        <div class="news-date">03-05 07:00</div>
+        <h3>8. One 市场 one voice: industry calls for common rules in Circular Economy Act</h3>
+        <p class="snippet">MedTech Europe joins 65 industry associations in their call for an internal market legal basis to drive waste management step-change in the New Circular Economy Act announced for Q3/2026. Today’s waste management landscape across the EU remains extremely fragmented, marked by uneven performance a</p>
+        <div class="news-meta">
+            <a href="https://www.medtecheurope.org/2026/03/05/one-market-one-voice-industry-calls-for-common-rules-in-circular-economy-act/" target="_blank">原文</a>
+            <span class="tag">MedTech Europe</span>
+            <span class="tag tag-foreign">EN</span>
+        </div>
+    </div>
+    <div class="news-item">
+        <div class="news-date">02-12 10:45</div>
+        <h3>9. Mecomed and MedTech 欧洲 bring global and regional leaders at WHX Dubai 2026 to advance medtech collaboration and policy alignment</h3>
+        <p class="snippet">February 11, 2026: Dubai, United Arab Emirates – Mecomed, the Medical Technology Association in the Middle East and Africa, and MedTech Europe, the European trade association for medical technology industry, today brought together global and regional stakeholders for an exclusive Mecomed &#38; Me</p>
+        <div class="news-meta">
+            <a href="https://www.medtecheurope.org/2026/02/12/mecomed-and-medtech-europe-bring-global-and-regional-leaders-at-whx-dubai-2026-to-advance-medtech-collaboration-and-policy-alignment/" target="_blank">原文</a>
+            <span class="tag">MedTech Europe</span>
+            <span class="tag tag-foreign">EN</span>
+        </div>
+    </div>
+    <div class="news-item">
+        <div class="news-date">02-05 10:32</div>
+        <h3>10. Ready for the next MedTech Forum? Registrations for The MedTech Forum 2026 are open</h3>
+        <p class="snippet">Registrations for The MedTech Forum 2026 are officially open. Europe’s largest health and medical technology conference will take place in Stockholm from 11 to 13 May 2026. It will gather the medical technology community for three days filled with inspiring talks, expert insights, and networking</p>
+        <div class="news-meta">
+            <a href="https://www.medtecheurope.org/2026/02/05/ready-for-the-next-medtech-forum-registrations-for-the-medtech-forum-2026-are-open/" target="_blank">原文</a>
+            <span class="tag">MedTech Europe</span>
+            <span class="tag tag-foreign">EN</span>
+        </div>
+    </div>
+    <div class="news-item">
+        <div class="news-date">02-05 09:09</div>
+        <h3>11. 欧洲an Commission’s high-level conference on medical 器械s: 创新 and 患者 安全</h3>
+        <p class="snippet">The European Commission is organising a High-Level Conference on medical devices on 16 March 2026 in Brussels. This important event will feature a wide range of participants, including the Commissioner for Health, Olivér Várhelyi, representatives from EU regulatory authorities, representatives fr</p>
+        <div class="news-meta">
+            <a href="https://www.medtecheurope.org/2026/02/05/european-commissions-high-level-conference-on-medical-devices-innovation-and-patient-safety/" target="_blank">原文</a>
+            <span class="tag">MedTech Europe</span>
+            <span class="tag tag-foreign">EN</span>
+        </div>
+    </div>
+    <div class="news-item">
+        <div class="news-date">03-02 18:19</div>
+        <h3>12. AdvaMed® Awards: Celebrating Medtech Career Excellence</h3>
+        <p class="snippet">AdvaMed® highlights its annual Awards program recognizing leaders whose careers have advanced innovation, patient access, and excellence across the medtech ecosystem. The post AdvaMed® Awards: Celebr</p>
+        <div class="news-meta">
+            <a href="https://www.advamed.org/2026/03/02/awards-celebrating-medtech-career-excellence/" target="_blank">原文</a>
+            <span class="tag">AdvaMed</span>
+            <span class="tag tag-foreign">EN</span>
+        </div>
+    </div>
+    <div class="news-item">
+        <div class="news-date">02-17 18:02</div>
+        <h3>13. Why Practical 美国FDA Submissions Training Makes the Difference</h3>
+        <p class="snippet">Explore AdvaMed's Medical Device Submissions Workshop Series from practical submission strategies to live expert insights you can apply immediately. The post Why Practical FDA Submissi</p>
+        <div class="news-meta">
+            <a href="https://www.advamed.org/2026/02/17/why-practical-fda-submissions-training-makes-the-difference/" target="_blank">原文</a>
+            <span class="tag">AdvaMed</span>
+            <span class="tag tag-foreign">EN</span>
+        </div>
+    </div>
+    <div class="news-item">
+        <div class="news-date">02-13 19:27</div>
+        <h3>14. The Pulse of Medtech Payment: Join Us at the 2026 Payment Policy Forum</h3>
+        <p class="snippet">The 2026AdvaMed® Payment Policy Forum takes place May 28–29 in Washington, D.C. at Hogan Lovells Office. Registration is now open, and as always,AdvaMed® members receive preferred pricing. The post <a href="https://www.advamed.org/2026/02/13/the-pulse-of-medtech-payment-join-us-at-the-2026</p>
+        <div class="news-meta">
+            <a href="https://www.advamed.org/2026/02/13/the-pulse-of-medtech-payment-join-us-at-the-2026-payment-policy-forum/" target="_blank">原文</a>
+            <span class="tag">AdvaMed</span>
+            <span class="tag tag-foreign">EN</span>
+        </div>
+    </div>
+    <div class="news-item">
+        <div class="news-date">02-13 15:01</div>
+        <h3>15. Heart Month: Why Sleep Apnea Belongs at the Center of Cardiovascular Care</h3>
+        <p class="snippet">February is American Heart Month—a time to spotlight cardiovascular disease and highlight innovations that can improve patient outcomes. For the medtech community, it’s an opportunity to address persistent gaps in care through technology, data, collaboration, and policy advancement. Despite progr</p>
+        <div class="news-meta">
+            <a href="https://www.advamed.org/2026/02/13/heart-month-why-sleep-apnea-belongs-at-the-center-of-cardiovascular-care/" target="_blank">原文</a>
+            <span class="tag">AdvaMed</span>
+            <span class="tag tag-foreign">EN</span>
+        </div>
+    </div>
+    <div class="news-item">
+        <div class="news-date">01-29 16:40</div>
+        <h3>16. Honoring Janet E Trunzo: A Legacy That Shaped Modern Medtech Regulation</h3>
+        <p class="snippet">After 30 years atAdvaMed®, Janet E. Trunzo, Senior Advisor to the President and Senior Executive Vice President of Technology and Regulatory Affairs, will retire on January 31, 2026. Her tenure has fundamentally shaped how medical devices are regulated in the United States and globally, establish</p>
+        <div class="news-meta">
+            <a href="https://www.advamed.org/2026/01/29/honoring-janet-e-trunzo-a-legacy-that-shaped-modern-medtech-regulation/" target="_blank">原文</a>
+            <span class="tag">AdvaMed</span>
+            <span class="tag tag-foreign">EN</span>
+        </div>
+    </div>
+    <div class="news-item">
+        <div class="news-date">01-26 19:00</div>
+        <h3>17. Why the Health Tech Investment Act Matters: Peter Weems Breaks Down What This Means for Patients</h3>
+        <p class="snippet">In a new video developed in partnership with Patients Rising, AdvaMed’s Peter Weems, Vice President of Imaging Government Affairs and Policy Strategy, explains why the Health Tech Investment Act is critical to expanding patient access to FDA-authorized AI-enabled medical devices. The post</p>
+        <div class="news-meta">
+            <a href="https://www.advamed.org/2026/01/26/why-the-health-tech-investment-act-matters-peter-weems-breaks-down-what-this-means-for-patients/" target="_blank">原文</a>
+            <span class="tag">AdvaMed</span>
+            <span class="tag tag-foreign">EN</span>
+        </div>
+    </div>
+    <div class="news-item">
+        <div class="news-date">01-21 21:44</div>
+        <h3>18. A Vision for Relentlessly Innovative Patient-Centered Medtech</h3>
+        <p class="snippet">Every era of health care has a defining challenge. Our challenge is not a lack of innovation; it’s whether innovation can reach patients fast enough, safely enough, and with global impact. As I begin my two-year term as chair of theAdvaMed® Board of Directors, I do so at a moment of enormous prom</p>
+        <div class="news-meta">
+            <a href="https://www.advamed.org/2026/01/21/a-vision-for-relentlessly-innovative-patient-centered-medtech/" target="_blank">原文</a>
+            <span class="tag">AdvaMed</span>
+            <span class="tag tag-foreign">EN</span>
+        </div>
+    </div>
+    <div class="footer">
+        Generated by Medical Device News Assistant
+    </div>
+</body>
+</html>

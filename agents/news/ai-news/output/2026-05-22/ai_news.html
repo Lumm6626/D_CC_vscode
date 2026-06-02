@@ -1,0 +1,999 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI News - 2026-05-22</title>
+    <style>
+        body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; max-width: 800px; margin: 0 auto; padding: 20px; background: #f5f5f5; }
+        .header { background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); color: white; padding: 30px; border-radius: 10px; margin-bottom: 20px; }
+        .header h1 { margin: 0; font-size: 28px; }
+        .header p { margin: 10px 0 0 0; opacity: 0.9; }
+        .top10-section { background: white; padding: 25px; margin-bottom: 25px; border-radius: 12px; box-shadow: 0 2px 8px rgba(0,0,0,0.1); }
+        .top10-section h2 { margin: 0 0 15px 0; color: #1a1a1a; font-size: 20px; padding-bottom: 10px; border-bottom: 2px solid #ff6b6b; }
+        .top10-china { border-left: 4px solid #ff6b6b; }
+        .top10-china h2 { border-bottom-color: #ff6b6b; }
+        .top10-china .top10-item { background: #fff5f5; border-left-color: #ff6b6b; }
+        .top10-china .top10-num { background: #ff6b6b; }
+        .top10-global { border-left: 4px solid #1976d2; }
+        .top10-global h2 { border-bottom-color: #1976d2; }
+        .top10-global .top10-item { background: #f0f7ff; border-left-color: #1976d2; }
+        .top10-global .top10-num { background: #1976d2; }
+        .top10-list { display: flex; flex-direction: column; gap: 10px; }
+        .top10-item { display: flex; gap: 12px; padding: 12px; border-radius: 8px; }
+        .top10-num { color: white; width: 24px; height: 24px; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 12px; font-weight: bold; flex-shrink: 0; }
+        .top10-content { flex: 1; }
+        .top10-title { font-size: 14px; font-weight: 600; color: #333; line-height: 1.4; }
+        .top10-title a { color: #333; text-decoration: none; }
+        .top10-title a:hover { color: #667eea; }
+        .top10-desc { font-size: 13px; color: #666; line-height: 1.4; margin-top: 4px; }
+        .summary-section { background: white; padding: 25px; margin-bottom: 25px; border-radius: 12px; box-shadow: 0 2px 8px rgba(0,0,0,0.1); }
+        .summary-section h2 { margin: 0 0 20px 0; color: #1a1a1a; font-size: 20px; padding-bottom: 15px; border-bottom: 2px solid #667eea; }
+        .category-tags { display: flex; flex-wrap: wrap; gap: 10px; margin-bottom: 20px; }
+        .cat-tag { background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); color: white; padding: 8px 16px; border-radius: 20px; font-size: 14px; }
+        .highlight-list { display: flex; flex-direction: column; gap: 12px; }
+        .highlight-item { display: flex; align-items: flex-start; gap: 12px; padding: 15px; background: #f8f9fa; border-radius: 10px; border-left: 4px solid #667eea; }
+        .highlight-num { background: #667eea; color: white; width: 28px; height: 28px; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 14px; font-weight: bold; flex-shrink: 0; }
+        .highlight-content { flex: 1; }
+        .highlight-title { font-size: 16px; font-weight: 600; color: #333; line-height: 1.5; margin-bottom: 5px; }
+        .highlight-title a { color: #333; text-decoration: none; }
+        .highlight-title a:hover { color: #667eea; }
+        .highlight-snippet { font-size: 13px; color: #666; line-height: 1.5; margin: 5px 0; }
+        .highlight-meta { font-size: 13px; color: #888; }
+        .chinese-summary { margin-top: 20px; }
+        .chinese-summary h3 { color: #333; font-size: 18px; margin-bottom: 15px; }
+        .news-item { background: white; padding: 20px; margin-bottom: 15px; border-radius: 8px; box-shadow: 0 2px 4px rgba(0,0,0,0.1); }
+        .news-date { color: #999; font-size: 12px; margin-bottom: 5px; }
+        .news-item h3 { margin: 0 0 10px 0; color: #333; }
+        .news-item a { color: #667eea; text-decoration: none; }
+        .snippet { color: #666; font-size: 14px; line-height: 1.6; }
+        .tag { display: inline-block; background: #e8f4f8; color: #2a7bb0; padding: 2px 8px; border-radius: 4px; font-size: 12px; margin-right: 8px; }
+        .tag-china { background: #ffeaea; color: #d32f2f; }
+        .tag-foreign { background: #e3f2fd; color: #1976d2; }
+        .news-meta { margin-top: 10px; display: flex; align-items: center; flex-wrap: wrap; gap: 5px; }
+        .section-title { font-size: 16px; font-weight: bold; color: #333; margin: 20px 0 15px 0; padding-bottom: 10px; border-bottom: 2px solid #667eea; }
+        .footer { text-align: center; color: #999; margin-top: 30px; font-size: 12px; }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h1>AI News Daily</h1>
+        <p>2026-05-22 | 59 articles</p>
+    </div>
+
+    
+    <div class="top10-section top10-china">
+        <h2>🇨🇳 中国科技新闻 Top 10</h2>
+        <div class="top10-list">
+            <div class="top10-item">
+                <span class="top10-num">1</span>
+                <div class="top10-content">
+                    <div class="top10-title"><a href="https://36kr.com/p/3819709302329735?f=rss" target="_blank">8 点1氪丨 “拉勾网”被曝主动申请破产 ；特斯拉 Model S和 X正式停产退役 ；三星内存工人 ，奖金或达 280万元</a></div>
+                    <div class="top10-desc">今日热点导览
+  马斯克或成全球首位万亿美元富翁
+  三星内存工人，奖金或达 280万元
+  东方甄选首家线下店正式营业
+  追觅俞浩回应“花4000万请员工去迪士尼”
+  妙鸭应用被曝团队解散</div>
+                </div>
+            </div>
+            <div class="top10-item">
+                <span class="top10-num">2</span>
+                <div class="top10-content">
+                    <div class="top10-title"><a href="https://36kr.com/p/3816942732133510?f=rss" target="_blank">氪星晚报｜马斯克旗下 SpaceX启动史上最大规模 IPO计划全国首张综合性司机服务地图上线 ；海关总署在粤发布《海关支持粤港澳大湾区建设若干措施》</a></div>
+                    <div class="top10-desc">大公司：
+  SpaceX 据悉计划五年内实现每年1万次发射
+  据美国联邦航空管理局（ FA</div>
+                </div>
+            </div>
+            <div class="top10-item">
+                <span class="top10-num">3</span>
+                <div class="top10-content">
+                    <div class="top10-title"><a href="https://36kr.com/p/3818927367046018?f=rss" target="_blank">新石器NewClaw ： AI一体化解决方案 ，零门槛当无人车指挥官 | 2026AI合作伙伴·北京亦庄 AI +产业大会</a></div>
+                    <div class="top10-desc">管理一千台无人车需要多少人？答案是：一个人 ，一部手机 ，一句话。当自动驾驶逐渐“平权”，真正的瓶颈从技术转向了规模化运营。
+  
+  新石器用七年时间走完从合规落地、规模量产到万台运营的三级跳，如今推出</div>
+                </div>
+            </div>
+            <div class="top10-item">
+                <span class="top10-num">4</span>
+                <div class="top10-content">
+                    <div class="top10-title"><a href="https://36kr.com/p/3818915823764610?f=rss" target="_blank">业绩快报 | 唯品会一季度净营收266亿元 ， SVIP用户贡献超 50%线上销售额</a></div>
+                    <div class="top10-desc">5 月21日美股盘前 ，唯品会发布 2025年第一季度财报。一季度内唯品会实现净营收非亿元人民币GAAP下同净利润 23亿元。
+  观察核心运营数据，一季度其实现商品交易总额 （ GMV ） 5</div>
+                </div>
+            </div>
+            <div class="top10-item">
+                <span class="top10-num">5</span>
+                <div class="top10-content">
+                    <div class="top10-title"><a href="https://36kr.com/p/3818903062004870?f=rss" target="_blank">从概念到产线一AI在工业制造领域的深水区探索 | 2026AI合作伙伴·北京亦庄 AI +产业大会</a></div>
+                    <div class="top10-desc">AI 在工业制造领域，不是 “锦上添花”的辅助工具 ，而是 “重新设计工厂”的核心引擎。从 AOI报废板的秒级识别到刀具参数的动态优化 ，再到打通设计、生产、供应链的全链路智能 ——这场对话告诉我们 ，每 1%的效率</div>
+                </div>
+            </div>
+            <div class="top10-item">
+                <span class="top10-num">6</span>
+                <div class="top10-content">
+                    <div class="top10-title"><a href="https://36kr.com/p/3818889074557829?f=rss" target="_blank">城市级AI服务 ：从试点到常态化 ，机器人的实景作战与规模化落地 | 2026AI合作伙伴·北京亦庄 AI +产业大会</a></div>
+                    <div class="top10-desc">当Robotaxi还在为 L4苦苦挣扎时 ，酷哇的环卫机器人、无人小巴、机器狗已经在 50多个城市 “上岗”赚钱了。
+  
+  具身智能最大的瓶颈不是算法，而是数据 ——没有量产就没有数据 ，没有数据就无法进化。</div>
+                </div>
+            </div>
+            <div class="top10-item">
+                <span class="top10-num">7</span>
+                <div class="top10-content">
+                    <div class="top10-title"><a href="https://36kr.com/p/3818877539091333?f=rss" target="_blank">36 氪x PureblueAI清蓝战略合作启动仪式暨《 2026消费品牌 AI推荐力名册》发布 | 2026 AI合作伙伴·北京亦庄 AI +产业大会</a></div>
+                    <div class="top10-desc">5 月19日 ， 2026北京亦庄 AI +产业大会上 ，氪与 36清蓝正式达成战略合作 PureblueAI ，并联合发布《 2026消费品牌推荐力名册》。随着 AI逐渐成为新的信息入口和消费决策入口 ，品牌在 AI回答</div>
+                </div>
+            </div>
+            <div class="top10-item">
+                <span class="top10-num">8</span>
+                <div class="top10-content">
+                    <div class="top10-title"><a href="https://36kr.com/p/3818800487679111?f=rss" target="_blank">中把确定性文写进农业名称：四个外行、两次失败、三千万学费换来的答案 | 2026AI合作伙伴·北京亦庄 AI +产业大会</a></div>
+                    <div class="top10-desc">两次失败、三千万学费——创业没有爽剧剧本 ，这是陆渔科技深耕农业 AI真实的 “入场券”。当99%的人还在用 AI写文案、做设计时 ，有人把它扔进了鱼塘 ，只为解决一个最朴素的问题 ：不确定性。
+  
+  鲁敏用1</div>
+                </div>
+            </div>
+            <div class="top10-item">
+                <span class="top10-num">9</span>
+                <div class="top10-content">
+                    <div class="top10-title"><a href="https://36kr.com/p/3817502775329667?f=rss" target="_blank">从算力到价值AI时代的基础设施重构与产业增长新引擎 | 2026AI合作伙伴·北京亦庄 AI +产业大会</a></div>
+                    <div class="top10-desc">代币经济如何重塑AI产业链 ？从芯片到智算中心从模型服务到终端应用 ，代币正在成为贯穿全链的计价单位。而当推理算力需求超越训练，智算中心的角色正从算力仓库变为代币工厂，一个万亿级市场的</div>
+                </div>
+            </div>
+            <div class="top10-item">
+                <span class="top10-num">10</span>
+                <div class="top10-content">
+                    <div class="top10-title"><a href="https://www.leiphone.com/category/transportation/3chtnA4AOy1BLrwW.html" target="_blank">对标特斯拉FSD ， Momenta借势出海</a></div>
+                    <div class="top10-desc">中国车企在过去几年间完成了产品、品牌和生态体系的逐步出海。而接下来MomentaCEO很可能是智驾技术的全球远征。曹旭东判断 ， 2028年将是海外城市 NOA的拐点。 Momenta和上汽 MG做好了准备。</div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="top10-section top10-global">
+        <h2>🌍 全球科技新闻 Top 10</h2>
+        <div class="top10-list">
+            <div class="top10-item">
+                <span class="top10-num">1</span>
+                <div class="top10-content">
+                    <div class="top10-title"><a href="https://www.nytimes.com/2026/05/21/technology/trump-ai-executive-order.html" target="_blank">特朗普取消签署行政命令，对人工智能模型进行监督</a></div>
+                    <div class="top10-desc">总统说，他推迟了行政命令，这将使政府有权评估</div>
+                </div>
+            </div>
+            <div class="top10-item">
+                <span class="top10-num">2</span>
+                <div class="top10-content">
+                    <div class="top10-title"><a href="https://www.nytimes.com/2026/05/21/technology/newsom-ai-executive-order-california.html" target="_blank">Gavin Newsom州长签署旨在解决AI失业问题的行政命令</a></div>
+                    <div class="top10-desc">州长加文·纽森（ Gavin Newsom ）发布了一项行政命令，探索对劳工政策进行彻底改革，以应对</div>
+                </div>
+            </div>
+            <div class="top10-item">
+                <span class="top10-num">3</span>
+                <div class="top10-content">
+                    <div class="top10-title"><a href="https://www.nytimes.com/2026/05/21/business/bluesky-russia-hacking-accounts.html" target="_blank">Bluesky称克里姆林宫正在黑客入侵其平台以传播宣传</a></div>
+                    <div class="top10-desc">该公司表示，它正在打击俄罗斯劫持真实用户帐户以发布虚假内容的行为</div>
+                </div>
+            </div>
+            <div class="top10-item">
+                <span class="top10-num">4</span>
+                <div class="top10-content">
+                    <div class="top10-title"><a href="https://www.nytimes.com/2026/05/20/technology/meta-layoffs-ai-song.html" target="_blank">8,000首裁员原声带： Meta Worker的裁员主题人工智能歌曲</a></div>
+                    <div class="top10-desc">在Meta裁员的黑暗日子里，一名员工做出回应，创建了一个内部广播电台，</div>
+                </div>
+            </div>
+            <div class="top10-item">
+                <span class="top10-num">5</span>
+                <div class="top10-content">
+                    <div class="top10-title"><a href="https://www.nytimes.com/2026/05/20/technology/openai-ipo.html" target="_blank">OpenAI准备在未来几周内申请IPO</a></div>
+                    <div class="top10-desc">OpenAI将是最受期待的潜在首次公开募股之一，</div>
+                </div>
+            </div>
+            <div class="top10-item">
+                <span class="top10-num">6</span>
+                <div class="top10-content">
+                    <div class="top10-title"><a href="https://www.nytimes.com/2026/05/19/technology/meta-layoffs-ai.html" target="_blank">Meta裁减8,000名员工，作为A.I.人员伤亡</a></div>
+                    <div class="top10-desc">员工签署了反对被人工智能跟踪的请愿书，并试图找出是谁</div>
+                </div>
+            </div>
+            <div class="top10-item">
+                <span class="top10-num">7</span>
+                <div class="top10-content">
+                    <div class="top10-title"><a href="https://www.nytimes.com/2026/05/19/technology/personaltech/google-gemini-ai.html" target="_blank">谷歌如何开始赢得人工智能竞赛</a></div>
+                    <div class="top10-desc">尽管谷歌的Gemini在早期遭遇了挫折，但在相关性和实用性方面已经超越了ChatGPT。Soo</div>
+                </div>
+            </div>
+            <div class="top10-item">
+                <span class="top10-num">8</span>
+                <div class="top10-content">
+                    <div class="top10-title"><a href="https://www.bbc.com/news/articles/cgepze483pqo?at_medium=RSS&at_campaign=rss" target="_blank">Meta与美国学区达成社交媒体成瘾案件和解</a></div>
+                    <div class="top10-desc">该审判已被设定为对其他1200个提出类似主张的学区的测试案例。</div>
+                </div>
+            </div>
+            <div class="top10-item">
+                <span class="top10-num">9</span>
+                <div class="top10-content">
+                    <div class="top10-title"><a href="https://www.bbc.com/news/articles/cn0pky4zpxxo?at_medium=RSS&at_campaign=rss" target="_blank">Ofcom表示， TikTok和YouTube对儿童来说“不够安全”</a></div>
+                    <div class="top10-desc">YouTube表示，它与专家合作，提供适当的体验。TikTok说这是隐形币</div>
+                </div>
+            </div>
+            <div class="top10-item">
+                <span class="top10-num">10</span>
+                <div class="top10-content">
+                    <div class="top10-title"><a href="https://www.bbc.com/news/articles/cg4pe2953q1o?at_medium=RSS&at_campaign=rss" target="_blank">SpaceX为股市首次亮相提供文件，这可能使埃隆·马斯克成为万亿富翁</a></div>
+                    <div class="top10-desc">马斯克的火箭制造商和卫星互联网提供商将在股票代码SPCX下进行交易</div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    
+    <div class="summary-section">
+        <h2>AI Daily Highlights</h2>
+        <div class="category-tags"><span class="cat-tag">AI AI Product (35)</span><span class="cat-tag">News Other (20)</span><span class="cat-tag">LLM LLM/Model (3)</span><span class="cat-tag">Biz AI Industry (1)</span></div>
+
+        <div class="chinese-summary">
+            <h3>Top 10 AI News</h3>
+            
+            <div class="highlight-item">
+                <span class="highlight-num">1</span>
+                <div class="highlight-content">
+                    <div class="highlight-title">
+                        <a href="https://www.nytimes.com/2026/05/21/technology/trump-ai-executive-order.html" target="_blank" style="color: #333; text-decoration: none;">特朗普取消签署行政命令，对人工智能模型进行监督</a>
+                    </div>
+                    <p class="highlight-snippet" style="color: #555; font-size: 13px; margin: 5px 0; line-height: 1.4;">总统表示，他推迟了行政命令，该命令将使政府有权在AI模型发布之前对其进行评估，而不是对“其各个方面”的担忧。</p>
+                    <div class="highlight-meta">
+                        <span class="highlight-date">05-21 17:47</span> |
+                        <span class="highlight-source">NYTimes</span> |
+                        <span style="color: #1976d2;">🌍 全球</span>
+                    </div>
+                </div>
+            </div>
+            <div class="highlight-item">
+                <span class="highlight-num">2</span>
+                <div class="highlight-content">
+                    <div class="highlight-title">
+                        <a href="https://www.nytimes.com/2026/05/21/technology/newsom-ai-executive-order-california.html" target="_blank" style="color: #333; text-decoration: none;">Gavin Newsom州长签署旨在解决AI失业问题的行政命令</a>
+                    </div>
+                    <p class="highlight-snippet" style="color: #555; font-size: 13px; margin: 5px 0; line-height: 1.4;">州长加文·纽森（ Gavin Newsom ）发布了一项行政命令，探索彻底改革劳动政策，以应对人工智能可能造成的大规模失业。</p>
+                    <div class="highlight-meta">
+                        <span class="highlight-date">05-21 15:26</span> |
+                        <span class="highlight-source">NYTimes</span> |
+                        <span style="color: #1976d2;">🌍 全球</span>
+                    </div>
+                </div>
+            </div>
+            <div class="highlight-item">
+                <span class="highlight-num">3</span>
+                <div class="highlight-content">
+                    <div class="highlight-title">
+                        <a href="https://www.nytimes.com/2026/05/21/business/bluesky-russia-hacking-accounts.html" target="_blank" style="color: #333; text-decoration: none;">Bluesky称克里姆林宫正在黑客入侵其平台以传播宣传</a>
+                    </div>
+                    <p class="highlight-snippet" style="color: #555; font-size: 13px; margin: 5px 0; line-height: 1.4;">该公司表示，它正在打击俄罗斯劫持真实用户帐户以发布虚假内容的行为，这显然是一种新颖的策略。</p>
+                    <div class="highlight-meta">
+                        <span class="highlight-date">05-21 09:02</span> |
+                        <span class="highlight-source">NYTimes</span> |
+                        <span style="color: #1976d2;">🌍 全球</span>
+                    </div>
+                </div>
+            </div>
+            <div class="highlight-item">
+                <span class="highlight-num">4</span>
+                <div class="highlight-content">
+                    <div class="highlight-title">
+                        <a href="https://www.nytimes.com/2026/05/20/technology/meta-layoffs-ai-song.html" target="_blank" style="color: #333; text-decoration: none;">8,000首裁员原声带： Meta Worker的裁员主题人工智能歌曲</a>
+                    </div>
+                    <p class="highlight-snippet" style="color: #555; font-size: 13px; margin: 5px 0; line-height: 1.4;">在Meta裁员的黑暗日子里，一名员工做出了回应，创建了一个内部广播电台，播放有关裁员的歌曲—当然是由人工智能产生的。</p>
+                    <div class="highlight-meta">
+                        <span class="highlight-date">05-20 22:57</span> |
+                        <span class="highlight-source">NYTimes</span> |
+                        <span style="color: #1976d2;">🌍 全球</span>
+                    </div>
+                </div>
+            </div>
+            <div class="highlight-item">
+                <span class="highlight-num">5</span>
+                <div class="highlight-content">
+                    <div class="highlight-title">
+                        <a href="https://www.nytimes.com/2026/05/20/technology/openai-ipo.html" target="_blank" style="color: #333; text-decoration: none;">OpenAI准备在未来几周内申请IPO</a>
+                    </div>
+                    <p class="highlight-snippet" style="color: #555; font-size: 13px; margin: 5px 0; line-height: 1.4;">OpenAI将是最受期待的潜在首次公开募股之一，这将是硅谷IPO的重要一年。</p>
+                    <div class="highlight-meta">
+                        <span class="highlight-date">05-20 18:41</span> |
+                        <span class="highlight-source">NYTimes</span> |
+                        <span style="color: #1976d2;">🌍 全球</span>
+                    </div>
+                </div>
+            </div>
+            <div class="highlight-item">
+                <span class="highlight-num">6</span>
+                <div class="highlight-content">
+                    <div class="highlight-title">
+                        <a href="https://www.nytimes.com/2026/05/19/technology/meta-layoffs-ai.html" target="_blank" style="color: #333; text-decoration: none;">Meta裁减8,000名员工，作为A.I.人员伤亡</a>
+                    </div>
+                    <p class="highlight-snippet" style="color: #555; font-size: 13px; margin: 5px 0; line-height: 1.4;">随着这家硅谷巨头试图转型为AI优先公司，员工们已经签署了反对被AI跟踪的请愿书，并试图找出谁在周三被解雇。</p>
+                    <div class="highlight-meta">
+                        <span class="highlight-date">05-20 21:56</span> |
+                        <span class="highlight-source">NYTimes</span> |
+                        <span style="color: #1976d2;">🌍 全球</span>
+                    </div>
+                </div>
+            </div>
+            <div class="highlight-item">
+                <span class="highlight-num">7</span>
+                <div class="highlight-content">
+                    <div class="highlight-title">
+                        <a href="https://www.nytimes.com/2026/05/19/technology/personaltech/google-gemini-ai.html" target="_blank" style="color: #333; text-decoration: none;">谷歌如何开始赢得人工智能竞赛</a>
+                    </div>
+                    <p class="highlight-snippet" style="color: #555; font-size: 13px; margin: 5px 0; line-height: 1.4;">尽管早期遭遇了挫折，但谷歌的Gemini在相关性和实用性方面已经超越了ChatGPT。很快，它将无处不在。</p>
+                    <div class="highlight-meta">
+                        <span class="highlight-date">05-19 19:41</span> |
+                        <span class="highlight-source">NYTimes</span> |
+                        <span style="color: #1976d2;">🌍 全球</span>
+                    </div>
+                </div>
+            </div>
+            <div class="highlight-item">
+                <span class="highlight-num">8</span>
+                <div class="highlight-content">
+                    <div class="highlight-title">
+                        <a href="https://www.bbc.com/news/articles/cgepze483pqo?at_medium=RSS&at_campaign=rss" target="_blank" style="color: #333; text-decoration: none;">Meta与美国学区达成社交媒体成瘾案件和解</a>
+                    </div>
+                    <p class="highlight-snippet" style="color: #555; font-size: 13px; margin: 5px 0; line-height: 1.4;">该审判已被设定为对其他1200个提出类似主张的学区的测试案例。</p>
+                    <div class="highlight-meta">
+                        <span class="highlight-date">05-21 20:34</span> |
+                        <span class="highlight-source">BBC</span> |
+                        <span style="color: #1976d2;">🌍 全球</span>
+                    </div>
+                </div>
+            </div>
+            <div class="highlight-item">
+                <span class="highlight-num">9</span>
+                <div class="highlight-content">
+                    <div class="highlight-title">
+                        <a href="https://www.bbc.com/news/articles/cn0pky4zpxxo?at_medium=RSS&at_campaign=rss" target="_blank" style="color: #333; text-decoration: none;">Ofcom表示， TikTok和YouTube对儿童来说“不够安全”</a>
+                    </div>
+                    <p class="highlight-snippet" style="color: #555; font-size: 13px; margin: 5px 0; line-height: 1.4;">YouTube表示，它与专家合作，提供适当的体验。TikTok表示， Ofcom没有承认其安全功能，这令人失望。</p>
+                    <div class="highlight-meta">
+                        <span class="highlight-date">05-21 07:10</span> |
+                        <span class="highlight-source">BBC</span> |
+                        <span style="color: #1976d2;">🌍 全球</span>
+                    </div>
+                </div>
+            </div>
+            <div class="highlight-item">
+                <span class="highlight-num">10</span>
+                <div class="highlight-content">
+                    <div class="highlight-title">
+                        <a href="https://www.bbc.com/news/articles/cg4pe2953q1o?at_medium=RSS&at_campaign=rss" target="_blank" style="color: #333; text-decoration: none;">SpaceX为股市首次亮相提供文件，这可能使埃隆·马斯克成为万亿富翁</a>
+                    </div>
+                    <p class="highlight-snippet" style="color: #555; font-size: 13px; margin: 5px 0; line-height: 1.4;">马斯克的火箭制造商和卫星互联网提供商将在股票代码SPCX下进行交易</p>
+                    <div class="highlight-meta">
+                        <span class="highlight-date">05-21 06:00</span> |
+                        <span class="highlight-source">BBC</span> |
+                        <span style="color: #1976d2;">🌍 全球</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="section-title">[All News]</div>
+    
+    <div class="news-item">
+        <div class="news-date">05-21 17:47</div>
+        <h3>1. Trump Cancels Signing of Executive Order Granting Oversight of AI Models</h3>
+        <p class="snippet">The president said he postponed the executive order, which would give the government power to evaluate A.I. models before their release, over concerns about “aspects of it.”</p>
+        <div class="news-meta">
+            <a href="https://www.nytimes.com/2026/05/21/technology/trump-ai-executive-order.html" target="_blank">Original</a>
+            <span class="tag">NYTimes</span>
+            <span class="tag tag-foreign">EN</span>
+        </div>
+    </div>
+    <div class="news-item">
+        <div class="news-date">05-21 15:26</div>
+        <h3>2. Gov Gavin Newsom to Sign Executive Order Aimed at AI Job Loss</h3>
+        <p class="snippet">Gov. Gavin Newsom issued an executive order to explore an overhaul of labor policies to deal with potential mass job displacement from artificial intelligence.</p>
+        <div class="news-meta">
+            <a href="https://www.nytimes.com/2026/05/21/technology/newsom-ai-executive-order-california.html" target="_blank">Original</a>
+            <span class="tag">NYTimes</span>
+            <span class="tag tag-foreign">EN</span>
+        </div>
+    </div>
+    <div class="news-item">
+        <div class="news-date">05-21 09:02</div>
+        <h3>3. Bluesky Says Kremlin Is Hacking Its Platform to Spread Propaganda</h3>
+        <p class="snippet">The company said it was fighting Russian efforts to hijack real users’ accounts to post fake content, an apparently novel tactic.</p>
+        <div class="news-meta">
+            <a href="https://www.nytimes.com/2026/05/21/business/bluesky-russia-hacking-accounts.html" target="_blank">Original</a>
+            <span class="tag">NYTimes</span>
+            <span class="tag tag-foreign">EN</span>
+        </div>
+    </div>
+    <div class="news-item">
+        <div class="news-date">05-20 22:57</div>
+        <h3>4. Soundtrack to 8,000 Job Cuts: A [Meta] Worker’s Layoff-Themed AI Songs</h3>
+        <p class="snippet">On a dark day of layoffs at Meta, one employee responded by creating an internal radio station that plays songs about job cuts — generated by artificial intelligence, of course.</p>
+        <div class="news-meta">
+            <a href="https://www.nytimes.com/2026/05/20/technology/meta-layoffs-ai-song.html" target="_blank">Original</a>
+            <span class="tag">NYTimes</span>
+            <span class="tag tag-foreign">EN</span>
+        </div>
+    </div>
+    <div class="news-item">
+        <div class="news-date">05-20 18:41</div>
+        <h3>5. [OpenAI] Prepares to File for an IPO in Coming Weeks</h3>
+        <p class="snippet">OpenAI would be one of the most highly anticipated potential initial public offerings, in what is set to be a major year of I.P.O.s for Silicon Valley.</p>
+        <div class="news-meta">
+            <a href="https://www.nytimes.com/2026/05/20/technology/openai-ipo.html" target="_blank">Original</a>
+            <span class="tag">NYTimes</span>
+            <span class="tag tag-foreign">EN</span>
+        </div>
+    </div>
+    <div class="news-item">
+        <div class="news-date">05-20 21:56</div>
+        <h3>6. [Meta] Lays Off 8,000 Employees as AI Casualties Mount</h3>
+        <p class="snippet">Employees have signed petitions against being tracked by A.I. and were trying to figure out who had been let go on Wednesday, as the Silicon Valley giant tries to transform into an A.I.-first company.</p>
+        <div class="news-meta">
+            <a href="https://www.nytimes.com/2026/05/19/technology/meta-layoffs-ai.html" target="_blank">Original</a>
+            <span class="tag">NYTimes</span>
+            <span class="tag tag-foreign">EN</span>
+        </div>
+    </div>
+    <div class="news-item">
+        <div class="news-date">05-19 19:41</div>
+        <h3>7. How [谷歌] Is Starting to Win the AI Race</h3>
+        <p class="snippet">Despite its early stumbles, Google’s Gemini has leapfrogged ChatGPT in relevance and usefulness. Soon, it will be ubiquitous.</p>
+        <div class="news-meta">
+            <a href="https://www.nytimes.com/2026/05/19/technology/personaltech/google-gemini-ai.html" target="_blank">Original</a>
+            <span class="tag">NYTimes</span>
+            <span class="tag tag-foreign">EN</span>
+        </div>
+    </div>
+    <div class="news-item">
+        <div class="news-date">05-21 20:34</div>
+        <h3>8. [Meta] settles social media addiction case with US school district</h3>
+        <p class="snippet">The trial had been set as a test case for 1200 other school districts making similar claims.</p>
+        <div class="news-meta">
+            <a href="https://www.bbc.com/news/articles/cgepze483pqo?at_medium=RSS&at_campaign=rss" target="_blank">Original</a>
+            <span class="tag">BBC</span>
+            <span class="tag tag-foreign">EN</span>
+        </div>
+    </div>
+    <div class="news-item">
+        <div class="news-date">05-21 07:10</div>
+        <h3>9. TikTok and YouTube 'not safe enough' for kids 称 Ofcom</h3>
+        <p class="snippet">YouTube said it worked with experts to provide appropriate experiences. TikTok said it was disappointed Ofcom had not acknowledged its safety features.</p>
+        <div class="news-meta">
+            <a href="https://www.bbc.com/news/articles/cn0pky4zpxxo?at_medium=RSS&at_campaign=rss" target="_blank">Original</a>
+            <span class="tag">BBC</span>
+            <span class="tag tag-foreign">EN</span>
+        </div>
+    </div>
+    <div class="news-item">
+        <div class="news-date">05-21 06:00</div>
+        <h3>10. SpaceX files for stock market debut that could make [马斯克] a trillionaire</h3>
+        <p class="snippet">Musk's rocket-maker and satellite internet provider will trade under the ticker SPCX</p>
+        <div class="news-meta">
+            <a href="https://www.bbc.com/news/articles/cg4pe2953q1o?at_medium=RSS&at_campaign=rss" target="_blank">Original</a>
+            <span class="tag">BBC</span>
+            <span class="tag tag-foreign">EN</span>
+        </div>
+    </div>
+    <div class="news-item">
+        <div class="news-date">05-20 10:27</div>
+        <h3>11. US groups urge 投资igation into child safety and spending on Roblox</h3>
+        <p class="snippet">Roblox said it had "clear policies" banning actual and simulated gambling, as well as rules governing paid random items.</p>
+        <div class="news-meta">
+            <a href="https://www.bbc.com/news/articles/cgqpz809e7lo?at_medium=RSS&at_campaign=rss" target="_blank">Original</a>
+            <span class="tag">BBC</span>
+            <span class="tag tag-foreign">EN</span>
+        </div>
+    </div>
+    <div class="news-item">
+        <div class="news-date">05-19 21:00</div>
+        <h3>12. [谷歌] to 发布 首个 smart glasses since [谷歌] Glass flop</h3>
+        <p class="snippet">The glasses will go on sale sometime in autumn and allow Google's artificial intelligence product to interact with a user.</p>
+        <div class="news-meta">
+            <a href="https://www.bbc.com/news/articles/cvgz1ynq1nqo?at_medium=RSS&at_campaign=rss" target="_blank">Original</a>
+            <span class="tag">BBC</span>
+            <span class="tag tag-foreign">EN</span>
+        </div>
+    </div>
+    <div class="news-item">
+        <div class="news-date">05-19 11:05</div>
+        <h3>13. Zoe Kleinman: Why the AI industry is the real winner of the Musk-Altman trial</h3>
+        <p class="snippet">The trial in Oakland, California has helped lift the veil on the AI sector - and the huge egos of the men at the heart of it.</p>
+        <div class="news-meta">
+            <a href="https://www.bbc.com/news/articles/crlp991nw41o?at_medium=RSS&at_campaign=rss" target="_blank">Original</a>
+            <span class="tag">BBC</span>
+            <span class="tag tag-foreign">EN</span>
+        </div>
+    </div>
+    <div class="news-item">
+        <div class="news-date">05-19 08:45</div>
+        <h3>14. [马斯克] has lost yet another legal battle Why he'll still keep fighting</h3>
+        <p class="snippet">Musk has lost his high-profile lawsuit against OpenAI, but is not likely to change his aggressive style.</p>
+        <div class="news-meta">
+            <a href="https://www.bbc.com/news/articles/cqlpz4w6v13o?at_medium=RSS&at_campaign=rss" target="_blank">Original</a>
+            <span class="tag">BBC</span>
+            <span class="tag tag-foreign">EN</span>
+        </div>
+    </div>
+    <div class="news-item">
+        <div class="news-date">05-18 23:04</div>
+        <h3>15. Satellites and AI used to track UK hedgehogs in bid to slow decline</h3>
+        <p class="snippet">Researchers hope the project will also help to identify barriers preventing hedgehogs from finding food and mates in the wild.</p>
+        <div class="news-meta">
+            <a href="https://www.bbc.com/news/articles/c202g60qrlpo?at_medium=RSS&at_campaign=rss" target="_blank">Original</a>
+            <span class="tag">BBC</span>
+            <span class="tag tag-foreign">EN</span>
+        </div>
+    </div>
+    <div class="news-item">
+        <div class="news-date">05-18 22:08</div>
+        <h3>16. Musk loses [OpenAI] court battle after jury finds he waited too long to sue</h3>
+        <p class="snippet">Jurors spent weeks hearing about Musk's claim that Altman had "stolen a charity."</p>
+        <div class="news-meta">
+            <a href="https://www.bbc.com/news/articles/cewpyv79pw1o?at_medium=RSS&at_campaign=rss" target="_blank">Original</a>
+            <span class="tag">BBC</span>
+            <span class="tag tag-foreign">EN</span>
+        </div>
+    </div>
+    <div class="news-item">
+        <div class="news-date">05-18 09:33</div>
+        <h3>17. Instant AI answers can trivialise human intelligence warns Royal Observatory</h3>
+        <p class="snippet">Paddy Rodgers said the Observatory's rich history showed the power of human knowledge and the need to avoid "dependence" on AI.</p>
+        <div class="news-meta">
+            <a href="https://www.bbc.com/news/articles/c2023l60370o?at_medium=RSS&at_campaign=rss" target="_blank">Original</a>
+            <span class="tag">BBC</span>
+            <span class="tag tag-foreign">EN</span>
+        </div>
+    </div>
+    <div class="news-item">
+        <div class="news-date">05-19 20:00</div>
+        <h3>18. Tech Life</h3>
+        <p class="snippet">We talk to an expert about the risks from AI hackers</p>
+        <div class="news-meta">
+            <a href="https://www.bbc.co.uk/sounds/play/w3ct8jxw?at_medium=RSS&at_campaign=rss" target="_blank">Original</a>
+            <span class="tag">BBC</span>
+            <span class="tag tag-foreign">EN</span>
+        </div>
+    </div>
+    <div class="news-item">
+        <div class="news-date">05-22 00:04</div>
+        <h3>19. Can [OpenAI]’s ‘Master of Disaster’ Fix AI’s Reputation Crisis?</h3>
+        <p class="snippet">Global affairs chief Chris Lehane wants to tone down the debate over AI’s societal impacts—and get states to pass laws that won’t derail OpenAI’s meteoric rise.</p>
+        <div class="news-meta">
+            <a href="https://www.wired.com/story/openai-chris-lehane-global-affairs-pr/" target="_blank">Original</a>
+            <span class="tag">Wired</span>
+            <span class="tag tag-foreign">EN</span>
+        </div>
+    </div>
+    <div class="news-item">
+        <div class="news-date">05-21 21:35</div>
+        <h3>20. ‘Creepy’ Listening Tool for Targeted Ads Didn’t Actually Work FTC Says</h3>
+        <p class="snippet">Three firms will pay nearly $1 million for selling “Active Listening” technology that they claimed tapped people’s phones for advertising. The FTC alleges the “tech” was just pricey email lists.</p>
+        <div class="news-meta">
+            <a href="https://www.wired.com/story/creepy-listening-tool-for-targeted-ads-didnt-actually-work-ftc-says/" target="_blank">Original</a>
+            <span class="tag">Wired</span>
+            <span class="tag tag-foreign">EN</span>
+        </div>
+    </div>
+    <div class="news-item">
+        <div class="news-date">05-21 20:44</div>
+        <h3>21. [Meta] Is in Crisis [谷歌] Search’s Makeover and AI Gets Booed by Graduates</h3>
+        <p class="snippet">In this episode of Uncanny Valley, we unpack the mass layoffs at Meta, big announcements at Google I/O, and the latest backlash against AI.</p>
+        <div class="news-meta">
+            <a href="https://www.wired.com/story/uncanny-valley-podcast-meta-in-crisis-google-search-makeover-ai-booed-by-graduates/" target="_blank">Original</a>
+            <span class="tag">Wired</span>
+            <span class="tag tag-foreign">EN</span>
+        </div>
+    </div>
+    <div class="news-item">
+        <div class="news-date">05-21 20:17</div>
+        <h3>22. Best Window Air Conditioners of 2026: Midea Zafro GE</h3>
+        <p class="snippet">These are the AC units we’ve trusted to cool our homes for months, if not years.</p>
+        <div class="news-meta">
+            <a href="https://www.wired.com/gallery/best-window-air-conditioners/" target="_blank">Original</a>
+            <span class="tag">Wired</span>
+            <span class="tag tag-foreign">EN</span>
+        </div>
+    </div>
+    <div class="news-item">
+        <div class="news-date">05-21 15:48</div>
+        <h3>23. I Cloned Myself With Gemini’s AI Avatar Tool The Result Was Unnervingly Me</h3>
+        <p class="snippet">I used the Gemini app to generate lifelike videos featuring a digital clone of myself. Google sees this as the future of creation. I’m still creeped out.</p>
+        <div class="news-meta">
+            <a href="https://www.wired.com/story/i-cloned-myself-with-geminis-ai-avatar-tool-the-result-was-unnervingly-me/" target="_blank">Original</a>
+            <span class="tag">Wired</span>
+            <span class="tag tag-foreign">EN</span>
+        </div>
+    </div>
+    <div class="news-item">
+        <div class="news-date">05-21 11:33</div>
+        <h3>24. 5 Best Android Tablets in 2026: OnePlus Lenovo and Pixel Compared</h3>
+        <p class="snippet">Whether you need a portable, around-the-house entertainment center or a full-on laptop replacement, these are the best Android tablets.</p>
+        <div class="news-meta">
+            <a href="https://www.wired.com/story/the-best-android-tablets/" target="_blank">Original</a>
+            <span class="tag">Wired</span>
+            <span class="tag tag-foreign">EN</span>
+        </div>
+    </div>
+    <div class="news-item">
+        <div class="news-date">05-22 00:07</div>
+        <h3>25. SpaceX scrubs 首个 Starship V3 发布 just before liftoff</h3>
+        <p class="snippet">SpaceX fueled the third-generation rocket booster and ship and was just moments away from liftoff, before calling a scrub. It's expected to try again Friday.</p>
+        <div class="news-meta">
+            <a href="https://techcrunch.com/2026/05/21/spacex-scrubs-first-starship-v3-launch-just-before-liftoff/" target="_blank">Original</a>
+            <span class="tag">TechCrunch</span>
+            <span class="tag tag-foreign">EN</span>
+        </div>
+    </div>
+    <div class="news-item">
+        <div class="news-date">05-21 19:45</div>
+        <h3>26. Spotify and Universal Music strike deal allowing fan-made AI covers and remixes</h3>
+        <p class="snippet">Spotify is partnering with  Universal Music Group￼ to let Premium subscribers create AI-generated song covers and remixes, with participating artists receiving a share of the revenue.</p>
+        <div class="news-meta">
+            <a href="https://techcrunch.com/2026/05/21/spotify-and-universal-music-strike-deal-allowing-fan-made-ai-covers-and-remixes/" target="_blank">Original</a>
+            <span class="tag">TechCrunch</span>
+            <span class="tag tag-foreign">EN</span>
+        </div>
+    </div>
+    <div class="news-item">
+        <div class="news-date">05-21 19:33</div>
+        <h3>27. Law enforcement shuts down VPN service used by two dozen ransomware gangs</h3>
+        <p class="snippet">First VPN promised hackers complete anonymity for their cyberattacks. But Europol said it was able to notify the service’s users that they have now been identified.</p>
+        <div class="news-meta">
+            <a href="https://techcrunch.com/2026/05/21/law-enforcement-shuts-down-vpn-service-used-by-two-dozen-ransomware-gangs/" target="_blank">Original</a>
+            <span class="tag">TechCrunch</span>
+            <span class="tag tag-foreign">EN</span>
+        </div>
+    </div>
+    <div class="news-item">
+        <div class="news-date">05-21 19:19</div>
+        <h3>28. Six 搜索 engines worth trying now that [谷歌] isn’t really [谷歌] anymore</h3>
+        <p class="snippet">Google is about to look really different, and if you're not a fan of the AI overview feature, then you're not going to like what's coming.</p>
+        <div class="news-meta">
+            <a href="https://techcrunch.com/2026/05/21/six-search-engines-worth-trying-now-that-google-isnt-really-google-anymore/" target="_blank">Original</a>
+            <span class="tag">TechCrunch</span>
+            <span class="tag tag-foreign">EN</span>
+        </div>
+    </div>
+    <div class="news-item">
+        <div class="news-date">05-21 17:41</div>
+        <h3>29. Convective Capital raises an $85 百万 fund to build disaster resilience</h3>
+        <p class="snippet">After launching to invest in fire tech, Convective is broadening its mandate to disaster resilience.</p>
+        <div class="news-meta">
+            <a href="https://techcrunch.com/2026/05/21/convective-capital-raises-an-85-million-fund-to-build-disaster-resilience/" target="_blank">Original</a>
+            <span class="tag">TechCrunch</span>
+            <span class="tag tag-foreign">EN</span>
+        </div>
+    </div>
+    <div class="news-item">
+        <div class="news-date">05-21 17:30</div>
+        <h3>30. Trump delays AI 安全 executive order saying language ‘could have been a blocker’</h3>
+        <p class="snippet">President Trump delayed signing an executive order that would have required pre-release government security reviews of AI models, citing dissatisfaction with the order's language.</p>
+        <div class="news-meta">
+            <a href="https://techcrunch.com/2026/05/21/trump-delays-ai-security-executive-order-i-dont-want-to-get-in-the-way-of-that-leading/" target="_blank">Original</a>
+            <span class="tag">TechCrunch</span>
+            <span class="tag tag-foreign">EN</span>
+        </div>
+    </div>
+    <div class="news-item">
+        <div class="news-date">05-21 16:00</div>
+        <h3>31. This young 创业公司 is taking on a fragrance industry that hasn’t changed in almost half a century</h3>
+        <p class="snippet">Fragrance tech company Patina announced Thursday a $2 million raise from investors, including Betaworks and True Ventures.</p>
+        <div class="news-meta">
+            <a href="https://techcrunch.com/2026/05/21/a-new-fragrance-company-raises-2-million-to-find-new-scent-molecules/" target="_blank">Original</a>
+            <span class="tag">TechCrunch</span>
+            <span class="tag tag-foreign">EN</span>
+        </div>
+    </div>
+    <div class="news-item">
+        <div class="news-date">05-21 15:27</div>
+        <h3>32. Spotify adds AI-powered Q&A and briefing generation features to podcasts</h3>
+        <p class="snippet">Spotify will let you generate daily or weekly briefs based on your prompts</p>
+        <div class="news-meta">
+            <a href="https://techcrunch.com/2026/05/21/spotify-adds-ai-powered-qa-and-briefing-generation-features-to-podcasts/" target="_blank">Original</a>
+            <span class="tag">TechCrunch</span>
+            <span class="tag tag-foreign">EN</span>
+        </div>
+    </div>
+    <div class="news-item">
+        <div class="news-date">05-21 15:27</div>
+        <h3>33. Spotify 发布es an ElevenLabs-powered audiobook creation tool</h3>
+        <p class="snippet">The AI-powered audiobook generation won't bind authors to an exclusive contract, meaning they are free to publish their generated audiobooks anywhere.</p>
+        <div class="news-meta">
+            <a href="https://techcrunch.com/2026/05/21/spotify-launches-an-elevenlabs-powered-audiobook-creation-tool/" target="_blank">Original</a>
+            <span class="tag">TechCrunch</span>
+            <span class="tag tag-foreign">EN</span>
+        </div>
+    </div>
+    <div class="news-item">
+        <div class="news-date">05-22 08:14</div>
+        <h3>34. 8点1氪丨“拉勾网”被曝主动申请破产；特斯拉Model S和X正式停产退役；三星内存工人，奖金或达280万元</h3>
+        <p class="snippet">今日热点导览
+  马斯克或成全球首位万亿美元富翁
+  三星内存工人，奖金或达280万元
+  东方甄选首家线下店正式营业
+  追觅俞浩回应“花4000万请员工去迪士尼”
+  妙鸭APP被曝团队解散 
+  多地公布520结婚登记数据 
+  TOP3大新闻
+  <p</p>
+        <div class="news-meta">
+            <a href="https://36kr.com/p/3819709302329735?f=rss" target="_blank">Original</a>
+            <span class="tag">36kr</span>
+            <span class="tag tag-china">CN</span>
+        </div>
+    </div>
+    <div class="news-item">
+        <div class="news-date">05-21 21:14</div>
+        <h3>35. 氪星晚报｜马斯克旗下SpaceX启动史上最大规模IPO计划；全国首张综合性司机服务地图上线；海关总署在粤发布《海关支持粤港澳大湾区建设若干措施》</h3>
+        <p class="snippet">大公司：
+  SpaceX据悉计划五年内实现每年1万次发射
+  据美国联邦航空管理局（FA</p>
+        <div class="news-meta">
+            <a href="https://36kr.com/p/3816942732133510?f=rss" target="_blank">Original</a>
+            <span class="tag">36kr</span>
+            <span class="tag tag-china">CN</span>
+        </div>
+    </div>
+    <div class="news-item">
+        <div class="news-date">05-21 18:55</div>
+        <h3>36. 新石器NewClaw：AI一体化解决方案，零门槛当无人车指挥官| 2026AI Partner·北京亦庄AI+产业大会</h3>
+        <p class="snippet">管理一千台无人车需要多少人？答案是：一个人，一部手机，一句话。当自动驾驶逐渐“平权”，真正的瓶颈从技术转向了规模化运营。
+  
+  新石器用七年时间走完从合规落地、规模量产到万台运营的三级跳，如今推出AI Agent“Neo Claw”——让用户像聊天一样指挥车队，把单人管理效率从10台拉升到100台以上。颉晶华强调，A</p>
+        <div class="news-meta">
+            <a href="https://36kr.com/p/3818927367046018?f=rss" target="_blank">Original</a>
+            <span class="tag">36kr</span>
+            <span class="tag tag-china">CN</span>
+        </div>
+    </div>
+    <div class="news-item">
+        <div class="news-date">05-21 18:54</div>
+        <h3>37. 业绩快报 | 唯品会一季度净营收266亿元，SVIP用户贡献超50%线上销售额</h3>
+        <p class="snippet">5月21日美股盘前，唯品会发布2025年第一季度财报。一季度内，唯品会实现净营收266亿元（人民币，下同），Non-GAAP净利润23亿元。
+  观察核心运营数据，一季度其实现商品交易总额（GMV）569亿元，同比增长8.6%，订单量1.73亿单，同比增长3.2%。同时，平台于该季度活跃用户数为4170万，同比实现正增长。
+  在春节期间穿戴和年货需求集中释放、透</p>
+        <div class="news-meta">
+            <a href="https://36kr.com/p/3818915823764610?f=rss" target="_blank">Original</a>
+            <span class="tag">36kr</span>
+            <span class="tag tag-china">CN</span>
+        </div>
+    </div>
+    <div class="news-item">
+        <div class="news-date">05-21 18:29</div>
+        <h3>38. 从概念到产线一：AI在工业制造领域的深水区探索| 2026AI Partner·北京亦庄AI+产业大会</h3>
+        <p class="snippet">AI在工业制造领域，不是“锦上添花”的辅助工具，而是“重新设计工厂”的核心引擎。从AOI报废板的秒级识别，到刀具参数的动态优化，再到打通设计、生产、供应链的全链路智能——这场对话告诉我们，每1%的效率提升都是真金白银，AI的价值不是叠加功能，而是把“人等货”变成“货等人”。
+  
+  演讲拆解了AI从概念到产线的落地路径</p>
+        <div class="news-meta">
+            <a href="https://36kr.com/p/3818903062004870?f=rss" target="_blank">Original</a>
+            <span class="tag">36kr</span>
+            <span class="tag tag-china">CN</span>
+        </div>
+    </div>
+    <div class="news-item">
+        <div class="news-date">05-21 18:15</div>
+        <h3>39. 城市级AI服务：从试点到常态化，机器人的实景作战与规模化落地| 2026AI Partner·北京亦庄AI+产业大会</h3>
+        <p class="snippet">当Robotaxi还在为L4苦苦挣扎时，酷哇的环卫机器人、无人小巴、机器狗已经在50多个城市“上岗”赚钱了。
+  
+  具身智能最大的瓶颈不是算法，而是数据——没有量产就没有数据，没有数据就无法进化。酷哇的解法是“以战养战”：让机器人在真实运营中一边干活一边成长，用万台规模反哺模型迭代。李柯宏强调，中国是全球少有的支持机</p>
+        <div class="news-meta">
+            <a href="https://36kr.com/p/3818889074557829?f=rss" target="_blank">Original</a>
+            <span class="tag">36kr</span>
+            <span class="tag tag-china">CN</span>
+        </div>
+    </div>
+    <div class="news-item">
+        <div class="news-date">05-21 18:03</div>
+        <h3>40. 36氪x PureblueAI清蓝战略合作启动仪式暨《2026消费品牌AI推荐力名册》发布 | 2026 AI Partner·北京亦庄AI+产业大会</h3>
+        <p class="snippet">5月19日，2026北京亦庄AI+产业大会上，36氪与PureblueAI清蓝正式达成战略合作，并联合发布《2026消费品牌AI推荐力名册》。随着AI逐渐成为新的信息入口和消费决策入口，品牌在AI回答中是否被提及、是否被推荐、排序是否靠前，正在成为新的竞争维度。36氪副总裁迟涵表示，36氪是最早发现和报道GEO的媒体，PureblueAI清蓝在自研技术算法和“科学GEO”方法论上的积累令其成</p>
+        <div class="news-meta">
+            <a href="https://36kr.com/p/3818877539091333?f=rss" target="_blank">Original</a>
+            <span class="tag">36kr</span>
+            <span class="tag tag-china">CN</span>
+        </div>
+    </div>
+    <div class="news-item">
+        <div class="news-date">05-21 17:01</div>
+        <h3>41. 把确定性，写进农业：四个外行、两次失败、三千万学费换来的答案| 2026AI Partner·北京亦庄AI+产业大会</h3>
+        <p class="snippet">两次失败、三千万学费——创业没有爽剧剧本，这是陆渔科技深耕农业AI真实的“入场券”。当99%的人还在用AI写文案、做设计时，有人把它扔进了鱼塘，只为解决一个最朴素的问题：不确定性。
+  
+  鲁敏用18年IT男转型“新农民”的经历，揭开了水产养殖最残酷的真相：1.38万亿的市场，数字化渗透率不足5%，一叶方塘，百万归零。</p>
+        <div class="news-meta">
+            <a href="https://36kr.com/p/3818800487679111?f=rss" target="_blank">Original</a>
+            <span class="tag">36kr</span>
+            <span class="tag tag-china">CN</span>
+        </div>
+    </div>
+    <div class="news-item">
+        <div class="news-date">05-21 16:54</div>
+        <h3>42. 从算力到价值：AI时代的基础设施重构与产业增长新引擎| 2026AI Partner·北京亦庄AI+产业大会</h3>
+        <p class="snippet">token经济如何重塑AI产业链？从芯片到智算中心，从模型服务到终端应用，token正在成为贯穿全链的计价单位。而当推理算力需求超越训练，智算中心的角色正从算力仓库变为token工厂，一个万亿级市场的大门刚刚打开。
+  
+  token正在成为AI时代的新质生产力单位。宋琛指出，随着Agent成为新交互入口，单次任务to</p>
+        <div class="news-meta">
+            <a href="https://36kr.com/p/3817502775329667?f=rss" target="_blank">Original</a>
+            <span class="tag">36kr</span>
+            <span class="tag tag-china">CN</span>
+        </div>
+    </div>
+    <div class="news-item">
+        <div class="news-date">05-21 21:45</div>
+        <h3>43. 对标特斯拉FSD，Momenta借势出海</h3>
+        <p class="snippet">中国车企在过去几年间完成了产品、品牌和生态体系的逐步出海。而接下来，很可能是智驾技术的全球远征。MomentaCEO曹旭东判断，2028年将是海外城市NOA的拐点。Momenta和上汽MG做好了准备。北京车展上，双方联合宣布，下半年推出的全新轿跑车型MG07，搭载MomentaR7强化学习世界模型、X7大模型专用芯片，主打软硬一体路线。作为全球品牌，</p>
+        <div class="news-meta">
+            <a href="https://www.leiphone.com/category/transportation/3chtnA4AOy1BLrwW.html" target="_blank">Original</a>
+            <span class="tag">雷锋网</span>
+            <span class="tag tag-china">CN</span>
+        </div>
+    </div>
+    <div class="news-item">
+        <div class="news-date">05-21 18:52</div>
+        <h3>44. DeepSeek组建Harness团队，非「超能力者」不要？中国AI开启「做产品」的关键一跳</h3>
+        <p class="snippet"><p style="text-align: justify; margin-bot</p>
+        <div class="news-meta">
+            <a href="https://www.leiphone.com/category/yanxishe/s8qOo3KbXsfmFxb6.html" target="_blank">Original</a>
+            <span class="tag">雷锋网</span>
+            <span class="tag tag-china">CN</span>
+        </div>
+    </div>
+    <div class="news-item">
+        <div class="news-date">05-21 18:28</div>
+        <h3>45. 清华大学 X 追觅扫地机：共建校级实践基地，开启顶尖工程师“养成计划”</h3>
+        <p class="snippet">2026 年 5 月 8 日，清华大学与追觅扫地机正式签约，共建清华大学校级研究生社会实践基地。该基地由清华大学深圳国际研究生院作为代管院系，是深圳国际研究生院 2026 年首次签约设立的校级研究生社会实践基地。签约仪式后，与会人员深入追觅扫地机研发实验室，全面了解了追觅扫地机整体发展战略与全球市场影响力，并</p>
+        <div class="news-meta">
+            <a href="https://www.leiphone.com/category/industrynews/0AEv1Rwlw51aPLui.html" target="_blank">Original</a>
+            <span class="tag">雷锋网</span>
+            <span class="tag tag-china">CN</span>
+        </div>
+    </div>
+    <div class="news-item">
+        <div class="news-date">05-21 16:01</div>
+        <h3>46. 阿里云为什么「重构自己」？</h3>
+        <p class="snippet">如果你连续几年参加云相关的峰会，今年就会有一个明显的感受：话题变了。过去我们聊云，我们在聊什么？一来是聊云，我们聊的是怎么把服务器搬上去。再后来，我们聊的是怎么在云上跑AI，买GPU、调模型、搭推理服务。可能大家还会有印象，去年这个时候，大家的焦点还是哪家云的GPU够便宜、模型推理延迟多少、算力供应够不够。但今年，行业的问题完全变了。今</p>
+        <div class="news-meta">
+            <a href="https://www.leiphone.com/category/ai/nQVZmFcBopMuwsCZ.html" target="_blank">Original</a>
+            <span class="tag">雷锋网</span>
+            <span class="tag tag-china">CN</span>
+        </div>
+    </div>
+    <div class="news-item">
+        <div class="news-date">05-21 15:59</div>
+        <h3>47. [OpenAI]放弃的事，为什么阿里可能做得成</h3>
+        <p class="snippet">一个完整的AI购物闭环出现了。5月11日，千问与淘宝全面打通。用户打开千问App，与AI对话，即可完成淘宝上的商品挑选、对比及下单购买。在淘宝端内，点击“千问AI购物助手”也可以体验AI购物。AI重塑电商讨论了两年，但未来的轮廓并不清晰。一边是全球科技巨头都在布局。ChatGPT、Gemini先后接入沃尔玛等零售商，亚马逊自研Rufus，微软与Str</p>
+        <div class="news-meta">
+            <a href="https://www.leiphone.com/category/industrynews/KHSMwS0aTqX2ip1W.html" target="_blank">Original</a>
+            <span class="tag">雷锋网</span>
+            <span class="tag tag-china">CN</span>
+        </div>
+    </div>
+    <div class="news-item">
+        <div class="news-date">05-21 15:54</div>
+        <h3>48. 阿里国际接近盈利背后，速卖通品牌化与AI提效双线并进</h3>
+        <p class="snippet">阿里最新一季财报披露了一个容易被外界忽视但意义重大的数字：阿里国际本季度经调整EBITA亏损仅剩1.38亿元，已经接近盈亏平衡。阿里国际的亏损收窄并非偶然。财报给出的解释是“速卖通运营效率的显著提升，以及多项业务的效率提升所致”。这听起来像是一句标准的财报话术，但拆解开来，背后是一套已经跑通的商业逻辑。过去一年，速卖通在物流优化上的投入开始产生回报。Choice业</p>
+        <div class="news-meta">
+            <a href="https://www.leiphone.com/category/industrynews/g6NLstG8StqeQc8p.html" target="_blank">Original</a>
+            <span class="tag">雷锋网</span>
+            <span class="tag tag-china">CN</span>
+        </div>
+    </div>
+    <div class="news-item">
+        <div class="news-date">05-21 14:41</div>
+        <h3>49. 对话朱郴：深度拆解金山办公2026民企分销渠道打法</h3>
+        <p class="snippet">金山办公手里有3000家渠道。放在中国软件行业里，这个数量已经算是很大了，阿里云的渠道体系也是就在 1 万多家。但一个反直觉的事实是：渠道这么庞大，金山办公却一直做不动民企市场。过去二十多年，这套渠道体系几乎是专为党政军和央国企设计的，有政策，有预算，客户自己会来。渠道要做的，只是守住关系，把单子稳稳接住。但当金山办公开始转向民企、转向SaaS订阅，</p>
+        <div class="news-meta">
+            <a href="https://www.leiphone.com/category/CorporateServices/8zqD71fqvS6vWIEe.html" target="_blank">Original</a>
+            <span class="tag">雷锋网</span>
+            <span class="tag tag-china">CN</span>
+        </div>
+    </div>
+    <div class="news-item">
+        <div class="news-date">05-21 14:00</div>
+        <h3>50. 抖音“前沿科技首发计划”启动，首站落地[谷歌] I/O 2026大会</h3>
+        <p class="snippet">当地时间5月19日，一年一度的Google I/O大会在美国加利福尼亚州举行。大会以主题演讲和分论坛等形式，展示谷歌各项前沿技术的最新进展。抖音作为Google I/O 2026中国区“首席内容合作平台”，邀请12位科技创作者亲临大会现场，以第一视角记录并解读现场发布的的最新前沿科技信息，让科技爱好者同步感知全球最新技术动态。相关内容将于近期在抖音独家上线，用户登录抖音或抖音精选App，搜索</p>
+        <div class="news-meta">
+            <a href="https://www.leiphone.com/category/industrynews/g0fqEAreR3YMwiIb.html" target="_blank">Original</a>
+            <span class="tag">雷锋网</span>
+            <span class="tag tag-china">CN</span>
+        </div>
+    </div>
+    <div class="news-item">
+        <div class="news-date">05-21 13:32</div>
+        <h3>51. 拿下韩国市场跨境平台第一！速卖通持续加码韩国市场</h3>
+        <p class="snippet">速卖通再次拿下韩国跨境电商第一名。Wiseapp·Retail最新数据显示，今年1-4月，根据银行卡和信用卡的结算数据，速卖通AliExpress稳居韩国市场跨境电商平台首位，遥遥领先Temu和SHEIN。同时，速卖通凭借40.7万韩元的支付客单价确立了高客单价优势，核心用户集中在30至40岁群体。记者获悉，面对欧盟合规大考，速卖通正在探索更多确定性机会，将发布针对韩国、美国、拉美三大重点市</p>
+        <div class="news-meta">
+            <a href="https://www.leiphone.com/category/industrynews/vX9BYoFAzGInJLf1.html" target="_blank">Original</a>
+            <span class="tag">雷锋网</span>
+            <span class="tag tag-china">CN</span>
+        </div>
+    </div>
+    <div class="news-item">
+        <div class="news-date">05-22 00:58</div>
+        <h3>52. 极空间私有云 Z425 轻享版发布：八盘位、万兆网口，首发价 6699 元起</h3>
+        <p class="snippet">IT之家 5 月 22 日消息，极空间私有云 Z425 轻享版于 5 月 21 日发布，首发价 6699 元起，国补后 5637.61 元起。<img src="https://img.ithome.com/newsuploadfiles/2026/5/ca558f47-8cd6-42db</p>
+        <div class="news-meta">
+            <a href="https://www.ithome.com/0/953/698.htm" target="_blank">Original</a>
+            <span class="tag">IT之家</span>
+            <span class="tag tag-china">CN</span>
+        </div>
+    </div>
+    <div class="news-item">
+        <div class="news-date">05-22 00:57</div>
+        <h3>53. Ayaneo Konkr Pocket Block 掌机亮相：两色可选，具备 AI 功能</h3>
+        <p class="snippet">IT之家 5 月 22 日消息，Ayaneo Konkr Pocket Block 掌机昨晚的产品分享会中亮相，新品采用复古设计语言，号称是“全球首款 AI 掌机”。<img src="https://img.ithome.com/newsuploadfiles/2026/5/eb69a2</p>
+        <div class="news-meta">
+            <a href="https://www.ithome.com/0/953/697.htm" target="_blank">Original</a>
+            <span class="tag">IT之家</span>
+            <span class="tag tag-china">CN</span>
+        </div>
+    </div>
+    <div class="news-item">
+        <div class="news-date">05-22 00:47</div>
+        <h3>54. 微软承认在 Word、Excel 和 PowerPoint 中加入 Copilot 悬浮按钮是个错误，遭大量投诉后回调</h3>
+        <p class="snippet">IT之家 5 月 22 日消息，当地时间 5 月 21 日，微软发布了一篇博客，阐述了其为 Word、Excel 和 PowerPoint 引入 Copilot 的美好愿景。微软官方承认，近期在 Word、Excel 和 PowerPoint 中添加的浮动 Copilot 按钮确实影响了用户的工作体验。在收到大量反馈后，微软决定推出修复方案，针对 Copilot</p>
+        <div class="news-meta">
+            <a href="https://www.ithome.com/0/953/694.htm" target="_blank">Original</a>
+            <span class="tag">IT之家</span>
+            <span class="tag tag-china">CN</span>
+        </div>
+    </div>
+    <div class="news-item">
+        <div class="news-date">05-22 00:40</div>
+        <h3>55. 壹号本全新 OnexPlayer X1 Pro 掌机发布：锐龙 AI9 HX 470 处理器，65Wh 电池</h3>
+        <p class="snippet">IT之家 5 月 22 日消息，壹号本全新 OnexPlayer X1 Pro 掌机现已在海外发布，新品搭载 AMD Gorgon Point 平台，具备 65Wh 电池、可拆卸式手柄，可通过 OCuLink 接口外接显卡。<img src="https://img.ithome.com/</p>
+        <div class="news-meta">
+            <a href="https://www.ithome.com/0/953/692.htm" target="_blank">Original</a>
+            <span class="tag">IT之家</span>
+            <span class="tag tag-china">CN</span>
+        </div>
+    </div>
+    <div class="news-item">
+        <div class="news-date">05-22 00:16</div>
+        <h3>56. Mac“常青树”编辑器 BBEdit 16 上线：支持图片内文字搜索，优化支持快捷指令</h3>
+        <p class="snippet">IT之家 5 月 22 日消息，科技媒体 9to5Mac 今天（5 月 22 日）发布博文，报道称 Bare Bones 发布了 BBEdit 16 文本和代码编辑器，支持图片内文字搜索、优化支持快捷指令，AI 工作表支持流式输出，以及多项底层性能优化。IT之家注：BBEdit 可追溯到 1993 年，是 Bare Bones</p>
+        <div class="news-meta">
+            <a href="https://www.ithome.com/0/953/688.htm" target="_blank">Original</a>
+            <span class="tag">IT之家</span>
+            <span class="tag tag-china">CN</span>
+        </div>
+    </div>
+    <div class="news-item">
+        <div class="news-date">05-22 08:17</div>
+        <h3>57. Edge AI Daily 早报（5月22日）</h3>
+        <p class="snippet">OpenAI推迟IPO以优先确保监管合规与技术成熟度，反映AI商业化节奏的审慎调整。微软推出自研Maia200芯片，在部分推理任务成本上优于英伟达，标志AI硬件自主化进入新阶段。Anthropic与SpaceX达成每月12.5亿美元计算资源合作，年付达150亿美元，成为SpaceX最大商业收入来源。</p>
+        <div class="news-meta">
+            <a href="https://www.tmtpost.com/7998522.html" target="_blank">Original</a>
+            <span class="tag">钛媒体</span>
+            <span class="tag tag-china">CN</span>
+        </div>
+    </div>
+    <div class="news-item">
+        <div class="news-date">05-21 18:32</div>
+        <h3>58. 硅谷 AI 格局生变：卡帕西跳槽、马斯克助阵，孙正义成孤守者</h3>
+        <p class="snippet">资本疯狂倒贴，极客却排队逃亡。</p>
+        <div class="news-meta">
+            <a href="https://www.tmtpost.com/7997279.html" target="_blank">Original</a>
+            <span class="tag">钛媒体</span>
+            <span class="tag tag-china">CN</span>
+        </div>
+    </div>
+    <div class="news-item">
+        <div class="news-date">05-21 18:24</div>
+        <h3>59. [Meta]裁员8000人背后：扎克伯格千亿美元豪赌AI</h3>
+        <p class="snippet">Meta全面押注AI。</p>
+        <div class="news-meta">
+            <a href="https://www.tmtpost.com/7996168.html" target="_blank">Original</a>
+            <span class="tag">钛媒体</span>
+            <span class="tag tag-china">CN</span>
+        </div>
+    </div>
+    <div class="footer">
+        Generated by AI News Assistant
+    </div>
+</body>
+</html>

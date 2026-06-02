@@ -1,0 +1,874 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>视频文案提取 - Video Subtitle Extractor</title>
+<style>
+/* ============================================
+   Apple Design Language CSS Variables
+   ============================================ */
+:root {
+    --apple-blue: #007AFF;
+    --apple-blue-dark: #0066D6;
+    --apple-blue-light: #4DA3FF;
+    --apple-purple: #5856D6;
+    --apple-pink: #FF2D55;
+    --apple-success: #34C759;
+    --apple-success-light: #D4EDDA;
+    --apple-warning: #FF9500;
+    --apple-warning-light: #FFF3CD;
+    --apple-error: #FF3B30;
+    --apple-error-light: #FDECEA;
+    --apple-info: #5AC8FA;
+    --apple-black: #1D1D1F;
+    --apple-dark: #272730;
+    --apple-gray: #86868B;
+    --apple-light-gray: #D2D2D7;
+    --apple-ultra-light: #F5F5F7;
+    --apple-white: #FFFFFF;
+    --radius-sm: 8px;
+    --radius-md: 12px;
+    --radius-lg: 16px;
+    --radius-xl: 20px;
+    --radius-full: 9999px;
+    --shadow-sm: 0 1px 2px rgba(0,0,0,0.05);
+    --shadow-base: 0 1px 3px rgba(0,0,0,0.1), 0 1px 2px rgba(0,0,0,0.06);
+    --shadow-md: 0 4px 12px rgba(0,0,0,0.1);
+    --shadow-lg: 0 12px 40px rgba(0,0,0,0.12);
+    --shadow-xl: 0 20px 50px rgba(0,0,0,0.15);
+    --transition-fast: 150ms cubic-bezier(0.4, 0, 0.2, 1);
+    --transition-normal: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    --transition-slow: 400ms cubic-bezier(0.4, 0, 0.2, 1);
+    --transition-spring: 500ms cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+/* ============================================
+   Reset & Base
+   ============================================ */
+* { margin: 0; padding: 0; box-sizing: border-box; }
+
+body {
+    font-family: -apple-system, BlinkMacSystemFont, 'SF Pro Text', 'Segoe UI', sans-serif;
+    background: var(--apple-ultra-light);
+    color: var(--apple-black);
+    min-height: 100vh;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+/* ============================================
+   Layout
+   ============================================ */
+.container {
+    max-width: 720px;
+    margin: 0 auto;
+    padding: 32px 20px 80px;
+}
+
+/* ============================================
+   Header
+   ============================================ */
+.header {
+    text-align: center;
+    margin-bottom: 32px;
+}
+.header h1 {
+    font-size: 28px;
+    font-weight: 700;
+    color: var(--apple-black);
+    letter-spacing: -0.5px;
+    margin-bottom: 4px;
+}
+.header .subtitle {
+    font-size: 15px;
+    color: var(--apple-gray);
+    font-weight: 400;
+}
+
+/* ============================================
+   Card
+   ============================================ */
+.card {
+    background: var(--apple-white);
+    border-radius: var(--radius-xl);
+    padding: 28px;
+    box-shadow: var(--shadow-base);
+    border: 1px solid rgba(0,0,0,0.04);
+    margin-bottom: 20px;
+    transition: box-shadow var(--transition-normal);
+}
+
+/* ============================================
+   Form Elements
+   ============================================ */
+.form-group {
+    margin-bottom: 20px;
+}
+.form-label {
+    display: block;
+    font-size: 13px;
+    font-weight: 600;
+    color: var(--apple-gray);
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    margin-bottom: 8px;
+}
+
+/* URL Input */
+.url-input {
+    width: 100%;
+    padding: 14px 16px;
+    font-size: 16px;
+    border: 2px solid var(--apple-light-gray);
+    border-radius: var(--radius-md);
+    background: var(--apple-white);
+    color: var(--apple-black);
+    transition: border-color var(--transition-fast), box-shadow var(--transition-fast);
+    font-family: inherit;
+}
+.url-input:focus {
+    outline: none;
+    border-color: var(--apple-blue);
+    box-shadow: 0 0 0 4px rgba(0,122,255,0.15);
+}
+.url-input::placeholder {
+    color: var(--apple-gray);
+}
+
+/* Select */
+.select-row {
+    display: flex;
+    gap: 16px;
+    align-items: flex-end;
+    flex-wrap: wrap;
+}
+.select-group {
+    flex: 1;
+    min-width: 160px;
+}
+.select-input {
+    width: 100%;
+    padding: 12px 14px;
+    font-size: 15px;
+    border: 2px solid var(--apple-light-gray);
+    border-radius: var(--radius-md);
+    background: var(--apple-white);
+    color: var(--apple-black);
+    font-family: inherit;
+    cursor: pointer;
+    appearance: none;
+    -webkit-appearance: none;
+    background-image: url("data:image/svg+xml,%3Csvg width='12' height='8' viewBox='0 0 12 8' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M1 1l5 5 5-5' stroke='%2386868B' stroke-width='2' fill='none' stroke-linecap='round'/%3E%3C/svg%3E");
+    background-repeat: no-repeat;
+    background-position: right 14px center;
+    padding-right: 36px;
+    transition: border-color var(--transition-fast), box-shadow var(--transition-fast);
+}
+.select-input:focus {
+    outline: none;
+    border-color: var(--apple-blue);
+    box-shadow: 0 0 0 4px rgba(0,122,255,0.15);
+}
+
+/* Mode Radio Group */
+.mode-group {
+    display: flex;
+    gap: 12px;
+    flex-wrap: wrap;
+}
+.mode-option {
+    flex: 1;
+    min-width: 200px;
+}
+.mode-option input { display: none; }
+.mode-option label {
+    display: block;
+    padding: 16px 20px;
+    border: 2px solid var(--apple-light-gray);
+    border-radius: var(--radius-md);
+    cursor: pointer;
+    transition: all var(--transition-fast);
+    background: var(--apple-white);
+}
+.mode-option label:hover {
+    border-color: var(--apple-blue-light);
+    background: rgba(0,122,255,0.04);
+}
+.mode-option input:checked + label {
+    border-color: var(--apple-blue);
+    background: rgba(0,122,255,0.06);
+    box-shadow: 0 0 0 1px var(--apple-blue);
+}
+.mode-option .mode-title {
+    font-size: 15px;
+    font-weight: 600;
+    color: var(--apple-black);
+    margin-bottom: 4px;
+}
+.mode-option .mode-desc {
+    font-size: 13px;
+    color: var(--apple-gray);
+    line-height: 1.4;
+}
+
+/* Submit Button */
+.btn-submit {
+    display: block;
+    width: 100%;
+    padding: 16px;
+    font-size: 17px;
+    font-weight: 600;
+    color: white;
+    background: var(--apple-blue);
+    border: none;
+    border-radius: var(--radius-full);
+    cursor: pointer;
+    transition: all var(--transition-fast);
+    box-shadow: var(--shadow-base);
+    font-family: inherit;
+    letter-spacing: -0.3px;
+}
+.btn-submit:hover {
+    background: var(--apple-blue-dark);
+    box-shadow: var(--shadow-md);
+    transform: scale(1.01);
+}
+.btn-submit:active { transform: scale(0.98); }
+.btn-submit:disabled {
+    background: var(--apple-light-gray);
+    cursor: not-allowed;
+    transform: none;
+    box-shadow: none;
+}
+
+/* ============================================
+   Progress Stepper
+   ============================================ */
+.progress-section { display: none; }
+.progress-section.visible { display: block; }
+
+.steps {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    position: relative;
+    padding: 8px 0 0;
+}
+.steps::before {
+    content: '';
+    position: absolute;
+    top: 18px;
+    left: 24px;
+    right: 24px;
+    height: 2px;
+    background: var(--apple-light-gray);
+    z-index: 0;
+}
+.step {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    position: relative;
+    z-index: 1;
+    flex: 1;
+}
+.step-dot {
+    width: 14px;
+    height: 14px;
+    border-radius: 50%;
+    background: var(--apple-light-gray);
+    border: 3px solid var(--apple-white);
+    box-shadow: 0 0 0 2px var(--apple-light-gray);
+    transition: all var(--transition-normal);
+    flex-shrink: 0;
+}
+.step.active .step-dot {
+    background: var(--apple-blue);
+    box-shadow: 0 0 0 2px var(--apple-blue), 0 0 12px rgba(0,122,255,0.4);
+    animation: pulse-dot 1.5s ease-in-out infinite;
+}
+.step.done .step-dot {
+    background: var(--apple-success);
+    box-shadow: 0 0 0 2px var(--apple-success);
+}
+.step.error .step-dot {
+    background: var(--apple-error);
+    box-shadow: 0 0 0 2px var(--apple-error);
+}
+.step-label {
+    font-size: 12px;
+    font-weight: 500;
+    color: var(--apple-gray);
+    text-align: center;
+    transition: color var(--transition-fast);
+}
+.step.active .step-label { color: var(--apple-blue); font-weight: 600; }
+.step.done .step-label { color: var(--apple-success); }
+.step.error .step-label { color: var(--apple-error); }
+
+@keyframes pulse-dot {
+    0%, 100% { transform: scale(1); }
+    50% { transform: scale(1.3); }
+}
+
+.progress-status {
+    text-align: center;
+    margin-top: 16px;
+    font-size: 14px;
+    color: var(--apple-gray);
+}
+
+/* Spinner */
+.spinner {
+    display: inline-block;
+    width: 14px;
+    height: 14px;
+    border: 2px solid var(--apple-light-gray);
+    border-top-color: var(--apple-blue);
+    border-radius: 50%;
+    animation: spin 0.6s linear infinite;
+    vertical-align: middle;
+    margin-right: 6px;
+}
+@keyframes spin { to { transform: rotate(360deg); } }
+
+/* ============================================
+   Error Banner
+   ============================================ */
+.error-banner {
+    display: none;
+    padding: 16px 20px;
+    background: var(--apple-error-light);
+    border: 1px solid var(--apple-error);
+    border-radius: var(--radius-md);
+    color: #8B1A1A;
+    font-size: 14px;
+    font-weight: 500;
+    margin-bottom: 16px;
+}
+.error-banner.visible { display: block; }
+
+/* ============================================
+   Results Section
+   ============================================ */
+.results-section { display: none; }
+.results-section.visible { display: block; }
+
+.result-title {
+    font-size: 20px;
+    font-weight: 700;
+    color: var(--apple-black);
+    margin-bottom: 20px;
+    letter-spacing: -0.3px;
+}
+
+/* Collapsible Sections */
+.collapsible {
+    border: 1px solid var(--apple-light-gray);
+    border-radius: var(--radius-md);
+    margin-bottom: 12px;
+    overflow: hidden;
+}
+.collapsible-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 14px 18px;
+    background: var(--apple-ultra-light);
+    cursor: pointer;
+    font-size: 14px;
+    font-weight: 600;
+    color: var(--apple-black);
+    user-select: none;
+    transition: background var(--transition-fast);
+}
+.collapsible-header:hover { background: #ECECF0; }
+.collapsible-header::after {
+    content: '';
+    width: 8px;
+    height: 8px;
+    border-right: 2px solid var(--apple-gray);
+    border-bottom: 2px solid var(--apple-gray);
+    transform: rotate(45deg);
+    transition: transform var(--transition-fast);
+    flex-shrink: 0;
+}
+.collapsible.open .collapsible-header::after {
+    transform: rotate(-135deg);
+}
+.collapsible-body {
+    display: none;
+    padding: 16px 18px;
+    max-height: 300px;
+    overflow-y: auto;
+    font-size: 14px;
+    line-height: 1.7;
+    color: var(--apple-black);
+    white-space: pre-wrap;
+    border-top: 1px solid var(--apple-light-gray);
+    background: var(--apple-white);
+}
+.collapsible.open .collapsible-body { display: block; }
+
+/* Changes Table */
+.changes-list {
+    list-style: none;
+}
+.change-item {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 10px 0;
+    border-bottom: 1px solid var(--apple-ultra-light);
+    font-size: 14px;
+}
+.change-item:last-child { border-bottom: none; }
+.change-original {
+    color: var(--apple-error);
+    text-decoration: line-through;
+    font-weight: 500;
+}
+.change-arrow { color: var(--apple-gray); flex-shrink: 0; }
+.change-corrected {
+    color: var(--apple-success);
+    font-weight: 600;
+}
+.change-reason {
+    color: var(--apple-gray);
+    font-size: 12px;
+    margin-left: auto;
+    flex-shrink: 0;
+}
+
+/* File path row */
+.file-row {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 12px 18px;
+    background: var(--apple-ultra-light);
+    border-radius: var(--radius-md);
+    margin-bottom: 10px;
+    font-size: 13px;
+    color: var(--apple-black);
+    word-break: break-all;
+}
+.file-icon { color: var(--apple-blue); flex-shrink: 0; font-weight: 600; }
+.file-name { flex: 1; font-family: 'SF Mono', 'Consolas', monospace; font-size: 12px; }
+
+/* ============================================
+   History Section
+   ============================================ */
+.history-list { list-style: none; }
+.history-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 14px 18px;
+    border-bottom: 1px solid var(--apple-ultra-light);
+    transition: background var(--transition-fast);
+}
+.history-item:hover { background: var(--apple-ultra-light); }
+.history-item:last-child { border-bottom: none; }
+.history-name {
+    font-size: 14px;
+    font-weight: 500;
+    color: var(--apple-black);
+}
+.history-date {
+    font-size: 12px;
+    color: var(--apple-gray);
+}
+.history-size {
+    font-size: 12px;
+    color: var(--apple-gray);
+    flex-shrink: 0;
+}
+
+/* Empty state */
+.empty-state {
+    text-align: center;
+    padding: 40px 20px;
+    color: var(--apple-gray);
+    font-size: 14px;
+}
+
+/* ============================================
+   Responsive
+   ============================================ */
+@media (max-width: 600px) {
+    .container { padding: 20px 12px 80px; }
+    .card { padding: 20px; }
+    .header h1 { font-size: 24px; }
+    .select-row { flex-direction: column; gap: 12px; }
+    .mode-group { flex-direction: column; }
+    .mode-option { min-width: 0; }
+    .steps { flex-wrap: wrap; gap: 8px; }
+    .step-label { font-size: 11px; }
+}
+</style>
+</head>
+<body>
+
+<div class="container">
+
+    <!-- Header -->
+    <div class="header">
+        <h1>视频文案提取</h1>
+        <p class="subtitle">Video Subtitle Extractor</p>
+    </div>
+
+    <!-- Input Card -->
+    <div class="card" id="input-card">
+        <div class="form-group">
+            <label class="form-label" for="url-input">视频链接</label>
+            <input type="url" id="url-input" class="url-input"
+                   placeholder="粘贴视频链接（支持 YouTube、抖音、小红书等）..."
+                   autocomplete="off">
+        </div>
+
+        <div class="form-group">
+            <div class="select-row">
+                <div class="select-group">
+                    <label class="form-label" for="language-select">语言</label>
+                    <select id="language-select" class="select-input">
+                        <option value="">自动检测</option>
+                        <option value="zh">中文</option>
+                        <option value="en">English</option>
+                        <option value="ja">日本語</option>
+                        <option value="ko">한국어</option>
+                    </select>
+                </div>
+            </div>
+        </div>
+
+        <div class="form-group">
+            <label class="form-label">模式</label>
+            <div class="mode-group">
+                <div class="mode-option">
+                    <input type="radio" name="mode" id="mode-basic" value="basic" checked>
+                    <label for="mode-basic">
+                        <div class="mode-title">基础版</div>
+                        <div class="mode-desc">识别 + 字幕生成</div>
+                    </label>
+                </div>
+                <div class="mode-option">
+                    <input type="radio" name="mode" id="mode-proofread" value="proofread">
+                    <label for="mode-proofread">
+                        <div class="mode-title">完整版</div>
+                        <div class="mode-desc">识别 + LLM校对 + 双版本字幕</div>
+                    </label>
+                </div>
+            </div>
+        </div>
+
+        <button class="btn-submit" id="btn-start" onclick="startProcess()">开始提取</button>
+    </div>
+
+    <!-- Error Banner -->
+    <div class="error-banner" id="error-banner"></div>
+
+    <!-- Progress Section -->
+    <div class="card progress-section" id="progress-section">
+        <div class="steps" id="steps"></div>
+        <div class="progress-status" id="progress-status"></div>
+    </div>
+
+    <!-- Results Section -->
+    <div class="card results-section" id="results-section">
+        <div class="result-title" id="result-title"></div>
+        <div id="results-content"></div>
+    </div>
+
+    <!-- History Section -->
+    <div class="card" id="history-card">
+        <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:16px;">
+            <span style="font-size:18px;font-weight:700;color:var(--apple-black);letter-spacing:-0.3px;">历史记录</span>
+            <button onclick="loadHistory()" style="background:none;border:none;font-size:14px;color:var(--apple-blue);cursor:pointer;font-weight:500;">刷新</button>
+        </div>
+        <div id="history-content">
+            <div class="empty-state">加载中...</div>
+        </div>
+    </div>
+
+</div>
+
+<script>
+// ── Constants ────────────────────────────────────────────────
+const STEP_LABELS = {
+    downloading: '下载',
+    extracting: '音频',
+    transcribing: '识别',
+    proofreading: '校对',
+    generating: '生成',
+    done: '完成',
+    error: '失败',
+    pending: '等待'
+};
+const STEP_ORDER = ['downloading', 'extracting', 'transcribing', 'proofreading', 'generating'];
+
+// ── State ────────────────────────────────────────────────────
+let pollTimer = null;
+let currentJobId = null;
+
+// ── Start Process ────────────────────────────────────────────
+async function startProcess() {
+    const url = document.getElementById('url-input').value.trim();
+    if (!url) {
+        showError('请输入视频链接');
+        return;
+    }
+
+    const language = document.getElementById('language-select').value || null;
+    const modeEl = document.querySelector('input[name="mode"]:checked');
+    const mode = modeEl ? modeEl.value : 'basic';
+
+    // UI: disable form, show progress
+    document.getElementById('btn-start').disabled = true;
+    document.getElementById('btn-start').textContent = '提交中...';
+    document.getElementById('error-banner').classList.remove('visible');
+    document.getElementById('results-section').classList.remove('visible');
+    document.getElementById('progress-section').classList.add('visible');
+
+    // Build step list based on mode
+    const allSteps = mode === 'proofread'
+        ? ['downloading', 'extracting', 'transcribing', 'proofreading', 'generating']
+        : ['downloading', 'extracting', 'transcribing', 'generating'];
+
+    renderSteps(allSteps, -1);
+
+    try {
+        const resp = await fetch('/api/process', {
+            method: 'POST',
+            headers: { 'Content-Type': 'application/json' },
+            body: JSON.stringify({ url, language, mode })
+        });
+        const data = await resp.json();
+
+        if (data.status !== 'ok') {
+            showError(data.error || '提交失败');
+            resetButton();
+            return;
+        }
+
+        currentJobId = data.job_id;
+        document.getElementById('progress-status').innerHTML =
+            '<span class="spinner"></span>处理中...';
+        pollTimer = setInterval(pollStatus, 1000);
+
+    } catch (e) {
+        showError('网络错误：' + e.message);
+        resetButton();
+    }
+}
+
+// ── Poll Status ──────────────────────────────────────────────
+async function pollStatus() {
+    if (!currentJobId) return;
+
+    try {
+        const resp = await fetch('/api/status/' + currentJobId);
+        const data = await resp.json();
+
+        if (data.status !== 'ok') return;
+
+        const job = data.job;
+        const steps = job.mode === 'proofread'
+            ? ['downloading', 'extracting', 'transcribing', 'proofreading', 'generating']
+            : ['downloading', 'extracting', 'transcribing', 'generating'];
+
+        const stepIdx = STEP_ORDER.indexOf(job.step);
+
+        if (job.status === 'error') {
+            clearInterval(pollTimer);
+            pollTimer = null;
+            renderSteps(steps, steps.length, 'error');
+            document.getElementById('progress-status').textContent = '';
+            showError(job.error || '处理失败');
+            resetButton();
+            return;
+        }
+
+        if (job.status === 'done') {
+            clearInterval(pollTimer);
+            pollTimer = null;
+            renderSteps(steps, steps.length);
+            document.getElementById('progress-status').textContent = '处理完成';
+            showResults(job);
+            resetButton();
+            loadHistory();
+            return;
+        }
+
+        // Running: update step indicator
+        renderSteps(steps, stepIdx >= 0 ? stepIdx : 0);
+        const stepName = STEP_LABELS[job.step] || job.step;
+        document.getElementById('progress-status').innerHTML =
+            '<span class="spinner"></span>' + stepName + '中...';
+
+    } catch (e) {
+        // polling error, ignore silently
+    }
+}
+
+// ── Render Steps ─────────────────────────────────────────────
+function renderSteps(steps, activeIdx, errorStep) {
+    const container = document.getElementById('steps');
+    container.innerHTML = steps.map((s, i) => {
+        let cls = 'step';
+        if (errorStep && i === steps.length - 1) cls += ' error';
+        else if (i < activeIdx) cls += ' done';
+        else if (i === activeIdx) cls += ' active';
+        return `<div class="${cls}">
+            <div class="step-dot"></div>
+            <span class="step-label">${STEP_LABELS[s] || s}</span>
+        </div>`;
+    }).join('');
+}
+
+// ── Show Results ─────────────────────────────────────────────
+function showResults(job) {
+    const section = document.getElementById('results-section');
+    section.classList.add('visible');
+
+    const result = job.result || {};
+    document.getElementById('result-title').textContent = result.title || '处理结果';
+
+    let html = '';
+
+    // Recognized text
+    if (result.text) {
+        html += collapsibleHTML('original-text', '识别文本', result.text);
+    }
+
+    // Proofread text
+    if (result.proofread_text) {
+        html += collapsibleHTML('proofread-text', '校对文本', result.proofread_text);
+    }
+
+    // Changes summary
+    if (result.changes_summary && result.changes_summary.length > 0) {
+        html += collapsibleHTML('changes', '校对变更 (' + result.changes_summary.length + '处)', changesHTML(result.changes_summary));
+    }
+
+    // SRT paths
+    if (result.subtitle_path) {
+        html += fileRowHTML('原始字幕', result.subtitle_path);
+    }
+    if (result.proofread_subtitle_path) {
+        html += fileRowHTML('校对字幕', result.proofread_subtitle_path);
+    }
+
+    document.getElementById('results-content').innerHTML = html;
+
+    // Bind collapsible toggles
+    document.querySelectorAll('.collapsible-header').forEach(header => {
+        header.addEventListener('click', function() {
+            this.parentElement.classList.toggle('open');
+        });
+    });
+
+    // Open first collapsible by default
+    const first = document.querySelector('.collapsible');
+    if (first) first.classList.add('open');
+
+    section.scrollIntoView({ behavior: 'smooth', block: 'start' });
+}
+
+function collapsibleHTML(id, title, body) {
+    return `<div class="collapsible" id="${id}">
+        <div class="collapsible-header">${escapeHTML(title)}</div>
+        <div class="collapsible-body">${escapeHTML(body)}</div>
+    </div>`;
+}
+
+function changesHTML(changes) {
+    return '<ul class="changes-list">' + changes.map(c =>
+        `<li class="change-item">
+            <span class="change-original">${escapeHTML(c.original || '')}</span>
+            <span class="change-arrow">→</span>
+            <span class="change-corrected">${escapeHTML(c.corrected || '')}</span>
+            ${c.reason ? `<span class="change-reason">${escapeHTML(c.reason)}</span>` : ''}
+        </li>`
+    ).join('') + '</ul>';
+}
+
+function fileRowHTML(label, path) {
+    const name = path.split(/[/\\]/).pop();
+    return `<div class="file-row">
+        <span class="file-icon">SRT</span>
+        <span class="file-name">${escapeHTML(name)}</span>
+    </div>`;
+}
+
+// ── Load History ─────────────────────────────────────────────
+async function loadHistory() {
+    const container = document.getElementById('history-content');
+    try {
+        const resp = await fetch('/api/subtitles');
+        const data = await resp.json();
+        if (data.status !== 'ok') {
+            container.innerHTML = '<div class="empty-state">加载失败</div>';
+            return;
+        }
+
+        const files = data.files || [];
+        if (files.length === 0) {
+            container.innerHTML = '<div class="empty-state">暂无历史记录</div>';
+            return;
+        }
+
+        container.innerHTML = '<ul class="history-list">' + files.map(f => {
+            const date = f.created ? new Date(f.created).toLocaleString('zh-CN') : '';
+            const size = f.size ? formatSize(f.size) : '';
+            return `<li class="history-item">
+                <span class="history-name">${escapeHTML(f.name)}</span>
+                <span class="history-date">${escapeHTML(date)}</span>
+                <span class="history-size">${escapeHTML(size)}</span>
+            </li>`;
+        }).join('') + '</ul>';
+    } catch (e) {
+        container.innerHTML = '<div class="empty-state">加载失败</div>';
+    }
+}
+
+// ── Helpers ──────────────────────────────────────────────────
+function showError(msg) {
+    const banner = document.getElementById('error-banner');
+    banner.textContent = msg;
+    banner.classList.add('visible');
+}
+
+function resetButton() {
+    const btn = document.getElementById('btn-start');
+    btn.disabled = false;
+    btn.textContent = '开始提取';
+}
+
+function escapeHTML(str) {
+    if (!str) return '';
+    const div = document.createElement('div');
+    div.textContent = String(str);
+    return div.innerHTML;
+}
+
+function formatSize(bytes) {
+    if (bytes < 1024) return bytes + ' B';
+    if (bytes < 1024 * 1024) return (bytes / 1024).toFixed(1) + ' KB';
+    return (bytes / (1024 * 1024)).toFixed(1) + ' MB';
+}
+
+// ── Init ─────────────────────────────────────────────────────
+document.addEventListener('DOMContentLoaded', function() {
+    loadHistory();
+    // Allow Enter key to submit
+    document.getElementById('url-input').addEventListener('keydown', function(e) {
+        if (e.key === 'Enter') startProcess();
+    });
+});
+</script>
+
+</body>
+</html>

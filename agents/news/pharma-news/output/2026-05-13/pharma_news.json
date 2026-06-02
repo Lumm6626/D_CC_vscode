@@ -1,0 +1,41 @@
+{
+  "date": "2026-05-13",
+  "count": 5,
+  "news": [
+    {
+      "title": "Pfizer announces new cancer therapy results",
+      "url": "https://pfizer.com",
+      "snippet": "Pfizer reports positive Phase 3 trial data",
+      "keyword": "Pfizer",
+      "region": "Foreign"
+    },
+    {
+      "title": "Moderna expands mRNA pipeline",
+      "url": "https://modernatx.com",
+      "snippet": "Moderna announces new pipeline developments",
+      "keyword": "Moderna",
+      "region": "Foreign"
+    },
+    {
+      "title": "Chinese NMPA approves new diabetes drug",
+      "url": "https://nmpa.gov.cn",
+      "snippet": "China approves new GLP-1 treatment",
+      "keyword": "NMPA",
+      "region": "China"
+    },
+    {
+      "title": "Roche Alzheimer drug shows promise",
+      "url": "https://roche.com",
+      "snippet": "Roche reports positive Alzheimer study",
+      "keyword": "Roche",
+      "region": "Foreign"
+    },
+    {
+      "title": "AstraZeneca cancer drug approved in China",
+      "url": "https://astrazeneca.com",
+      "snippet": "AstraZeneca receives China approval",
+      "keyword": "AstraZeneca",
+      "region": "China"
+    }
+  ]
+}

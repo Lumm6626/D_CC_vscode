@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Basic English — 用 850 词表达一切</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div id="app">
+        <!-- Step Indicator -->
+        <div class="step-indicator" id="step-indicator">
+            <div class="step-dot-group">
+                <div class="step-dot completed" data-step="1"></div>
+                <div class="step-line completed" data-line="1"></div>
+                <div class="step-dot" data-step="2"></div>
+                <div class="step-line" data-line="2"></div>
+                <div class="step-dot" data-step="3"></div>
+                <div class="step-line" data-line="3"></div>
+                <div class="step-dot" data-step="4"></div>
+                <div class="step-line" data-line="4"></div>
+                <div class="step-dot" data-step="5"></div>
+            </div>
+        </div>
+        <div class="step-labels" id="step-labels">
+            <span class="step-label" data-step="1">操作词</span>
+            <span class="step-label" data-step="2">事物词</span>
+            <span class="step-label" data-step="3">属性词</span>
+            <span class="step-label" data-step="4">转述</span>
+            <span class="step-label" data-step="5">阅读</span>
+        </div>
+
+        <!-- Screen 1: Home / Dashboard -->
+        <div class="screen active" id="home-screen">
+            <div class="greeting" id="greeting">
+                <div class="greeting-text" id="greeting-text">欢迎回来</div>
+                <div class="greeting-detail" id="greeting-detail"></div>
+            </div>
+            <div class="stats-grid-compact" id="home-stats">
+                <div class="stat-item-compact">
+                    <div class="stat-value-compact" id="stat-mastered">0</div>
+                    <div class="stat-label-compact">已掌握词汇</div>
+                </div>
+                <div class="stat-item-compact">
+                    <div class="stat-value-compact" id="stat-learning">0</div>
+                    <div class="stat-label-compact">学习中</div>
+                </div>
+                <div class="stat-item-compact">
+                    <div class="stat-value-compact" id="stat-streak">0</div>
+                    <div class="stat-label-compact">连续天数</div>
+                </div>
+            </div>
+
+            <div class="section-title" style="margin-top: var(--space-2xl);">选择步骤</div>
+
+            <div class="options-grid" id="step-cards">
+                <!-- Populated by app.js -->
+            </div>
+        </div>
+
+        <!-- Screen 2: Practice (shared across steps 1-4) -->
+        <div class="screen" id="practice-screen">
+            <button class="btn-back" id="btn-practice-back">← 返回</button>
+            <div class="progress-text" id="practice-progress"></div>
+
+            <!-- Word Card Area -->
+            <div class="word-card" id="word-card">
+                <div class="phonetic" id="card-phonetic"></div>
+                <div class="word-display" id="card-word"></div>
+                <div class="chinese-meaning" id="card-chinese"></div>
+                <button class="audio-btn" id="card-audio-btn">&#x1F50A; 听发音</button>
+            </div>
+
+            <!-- Question prompt -->
+            <div class="paraphrase-prompt text-center" id="question-prompt"></div>
+
+            <!-- Options for word matching / multiple choice -->
+            <div class="options-grid" id="answer-options"></div>
+
+            <!-- Paraphrasing input area (Step 4) -->
+            <div id="paraphrase-area" class="paraphrase-area hidden">
+                <div class="paraphrase-original" id="paraphrase-original"></div>
+                <div class="paraphrase-input-wrapper">
+                    <textarea
+                        class="paraphrase-input"
+                        id="paraphrase-input"
+                        placeholder="在这里写下你的 Basic English 改写…"
+                        rows="3"
+                    ></textarea>
+                </div>
+                <div class="checker-feedback" id="checker-feedback" style="display:none;"></div>
+                <button class="paraphrase-submit" id="paraphrase-submit">提交检查</button>
+            </div>
+
+            <!-- Next / Continue button -->
+            <div class="text-center" style="margin-top: var(--space-xl);">
+                <button class="btn-primary hidden" id="btn-next">下一题</button>
+            </div>
+        </div>
+
+        <!-- Screen 3: Reading (Step 5) -->
+        <div class="screen" id="reading-screen">
+            <button class="btn-back" id="btn-reading-back">← 返回</button>
+            <div class="reading-passage" id="reading-passage"></div>
+            <div class="vocab-notes hidden" id="vocab-notes"></div>
+            <div class="reading-questions" id="reading-questions"></div>
+            <div class="text-center" style="margin-top: var(--space-xl);">
+                <button class="btn-primary" id="btn-submit-reading">提交答案</button>
+            </div>
+        </div>
+
+        <!-- Screen 4: Results -->
+        <div class="screen" id="results-screen">
+            <div class="stats-hero">
+                <div class="stats-number" id="result-mastered">0</div>
+                <div class="stats-label">已掌握词汇</div>
+            </div>
+            <div class="feedback-calm" id="result-message"></div>
+            <div class="text-center" style="margin-top: var(--space-xl);">
+                <button class="btn-primary" id="btn-continue">继续学习</button>
+            </div>
+        </div>
+
+        <!-- Bottom Navigation -->
+        <nav class="bottom-nav" id="bottom-nav">
+            <button class="nav-step active" data-step="1">1</button>
+            <button class="nav-step" data-step="2">2</button>
+            <button class="nav-step" data-step="3">3</button>
+            <button class="nav-step" data-step="4">4</button>
+            <button class="nav-step" data-step="5">5</button>
+        </nav>
+    </div>
+
+    <!-- Scripts (dependency order) -->
+    <script src="js/storage.js"></script>
+    <script src="js/srs.js"></script>
+    <script src="js/tts.js"></script>
+    <script src="js/utils/basic_checker.js"></script>
+    <!-- Data files loaded as JS (assign to window globals) -->
+    <script src="js/data/basic_words.js"></script>
+    <script src="js/data/paraphrasing_examples.js"></script>
+    <script src="js/data/reading_passages.js"></script>
+    <script src="js/levels/operations.js"></script>
+    <script src="js/levels/vocabulary.js"></script>
+    <script src="js/levels/paraphrasing.js"></script>
+    <script src="js/levels/reading.js"></script>
+    <script src="js/app.js"></script>
+</body>
+</html>

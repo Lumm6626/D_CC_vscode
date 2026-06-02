@@ -1,0 +1,478 @@
+{
+  "date": "2026-05-28",
+  "count": 59,
+  "news": [
+    {
+      "title": "At the A.I. Epicenter, Technologists Dismiss Pope Leo’s Warnings About the New Technology",
+      "url": "https://www.nytimes.com/2026/05/26/technology/pope-leo-ai-religion.html",
+      "snippet": "Pope Leo XIV’s spiritual message on artificial intelligence arrived as Silicon Valley’s A.I. enthusiasts pursue their own spirituality through technology.",
+      "keyword": "NYTimes",
+      "region": "Foreign",
+      "published": "Tue, 26 May 2026 21:54:36 +0000"
+    },
+    {
+      "title": "SpaceX IPO Filing Reveals Favorable Terms for Elon Musk",
+      "url": "https://www.nytimes.com/2026/05/26/technology/spacex-elon-musk-pay-board-governance.html",
+      "snippet": "The ways it set up its board and Mr. Musk’s pay appear to benefit him at the expense of other shareholders, corporate governance experts said.",
+      "keyword": "NYTimes",
+      "region": "Foreign",
+      "published": "Tue, 26 May 2026 18:59:37 +0000"
+    },
+    {
+      "title": "‘The Maids,’ With Yerin Ha, Asks: Has Life Become One Big Performance?",
+      "url": "https://www.nytimes.com/2026/05/26/theater/the-maids-play-nyc-genet-yerin-ha-kip-williams.html",
+      "snippet": "In his rethinking of Jean Genet’s classic work about class and power, Kip Williams ponders “a world that gives you every opportunity not to be yourself.”",
+      "keyword": "NYTimes",
+      "region": "Foreign",
+      "published": "Tue, 26 May 2026 09:02:55 +0000"
+    },
+    {
+      "title": "Massachusetts Uber and Lyft Drivers Form First Union for Ride-Share Workers",
+      "url": "https://www.nytimes.com/2026/05/25/business/uber-lyft-app-drivers-union-massachusetts.html",
+      "snippet": "The App Drivers Union said it was the first organization in the country to be formally certified to represent drivers for apps such as Uber and Lyft.",
+      "keyword": "NYTimes",
+      "region": "Foreign",
+      "published": "Mon, 25 May 2026 21:29:58 +0000"
+    },
+    {
+      "title": "As A.I. Fever Rises in Silicon Valley, Pope Leo Has a Few Words",
+      "url": "https://www.nytimes.com/2026/05/25/technology/pope-ai-silicon-valley.html",
+      "snippet": "The American pope wants to take artificial intelligence down a notch. Is he challenging the tech companies, or will tech take over the papacy?",
+      "keyword": "NYTimes",
+      "region": "Foreign",
+      "published": "Mon, 25 May 2026 18:35:03 +0000"
+    },
+    {
+      "title": "UK Institute Is Hunting for Dangers Lurking in AI",
+      "url": "https://www.nytimes.com/2026/05/24/technology/uk-ai-safety-institute.html",
+      "snippet": "The government’s A.I. Security Institute, staffed by alumni from OpenAI and Google, is becoming a model for countries grappling with A.I.’s emerging risks.",
+      "keyword": "NYTimes",
+      "region": "Foreign",
+      "published": "Sun, 24 May 2026 09:01:43 +0000"
+    },
+    {
+      "title": "One Job That Is Growing in the A.I. Era? Cybersecurity Experts.",
+      "url": "https://www.nytimes.com/2026/05/24/technology/ai-cybersecurity-jobs.html",
+      "snippet": "Demand for security engineers has surged as artificial intelligence generates a glut of new code and models like Anthropic’s Mythos create new concerns.",
+      "keyword": "NYTimes",
+      "region": "Foreign",
+      "published": "Mon, 25 May 2026 12:46:11 +0000"
+    },
+    {
+      "title": "Sundar Pichai Understands Why People Are Anxious About A.I.",
+      "url": "https://www.nytimes.com/2026/05/22/podcasts/sundar-pichai-understands-why-people-are-anxious-about-ai.html",
+      "snippet": "After a busy Google I/O, the company’s chief executive sits down with the hosts of “Hard Fork” to discuss the future of Google Search, how he’s using A.I. agents and his advice for college graduates.",
+      "keyword": "NYTimes",
+      "region": "Foreign",
+      "published": "Fri, 22 May 2026 14:49:56 +0000"
+    },
+    {
+      "title": "Our Field Trip to Google I/O + A Sit-Down With Sundar Pichai + System Update",
+      "url": "https://www.nytimes.com/2026/05/22/podcasts/our-field-trip-to-google-i-o-a-sit-down-with-sundar-pichai-system-update.html",
+      "snippet": "“This is the only recent gathering of a large number of people where mentions of A.I. did not produce a large chorus of boos.”",
+      "keyword": "NYTimes",
+      "region": "Foreign",
+      "published": "Fri, 22 May 2026 11:11:14 +0000"
+    },
+    {
+      "title": "Porn company fined £600,000 by Ofcom over age check failings",
+      "url": "https://www.bbc.com/news/articles/clypxw6penno?at_medium=RSS&at_campaign=rss",
+      "snippet": "Ofcom said Youngtek Solutions Ltd did not have checks between July and September 2025, but has since brought in verification.",
+      "keyword": "BBC",
+      "region": "Foreign",
+      "published": "Wed, 27 May 2026 10:33:46 GMT"
+    },
+    {
+      "title": "Champion ethical hacker warns AI tools like Mythos will make competing harder",
+      "url": "https://www.bbc.com/news/articles/c3r2zjpryzro?at_medium=RSS&at_campaign=rss",
+      "snippet": "Chompie, one of the world's tops ethical hackers, says AI like Claude Mythos will make it harder for people like her to compete.",
+      "keyword": "BBC",
+      "region": "Foreign",
+      "published": "Wed, 27 May 2026 00:43:55 GMT"
+    },
+    {
+      "title": "Instagram betting ads featuring Kane and Haaland banned",
+      "url": "https://www.bbc.com/news/articles/c3w220y2l8xo?at_medium=RSS&at_campaign=rss",
+      "snippet": "The advertising watchdog said the adverts featuring top footballers had a strong appeal to under-18s.",
+      "keyword": "BBC",
+      "region": "Foreign",
+      "published": "Tue, 26 May 2026 23:33:40 GMT"
+    },
+    {
+      "title": "Starmer vows to act on social media after meeting bereaved parents",
+      "url": "https://www.bbc.com/news/articles/c5y7r9gqp6jo?at_medium=RSS&at_campaign=rss",
+      "snippet": "Some parents believe whether the government will take strong enough action remains to be seen.",
+      "keyword": "BBC",
+      "region": "Foreign",
+      "published": "Tue, 26 May 2026 16:29:53 GMT"
+    },
+    {
+      "title": "AI may speed up search for drugs to treat brain conditions",
+      "url": "https://www.bbc.com/news/articles/cdrp3zzzp71o?at_medium=RSS&at_campaign=rss",
+      "snippet": "Researchers hope the work will help identify affordable, effective drugs to treat conditions like MND.",
+      "keyword": "BBC",
+      "region": "Foreign",
+      "published": "Fri, 22 May 2026 21:30:06 GMT"
+    },
+    {
+      "title": "Waymo pauses robotaxis in five US cities after cars drive into flooded roads",
+      "url": "https://www.bbc.com/news/articles/ckgplyxxl75o?at_medium=RSS&at_campaign=rss",
+      "snippet": "A Waymo spokesperson said it had expanded the temporary pause \"out of an abundance of caution\".",
+      "keyword": "BBC",
+      "region": "Foreign",
+      "published": "Fri, 22 May 2026 16:10:21 GMT"
+    },
+    {
+      "title": "'At a loss for words' - Destiny 2 fans react to news support is ending",
+      "url": "https://www.bbc.com/news/articles/c1728w58dyqo?at_medium=RSS&at_campaign=rss",
+      "snippet": "Bungie said the online shooter will get its final update on 9 June but will still be playable.",
+      "keyword": "BBC",
+      "region": "Foreign",
+      "published": "Fri, 22 May 2026 12:16:35 GMT"
+    },
+    {
+      "title": "Meta settles social media addiction case with US school district",
+      "url": "https://www.bbc.com/news/articles/cgepze483pqo?at_medium=RSS&at_campaign=rss",
+      "snippet": "The trial had been set as a test case for 1200 other school districts making similar claims.",
+      "keyword": "BBC",
+      "region": "Foreign",
+      "published": "Thu, 21 May 2026 20:34:59 GMT"
+    },
+    {
+      "title": "TikTok and YouTube 'not safe enough' for kids, says Ofcom",
+      "url": "https://www.bbc.com/news/articles/cn0pky4zpxxo?at_medium=RSS&at_campaign=rss",
+      "snippet": "YouTube said it worked with experts to provide appropriate experiences. TikTok said it was disappointed Ofcom had not acknowledged its safety features.",
+      "keyword": "BBC",
+      "region": "Foreign",
+      "published": "Thu, 21 May 2026 07:10:42 GMT"
+    },
+    {
+      "title": "Tech Life",
+      "url": "https://www.bbc.co.uk/sounds/play/w3ct8jxx?at_medium=RSS&at_campaign=rss",
+      "snippet": "What is the role of a teacher once AI arrives in the school classroom?",
+      "keyword": "BBC",
+      "region": "Foreign",
+      "published": "Tue, 26 May 2026 19:30:00 GMT"
+    },
+    {
+      "title": "Illinois Lawmakers Just Passed America’s Strongest AI Safety Bill",
+      "url": "https://www.wired.com/story/illinois-pass-major-ai-safety-law-pritzker/",
+      "snippet": "The bill requires companies like OpenAI, Anthropic, and Google to have third parties confirm they’re following safety standards. Illinois governor JB Pritzker says he’ll sign it.",
+      "keyword": "Wired",
+      "region": "Foreign",
+      "published": "Thu, 28 May 2026 00:10:42 +0000"
+    },
+    {
+      "title": "8 Best Computer Speakers (2026) After Testing 25+ Pairs",
+      "url": "https://www.wired.com/gallery/best-computer-speakers/",
+      "snippet": "These WIRED-tested computer speakers, from stereo speakers to surround sound, will suit any budget.",
+      "keyword": "Wired",
+      "region": "Foreign",
+      "published": "Wed, 27 May 2026 16:30:00 +0000"
+    },
+    {
+      "title": "Drone Ports and Funding Mayhem: Trump's Ballroom Has Turned Toxic",
+      "url": "https://www.wired.com/story/drone-ports-and-funding-mayhem-trumps-ballroom-takes-on-congress/",
+      "snippet": "“Republicans are just going to have to suck it up and get it done,” says one Trump aide about the funding melee. The votes, though, may simply not be there.",
+      "keyword": "Wired",
+      "region": "Foreign",
+      "published": "Wed, 27 May 2026 15:00:00 +0000"
+    },
+    {
+      "title": "Former Google and Apple Researchers Launch a Startup to Build AI’s Missing Feedback Loop",
+      "url": "https://www.wired.com/story/ex-google-apple-ai-researchers-want-to-make-ai-that-gets-smarter-as-you-use-it/",
+      "snippet": "Trajectory is betting the rapid iteration cycle that supercharged vibe-coding can help all kinds of companies build AI products that learn continuously.",
+      "keyword": "Wired",
+      "region": "Foreign",
+      "published": "Wed, 27 May 2026 14:00:00 +0000"
+    },
+    {
+      "title": "Department of Labor Tells Employees to Report Anyone Prioritizing DEI",
+      "url": "https://www.wired.com/story/department-of-labor-tells-employees-to-report-anyone-prioritizing-dei/",
+      "snippet": "The email instructs workers to report behavior that predates Donald Trump’s second inauguration. One employee tells WIRED it felt like a “reminder to narc on your coworkers.”",
+      "keyword": "Wired",
+      "region": "Foreign",
+      "published": "Wed, 27 May 2026 10:00:00 +0000"
+    },
+    {
+      "title": "Corsair Galleon 100 SD Review: Stream Deck Now Included",
+      "url": "https://www.wired.com/review/review-corsair-galleon-100-sd/",
+      "snippet": "Corsair unites Stream Deck functionality with Drop keyboard design expertise on its latest Galleon SD 100.",
+      "keyword": "Wired",
+      "region": "Foreign",
+      "published": "Wed, 27 May 2026 10:00:00 +0000"
+    },
+    {
+      "title": "Google engineer charged with insider trading after making $1.2M on Polymarket",
+      "url": "https://techcrunch.com/2026/05/27/google-engineer-charged-with-insider-trading-after-making-1-2m-on-polymarket/",
+      "snippet": "According to the complaint, a Google engineer risked over $2.7 million on wagers related to Google's 2025 Year in Search campaign.",
+      "keyword": "TechCrunch",
+      "region": "Foreign",
+      "published": "Thu, 28 May 2026 00:45:37 +0000"
+    },
+    {
+      "title": "Why Google’s AI can’t spell Google (or anything else)",
+      "url": "https://techcrunch.com/2026/05/27/why-googles-ai-cant-spell-google-or-anything-else/",
+      "snippet": "Google is embarrassing itself, again.",
+      "keyword": "TechCrunch",
+      "region": "Foreign",
+      "published": "Thu, 28 May 2026 00:17:41 +0000"
+    },
+    {
+      "title": "Rivian will deliver the first R2 SUVs on June 9",
+      "url": "https://techcrunch.com/2026/05/27/rivian-will-deliver-the-first-r2-suvs-on-june-9/",
+      "snippet": "The company has finally set a date for the first customer deliveries of what CEO RJ Scaringe has said is \"maybe the most important thing we’ve launched to date.\"",
+      "keyword": "TechCrunch",
+      "region": "Foreign",
+      "published": "Wed, 27 May 2026 21:15:04 +0000"
+    },
+    {
+      "title": "Triomics nabs $22M to bring oncology-specific AI to cancer centers",
+      "url": "https://techcrunch.com/2026/05/27/triomics-nabs-22m-to-bring-oncology-specific-ai-to-cancer-centers/",
+      "snippet": "The Series B round was led by Battery Ventures.",
+      "keyword": "TechCrunch",
+      "region": "Foreign",
+      "published": "Wed, 27 May 2026 21:11:15 +0000"
+    },
+    {
+      "title": "In more good news for Amazon, Snowflake signs $6B deal with AWS for AI CPU chips",
+      "url": "https://techcrunch.com/2026/05/27/in-more-good-news-for-amazon-snowflake-signs-6b-deal-with-aws-for-ai-cpu-chips/",
+      "snippet": "Snowflake has signed a new, enormous five-year deal with Amazon to secure chips for AI usage. Nvidia is once again being put on notice.",
+      "keyword": "TechCrunch",
+      "region": "Foreign",
+      "published": "Wed, 27 May 2026 20:10:00 +0000"
+    },
+    {
+      "title": "Payroll startup Remote says it grew revenue 50% per employee without adding headcount",
+      "url": "https://techcrunch.com/2026/05/27/payroll-startup-remote-says-it-grew-revenue-50-per-employee-without-adding-headcount/",
+      "snippet": "Payroll service provider Remote recently surpassed $300 million in annual recurring revenue (ARR) and became cash-flow positive, thanks to a 50% increase in revenue per employee resulting from AI adop",
+      "keyword": "TechCrunch",
+      "region": "Foreign",
+      "published": "Wed, 27 May 2026 19:39:45 +0000"
+    },
+    {
+      "title": "Meta launches Instagram, Facebook, and WhatsApp subscriptions, with more to come, including AI plans",
+      "url": "https://techcrunch.com/2026/05/27/meta-officially-launches-instagram-facebook-and-whatsapp-subscriptions-with-more-to-come-including-ai-plans/",
+      "snippet": "Meta is rolling out paid subscription plans for Instagram, Facebook, and WhatsApp worldwide, while also testing new AI, creator, and business-focused offerings under its broader “Meta One” subscriptio",
+      "keyword": "TechCrunch",
+      "region": "Foreign",
+      "published": "Wed, 27 May 2026 18:00:00 +0000"
+    },
+    {
+      "title": "With a new $100M raise, Princeton’s Thea Energy is now a top-funded fusion startup",
+      "url": "https://techcrunch.com/2026/05/27/with-a-new-100m-raise-princetons-thea-energy-is-now-a-top-funded-fusion-startup/",
+      "snippet": "Thea Energy's pixel-inspired magnets could give its power plant plans a boost. The fusion startup hopes to get a commercial reactor working by 2034.",
+      "keyword": "TechCrunch",
+      "region": "Foreign",
+      "published": "Wed, 27 May 2026 17:54:28 +0000"
+    },
+    {
+      "title": "AI coding startup Cognition raises $1B at $25B pre-money valuation",
+      "url": "https://techcrunch.com/2026/05/27/ai-coding-startup-cognition-raises-1b-at-25b-pre-money-valuation/",
+      "snippet": "As Cognition reaches $492 million in annualized revenue run rate, it more than doubled its valuation in eight months, it says.",
+      "keyword": "TechCrunch",
+      "region": "Foreign",
+      "published": "Wed, 27 May 2026 16:00:00 +0000"
+    },
+    {
+      "title": "FAA orders SpaceX to investigate Starship V3 booster failure",
+      "url": "https://techcrunch.com/2026/05/27/faa-orders-spacex-to-investigate-starship-v3-booster-failure/",
+      "snippet": "Starship is grounded until SpaceX finds out why the first V3 booster failed during its first test flight.",
+      "keyword": "TechCrunch",
+      "region": "Foreign",
+      "published": "Wed, 27 May 2026 15:20:16 +0000"
+    },
+    {
+      "title": "Startup Battlefield 200 applications close today: Nominate a founder or submit your startup",
+      "url": "https://techcrunch.com/2026/05/27/startup-battlefield-200-applications-close-today-nominate-a-founder-or-submit-your-startup/",
+      "snippet": "Today is the final day to apply or nominate a startup for Startup Battlefield 200. Once the clock strikes 11:59 p.m. PT, the window closes on your chance to compete for $100,000 in equity-free funding",
+      "keyword": "TechCrunch",
+      "region": "Foreign",
+      "published": "Wed, 27 May 2026 14:15:00 +0000"
+    },
+    {
+      "title": "AI内容共创平台「FunloomAI」再获数千万Pre-A轮融资，让创作回归创意本身 | 36氪首发",
+      "url": "https://36kr.com/p/3827585618154118?f=rss",
+      "snippet": "文丨刘士武\n  封面来源 | Funloom 官网\n  36氪获悉，AI内容共创平台公司北京库兰织梦科技有限公司（以下简称「库兰织梦」），已于近日完成数千万元人民币Pre-A融资。本轮融资由晴澜家族办公室领投，上海天使会跟投，此前投资人包括奇绩创坛、盛大网络&连尚网络创始人陈大年。本轮融资后，公司估值已达到2亿元，资金将用",
+      "keyword": "36kr",
+      "region": "China",
+      "published": "2026-05-28 08:35:00  +0800"
+    },
+    {
+      "title": "8点1氪丨“高考期间AI工具将禁用”？豆包等回应；亚朵门店回应酒店免费提供隐藏摄像头检测仪；三星工会同意新薪酬方案，人均270万元奖金",
+      "url": "https://36kr.com/p/3828191630348934?f=rss",
+      "snippet": "今日热点导览\n  \n   阿里员工十三薪将并入年终奖\n   曝小红书获世界杯转播权，成为除央视、咪咕外唯一持权方\n   微信小游戏月活跃用户超过5亿\n   聚焦直播带货、外卖等，市场监管总局部署整治“内卷式”竞争\n   SpaceX上市消息引燃太空相关股票，特斯拉与SpaceX合并讨论升温</",
+      "keyword": "36kr",
+      "region": "China",
+      "published": "2026-05-28 08:00:20  +0800"
+    },
+    {
+      "title": "腾讯游戏的One More Thing，是AI",
+      "url": "https://36kr.com/p/3827658881323649?f=rss",
+      "snippet": "文丨贝果树\n  编辑丨刘士武\n  5月27日，2026年腾讯游戏发布会于晚上八点举办。在发布会上，腾讯从制作、发行、投资三个板块带来了42款游戏的新动态，其中包含15款新品，新品的数量相较于2025年发布会的24款有所减少。\n  <img src=\"https://img.36krcdn.com/hsoss",
+      "keyword": "36kr",
+      "region": "China",
+      "published": "2026-05-28 07:00:49  +0800"
+    },
+    {
+      "title": "氪星晚报 ｜高盛策略师将标普500指数目标点位上调至8000点，受AI和盈利所推动；阿里员工十三薪并入年终奖",
+      "url": "https://36kr.com/p/3827497128465287?f=rss",
+      "snippet": "大公司：\n  程一笑：可灵AI 3月ARR近5亿美元，较去年同期增长4倍\n  36氪获悉，在2026年第一季度业绩电话会上，快手科技创始人兼首席执行官程一笑表示，2026年3月，可灵AI年化收入运行率（ARR）近5亿美元，较去年3月的1亿美元增长4倍。程一笑表示，可灵AI一季度收入高速增长，主要来自B端企业客户API调用收入和",
+      "keyword": "36kr",
+      "region": "China",
+      "published": "2026-05-27 20:17:05  +0800"
+    },
+    {
+      "title": "前两天，我们在亦庄听到了AI最真实的声音｜2026 AI Partner大会金句实录",
+      "url": "https://36kr.com/p/3826932509364869?f=rss",
+      "snippet": "当大模型API调用成本一年内骤降超过80%，百万Token仅需几分钱时，产业竞争便不再纠结于技术指标的高低，而是回归到最朴素的价值衡量——能否在实际场景中降本增效。行业的聚光灯，从实验室的榜单，转向了真实的生产线、医院诊室、物流仓库和城市管理后台。\n  2026年，谁能在复杂场景中解决真问题，谁才是这场变革的主角。\n  5月19日至20日，以“带着AI去前线”为主",
+      "keyword": "36kr",
+      "region": "China",
+      "published": "2026-05-27 10:38:25  +0800"
+    },
+    {
+      "title": "经过华为、传音、拓竹历练，95后打造AI母婴界特斯拉｜36氪首发",
+      "url": "https://36kr.com/p/3826922264286083?f=rss",
+      "snippet": "作者 | 张子怡\n  编辑 | 袁斯来\n  硬氪获悉，AI母婴智能硬件品牌珂迪Coddie（以下简称“Coddie”）完成天使轮融资，融资金额数千万元，由钟鼎资本投资，向阳资本担任独家财务顾问。\n  Coddie团队于2026年初组建，由95后连续创业者何鋡威创立。何鋡威毕业于德国慕尼黑工业大学，先后任职华为、",
+      "keyword": "36kr",
+      "region": "China",
+      "published": "2026-05-27 10:27:05  +0800"
+    },
+    {
+      "title": "化险为夷的洛克王国，给所有长青游戏上了一课",
+      "url": "https://36kr.com/p/3826354349412992?f=rss",
+      "snippet": "文丨果脯\n  2026年5月21日，腾讯魔方工作室群开发的《洛克王国：世界》上线了S2赛季更新。这款基于13年经典IP、以精灵收集养成为核心的大世界游戏，在2026年3月底正式上线后迅速成为年度爆款。据官方数据，游戏上线9天用户量便突破3000万，全平台预约人数达6000万，DAU达到1300万。",
+      "keyword": "36kr",
+      "region": "China",
+      "published": "2026-05-27 10:05:05  +0800"
+    },
+    {
+      "title": "硅谷AI一线观察：一人花掉50万美金Token背后的大厂焦虑",
+      "url": "https://36kr.com/p/3826390617870984?f=rss",
+      "snippet": "文｜周鑫雨 邓咏仪\n  编辑｜张雨忻\n  硅谷持续了两个多月的Token-Maxxing（Token军备竞赛）焦虑，在Meta以一种戏谑的方式按下了休止符。\n  前情大家都知道了：2026年3月，为了鼓吹自己是一家“AI-Native”公司，Meta曾在内部上线了一个“Claudeo",
+      "keyword": "36kr",
+      "region": "China",
+      "published": "2026-05-27 08:25:50  +0800"
+    },
+    {
+      "title": "红杉、华兴投了「AI产品的大众点评」，我们与它的02年创始人聊了聊",
+      "url": "https://36kr.com/p/3826385821192841?f=rss",
+      "snippet": "文｜周鑫雨\n  编辑｜张雨忻\n  打开“观猹”，能看到一个完全不同于机构投资榜单所呈现出来的AI创业生态：\n  这里很少有动辄估值几亿美金的项目，活跃在社区中的，也常常不是有着名校、大厂背景的创业者，更多是普通的设计师、产品经理，甚至退休教师。\n  <p class=\"ima",
+      "keyword": "36kr",
+      "region": "China",
+      "published": "2026-05-27 08:20:58  +0800"
+    },
+    {
+      "title": "ICRA 2026 | EndoDDC：扩散模型赋能稀疏到稠密深度重建",
+      "url": "https://www.leiphone.com/category/robot/Za9QbzbFSiyEsgaL.html",
+      "snippet": "<section",
+      "keyword": "雷锋网",
+      "region": "China",
+      "published": "Wed, 27 May 2026 18:51:00 +0800"
+    },
+    {
+      "title": "ICRA 2026 | 微分智飞11项科研成果入选解读",
+      "url": "https://www.leiphone.com/category/robot/VAbzosVyuTowVfT6.html",
+      "snippet": "来源：公众号“微分智飞”原文链接：https://mp.weixin.qq.com/s/KNYJq",
+      "keyword": "雷锋网",
+      "region": "China",
+      "published": "Wed, 27 May 2026 18:51:00 +0800"
+    },
+    {
+      "title": "ICRA 2026 | 港中文高源、林天麟团队提出自发共适应策略：基于元学习赋能异构多机器人系统协同进化",
+      "url": "https://www.leiphone.com/category/robot/gG4lJNQJZ1aM3Y8i.html",
+      "snippet": "来源：公众号“香港中文大学通信工程硕士”原文链接：<a href=\"https://mp.weixin.qq.com/s/sOd2aYDff6OcDRWX4Z5p9g\" rel=\"nofollow\" target=\"_blank",
+      "keyword": "雷锋网",
+      "region": "China",
+      "published": "Wed, 27 May 2026 18:28:00 +0800"
+    },
+    {
+      "title": "协会｜跨界学术突破！CAIA理事单位万魔声学谢冠宏博士论文登顶国际权威期刊，AI声学开启脑机互联新征程",
+      "url": "https://www.leiphone.com/category/industrynews/UhWarcRnfDcCm5Su.html",
+      "snippet": "近日，CAIA理事单位万魔声学董事长谢冠宏博士的学术论文《Research on Decoding Algorithm of Auditory Selective Attention to Musical Sound》（关于音乐声音听觉选择性注意力解码算法的研究），正式被声学领域国际权威 SCI 期刊Applied Acoustics",
+      "keyword": "雷锋网",
+      "region": "China",
+      "published": "Wed, 27 May 2026 18:14:00 +0800"
+    },
+    {
+      "title": "ICRA 2026｜北京大学董豪团队Imagine2Act：让机器人“先想象、再动手”，攻克精细家务难题",
+      "url": "https://www.leiphone.com/category/robot/PKWgXrnCrdFguoH2.html",
+      "snippet": "来源：公众号“北京大学前沿计算研究中心”原文链接：<a href=\"https://mp.weixin.qq.com/s/IudCZqnB",
+      "keyword": "雷锋网",
+      "region": "China",
+      "published": "Wed, 27 May 2026 18:11:00 +0800"
+    },
+    {
+      "title": "一人9篇ICRA！MIT Keynote定档+14展商抢发，开幕倒计时5天引爆",
+      "url": "https://www.leiphone.com/category/robot/xOW3363wGj7hJP8b.html",
+      "snippet": "热门议题一 MIT SLAM大牛Keynote定档，5人阵容基本成型摘要：Luca Carlone Keynote官宣解决了ICRA 2026 Keynote阵容最后一块拼图的问题，MIT Spark Lab负责人Carlone",
+      "keyword": "雷锋网",
+      "region": "China",
+      "published": "Wed, 27 May 2026 17:02:00 +0800"
+    },
+    {
+      "title": "珀乐互动基于Wan2.7打造《羞羞的铁拳》漫剧，制作效率提升超90%",
+      "url": "https://www.leiphone.com/category/industrynews/HsdtpZo9ENG1PGxw.html",
+      "snippet": "5月27日消息，珀乐互动科技与开心麻花影业联合出品的《羞羞的铁拳》漫剧于近日上线，该漫剧基于阿里Wan2.7视频大模型制作，相关视频内容在视频平台的播放量已超3亿，成为近期最热门的AI漫剧之一。 <img src=\"https://static.leiphone.com/uploads/new/ima",
+      "keyword": "雷锋网",
+      "region": "China",
+      "published": "Wed, 27 May 2026 13:02:00 +0800"
+    },
+    {
+      "title": "亢奋与焦虑之间：新华三如何重估AI硬件的价值标尺？",
+      "url": "https://www.leiphone.com/category/chips/Cx6aOVJbAvKTiXrI.html",
+      "snippet": "2026年5月8日，由新华三集团主办的NAVIGATE 2026领航者峰会在北京举行。紫光股份董事长、新华三集团总裁兼首席执行官于英涛在大会上这样形容算力行业的集体情绪：亢奋、焦虑同时存在。<img src=\"https://static.leiphone.com/uploads/new/images/202",
+      "keyword": "雷锋网",
+      "region": "China",
+      "published": "Wed, 27 May 2026 12:13:00 +0800"
+    },
+    {
+      "title": "小米罗福莉谈 MiMo API 降价：原始推理成本远低于行业平均水平，基本可以维持收支平衡",
+      "url": "https://www.ithome.com/0/956/280.htm",
+      "snippet": "IT之家 5 月 28 日消息，小米 MiMo 官方昨日宣布，小米 MiMo-V2.5 系列 API 永久降价，相比原始 API 定价，新定价最高降幅可达 99%，且不再区分上下文窗口长度。",
+      "keyword": "IT之家",
+      "region": "China",
+      "published": "Thu, 28 May 2026 01:49:11 GMT"
+    },
+    {
+      "title": "《天外世界》游戏原版下架，Steam 等商店改售《太空人之选》版本",
+      "url": "https://www.ithome.com/0/956/279.htm",
+      "snippet": "IT之家 5 月 28 日消息，黑曜石娱乐（Obsidian Entertainment）今天（5 月 28 日）发布公告，宣布《天外世界》（The Outer Worlds）游戏原版及其 DLC 已从多数现代商店下架，后续由《天外世界：太空人之选》接替。根据官方公布的版本调整，适用于原版游戏及其 DLC 已从多数现代数字商店下架，涉及 Xbo",
+      "keyword": "IT之家",
+      "region": "China",
+      "published": "Thu, 28 May 2026 01:38:08 GMT"
+    },
+    {
+      "title": "韩 AI 芯片企业 FuriosaAI 携手博通开发下一代 2nm 推理加速器",
+      "url": "https://www.ithome.com/0/956/278.htm",
+      "snippet": "IT之家 5 月 28 日消息，韩国 AI 芯片企业 FuriosaAI 当地时间 27 日宣布将与 Broadcom（博通）合作开发其第三代（下一代）AI 推理加速器，目标 2028H1 出样。这一芯片将结合 2nm 先进制程的计算裸晶 (Die)、独立的 I/O 裸晶、HBM4 (E) 内存堆栈，机架内多芯片间采用博通的 SUE（纵向扩展以",
+      "keyword": "IT之家",
+      "region": "China",
+      "published": "Thu, 28 May 2026 01:34:36 GMT"
+    },
+    {
+      "title": "人民日报专访华为何庭波：今年秋季的新麒麟手机芯片，性能等相比去年是“跳跃性”提升",
+      "url": "https://www.ithome.com/0/956/274.htm",
+      "snippet": "IT之家 5 月 28 日消息，在 5 月 25 日的 2026 国际电路与系统研讨会上，华为公司董事、半导体业务部总裁何庭波时隔 7 年再次回到公众视野，并在主旨演讲中首次提出半导体全新演进路径 ——“韬（τ）定律”。这是中国在全球半导体领域首次提出",
+      "keyword": "IT之家",
+      "region": "China",
+      "published": "Thu, 28 May 2026 01:24:27 GMT"
+    },
+    {
+      "title": "消息称某厂 2nm 新机测试 1 亿方形前置摄像头，预计为 OPPO 旗下",
+      "url": "https://www.ithome.com/0/956/272.htm",
+      "snippet": "IT之家 5 月 28 日消息，据博主 @数码闲聊站 今日爆料，某厂 2nm 迭代线新机测试 100Mp 1:1 方形前置摄像头，原生定制的亿级像素小底方案，三星传感器尺寸大概是 1/2.5\"，新旗舰可以宣传前后多焦段亿级像素。<img class=\"no-alt-img\" src=\"ht",
+      "keyword": "IT之家",
+      "region": "China",
+      "published": "Thu, 28 May 2026 01:20:45 GMT"
+    },
+    {
+      "title": "大厂全线押注AI编程，Vibe Coding掀起“全民造应用”浪潮",
+      "url": "https://www.tmtpost.com/8004756.html",
+      "snippet": "一场关于软件生产门槛、创作者生态和行业价值分配的深层重构。",
+      "keyword": "钛媒体",
+      "region": "China",
+      "published": "Thu, 28 May 2026 09:02:00 +0800"
+    }
+  ]
+}

@@ -1,0 +1,799 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI News - 2026-05-11</title>
+    <style>
+        body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; max-width: 800px; margin: 0 auto; padding: 20px; background: #f5f5f5; }
+        .header { background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); color: white; padding: 30px; border-radius: 10px; margin-bottom: 20px; }
+        .header h1 { margin: 0; font-size: 28px; }
+        .header p { margin: 10px 0 0 0; opacity: 0.9; }
+        .top10-section { background: white; padding: 25px; margin-bottom: 25px; border-radius: 12px; box-shadow: 0 2px 8px rgba(0,0,0,0.1); }
+        .top10-section h2 { margin: 0 0 15px 0; color: #1a1a1a; font-size: 20px; padding-bottom: 10px; border-bottom: 2px solid #ff6b6b; }
+        .top10-china { border-left: 4px solid #ff6b6b; }
+        .top10-china h2 { border-bottom-color: #ff6b6b; }
+        .top10-china .top10-item { background: #fff5f5; border-left-color: #ff6b6b; }
+        .top10-china .top10-num { background: #ff6b6b; }
+        .top10-global { border-left: 4px solid #1976d2; }
+        .top10-global h2 { border-bottom-color: #1976d2; }
+        .top10-global .top10-item { background: #f0f7ff; border-left-color: #1976d2; }
+        .top10-global .top10-num { background: #1976d2; }
+        .top10-list { display: flex; flex-direction: column; gap: 10px; }
+        .top10-item { display: flex; gap: 12px; padding: 12px; border-radius: 8px; }
+        .top10-num { color: white; width: 24px; height: 24px; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 12px; font-weight: bold; flex-shrink: 0; }
+        .top10-content { flex: 1; }
+        .top10-title { font-size: 14px; font-weight: 600; color: #333; line-height: 1.4; }
+        .top10-title a { color: #333; text-decoration: none; }
+        .top10-title a:hover { color: #667eea; }
+        .top10-desc { font-size: 13px; color: #666; line-height: 1.4; margin-top: 4px; }
+        .summary-section { background: white; padding: 25px; margin-bottom: 25px; border-radius: 12px; box-shadow: 0 2px 8px rgba(0,0,0,0.1); }
+        .summary-section h2 { margin: 0 0 20px 0; color: #1a1a1a; font-size: 20px; padding-bottom: 15px; border-bottom: 2px solid #667eea; }
+        .category-tags { display: flex; flex-wrap: wrap; gap: 10px; margin-bottom: 20px; }
+        .cat-tag { background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); color: white; padding: 8px 16px; border-radius: 20px; font-size: 14px; }
+        .highlight-list { display: flex; flex-direction: column; gap: 12px; }
+        .highlight-item { display: flex; align-items: flex-start; gap: 12px; padding: 15px; background: #f8f9fa; border-radius: 10px; border-left: 4px solid #667eea; }
+        .highlight-num { background: #667eea; color: white; width: 28px; height: 28px; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 14px; font-weight: bold; flex-shrink: 0; }
+        .highlight-content { flex: 1; }
+        .highlight-title { font-size: 16px; font-weight: 600; color: #333; line-height: 1.5; margin-bottom: 5px; }
+        .highlight-title a { color: #333; text-decoration: none; }
+        .highlight-title a:hover { color: #667eea; }
+        .highlight-snippet { font-size: 13px; color: #666; line-height: 1.5; margin: 5px 0; }
+        .highlight-meta { font-size: 13px; color: #888; }
+        .chinese-summary { margin-top: 20px; }
+        .chinese-summary h3 { color: #333; font-size: 18px; margin-bottom: 15px; }
+        .news-item { background: white; padding: 20px; margin-bottom: 15px; border-radius: 8px; box-shadow: 0 2px 4px rgba(0,0,0,0.1); }
+        .news-date { color: #999; font-size: 12px; margin-bottom: 5px; }
+        .news-item h3 { margin: 0 0 10px 0; color: #333; }
+        .news-item a { color: #667eea; text-decoration: none; }
+        .snippet { color: #666; font-size: 14px; line-height: 1.6; }
+        .tag { display: inline-block; background: #e8f4f8; color: #2a7bb0; padding: 2px 8px; border-radius: 4px; font-size: 12px; margin-right: 8px; }
+        .tag-china { background: #ffeaea; color: #d32f2f; }
+        .tag-foreign { background: #e3f2fd; color: #1976d2; }
+        .news-meta { margin-top: 10px; display: flex; align-items: center; flex-wrap: wrap; gap: 5px; }
+        .section-title { font-size: 16px; font-weight: bold; color: #333; margin: 20px 0 15px 0; padding-bottom: 10px; border-bottom: 2px solid #667eea; }
+        .footer { text-align: center; color: #999; margin-top: 30px; font-size: 12px; }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h1>AI News Daily</h1>
+        <p>2026-05-11 | 38 articles</p>
+    </div>
+
+    
+    <div class="top10-section top10-china">
+        <h2>🇨🇳 中国科技新闻 Top 10</h2>
+        <div class="top10-list">
+            <div class="top10-item">
+                <span class="top10-num">1</span>
+                <div class="top10-content">
+                    <div class="top10-title"><a href="https://36kr.com/p/3804132892646919?f=rss" target="_blank">8 点1氪丨 SK海力士回应 “员工人均奖金达610万元”传闻 ；世界杯中国转播费从 3亿美元腰斩到 1.5亿 ；曝三星中国家电部门裁员补偿 N +4 ，还送手机</a></div>
+                    <div class="top10-desc">今日热点导览
+  一季度全国结婚登记169.7万对
+  bosie 创始人刘光耀成为Kimi顾问 ？刘光耀回复“没入职”
+  英特尔与苹果据悉达成初步协议，将为后者设备制造芯片
+  业内人士称阿里未参与D</div>
+                </div>
+            </div>
+            <div class="top10-item">
+                <span class="top10-num">2</span>
+                <div class="top10-content">
+                    <div class="top10-title"><a href="https://36kr.com/p/3802822550839047?f=rss" target="_blank">Ozon 大中华区总裁Simon Huang中国卖家 ：正在涌向俄罗斯 ｜专访</a></div>
+                    <div class="top10-desc">编者按：上个月月底 ， 36氪在厦门参加了一场臭氧全球招商启动大会，我们发现现场人山人海。火热的出海和国内经济形成鲜明对比 ，特别是一组数据吸引了我们注意 ：尽管俄罗斯电商渗透率在 2025年才 23% ，但是</div>
+                </div>
+            </div>
+            <div class="top10-item">
+                <span class="top10-num">3</span>
+                <div class="top10-content">
+                    <div class="top10-title"><a href="https://36kr.com/p/3801745491943169?f=rss" target="_blank">融资超亿元、割草机器人公司拿下数亿订单，瞄准庭院具身终端 ｜硬氪首发</a></div>
+                    <div class="top10-desc">作者｜黄楠
+  编辑｜袁斯来
+  智能庭院机器人公司「长曜创新」近日完成数千万元A硬氪获悉 +融资领投方为美的系上市公司盈峰环境 ，老股东 XGROUP持续加注。资金将重点投入技术研发迭代、多SKU量产</div>
+                </div>
+            </div>
+            <div class="top10-item">
+                <span class="top10-num">4</span>
+                <div class="top10-content">
+                    <div class="top10-title"><a href="https://36kr.com/p/3801461350702855?f=rss" target="_blank">AI开始接管年轻人的「精神自留地」</a></div>
+                    <div class="top10-desc">撰文｜锅包柚
+  封面来源｜ Unsplash （ AI辅助扩图 ）
+  五一假期已经结束，但打工人的 “节后综合症”并未消退。
+  面对永远99 +的工作群消息 ，和改不完的 PPT ，打工人蝈蝈在摸鱼时打开灵光 AP</div>
+                </div>
+            </div>
+            <div class="top10-item">
+                <span class="top10-num">5</span>
+                <div class="top10-content">
+                    <div class="top10-title"><a href="https://36kr.com/p/3797202414820359?f=rss" target="_blank">获高秉强、蓝驰领投数千万融资，浙大 00后创业者从远景观测切入 AI智能影像 ｜硬氪首发</a></div>
+                    <div class="top10-desc">作者｜黄楠
+  编辑｜袁斯来
+  硬氪获悉，星识 （宁波 ）科技有限公司 （以下简称 “星识科技”）近日连续完成天使 +轮和天使 ++轮融资 ，累计金额达数千万元。两轮融资分别由高秉强教授旗下高锋耐心资本和蓝驰创投</div>
+                </div>
+            </div>
+            <div class="top10-item">
+                <span class="top10-num">6</span>
+                <div class="top10-content">
+                    <div class="top10-title"><a href="https://36kr.com/p/3801348046151428?f=rss" target="_blank">9 点1氪丨 DeepSeek拟募资最高 500亿 ； “全国销冠”被刑拘泰康人寿回应 ， OPPO就母亲节文案致歉</a></div>
+                    <div class="top10-desc">整理｜ Kris 
+  今日热点导览
+  香港拿下世界杯转播权FIFA与央视谈判仍陷僵局
+  油价上调，加满一箱 92号汽油将多花 12.5元
+  钱江摩托否认“围剿张雪机车”
+  30条中日航线 4月取消</div>
+                </div>
+            </div>
+            <div class="top10-item">
+                <span class="top10-num">7</span>
+                <div class="top10-content">
+                    <div class="top10-title"><a href="https://36kr.com/p/3799028783439111?f=rss" target="_blank">小红书四年AI 路： FOMO、犹豫 ，到突然加速</a></div>
+                    <div class="top10-desc">作者 | 肖思佳
+  编辑 | 乔芊 杨轩
+  所有互联网大中厂都渴望在AI时代博得位置 ，人工智能在这场比赛中，小红书曾是克制的那个。
+  在一个搜索属性与社区属性并存，以真实经验分享为核心的产品中 ，活人感与</div>
+                </div>
+            </div>
+            <div class="top10-item">
+                <span class="top10-num">8</span>
+                <div class="top10-content">
+                    <div class="top10-title"><a href="https://www.leiphone.com/category/weiwu/y0yPBS3a3BfJoF09.html" target="_blank">光帆带摄像头AI耳机本月开售 ，苹果摄像头 AirPods加速落地</a></div>
+                    <div class="top10-desc">5 月9日光帆科技官方账号发布发售预热海报。海报显示 ，全球首款具备视觉感知能力的主动式 AI耳机 ——光帆全感 AI耳机 ，将于 5月 15日正式开售。此前一天 ，据 The Verge等媒体报道 ，苹果正在推进带摄像</div>
+                </div>
+            </div>
+            <div class="top10-item">
+                <span class="top10-num">9</span>
+                <div class="top10-content">
+                    <div class="top10-title"><a href="https://www.leiphone.com/category/yanxishe/0XQEjmCNYEmRB8Rn.html" target="_blank">深度解析： DeepSeek不差钱 ，为什么还要融 500亿 ？</a></div>
+                    <div class="top10-desc">< p style = "text-align: justify; line-heigh</div>
+                </div>
+            </div>
+            <div class="top10-item">
+                <span class="top10-num">10</span>
+                <div class="top10-content">
+                    <div class="top10-title"><a href="https://www.leiphone.com/category/industrynews/N9yXIL59MiHx0rYY.html" target="_blank">小雨智造完成数亿元B +轮融资 ，北汽、复星锐正和建发新兴等产业资本加速集结</a></div>
+                    <div class="top10-desc">5 月9日 ，通用具身智能科技公司小雨智造宣布完成数亿元 B + 轮融资。本轮融资由北汽产投、复星锐正和建发新兴三家新进投资方联合投资，老股东华业天成、贵州科创天使基金共同跟投 ，滴滴、小米联合创始人黎万强持</div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="top10-section top10-global">
+        <h2>🌍 全球科技新闻 Top 10</h2>
+        <div class="top10-list">
+            <div class="top10-item">
+                <span class="top10-num">1</span>
+                <div class="top10-content">
+                    <div class="top10-title"><a href="https://www.wired.com/story/do-city-delivery-drones-make-sense-no-one-knows-but-theyre-flying-over-nyc/" target="_blank">城市派送无人机有意义吗？没有人知道，但他们正在飞越纽约市</a></div>
+                    <div class="top10-desc">该国最繁忙的空域之一有一种新型的飞行器--可能是暂时的。</div>
+                </div>
+            </div>
+            <div class="top10-item">
+                <span class="top10-num">2</span>
+                <div class="top10-content">
+                    <div class="top10-title"><a href="https://www.wired.com/story/western-digital-promo-code/" target="_blank">Western Digital促销代码：八五折优惠</a></div>
+                    <div class="top10-desc">注册电子邮箱，即可享受西部数据首笔订单八五折优惠。</div>
+                </div>
+            </div>
+            <div class="top10-item">
+                <span class="top10-num">3</span>
+                <div class="top10-content">
+                    <div class="top10-title"><a href="https://www.wired.com/story/shed-rain-coupon/" target="_blank">Shed Rain专属优惠券：八五折</a></div>
+                    <div class="top10-desc">使用我们专属的Shed Rain折扣码，即可享受实用、时尚的雨伞八五折优惠。</div>
+                </div>
+            </div>
+            <div class="top10-item">
+                <span class="top10-num">4</span>
+                <div class="top10-content">
+                    <div class="top10-title"><a href="https://techcrunch.com/2026/05/10/anthropic-says-evil-portrayals-of-ai-were-responsible-for-claudes-blackmail-attempts/" target="_blank">Anthropic说，对人工智能的“邪恶”描绘是克劳德试图勒索的原因</a></div>
+                    <div class="top10-desc">根据An的说法，人工智能的虚构描绘可以对人工智能模型产生真正的影响。</div>
+                </div>
+            </div>
+            <div class="top10-item">
+                <span class="top10-num">5</span>
+                <div class="top10-content">
+                    <div class="top10-title"><a href="https://techcrunch.com/2026/05/10/techcrunch-mobility-limes-ipo-gamble/" target="_blank">TechCrunch Mobility ： Lime的IPO赌博</a></div>
+                    <div class="top10-desc">欢迎回到TechCrunch Mobility ，这是您未来交通的枢纽，现在，</div>
+                </div>
+            </div>
+            <div class="top10-item">
+                <span class="top10-num">6</span>
+                <div class="top10-content">
+                    <div class="top10-title"><a href="https://techcrunch.com/2026/05/10/were-feeling-cynical-about-xais-big-deal-with-anthropic/" target="_blank">我们对xAI与Anthropic的重大交易感到愤世嫉俗</a></div>
+                    <div class="top10-desc">在Equity播客的最新一集中，我们讨论了xAI与Anthropic的交易可能意味着什么</div>
+                </div>
+            </div>
+            <div class="top10-item">
+                <span class="top10-num">7</span>
+                <div class="top10-content">
+                    <div class="top10-title"><a href="https://techcrunch.com/2026/05/09/voice-ai-in-india-is-hard-wispr-flow-is-betting-on-it-anyway/" target="_blank">语音人工智能在印度很难。无论如何， Wispr Flow都在押注它。</a></div>
+                    <div class="top10-desc">Wispr Flow表示，在Hinglish推出后，印度的增长速度加快，尽管语音人工智能产品</div>
+                </div>
+            </div>
+            <div class="top10-item">
+                <span class="top10-num">8</span>
+                <div class="top10-content">
+                    <div class="top10-title"><a href="https://techcrunch.com/2026/05/09/artificial-intelligence-definition-glossary-hallucinations-guide-to-common-ai-terms/" target="_blank">所以你已经听过这些人工智能术语并点了点头；让我们来解决这个问题</a></div>
+                    <div class="top10-desc">人工智能的崛起带来了大量的新术语和俚语。这是一个带有定义的词汇表</div>
+                </div>
+            </div>
+            <div class="top10-item">
+                <span class="top10-num">9</span>
+                <div class="top10-content">
+                    <div class="top10-title"><a href="https://techcrunch.com/2026/05/09/the-instax-wide-400-builds-on-instant-photographys-simplicity-and-stretches-it-literally/" target="_blank">Instax Wide 400建立在即时摄影的简单性之上，并从字面上拉伸它</a></div>
+                    <div class="top10-desc">在人工智能和数字世界中，模拟即时胶片和复古式相机仍然很受欢迎，</div>
+                </div>
+            </div>
+            <div class="top10-item">
+                <span class="top10-num">10</span>
+                <div class="top10-content">
+                    <div class="top10-title"><a href="https://techcrunch.com/2026/05/09/nvidia-has-already-committed-40b-to-equity-ai-deals-this-year/" target="_blank">英伟达今年已承诺向股权AI交易投入400 $</a></div>
+                    <div class="top10-desc">英伟达仍然是人工智能生态系统的大投资者。</div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    
+    <div class="summary-section">
+        <h2>AI Daily Highlights</h2>
+        <div class="category-tags"><span class="cat-tag">News Other (18)</span><span class="cat-tag">AI AI Product (16)</span><span class="cat-tag">LLM LLM/Model (2)</span><span class="cat-tag">VID AI Video (2)</span></div>
+
+        <div class="chinese-summary">
+            <h3>Top 10 AI News</h3>
+            
+            <div class="highlight-item">
+                <span class="highlight-num">1</span>
+                <div class="highlight-content">
+                    <div class="highlight-title">
+                        <a href="https://www.wired.com/story/do-city-delivery-drones-make-sense-no-one-knows-but-theyre-flying-over-nyc/" target="_blank" style="color: #333; text-decoration: none;">城市派送无人机有意义吗？没有人知道，但他们正在飞越纽约市</a>
+                    </div>
+                    <p class="highlight-snippet" style="color: #555; font-size: 13px; margin: 5px 0; line-height: 1.4;">该国最繁忙的空域之一有一种新型的飞行器--可能是暂时的。</p>
+                    <div class="highlight-meta">
+                        <span class="highlight-date">05-10 10:30</span> |
+                        <span class="highlight-source">Wired</span> |
+                        <span style="color: #1976d2;">🌍 全球</span>
+                    </div>
+                </div>
+            </div>
+            <div class="highlight-item">
+                <span class="highlight-num">2</span>
+                <div class="highlight-content">
+                    <div class="highlight-title">
+                        <a href="https://www.wired.com/story/western-digital-promo-code/" target="_blank" style="color: #333; text-decoration: none;">Western Digital促销代码：八五折优惠</a>
+                    </div>
+                    <p class="highlight-snippet" style="color: #555; font-size: 13px; margin: 5px 0; line-height: 1.4;">注册电子邮箱，即可享受西部数据首笔订单八五折优惠。</p>
+                    <div class="highlight-meta">
+                        <span class="highlight-date">05-09 05:00</span> |
+                        <span class="highlight-source">Wired</span> |
+                        <span style="color: #1976d2;">🌍 全球</span>
+                    </div>
+                </div>
+            </div>
+            <div class="highlight-item">
+                <span class="highlight-num">3</span>
+                <div class="highlight-content">
+                    <div class="highlight-title">
+                        <a href="https://www.wired.com/story/shed-rain-coupon/" target="_blank" style="color: #333; text-decoration: none;">Shed Rain专属优惠券：八五折</a>
+                    </div>
+                    <p class="highlight-snippet" style="color: #555; font-size: 13px; margin: 5px 0; line-height: 1.4;">使用我们专属的Shed Rain折扣码，即可享受实用、时尚的雨伞八五折优惠。</p>
+                    <div class="highlight-meta">
+                        <span class="highlight-date">05-09 05:00</span> |
+                        <span class="highlight-source">Wired</span> |
+                        <span style="color: #1976d2;">🌍 全球</span>
+                    </div>
+                </div>
+            </div>
+            <div class="highlight-item">
+                <span class="highlight-num">4</span>
+                <div class="highlight-content">
+                    <div class="highlight-title">
+                        <a href="https://techcrunch.com/2026/05/10/anthropic-says-evil-portrayals-of-ai-were-responsible-for-claudes-blackmail-attempts/" target="_blank" style="color: #333; text-decoration: none;">Anthropic说，对人工智能的“邪恶”描绘是克劳德试图勒索的原因</a>
+                    </div>
+                    <p class="highlight-snippet" style="color: #555; font-size: 13px; margin: 5px 0; line-height: 1.4;">根据Anthropic的说法，对人工智能的虚构描绘可以对人工智能模型产生真正的影响。</p>
+                    <div class="highlight-meta">
+                        <span class="highlight-date">05-10 20:40</span> |
+                        <span class="highlight-source">TechCrunch</span> |
+                        <span style="color: #1976d2;">🌍 全球</span>
+                    </div>
+                </div>
+            </div>
+            <div class="highlight-item">
+                <span class="highlight-num">5</span>
+                <div class="highlight-content">
+                    <div class="highlight-title">
+                        <a href="https://techcrunch.com/2026/05/10/techcrunch-mobility-limes-ipo-gamble/" target="_blank" style="color: #333; text-decoration: none;">TechCrunch Mobility ： Lime的IPO赌博</a>
+                    </div>
+                    <p class="highlight-snippet" style="color: #555; font-size: 13px; margin: 5px 0; line-height: 1.4;">欢迎回到TechCrunch Mobility ，这是您未来交通的枢纽，现在，人工智能比以往任何时候都更能发挥作用。</p>
+                    <div class="highlight-meta">
+                        <span class="highlight-date">05-10 16:05</span> |
+                        <span class="highlight-source">TechCrunch</span> |
+                        <span style="color: #1976d2;">🌍 全球</span>
+                    </div>
+                </div>
+            </div>
+            <div class="highlight-item">
+                <span class="highlight-num">6</span>
+                <div class="highlight-content">
+                    <div class="highlight-title">
+                        <a href="https://techcrunch.com/2026/05/10/were-feeling-cynical-about-xais-big-deal-with-anthropic/" target="_blank" style="color: #333; text-decoration: none;">我们对xAI与Anthropic的重大交易感到愤世嫉俗</a>
+                    </div>
+                    <p class="highlight-snippet" style="color: #555; font-size: 13px; margin: 5px 0; line-height: 1.4;">在Equity播客的最新一集中，我们讨论了xAI与Anthropic的交易对母公司SpaceX可能意味着什么。</p>
+                    <div class="highlight-meta">
+                        <span class="highlight-date">05-10 15:34</span> |
+                        <span class="highlight-source">TechCrunch</span> |
+                        <span style="color: #1976d2;">🌍 全球</span>
+                    </div>
+                </div>
+            </div>
+            <div class="highlight-item">
+                <span class="highlight-num">7</span>
+                <div class="highlight-content">
+                    <div class="highlight-title">
+                        <a href="https://techcrunch.com/2026/05/09/voice-ai-in-india-is-hard-wispr-flow-is-betting-on-it-anyway/" target="_blank" style="color: #333; text-decoration: none;">语音人工智能在印度很难。无论如何， Wispr Flow都在押注它。</a>
+                    </div>
+                    <p class="highlight-snippet" style="color: #555; font-size: 13px; margin: 5px 0; line-height: 1.4;">Wispr Flow表示，在Hinglish推出后，印度的增长速度加快，尽管语音人工智能产品仍面临挑战。</p>
+                    <div class="highlight-meta">
+                        <span class="highlight-date">05-10 02:00</span> |
+                        <span class="highlight-source">TechCrunch</span> |
+                        <span style="color: #1976d2;">🌍 全球</span>
+                    </div>
+                </div>
+            </div>
+            <div class="highlight-item">
+                <span class="highlight-num">8</span>
+                <div class="highlight-content">
+                    <div class="highlight-title">
+                        <a href="https://techcrunch.com/2026/05/09/artificial-intelligence-definition-glossary-hallucinations-guide-to-common-ai-terms/" target="_blank" style="color: #333; text-decoration: none;">所以你已经听过这些人工智能术语并点了点头；让我们来解决这个问题</a>
+                    </div>
+                    <p class="highlight-snippet" style="color: #555; font-size: 13px; margin: 5px 0; line-height: 1.4;">人工智能的崛起带来了大量的新术语和俚语。以下是您可能遇到的一些最重要的单词和短语的定义词汇表。</p>
+                    <div class="highlight-meta">
+                        <span class="highlight-date">05-09 21:45</span> |
+                        <span class="highlight-source">TechCrunch</span> |
+                        <span style="color: #1976d2;">🌍 全球</span>
+                    </div>
+                </div>
+            </div>
+            <div class="highlight-item">
+                <span class="highlight-num">9</span>
+                <div class="highlight-content">
+                    <div class="highlight-title">
+                        <a href="https://techcrunch.com/2026/05/09/the-instax-wide-400-builds-on-instant-photographys-simplicity-and-stretches-it-literally/" target="_blank" style="color: #333; text-decoration: none;">Instax Wide 400建立在即时摄影的简单性之上，并从字面上拉伸它</a>
+                    </div>
+                    <p class="highlight-snippet" style="color: #555; font-size: 13px; margin: 5px 0; line-height: 1.4;">在人工智能和数字世界中，模拟即时胶片和复古风格的相机在怀旧和新奇的混合推动下继续流行。</p>
+                    <div class="highlight-meta">
+                        <span class="highlight-date">05-09 15:45</span> |
+                        <span class="highlight-source">TechCrunch</span> |
+                        <span style="color: #1976d2;">🌍 全球</span>
+                    </div>
+                </div>
+            </div>
+            <div class="highlight-item">
+                <span class="highlight-num">10</span>
+                <div class="highlight-content">
+                    <div class="highlight-title">
+                        <a href="https://techcrunch.com/2026/05/09/nvidia-has-already-committed-40b-to-equity-ai-deals-this-year/" target="_blank" style="color: #333; text-decoration: none;">英伟达今年已承诺向股权AI交易投入400 $</a>
+                    </div>
+                    <p class="highlight-snippet" style="color: #555; font-size: 13px; margin: 5px 0; line-height: 1.4;">英伟达仍然是人工智能生态系统的大投资者。</p>
+                    <div class="highlight-meta">
+                        <span class="highlight-date">05-09 14:43</span> |
+                        <span class="highlight-source">TechCrunch</span> |
+                        <span style="color: #1976d2;">🌍 全球</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="section-title">[All News]</div>
+    
+    <div class="news-item">
+        <div class="news-date">05-10 10:30</div>
+        <h3>1. Do City Delivery Drones Make Sense? No One Knows but They're Flying Over NYC</h3>
+        <p class="snippet">One of the country’s busiest airspaces has a new kind of flying machine—maybe temporarily.</p>
+        <div class="news-meta">
+            <a href="https://www.wired.com/story/do-city-delivery-drones-make-sense-no-one-knows-but-theyre-flying-over-nyc/" target="_blank">Original</a>
+            <span class="tag">Wired</span>
+            <span class="tag tag-foreign">EN</span>
+        </div>
+    </div>
+    <div class="news-item">
+        <div class="news-date">05-09 05:00</div>
+        <h3>2. Western Digital Promo Code: 15% Off</h3>
+        <p class="snippet">Get 15% off your first order at Western Digital when you register your email.</p>
+        <div class="news-meta">
+            <a href="https://www.wired.com/story/western-digital-promo-code/" target="_blank">Original</a>
+            <span class="tag">Wired</span>
+            <span class="tag tag-foreign">EN</span>
+        </div>
+    </div>
+    <div class="news-item">
+        <div class="news-date">05-09 05:00</div>
+        <h3>3. Exclusive Shed Rain Coupon: 15% Off</h3>
+        <p class="snippet">Get 15% off functional, fashionable umbrellas with our exclusive Shed Rain discount code.</p>
+        <div class="news-meta">
+            <a href="https://www.wired.com/story/shed-rain-coupon/" target="_blank">Original</a>
+            <span class="tag">Wired</span>
+            <span class="tag tag-foreign">EN</span>
+        </div>
+    </div>
+    <div class="news-item">
+        <div class="news-date">05-10 20:40</div>
+        <h3>4. Anthropic 称 ‘evil’ portrayals of AI were responsible for Claude’s blackmail attempts</h3>
+        <p class="snippet">Fictional portrayals of artificial intelligence can have a real effect on AI models, according to Anthropic.</p>
+        <div class="news-meta">
+            <a href="https://techcrunch.com/2026/05/10/anthropic-says-evil-portrayals-of-ai-were-responsible-for-claudes-blackmail-attempts/" target="_blank">Original</a>
+            <span class="tag">TechCrunch</span>
+            <span class="tag tag-foreign">EN</span>
+        </div>
+    </div>
+    <div class="news-item">
+        <div class="news-date">05-10 16:05</div>
+        <h3>5. TechCrunch Mobility: Lime’s IPO gamble</h3>
+        <p class="snippet">Welcome back to TechCrunch Mobility, your hub for the future of transportation and now, more than ever, how AI is playing a part.</p>
+        <div class="news-meta">
+            <a href="https://techcrunch.com/2026/05/10/techcrunch-mobility-limes-ipo-gamble/" target="_blank">Original</a>
+            <span class="tag">TechCrunch</span>
+            <span class="tag tag-foreign">EN</span>
+        </div>
+    </div>
+    <div class="news-item">
+        <div class="news-date">05-10 15:34</div>
+        <h3>6. We’re feeling cynical about xAI’s big deal with Anthropic</h3>
+        <p class="snippet">On the latest episode of the Equity podcast, we discussed what xAI's deal with Anthropic might mean for parent company SpaceX.</p>
+        <div class="news-meta">
+            <a href="https://techcrunch.com/2026/05/10/were-feeling-cynical-about-xais-big-deal-with-anthropic/" target="_blank">Original</a>
+            <span class="tag">TechCrunch</span>
+            <span class="tag tag-foreign">EN</span>
+        </div>
+    </div>
+    <div class="news-item">
+        <div class="news-date">05-10 02:00</div>
+        <h3>7. Voice AI in India is hard Wispr Flow is betting on it anyway</h3>
+        <p class="snippet">Wispr Flow says growth accelerated in India after its Hinglish rollout, even as voice AI products continue to face challenges.</p>
+        <div class="news-meta">
+            <a href="https://techcrunch.com/2026/05/09/voice-ai-in-india-is-hard-wispr-flow-is-betting-on-it-anyway/" target="_blank">Original</a>
+            <span class="tag">TechCrunch</span>
+            <span class="tag tag-foreign">EN</span>
+        </div>
+    </div>
+    <div class="news-item">
+        <div class="news-date">05-09 21:45</div>
+        <h3>8. So you’ve heard these AI terms and nodded along; let’s fix that</h3>
+        <p class="snippet">The rise of AI has brought an avalanche of new terms and slang. Here is a glossary with definitions of some of the most important words and phrases you might encounter.</p>
+        <div class="news-meta">
+            <a href="https://techcrunch.com/2026/05/09/artificial-intelligence-definition-glossary-hallucinations-guide-to-common-ai-terms/" target="_blank">Original</a>
+            <span class="tag">TechCrunch</span>
+            <span class="tag tag-foreign">EN</span>
+        </div>
+    </div>
+    <div class="news-item">
+        <div class="news-date">05-09 15:45</div>
+        <h3>9. The Instax Wide 400 builds on instant photography’s simplicity and stretches it literally</h3>
+        <p class="snippet">In an AI and digital world, analog instant film and retro-style cameras continue to remain popular, fueled by a mix of both nostalgia and novelty.</p>
+        <div class="news-meta">
+            <a href="https://techcrunch.com/2026/05/09/the-instax-wide-400-builds-on-instant-photographys-simplicity-and-stretches-it-literally/" target="_blank">Original</a>
+            <span class="tag">TechCrunch</span>
+            <span class="tag tag-foreign">EN</span>
+        </div>
+    </div>
+    <div class="news-item">
+        <div class="news-date">05-09 14:43</div>
+        <h3>10. [英伟达] has already committed $40B to equity AI deals this year</h3>
+        <p class="snippet">Nvidia continues to be a big investor in the AI ecosystem.</p>
+        <div class="news-meta">
+            <a href="https://techcrunch.com/2026/05/09/nvidia-has-already-committed-40b-to-equity-ai-deals-this-year/" target="_blank">Original</a>
+            <span class="tag">TechCrunch</span>
+            <span class="tag tag-foreign">EN</span>
+        </div>
+    </div>
+    <div class="news-item">
+        <div class="news-date">05-08 22:59</div>
+        <h3>11. Laid-off Oracle workers tried to negotiate better severance Oracle said no</h3>
+        <p class="snippet">Some found out they didn't qualify for WARN Act protections like two-months notice because the company had classified them as remote workers.</p>
+        <div class="news-meta">
+            <a href="https://techcrunch.com/2026/05/08/laid-off-oracle-workers-tried-to-negotiate-better-severance-oracle-said-no/" target="_blank">Original</a>
+            <span class="tag">TechCrunch</span>
+            <span class="tag tag-foreign">EN</span>
+        </div>
+    </div>
+    <div class="news-item">
+        <div class="news-date">05-08 20:50</div>
+        <h3>12. Prime Video follows Netflix and Disney by adding a TikTok-like ‘Clips’ feed in its app</h3>
+        <p class="snippet">The Clips feed aims to enable discovery by offering users a scrollable feed with short snippets of shows and movies.</p>
+        <div class="news-meta">
+            <a href="https://techcrunch.com/2026/05/08/prime-video-follows-netflix-and-disney-by-adding-a-tiktok-like-clips-feed-in-its-app/" target="_blank">Original</a>
+            <span class="tag">TechCrunch</span>
+            <span class="tag tag-foreign">EN</span>
+        </div>
+    </div>
+    <div class="news-item">
+        <div class="news-date">05-11 08:06</div>
+        <h3>13. 8点1氪丨SK海力士回应“员工人均奖金达610万元”传闻；世界杯中国转播费从3亿美元腰斩到15亿；曝三星中国家电部门裁员补偿N+4，还送手机</h3>
+        <p class="snippet">今日热点导览
+  一季度全国结婚登记169.7万对
+  bosie创始人刘光耀成为Kimi顾问？刘光耀回复“没入职”
+  英特尔与苹果据悉达成初步协议，将为后者设备制造芯片
+  业内人士称阿里未参与DeepSeek融资
+  新华社调查“胖东来为啥总被黑”
+  TOP3大新闻
+  <str</p>
+        <div class="news-meta">
+            <a href="https://36kr.com/p/3804132892646919?f=rss" target="_blank">Original</a>
+            <span class="tag">36kr</span>
+            <span class="tag tag-china">CN</span>
+        </div>
+    </div>
+    <div class="news-item">
+        <div class="news-date">05-10 10:18</div>
+        <h3>14. Ozon大中华区总裁Simon Huang：中国卖家，正在涌向俄罗斯｜专访</h3>
+        <p class="snippet">编者按：上个月月底，36氪在厦门参加了一场Ozon全球招商启动大会，我们发现现场人山人海。火热的出海和国内经济形成鲜明对比，特别是一组数据吸引了我们注意：尽管俄罗斯电商渗透率在2025年才23%，但是Ozon在2017年至2025年间，实现了91%的年均复合增长率。
+   这些高增长数据背后，似乎隐藏着比较大的商业机会，但机会究竟是什么？中国卖家</p>
+        <div class="news-meta">
+            <a href="https://36kr.com/p/3802822550839047?f=rss" target="_blank">Original</a>
+            <span class="tag">36kr</span>
+            <span class="tag tag-china">CN</span>
+        </div>
+    </div>
+    <div class="news-item">
+        <div class="news-date">05-10 09:27</div>
+        <h3>15. 融资超亿元、割草机器人公司拿下数亿订单，瞄准庭院具身终端｜硬氪首发</h3>
+        <p class="snippet">作者｜黄楠
+  编辑｜袁斯来
+  硬氪获悉，智能庭院机器人公司「长曜创新」近日完成数千万元A+融资，领投方为美的系上市公司盈峰环境，老股东XGROUP持续加注。资金将重点投入技术研发迭代、多SKU量产交付及产品矩阵拓展，持续夯实供应链能力，完善全球化渠道布局。此前，公司已于2025年12月完成A轮融资，半年累计融资金额超亿元。
+  长曜创新成立于20</p>
+        <div class="news-meta">
+            <a href="https://36kr.com/p/3801745491943169?f=rss" target="_blank">Original</a>
+            <span class="tag">36kr</span>
+            <span class="tag tag-china">CN</span>
+        </div>
+    </div>
+    <div class="news-item">
+        <div class="news-date">05-09 10:54</div>
+        <h3>16. AI开始接管年轻人的「精神自留地」</h3>
+        <p class="snippet">撰文｜锅包柚
+  封面来源｜Unsplash（AI辅助扩图）
+  五一假期已经结束，但打工人的“节后综合症”并未消退。
+  面对永远99+的工作群消息，和改不完的PPT，打工人蝈蝈在摸鱼时打开灵光APP里的一个小游戏——“老板被我fire了”。
+  屏幕里跳出老</p>
+        <div class="news-meta">
+            <a href="https://36kr.com/p/3801461350702855?f=rss" target="_blank">Original</a>
+            <span class="tag">36kr</span>
+            <span class="tag tag-china">CN</span>
+        </div>
+    </div>
+    <div class="news-item">
+        <div class="news-date">05-09 09:30</div>
+        <h3>17. 获高秉强、蓝驰领投数千万融资，浙大00后创业者从远景观测切入AI智能影像｜硬氪首发</h3>
+        <p class="snippet">作者｜黄楠
+  编辑｜袁斯来
+  硬氪获悉，星识（宁波）科技有限公司（以下简称“星识科技”）近日连续完成天使+轮和天使++轮融资，累计金额达数千万元。两轮融资分别由高秉强教授旗下高锋耐心资本和蓝驰创投领投、松禾资本跟投，老股东清水湾二期基金及奇绩创坛持续加注。本轮资金将主要用于智能影像核心技术研发、新品矩阵打造和产品体验的迭代优化，以及生产体系与供应链能力建设。此</p>
+        <div class="news-meta">
+            <a href="https://36kr.com/p/3797202414820359?f=rss" target="_blank">Original</a>
+            <span class="tag">36kr</span>
+            <span class="tag tag-china">CN</span>
+        </div>
+    </div>
+    <div class="news-item">
+        <div class="news-date">05-09 08:57</div>
+        <h3>18. 9点1氪丨DeepSeek拟募资最高500亿；“全国销冠”被刑拘，泰康人寿回应；OPPO就母亲节文案致歉</h3>
+        <p class="snippet">整理｜Kris 
+  今日热点导览
+  香港拿下世界杯转播权，FIFA与央视谈判仍陷僵局
+  油价上调，加满一箱92号汽油将多花12.5元
+  钱江摩托否认“围剿张雪机车”
+  30条中日航线4月取消全部航班
+  SpaceX冲</p>
+        <div class="news-meta">
+            <a href="https://36kr.com/p/3801348046151428?f=rss" target="_blank">Original</a>
+            <span class="tag">36kr</span>
+            <span class="tag tag-china">CN</span>
+        </div>
+    </div>
+    <div class="news-item">
+        <div class="news-date">05-08 12:38</div>
+        <h3>19. 小红书四年AI 路：FOMO、犹豫，到突然加速</h3>
+        <p class="snippet">作者 | 肖思佳
+  编辑 | 乔芊 杨轩
+  所有互联网大中厂都渴望在AI时代博得位置，在这场比赛中，小红书曾是克制的那个。
+  在一个搜索属性与社区属性并存，以真实经验分享为核心的产品中，活人感与AI、温情和算法，始终像天平的两端。
+  很长一段时间里，小红书既没有完全缺席技术探索，也没有像许</p>
+        <div class="news-meta">
+            <a href="https://36kr.com/p/3799028783439111?f=rss" target="_blank">Original</a>
+            <span class="tag">36kr</span>
+            <span class="tag tag-china">CN</span>
+        </div>
+    </div>
+    <div class="news-item">
+        <div class="news-date">05-10 15:20</div>
+        <h3>20. 光帆带摄像头AI耳机本月开售，苹果摄像头AirPods加速落地</h3>
+        <p class="snippet">5月9日，光帆科技官方账号发布发售预热海报。海报显示，全球首款具备视觉感知能力的主动式AI耳机——光帆全感AI耳机，将于5月15日正式开售。此前一天，据The Verge等媒体报道，苹果正在推进带摄像头的AirPods于年内落地。随着头部厂商加入，支持视觉感</p>
+        <div class="news-meta">
+            <a href="https://www.leiphone.com/category/weiwu/y0yPBS3a3BfJoF09.html" target="_blank">Original</a>
+            <span class="tag">雷锋网</span>
+            <span class="tag tag-china">CN</span>
+        </div>
+    </div>
+    <div class="news-item">
+        <div class="news-date">05-09 18:47</div>
+        <h3>21. 深度解析：DeepSeek不差钱，为什么还要融500亿？</h3>
+        <p class="snippet"><p style="text-align: justify; line-heigh</p>
+        <div class="news-meta">
+            <a href="https://www.leiphone.com/category/yanxishe/0XQEjmCNYEmRB8Rn.html" target="_blank">Original</a>
+            <span class="tag">雷锋网</span>
+            <span class="tag tag-china">CN</span>
+        </div>
+    </div>
+    <div class="news-item">
+        <div class="news-date">05-09 15:56</div>
+        <h3>22. 小雨智造完成数亿元B+轮融资，北汽、复星锐正和建发新兴等产业资本加速集结</h3>
+        <p class="snippet">5月9日，通用具身智能科技公司小雨智造宣布完成数亿元 B+ 轮融资。本轮融资由北汽产投、复星锐正和建发新兴三家新进投资方联合投资，老股东华业天成、贵州科创天使基金共同跟投，滴滴、小米联合创始人黎万强持续追加投资，庚辛资本</p>
+        <div class="news-meta">
+            <a href="https://www.leiphone.com/category/industrynews/N9yXIL59MiHx0rYY.html" target="_blank">Original</a>
+            <span class="tag">雷锋网</span>
+            <span class="tag tag-china">CN</span>
+        </div>
+    </div>
+    <div class="news-item">
+        <div class="news-date">05-09 15:18</div>
+        <h3>23. 阶跃语音生成模型，拿下 AA 榜语音竞技场国产第一，全球第三</h3>
+        <p class="snippet">5 月 9 日，全球权威 TTS 评测榜单 <span style="font-family: Arial; font-size: 11pt; font</p>
+        <div class="news-meta">
+            <a href="https://www.leiphone.com/category/industrynews/ZrhId0k9AjggOERD.html" target="_blank">Original</a>
+            <span class="tag">雷锋网</span>
+            <span class="tag tag-china">CN</span>
+        </div>
+    </div>
+    <div class="news-item">
+        <div class="news-date">05-08 22:36</div>
+        <h3>24. 火山引擎携手中国移动，首创机密模型服务新模式</h3>
+        <p class="snippet">5月8日，在2026移动云大会上，中国移动与火山引擎正式发布“移动引擎机密模型服务”专区，为各行业提供兼具技术领先与安全可信的AI服务，包括豆包大模型MaaS服务、Agent开发平台和工具等。<img src="https://static.leiphone.com/uploads/new/images/20260508/</p>
+        <div class="news-meta">
+            <a href="https://www.leiphone.com/category/industrynews/qMyCzGke8pn9Ddrk.html" target="_blank">Original</a>
+            <span class="tag">雷锋网</span>
+            <span class="tag tag-china">CN</span>
+        </div>
+    </div>
+    <div class="news-item">
+        <div class="news-date">05-08 18:36</div>
+        <h3>25. 百度搭子DuMate登顶PinchBench，超越Anthropic拿下全球龙虾执行争霸赛冠军</h3>
+        <p class="snippet">5月8日凌晨，百度搭子DuMate登顶智能体评测基准PinchBench榜首，并在前5位中占据3席，超越Anthropic和OpenAI拿下全球龙虾执行争霸赛冠军。在另外一项DeepResearch深度研究榜单中，DuMate同样位列第一。PinchBench是OpenClaw赛道最能体现Agent真实工作能力的评测基准，重点考察Agent在23个真实工作场景下147个任务的多</p>
+        <div class="news-meta">
+            <a href="https://www.leiphone.com/category/industrynews/Oh9CnFrZHHOodA9n.html" target="_blank">Original</a>
+            <span class="tag">雷锋网</span>
+            <span class="tag tag-china">CN</span>
+        </div>
+    </div>
+    <div class="news-item">
+        <div class="news-date">05-08 18:23</div>
+        <h3>26. 中国移动与火山引擎推出机密模型服务，为企业提供安全可信AI服务</h3>
+        <p class="snippet">5月8日，在2026移动云大会上，中国移动与火山引擎正式发布“移动引擎机密模型服务”专区，为各行业提供兼具技术领先与安全可信的AI服务，包括豆包大模型MaaS服务、Agent开发平台和工具等。<img src="https://static.leiphone.com/uploads/new/images/20260508/</p>
+        <div class="news-meta">
+            <a href="https://www.leiphone.com/category/industrynews/aZWpqeMDsRB841I1.html" target="_blank">Original</a>
+            <span class="tag">雷锋网</span>
+            <span class="tag tag-china">CN</span>
+        </div>
+    </div>
+    <div class="news-item">
+        <div class="news-date">05-08 16:55</div>
+        <h3>27. 当AI开始懂情绪，AI奇妙物语点亮全民创意风潮</h3>
+        <p class="snippet">2026年社交网络的“活人感”，一定是AI给的。从朋友圈的“赛博旅行照”到聊天框里的“AI扩图”，生成式AI已不再是极客的玩具，而是普通人记录生活、表达情绪的第六感。当技术门槛被踏平，一场关于“谁更会玩”的创意竞赛悄然开启。近日，由「AI奇妙物语」与安慕希联合发起的“即梦X安慕希整颗蓝莓AI创作大赛” 正在社交平台卷起一场创意风暴。这场事关想象力的全民狂欢折射出的是“AI奇妙物</p>
+        <div class="news-meta">
+            <a href="https://www.leiphone.com/category/industrynews/iAOqSCD9VnjVkekb.html" target="_blank">Original</a>
+            <span class="tag">雷锋网</span>
+            <span class="tag tag-china">CN</span>
+        </div>
+    </div>
+    <div class="news-item">
+        <div class="news-date">05-08 16:42</div>
+        <h3>28. 海信&Vidda“非电视”发布会：六大3C潮品齐发，RGB-Mini LED领衔技术下放</h3>
+        <p class="snippet">5月8日，主题为“有态度 就登场”的海信&Vidda全场景新品发布会正式拉开帷幕。作为全球显示产业的领跑者，海信视像在这一次的发布会上，打破传统屏幕的物理界限，以显示技术为原点，向声音、智能感知与移动能源全面延伸。这</p>
+        <div class="news-meta">
+            <a href="https://www.leiphone.com/category/weiwu/w3z7rUtQyVlcwUoc.html" target="_blank">Original</a>
+            <span class="tag">雷锋网</span>
+            <span class="tag tag-china">CN</span>
+        </div>
+    </div>
+    <div class="news-item">
+        <div class="news-date">05-08 10:01</div>
+        <h3>29. 研发投入同比增长2544%，奇瑞以科技创新推动高质量发展</h3>
+        <p class="snippet">2026年4月，奇瑞集团销量再创新高：单月总销量25.14万辆，同比增长25.2%，稳居中国品牌销量第二；新能源销量10.03万辆，同比增长63.8%，规模与增速均居行业前列；出口17.76万辆，同比增长102.4%，再创中国汽车单月出口新纪录。<p style="text-align: justify; margin-top: 0; margin-bott</p>
+        <div class="news-meta">
+            <a href="https://www.leiphone.com/category/industrynews/9W0R1Vr4Xt3eTXyg.html" target="_blank">Original</a>
+            <span class="tag">雷锋网</span>
+            <span class="tag tag-china">CN</span>
+        </div>
+    </div>
+    <div class="news-item">
+        <div class="news-date">05-11 01:26</div>
+        <h3>30. 追觅推出 Pocket P10 Cake 吹风机：11 万转 / 分高速马达，5999 元</h3>
+        <p class="snippet">IT之家 5 月 11 日消息，追觅现已推出 Pocket P10 Cake 吹风机，售价 599.9 元。P10 Cake 吹风机有提拉米苏棕、蜜桃麻薯粉、薄荷泡芙蓝、柠檬芭菲黄、葡萄慕斯紫五种颜色可选，支持 180° 自由折叠，重约 300g。<img alt="" sr</p>
+        <div class="news-meta">
+            <a href="https://www.ithome.com/0/948/592.htm" target="_blank">Original</a>
+            <span class="tag">IT之家</span>
+            <span class="tag tag-china">CN</span>
+        </div>
+    </div>
+    <div class="news-item">
+        <div class="news-date">05-11 01:22</div>
+        <h3>31. 消息称 AI 芯片企业 Cerebras IPO 获 20+ 倍超额认购，拟调升发行价近三成</h3>
+        <p class="snippet">IT之家 5 月 11 日消息，路透社当地时间昨日报道称，消息人士透露 AI 芯片企业 Cerebras 即将进行的 IPO 受到了投资者的重点关注，超额认购倍率突破 20。根据资本信息平台 Dealogic 的数据，有望成为 2026 年以来全球资本市场最大的一起 IPO。而在此背景下，Cerebras 考虑扩大本次 IPO 的规模，将发行股</p>
+        <div class="news-meta">
+            <a href="https://www.ithome.com/0/948/591.htm" target="_blank">Original</a>
+            <span class="tag">IT之家</span>
+            <span class="tag tag-china">CN</span>
+        </div>
+    </div>
+    <div class="news-item">
+        <div class="news-date">05-11 01:14</div>
+        <h3>32. 全球首创“运营商码号即大模型账号”，中国移动发布 AI-eSIM 多生态智能服务体系</h3>
+        <p class="snippet">IT之家 5 月 11 日消息，2026 移动云大会 AI-eSIM 分论坛于 5 月 8 日在江苏苏州举行。本次论坛以“AI-eSIM 智启新时代”为主题，聚焦更安全、更低成本、更灵活的智能连接与 AI 服务，汇聚政府领导、院士专家、行业领袖及生态伙伴，共同探讨 AI-eSIM 作为 Token 经济新入口的战略价值与创新路径。中国移动副总经</p>
+        <div class="news-meta">
+            <a href="https://www.ithome.com/0/948/585.htm" target="_blank">Original</a>
+            <span class="tag">IT之家</span>
+            <span class="tag tag-china">CN</span>
+        </div>
+    </div>
+    <div class="news-item">
+        <div class="news-date">05-11 01:09</div>
+        <h3>33. 上汽 MG 4X 纯电 SUV 开启盲订，上市指导价 998 万元起</h3>
+        <p class="snippet">IT之家 5 月 11 日消息，上汽 MG 今日宣布，MG 4X 纯电 SUV 开启盲订，上市指导价 9.98 万起。官方表示，下订 1000 元，解锁至高 12599 元盲订权益；上市当天盲订转大定，可享价值 2599 元 OPPO Watch X3 手表。IT之家获悉，该车将于 5 月底正式上市。<</p>
+        <div class="news-meta">
+            <a href="https://www.ithome.com/0/948/584.htm" target="_blank">Original</a>
+            <span class="tag">IT之家</span>
+            <span class="tag tag-china">CN</span>
+        </div>
+    </div>
+    <div class="news-item">
+        <div class="news-date">05-11 09:40</div>
+        <h3>34. 千里科技二次递表港交所，AI老兵的800万辆智驾野望</h3>
+        <p class="snippet">从破产重组到AI转身。</p>
+        <div class="news-meta">
+            <a href="https://www.tmtpost.com/7982971.html" target="_blank">Original</a>
+            <span class="tag">钛媒体</span>
+            <span class="tag tag-china">CN</span>
+        </div>
+    </div>
+    <div class="news-item">
+        <div class="news-date">05-11 09:18</div>
+        <h3>35. Sora的“死”与可灵的“生”</h3>
+        <p class="snippet">AI视频是个“跑步机”赛道。</p>
+        <div class="news-meta">
+            <a href="https://www.tmtpost.com/7983003.html" target="_blank">Original</a>
+            <span class="tag">钛媒体</span>
+            <span class="tag tag-china">CN</span>
+        </div>
+    </div>
+    <div class="news-item">
+        <div class="news-date">05-11 09:14</div>
+        <h3>36. 互联网巨头的用人账：130万人、几千亿薪酬，流向哪里？</h3>
+        <p class="snippet">人、钱与AI的重新分配。</p>
+        <div class="news-meta">
+            <a href="https://www.tmtpost.com/7983102.html" target="_blank">Original</a>
+            <span class="tag">钛媒体</span>
+            <span class="tag tag-china">CN</span>
+        </div>
+    </div>
+    <div class="news-item">
+        <div class="news-date">05-11 08:23</div>
+        <h3>37. Edge AI Daily 早报（5月11日）</h3>
+        <p class="snippet">英伟达黄仁勋提出主权AI愿景面临硬件集中化挑战，微软肯尼亚10亿美元数据中心因能源需求超限停滞，反映非洲AI扩张瓶颈。马斯克SpaceXAI推出Grok Build编程应用入局AI编程赛道，谷歌Fitbit更名Google Health强化健康科技布局。QTS数据中心违规取水2900万加仑暴露行业水资源管理危机，美国多地数据中心噪音污染引发社区抗议倒逼技术转型。</p>
+        <div class="news-meta">
+            <a href="https://www.tmtpost.com/7983052.html" target="_blank">Original</a>
+            <span class="tag">钛媒体</span>
+            <span class="tag tag-china">CN</span>
+        </div>
+    </div>
+    <div class="news-item">
+        <div class="news-date">05-11 07:20</div>
+        <h3>38. 【钛晨报】事关综合交通运输体系、化债等，国常会最新部署；DeepSeek和阿里谈崩了？市场人士：双方应该没有进行谈判；英伟达全面布局AI生态，股权投资今年已超400亿美元</h3>
+        <p class="snippet">微信电脑端更新：可滚动截长图、支持发语音；字节跳动据悉计划将AI基础设施支出增加25%；13亿元出售工厂：晶科回应未放弃美国市场；特斯拉：最后一辆Model S和Model X已在弗里蒙特工厂下线；广州推出人工智能场景交易平台，首批49个真实场景订单发布；江西公布新版无人驾驶航空器适飞空域，5月14日零时启用；涉及新兴领域等方面，市场监管总局批准发布一批重要国家标准；全球芯片LOF，被纳入重点监控</p>
+        <div class="news-meta">
+            <a href="https://www.tmtpost.com/7982888.html" target="_blank">Original</a>
+            <span class="tag">钛媒体</span>
+            <span class="tag tag-china">CN</span>
+        </div>
+    </div>
+    <div class="footer">
+        Generated by AI News Assistant
+    </div>
+</body>
+</html>

@@ -1,0 +1,893 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI News - 2026-05-26</title>
+    <style>
+        body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; max-width: 800px; margin: 0 auto; padding: 20px; background: #f5f5f5; }
+        .header { background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); color: white; padding: 30px; border-radius: 10px; margin-bottom: 20px; }
+        .header h1 { margin: 0; font-size: 28px; }
+        .header p { margin: 10px 0 0 0; opacity: 0.9; }
+        .top10-section { background: white; padding: 25px; margin-bottom: 25px; border-radius: 12px; box-shadow: 0 2px 8px rgba(0,0,0,0.1); }
+        .top10-section h2 { margin: 0 0 15px 0; color: #1a1a1a; font-size: 20px; padding-bottom: 10px; border-bottom: 2px solid #ff6b6b; }
+        .top10-china { border-left: 4px solid #ff6b6b; }
+        .top10-china h2 { border-bottom-color: #ff6b6b; }
+        .top10-china .top10-item { background: #fff5f5; border-left-color: #ff6b6b; }
+        .top10-china .top10-num { background: #ff6b6b; }
+        .top10-global { border-left: 4px solid #1976d2; }
+        .top10-global h2 { border-bottom-color: #1976d2; }
+        .top10-global .top10-item { background: #f0f7ff; border-left-color: #1976d2; }
+        .top10-global .top10-num { background: #1976d2; }
+        .top10-list { display: flex; flex-direction: column; gap: 10px; }
+        .top10-item { display: flex; gap: 12px; padding: 12px; border-radius: 8px; }
+        .top10-num { color: white; width: 24px; height: 24px; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 12px; font-weight: bold; flex-shrink: 0; }
+        .top10-content { flex: 1; }
+        .top10-title { font-size: 14px; font-weight: 600; color: #333; line-height: 1.4; }
+        .top10-title a { color: #333; text-decoration: none; }
+        .top10-title a:hover { color: #667eea; }
+        .top10-desc { font-size: 13px; color: #666; line-height: 1.4; margin-top: 4px; }
+        .summary-section { background: white; padding: 25px; margin-bottom: 25px; border-radius: 12px; box-shadow: 0 2px 8px rgba(0,0,0,0.1); }
+        .summary-section h2 { margin: 0 0 20px 0; color: #1a1a1a; font-size: 20px; padding-bottom: 15px; border-bottom: 2px solid #667eea; }
+        .category-tags { display: flex; flex-wrap: wrap; gap: 10px; margin-bottom: 20px; }
+        .cat-tag { background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); color: white; padding: 8px 16px; border-radius: 20px; font-size: 14px; }
+        .highlight-list { display: flex; flex-direction: column; gap: 12px; }
+        .highlight-item { display: flex; align-items: flex-start; gap: 12px; padding: 15px; background: #f8f9fa; border-radius: 10px; border-left: 4px solid #667eea; }
+        .highlight-num { background: #667eea; color: white; width: 28px; height: 28px; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 14px; font-weight: bold; flex-shrink: 0; }
+        .highlight-content { flex: 1; }
+        .highlight-title { font-size: 16px; font-weight: 600; color: #333; line-height: 1.5; margin-bottom: 5px; }
+        .highlight-title a { color: #333; text-decoration: none; }
+        .highlight-title a:hover { color: #667eea; }
+        .highlight-snippet { font-size: 13px; color: #666; line-height: 1.5; margin: 5px 0; }
+        .highlight-meta { font-size: 13px; color: #888; }
+        .chinese-summary { margin-top: 20px; }
+        .chinese-summary h3 { color: #333; font-size: 18px; margin-bottom: 15px; }
+        .news-item { background: white; padding: 20px; margin-bottom: 15px; border-radius: 8px; box-shadow: 0 2px 4px rgba(0,0,0,0.1); }
+        .news-date { color: #999; font-size: 12px; margin-bottom: 5px; }
+        .news-item h3 { margin: 0 0 10px 0; color: #333; }
+        .news-item a { color: #667eea; text-decoration: none; }
+        .snippet { color: #666; font-size: 14px; line-height: 1.6; }
+        .tag { display: inline-block; background: #e8f4f8; color: #2a7bb0; padding: 2px 8px; border-radius: 4px; font-size: 12px; margin-right: 8px; }
+        .tag-china { background: #ffeaea; color: #d32f2f; }
+        .tag-foreign { background: #e3f2fd; color: #1976d2; }
+        .news-meta { margin-top: 10px; display: flex; align-items: center; flex-wrap: wrap; gap: 5px; }
+        .section-title { font-size: 16px; font-weight: bold; color: #333; margin: 20px 0 15px 0; padding-bottom: 10px; border-bottom: 2px solid #667eea; }
+        .footer { text-align: center; color: #999; margin-top: 30px; font-size: 12px; }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h1>AI News Daily</h1>
+        <p>2026-05-26 | 49 articles</p>
+    </div>
+
+    
+    <div class="top10-section top10-china">
+        <h2>🇨🇳 中国科技新闻 Top 10</h2>
+        <div class="top10-list">
+            <div class="top10-item">
+                <span class="top10-num">1</span>
+                <div class="top10-content">
+                    <div class="top10-title"><a href="https://36kr.com/p/3824244844859525?f=rss" target="_blank">对话云鲸CEO张峻彬：理解人性，告别天真</a></div>
+                    <div class="top10-desc">作者 | 黄楠
+  编辑 | 袁斯来
+  36岁时，云鲸CEO张峻彬意识到，自己不能再只做一个温和的人。
+  他做过一些得罪人的决定，但更多时候，张峻彬不善于说</div>
+                </div>
+            </div>
+            <div class="top10-item">
+                <span class="top10-num">2</span>
+                <div class="top10-content">
+                    <div class="top10-title"><a href="https://36kr.com/p/3823033729061253?f=rss" target="_blank">两部 AI 剧集闯入戛纳，水母智能要做 AI 内容工业化的破局者｜项目报道</a></div>
+                    <div class="top10-desc">5月8日，第79届戛纳国际电影节內 Fantastic Pavilion 单元公布竖屏剧展演名单。
+  由水母智能旗下中国AI影视公司水母映画出品的竖屏剧集《摸</div>
+                </div>
+            </div>
+            <div class="top10-item">
+                <span class="top10-num">3</span>
+                <div class="top10-content">
+                    <div class="top10-title"><a href="https://36kr.com/p/3825357879497346?f=rss" target="_blank">8点1氪丨胖东来投资65亿的“梦之城”开工；“稚晖君”彭志辉正式出任上纬新材董事长；“死了么”App改名“在么在么”</a></div>
+                    <div class="top10-desc">今日热点导览
+  美媒：美伊已就全面开放霍尔木兹海峡达成一致
+  拉勾网及创始人被限消
+  宇树科技6月1日科创板IPO上会，一季度扣非净利润同比下降52.55</div>
+                </div>
+            </div>
+            <div class="top10-item">
+                <span class="top10-num">4</span>
+                <div class="top10-content">
+                    <div class="top10-title"><a href="https://36kr.com/p/3824601267196037?f=rss" target="_blank">消除“罪证”：给写作去除“AI味”的不完全手册（2026版）</a></div>
+                    <div class="top10-desc"><img src="https://img.36krcdn.com/hsossms/20260525/v2_7e9d1114399e47c4b2142b6de8</div>
+                </div>
+            </div>
+            <div class="top10-item">
+                <span class="top10-num">5</span>
+                <div class="top10-content">
+                    <div class="top10-title"><a href="https://36kr.com/p/3824164325412992?f=rss" target="_blank">用AI重构增长：新通教育集团的实践| 2026AI Partner·北京亦庄AI+产业大会</a></div>
+                    <div class="top10-desc">新通教育创始人麻亚炜坦诚分享了过去五年的转型历程——从数字化基建到全员AI Must，从AI in All到AI Native新业务。她的实践证明：传统企业拥抱</div>
+                </div>
+            </div>
+            <div class="top10-item">
+                <span class="top10-num">6</span>
+                <div class="top10-content">
+                    <div class="top10-title"><a href="https://36kr.com/p/3824158896312709?f=rss" target="_blank">搞定工业质检：AI视觉如何重构高端制造质量防线| 2026AI Partner·北京亦庄AI+产业大会</a></div>
+                    <div class="top10-desc">半导体光罩上的纳米级缺陷、玻璃基板上几微米的钻孔。广州因特智能展示了AI视觉如何从实验室走进高端制造产线，用软硬结合的方式解决中国在半导体检测装备领域的卡脖子问</div>
+                </div>
+            </div>
+            <div class="top10-item">
+                <span class="top10-num">7</span>
+                <div class="top10-content">
+                    <div class="top10-title"><a href="https://36kr.com/p/3824154127093892?f=rss" target="_blank">圆桌对话：从“千人千面”到“人心洞察”| 2026AI Partner·北京亦庄AI+产业大会</a></div>
+                    <div class="top10-desc">AIGC如何从生产工具进阶到情感洞察？当AI能写出剧本、生成音乐、表演微表情，人还剩什么？
+  内容产业正在发生生产模式跃迁，传统用户画像在AI时代正在被颠覆，</div>
+                </div>
+            </div>
+            <div class="top10-item">
+                <span class="top10-num">8</span>
+                <div class="top10-content">
+                    <div class="top10-title"><a href="https://36kr.com/p/3820241871409543?f=rss" target="_blank">对话欧洲地图商TomTom：中国订单暴涨10倍，帮助中国辅助驾驶出海｜最前线</a></div>
+                    <div class="top10-desc">中国汽车出海，离不开“地图”
+  当下，中国车企全球化进程正全面提速，出海已经从企业的可选增量，变为行业确定性增长主线。比亚迪、奇瑞等企业海外销量规模持续走高，</div>
+                </div>
+            </div>
+            <div class="top10-item">
+                <span class="top10-num">9</span>
+                <div class="top10-content">
+                    <div class="top10-title"><a href="https://www.leiphone.com/category/industrynews/FmZzakD3JfKEtvNT.html" target="_blank">北纬诺贝巅峰对话｜乔·韦曼走进中关村两院，深度解读AI时代企业增长新逻辑</a></div>
+                    <div class="top10-desc">雷峰网讯 AI<span style="font-family: 'Times New Roman'; font-siz</div>
+                </div>
+            </div>
+            <div class="top10-item">
+                <span class="top10-num">10</span>
+                <div class="top10-content">
+                    <div class="top10-title"><a href="https://www.leiphone.com/category/industrynews/OKDJKKDkUhQYDaee.html" target="_blank">一台手掌大小、300克的AI主机，为什么能跑122B模型？</a></div>
+                    <div class="top10-desc"><p style="text-align: left; margin-top: 6pt;</div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="top10-section top10-global">
+        <h2>🌍 全球科技新闻 Top 10</h2>
+        <div class="top10-list">
+            <div class="top10-item">
+                <span class="top10-num">1</span>
+                <div class="top10-content">
+                    <div class="top10-title"><a href="https://www.nytimes.com/2026/05/24/technology/uk-ai-safety-institute.html" target="_blank">UK Institute Is Hunting for Dangers Lurking in AI</a></div>
+                    <div class="top10-desc">The government’s A.I. Security Institute, staffed by alumni from OpenAI and Goog</div>
+                </div>
+            </div>
+            <div class="top10-item">
+                <span class="top10-num">2</span>
+                <div class="top10-content">
+                    <div class="top10-title"><a href="https://www.nytimes.com/2026/05/24/technology/ai-cybersecurity-jobs.html" target="_blank">One Job That Is Growing in the AI Era? Cyber安全 Experts</a></div>
+                    <div class="top10-desc">Demand for security engineers has surged as artificial intelligence generates a </div>
+                </div>
+            </div>
+            <div class="top10-item">
+                <span class="top10-num">3</span>
+                <div class="top10-content">
+                    <div class="top10-title"><a href="https://www.nytimes.com/2026/05/22/podcasts/our-field-trip-to-google-i-o-a-sit-down-with-sundar-pichai-system-update.html" target="_blank">Our Field Trip to [谷歌] I/O + A Sit-Down With Sundar Pichai + System Update</a></div>
+                    <div class="top10-desc">“This is the only recent gathering of a large number of people where mentions of</div>
+                </div>
+            </div>
+            <div class="top10-item">
+                <span class="top10-num">4</span>
+                <div class="top10-content">
+                    <div class="top10-title"><a href="https://www.nytimes.com/2026/05/22/podcasts/sundar-pichai-understands-why-people-are-anxious-about-ai.html" target="_blank">Sundar Pichai Understands Why People Are Anxious About AI</a></div>
+                    <div class="top10-desc">After a busy Google I/O, the company’s chief executive sits down with the hosts </div>
+                </div>
+            </div>
+            <div class="top10-item">
+                <span class="top10-num">5</span>
+                <div class="top10-content">
+                    <div class="top10-title"><a href="https://www.nytimes.com/2026/05/25/technology/pope-ai-silicon-valley.html" target="_blank">As AI Fever Rises in Silicon Valley Pope Leo Has a Few Words</a></div>
+                    <div class="top10-desc">The American pope wants to take artificial intelligence down a notch. Is he chal</div>
+                </div>
+            </div>
+            <div class="top10-item">
+                <span class="top10-num">6</span>
+                <div class="top10-content">
+                    <div class="top10-title"><a href="https://www.nytimes.com/2026/05/21/technology/trump-ai-executive-order.html" target="_blank">Trump Cancels Signing of Executive Order Granting Oversight of AI Models</a></div>
+                    <div class="top10-desc">The president said he postponed the executive order, which would give the govern</div>
+                </div>
+            </div>
+            <div class="top10-item">
+                <span class="top10-num">7</span>
+                <div class="top10-content">
+                    <div class="top10-title"><a href="https://www.nytimes.com/2026/05/21/technology/newsom-ai-executive-order-california.html" target="_blank">Gov Gavin Newsom to Sign Executive Order Aimed at AI Job Loss</a></div>
+                    <div class="top10-desc">Gov. Gavin Newsom issued an executive order to explore an overhaul of labor poli</div>
+                </div>
+            </div>
+            <div class="top10-item">
+                <span class="top10-num">8</span>
+                <div class="top10-content">
+                    <div class="top10-title"><a href="https://www.nytimes.com/2026/05/20/technology/meta-layoffs-ai-song.html" target="_blank">Soundtrack to 8,000 Job Cuts: A [Meta] Worker’s Layoff-Themed AI Songs</a></div>
+                    <div class="top10-desc">On a dark day of layoffs at Meta, one employee responded by creating an internal</div>
+                </div>
+            </div>
+            <div class="top10-item">
+                <span class="top10-num">9</span>
+                <div class="top10-content">
+                    <div class="top10-title"><a href="https://www.nytimes.com/2026/05/20/technology/openai-ipo.html" target="_blank">[OpenAI] Prepares to File for an IPO in Coming Weeks</a></div>
+                    <div class="top10-desc">OpenAI would be one of the most highly anticipated potential initial public offe</div>
+                </div>
+            </div>
+            <div class="top10-item">
+                <span class="top10-num">10</span>
+                <div class="top10-content">
+                    <div class="top10-title"><a href="https://www.bbc.com/news/articles/cdrp3zzzp71o?at_medium=RSS&at_campaign=rss" target="_blank">AI may speed up 搜索 for drugs to treat brain conditions</a></div>
+                    <div class="top10-desc">Researchers hope the work will help identify affordable, effective drugs to trea</div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    
+    <div class="summary-section">
+        <h2>AI Daily Highlights</h2>
+        <div class="category-tags"><span class="cat-tag">AI AI Product (27)</span><span class="cat-tag">News Other (21)</span><span class="cat-tag">LLM LLM/Model (1)</span></div>
+
+        <div class="chinese-summary">
+            <h3>Top 10 AI News</h3>
+            
+            <div class="highlight-item">
+                <span class="highlight-num">1</span>
+                <div class="highlight-content">
+                    <div class="highlight-title">
+                        <a href="https://www.nytimes.com/2026/05/24/technology/uk-ai-safety-institute.html" target="_blank" style="color: #333; text-decoration: none;">UK Institute Is Hunting for Dangers Lurking in AI</a>
+                    </div>
+                    <p class="highlight-snippet" style="color: #555; font-size: 13px; margin: 5px 0; line-height: 1.4;">The government’s A.I. Security Institute, staffed by alumni from OpenAI and Google, is becoming a mo...</p>
+                    <div class="highlight-meta">
+                        <span class="highlight-date">05-24 09:01</span> |
+                        <span class="highlight-source">NYTimes</span> |
+                        <span style="color: #1976d2;">🌍 全球</span>
+                    </div>
+                </div>
+            </div>
+            <div class="highlight-item">
+                <span class="highlight-num">2</span>
+                <div class="highlight-content">
+                    <div class="highlight-title">
+                        <a href="https://www.nytimes.com/2026/05/24/technology/ai-cybersecurity-jobs.html" target="_blank" style="color: #333; text-decoration: none;">One Job That Is Growing in the AI Era? Cyber安全 Experts</a>
+                    </div>
+                    <p class="highlight-snippet" style="color: #555; font-size: 13px; margin: 5px 0; line-height: 1.4;">Demand for security engineers has surged as artificial intelligence generates a glut of new code and...</p>
+                    <div class="highlight-meta">
+                        <span class="highlight-date">05-25 12:46</span> |
+                        <span class="highlight-source">NYTimes</span> |
+                        <span style="color: #1976d2;">🌍 全球</span>
+                    </div>
+                </div>
+            </div>
+            <div class="highlight-item">
+                <span class="highlight-num">3</span>
+                <div class="highlight-content">
+                    <div class="highlight-title">
+                        <a href="https://www.nytimes.com/2026/05/22/podcasts/our-field-trip-to-google-i-o-a-sit-down-with-sundar-pichai-system-update.html" target="_blank" style="color: #333; text-decoration: none;">Our Field Trip to [谷歌] I/O + A Sit-Down With Sundar Pichai + System Update</a>
+                    </div>
+                    <p class="highlight-snippet" style="color: #555; font-size: 13px; margin: 5px 0; line-height: 1.4;">“This is the only recent gathering of a large number of people where mentions of A.I. did not produc...</p>
+                    <div class="highlight-meta">
+                        <span class="highlight-date">05-22 11:11</span> |
+                        <span class="highlight-source">NYTimes</span> |
+                        <span style="color: #1976d2;">🌍 全球</span>
+                    </div>
+                </div>
+            </div>
+            <div class="highlight-item">
+                <span class="highlight-num">4</span>
+                <div class="highlight-content">
+                    <div class="highlight-title">
+                        <a href="https://www.nytimes.com/2026/05/22/podcasts/sundar-pichai-understands-why-people-are-anxious-about-ai.html" target="_blank" style="color: #333; text-decoration: none;">Sundar Pichai Understands Why People Are Anxious About AI</a>
+                    </div>
+                    <p class="highlight-snippet" style="color: #555; font-size: 13px; margin: 5px 0; line-height: 1.4;">After a busy Google I/O, the company’s chief executive sits down with the hosts of “Hard Fork” to di...</p>
+                    <div class="highlight-meta">
+                        <span class="highlight-date">05-22 14:49</span> |
+                        <span class="highlight-source">NYTimes</span> |
+                        <span style="color: #1976d2;">🌍 全球</span>
+                    </div>
+                </div>
+            </div>
+            <div class="highlight-item">
+                <span class="highlight-num">5</span>
+                <div class="highlight-content">
+                    <div class="highlight-title">
+                        <a href="https://www.nytimes.com/2026/05/25/technology/pope-ai-silicon-valley.html" target="_blank" style="color: #333; text-decoration: none;">As AI Fever Rises in Silicon Valley Pope Leo Has a Few Words</a>
+                    </div>
+                    <p class="highlight-snippet" style="color: #555; font-size: 13px; margin: 5px 0; line-height: 1.4;">The American pope wants to take artificial intelligence down a notch. Is he challenging the tech com...</p>
+                    <div class="highlight-meta">
+                        <span class="highlight-date">05-25 18:35</span> |
+                        <span class="highlight-source">NYTimes</span> |
+                        <span style="color: #1976d2;">🌍 全球</span>
+                    </div>
+                </div>
+            </div>
+            <div class="highlight-item">
+                <span class="highlight-num">6</span>
+                <div class="highlight-content">
+                    <div class="highlight-title">
+                        <a href="https://www.nytimes.com/2026/05/21/technology/trump-ai-executive-order.html" target="_blank" style="color: #333; text-decoration: none;">Trump Cancels Signing of Executive Order Granting Oversight of AI Models</a>
+                    </div>
+                    <p class="highlight-snippet" style="color: #555; font-size: 13px; margin: 5px 0; line-height: 1.4;">The president said he postponed the executive order, which would give the government power to evalua...</p>
+                    <div class="highlight-meta">
+                        <span class="highlight-date">05-21 17:47</span> |
+                        <span class="highlight-source">NYTimes</span> |
+                        <span style="color: #1976d2;">🌍 全球</span>
+                    </div>
+                </div>
+            </div>
+            <div class="highlight-item">
+                <span class="highlight-num">7</span>
+                <div class="highlight-content">
+                    <div class="highlight-title">
+                        <a href="https://www.nytimes.com/2026/05/21/technology/newsom-ai-executive-order-california.html" target="_blank" style="color: #333; text-decoration: none;">Gov Gavin Newsom to Sign Executive Order Aimed at AI Job Loss</a>
+                    </div>
+                    <p class="highlight-snippet" style="color: #555; font-size: 13px; margin: 5px 0; line-height: 1.4;">Gov. Gavin Newsom issued an executive order to explore an overhaul of labor policies to deal with po...</p>
+                    <div class="highlight-meta">
+                        <span class="highlight-date">05-21 15:26</span> |
+                        <span class="highlight-source">NYTimes</span> |
+                        <span style="color: #1976d2;">🌍 全球</span>
+                    </div>
+                </div>
+            </div>
+            <div class="highlight-item">
+                <span class="highlight-num">8</span>
+                <div class="highlight-content">
+                    <div class="highlight-title">
+                        <a href="https://www.nytimes.com/2026/05/20/technology/meta-layoffs-ai-song.html" target="_blank" style="color: #333; text-decoration: none;">Soundtrack to 8,000 Job Cuts: A [Meta] Worker’s Layoff-Themed AI Songs</a>
+                    </div>
+                    <p class="highlight-snippet" style="color: #555; font-size: 13px; margin: 5px 0; line-height: 1.4;">On a dark day of layoffs at Meta, one employee responded by creating an internal radio station that ...</p>
+                    <div class="highlight-meta">
+                        <span class="highlight-date">05-20 22:57</span> |
+                        <span class="highlight-source">NYTimes</span> |
+                        <span style="color: #1976d2;">🌍 全球</span>
+                    </div>
+                </div>
+            </div>
+            <div class="highlight-item">
+                <span class="highlight-num">9</span>
+                <div class="highlight-content">
+                    <div class="highlight-title">
+                        <a href="https://www.nytimes.com/2026/05/20/technology/openai-ipo.html" target="_blank" style="color: #333; text-decoration: none;">[OpenAI] Prepares to File for an IPO in Coming Weeks</a>
+                    </div>
+                    <p class="highlight-snippet" style="color: #555; font-size: 13px; margin: 5px 0; line-height: 1.4;">OpenAI would be one of the most highly anticipated potential initial public offerings, in what is se...</p>
+                    <div class="highlight-meta">
+                        <span class="highlight-date">05-20 18:41</span> |
+                        <span class="highlight-source">NYTimes</span> |
+                        <span style="color: #1976d2;">🌍 全球</span>
+                    </div>
+                </div>
+            </div>
+            <div class="highlight-item">
+                <span class="highlight-num">10</span>
+                <div class="highlight-content">
+                    <div class="highlight-title">
+                        <a href="https://www.bbc.com/news/articles/cdrp3zzzp71o?at_medium=RSS&at_campaign=rss" target="_blank" style="color: #333; text-decoration: none;">AI may speed up 搜索 for drugs to treat brain conditions</a>
+                    </div>
+                    <p class="highlight-snippet" style="color: #555; font-size: 13px; margin: 5px 0; line-height: 1.4;">Researchers hope the work will help identify affordable, effective drugs to treat conditions like MN...</p>
+                    <div class="highlight-meta">
+                        <span class="highlight-date">05-22 21:30</span> |
+                        <span class="highlight-source">BBC</span> |
+                        <span style="color: #1976d2;">🌍 全球</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="section-title">[All News]</div>
+    
+    <div class="news-item">
+        <div class="news-date">05-24 09:01</div>
+        <h3>1. UK Institute Is Hunting for Dangers Lurking in AI</h3>
+        <p class="snippet">The government’s A.I. Security Institute, staffed by alumni from OpenAI and Google, is becoming a model for countries grappling with A.I.’s emerging risks.</p>
+        <div class="news-meta">
+            <a href="https://www.nytimes.com/2026/05/24/technology/uk-ai-safety-institute.html" target="_blank">Original</a>
+            <span class="tag">NYTimes</span>
+            <span class="tag tag-foreign">EN</span>
+        </div>
+    </div>
+    <div class="news-item">
+        <div class="news-date">05-25 12:46</div>
+        <h3>2. One Job That Is Growing in the AI Era? Cyber安全 Experts</h3>
+        <p class="snippet">Demand for security engineers has surged as artificial intelligence generates a glut of new code and models like Anthropic’s Mythos create new concerns.</p>
+        <div class="news-meta">
+            <a href="https://www.nytimes.com/2026/05/24/technology/ai-cybersecurity-jobs.html" target="_blank">Original</a>
+            <span class="tag">NYTimes</span>
+            <span class="tag tag-foreign">EN</span>
+        </div>
+    </div>
+    <div class="news-item">
+        <div class="news-date">05-22 11:11</div>
+        <h3>3. Our Field Trip to [谷歌] I/O + A Sit-Down With Sundar Pichai + System Update</h3>
+        <p class="snippet">“This is the only recent gathering of a large number of people where mentions of A.I. did not produce a large chorus of boos.”</p>
+        <div class="news-meta">
+            <a href="https://www.nytimes.com/2026/05/22/podcasts/our-field-trip-to-google-i-o-a-sit-down-with-sundar-pichai-system-update.html" target="_blank">Original</a>
+            <span class="tag">NYTimes</span>
+            <span class="tag tag-foreign">EN</span>
+        </div>
+    </div>
+    <div class="news-item">
+        <div class="news-date">05-22 14:49</div>
+        <h3>4. Sundar Pichai Understands Why People Are Anxious About AI</h3>
+        <p class="snippet">After a busy Google I/O, the company’s chief executive sits down with the hosts of “Hard Fork” to discuss the future of Google Search, how he’s using A.I. agents and his advice for college graduates.</p>
+        <div class="news-meta">
+            <a href="https://www.nytimes.com/2026/05/22/podcasts/sundar-pichai-understands-why-people-are-anxious-about-ai.html" target="_blank">Original</a>
+            <span class="tag">NYTimes</span>
+            <span class="tag tag-foreign">EN</span>
+        </div>
+    </div>
+    <div class="news-item">
+        <div class="news-date">05-25 18:35</div>
+        <h3>5. As AI Fever Rises in Silicon Valley Pope Leo Has a Few Words</h3>
+        <p class="snippet">The American pope wants to take artificial intelligence down a notch. Is he challenging the tech companies, or will tech take over the papacy?</p>
+        <div class="news-meta">
+            <a href="https://www.nytimes.com/2026/05/25/technology/pope-ai-silicon-valley.html" target="_blank">Original</a>
+            <span class="tag">NYTimes</span>
+            <span class="tag tag-foreign">EN</span>
+        </div>
+    </div>
+    <div class="news-item">
+        <div class="news-date">05-21 17:47</div>
+        <h3>6. Trump Cancels Signing of Executive Order Granting Oversight of AI Models</h3>
+        <p class="snippet">The president said he postponed the executive order, which would give the government power to evaluate A.I. models before their release, over concerns about “aspects of it.”</p>
+        <div class="news-meta">
+            <a href="https://www.nytimes.com/2026/05/21/technology/trump-ai-executive-order.html" target="_blank">Original</a>
+            <span class="tag">NYTimes</span>
+            <span class="tag tag-foreign">EN</span>
+        </div>
+    </div>
+    <div class="news-item">
+        <div class="news-date">05-21 15:26</div>
+        <h3>7. Gov Gavin Newsom to Sign Executive Order Aimed at AI Job Loss</h3>
+        <p class="snippet">Gov. Gavin Newsom issued an executive order to explore an overhaul of labor policies to deal with potential mass job displacement from artificial intelligence.</p>
+        <div class="news-meta">
+            <a href="https://www.nytimes.com/2026/05/21/technology/newsom-ai-executive-order-california.html" target="_blank">Original</a>
+            <span class="tag">NYTimes</span>
+            <span class="tag tag-foreign">EN</span>
+        </div>
+    </div>
+    <div class="news-item">
+        <div class="news-date">05-20 22:57</div>
+        <h3>8. Soundtrack to 8,000 Job Cuts: A [Meta] Worker’s Layoff-Themed AI Songs</h3>
+        <p class="snippet">On a dark day of layoffs at Meta, one employee responded by creating an internal radio station that plays songs about job cuts — generated by artificial intelligence, of course.</p>
+        <div class="news-meta">
+            <a href="https://www.nytimes.com/2026/05/20/technology/meta-layoffs-ai-song.html" target="_blank">Original</a>
+            <span class="tag">NYTimes</span>
+            <span class="tag tag-foreign">EN</span>
+        </div>
+    </div>
+    <div class="news-item">
+        <div class="news-date">05-20 18:41</div>
+        <h3>9. [OpenAI] Prepares to File for an IPO in Coming Weeks</h3>
+        <p class="snippet">OpenAI would be one of the most highly anticipated potential initial public offerings, in what is set to be a major year of I.P.O.s for Silicon Valley.</p>
+        <div class="news-meta">
+            <a href="https://www.nytimes.com/2026/05/20/technology/openai-ipo.html" target="_blank">Original</a>
+            <span class="tag">NYTimes</span>
+            <span class="tag tag-foreign">EN</span>
+        </div>
+    </div>
+    <div class="news-item">
+        <div class="news-date">05-22 21:30</div>
+        <h3>10. AI may speed up 搜索 for drugs to treat brain conditions</h3>
+        <p class="snippet">Researchers hope the work will help identify affordable, effective drugs to treat conditions like MND.</p>
+        <div class="news-meta">
+            <a href="https://www.bbc.com/news/articles/cdrp3zzzp71o?at_medium=RSS&at_campaign=rss" target="_blank">Original</a>
+            <span class="tag">BBC</span>
+            <span class="tag tag-foreign">EN</span>
+        </div>
+    </div>
+    <div class="news-item">
+        <div class="news-date">05-22 16:10</div>
+        <h3>11. Waymo pauses robotaxis in five US cities after cars drive into flooded roads</h3>
+        <p class="snippet">A Waymo spokesperson said it had expanded the temporary pause "out of an abundance of caution".</p>
+        <div class="news-meta">
+            <a href="https://www.bbc.com/news/articles/ckgplyxxl75o?at_medium=RSS&at_campaign=rss" target="_blank">Original</a>
+            <span class="tag">BBC</span>
+            <span class="tag tag-foreign">EN</span>
+        </div>
+    </div>
+    <div class="news-item">
+        <div class="news-date">05-22 12:16</div>
+        <h3>12. 'At a loss for words' - Destiny 2 fans react to 新s support is ending</h3>
+        <p class="snippet">Bungie said the online shooter will get its final update on 9 June but will still be playable.</p>
+        <div class="news-meta">
+            <a href="https://www.bbc.com/news/articles/c1728w58dyqo?at_medium=RSS&at_campaign=rss" target="_blank">Original</a>
+            <span class="tag">BBC</span>
+            <span class="tag tag-foreign">EN</span>
+        </div>
+    </div>
+    <div class="news-item">
+        <div class="news-date">05-21 20:34</div>
+        <h3>13. [Meta] settles social media addiction case with US school district</h3>
+        <p class="snippet">The trial had been set as a test case for 1200 other school districts making similar claims.</p>
+        <div class="news-meta">
+            <a href="https://www.bbc.com/news/articles/cgepze483pqo?at_medium=RSS&at_campaign=rss" target="_blank">Original</a>
+            <span class="tag">BBC</span>
+            <span class="tag tag-foreign">EN</span>
+        </div>
+    </div>
+    <div class="news-item">
+        <div class="news-date">05-21 07:10</div>
+        <h3>14. TikTok and YouTube 'not safe enough' for kids 称 Ofcom</h3>
+        <p class="snippet">YouTube said it worked with experts to provide appropriate experiences. TikTok said it was disappointed Ofcom had not acknowledged its safety features.</p>
+        <div class="news-meta">
+            <a href="https://www.bbc.com/news/articles/cn0pky4zpxxo?at_medium=RSS&at_campaign=rss" target="_blank">Original</a>
+            <span class="tag">BBC</span>
+            <span class="tag tag-foreign">EN</span>
+        </div>
+    </div>
+    <div class="news-item">
+        <div class="news-date">05-21 06:00</div>
+        <h3>15. SpaceX files for stock market debut that could make [马斯克] a trillionaire</h3>
+        <p class="snippet">Musk's rocket-maker and satellite internet provider will trade under the ticker SPCX</p>
+        <div class="news-meta">
+            <a href="https://www.bbc.com/news/articles/cg4pe2953q1o?at_medium=RSS&at_campaign=rss" target="_blank">Original</a>
+            <span class="tag">BBC</span>
+            <span class="tag tag-foreign">EN</span>
+        </div>
+    </div>
+    <div class="news-item">
+        <div class="news-date">05-20 10:27</div>
+        <h3>16. US groups urge 投资igation into child safety and spending on Roblox</h3>
+        <p class="snippet">Roblox said it had "clear policies" banning actual and simulated gambling, as well as rules governing paid random items.</p>
+        <div class="news-meta">
+            <a href="https://www.bbc.com/news/articles/cgqpz809e7lo?at_medium=RSS&at_campaign=rss" target="_blank">Original</a>
+            <span class="tag">BBC</span>
+            <span class="tag tag-foreign">EN</span>
+        </div>
+    </div>
+    <div class="news-item">
+        <div class="news-date">05-19 21:00</div>
+        <h3>17. [谷歌] to 发布 首个 smart glasses since [谷歌] Glass flop</h3>
+        <p class="snippet">The glasses will go on sale sometime in autumn and allow Google's artificial intelligence product to interact with a user.</p>
+        <div class="news-meta">
+            <a href="https://www.bbc.com/news/articles/cvgz1ynq1nqo?at_medium=RSS&at_campaign=rss" target="_blank">Original</a>
+            <span class="tag">BBC</span>
+            <span class="tag tag-foreign">EN</span>
+        </div>
+    </div>
+    <div class="news-item">
+        <div class="news-date">05-19 20:00</div>
+        <h3>18. Tech Life</h3>
+        <p class="snippet">We talk to an expert about the risks from AI hackers</p>
+        <div class="news-meta">
+            <a href="https://www.bbc.co.uk/sounds/play/w3ct8jxw?at_medium=RSS&at_campaign=rss" target="_blank">Original</a>
+            <span class="tag">BBC</span>
+            <span class="tag tag-foreign">EN</span>
+        </div>
+    </div>
+    <div class="news-item">
+        <div class="news-date">05-25 11:30</div>
+        <h3>19. These Privacy-Conscious Gay Dating Apps Want to Dethrone Grindr</h3>
+        <p class="snippet">As public backlash against Big Dating mounts, a batch of new gay hookup apps offer community-powered alternatives.</p>
+        <div class="news-meta">
+            <a href="https://www.wired.com/story/these-privacy-conscious-gay-dating-apps-want-to-dethrone-grindr/" target="_blank">Original</a>
+            <span class="tag">Wired</span>
+            <span class="tag tag-foreign">EN</span>
+        </div>
+    </div>
+    <div class="news-item">
+        <div class="news-date">05-25 10:30</div>
+        <h3>20. The AI Era Is Creating a Bug Hunting Arms Race</h3>
+        <p class="snippet">As attackers ramp up their AI exploit development, the search for software vulnerabilities is changing rapidly.</p>
+        <div class="news-meta">
+            <a href="https://www.wired.com/story/the-ai-era-is-creating-a-bug-hunting-arms-race/" target="_blank">Original</a>
+            <span class="tag">Wired</span>
+            <span class="tag tag-foreign">EN</span>
+        </div>
+    </div>
+    <div class="news-item">
+        <div class="news-date">05-24 11:01</div>
+        <h3>21. Topo Designs Rover Trail Pack Is the Best Backpack I’ve Ever Used</h3>
+        <p class="snippet">Unsurprisingly, the Denver gorpcore brand that makes many of the best bags in the world has delivered a perfect backpack.</p>
+        <div class="news-meta">
+            <a href="https://www.wired.com/story/topo-designs-rover-trail-pack/" target="_blank">Original</a>
+            <span class="tag">Wired</span>
+            <span class="tag tag-foreign">EN</span>
+        </div>
+    </div>
+    <div class="news-item">
+        <div class="news-date">05-25 16:00</div>
+        <h3>22. What ClickUp’s mass layoff tells us about the future of work</h3>
+        <p class="snippet">The nine-year-old startup is replacing hundreds of employees with thousands of AI agents.</p>
+        <div class="news-meta">
+            <a href="https://techcrunch.com/2026/05/25/what-clickups-mass-layoff-tells-us-about-the-future-of-work/" target="_blank">Original</a>
+            <span class="tag">TechCrunch</span>
+            <span class="tag tag-foreign">EN</span>
+        </div>
+    </div>
+    <div class="news-item">
+        <div class="news-date">05-25 15:09</div>
+        <h3>23. The pope’s AI encyclical isn’t really about AI</h3>
+        <p class="snippet">Pope Leo XIV's first encyclical uses AI as a lens to diagnose older problems: concentrated power, eroding democracy, and a tech elite that shapes the world to its own advantage.</p>
+        <div class="news-meta">
+            <a href="https://techcrunch.com/2026/05/25/the-popes-ai-encyclical-isnt-really-about-ai/" target="_blank">Original</a>
+            <span class="tag">TechCrunch</span>
+            <span class="tag tag-foreign">EN</span>
+        </div>
+    </div>
+    <div class="news-item">
+        <div class="news-date">05-25 15:00</div>
+        <h3>24. The pitch trick that helped an eSports 创业公司 raise $20M when VCs only wanted AI</h3>
+        <p class="snippet">Earlier this year, Lucra Sports founder and CEO Dylan Robbins did something that no one else has ever done. And he shared several secrets on how he did it.</p>
+        <div class="news-meta">
+            <a href="https://techcrunch.com/2026/05/25/the-pitch-trick-that-helped-an-esports-startup-raise-20m-when-vcs-only-wanted-ai/" target="_blank">Original</a>
+            <span class="tag">TechCrunch</span>
+            <span class="tag tag-foreign">EN</span>
+        </div>
+    </div>
+    <div class="news-item">
+        <div class="news-date">05-24 21:39</div>
+        <h3>25. Everyone is navigating AI 安全 in real time — even [谷歌]</h3>
+        <p class="snippet">We're in the transition period -- all of us.</p>
+        <div class="news-meta">
+            <a href="https://techcrunch.com/2026/05/24/everyone-is-navigating-ai-security-in-real-time-even-google/" target="_blank">Original</a>
+            <span class="tag">TechCrunch</span>
+            <span class="tag tag-foreign">EN</span>
+        </div>
+    </div>
+    <div class="news-item">
+        <div class="news-date">05-24 15:00</div>
+        <h3>26. I tried [亚马逊]’s Bee wearable and am both intrigued and slightly creeped out</h3>
+        <p class="snippet">Like other AI wearables, Amazon's Bee offers an odd combination of convenience and privacy anxiety.</p>
+        <div class="news-meta">
+            <a href="https://techcrunch.com/2026/05/24/i-tried-amazons-bee-wearable-and-am-both-intrigued-and-slightly-creeped-out/" target="_blank">Original</a>
+            <span class="tag">TechCrunch</span>
+            <span class="tag tag-foreign">EN</span>
+        </div>
+    </div>
+    <div class="news-item">
+        <div class="news-date">05-23 20:03</div>
+        <h3>27. SolarSquare in talks to raise up to $60M as India’s rooftop solar market draws major VC interest</h3>
+        <p class="snippet">SolarSquare could be valued at up to $500 million in the financing expected to close next month.</p>
+        <div class="news-meta">
+            <a href="https://techcrunch.com/2026/05/23/solarsquare-in-talks-to-raise-up-to-60m-as-indias-rooftop-solar-market-draws-major-vc-interest/" target="_blank">Original</a>
+            <span class="tag">TechCrunch</span>
+            <span class="tag tag-foreign">EN</span>
+        </div>
+    </div>
+    <div class="news-item">
+        <div class="news-date">05-23 16:00</div>
+        <h3>28. These special phone and app features can help protect you from spyware</h3>
+        <p class="snippet">Apple, Meta, and Google offer special security modes that provide your devices more secure against targeted spyware attacks. Here are how those modes work, what they do, and how to switch them on.</p>
+        <div class="news-meta">
+            <a href="https://techcrunch.com/2026/05/23/you-dont-have-to-click-anything-to-get-hacked-anymore-heres-how-to-fight-back/" target="_blank">Original</a>
+            <span class="tag">TechCrunch</span>
+            <span class="tag tag-foreign">EN</span>
+        </div>
+    </div>
+    <div class="news-item">
+        <div class="news-date">05-23 15:08</div>
+        <h3>29. Ferrari is using IBM’s AI to create F1 superfans</h3>
+        <p class="snippet">IBM and Scuderia Ferrari HP take TechCrunch inside how they are redefining the fan experience.</p>
+        <div class="news-meta">
+            <a href="https://techcrunch.com/2026/05/23/ferrari-is-using-ai-to-create-f1-superfans/" target="_blank">Original</a>
+            <span class="tag">TechCrunch</span>
+            <span class="tag tag-foreign">EN</span>
+        </div>
+    </div>
+    <div class="news-item">
+        <div class="news-date">05-23 14:50</div>
+        <h3>30. Nuclear 创业公司 Deep Fission 称 it’s going public again and I have questions</h3>
+        <p class="snippet">Deep Fission is seeking an IPO that could raise $157 million, though investors may have trouble buying the nuclear startup's story.</p>
+        <div class="news-meta">
+            <a href="https://techcrunch.com/2026/05/23/nuclear-startup-deep-fission-says-its-going-public-again-and-i-have-questions/" target="_blank">Original</a>
+            <span class="tag">TechCrunch</span>
+            <span class="tag tag-foreign">EN</span>
+        </div>
+    </div>
+    <div class="news-item">
+        <div class="news-date">05-26 09:30</div>
+        <h3>31. 对话云鲸CEO张峻彬：理解人性，告别天真</h3>
+        <p class="snippet">作者 | 黄楠
+  编辑 | 袁斯来
+  36岁时，云鲸CEO张峻彬意识到，自己不能再只做一个温和的人。
+  他做过一些得罪人的决定，但更多时候，张峻彬不善于说重话，以至于有人私下说他有些优柔寡断。“公司内部都说，要是彬哥对你的评价是‘还行’，说明你这东西已经很烂了。”他自己开玩笑。
+  过去几年</p>
+        <div class="news-meta">
+            <a href="https://36kr.com/p/3824244844859525?f=rss" target="_blank">Original</a>
+            <span class="tag">36kr</span>
+            <span class="tag tag-china">CN</span>
+        </div>
+    </div>
+    <div class="news-item">
+        <div class="news-date">05-26 09:00</div>
+        <h3>32. 两部 AI 剧集闯入戛纳，水母智能要做 AI 内容工业化的破局者｜项目报道</h3>
+        <p class="snippet">5月8日，第79届戛纳国际电影节內 Fantastic Pavilion 单元公布竖屏剧展演名单。
+  由水母智能旗下中国AI影视公司水母映画出品的竖屏剧集《摸金之天机入梦》（英文名：The Golden Tomb Seeker）以及水母星际出品的《饿塔》（英文名：Series Tower）从全球120个国家、超过1000件竖屏作品中脱颖而出，成为正式展映的21部作品之一。</</p>
+        <div class="news-meta">
+            <a href="https://36kr.com/p/3823033729061253?f=rss" target="_blank">Original</a>
+            <span class="tag">36kr</span>
+            <span class="tag tag-china">CN</span>
+        </div>
+    </div>
+    <div class="news-item">
+        <div class="news-date">05-26 07:58</div>
+        <h3>33. 8点1氪丨胖东来投资65亿的“梦之城”开工；“稚晖君”彭志辉正式出任上纬新材董事长；“死了么”App改名“在么在么”</h3>
+        <p class="snippet">今日热点导览
+  美媒：美伊已就全面开放霍尔木兹海峡达成一致
+  拉勾网及创始人被限消
+  宇树科技6月1日科创板IPO上会，一季度扣非净利润同比下降52.55%
+  1瓶水蜜桃只有0.01克水蜜桃汁，康师傅被指蹭奉化水蜜桃玩文字游戏
+  寒武纪盘中涨超11%，总市值超9000亿创历史新高
+  TOP3</p>
+        <div class="news-meta">
+            <a href="https://36kr.com/p/3825357879497346?f=rss" target="_blank">Original</a>
+            <span class="tag">36kr</span>
+            <span class="tag tag-china">CN</span>
+        </div>
+    </div>
+    <div class="news-item">
+        <div class="news-date">05-25 19:32</div>
+        <h3>34. 消除“罪证”：给写作去除“AI味”的不完全手册（2026版）</h3>
+        <p class="snippet"><img src="https://img.36krcdn.com/hsossms/20260525/v2_7e9d1114399e47c4b2142b6de84e04ba@5509299_oswg1010944oswg1080oswg1068_img_000?x-oss-process=image/format,jpg/interlace,1"</p>
+        <div class="news-meta">
+            <a href="https://36kr.com/p/3824601267196037?f=rss" target="_blank">Original</a>
+            <span class="tag">36kr</span>
+            <span class="tag tag-china">CN</span>
+        </div>
+    </div>
+    <div class="news-item">
+        <div class="news-date">05-25 16:54</div>
+        <h3>35. 用AI重构增长：新通教育集团的实践| 2026AI Partner·北京亦庄AI+产业大会</h3>
+        <p class="snippet">新通教育创始人麻亚炜坦诚分享了过去五年的转型历程——从数字化基建到全员AI Must，从AI in All到AI Native新业务。她的实践证明：传统企业拥抱AI，最难的不是技术，而是让战略从董事会走到一线。
+  
+  麻亚炜将AI转型划分为四个递进阶段：
+  第一阶段（2021-2022）：数字化基建</p>
+        <div class="news-meta">
+            <a href="https://36kr.com/p/3824164325412992?f=rss" target="_blank">Original</a>
+            <span class="tag">36kr</span>
+            <span class="tag tag-china">CN</span>
+        </div>
+    </div>
+    <div class="news-item">
+        <div class="news-date">05-25 14:26</div>
+        <h3>36. 搞定工业质检：AI视觉如何重构高端制造质量防线| 2026AI Partner·北京亦庄AI+产业大会</h3>
+        <p class="snippet">半导体光罩上的纳米级缺陷、玻璃基板上几微米的钻孔。广州因特智能展示了AI视觉如何从实验室走进高端制造产线，用软硬结合的方式解决中国在半导体检测装备领域的卡脖子问题。
+  
+  广州因特智能科技有限公司孵化于西安电子科技大学广州研究院，是校企合作落地的典型科技企业。我们拒绝“纸上算法”，坚</p>
+        <div class="news-meta">
+            <a href="https://36kr.com/p/3824158896312709?f=rss" target="_blank">Original</a>
+            <span class="tag">36kr</span>
+            <span class="tag tag-china">CN</span>
+        </div>
+    </div>
+    <div class="news-item">
+        <div class="news-date">05-25 14:08</div>
+        <h3>37. 圆桌对话：从“千人千面”到“人心洞察”| 2026AI Partner·北京亦庄AI+产业大会</h3>
+        <p class="snippet">AIGC如何从生产工具进阶到情感洞察？当AI能写出剧本、生成音乐、表演微表情，人还剩什么？
+  内容产业正在发生生产模式跃迁，传统用户画像在AI时代正在被颠覆，真正要做的是理解用户的情感状态而非静态标签。厂牌效应不会消失，越过技术线之后，人最后坚守的是“手搓”的审美与意义。
+  以下为圆桌对话内容，经36氪整理编辑：
+  <p class="image-w</p>
+        <div class="news-meta">
+            <a href="https://36kr.com/p/3824154127093892?f=rss" target="_blank">Original</a>
+            <span class="tag">36kr</span>
+            <span class="tag tag-china">CN</span>
+        </div>
+    </div>
+    <div class="news-item">
+        <div class="news-date">05-25 11:52</div>
+        <h3>38. 对话欧洲地图商TomTom：中国订单暴涨10倍，帮助中国辅助驾驶出海｜最前线</h3>
+        <p class="snippet">中国汽车出海，离不开“地图”
+  当下，中国车企全球化进程正全面提速，出海已经从企业的可选增量，变为行业确定性增长主线。比亚迪、奇瑞等企业海外销量规模持续走高，小鹏、蔚来、理想、小米等新势力车企也纷纷发力海外高端市场。
+  区别于过往靠性价比、电动化优势打开市场的模式，现阶段中国车企出海的核心壁垒转变为智能化。在海外市场竞争中，智能座舱与高阶辅助驾驶，已经成为</p>
+        <div class="news-meta">
+            <a href="https://36kr.com/p/3820241871409543?f=rss" target="_blank">Original</a>
+            <span class="tag">36kr</span>
+            <span class="tag tag-china">CN</span>
+        </div>
+    </div>
+    <div class="news-item">
+        <div class="news-date">05-25 20:28</div>
+        <h3>39. 北纬诺贝巅峰对话｜乔·韦曼走进中关村两院，深度解读AI时代企业增长新逻辑</h3>
+        <p class="snippet">雷峰网讯 AI<span style="font-family: 'Times New Roman'; font-siz</p>
+        <div class="news-meta">
+            <a href="https://www.leiphone.com/category/industrynews/FmZzakD3JfKEtvNT.html" target="_blank">Original</a>
+            <span class="tag">雷锋网</span>
+            <span class="tag tag-china">CN</span>
+        </div>
+    </div>
+    <div class="news-item">
+        <div class="news-date">05-25 18:41</div>
+        <h3>40. 一台手掌大小、300克的AI主机，为什么能跑122B模型？</h3>
+        <p class="snippet"><p style="text-align: left; margin-top: 6pt;</p>
+        <div class="news-meta">
+            <a href="https://www.leiphone.com/category/industrynews/OKDJKKDkUhQYDaee.html" target="_blank">Original</a>
+            <span class="tag">雷锋网</span>
+            <span class="tag tag-china">CN</span>
+        </div>
+    </div>
+    <div class="news-item">
+        <div class="news-date">05-25 15:54</div>
+        <h3>41. 把18A塞进主流轻薄本，英特尔「WildCat Lake」想让人人用上AI PC</h3>
+        <p class="snippet">AI浪潮正在加速席卷和重塑PC产业格局。</p>
+        <div class="news-meta">
+            <a href="https://www.leiphone.com/category/chips/gAjsNSvozgcw55bE.html" target="_blank">Original</a>
+            <span class="tag">雷锋网</span>
+            <span class="tag tag-china">CN</span>
+        </div>
+    </div>
+    <div class="news-item">
+        <div class="news-date">05-25 15:49</div>
+        <h3>42. 港中文李鸿升团队论文 MindVLA-U1：VLA 不再输给 VA，语言真正进入自动驾驶决策</h3>
+        <p class="snippet"><img class="rich_pages wxw-img" src="https://static.leiphone.com/uploads/new/images/20260525/6a13fe83cb287.j</p>
+        <div class="news-meta">
+            <a href="https://www.leiphone.com/category/ai/aBSRTXyAOqvn84ow.html" target="_blank">Original</a>
+            <span class="tag">雷锋网</span>
+            <span class="tag tag-china">CN</span>
+        </div>
+    </div>
+    <div class="news-item">
+        <div class="news-date">05-25 15:49</div>
+        <h3>43. 速卖通Brand+开放韩国站：2026市场投入激增至3倍</h3>
+        <p class="snippet">“出海四小龙”之一的阿里速卖通AliExpress正将韩国市场列为2026年战略重心。速卖通 “2026跨境必争市场”最新策略显示，速卖通Brand+品牌出海计划已正式开放韩国站点，今年在韩国市场投入将激增至去年的三倍，半数订单已实现三日达，进一步巩固其在韩国跨境电商领域的领先地位。 <img src="http</p>
+        <div class="news-meta">
+            <a href="https://www.leiphone.com/category/industrynews/FQWf29NIfP6CIfkq.html" target="_blank">Original</a>
+            <span class="tag">雷锋网</span>
+            <span class="tag tag-china">CN</span>
+        </div>
+    </div>
+    <div class="news-item">
+        <div class="news-date">05-25 13:27</div>
+        <h3>44. 华为发布AIDC数据基础设施全栈方案，覆盖数据湖至智能体框架五大层级</h3>
+        <p class="snippet">当地时间5月21日，以“数据觉醒，存力跃迁”为主题的2026华为创新数据基础设施论坛在巴黎举行。会上，华为正式发布华为AIDC 数据基础设施全栈方案，覆盖数据湖、知识与记忆平台、模型工程与资源调度、智能体框架、数据韧性平台五大核心层级，旨在助力企业加速推进 AI 数据中心建设、实现 AI 规模化落地。华为数据存储产品线总裁袁远将此次方案发布置于</p>
+        <div class="news-meta">
+            <a href="https://www.leiphone.com/category/CorporateServices/hZtu4I7d1wnDwKWt.html" target="_blank">Original</a>
+            <span class="tag">雷锋网</span>
+            <span class="tag tag-china">CN</span>
+        </div>
+    </div>
+    <div class="news-item">
+        <div class="news-date">05-25 11:18</div>
+        <h3>45. 独家丨AWS大中华区战略客户团队负责人、L8高管顾凡将加入支付巨头Visa</h3>
+        <p class="snippet"><p style="text-align: center; margin-bott</p>
+        <div class="news-meta">
+            <a href="https://www.leiphone.com/category/industrycloud/zstUDo2709EASFL6.html" target="_blank">Original</a>
+            <span class="tag">雷锋网</span>
+            <span class="tag tag-china">CN</span>
+        </div>
+    </div>
+    <div class="news-item">
+        <div class="news-date">05-25 10:44</div>
+        <h3>46. 独家解读丨Anthropic每赚100块，为何会被马斯克顺走50？</h3>
+        <p class="snippet"><p style="text-align: center; margin-bott</p>
+        <div class="news-meta">
+            <a href="https://www.leiphone.com/category/industrynews/y43AcoPMgWtTOuzg.html" target="_blank">Original</a>
+            <span class="tag">雷锋网</span>
+            <span class="tag tag-china">CN</span>
+        </div>
+    </div>
+    <div class="news-item">
+        <div class="news-date">05-25 08:30</div>
+        <h3>47. 小鹏副总裁：小鹏可能是唯一欢迎特斯拉FSD入华的车企；有员工喊出「学三星罢工」！曝台积电Q1净利大增58%反降薪；DeepSeek一月内宕机三次</h3>
+        <p class="snippet">要闻提示</</p>
+        <div class="news-meta">
+            <a href="https://www.leiphone.com/category/zaobao/rI3FI7Vjq0Fmv1XA.html" target="_blank">Original</a>
+            <span class="tag">雷锋网</span>
+            <span class="tag tag-china">CN</span>
+        </div>
+    </div>
+    <div class="news-item">
+        <div class="news-date">05-26 09:34</div>
+        <h3>48. 3万、半年、注销：2026年，第一批“一人公司”老板已经退场</h3>
+        <p class="snippet">“如果没有任何补贴、没有任何课程可卖、也没有投资人看上你，你的 AI 一人公司，还能靠什么活下来？”</p>
+        <div class="news-meta">
+            <a href="https://www.tmtpost.com/8002011.html" target="_blank">Original</a>
+            <span class="tag">钛媒体</span>
+            <span class="tag tag-china">CN</span>
+        </div>
+    </div>
+    <div class="news-item">
+        <div class="news-date">05-26 09:15</div>
+        <h3>49. Anthropic：版本号退潮，嵌入称王</h3>
+        <p class="snippet">Anthropic收入爆发，发力AI深度嵌入企业场景。</p>
+        <div class="news-meta">
+            <a href="https://www.tmtpost.com/8001748.html" target="_blank">Original</a>
+            <span class="tag">钛媒体</span>
+            <span class="tag tag-china">CN</span>
+        </div>
+    </div>
+    <div class="footer">
+        Generated by AI News Assistant
+    </div>
+</body>
+</html>

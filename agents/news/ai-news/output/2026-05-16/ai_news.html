@@ -1,0 +1,933 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI News - 2026-05-16</title>
+    <style>
+        body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; max-width: 800px; margin: 0 auto; padding: 20px; background: #f5f5f5; }
+        .header { background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); color: white; padding: 30px; border-radius: 10px; margin-bottom: 20px; }
+        .header h1 { margin: 0; font-size: 28px; }
+        .header p { margin: 10px 0 0 0; opacity: 0.9; }
+        .top10-section { background: white; padding: 25px; margin-bottom: 25px; border-radius: 12px; box-shadow: 0 2px 8px rgba(0,0,0,0.1); }
+        .top10-section h2 { margin: 0 0 15px 0; color: #1a1a1a; font-size: 20px; padding-bottom: 10px; border-bottom: 2px solid #ff6b6b; }
+        .top10-china { border-left: 4px solid #ff6b6b; }
+        .top10-china h2 { border-bottom-color: #ff6b6b; }
+        .top10-china .top10-item { background: #fff5f5; border-left-color: #ff6b6b; }
+        .top10-china .top10-num { background: #ff6b6b; }
+        .top10-global { border-left: 4px solid #1976d2; }
+        .top10-global h2 { border-bottom-color: #1976d2; }
+        .top10-global .top10-item { background: #f0f7ff; border-left-color: #1976d2; }
+        .top10-global .top10-num { background: #1976d2; }
+        .top10-list { display: flex; flex-direction: column; gap: 10px; }
+        .top10-item { display: flex; gap: 12px; padding: 12px; border-radius: 8px; }
+        .top10-num { color: white; width: 24px; height: 24px; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 12px; font-weight: bold; flex-shrink: 0; }
+        .top10-content { flex: 1; }
+        .top10-title { font-size: 14px; font-weight: 600; color: #333; line-height: 1.4; }
+        .top10-title a { color: #333; text-decoration: none; }
+        .top10-title a:hover { color: #667eea; }
+        .top10-desc { font-size: 13px; color: #666; line-height: 1.4; margin-top: 4px; }
+        .summary-section { background: white; padding: 25px; margin-bottom: 25px; border-radius: 12px; box-shadow: 0 2px 8px rgba(0,0,0,0.1); }
+        .summary-section h2 { margin: 0 0 20px 0; color: #1a1a1a; font-size: 20px; padding-bottom: 15px; border-bottom: 2px solid #667eea; }
+        .category-tags { display: flex; flex-wrap: wrap; gap: 10px; margin-bottom: 20px; }
+        .cat-tag { background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); color: white; padding: 8px 16px; border-radius: 20px; font-size: 14px; }
+        .highlight-list { display: flex; flex-direction: column; gap: 12px; }
+        .highlight-item { display: flex; align-items: flex-start; gap: 12px; padding: 15px; background: #f8f9fa; border-radius: 10px; border-left: 4px solid #667eea; }
+        .highlight-num { background: #667eea; color: white; width: 28px; height: 28px; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 14px; font-weight: bold; flex-shrink: 0; }
+        .highlight-content { flex: 1; }
+        .highlight-title { font-size: 16px; font-weight: 600; color: #333; line-height: 1.5; margin-bottom: 5px; }
+        .highlight-title a { color: #333; text-decoration: none; }
+        .highlight-title a:hover { color: #667eea; }
+        .highlight-snippet { font-size: 13px; color: #666; line-height: 1.5; margin: 5px 0; }
+        .highlight-meta { font-size: 13px; color: #888; }
+        .chinese-summary { margin-top: 20px; }
+        .chinese-summary h3 { color: #333; font-size: 18px; margin-bottom: 15px; }
+        .news-item { background: white; padding: 20px; margin-bottom: 15px; border-radius: 8px; box-shadow: 0 2px 4px rgba(0,0,0,0.1); }
+        .news-date { color: #999; font-size: 12px; margin-bottom: 5px; }
+        .news-item h3 { margin: 0 0 10px 0; color: #333; }
+        .news-item a { color: #667eea; text-decoration: none; }
+        .snippet { color: #666; font-size: 14px; line-height: 1.6; }
+        .tag { display: inline-block; background: #e8f4f8; color: #2a7bb0; padding: 2px 8px; border-radius: 4px; font-size: 12px; margin-right: 8px; }
+        .tag-china { background: #ffeaea; color: #d32f2f; }
+        .tag-foreign { background: #e3f2fd; color: #1976d2; }
+        .news-meta { margin-top: 10px; display: flex; align-items: center; flex-wrap: wrap; gap: 5px; }
+        .section-title { font-size: 16px; font-weight: bold; color: #333; margin: 20px 0 15px 0; padding-bottom: 10px; border-bottom: 2px solid #667eea; }
+        .footer { text-align: center; color: #999; margin-top: 30px; font-size: 12px; }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h1>AI News Daily</h1>
+        <p>2026-05-16 | 54 articles</p>
+    </div>
+
+    
+    <div class="top10-section top10-china">
+        <h2>🇨🇳 中国科技新闻 Top 10</h2>
+        <div class="top10-list">
+            <div class="top10-item">
+                <span class="top10-num">1</span>
+                <div class="top10-content">
+                    <div class="top10-title"><a href="https://36kr.com/p/3810520138243593?f=rss" target="_blank">36 氪首发｜前苹果工程师跨界骨传导耳机 ，独创技术路线 ，打破头部企业专利垄断</a></div>
+                    <div class="top10-desc">作者 | 张子怡
+  编辑 | 袁斯来
+  于近日完成数千万元人民币的A苏州索迩电子技术有限公司骨传导运动耳机品牌 +硬氪获悉的母公司 ，以下简称 Mojawa索迩电子 ， Mojawa轮融资 ， Mojawa本轮融资由正海资本领</div>
+                </div>
+            </div>
+            <div class="top10-item">
+                <span class="top10-num">2</span>
+                <div class="top10-content">
+                    <div class="top10-title"><a href="https://36kr.com/p/3811265856626440?f=rss" target="_blank">9 点1氪丨央视 6000万美元获得世界杯版权 ；英伟达总市值超过德国 GDP ； iPhone 17 Pro系列全线下调 1000元</a></div>
+                    <div class="top10-desc">今日热点导览
+  
+   OpenAI正考虑采取法律手段起诉苹果公司
+   三星电子开发下一代HBM封装技术 ，或用于智能手机等移动设备
+   海南：加快培育火箭链、卫星链、数据链 ，打造风电装备制造产业</div>
+                </div>
+            </div>
+            <div class="top10-item">
+                <span class="top10-num">3</span>
+                <div class="top10-content">
+                    <div class="top10-title"><a href="https://36kr.com/p/3810562142445058?f=rss" target="_blank">理想出牌编号：全新 L9上市 ， 45.98万元起 ｜最前线</a></div>
+                    <div class="top10-desc">< img src = "https://img.36krcdn.com/hsossms/20260515/v2_90d236a32d4a4f71bd00c6834b43d348 @ 6310690_oswg1</div>
+                </div>
+            </div>
+            <div class="top10-item">
+                <span class="top10-num">4</span>
+                <div class="top10-content">
+                    <div class="top10-title"><a href="https://36kr.com/p/3810607581634056?f=rss" target="_blank">2026年Shokz日圆满收官：韶音以「随我动听」开启全场景声态新时代</a></div>
+                    <div class="top10-desc">2026年年5月月15全球开放式耳机领导品牌日日，韶音在深圳湾文化广场举办 Shokz「随我动听」 2026年。活动期间Shokz Day韶音围绕 ， OpenDots、 2 OpenSwim Pro 2与 OpenDo</div>
+                </div>
+            </div>
+            <div class="top10-item">
+                <span class="top10-num">5</span>
+                <div class="top10-content">
+                    <div class="top10-title"><a href="https://36kr.com/p/3810308239465986?f=rss" target="_blank">36 氪联合PureblueAI清蓝发布「 2026消费品牌 AI推荐力名册」丨 AI时代 ，品牌如何抢占「推荐力」新战场 ？</a></div>
+                    <div class="top10-desc"><</div>
+                </div>
+            </div>
+            <div class="top10-item">
+                <span class="top10-num">6</span>
+                <div class="top10-content">
+                    <div class="top10-title"><a href="https://36kr.com/p/3810091479293449?f=rss" target="_blank">长安计划入股千里科技千里智驾与奥迪推进合作｜ 36氪独家</a></div>
+                    <div class="top10-desc">36 氪从多位产业人士处了解到，中文，英千里科技正积极与长安、奥迪、奇瑞等车企文洽谈智能化合作。
+  其中，长安不仅有意向搭载千里科技辅助驾驶方案 ，还计划入股千里科技 ，双方原定于今年年初完成股权变更。但目前，据</div>
+                </div>
+            </div>
+            <div class="top10-item">
+                <span class="top10-num">7</span>
+                <div class="top10-content">
+                    <div class="top10-title"><a href="https://www.leiphone.com/category/ai/y7bk8TpnoiBUFqSP.html" target="_blank">CVPR 2026 四篇论文透视：大厂如何靠「算法瘦身」对抗算力涨价 ？</a></div>
+                    <div class="top10-desc">< img class = "rich_pages wxw-img" src = "https://static.leiphone.com/uploads/new/images/20260515/6a06ea6</div>
+                </div>
+            </div>
+            <div class="top10-item">
+                <span class="top10-num">8</span>
+                <div class="top10-content">
+                    <div class="top10-title"><a href="https://www.leiphone.com/category/chips/KwA81QLVp7mR8lj7.html" target="_blank">OpenClaw 预示未来智能体角色范式转变： AI需要具备执行能力</a></div>
+                    <div class="top10-desc">要点• 随着 Claude Cowork、爱马仕、Perplexity电脑</div>
+                </div>
+            </div>
+            <div class="top10-item">
+                <span class="top10-num">9</span>
+                <div class="top10-content">
+                    <div class="top10-title"><a href="https://www.leiphone.com/category/weiwu/JNy9AY58YfCIS2L0.html" target="_blank">桌面CNC元年 ：资本疯抢「小拓竹」 ，五轴是风口还是伪命题 ？</a></div>
+                    <div class="top10-desc">< p style = "text-align: center; margin-bott</div>
+                </div>
+            </div>
+            <div class="top10-item">
+                <span class="top10-num">10</span>
+                <div class="top10-content">
+                    <div class="top10-title"><a href="https://www.leiphone.com/category/industrynews/VTZD7tfMJuwiBTXE.html" target="_blank">首次披露！载合卡车完成 10亿元级战略融资 ，开创车云一体 AI重卡全新赛道</a></div>
+                    <div class="top10-desc">近日，载合卡车宣布累计完成 10亿元级融资。作为 AI重卡赛道的新锐领军者 ，载合卡车汇集了 < span styl</div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="top10-section top10-global">
+        <h2>🌍 全球科技新闻 Top 10</h2>
+        <div class="top10-list">
+            <div class="top10-item">
+                <span class="top10-num">1</span>
+                <div class="top10-content">
+                    <div class="top10-title"><a href="https://www.nytimes.com/2026/05/14/technology/openai-trial-elon-musk-sam-altman.html" target="_blank">OpenAI审判在马斯克诉奥特曼案中结束辩论后前往陪审团</a></div>
+                    <div class="top10-desc">伊隆·马斯克（ Elon Musk ）和OpenAI的律师在轰动一时的联邦审判中就</div>
+                </div>
+            </div>
+            <div class="top10-item">
+                <span class="top10-num">2</span>
+                <div class="top10-content">
+                    <div class="top10-title"><a href="https://www.nytimes.com/2026/05/14/technology/ishmael-reed-elon-musk-play.html" target="_blank">伊斯梅尔·里德（ Ishmael Reed ）正在写一部关于伊隆·马斯克（ Elon Mus</a></div>
+                    <div class="top10-desc">Ishmael Reed ，挑衅者和剧作家，对硅谷的亿万富翁说了几句话。</div>
+                </div>
+            </div>
+            <div class="top10-item">
+                <span class="top10-num">3</span>
+                <div class="top10-content">
+                    <div class="top10-title"><a href="https://www.nytimes.com/2026/05/14/technology/cerebras-ipo-ai.html" target="_blank">人工智能芯片制造商Cerebras在市场首次亮相时上涨89% ，科技股IPO加速</a></div>
+                    <div class="top10-desc">硅谷人工智能芯片制造商Cerebras开始在股票市场交易</div>
+                </div>
+            </div>
+            <div class="top10-item">
+                <span class="top10-num">4</span>
+                <div class="top10-content">
+                    <div class="top10-title"><a href="https://www.nytimes.com/2026/05/14/technology/artificial-intelligence-safety-controls.html" target="_blank">为什么人工智能安全控制不是很有效</a></div>
+                    <div class="top10-desc">在ChatGPT首次亮相三年后，将人工智能系统愚弄为不良行为几乎是微不足道的。</div>
+                </div>
+            </div>
+            <div class="top10-item">
+                <span class="top10-num">5</span>
+                <div class="top10-content">
+                    <div class="top10-title"><a href="https://www.nytimes.com/2026/05/15/technology/openai-weightsgg-voice-cloning.html" target="_blank">OpenAI收购了提供用于克隆语音的人工智能工具的公司</a></div>
+                    <div class="top10-desc">收购Weights.gg是一种用于创建和分享人工智能的社交网络</div>
+                </div>
+            </div>
+            <div class="top10-item">
+                <span class="top10-num">6</span>
+                <div class="top10-content">
+                    <div class="top10-title"><a href="https://www.nytimes.com/2026/05/15/business/nvidia-china-chips.html" target="_blank">特朗普-习近平峰会后英伟达在中国的未来仍不明朗</a></div>
+                    <div class="top10-desc">僵局发生之际，中国企业越来越多地转向华为等国内芯片制造商，</div>
+                </div>
+            </div>
+            <div class="top10-item">
+                <span class="top10-num">7</span>
+                <div class="top10-content">
+                    <div class="top10-title"><a href="https://www.nytimes.com/2026/05/14/technology/openai-apple-legal-action.html" target="_blank">OpenAI考虑对关系紧张的苹果采取法律行动</a></div>
+                    <div class="top10-desc">这家正在与埃隆·马斯克（ Elon Musk ）进行法庭斗争的人工智能公司一直对</div>
+                </div>
+            </div>
+            <div class="top10-item">
+                <span class="top10-num">8</span>
+                <div class="top10-content">
+                    <div class="top10-title"><a href="https://www.nytimes.com/live/2026/05/14/technology/openai-trial-sam-altman-elon-musk/microsofts-ceo-testified-about-the-companys-openai-investments" target="_blank">微软的首席执行官就该公司的OpenAI投资作证。</a></div>
+                    <div class="top10-desc"></div>
+                </div>
+            </div>
+            <div class="top10-item">
+                <span class="top10-num">9</span>
+                <div class="top10-content">
+                    <div class="top10-title"><a href="https://www.bbc.com/news/articles/clyp9652v18o?at_medium=RSS&at_campaign=rss" target="_blank">X承诺对英国的仇恨和恐怖内容采取更快的行动</a></div>
+                    <div class="top10-desc">Ofcom表示，在最近针对犹太社区的犯罪之后，这些承诺尤为重要</div>
+                </div>
+            </div>
+            <div class="top10-item">
+                <span class="top10-num">10</span>
+                <div class="top10-content">
+                    <div class="top10-title"><a href="https://www.bbc.com/news/articles/cg7pj8p5mv4o?at_medium=RSS&at_campaign=rss" target="_blank">索赔、反索赔和科技的肮脏一面暴露：我们在马斯克-奥特曼审判中学到的五件事</a></div>
+                    <div class="top10-desc">正如陪审团所审议的那样，这是我们在与两位科技巨头长达数周的审判中发现的</div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    
+    <div class="summary-section">
+        <h2>AI Daily Highlights</h2>
+        <div class="category-tags"><span class="cat-tag">AI AI Product (27)</span><span class="cat-tag">News Other (23)</span><span class="cat-tag">LLM LLM/Model (3)</span><span class="cat-tag">HW AI Chip (1)</span></div>
+
+        <div class="chinese-summary">
+            <h3>Top 10 AI News</h3>
+            
+            <div class="highlight-item">
+                <span class="highlight-num">1</span>
+                <div class="highlight-content">
+                    <div class="highlight-title">
+                        <a href="https://www.nytimes.com/2026/05/14/technology/openai-trial-elon-musk-sam-altman.html" target="_blank" style="color: #333; text-decoration: none;">OpenAI审判在马斯克诉奥特曼案中结束辩论后前往陪审团</a>
+                    </div>
+                    <p class="highlight-snippet" style="color: #555; font-size: 13px; margin: 5px 0; line-height: 1.4;">周四，埃隆·马斯克（ Elon Musk ）和OpenAI的律师在轰动一时的联邦审判中进行了最后辩论。九名陪审员将于下周开始审议。</p>
+                    <div class="highlight-meta">
+                        <span class="highlight-date">05-15 01:47</span> |
+                        <span class="highlight-source">NYTimes</span> |
+                        <span style="color: #1976d2;">🌍 全球</span>
+                    </div>
+                </div>
+            </div>
+            <div class="highlight-item">
+                <span class="highlight-num">2</span>
+                <div class="highlight-content">
+                    <div class="highlight-title">
+                        <a href="https://www.nytimes.com/2026/05/14/technology/ishmael-reed-elon-musk-play.html" target="_blank" style="color: #333; text-decoration: none;">伊斯梅尔·里德（ Ishmael Reed ）正在写一部关于伊隆·马斯克（ Elon Mus</a>
+                    </div>
+                    <p class="highlight-snippet" style="color: #555; font-size: 13px; margin: 5px 0; line-height: 1.4;">Ishmael Reed ，挑衅者和剧作家，对硅谷的亿万富翁说了几句话。</p>
+                    <div class="highlight-meta">
+                        <span class="highlight-date">05-14 09:02</span> |
+                        <span class="highlight-source">NYTimes</span> |
+                        <span style="color: #1976d2;">🌍 全球</span>
+                    </div>
+                </div>
+            </div>
+            <div class="highlight-item">
+                <span class="highlight-num">3</span>
+                <div class="highlight-content">
+                    <div class="highlight-title">
+                        <a href="https://www.nytimes.com/2026/05/14/technology/cerebras-ipo-ai.html" target="_blank" style="color: #333; text-decoration: none;">人工智能芯片制造商Cerebras在市场首次亮相时上涨89% ，科技股IPO加速</a>
+                    </div>
+                    <p class="highlight-snippet" style="color: #555; font-size: 13px; margin: 5px 0; line-height: 1.4;">硅谷人工智能芯片制造商Cerebras周四开始在股市上市， SpaceX、OpenAI和Anthropic也在采取措施上市。</p>
+                    <div class="highlight-meta">
+                        <span class="highlight-date">05-14 20:23</span> |
+                        <span class="highlight-source">NYTimes</span> |
+                        <span style="color: #1976d2;">🌍 全球</span>
+                    </div>
+                </div>
+            </div>
+            <div class="highlight-item">
+                <span class="highlight-num">4</span>
+                <div class="highlight-content">
+                    <div class="highlight-title">
+                        <a href="https://www.nytimes.com/2026/05/14/technology/artificial-intelligence-safety-controls.html" target="_blank" style="color: #333; text-decoration: none;">为什么人工智能安全控制不是很有效</a>
+                    </div>
+                    <p class="highlight-snippet" style="color: #555; font-size: 13px; margin: 5px 0; line-height: 1.4;">在ChatGPT首次亮相三年后，将人工智能系统愚弄为不良行为几乎是微不足道的。</p>
+                    <div class="highlight-meta">
+                        <span class="highlight-date">05-14 17:28</span> |
+                        <span class="highlight-source">NYTimes</span> |
+                        <span style="color: #1976d2;">🌍 全球</span>
+                    </div>
+                </div>
+            </div>
+            <div class="highlight-item">
+                <span class="highlight-num">5</span>
+                <div class="highlight-content">
+                    <div class="highlight-title">
+                        <a href="https://www.nytimes.com/2026/05/15/technology/openai-weightsgg-voice-cloning.html" target="_blank" style="color: #333; text-decoration: none;">OpenAI收购了提供用于克隆语音的人工智能工具的公司</a>
+                    </div>
+                    <p class="highlight-snippet" style="color: #555; font-size: 13px; margin: 5px 0; line-height: 1.4;">收购Weights.gg是一种用于创建和共享人工智能算法的社交网络。</p>
+                    <div class="highlight-meta">
+                        <span class="highlight-date">05-16 00:33</span> |
+                        <span class="highlight-source">NYTimes</span> |
+                        <span style="color: #1976d2;">🌍 全球</span>
+                    </div>
+                </div>
+            </div>
+            <div class="highlight-item">
+                <span class="highlight-num">6</span>
+                <div class="highlight-content">
+                    <div class="highlight-title">
+                        <a href="https://www.nytimes.com/2026/05/15/business/nvidia-china-chips.html" target="_blank" style="color: #333; text-decoration: none;">特朗普-习近平峰会后英伟达在中国的未来仍不明朗</a>
+                    </div>
+                    <p class="highlight-snippet" style="color: #555; font-size: 13px; margin: 5px 0; line-height: 1.4;">此次僵局发生之际，中国企业越来越多地转向华为等国内芯片制造商，以减少中国对西方技术的依赖。</p>
+                    <div class="highlight-meta">
+                        <span class="highlight-date">05-15 12:12</span> |
+                        <span class="highlight-source">NYTimes</span> |
+                        <span style="color: #1976d2;">🌍 全球</span>
+                    </div>
+                </div>
+            </div>
+            <div class="highlight-item">
+                <span class="highlight-num">7</span>
+                <div class="highlight-content">
+                    <div class="highlight-title">
+                        <a href="https://www.nytimes.com/2026/05/14/technology/openai-apple-legal-action.html" target="_blank" style="color: #333; text-decoration: none;">OpenAI考虑对关系紧张的苹果采取法律行动</a>
+                    </div>
+                    <p class="highlight-snippet" style="color: #555; font-size: 13px; margin: 5px 0; line-height: 1.4;">这家正在与埃隆·马斯克（ Elon Musk ）进行法庭斗争的人工智能公司对苹果如何将ChatGPT集成到其设备中感到不满。</p>
+                    <div class="highlight-meta">
+                        <span class="highlight-date">05-15 00:48</span> |
+                        <span class="highlight-source">NYTimes</span> |
+                        <span style="color: #1976d2;">🌍 全球</span>
+                    </div>
+                </div>
+            </div>
+            <div class="highlight-item">
+                <span class="highlight-num">8</span>
+                <div class="highlight-content">
+                    <div class="highlight-title">
+                        <a href="https://www.nytimes.com/live/2026/05/14/technology/openai-trial-sam-altman-elon-musk/microsofts-ceo-testified-about-the-companys-openai-investments" target="_blank" style="color: #333; text-decoration: none;">微软的首席执行官就该公司的OpenAI投资作证。</a>
+                    </div>
+                    <p class="highlight-snippet" style="color: #555; font-size: 13px; margin: 5px 0; line-height: 1.4;"></p>
+                    <div class="highlight-meta">
+                        <span class="highlight-date">05-14 19:42</span> |
+                        <span class="highlight-source">NYTimes</span> |
+                        <span style="color: #1976d2;">🌍 全球</span>
+                    </div>
+                </div>
+            </div>
+            <div class="highlight-item">
+                <span class="highlight-num">9</span>
+                <div class="highlight-content">
+                    <div class="highlight-title">
+                        <a href="https://www.bbc.com/news/articles/clyp9652v18o?at_medium=RSS&at_campaign=rss" target="_blank" style="color: #333; text-decoration: none;">X承诺对英国的仇恨和恐怖内容采取更快的行动</a>
+                    </div>
+                    <p class="highlight-snippet" style="color: #555; font-size: 13px; margin: 5px 0; line-height: 1.4;">Ofcom表示，在最近针对英国犹太社区的犯罪事件发生后，这些承诺尤为重要。</p>
+                    <div class="highlight-meta">
+                        <span class="highlight-date">05-15 12:57</span> |
+                        <span class="highlight-source">BBC</span> |
+                        <span style="color: #1976d2;">🌍 全球</span>
+                    </div>
+                </div>
+            </div>
+            <div class="highlight-item">
+                <span class="highlight-num">10</span>
+                <div class="highlight-content">
+                    <div class="highlight-title">
+                        <a href="https://www.bbc.com/news/articles/cg7pj8p5mv4o?at_medium=RSS&at_campaign=rss" target="_blank" style="color: #333; text-decoration: none;">索赔、反索赔和科技的肮脏一面暴露：我们在马斯克-奥特曼审判中学到的五件事</a>
+                    </div>
+                    <p class="highlight-snippet" style="color: #555; font-size: 13px; margin: 5px 0; line-height: 1.4;">正如陪审团所审议的那样，这是我们在长达数周的审判中发现的，其中心是两位科技巨头。</p>
+                    <div class="highlight-meta">
+                        <span class="highlight-date">05-15 05:03</span> |
+                        <span class="highlight-source">BBC</span> |
+                        <span style="color: #1976d2;">🌍 全球</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="section-title">[All News]</div>
+    
+    <div class="news-item">
+        <div class="news-date">05-15 01:47</div>
+        <h3>1. [OpenAI] Trial Heads to Jury After Closing Arguments in Musk vs Altman Case</h3>
+        <p class="snippet">Lawyers for Elon Musk and OpenAI made their closing arguments in the blockbuster federal trial on Thursday. Nine jurors are set to begin deliberations next week.</p>
+        <div class="news-meta">
+            <a href="https://www.nytimes.com/2026/05/14/technology/openai-trial-elon-musk-sam-altman.html" target="_blank">Original</a>
+            <span class="tag">NYTimes</span>
+            <span class="tag tag-foreign">EN</span>
+        </div>
+    </div>
+    <div class="news-item">
+        <div class="news-date">05-14 09:02</div>
+        <h3>2. Ishmael Reed Is Writing a Play About [马斯克]</h3>
+        <p class="snippet">Ishmael Reed, provocateur and playwright, has a few words for the billionaires of Silicon Valley.</p>
+        <div class="news-meta">
+            <a href="https://www.nytimes.com/2026/05/14/technology/ishmael-reed-elon-musk-play.html" target="_blank">Original</a>
+            <span class="tag">NYTimes</span>
+            <span class="tag tag-foreign">EN</span>
+        </div>
+    </div>
+    <div class="news-item">
+        <div class="news-date">05-14 20:23</div>
+        <h3>3. Cerebras AI Chip Maker Rises 89% in Market Debut as Tech IPOs Ramp Up</h3>
+        <p class="snippet">Cerebras, a Silicon Valley maker of artificial intelligence chips, began trading on the stock market on Thursday, as SpaceX, OpenAI and Anthropic also take steps to go public.</p>
+        <div class="news-meta">
+            <a href="https://www.nytimes.com/2026/05/14/technology/cerebras-ipo-ai.html" target="_blank">Original</a>
+            <span class="tag">NYTimes</span>
+            <span class="tag tag-foreign">EN</span>
+        </div>
+    </div>
+    <div class="news-item">
+        <div class="news-date">05-14 17:28</div>
+        <h3>4. Why AI Safety Controls Are Not Very Effective</h3>
+        <p class="snippet">Three years after the debut of ChatGPT, fooling A.I. systems into bad behavior is almost trivial.</p>
+        <div class="news-meta">
+            <a href="https://www.nytimes.com/2026/05/14/technology/artificial-intelligence-safety-controls.html" target="_blank">Original</a>
+            <span class="tag">NYTimes</span>
+            <span class="tag tag-foreign">EN</span>
+        </div>
+    </div>
+    <div class="news-item">
+        <div class="news-date">05-16 00:33</div>
+        <h3>5. [OpenAI] Bought Company That Offered AI Tools for Cloning Voices</h3>
+        <p class="snippet">The acquisition, Weights.gg, was a sort of social network for creating and sharing artificial intelligence algorithms.</p>
+        <div class="news-meta">
+            <a href="https://www.nytimes.com/2026/05/15/technology/openai-weightsgg-voice-cloning.html" target="_blank">Original</a>
+            <span class="tag">NYTimes</span>
+            <span class="tag tag-foreign">EN</span>
+        </div>
+    </div>
+    <div class="news-item">
+        <div class="news-date">05-15 12:12</div>
+        <h3>6. [英伟达]’s Future in 中国 Remains Unclear After Trump-Xi Summit</h3>
+        <p class="snippet">The standoff comes as Chinese firms increasingly turn to domestic chipmakers like Huawei, in a drive to reduce China’s dependence on Western technologies.</p>
+        <div class="news-meta">
+            <a href="https://www.nytimes.com/2026/05/15/business/nvidia-china-chips.html" target="_blank">Original</a>
+            <span class="tag">NYTimes</span>
+            <span class="tag tag-foreign">EN</span>
+        </div>
+    </div>
+    <div class="news-item">
+        <div class="news-date">05-15 00:48</div>
+        <h3>7. [OpenAI] Considers Legal Action Against [苹果] in Strained Relationship</h3>
+        <p class="snippet">The A.I. company, which is in the middle of a court fight with Elon Musk, has been unhappy with how Apple has integrated ChatGPT into its devices.</p>
+        <div class="news-meta">
+            <a href="https://www.nytimes.com/2026/05/14/technology/openai-apple-legal-action.html" target="_blank">Original</a>
+            <span class="tag">NYTimes</span>
+            <span class="tag tag-foreign">EN</span>
+        </div>
+    </div>
+    <div class="news-item">
+        <div class="news-date">05-14 19:42</div>
+        <h3>8. [微软]’s CEO testified about the company’s [OpenAI] 投资ments</h3>
+        <p class="snippet"></p>
+        <div class="news-meta">
+            <a href="https://www.nytimes.com/live/2026/05/14/technology/openai-trial-sam-altman-elon-musk/microsofts-ceo-testified-about-the-companys-openai-investments" target="_blank">Original</a>
+            <span class="tag">NYTimes</span>
+            <span class="tag tag-foreign">EN</span>
+        </div>
+    </div>
+    <div class="news-item">
+        <div class="news-date">05-15 12:57</div>
+        <h3>9. X pledges quicker action on hate and terror content in the UK</h3>
+        <p class="snippet">Ofcom said the commitments were of particular importance after recent crimes targeting Jewish communities in the UK.</p>
+        <div class="news-meta">
+            <a href="https://www.bbc.com/news/articles/clyp9652v18o?at_medium=RSS&at_campaign=rss" target="_blank">Original</a>
+            <span class="tag">BBC</span>
+            <span class="tag tag-foreign">EN</span>
+        </div>
+    </div>
+    <div class="news-item">
+        <div class="news-date">05-15 05:03</div>
+        <h3>10. Claim counter-claim and tech's seedy side exposed: Five things we learned in the Musk-Altman trial</h3>
+        <p class="snippet">As the jury deliberates, this is what we found out during the weeks-long trial with two tech titans at its heart.</p>
+        <div class="news-meta">
+            <a href="https://www.bbc.com/news/articles/cg7pj8p5mv4o?at_medium=RSS&at_campaign=rss" target="_blank">Original</a>
+            <span class="tag">BBC</span>
+            <span class="tag tag-foreign">EN</span>
+        </div>
+    </div>
+    <div class="news-item">
+        <div class="news-date">05-14 23:01</div>
+        <h3>11. AI could put people off tech jobs and hurt the economy warns Raspberry Pi boss</h3>
+        <p class="snippet">Eben Upton warns against claims that Artificial Intelligence will destroy vast numbers of computing roles over the coming years.</p>
+        <div class="news-meta">
+            <a href="https://www.bbc.com/news/articles/clypr8p2lewo?at_medium=RSS&at_campaign=rss" target="_blank">Original</a>
+            <span class="tag">BBC</span>
+            <span class="tag tag-foreign">EN</span>
+        </div>
+    </div>
+    <div class="news-item">
+        <div class="news-date">05-14 21:09</div>
+        <h3>12. 'Millions' of pounds saved by replacing Palantir tech in refugee 系统</h3>
+        <p class="snippet">The government said its in-house IT system was "more flexible" while meeting "high standards" of security.</p>
+        <div class="news-meta">
+            <a href="https://www.bbc.com/news/articles/c2l2j1lxdk5o?at_medium=RSS&at_campaign=rss" target="_blank">Original</a>
+            <span class="tag">BBC</span>
+            <span class="tag tag-foreign">EN</span>
+        </div>
+    </div>
+    <div class="news-item">
+        <div class="news-date">05-14 05:10</div>
+        <h3>13. HMRC to use AI from British tech firm to spot fraud and tax return errors</h3>
+        <p class="snippet">Quantexa, a financial data platform, won the £175m contract to spot fraud and tax return errors.</p>
+        <div class="news-meta">
+            <a href="https://www.bbc.com/news/articles/c7v9ld262n4o?at_medium=RSS&at_campaign=rss" target="_blank">Original</a>
+            <span class="tag">BBC</span>
+            <span class="tag tag-foreign">EN</span>
+        </div>
+    </div>
+    <div class="news-item">
+        <div class="news-date">05-13 14:00</div>
+        <h3>14. WhatsApp 发布es totally private 'incognito' conversations with its AI chatbot</h3>
+        <p class="snippet">A cyber security expert says deleting chat history could lead to a lack of accountability if things go wrong.</p>
+        <div class="news-meta">
+            <a href="https://www.bbc.com/news/articles/c99lmyr1dnxo?at_medium=RSS&at_campaign=rss" target="_blank">Original</a>
+            <span class="tag">BBC</span>
+            <span class="tag tag-foreign">EN</span>
+        </div>
+    </div>
+    <div class="news-item">
+        <div class="news-date">05-13 11:52</div>
+        <h3>15. Suicide forum fined £950,000 for not blocking UK users</h3>
+        <p class="snippet">The regulator said the forum had not done enough to protect UK users - but critics accuse Ofcom of acting too slowly.</p>
+        <div class="news-meta">
+            <a href="https://www.bbc.com/news/articles/cdxpyvvdyn7o?at_medium=RSS&at_campaign=rss" target="_blank">Original</a>
+            <span class="tag">BBC</span>
+            <span class="tag tag-foreign">EN</span>
+        </div>
+    </div>
+    <div class="news-item">
+        <div class="news-date">05-12 18:51</div>
+        <h3>16. [马斯克] said control of [OpenAI] should go to his children Sam Altman tells jury</h3>
+        <p class="snippet">Sam Altman said Elon Musk tried many times for total control of OpenAI, which he's now suing.</p>
+        <div class="news-meta">
+            <a href="https://www.bbc.com/news/articles/czj2k2exdzlo?at_medium=RSS&at_campaign=rss" target="_blank">Original</a>
+            <span class="tag">BBC</span>
+            <span class="tag tag-foreign">EN</span>
+        </div>
+    </div>
+    <div class="news-item">
+        <div class="news-date">05-12 19:45</div>
+        <h3>17. Tech Life</h3>
+        <p class="snippet">Crumbling roads and other hazards - can AI make our streets safer?</p>
+        <div class="news-meta">
+            <a href="https://www.bbc.co.uk/sounds/play/w3ct8jxv?at_medium=RSS&at_campaign=rss" target="_blank">Original</a>
+            <span class="tag">BBC</span>
+            <span class="tag tag-foreign">EN</span>
+        </div>
+    </div>
+    <div class="news-item">
+        <div class="news-date">05-15 19:51</div>
+        <h3>18. Tesla Reveals New Details About Robotaxi Crashes—and the Humans Involved</h3>
+        <p class="snippet">Remote operators (slowly) drove the automaker’s autonomous vehicles into a metal fence and a construction barricade, Tesla says.</p>
+        <div class="news-meta">
+            <a href="https://www.wired.com/story/tesla-reveals-new-details-about-robotaxi-crashes-and-the-humans-involved/" target="_blank">Original</a>
+            <span class="tag">Wired</span>
+            <span class="tag tag-foreign">EN</span>
+        </div>
+    </div>
+    <div class="news-item">
+        <div class="news-date">05-15 17:31</div>
+        <h3>19. Spencer Pratt Is Creating Panic Over ‘Super Meth’ It’s Not Even Real</h3>
+        <p class="snippet">The LA mayoral candidate and former reality TV star is fueling his campaign with fears about an ultra-potent meth. Experts say it’s drug war propaganda.</p>
+        <div class="news-meta">
+            <a href="https://www.wired.com/story/spencer-pratt-is-creating-panic-over-super-meth-the-drug-trope-that-wont-die/" target="_blank">Original</a>
+            <span class="tag">Wired</span>
+            <span class="tag tag-foreign">EN</span>
+        </div>
+    </div>
+    <div class="news-item">
+        <div class="news-date">05-15 17:09</div>
+        <h3>20. Greg Brockman Officially Takes Control of [OpenAI]’s Products in Latest Shake-Up</h3>
+        <p class="snippet">OpenAI is once again reorganizing its executive ranks as part of its effort to unify ChatGPT and Codex into one core product experience.</p>
+        <div class="news-meta">
+            <a href="https://www.wired.com/story/openai-reorg-greg-brockman-product/" target="_blank">Original</a>
+            <span class="tag">Wired</span>
+            <span class="tag tag-foreign">EN</span>
+        </div>
+    </div>
+    <div class="news-item">
+        <div class="news-date">05-15 10:30</div>
+        <h3>21. Trump’s Federal Gas Tax Holiday Isn't Likely to Bring Down Prices</h3>
+        <p class="snippet">Reducing the fee will have only a marginal impact on prices while depriving the government of revenue to maintain roads.</p>
+        <div class="news-meta">
+            <a href="https://www.wired.com/story/why-gas-tax-holiday-is-risky-idea/" target="_blank">Original</a>
+            <span class="tag">Wired</span>
+            <span class="tag tag-foreign">EN</span>
+        </div>
+    </div>
+    <div class="news-item">
+        <div class="news-date">05-15 09:30</div>
+        <h3>22. The US Is Using AI to Hunt Down Insider Trading on Polymarket</h3>
+        <p class="snippet">CFTC chairman Michael Selig sat down with WIRED to discuss how the agency scours Polymarket and other prediction markets for illegal activity.</p>
+        <div class="news-meta">
+            <a href="https://www.wired.com/story/polymarket-insider-trading-cftc-michael-selig-interview/" target="_blank">Original</a>
+            <span class="tag">Wired</span>
+            <span class="tag tag-foreign">EN</span>
+        </div>
+    </div>
+    <div class="news-item">
+        <div class="news-date">05-15 09:00</div>
+        <h3>23. Mira Murati Wants Her AI to ‘Keep Humans in the Loop’</h3>
+        <p class="snippet">The Thinking Machines Lab founder and former CTO of OpenAI tells WIRED she isn’t interested in automating people out of jobs. Instead, she’s building AI that can collaborate.</p>
+        <div class="news-meta">
+            <a href="https://www.wired.com/story/mira-murati-humans-in-the-loop-ai-models-thinking-machines/" target="_blank">Original</a>
+            <span class="tag">Wired</span>
+            <span class="tag tag-foreign">EN</span>
+        </div>
+    </div>
+    <div class="news-item">
+        <div class="news-date">05-15 20:30</div>
+        <h3>24. RJ Scaringe has raised more than $12B across three 创业公司s and 投资ors still want more</h3>
+        <p class="snippet">Investors can't seem to get enough of RJ Scaringe or his ideas. Storytelling and communication are one of his superpowers, according to Jiten Behl, who joined Rivian when the company had just a handfu</p>
+        <div class="news-meta">
+            <a href="https://techcrunch.com/2026/05/15/rj-scaringe-has-raised-more-than-12-billion-across-three-startups-and-investors-still-want-more/" target="_blank">Original</a>
+            <span class="tag">TechCrunch</span>
+            <span class="tag tag-foreign">EN</span>
+        </div>
+    </div>
+    <div class="news-item">
+        <div class="news-date">05-15 20:25</div>
+        <h3>25. General Catalyst posted VC rage bait and it worked especially on a16z</h3>
+        <p class="snippet">Compulsive X user Marc Andreessen himself couldn't resist responding, many, many times.</p>
+        <div class="news-meta">
+            <a href="https://techcrunch.com/2026/05/15/general-catalyst-posted-vc-rage-bait-and-it-worked-especially-on-a16z/" target="_blank">Original</a>
+            <span class="tag">TechCrunch</span>
+            <span class="tag tag-foreign">EN</span>
+        </div>
+    </div>
+    <div class="news-item">
+        <div class="news-date">05-15 18:51</div>
+        <h3>26. A hotel check-in 系统 left a 百万 passports and driver’s licenses open for anyone to see</h3>
+        <p class="snippet">The tech company that maintains the hotel check-in system set its cloud storage to public, allowing anyone to access customers' data without a password.</p>
+        <div class="news-meta">
+            <a href="https://techcrunch.com/2026/05/15/a-hotel-check-in-system-left-a-million-passports-and-drivers-licenses-open-for-anyone-to-see/" target="_blank">Original</a>
+            <span class="tag">TechCrunch</span>
+            <span class="tag tag-foreign">EN</span>
+        </div>
+    </div>
+    <div class="news-item">
+        <div class="news-date">05-15 18:14</div>
+        <h3>27. Silicon Valley’s vacationland needs a 新 energy provider just as AI is driving prices up</h3>
+        <p class="snippet">Lake Tahoe, Silicon Valley's favorite vacation spot, is about to get hit with higher energy prices as AI drives demand for electricity.</p>
+        <div class="news-meta">
+            <a href="https://techcrunch.com/2026/05/15/silicon-valleys-vacationland-needs-a-new-energy-provider-just-as-ai-is-driving-prices-up/" target="_blank">Original</a>
+            <span class="tag">TechCrunch</span>
+            <span class="tag tag-foreign">EN</span>
+        </div>
+    </div>
+    <div class="news-item">
+        <div class="news-date">05-15 16:00</div>
+        <h3>28. [OpenAI] 发布es ChatGPT for personal finance will let you connect bank accounts</h3>
+        <p class="snippet">Once users connect their accounts, they will see a dashboard of their portfolio performance, spending, subscriptions, and upcoming payments.</p>
+        <div class="news-meta">
+            <a href="https://techcrunch.com/2026/05/15/openai-launches-chatgpt-for-personal-finance-will-let-you-connect-bank-accounts/" target="_blank">Original</a>
+            <span class="tag">TechCrunch</span>
+            <span class="tag tag-foreign">EN</span>
+        </div>
+    </div>
+    <div class="news-item">
+        <div class="news-date">05-15 15:45</div>
+        <h3>29. Power prices are up 76% on America’s biggest grid and a watchdog is pointing fingers</h3>
+        <p class="snippet">The price spike is a reminder of a deeper problem: The U.S. power grid was not designed for the electricity demands of an AI-driven economy, and the gap between what the grid can deliver and what the</p>
+        <div class="news-meta">
+            <a href="https://techcrunch.com/2026/05/15/power-prices-are-up-76-on-americas-biggest-grid-and-a-watchdog-is-pointing-fingers/" target="_blank">Original</a>
+            <span class="tag">TechCrunch</span>
+            <span class="tag tag-foreign">EN</span>
+        </div>
+    </div>
+    <div class="news-item">
+        <div class="news-date">05-15 15:42</div>
+        <h3>30. US orders travelers on Air Force One to throw away gifts pins and burner phones after 中国 trip</h3>
+        <p class="snippet">While the summit appeared cordial, China remains a key adversary of the United States, given its advanced intelligence and espionage capabilities.</p>
+        <div class="news-meta">
+            <a href="https://techcrunch.com/2026/05/15/us-orders-travelers-on-air-force-one-to-throw-away-gifts-pins-and-burner-phones-after-china-trip/" target="_blank">Original</a>
+            <span class="tag">TechCrunch</span>
+            <span class="tag tag-foreign">EN</span>
+        </div>
+    </div>
+    <div class="news-item">
+        <div class="news-date">05-15 14:00</div>
+        <h3>31. Runway started by helping filmmakers — now it wants to beat [谷歌] at AI</h3>
+        <p class="snippet">AI video-generation startup Runway is betting that video generation is the path to world models. And that being an AI outsider is an advantage, not a liability.</p>
+        <div class="news-meta">
+            <a href="https://techcrunch.com/2026/05/15/runway-started-by-helping-filmmakers-now-it-wants-to-beat-google-at-ai/" target="_blank">Original</a>
+            <span class="tag">TechCrunch</span>
+            <span class="tag tag-foreign">EN</span>
+        </div>
+    </div>
+    <div class="news-item">
+        <div class="news-date">05-15 13:00</div>
+        <h3>32. Meridian Ventures 发布ed a $35M fund with a focus on MBA-deferred founders</h3>
+        <p class="snippet">This new fund will back founders building enterprise technology in the United States. Meridian is agnostic, co-founder Devon Gethers said, noting that the firm has already invested in companies in fin</p>
+        <div class="news-meta">
+            <a href="https://techcrunch.com/2026/05/15/meridian-ventures-launched-35m-fund-to-back-mba-deferred-founders/" target="_blank">Original</a>
+            <span class="tag">TechCrunch</span>
+            <span class="tag tag-foreign">EN</span>
+        </div>
+    </div>
+    <div class="news-item">
+        <div class="news-date">05-15 12:19</div>
+        <h3>33. Osaurus brings both local and 云 AI 模型s to your Mac</h3>
+        <p class="snippet">Osaurus￼ combines local and cloud AI models in a Mac app that keeps users’ memory, files, and tools on their own hardware.</p>
+        <div class="news-meta">
+            <a href="https://techcrunch.com/2026/05/15/osaurus-brings-both-local-and-cloud-ai-models-to-your-mac/" target="_blank">Original</a>
+            <span class="tag">TechCrunch</span>
+            <span class="tag tag-foreign">EN</span>
+        </div>
+    </div>
+    <div class="news-item">
+        <div class="news-date">05-15 11:24</div>
+        <h3>34. Indian Uber 竞争对手 Rapido raises $240M at $3B valuation</h3>
+        <p class="snippet">Rapido has driven its growth by enabling ride-hailing for lower-cost and more flexible modes of transport such as motorbikes and auto-rickshaws.</p>
+        <div class="news-meta">
+            <a href="https://techcrunch.com/2026/05/15/indian-uber-rival-rapido-raises-240m-at-3b-valuation/" target="_blank">Original</a>
+            <span class="tag">TechCrunch</span>
+            <span class="tag tag-foreign">EN</span>
+        </div>
+    </div>
+    <div class="news-item">
+        <div class="news-date">05-14 21:30</div>
+        <h3>35. [马斯克]’s SpaceXAI has been bleeding staff since its merger</h3>
+        <p class="snippet">More than 50 employees have reportedly left Elon Musk’s newly merged SpaceXAI since February, raising questions about burnout, leadership changes, talent poaching, and whether liquidity events weakene</p>
+        <div class="news-meta">
+            <a href="https://techcrunch.com/2026/05/14/elon-musks-spacexai-has-been-bleeding-staff-since-its-merger/" target="_blank">Original</a>
+            <span class="tag">TechCrunch</span>
+            <span class="tag tag-foreign">EN</span>
+        </div>
+    </div>
+    <div class="news-item">
+        <div class="news-date">05-16 10:00</div>
+        <h3>36. 36氪首发｜前苹果工程师跨界骨传导耳机，独创技术路线，打破头部企业专利垄断</h3>
+        <p class="snippet">作者 | 张子怡
+  编辑 | 袁斯来
+  硬氪获悉，苏州索迩电子技术有限公司（骨传导运动耳机品牌Mojawa的母公司，以下简称“索迩电子”）于近日完成数千万元人民币的A+轮融资，本轮融资由正海资本领投。
+  据悉，本轮资金将主要用于拓展海外线下渠道，以及推进产品的AI智能化研发。
+  在音频产品</p>
+        <div class="news-meta">
+            <a href="https://36kr.com/p/3810520138243593?f=rss" target="_blank">Original</a>
+            <span class="tag">36kr</span>
+            <span class="tag tag-china">CN</span>
+        </div>
+    </div>
+    <div class="news-item">
+        <div class="news-date">05-16 09:03</div>
+        <h3>37. 9点1氪丨央视6000万美元获得世界杯版权；英伟达总市值超过德国GDP；iPhone 17 Pro系列全线下调1000元</h3>
+        <p class="snippet">今日热点导览
+  
+   OpenAI正考虑采取法律手段起诉苹果公司
+   三星电子开发下一代HBM封装技术，或用于智能手机等移动设备
+   海南：加快培育火箭链、卫星链、数据链，打造风电装备制造产业集群
+   世界银行首席经济学家英德米特・吉尔将于8月卸任退休
+   “海淘”智能穿戴设备或被</p>
+        <div class="news-meta">
+            <a href="https://36kr.com/p/3811265856626440?f=rss" target="_blank">Original</a>
+            <span class="tag">36kr</span>
+            <span class="tag tag-china">CN</span>
+        </div>
+    </div>
+    <div class="news-item">
+        <div class="news-date">05-15 22:28</div>
+        <h3>38. 理想出牌：全新L9上市，4598万元起｜最前线</h3>
+        <p class="snippet"><img src="https://img.36krcdn.com/hsossms/20260515/v2_90d236a32d4a4f71bd00c6834b43d348@6310690_oswg1021806oswg2622oswg1206_img_png?x-oss-process=image/quality,q_90/format,jpg/</p>
+        <div class="news-meta">
+            <a href="https://36kr.com/p/3810562142445058?f=rss" target="_blank">Original</a>
+            <span class="tag">36kr</span>
+            <span class="tag tag-china">CN</span>
+        </div>
+    </div>
+    <div class="news-item">
+        <div class="news-date">05-15 21:50</div>
+        <h3>39. 2026 Shokz Day圆满收官：韶音以「随我动听」开启全场景声态新时代</h3>
+        <p class="snippet">2026年5月15日，全球开放式耳机领导品牌Shokz韶音在深圳湾文化广场举办2026「随我动听」Shokz Day。活动期间，韶音围绕OpenDots 2、OpenSwim Pro 2与OpenDots Air三款新品展开集中分享，系统阐释了「随我动听」的品牌主张。韶音全球品牌大使张婧仪登台分享，由韶音与国际设计大师Matteo Menotto合作的「缮己新声」艺术礼盒也在现场展出，带来一</p>
+        <div class="news-meta">
+            <a href="https://36kr.com/p/3810607581634056?f=rss" target="_blank">Original</a>
+            <span class="tag">36kr</span>
+            <span class="tag tag-china">CN</span>
+        </div>
+    </div>
+    <div class="news-item">
+        <div class="news-date">05-15 16:51</div>
+        <h3>40. 36氪联合PureblueAI清蓝发布「2026消费品牌AI推荐力名册」丨AI时代，品牌如何抢占「推荐力」新战场？</h3>
+        <p class="snippet"><</p>
+        <div class="news-meta">
+            <a href="https://36kr.com/p/3810308239465986?f=rss" target="_blank">Original</a>
+            <span class="tag">36kr</span>
+            <span class="tag tag-china">CN</span>
+        </div>
+    </div>
+    <div class="news-item">
+        <div class="news-date">05-15 14:49</div>
+        <h3>41. 长安计划入股千里科技，千里智驾与奥迪推进合作｜36氪独家</h3>
+        <p class="snippet">36氪从多位产业人士处了解到，千里科技正积极与长安、奥迪、奇瑞等车企，洽谈智能化合作。
+  其中，长安不仅有意向搭载千里科技辅助驾驶方案，还计划入股千里科技，双方原定于今年年初完成股权变更。但目前，据知情人士透露，该计划暂无实质性进展。
+  36氪了解到，北汽是千里科技眼下最具确定性的外部客户，双方计划于今年内成立合资公司。
+  千里科技与北汽计划合</p>
+        <div class="news-meta">
+            <a href="https://36kr.com/p/3810091479293449?f=rss" target="_blank">Original</a>
+            <span class="tag">36kr</span>
+            <span class="tag tag-china">CN</span>
+        </div>
+    </div>
+    <div class="news-item">
+        <div class="news-date">05-15 17:43</div>
+        <h3>42. CVPR 2026 四篇论文透视：大厂如何靠「算法瘦身」对抗算力涨价？</h3>
+        <p class="snippet"><img class="rich_pages wxw-img" src="https://static.leiphone.com/uploads/new/images/20260515/6a06ea6c0931e.j</p>
+        <div class="news-meta">
+            <a href="https://www.leiphone.com/category/ai/y7bk8TpnoiBUFqSP.html" target="_blank">Original</a>
+            <span class="tag">雷锋网</span>
+            <span class="tag tag-china">CN</span>
+        </div>
+    </div>
+    <div class="news-item">
+        <div class="news-date">05-15 14:57</div>
+        <h3>43. OpenClaw预示未来：智能体角色范式转变，AI需要具备执行能力</h3>
+        <p class="snippet">要点：• 随着 Claude Cowork、Hermes、Perplexity Computer</p>
+        <div class="news-meta">
+            <a href="https://www.leiphone.com/category/chips/KwA81QLVp7mR8lj7.html" target="_blank">Original</a>
+            <span class="tag">雷锋网</span>
+            <span class="tag tag-china">CN</span>
+        </div>
+    </div>
+    <div class="news-item">
+        <div class="news-date">05-15 10:49</div>
+        <h3>44. 桌面CNC元年：资本疯抢「小拓竹」，五轴是风口还是伪命题？</h3>
+        <p class="snippet"><p style="text-align: center; margin-bott</p>
+        <div class="news-meta">
+            <a href="https://www.leiphone.com/category/weiwu/JNy9AY58YfCIS2L0.html" target="_blank">Original</a>
+            <span class="tag">雷锋网</span>
+            <span class="tag tag-china">CN</span>
+        </div>
+    </div>
+    <div class="news-item">
+        <div class="news-date">05-15 10:11</div>
+        <h3>45. 首次披露！载合卡车完成10亿元级战略融资，开创车云一体AI重卡全新赛道</h3>
+        <p class="snippet">近日，载合卡车宣布累计完成10亿元级融资。作为AI重卡赛道的新锐领军者，载合卡车汇集了<span styl</p>
+        <div class="news-meta">
+            <a href="https://www.leiphone.com/category/industrynews/VTZD7tfMJuwiBTXE.html" target="_blank">Original</a>
+            <span class="tag">雷锋网</span>
+            <span class="tag tag-china">CN</span>
+        </div>
+    </div>
+    <div class="news-item">
+        <div class="news-date">05-14 18:41</div>
+        <h3>46. 端侧智能体迈入拐点，联发科如何把AI平台做成可交付的能力？</h3>
+        <p class="snippet">过去一年，端侧AI的竞争逻辑已经发生变化。<span style="font-family: Arial; font-size: 16px</p>
+        <div class="news-meta">
+            <a href="https://www.leiphone.com/category/chipdesign/RLUtPCdwqljctm6g.html" target="_blank">Original</a>
+            <span class="tag">雷锋网</span>
+            <span class="tag tag-china">CN</span>
+        </div>
+    </div>
+    <div class="news-item">
+        <div class="news-date">05-14 15:28</div>
+        <h3>47. 对话销售易总裁邓永富：借力腾讯，能否在SaaS大洗牌中「攒足」筹码？ | SaaS+Agent十人谈</h3>
+        <p class="snippet">“在这场优胜劣汰的行业洗牌中，仅靠单打独斗已难以站稳</p>
+        <div class="news-meta">
+            <a href="https://www.leiphone.com/category/CorporateServices/VtqqTCKnnWrini0F.html" target="_blank">Original</a>
+            <span class="tag">雷锋网</span>
+            <span class="tag tag-china">CN</span>
+        </div>
+    </div>
+    <div class="news-item">
+        <div class="news-date">05-16 01:58</div>
+        <h3>48. 周下载超 69 万次：热门 npm 包 node-ipc 被投毒，可窃取密码等敏感信息</h3>
+        <p class="snippet">IT之家 5 月 16 日消息，科技媒体 NeoWin 昨日（5 月 15 日）发布博文，报道称 npm 热门包 node-ipc 遭遇新的供应链攻击，多个新发布版本被植入信息窃取恶意代码。IT之家注：node-ipc 是一个 Node.js 模块，支</p>
+        <div class="news-meta">
+            <a href="https://www.ithome.com/0/951/180.htm" target="_blank">Original</a>
+            <span class="tag">IT之家</span>
+            <span class="tag tag-china">CN</span>
+        </div>
+    </div>
+    <div class="news-item">
+        <div class="news-date">05-16 01:56</div>
+        <h3>49. Stellantis 将利用法国工厂为东风组装汽车，规避欧盟关税</h3>
+        <p class="snippet">IT之家 5 月 16 日消息，Stellantis 昨日宣布与东风集团签署战略合作协议，通过在中国共同生产标致和 Jeep 品牌汽车，来进一步拓展两家公司长达 34 年的合作伙伴关系。据法国媒体 France Info 于 5 月 15 日援引知情人士消息报道，Stellantis 已同意在其位于法国雷恩市的工厂为东风汽车集团组装至少一款车型，从而助其规避欧盟关税。报道称，为</p>
+        <div class="news-meta">
+            <a href="https://www.ithome.com/0/951/179.htm" target="_blank">Original</a>
+            <span class="tag">IT之家</span>
+            <span class="tag tag-china">CN</span>
+        </div>
+    </div>
+    <div class="news-item">
+        <div class="news-date">05-16 01:47</div>
+        <h3>50. Win11 再次失守，Pwn2Own Berlin 2026 第 2 天发放 385 万美元奖金</h3>
+        <p class="snippet">IT之家 5 月 16 日消息，科技媒体 bleepingcomputer 昨日（5 月 15 日）发布博文，报道称在 Pwn2Own Berlin 2026 活动第 2 天，Windows 11 系统再次被攻破。在 2026 年柏林 Pwn2Own 开赛首日，来自全球各地的安全研究员挖掘报告 24 个零日漏洞，成功拿到 523000 美元（现汇率约合 355.7 万元人民币）</p>
+        <div class="news-meta">
+            <a href="https://www.ithome.com/0/951/178.htm" target="_blank">Original</a>
+            <span class="tag">IT之家</span>
+            <span class="tag tag-china">CN</span>
+        </div>
+    </div>
+    <div class="news-item">
+        <div class="news-date">05-16 01:39</div>
+        <h3>51. 涉摆拍“盲人在盲道行走被电动车撞”等，北京警方通报 3 起典型案例</h3>
+        <p class="snippet">IT之家 5 月 16 日消息，据“首都网警”公众号今日更新，为净化网络环境、营造清朗网络空间，北京警方通报 3 起典型案例：案例一：刘某（男，26 岁）和江某某（女，24 岁）为吸粉引流、博取关注、牟取私利，在朝阳区某路旁虚假摆拍“盲人在盲道行走被电动自行车撞击并遭骑车人斥责”内容</st</p>
+        <div class="news-meta">
+            <a href="https://www.ithome.com/0/951/177.htm" target="_blank">Original</a>
+            <span class="tag">IT之家</span>
+            <span class="tag tag-china">CN</span>
+        </div>
+    </div>
+    <div class="news-item">
+        <div class="news-date">05-16 10:21</div>
+        <h3>52. 上市首日暴涨68%，全球最大AI芯片公司，冲上670亿美元</h3>
+        <p class="snippet">英伟达的挑战者上市了。</p>
+        <div class="news-meta">
+            <a href="https://www.tmtpost.com/7989946.html" target="_blank">Original</a>
+            <span class="tag">钛媒体</span>
+            <span class="tag tag-china">CN</span>
+        </div>
+    </div>
+    <div class="news-item">
+        <div class="news-date">05-16 09:56</div>
+        <h3>53. 曾亲赴霍尔木兹调研的Citrini判断：碳化硅是AI最大暗线</h3>
+        <p class="snippet">从电源到先进封装，一个千亿级市场正在重构。</p>
+        <div class="news-meta">
+            <a href="https://www.tmtpost.com/7989918.html" target="_blank">Original</a>
+            <span class="tag">钛媒体</span>
+            <span class="tag tag-china">CN</span>
+        </div>
+    </div>
+    <div class="news-item">
+        <div class="news-date">05-16 09:39</div>
+        <h3>54. 百度大模型自救：这次还能逆风翻盘吗？</h3>
+        <p class="snippet">百度曾是中国AI大模型的先行者，却因根深蒂固的“流量变现”思维痛失好局。新成立的大模型委员会是一次组织自救，但真正的难题是：这一次，它能忍住不收割吗？</p>
+        <div class="news-meta">
+            <a href="https://www.tmtpost.com/7990101.html" target="_blank">Original</a>
+            <span class="tag">钛媒体</span>
+            <span class="tag tag-china">CN</span>
+        </div>
+    </div>
+    <div class="footer">
+        Generated by AI News Assistant
+    </div>
+</body>
+</html>

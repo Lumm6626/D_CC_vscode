@@ -1,0 +1,737 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>医疗器械新闻 - 2026-04-01</title>
+    <style>
+        body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; max-width: 800px; margin: 0 auto; padding: 20px; background: #f5f5f5; }
+        .header { background: linear-gradient(135deg, #00acc1 0%, #00838f 100%); color: white; padding: 30px; border-radius: 10px; margin-bottom: 20px; }
+        .header h1 { margin: 0; font-size: 28px; }
+        .header p { margin: 10px 0 0 0; opacity: 0.9; }
+        .top10-section { background: white; padding: 25px; margin-bottom: 25px; border-radius: 12px; box-shadow: 0 2px 8px rgba(0,0,0,0.1); }
+        .top10-section h2 { margin: 0 0 15px 0; color: #1a1a1a; font-size: 20px; padding-bottom: 10px; border-bottom: 2px solid #00acc1; }
+        .top10-china { border-left: 4px solid #e53935; }
+        .top10-china h2 { border-bottom-color: #e53935; }
+        .top10-china .top10-item { background: #fff5f5; border-left-color: #e53935; }
+        .top10-china .top10-num { background: #e53935; }
+        .top10-global { border-left: 4px solid #1976d2; }
+        .top10-global h2 { border-bottom-color: #1976d2; }
+        .top10-global .top10-item { background: #f0f7ff; border-left-color: #1976d2; }
+        .top10-global .top10-num { background: #1976d2; }
+        .top10-list { display: flex; flex-direction: column; gap: 10px; }
+        .top10-item { display: flex; gap: 12px; padding: 12px; border-radius: 8px; }
+        .top10-num { color: white; width: 24px; height: 24px; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 12px; font-weight: bold; flex-shrink: 0; }
+        .top10-content { flex: 1; }
+        .top10-title { font-size: 14px; font-weight: 600; color: #333; line-height: 1.4; }
+        .top10-title a { color: #333; text-decoration: none; }
+        .top10-title a:hover { color: #00acc1; }
+        .top10-desc { font-size: 13px; color: #444; line-height: 1.6; margin-top: 6px; font-weight: 500; }
+        .top10-meta { font-size: 12px; color: #888; margin-top: 4px; }
+        .summary-section { background: white; padding: 25px; margin-bottom: 25px; border-radius: 12px; box-shadow: 0 2px 8px rgba(0,0,0,0.1); }
+        .summary-section h2 { margin: 0 0 20px 0; color: #1a1a1a; font-size: 20px; padding-bottom: 15px; border-bottom: 2px solid #00acc1; }
+        .category-tags { display: flex; flex-wrap: wrap; gap: 10px; margin-bottom: 20px; }
+        .cat-tag { background: linear-gradient(135deg, #00acc1 0%, #00838f 100%); color: white; padding: 8px 16px; border-radius: 20px; font-size: 14px; }
+        .highlight-list { display: flex; flex-direction: column; gap: 12px; }
+        .highlight-item { display: flex; align-items: flex-start; gap: 12px; padding: 15px; background: #f8f9fa; border-radius: 10px; border-left: 4px solid #00acc1; }
+        .highlight-num { background: #00acc1; color: white; width: 28px; height: 28px; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 14px; font-weight: bold; flex-shrink: 0; }
+        .highlight-content { flex: 1; }
+        .highlight-title { font-size: 16px; font-weight: 600; color: #333; line-height: 1.5; margin-bottom: 5px; }
+        .highlight-snippet { font-size: 13px; color: #666; line-height: 1.5; margin: 5px 0; }
+        .highlight-meta { font-size: 13px; color: #888; }
+        .chinese-summary { margin-top: 20px; }
+        .chinese-summary h3 { color: #333; font-size: 18px; margin-bottom: 15px; }
+        .news-item { background: white; padding: 20px; margin-bottom: 15px; border-radius: 8px; box-shadow: 0 2px 4px rgba(0,0,0,0.1); }
+        .news-date { color: #999; font-size: 12px; margin-bottom: 5px; }
+        .news-item h3 { margin: 0 0 10px 0; color: #333; }
+        .news-item a { color: #00acc1; text-decoration: none; }
+        .snippet { color: #666; font-size: 14px; line-height: 1.6; }
+        .tag { display: inline-block; background: #e8f4f8; color: #2a7bb0; padding: 2px 8px; border-radius: 4px; font-size: 12px; margin-right: 8px; }
+        .tag-china { background: #ffeaea; color: #d32f2f; }
+        .tag-foreign { background: #e3f2fd; color: #1976d2; }
+        .news-meta { margin-top: 10px; display: flex; align-items: center; flex-wrap: wrap; gap: 5px; }
+        .section-title { font-size: 16px; font-weight: bold; color: #333; margin: 20px 0 15px 0; padding-bottom: 10px; border-bottom: 2px solid #00acc1; }
+        .footer { text-align: center; color: #999; margin-top: 30px; font-size: 12px; }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h1>医疗器械新闻 Daily</h1>
+        <p>2026-04-01 | 41 articles</p>
+    </div>
+
+    
+    <div class="top10-section top10-global">
+        <h2>🌍 海外医疗器械新闻 Top 10</h2>
+        <div class="top10-list">
+            <div class="top10-item">
+                <span class="top10-num">1</span>
+                <div class="top10-content">
+                    <div class="top10-title"><a href="https://news.google.com/rss/articles/CBMisgFBVV95cUxOTl9zWm1OWHU3Umc0X1lQcXFuSU1QSFBaQVlyd0EtVTBhTm5jNUxCZHFQVnVHR2JnZmxUeTlqWkF1UW9TNWRMUGV6ZVpmSUYtSlprZTJkVXkxRkVLdmdJaWp0ZGk2UUVUQ185dXhRQzYteG5QSGphRjZQOHRnLXpqaWV3cHAxWVA3SHhYSnBVSUhFSDZMM3NrSnlyZ3VGNVZfdXZ1QnhzRGpLcmczSVdib09R?oc=5" target="_blank">日本首相寻求缓解对医疗产品供应的担忧- Bloomberg.com</a></div>
+                    <div class="top10-desc">< a href = "https://news.google.com/rss/articles/CBMisgFBVV95cUxOTl9zWm1OWHU3Umc0X1lQcXFuSU1QSFBaQVlyd0EtVTBhTm5jNUxCZHF</div>
+                    <div class="top10-meta">
+                        <span class="top10-date">03-30 05:01</span>
+                    </div>
+                </div>
+            </div>
+            <div class="top10-item">
+                <span class="top10-num">2</span>
+                <div class="top10-content">
+                    <div class="top10-title"><a href="https://news.google.com/rss/articles/CBMiuAFBVV95cUxQTnlvRWpvWFdWdVpaSzA3aVQ0N3Z3WmlhMUZfNGVuVFNObnlNZ1ZMRmJSb01yOGtjR0tmc1dIVGY1OHhieWxDcEtZM2MybS1ReTNtLTlGb3B5RGhJYmRPNHlFQUIybjZNS3F3OWZZNE5jdDdEaFFnLTVidzk5Y09tOEVPb3g3ZFY3aFY1UW8wUTUxYkhoSjJTVFBFQy1wai1taXRXWFVfTFZuNnh0OWJpai1iRjZxYWFQ?oc=5" target="_blank">Boston Scientific presents Watchman FLX and EKOS endovascular system data - Medical Device Network</a></div>
+                    <div class="top10-desc"><a</div>
+                    <div class="top10-meta">
+                        <span class="top10-date">03-31 15:59</span>
+                    </div>
+                </div>
+            </div>
+            <div class="top10-item">
+                <span class="top10-num">3</span>
+                <div class="top10-content">
+                    <div class="top10-title"><a href="https://news.google.com/rss/articles/CBMi-gFBVV95cUxQcDJPZ1RZUTA3VEZ3ZnRkQnAxU0duM3drLWZwWjNhYUQ4WXFFQW1iOG9uZUc5YWpHbW1rbmotckNEUzZudU03akVxc3VQS3kxQTFCZS0xX0p5TnE2UmUzM1lOX2xDUk1lekJ1VkxXUS1NOVdDVEJFeHgtNS1YekJQb1JFQ05DWktvNDhOU1ZJSWg1SENfb2x5X0JkaWlMaEhHT3RLX0JjeFhIX3dmNXlTSHZkOS1EMndHNkpzM0R4WFBuWWVBLTAzanFEQTdxdktzUlBJblBrRkF1b1B1VmxsRW42N2xrTVFtOTBDUkFzNVdfSzhWS29LQmR3?oc=5" target="_blank">Keith White on Reframing Medical Device Marketing for the Modern Healthcare Economy - 美国A Today</a></div>
+                    <div class="top10-desc"><a</div>
+                    <div class="top10-meta">
+                        <span class="top10-date">03-31 17:20</span>
+                    </div>
+                </div>
+            </div>
+            <div class="top10-item">
+                <span class="top10-num">4</span>
+                <div class="top10-content">
+                    <div class="top10-title"><a href="https://news.google.com/rss/articles/CBMioAFBVV95cUxPY2F0Q0FBOXpiQXZpOW5rZFZ5NjRtWEFzbkk3YTlKeThQcnQzU0RtQ3FBYnYtN2JTZVp2ako1bXpWNUhDdkZyLTg2a2NwTk9iV2p6ekJQb1Ryd0loM09nTkZPRUM3cmlHU3phcU5Nb0xaZWdYOFk4VjNBY1E3YkVnbElVbW0yU3RQZzJZMTZDTGVGb1lqVzVvYVc5OTkxbGVh?oc=5" target="_blank">MDO editor’s picks: Three technical talks at DeviceTalks Minnesota - Medical Design & Outsourcing</a></div>
+                    <div class="top10-desc">MDO editor’s picks: Three technical talks at DeviceTalks Min</div>
+                    <div class="top10-meta">
+                        <span class="top10-date">03-31 17:16</span>
+                    </div>
+                </div>
+            </div>
+            <div class="top10-item">
+                <span class="top10-num">5</span>
+                <div class="top10-content">
+                    <div class="top10-title"><a href="https://news.google.com/rss/articles/CBMixAFBVV95cUxQXzdfRm9kdEhhSGVIVHJPUXZGc1RJQkVEUkIxdFA1NkZCQ2x4ZHo1QTZWLWhhdmVhUkViVGxBME5vclVmTDRma0tYMEhacjFBV1FER3BhTDdienRGRHBhcExPa1N6aExXdW5YLVZYbV9xQ3lwSTZZM3J6M3RRMWJSSWxWOGcwbTRzR0NsOE1WVnRrNk5QT0s5d2U2dGZBc2xtUjN4WVdHeVU0T2dySnZNSFBCNnIxRGhaTEduR2Noc2RucFc2?oc=5" target="_blank">美国FDA Grants Breakthrough Designation to Sonorous Neurovascular for Cerebral Venous Stent - Medical Product Outsourcing</a></div>
+                    <div class="top10-desc"><a</div>
+                    <div class="top10-meta">
+                        <span class="top10-date">04-01 01:31</span>
+                    </div>
+                </div>
+            </div>
+            <div class="top10-item">
+                <span class="top10-num">6</span>
+                <div class="top10-content">
+                    <div class="top10-title"><a href="https://news.google.com/rss/articles/CBMie0FVX3lxTE1YNk92OThRSXdvZXVJUVBWckNtSEQ2N0RXdXl4Yk5qT1BQTmxyRzVnNHF2dWFwTHJzaS0yWEFObUhEY1llWDVvTUpjQWNZTUJKU1dvcFNyQ0tERWwyOVdCSkFSTXI3R2hDX0s0MXpEQ3EtZi1LeFRVTG9SSQ?oc=5" target="_blank">Serenity Medical earns 美国FDA humanitarian 批准 for cerebral venous stent - MassDevice</a></div>
+                    <div class="top10-desc">Serenity Medical earns FDA humanitarian approval for</div>
+                    <div class="top10-meta">
+                        <span class="top10-date">03-31 21:47</span>
+                    </div>
+                </div>
+            </div>
+            <div class="top10-item">
+                <span class="top10-num">7</span>
+                <div class="top10-content">
+                    <div class="top10-title"><a href="https://news.google.com/rss/articles/CBMixAFBVV95cUxPb0EwdkM3R2tVX2RwczFRZFRnUGFBYlRoWG1Yb0d1Ul9XVHNvRUZzVnU5VThqZ1ZUVDFhc05SWG0zWTBDa1ZKLW04TXA2M1JHOGs1elZISTBhaHhvd1pGR05xaldGQ0xtRzNZUElvZk9IU1BIOWlLVDBIV0FZZnZ3V0lickNVbWZ1TWtPcjJtMHpFQV92QjhoNk9jUWFRcWIzZjFmV1cwYmRZRGRFR3Y2TU5CXy1STmZ5SkU5LVpyUDNCbzk5?oc=5" target="_blank">As 人工智能 enters the operating room 报告s arise of botched surgeries and misidentified body parts - Reuters</a></div>
+                    <div class="top10-desc"><a</div>
+                    <div class="top10-meta">
+                        <span class="top10-date">02-09 08:00</span>
+                    </div>
+                </div>
+            </div>
+            <div class="top10-item">
+                <span class="top10-num">8</span>
+                <div class="top10-content">
+                    <div class="top10-title"><a href="https://news.google.com/rss/articles/CBMiwAFBVV95cUxNb0RsLXZpVXdyUWY2aEdxLWdHNEZMdUpUMFREX0VlbGJ6UnFqYzh2M0d3UnNicEphalVZU1I5RkgxWnJRdC1DVGtMdm9UUTNFZFlmZEhwVWZ5WHNRQTZrRWdDN3lsVG83TFZEeUw1OXdnTFR4NjNlektrUWVVUE5hRDVKRFlMSXRySGZfZ3BhVThmUWdUbWg5QVJrdXBTRWs2NFpvZTZYYzRyUHh0emtlZnN5bEQ3Y3pYeVJ6OC00bWQ?oc=5" target="_blank">Apple's App Store will show if an app is classified as a regulated medical 器械 - AppleInsider</a></div>
+                    <div class="top10-desc"><a</div>
+                    <div class="top10-meta">
+                        <span class="top10-date">03-27 00:52</span>
+                    </div>
+                </div>
+            </div>
+            <div class="top10-item">
+                <span class="top10-num">9</span>
+                <div class="top10-content">
+                    <div class="top10-title"><a href="https://news.google.com/rss/articles/CBMikwFBVV95cUxOZnY3cXgwdmJOay10aWg0MzFuMDJ2VC1MRzZmOGdPLUtzbV9CQWlTNTVkckd5Zy1qaXhJcnM3QmlCbWdxN1UyOUtMRkxTOWdiTFQ4dHRpZ2hzaTBfMlppUkJFTWtjbjdTUHlxT1VQdkVmQ0FwQ20yUEswWktkcFJkSnhTVTBqN3RSV1dua1h5Z0VQMHM?oc=5" target="_blank">Pro-Iran hackers claim cyberattack on major 美国 medical 器械 maker - CNN</a></div>
+                    <div class="top10-desc">Pro-Iran hackers claim</div>
+                    <div class="top10-meta">
+                        <span class="top10-date">03-11 07:00</span>
+                    </div>
+                </div>
+            </div>
+            <div class="top10-item">
+                <span class="top10-num">10</span>
+                <div class="top10-content">
+                    <div class="top10-title"><a href="https://news.google.com/rss/articles/CBMieEFVX3lxTE52cUloOTlPa29HdVJUQlBCZEJyV21jZE4zbTg3YzVlSERZVEl1NUtCeFRfc2pSRzFFQ0dtX2U3R3ZBMDVWYTJJRVU5elNFang0cXpTbmExRHpYdlhPN0QzT0NSN1BtMlE3MHBHNW5iWjdzTjVla0pZeg?oc=5" target="_blank">Apple Requires App Developers to Declare Regulated Medical Device Status in EEA UK and US - MacRumors</a></div>
+                    <div class="top10-desc">Apple Requires App Developers to Declare Regulated Medical</div>
+                    <div class="top10-meta">
+                        <span class="top10-date">03-26 22:41</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    
+    <div class="summary-section">
+        <h2>Medical Device Daily Highlights</h2>
+        <div class="category-tags"><span class="cat-tag">REG Regulatory/批准 (36)</span><span class="cat-tag">AI AI/Digital/数字化 (2)</span><span class="cat-tag">IMPLANT Implant/植入器械 (1)</span><span class="cat-tag">BIZ Market/Business/市场商业 (1)</span><span class="cat-tag">NEWS Other/其他 (1)</span></div>
+
+        <div class="chinese-summary">
+            <h3>Top 10 Medical Device News</h3>
+            
+            <div class="highlight-item">
+                <span class="highlight-num">1</span>
+                <div class="highlight-content">
+                    <div class="highlight-title">
+                        <a href="https://news.google.com/rss/articles/CBMisgFBVV95cUxOTl9zWm1OWHU3Umc0X1lQcXFuSU1QSFBaQVlyd0EtVTBhTm5jNUxCZHFQVnVHR2JnZmxUeTlqWkF1UW9TNWRMUGV6ZVpmSUYtSlprZTJkVXkxRkVLdmdJaWp0ZGk2UUVUQ185dXhRQzYteG5QSGphRjZQOHRnLXpqaWV3cHAxWVA3SHhYSnBVSUhFSDZMM3NrSnlyZ3VGNVZfdXZ1QnhzRGpLcmczSVdib09R?oc=5" target="_blank" style="color: #333; text-decoration: none;">日本首相寻求缓解对医疗产品供应的担忧- Bloomberg.com</a>
+                    </div>
+                    <p class="highlight-snippet" style="color: #444; font-size: 13px; margin: 8px 0; line-height: 1.5; font-weight: 500;">< a href = "https://news.google.com/rss/articles/CBMisgFBVV95cUxOTl9zWm1OWHU3Umc0X1lQcXFuSU1QSFBaQVlyd0EtVTBhTm5jNUxCZHF</p>
+                    <div class="highlight-meta">
+                        <span class="highlight-date">03-30 05:01</span> |
+                        <span class="highlight-source">Google News - Medical Device</span> |
+                        <span style="color: #1976d2;">🌍 海外</span>
+                    </div>
+                </div>
+            </div>
+            <div class="highlight-item">
+                <span class="highlight-num">2</span>
+                <div class="highlight-content">
+                    <div class="highlight-title">
+                        <a href="https://news.google.com/rss/articles/CBMiuAFBVV95cUxQTnlvRWpvWFdWdVpaSzA3aVQ0N3Z3WmlhMUZfNGVuVFNObnlNZ1ZMRmJSb01yOGtjR0tmc1dIVGY1OHhieWxDcEtZM2MybS1ReTNtLTlGb3B5RGhJYmRPNHlFQUIybjZNS3F3OWZZNE5jdDdEaFFnLTVidzk5Y09tOEVPb3g3ZFY3aFY1UW8wUTUxYkhoSjJTVFBFQy1wai1taXRXWFVfTFZuNnh0OWJpai1iRjZxYWFQ?oc=5" target="_blank" style="color: #333; text-decoration: none;">Boston Scientific呈现Watchman FLX和EKOS血管内系统数据-医疗器械网络</a>
+                    </div>
+                    <p class="highlight-snippet" style="color: #444; font-size: 13px; margin: 8px 0; line-height: 1.5; font-weight: 500;">< a href = "https://news.google.com/rss/articles/CBMiuAFBVV95cUxQTnlvRWpvWFdWdVpaSzA3aVQ0N3Z3WmlhMUZfNGVuVFNObnlNZ1ZMRmJ</p>
+                    <div class="highlight-meta">
+                        <span class="highlight-date">03-31 15:59</span> |
+                        <span class="highlight-source">Google News - Medical Device</span> |
+                        <span style="color: #1976d2;">🌍 海外</span>
+                    </div>
+                </div>
+            </div>
+            <div class="highlight-item">
+                <span class="highlight-num">3</span>
+                <div class="highlight-content">
+                    <div class="highlight-title">
+                        <a href="https://news.google.com/rss/articles/CBMi-gFBVV95cUxQcDJPZ1RZUTA3VEZ3ZnRkQnAxU0duM3drLWZwWjNhYUQ4WXFFQW1iOG9uZUc5YWpHbW1rbmotckNEUzZudU03akVxc3VQS3kxQTFCZS0xX0p5TnE2UmUzM1lOX2xDUk1lekJ1VkxXUS1NOVdDVEJFeHgtNS1YekJQb1JFQ05DWktvNDhOU1ZJSWg1SENfb2x5X0JkaWlMaEhHT3RLX0JjeFhIX3dmNXlTSHZkOS1EMndHNkpzM0R4WFBuWWVBLTAzanFEQTdxdktzUlBJblBrRkF1b1B1VmxsRW42N2xrTVFtOTBDUkFzNVdfSzhWS29LQmR3?oc=5" target="_blank" style="color: #333; text-decoration: none;">Keith White谈现代医疗保健经济中医疗器械营销的重塑-《今日美国》</a>
+                    </div>
+                    <p class="highlight-snippet" style="color: #444; font-size: 13px; margin: 8px 0; line-height: 1.5; font-weight: 500;">< a href = "https://news.google.com/rss/articles/CBMi-gFBVV95cUxQcDJPZ1RZUTA3VEZ3ZnRkQnAxU0duM3drLWZwWjNhYUQ4WXFFQW1iOG9</p>
+                    <div class="highlight-meta">
+                        <span class="highlight-date">03-31 17:20</span> |
+                        <span class="highlight-source">Google News - Medical Device</span> |
+                        <span style="color: #1976d2;">🌍 海外</span>
+                    </div>
+                </div>
+            </div>
+            <div class="highlight-item">
+                <span class="highlight-num">4</span>
+                <div class="highlight-content">
+                    <div class="highlight-title">
+                        <a href="https://news.google.com/rss/articles/CBMioAFBVV95cUxPY2F0Q0FBOXpiQXZpOW5rZFZ5NjRtWEFzbkk3YTlKeThQcnQzU0RtQ3FBYnYtN2JTZVp2ako1bXpWNUhDdkZyLTg2a2NwTk9iV2p6ekJQb1Ryd0loM09nTkZPRUM3cmlHU3phcU5Nb0xaZWdYOFk4VjNBY1E3YkVnbElVbW0yU3RQZzJZMTZDTGVGb1lqVzVvYVc5OTkxbGVh?oc=5" target="_blank" style="color: #333; text-decoration: none;">MDO编辑精选：明尼苏达州DeviceTalks的三场技术讲座-医疗设计与外包</a>
+                    </div>
+                    <p class="highlight-snippet" style="color: #444; font-size: 13px; margin: 8px 0; line-height: 1.5; font-weight: 500;">MDO editor’s picks: Three technical talks at DeviceTalks Min</p>
+                    <div class="highlight-meta">
+                        <span class="highlight-date">03-31 17:16</span> |
+                        <span class="highlight-source">Google News - Medical Device</span> |
+                        <span style="color: #1976d2;">🌍 海外</span>
+                    </div>
+                </div>
+            </div>
+            <div class="highlight-item">
+                <span class="highlight-num">5</span>
+                <div class="highlight-content">
+                    <div class="highlight-title">
+                        <a href="https://news.google.com/rss/articles/CBMixAFBVV95cUxQXzdfRm9kdEhhSGVIVHJPUXZGc1RJQkVEUkIxdFA1NkZCQ2x4ZHo1QTZWLWhhdmVhUkViVGxBME5vclVmTDRma0tYMEhacjFBV1FER3BhTDdienRGRHBhcExPa1N6aExXdW5YLVZYbV9xQ3lwSTZZM3J6M3RRMWJSSWxWOGcwbTRzR0NsOE1WVnRrNk5QT0s5d2U2dGZBc2xtUjN4WVdHeVU0T2dySnZNSFBCNnIxRGhaTEduR2Noc2RucFc2?oc=5" target="_blank" style="color: #333; text-decoration: none;">FDA授予用于脑静脉支架的Sonorous Neurovascular突破性称号-医疗产品外包</a>
+                    </div>
+                    <p class="highlight-snippet" style="color: #444; font-size: 13px; margin: 8px 0; line-height: 1.5; font-weight: 500;">< a href = "https://news.google。com/rss/articles/CBMixAFBVV95cUxQXzdfRm9kdEhhSGVIVHJPUXZGc1RJQkVEUkIxdFA1NkZCQ2x4ZHo1QTZ</p>
+                    <div class="highlight-meta">
+                        <span class="highlight-date">04-01 01:31</span> |
+                        <span class="highlight-source">Google News - Medical Device</span> |
+                        <span style="color: #1976d2;">🌍 海外</span>
+                    </div>
+                </div>
+            </div>
+            <div class="highlight-item">
+                <span class="highlight-num">6</span>
+                <div class="highlight-content">
+                    <div class="highlight-title">
+                        <a href="https://news.google.com/rss/articles/CBMie0FVX3lxTE1YNk92OThRSXdvZXVJUVBWckNtSEQ2N0RXdXl4Yk5qT1BQTmxyRzVnNHF2dWFwTHJzaS0yWEFObUhEY1llWDVvTUpjQWNZTUJKU1dvcFNyQ0tERWwyOVdCSkFSTXI3R2hDX0s0MXpEQ3EtZi1LeFRVTG9SSQ?oc=5" target="_blank" style="color: #333; text-decoration: none;">Serenity Medical获得FDA脑静脉支架人道主义批准- MassDevice</a>
+                    </div>
+                    <p class="highlight-snippet" style="color: #444; font-size: 13px; margin: 8px 0; line-height: 1.5; font-weight: 500;">Serenity Medical earns FDA humanitarian approval for</p>
+                    <div class="highlight-meta">
+                        <span class="highlight-date">03-31 21:47</span> |
+                        <span class="highlight-source">Google News - Medical Device</span> |
+                        <span style="color: #1976d2;">🌍 海外</span>
+                    </div>
+                </div>
+            </div>
+            <div class="highlight-item">
+                <span class="highlight-num">7</span>
+                <div class="highlight-content">
+                    <div class="highlight-title">
+                        <a href="https://news.google.com/rss/articles/CBMixAFBVV95cUxPb0EwdkM3R2tVX2RwczFRZFRnUGFBYlRoWG1Yb0d1Ul9XVHNvRUZzVnU5VThqZ1ZUVDFhc05SWG0zWTBDa1ZKLW04TXA2M1JHOGs1elZISTBhaHhvd1pGR05xaldGQ0xtRzNZUElvZk9IU1BIOWlLVDBIV0FZZnZ3V0lickNVbWZ1TWtPcjJtMHpFQV92QjhoNk9jUWFRcWIzZjFmV1cwYmRZRGRFR3Y2TU5CXy1STmZ5SkU5LVpyUDNCbzk5?oc=5" target="_blank" style="color: #333; text-decoration: none;">随着人工智能进入手术室，出现了手术拙劣和身体部位识别错误的报告-路透社</a>
+                    </div>
+                    <p class="highlight-snippet" style="color: #444; font-size: 13px; margin: 8px 0; line-height: 1.5; font-weight: 500;">< a href = "https://news.google。com/rss/articles/CBMixAFBVV95cUxPb0EwdkM3R2tVX2RwczFRZFRnUGFBYlRoWG1Yb0d1Ul9XVHNvRUZzVnU</p>
+                    <div class="highlight-meta">
+                        <span class="highlight-date">02-09 08:00</span> |
+                        <span class="highlight-source">Google News - Medical Device</span> |
+                        <span style="color: #1976d2;">🌍 海外</span>
+                    </div>
+                </div>
+            </div>
+            <div class="highlight-item">
+                <span class="highlight-num">8</span>
+                <div class="highlight-content">
+                    <div class="highlight-title">
+                        <a href="https://news.google.com/rss/articles/CBMiwAFBVV95cUxNb0RsLXZpVXdyUWY2aEdxLWdHNEZMdUpUMFREX0VlbGJ6UnFqYzh2M0d3UnNicEphalVZU1I5RkgxWnJRdC1DVGtMdm9UUTNFZFlmZEhwVWZ5WHNRQTZrRWdDN3lsVG83TFZEeUw1OXdnTFR4NjNlektrUWVVUE5hRDVKRFlMSXRySGZfZ3BhVThmUWdUbWg5QVJrdXBTRWs2NFpvZTZYYzRyUHh0emtlZnN5bEQ3Y3pYeVJ6OC00bWQ?oc=5" target="_blank" style="color: #333; text-decoration: none;">Apple的App Store将显示应用程序是否被归类为受监管的医疗设备- AppleInsider</a>
+                    </div>
+                    <p class="highlight-snippet" style="color: #444; font-size: 13px; margin: 8px 0; line-height: 1.5; font-weight: 500;">< a href = "https://news.google。com/rss/articles/CBMiwAFBVV95cUxNb0RsLXZpVXdyUWY2aEdxLWdHNEZMdUpUMFREX0VlbGJ6UnFqYzh2M0d</p>
+                    <div class="highlight-meta">
+                        <span class="highlight-date">03-27 00:52</span> |
+                        <span class="highlight-source">Google News - Medical Device</span> |
+                        <span style="color: #1976d2;">🌍 海外</span>
+                    </div>
+                </div>
+            </div>
+            <div class="highlight-item">
+                <span class="highlight-num">9</span>
+                <div class="highlight-content">
+                    <div class="highlight-title">
+                        <a href="https://news.google.com/rss/articles/CBMikwFBVV95cUxOZnY3cXgwdmJOay10aWg0MzFuMDJ2VC1MRzZmOGdPLUtzbV9CQWlTNTVkckd5Zy1qaXhJcnM3QmlCbWdxN1UyOUtMRkxTOWdiTFQ4dHRpZ2hzaTBfMlppUkJFTWtjbjdTUHlxT1VQdkVmQ0FwQ20yUEswWktkcFJkSnhTVTBqN3RSV1dua1h5Z0VQMHM?oc=5" target="_blank" style="color: #333; text-decoration: none;">亲伊朗黑客声称对美国主要医疗设备制造商- CNN发动网络攻击</a>
+                    </div>
+                    <p class="highlight-snippet" style="color: #444; font-size: 13px; margin: 8px 0; line-height: 1.5; font-weight: 500;">Pro-Iran hackers claim</p>
+                    <div class="highlight-meta">
+                        <span class="highlight-date">03-11 07:00</span> |
+                        <span class="highlight-source">Google News - Medical Device</span> |
+                        <span style="color: #1976d2;">🌍 海外</span>
+                    </div>
+                </div>
+            </div>
+            <div class="highlight-item">
+                <span class="highlight-num">10</span>
+                <div class="highlight-content">
+                    <div class="highlight-title">
+                        <a href="https://news.google.com/rss/articles/CBMieEFVX3lxTE52cUloOTlPa29HdVJUQlBCZEJyV21jZE4zbTg3YzVlSERZVEl1NUtCeFRfc2pSRzFFQ0dtX2U3R3ZBMDVWYTJJRVU5elNFang0cXpTbmExRHpYdlhPN0QzT0NSN1BtMlE3MHBHNW5iWjdzTjVla0pZeg?oc=5" target="_blank" style="color: #333; text-decoration: none;">苹果要求应用程序开发人员在欧洲经济区、英国和美国申报受监管医疗设备的状态- MacRumors</a>
+                    </div>
+                    <p class="highlight-snippet" style="color: #444; font-size: 13px; margin: 8px 0; line-height: 1.5; font-weight: 500;">Apple Requires App Developers to Declare Regulated Medical</p>
+                    <div class="highlight-meta">
+                        <span class="highlight-date">03-26 22:41</span> |
+                        <span class="highlight-source">Google News - Medical Device</span> |
+                        <span style="color: #1976d2;">🌍 海外</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="section-title">[All News]</div>
+    
+    <div class="news-item">
+        <div class="news-date">03-30 05:01</div>
+        <h3>1. 日本 PM Seeks to Ease Concerns Over Medical-Product Supplies - Bloombergcom</h3>
+        <p class="snippet"><a href="https://news.google.com/rss/articles/CBMisgFBVV95cUxOTl9zWm1OWHU3Umc0X1lQcXFuSU1QSFBaQVlyd0EtVTBhTm5jNUxCZHFQVnVHR2JnZmxUeTlqWkF1UW9TNWRMUGV6ZVpmSUYtSlprZTJkVXkxRkVLdmdJaWp0ZGk2UUVUQ185dXhRQzYteG5QSGphRjZQOHRnLXpqaWV3cHAxWVA3SHhYSnBVSUhFSDZMM3NrSnlyZ3VGNVZfdXZ1QnhzRGpLcmczSVdib09R?oc=5" tar</p>
+        <div class="news-meta">
+            <a href="https://news.google.com/rss/articles/CBMisgFBVV95cUxOTl9zWm1OWHU3Umc0X1lQcXFuSU1QSFBaQVlyd0EtVTBhTm5jNUxCZHFQVnVHR2JnZmxUeTlqWkF1UW9TNWRMUGV6ZVpmSUYtSlprZTJkVXkxRkVLdmdJaWp0ZGk2UUVUQ185dXhRQzYteG5QSGphRjZQOHRnLXpqaWV3cHAxWVA3SHhYSnBVSUhFSDZMM3NrSnlyZ3VGNVZfdXZ1QnhzRGpLcmczSVdib09R?oc=5" target="_blank">原文</a>
+            <span class="tag">Google News - Medical Device</span>
+            <span class="tag tag-foreign">EN</span>
+        </div>
+    </div>
+    <div class="news-item">
+        <div class="news-date">03-31 15:59</div>
+        <h3>2. Boston Scientific presents Watchman FLX and EKOS endovascular system data - Medical Device Network</h3>
+        <p class="snippet"><a href="https://news.google.com/rss/articles/CBMiuAFBVV95cUxQTnlvRWpvWFdWdVpaSzA3aVQ0N3Z3WmlhMUZfNGVuVFNObnlNZ1ZMRmJSb01yOGtjR0tmc1dIVGY1OHhieWxDcEtZM2MybS1ReTNtLTlGb3B5RGhJYmRPNHlFQUIybjZNS3F3OWZZNE5jdDdEaFFnLTVidzk5Y09tOEVPb3g3ZFY3aFY1UW8wUTUxYkhoSjJTVFBFQy1wai1taXRXWFVfTFZuNnh0OWJpai1iRjZxYWFQ?o</p>
+        <div class="news-meta">
+            <a href="https://news.google.com/rss/articles/CBMiuAFBVV95cUxQTnlvRWpvWFdWdVpaSzA3aVQ0N3Z3WmlhMUZfNGVuVFNObnlNZ1ZMRmJSb01yOGtjR0tmc1dIVGY1OHhieWxDcEtZM2MybS1ReTNtLTlGb3B5RGhJYmRPNHlFQUIybjZNS3F3OWZZNE5jdDdEaFFnLTVidzk5Y09tOEVPb3g3ZFY3aFY1UW8wUTUxYkhoSjJTVFBFQy1wai1taXRXWFVfTFZuNnh0OWJpai1iRjZxYWFQ?oc=5" target="_blank">原文</a>
+            <span class="tag">Google News - Medical Device</span>
+            <span class="tag tag-foreign">EN</span>
+        </div>
+    </div>
+    <div class="news-item">
+        <div class="news-date">03-31 17:20</div>
+        <h3>3. Keith White on Reframing Medical Device Marketing for the Modern Healthcare Economy - 美国A Today</h3>
+        <p class="snippet"><a href="https://news.google.com/rss/articles/CBMi-gFBVV95cUxQcDJPZ1RZUTA3VEZ3ZnRkQnAxU0duM3drLWZwWjNhYUQ4WXFFQW1iOG9uZUc5YWpHbW1rbmotckNEUzZudU03akVxc3VQS3kxQTFCZS0xX0p5TnE2UmUzM1lOX2xDUk1lekJ1VkxXUS1NOVdDVEJFeHgtNS1YekJQb1JFQ05DWktvNDhOU1ZJSWg1SENfb2x5X0JkaWlMaEhHT3RLX0JjeFhIX3dmNXlTSHZkOS1EMndHNk</p>
+        <div class="news-meta">
+            <a href="https://news.google.com/rss/articles/CBMi-gFBVV95cUxQcDJPZ1RZUTA3VEZ3ZnRkQnAxU0duM3drLWZwWjNhYUQ4WXFFQW1iOG9uZUc5YWpHbW1rbmotckNEUzZudU03akVxc3VQS3kxQTFCZS0xX0p5TnE2UmUzM1lOX2xDUk1lekJ1VkxXUS1NOVdDVEJFeHgtNS1YekJQb1JFQ05DWktvNDhOU1ZJSWg1SENfb2x5X0JkaWlMaEhHT3RLX0JjeFhIX3dmNXlTSHZkOS1EMndHNkpzM0R4WFBuWWVBLTAzanFEQTdxdktzUlBJblBrRkF1b1B1VmxsRW42N2xrTVFtOTBDUkFzNVdfSzhWS29LQmR3?oc=5" target="_blank">原文</a>
+            <span class="tag">Google News - Medical Device</span>
+            <span class="tag tag-foreign">EN</span>
+        </div>
+    </div>
+    <div class="news-item">
+        <div class="news-date">03-31 17:16</div>
+        <h3>4. MDO editor’s picks: Three technical talks at DeviceTalks Minnesota - Medical Design & Outsourcing</h3>
+        <p class="snippet">MDO editor’</p>
+        <div class="news-meta">
+            <a href="https://news.google.com/rss/articles/CBMioAFBVV95cUxPY2F0Q0FBOXpiQXZpOW5rZFZ5NjRtWEFzbkk3YTlKeThQcnQzU0RtQ3FBYnYtN2JTZVp2ako1bXpWNUhDdkZyLTg2a2NwTk9iV2p6ekJQb1Ryd0loM09nTkZPRUM3cmlHU3phcU5Nb0xaZWdYOFk4VjNBY1E3YkVnbElVbW0yU3RQZzJZMTZDTGVGb1lqVzVvYVc5OTkxbGVh?oc=5" target="_blank">原文</a>
+            <span class="tag">Google News - Medical Device</span>
+            <span class="tag tag-foreign">EN</span>
+        </div>
+    </div>
+    <div class="news-item">
+        <div class="news-date">04-01 01:31</div>
+        <h3>5. 美国FDA Grants Breakthrough Designation to Sonorous Neurovascular for Cerebral Venous Stent - Medical Product Outsourcing</h3>
+        <p class="snippet"><a href="https://news.google.com/rss/articles/CBMixAFBVV95cUxQXzdfRm9kdEhhSGVIVHJPUXZGc1RJQkVEUkIxdFA1NkZCQ2x4ZHo1QTZWLWhhdmVhUkViVGxBME5vclVmTDRma0tYMEhacjFBV1FER3BhTDdienRGRHBhcExPa1N6aExXdW5YLVZYbV9xQ3lwSTZZM3J6M3RRMWJSSWxWOGcwbTRzR0NsOE1WVnRrNk5QT0s5d2U2dGZBc2xtUjN4WVdHeVU0T2dySnZNSFBCNnIxRGhaTE</p>
+        <div class="news-meta">
+            <a href="https://news.google.com/rss/articles/CBMixAFBVV95cUxQXzdfRm9kdEhhSGVIVHJPUXZGc1RJQkVEUkIxdFA1NkZCQ2x4ZHo1QTZWLWhhdmVhUkViVGxBME5vclVmTDRma0tYMEhacjFBV1FER3BhTDdienRGRHBhcExPa1N6aExXdW5YLVZYbV9xQ3lwSTZZM3J6M3RRMWJSSWxWOGcwbTRzR0NsOE1WVnRrNk5QT0s5d2U2dGZBc2xtUjN4WVdHeVU0T2dySnZNSFBCNnIxRGhaTEduR2Noc2RucFc2?oc=5" target="_blank">原文</a>
+            <span class="tag">Google News - Medical Device</span>
+            <span class="tag tag-foreign">EN</span>
+        </div>
+    </div>
+    <div class="news-item">
+        <div class="news-date">03-31 21:47</div>
+        <h3>6. Serenity Medical earns 美国FDA humanitarian 批准 for cerebral venous stent - MassDevice</h3>
+        <p class="snippet">Serenity Medical earns FDA humanitarian approval for cerebral</p>
+        <div class="news-meta">
+            <a href="https://news.google.com/rss/articles/CBMie0FVX3lxTE1YNk92OThRSXdvZXVJUVBWckNtSEQ2N0RXdXl4Yk5qT1BQTmxyRzVnNHF2dWFwTHJzaS0yWEFObUhEY1llWDVvTUpjQWNZTUJKU1dvcFNyQ0tERWwyOVdCSkFSTXI3R2hDX0s0MXpEQ3EtZi1LeFRVTG9SSQ?oc=5" target="_blank">原文</a>
+            <span class="tag">Google News - Medical Device</span>
+            <span class="tag tag-foreign">EN</span>
+        </div>
+    </div>
+    <div class="news-item">
+        <div class="news-date">02-09 08:00</div>
+        <h3>7. As 人工智能 enters the operating room 报告s arise of botched surgeries and misidentified body parts - Reuters</h3>
+        <p class="snippet"><a href="https://news.google.com/rss/articles/CBMixAFBVV95cUxPb0EwdkM3R2tVX2RwczFRZFRnUGFBYlRoWG1Yb0d1Ul9XVHNvRUZzVnU5VThqZ1ZUVDFhc05SWG0zWTBDa1ZKLW04TXA2M1JHOGs1elZISTBhaHhvd1pGR05xaldGQ0xtRzNZUElvZk9IU1BIOWlLVDBIV0FZZnZ3V0lickNVbWZ1TWtPcjJtMHpFQV92QjhoNk9jUWFRcWIzZjFmV1cwYmRZRGRFR3Y2TU5CXy1STmZ5Sk</p>
+        <div class="news-meta">
+            <a href="https://news.google.com/rss/articles/CBMixAFBVV95cUxPb0EwdkM3R2tVX2RwczFRZFRnUGFBYlRoWG1Yb0d1Ul9XVHNvRUZzVnU5VThqZ1ZUVDFhc05SWG0zWTBDa1ZKLW04TXA2M1JHOGs1elZISTBhaHhvd1pGR05xaldGQ0xtRzNZUElvZk9IU1BIOWlLVDBIV0FZZnZ3V0lickNVbWZ1TWtPcjJtMHpFQV92QjhoNk9jUWFRcWIzZjFmV1cwYmRZRGRFR3Y2TU5CXy1STmZ5SkU5LVpyUDNCbzk5?oc=5" target="_blank">原文</a>
+            <span class="tag">Google News - Medical Device</span>
+            <span class="tag tag-foreign">EN</span>
+        </div>
+    </div>
+    <div class="news-item">
+        <div class="news-date">03-27 00:52</div>
+        <h3>8. Apple's App Store will show if an app is classified as a regulated medical 器械 - AppleInsider</h3>
+        <p class="snippet"><a href="https://news.google.com/rss/articles/CBMiwAFBVV95cUxNb0RsLXZpVXdyUWY2aEdxLWdHNEZMdUpUMFREX0VlbGJ6UnFqYzh2M0d3UnNicEphalVZU1I5RkgxWnJRdC1DVGtMdm9UUTNFZFlmZEhwVWZ5WHNRQTZrRWdDN3lsVG83TFZEeUw1OXdnTFR4NjNlektrUWVVUE5hRDVKRFlMSXRySGZfZ3BhVThmUWdUbWg5QVJrdXBTRWs2NFpvZTZYYzRyUHh0emtlZnN5bEQ3Y3pYeV</p>
+        <div class="news-meta">
+            <a href="https://news.google.com/rss/articles/CBMiwAFBVV95cUxNb0RsLXZpVXdyUWY2aEdxLWdHNEZMdUpUMFREX0VlbGJ6UnFqYzh2M0d3UnNicEphalVZU1I5RkgxWnJRdC1DVGtMdm9UUTNFZFlmZEhwVWZ5WHNRQTZrRWdDN3lsVG83TFZEeUw1OXdnTFR4NjNlektrUWVVUE5hRDVKRFlMSXRySGZfZ3BhVThmUWdUbWg5QVJrdXBTRWs2NFpvZTZYYzRyUHh0emtlZnN5bEQ3Y3pYeVJ6OC00bWQ?oc=5" target="_blank">原文</a>
+            <span class="tag">Google News - Medical Device</span>
+            <span class="tag tag-foreign">EN</span>
+        </div>
+    </div>
+    <div class="news-item">
+        <div class="news-date">03-11 07:00</div>
+        <h3>9. Pro-Iran hackers claim cyberattack on major 美国 medical 器械 maker - CNN</h3>
+        <p class="snippet">Pro-Iran hackers claim cyber</p>
+        <div class="news-meta">
+            <a href="https://news.google.com/rss/articles/CBMikwFBVV95cUxOZnY3cXgwdmJOay10aWg0MzFuMDJ2VC1MRzZmOGdPLUtzbV9CQWlTNTVkckd5Zy1qaXhJcnM3QmlCbWdxN1UyOUtMRkxTOWdiTFQ4dHRpZ2hzaTBfMlppUkJFTWtjbjdTUHlxT1VQdkVmQ0FwQ20yUEswWktkcFJkSnhTVTBqN3RSV1dua1h5Z0VQMHM?oc=5" target="_blank">原文</a>
+            <span class="tag">Google News - Medical Device</span>
+            <span class="tag tag-foreign">EN</span>
+        </div>
+    </div>
+    <div class="news-item">
+        <div class="news-date">03-26 22:41</div>
+        <h3>10. Apple Requires App Developers to Declare Regulated Medical Device Status in EEA UK and US - MacRumors</h3>
+        <p class="snippet">Apple Requires App Developers to Declare Regulated Medical Device</p>
+        <div class="news-meta">
+            <a href="https://news.google.com/rss/articles/CBMieEFVX3lxTE52cUloOTlPa29HdVJUQlBCZEJyV21jZE4zbTg3YzVlSERZVEl1NUtCeFRfc2pSRzFFQ0dtX2U3R3ZBMDVWYTJJRVU5elNFang0cXpTbmExRHpYdlhPN0QzT0NSN1BtMlE3MHBHNW5iWjdzTjVla0pZeg?oc=5" target="_blank">原文</a>
+            <span class="tag">Google News - Medical Device</span>
+            <span class="tag tag-foreign">EN</span>
+        </div>
+    </div>
+    <div class="news-item">
+        <div class="news-date">03-31 18:26</div>
+        <h3>11. Navigating the 人工智能 Regulatory Maze in Medical Device Manufacturing - orthospine新scom</h3>
+        <p class="snippet">N</p>
+        <div class="news-meta">
+            <a href="https://news.google.com/rss/articles/CBMipwFBVV95cUxOVGRiOGt3UGU1YWNsMkxxQkN6b1BGWVVjY01QYWVGVDlxWnNqbVR5b0YycDYzSW1acVlhQjhZQnk5UFBDbXBVU0RMckVVVWdCU2NPZXNqZDI3c01SOXcteWZ2WjJfb1V4YllTTXBZa1c4djBTZFo1dmtLLUtHWHZrZXhkVjBZbzE4Z3RwT1FIZktMNDlURlIzeVpGVVBOdHg1RUdGSTBtNA?oc=5" target="_blank">原文</a>
+            <span class="tag">Google News - Medical Device</span>
+            <span class="tag tag-foreign">EN</span>
+        </div>
+    </div>
+    <div class="news-item">
+        <div class="news-date">03-31 20:31</div>
+        <h3>12. Medical Far Infrared Therapy Device Market Analysis and Growth Forecast to 2035 - News and Statistics - IndexBox</h3>
+        <p class="snippet"><a href="https://news.google.com/rss/articles/CBMi0gFBVV95cUxNWXg4M3Rlc2tmckNaSVBuSzc0azIwNUxkZlNjY19jd09HX25nRjMxQ0MzVWJKMXBGMFpXcU0wanFmTm1ndllDS1FCWlVUWFFHZmg2RVFBVjZYTGEwU19hSmcydWlidUdzdWxQUVZDM0VxRnZrN0ZoWnlEeGdlaDMxSTJ2ZE85aW44MlAtZEt6cXNtMHFCREZjUlhnanR6OTlzTjBRTm0tekczUmdtTWwzY050ZlYybmF2NX</p>
+        <div class="news-meta">
+            <a href="https://news.google.com/rss/articles/CBMi0gFBVV95cUxNWXg4M3Rlc2tmckNaSVBuSzc0azIwNUxkZlNjY19jd09HX25nRjMxQ0MzVWJKMXBGMFpXcU0wanFmTm1ndllDS1FCWlVUWFFHZmg2RVFBVjZYTGEwU19hSmcydWlidUdzdWxQUVZDM0VxRnZrN0ZoWnlEeGdlaDMxSTJ2ZE85aW44MlAtZEt6cXNtMHFCREZjUlhnanR6OTlzTjBRTm0tekczUmdtTWwzY050ZlYybmF2NXFJdVp2Sm0zU0lsZzZxdlZfUlp5QTh0TkE?oc=5" target="_blank">原文</a>
+            <span class="tag">Google News - Medical Device</span>
+            <span class="tag tag-foreign">EN</span>
+        </div>
+    </div>
+    <div class="news-item">
+        <div class="news-date">03-31 13:50</div>
+        <h3>13. Liquid silicone rubber in medical 器械 development and production - Today's Medical Developments</h3>
+        <p class="snippet"><a href="https://news.google.com/rss/articles/CBMisAFBVV95cUxPa2ZpZjhqbUZ4WnhNZVN6eFNqNDM2LU9lNlpXRVROMl9pOWg0TjRDZGtDNDZ5QWpnRW1EQzZxbGJtSzUzSTBlSEtsMWsxRXpHbmxiNm9USUU1Tnl0ZjRRUVRSejNocElaMGNmbXlLa2M3MzU4cFAxMHZGUXlDSUxKR3RFbFYzOWsydzhNOUR2QmpNNXluY3MzQmFaQkl3eEt2elFmVmxjb1piMGMyS1hvbg?oc=5" targe</p>
+        <div class="news-meta">
+            <a href="https://news.google.com/rss/articles/CBMisAFBVV95cUxPa2ZpZjhqbUZ4WnhNZVN6eFNqNDM2LU9lNlpXRVROMl9pOWg0TjRDZGtDNDZ5QWpnRW1EQzZxbGJtSzUzSTBlSEtsMWsxRXpHbmxiNm9USUU1Tnl0ZjRRUVRSejNocElaMGNmbXlLa2M3MzU4cFAxMHZGUXlDSUxKR3RFbFYzOWsydzhNOUR2QmpNNXluY3MzQmFaQkl3eEt2elFmVmxjb1piMGMyS1hvbg?oc=5" target="_blank">原文</a>
+            <span class="tag">Google News - Medical Device</span>
+            <span class="tag tag-foreign">EN</span>
+        </div>
+    </div>
+    <div class="news-item">
+        <div class="news-date">03-31 15:59</div>
+        <h3>14. Lucida Medical raises $114m to advance 人工智能 prostate cancer 诊断 - Medical Device Network</h3>
+        <p class="snippet"><a href="https://news.google.com/rss/articles/CBMirgFBVV95cUxPamlRTGRBLUlXZlhSVXJXamlXbDEyU3dxWXE2Rk5hZ1JKS0NVczRoU2VRTUdZc0hab0ZYUklFSDh4LVFUMTNQOTlEYkZkYmJkbzk2SFJWVkJrSlFmLXNVb2lXMFJvN09XT2lCcWM1RmFfSnNGWVc5MlBVM1hmNE1tVFM4cjBzUmlINjFEWDlUT1J5OW1pWUFLTDlERmw0aUVsY0k5UGZqTzR1Z1VLV2c?oc=5" target="</p>
+        <div class="news-meta">
+            <a href="https://news.google.com/rss/articles/CBMirgFBVV95cUxPamlRTGRBLUlXZlhSVXJXamlXbDEyU3dxWXE2Rk5hZ1JKS0NVczRoU2VRTUdZc0hab0ZYUklFSDh4LVFUMTNQOTlEYkZkYmJkbzk2SFJWVkJrSlFmLXNVb2lXMFJvN09XT2lCcWM1RmFfSnNGWVc5MlBVM1hmNE1tVFM4cjBzUmlINjFEWDlUT1J5OW1pWUFLTDlERmw0aUVsY0k5UGZqTzR1Z1VLV2c?oc=5" target="_blank">原文</a>
+            <span class="tag">Google News - Medical Device</span>
+            <span class="tag tag-foreign">EN</span>
+        </div>
+    </div>
+    <div class="news-item">
+        <div class="news-date">03-31 21:06</div>
+        <h3>15. Implantable Orthopedic Device Maker Reports Hack - Bank Info Security</h3>
+        <p class="snippet">Implantable Orthopedic Devic</p>
+        <div class="news-meta">
+            <a href="https://news.google.com/rss/articles/CBMikwFBVV95cUxPRWlPOVdKNUhCbnNWNE5QaU84T0NLU3hQVzBMR3FLNUtFeERjanpVUU1SZDZvU0Y5c180eHgzQUhyaXcyemJaOUsxZFc3WXhWRl9hU2lpTGJaZ1oxQjJaRkdfQXZrRzFxTTlYOS16WFY3UFF0eFpmYmdFY0pXRG1hUzluZFJ3bWVnR29RRHJOTkhNcjQ?oc=5" target="_blank">原文</a>
+            <span class="tag">Google News - Medical Device</span>
+            <span class="tag tag-foreign">EN</span>
+        </div>
+    </div>
+    <div class="news-item">
+        <div class="news-date">03-31 16:26</div>
+        <h3>16. Medical Device Innovator Lands Strategic Partner to Accelerate US Expansion - The Globe and Mail</h3>
+        <p class="snippet"><a href="https://news.google.com/rss/articles/CBMi8gFBVV95cUxQOXBzZ3ViV0h1Q18tbkdFbFQ1cEJwNnFRU2E4bkwzVWd5VGlIcVRfSTVaTnhETXJXcTNpenVnMVB2eW8tM2JMQmpiTVBLbS1GbnhKaWRMd1dGQ0xwQmVzS2xZMFBHOFNDZFlFN1NSVXhIWlVjMk9ldnB1T1h5cjhiWjZKRm1sTlVMYUtURTJKTktPbzNYUTN2bGpvVmZoMDNFcExHWkdOSjNKQUVsU0dlOVJxNHY2ZXRoNE</p>
+        <div class="news-meta">
+            <a href="https://news.google.com/rss/articles/CBMi8gFBVV95cUxQOXBzZ3ViV0h1Q18tbkdFbFQ1cEJwNnFRU2E4bkwzVWd5VGlIcVRfSTVaTnhETXJXcTNpenVnMVB2eW8tM2JMQmpiTVBLbS1GbnhKaWRMd1dGQ0xwQmVzS2xZMFBHOFNDZFlFN1NSVXhIWlVjMk9ldnB1T1h5cjhiWjZKRm1sTlVMYUtURTJKTktPbzNYUTN2bGpvVmZoMDNFcExHWkdOSjNKQUVsU0dlOVJxNHY2ZXRoNEVKamRIN1ByMGtVeG85TUJaelJweFhtSmtKQmVjUmlYUHZSZTJueFo1SGVBbGJ4bm5halJOZmtJQQ?oc=5" target="_blank">原文</a>
+            <span class="tag">Google News - Medical Device</span>
+            <span class="tag tag-foreign">EN</span>
+        </div>
+    </div>
+    <div class="news-item">
+        <div class="news-date">03-31 15:16</div>
+        <h3>17. Applied Medical Technology Inc Expands MiniSPC® Button a Low Profile Suprapubic Catheter - PR Newswire</h3>
+        <p class="snippet"><a href="https://news.google.com/rss/articles/CBMi2wFBVV95cUxOS1ZINTVWbkZXbE9TRDRqaFAtTXMtSm9nNDRiam91QUI0U0o3UkR0VGdzdGRPX0wzbmp3a29aTmpYMnNxZ2JoS3lJQlJPWTE1cV90dklDOVJ5Qk9saFJfcTVsS0xJdnk0N1luQW9jN0VudmstUzBlWEd5WGhYZDEweTBtaXhQclRUaGM5U2Q5YlhYejlhTjN6S3J4RjROcUpSenVUQ183SU1ZdUZKRWg0RHN0bUVJRk5DUE</p>
+        <div class="news-meta">
+            <a href="https://news.google.com/rss/articles/CBMi2wFBVV95cUxOS1ZINTVWbkZXbE9TRDRqaFAtTXMtSm9nNDRiam91QUI0U0o3UkR0VGdzdGRPX0wzbmp3a29aTmpYMnNxZ2JoS3lJQlJPWTE1cV90dklDOVJ5Qk9saFJfcTVsS0xJdnk0N1luQW9jN0VudmstUzBlWEd5WGhYZDEweTBtaXhQclRUaGM5U2Q5YlhYejlhTjN6S3J4RjROcUpSenVUQ183SU1ZdUZKRWg0RHN0bUVJRk5DUE9aWU1yY0JucVhWcjk5WTlLRExXSTczdnp4SmxGMEpkcDQ?oc=5" target="_blank">原文</a>
+            <span class="tag">Google News - Medical Device</span>
+            <span class="tag tag-foreign">EN</span>
+        </div>
+    </div>
+    <div class="news-item">
+        <div class="news-date">04-01 00:03</div>
+        <h3>18. Global Wearable Tech Market to Nearly Double by 2030 - Medical Product Outsourcing</h3>
+        <p class="snippet">Global Wearable Tech Mar</p>
+        <div class="news-meta">
+            <a href="https://news.google.com/rss/articles/CBMilgFBVV95cUxPYWY1Y1RBNjZfdjMzRHQwQW8zZ1FzWlZzb0NvZUk0S0tmeU1jX0NXR1lKRzJfY1RZcGxiTnZJLTBfTUNwOXBjdnJIdjdFRWoyOXp0d1BsQUdsdVc5elJXcURTb1duUE5Kek03TE5FcGpaUXpJcmxMZ1VOZXlwcWltN0IzRVJQSUdfSERfc3B1ZERYdHBjdmc?oc=5" target="_blank">原文</a>
+            <span class="tag">Google News - Medical Device</span>
+            <span class="tag tag-foreign">EN</span>
+        </div>
+    </div>
+    <div class="news-item">
+        <div class="news-date">03-31 13:50</div>
+        <h3>19. How 可穿戴 medtech is transforming medical 器械 development - Today's Medical Developments</h3>
+        <p class="snippet"><a href="https://news.google.com/rss/articles/CBMirwFBVV95cUxQWkFTb3YxLXA1SW1VRHZodU56Sy04dHd6UFJpMU5JQWo1V2lVNHlOVENmR0p3MnNHdjlDM2kxdmtiMUJkbXV6enI1YWlvSl9iTjdfR0d2X1k1ZURKWTFTUWY5TUluTFhFd2FyM0Z2LU12LV9mTkViQno4UVI1TFJiQ3k5Zm9fNjJ0ZXRkZEFwRE1nX0JFc0Z1ZHFyZ0J5dkRNUGY3aVlkX1UwMl82dlA0?oc=5" target=</p>
+        <div class="news-meta">
+            <a href="https://news.google.com/rss/articles/CBMirwFBVV95cUxQWkFTb3YxLXA1SW1VRHZodU56Sy04dHd6UFJpMU5JQWo1V2lVNHlOVENmR0p3MnNHdjlDM2kxdmtiMUJkbXV6enI1YWlvSl9iTjdfR0d2X1k1ZURKWTFTUWY5TUluTFhFd2FyM0Z2LU12LV9mTkViQno4UVI1TFJiQ3k5Zm9fNjJ0ZXRkZEFwRE1nX0JFc0Z1ZHFyZ0J5dkRNUGY3aVlkX1UwMl82dlA0?oc=5" target="_blank">原文</a>
+            <span class="tag">Google News - Medical Device</span>
+            <span class="tag tag-foreign">EN</span>
+        </div>
+    </div>
+    <div class="news-item">
+        <div class="news-date">04-01 03:46</div>
+        <h3>20. Intraoperative Neuro监测 Devices Market Forecast Points Higher Toward 2035 Driven by Surgical Precision Demands - IndexBox</h3>
+        <p class="snippet"><a href="https://news.google.com/rss/articles/CBMi4AFBVV95cUxQX3E0UERIUWJPSmxtaVhBVXByMUt0S0k4bGJURzBCb201QVVPWnl1Mkd6TXdCX2ZPYTVzUlhrUUNaOGVTU0d6S0w0WUFkcE9PcGZRU0ZVdmk3NkhhWnJoYi1EMEtFSk1oYW9SdDlja2JfNFZkSk9tampWTGpmQzIyNkJ1ZjAxOUwySGZGbEdQWWZtamU5cmdpT3g3UVlPOF9RdFNxRVVicDFTUmNuLVVKNG11SDVpdjhVY3</p>
+        <div class="news-meta">
+            <a href="https://news.google.com/rss/articles/CBMi4AFBVV95cUxQX3E0UERIUWJPSmxtaVhBVXByMUt0S0k4bGJURzBCb201QVVPWnl1Mkd6TXdCX2ZPYTVzUlhrUUNaOGVTU0d6S0w0WUFkcE9PcGZRU0ZVdmk3NkhhWnJoYi1EMEtFSk1oYW9SdDlja2JfNFZkSk9tampWTGpmQzIyNkJ1ZjAxOUwySGZGbEdQWWZtamU5cmdpT3g3UVlPOF9RdFNxRVVicDFTUmNuLVVKNG11SDVpdjhVY3ZSaGFUbmdDZGtLZmZsVklPdHpuZ3RYQmhLRmxoci1nMFlVemRKNA?oc=5" target="_blank">原文</a>
+            <span class="tag">Google News - Medical Device</span>
+            <span class="tag tag-foreign">EN</span>
+        </div>
+    </div>
+    <div class="news-item">
+        <div class="news-date">03-27 14:18</div>
+        <h3>21. Philips wins 美国FDA 获批 for imaging 器械 developed with Edwards - MedTech Dive</h3>
+        <p class="snippet"><a href="https://news.google.com/rss/articles/CBMirgFBVV95cUxNR3NvNWc1bW9NMnRackFOZFZXYjlaQ3B5U3JyUzdkaWs0dlNkV1lWcmFjRGQ2R0VDTWQxNDZzLUZBQW82RW9PdXVmeDdkVTBiaTVvTnNTUC1SUlEyRVZxWjVtZ1BGTlVRTnBWWjJUdE1vdWFZa09LRVRLaG5keFlqM19pNVFiWVRuOV95MkR4SUhIT0t2aGpxZFpQU1ZodWRnU1FIZXc3czc0eDNEcFE?oc=5" target="</p>
+        <div class="news-meta">
+            <a href="https://news.google.com/rss/articles/CBMirgFBVV95cUxNR3NvNWc1bW9NMnRackFOZFZXYjlaQ3B5U3JyUzdkaWs0dlNkV1lWcmFjRGQ2R0VDTWQxNDZzLUZBQW82RW9PdXVmeDdkVTBiaTVvTnNTUC1SUlEyRVZxWjVtZ1BGTlVRTnBWWjJUdE1vdWFZa09LRVRLaG5keFlqM19pNVFiWVRuOV95MkR4SUhIT0t2aGpxZFpQU1ZodWRnU1FIZXc3czc0eDNEcFE?oc=5" target="_blank">原文</a>
+            <span class="tag">Google News - MedTech</span>
+            <span class="tag tag-foreign">EN</span>
+        </div>
+    </div>
+    <div class="news-item">
+        <div class="news-date">03-30 17:44</div>
+        <h3>22. CDRH Guidance: Patient Preference Information (PPI) in Medical Device Decision Making - MedTech Intelligence</h3>
+        <p class="snippet"><a href="https://news.google.com/rss/articles/CBMiugFBVV95cUxQVkFPYkF3elNLM21jRmlQZ0VRaWdqSEVxbGVKQjJJZFRHN0dWVF85QU9LdDJVczlJTmxzY1A5SjgzNGlZOFdOM1VSNkRQN0tLdWYzUzNncDdCdkRycXBXWDFMd0NsbmEyeUctNXNJNGF5bnkyd1h0QU1QYndFYm9MSjRoUXY5bkZVdDdub2RhSzI4bDBha2RPM1MzaXJDeWllbFAxRUYyc0FfTEg4bVYwYUhFeUZONmg0VV</p>
+        <div class="news-meta">
+            <a href="https://news.google.com/rss/articles/CBMiugFBVV95cUxQVkFPYkF3elNLM21jRmlQZ0VRaWdqSEVxbGVKQjJJZFRHN0dWVF85QU9LdDJVczlJTmxzY1A5SjgzNGlZOFdOM1VSNkRQN0tLdWYzUzNncDdCdkRycXBXWDFMd0NsbmEyeUctNXNJNGF5bnkyd1h0QU1QYndFYm9MSjRoUXY5bkZVdDdub2RhSzI4bDBha2RPM1MzaXJDeWllbFAxRUYyc0FfTEg4bVYwYUhFeUZONmg0VVHSAboBQVVfeXFMUFZBT2JBd3pTSzNtY0ZpUGdFUWlnakhFcWxlSkIySWRURzdHVlRfOUFPS3QyVXM5SU5sc2NQOUo4MzRpWThXTjNVUjZEUDdLS3VmM1MzZ3A3QnZEcnFwV1gxTHdDbG5hMnlHLTVzSTRheW55MndYdEFNUGJ3RWJvTEo0aFF2OW5GVXQ3bm9kYUsyOGwwYWtkTzNTM2lyQ3lpZWxQMUVGMnNBX0xIOG1WMGFIRXlGTjZoNFVR?oc=5" target="_blank">原文</a>
+            <span class="tag">Google News - MedTech</span>
+            <span class="tag tag-foreign">EN</span>
+        </div>
+    </div>
+    <div class="news-item">
+        <div class="news-date">03-30 17:36</div>
+        <h3>23. Medical tech company raises $6 million after securing 美国FDA 批准 - bizjournalscom</h3>
+        <p class="snippet"><a href="https://news.google.com/rss/articles/CBMisAFBVV95cUxNb0dMMUVFM1U3N3F5TVRWemI4S0MycVFwTl9GTGU2eExXV2FkZHhIWndIS0d2ZTdrQ19hNXJ6YzFmM1VNeTNhc2ZLajNrSkdfX01NUnlfbWR0bk9nMnJsN0VkUTkteHBTb19YQ2NVbndneWRwaTVsYTVIbm9BMTBYaC01MzZZMFpVbXdiOWVVQ0ZlUV9PRUxtS1NYVl9rZDBLcFJGMnRXM1pJaEhiN3QzSw?oc=5" targe</p>
+        <div class="news-meta">
+            <a href="https://news.google.com/rss/articles/CBMisAFBVV95cUxNb0dMMUVFM1U3N3F5TVRWemI4S0MycVFwTl9GTGU2eExXV2FkZHhIWndIS0d2ZTdrQ19hNXJ6YzFmM1VNeTNhc2ZLajNrSkdfX01NUnlfbWR0bk9nMnJsN0VkUTkteHBTb19YQ2NVbndneWRwaTVsYTVIbm9BMTBYaC01MzZZMFpVbXdiOWVVQ0ZlUV9PRUxtS1NYVl9rZDBLcFJGMnRXM1pJaEhiN3QzSw?oc=5" target="_blank">原文</a>
+            <span class="tag">Google News - MedTech</span>
+            <span class="tag tag-foreign">EN</span>
+        </div>
+    </div>
+    <div class="news-item">
+        <div class="news-date">12-16 08:00</div>
+        <h3>24. 美国FDA opens door to massive real-world datasets in medical 器械 submissions - Fierce Biotech</h3>
+        <p class="snippet"><a href="https://news.google.com/rss/articles/CBMiqwFBVV95cUxOVk91M1VKbjU5RlVvbnR2Q1BITXBFYktISDkyVzBSZFFFNVZyRVMyVktfWjNmay1XUDZvN1JZdDJTNTlzUVNaa0dQTEExcWh2ejZHSnRRSHZMZ2J3ZEFreExpckhLUXkwXzdLMFZDNkt6Wmx3NWZMRGxfblRvTUM0ZzhHanNhV0cwSEJoV0N2cmlkaUVDMUJiMTFMdXQ2emE4ZW1GQ1QtRl9MOG8?oc=5" target="_bla</p>
+        <div class="news-meta">
+            <a href="https://news.google.com/rss/articles/CBMiqwFBVV95cUxOVk91M1VKbjU5RlVvbnR2Q1BITXBFYktISDkyVzBSZFFFNVZyRVMyVktfWjNmay1XUDZvN1JZdDJTNTlzUVNaa0dQTEExcWh2ejZHSnRRSHZMZ2J3ZEFreExpckhLUXkwXzdLMFZDNkt6Wmx3NWZMRGxfblRvTUM0ZzhHanNhV0cwSEJoV0N2cmlkaUVDMUJiMTFMdXQ2emE4ZW1GQ1QtRl9MOG8?oc=5" target="_blank">原文</a>
+            <span class="tag">Google News - MedTech</span>
+            <span class="tag tag-foreign">EN</span>
+        </div>
+    </div>
+    <div class="news-item">
+        <div class="news-date">12-18 08:00</div>
+        <h3>25. Medtronic J&J MedTech both get 美国FDA nods for liquid embolic systems - MassDevice</h3>
+        <p class="snippet">Medtronic, J&J MedTech both get FDA nods for liqu</p>
+        <div class="news-meta">
+            <a href="https://news.google.com/rss/articles/CBMigAFBVV95cUxOWWhWVVZJM1JVOWF4YmZwRGNSaVdfd2hJWE82cU5vZEJza3ZuZ0dJQ1ZMeFRzSXp3T0M0Y3NsZFBGaXpOdURaOUJoNHVIbUpWcWlYdVY5cmVlamhzMGY0TUZEWDBwQmpubXNKOEZQNTRDODY2dW1XUEJHNmNYS2Z0Zg?oc=5" target="_blank">原文</a>
+            <span class="tag">Google News - MedTech</span>
+            <span class="tag tag-foreign">EN</span>
+        </div>
+    </div>
+    <div class="news-item">
+        <div class="news-date">03-25 16:00</div>
+        <h3>26. Medtronic’s OmniaSecure defibrillation lead earns expanded 美国FDA indication - MedTech Dive</h3>
+        <p class="snippet"><a href="https://news.google.com/rss/articles/CBMiswFBVV95cUxQTEdtUGxnRkhPMWNzN0RNTXVNdnUwd1JXLWdCNWVJQXNtTlhLZEl4b2xxY3JJdWI0SUVyTldCd1VDXzZpaFpCUmp3QnYxR2lTZmRlSlVud0VTNk1ZeG8wZ2pkMU5fdl9jU085blYxSUdoVU0ydWloZ01IQjk3VHdyYW50cENHa0haT25udzlpNVUwRjdXaHZWei1waDVrWWJ2aTFub1RvbHdEUVN2MDJLMHZzWQ?oc=5" t</p>
+        <div class="news-meta">
+            <a href="https://news.google.com/rss/articles/CBMiswFBVV95cUxQTEdtUGxnRkhPMWNzN0RNTXVNdnUwd1JXLWdCNWVJQXNtTlhLZEl4b2xxY3JJdWI0SUVyTldCd1VDXzZpaFpCUmp3QnYxR2lTZmRlSlVud0VTNk1ZeG8wZ2pkMU5fdl9jU085blYxSUdoVU0ydWloZ01IQjk3VHdyYW50cENHa0haT25udzlpNVUwRjdXaHZWei1waDVrWWJ2aTFub1RvbHdEUVN2MDJLMHZzWQ?oc=5" target="_blank">原文</a>
+            <span class="tag">Google News - MedTech</span>
+            <span class="tag tag-foreign">EN</span>
+        </div>
+    </div>
+    <div class="news-item">
+        <div class="news-date">03-18 07:00</div>
+        <h3>27. JenaValve snags 美国FDA 批准 in aortic regurgitation - MedTech Dive</h3>
+        <p class="snippet">JenaValve snags FDA approval in aorti</p>
+        <div class="news-meta">
+            <a href="https://news.google.com/rss/articles/CBMijAFBVV95cUxPVERUZUNsOHJXTEZiUC0xSk1JZy0xWXZIVmo0RS16OU9FLTY5M0lpVklmWkw3ejJhMUI5MUQ1X0N3Z2RfYXRyVWozdkdYVVA1SlBGWGhPVDFCSjdtLUszTF9POWtlX2V6Wl9QZnpJak5NY0hBX0xhUVZFREVCWDhHNF9xd3hmRGFHcExYTw?oc=5" target="_blank">原文</a>
+            <span class="tag">Google News - MedTech</span>
+            <span class="tag tag-foreign">EN</span>
+        </div>
+    </div>
+    <div class="news-item">
+        <div class="news-date">03-02 08:00</div>
+        <h3>28. Abbott wins 美国FDA 批准 for updated heart failure 监测 器械 - MedTech Dive</h3>
+        <p class="snippet"><a href="https://news.google.com/rss/articles/CBMirgFBVV95cUxPdW1rbUdvcHU4bUNuU3c0UTZwSFVQeGVjdjFpSjNod1ZhQjNZejFDeUZCeDNUd3poQmtjM0E1YXNmSExhVWRDdlhpVGRXNWRwSVdNZDJlMmJBajh0VzNaZ0hLclBCbENVa0g1NDVpNUNMMVNTbEt6TUdpbkN2X0RaN1B1R2otd0N1dmZmdC14dzg1OHlWbm1hYUY2VEttbFp5dXlSMVBGb0RERFZDSWc?oc=5" target="</p>
+        <div class="news-meta">
+            <a href="https://news.google.com/rss/articles/CBMirgFBVV95cUxPdW1rbUdvcHU4bUNuU3c0UTZwSFVQeGVjdjFpSjNod1ZhQjNZejFDeUZCeDNUd3poQmtjM0E1YXNmSExhVWRDdlhpVGRXNWRwSVdNZDJlMmJBajh0VzNaZ0hLclBCbENVa0g1NDVpNUNMMVNTbEt6TUdpbkN2X0RaN1B1R2otd0N1dmZmdC14dzg1OHlWbm1hYUY2VEttbFp5dXlSMVBGb0RERFZDSWc?oc=5" target="_blank">原文</a>
+            <span class="tag">Google News - MedTech</span>
+            <span class="tag tag-foreign">EN</span>
+        </div>
+    </div>
+    <div class="news-item">
+        <div class="news-date">02-13 08:00</div>
+        <h3>29. Novocure wins 美国FDA 批准 to treat pancreatic cancer with electric fields - MedTech Dive</h3>
+        <p class="snippet"><a href="https://news.google.com/rss/articles/CBMitgFBVV95cUxPTlFSV0FmZTVYOGt6MlJ2bG5nVVItOWE2Y290Z1g0QzhNa3RTcjd4YmVJOUxnZm1KbHNKV1BtUzBFeUpZV1J6aWUwbmYwMTVQTVIzZ1hDY0FJOWtPSGh0YU9FM1J6UTVJYkxmUG81b0hnMG5yTm5DcFBPUG5fZkF5T2FMVlVsbmtQdHJNTFUtV1RwbTVhRHJ0SC1acHczTkNfRldEZi14Tkg4eEliNWw0NTJWRGlrZw?oc=</p>
+        <div class="news-meta">
+            <a href="https://news.google.com/rss/articles/CBMitgFBVV95cUxPTlFSV0FmZTVYOGt6MlJ2bG5nVVItOWE2Y290Z1g0QzhNa3RTcjd4YmVJOUxnZm1KbHNKV1BtUzBFeUpZV1J6aWUwbmYwMTVQTVIzZ1hDY0FJOWtPSGh0YU9FM1J6UTVJYkxmUG81b0hnMG5yTm5DcFBPUG5fZkF5T2FMVlVsbmtQdHJNTFUtV1RwbTVhRHJ0SC1acHczTkNfRldEZi14Tkg4eEliNWw0NTJWRGlrZw?oc=5" target="_blank">原文</a>
+            <span class="tag">Google News - MedTech</span>
+            <span class="tag tag-foreign">EN</span>
+        </div>
+    </div>
+    <div class="news-item">
+        <div class="news-date">03-24 14:39</div>
+        <h3>30. GE HealthCare wins 美国FDA nod for photon-counting CT technology - MedTech Dive</h3>
+        <p class="snippet"><a href="https://news.google.com/rss/articles/CBMiqwFBVV95cUxQcGhvSmhjY255clVMY0ZUYTZ3N3NHSEtsdmdNcklWYllVaVVZWVFLeTZQeVNPQTAtXzZxYXVyWllhWXhLZThDeE55TU53YzZvQ2RqeEs4d2Z2ZVpFWGo5T1gzNXAyd0dOaXlKVHBUQ0ZoVjNxeVFNZWZpM19uMmZ6bWtzQ0tlNjVMZ0VqM2lrOTdOR3Y4UlB6TFVkSnNzQ3M2bnY4cmVkSU5TZms?oc=5" target="_bla</p>
+        <div class="news-meta">
+            <a href="https://news.google.com/rss/articles/CBMiqwFBVV95cUxQcGhvSmhjY255clVMY0ZUYTZ3N3NHSEtsdmdNcklWYllVaVVZWVFLeTZQeVNPQTAtXzZxYXVyWllhWXhLZThDeE55TU53YzZvQ2RqeEs4d2Z2ZVpFWGo5T1gzNXAyd0dOaXlKVHBUQ0ZoVjNxeVFNZWZpM19uMmZ6bWtzQ0tlNjVMZ0VqM2lrOTdOR3Y4UlB6TFVkSnNzQ3M2bnY4cmVkSU5TZms?oc=5" target="_blank">原文</a>
+            <span class="tag">Google News - MedTech</span>
+            <span class="tag tag-foreign">EN</span>
+        </div>
+    </div>
+    <div class="news-item">
+        <div class="news-date">12-05 08:00</div>
+        <h3>31. 美国FDA advisory panel votes unanimously against J&J heart shunt - MedTech Dive</h3>
+        <p class="snippet">FDA advisory panel votes unanimousl</p>
+        <div class="news-meta">
+            <a href="https://news.google.com/rss/articles/CBMijgFBVV95cUxPQWVJZkxraEdpSnBLb25nUmN5MVNocThiZGhuS01iZXVSbkt4UEJSQzlYNW1zZkctS3J4M3FyRjZaMkUtX1BKUGI4TGxuWUdJOXlBWW9acEE4WlNMXzE0bWlrbTlVZ0FJZWVvVjZmN3JTYkotQUF1WmFDeTdhSFEzWVExUGFmaXZ1d2ZiRDNn?oc=5" target="_blank">原文</a>
+            <span class="tag">Google News - MedTech</span>
+            <span class="tag tag-foreign">EN</span>
+        </div>
+    </div>
+    <div class="news-item">
+        <div class="news-date">01-08 08:00</div>
+        <h3>32. 美国FDA exempts more 可穿戴 人工智能 features from oversight - MedTech Dive</h3>
+        <p class="snippet">FDA exempts more wearable, AI features f</p>
+        <div class="news-meta">
+            <a href="https://news.google.com/rss/articles/CBMiigFBVV95cUxOdXpzOW1fWWducWFrTHhwd0JwdndrTVBOUGoxVHdNdmJjOEczd2lOdC0wOHBLZ0hfTkRLQzJlaW03WW9BQlR0Tl9oby1zektFU2ZMY0lkeTUyTnZiV1pZdVF5UjFNa3lOY184LUdIWGNlMGV5MVJONWV5NWVGOU8tWm5seGppZHFxc0E?oc=5" target="_blank">原文</a>
+            <span class="tag">Google News - MedTech</span>
+            <span class="tag tag-foreign">EN</span>
+        </div>
+    </div>
+    <div class="news-item">
+        <div class="news-date">12-08 08:00</div>
+        <h3>33. What medtech firms can learn from Whoop’s warning letter - MedTech Dive</h3>
+        <p class="snippet">What medtech firms can learn from Whoop’s warning</p>
+        <div class="news-meta">
+            <a href="https://news.google.com/rss/articles/CBMigwFBVV95cUxOVEh0OFpPUFZrcHpZNjFSTG1Wa2JPYVdoWnpPRkZZZFRueTVFZFVsOE5ZS2VRUXF3TjRrTkc1Qk5UQkFFOElNMV9UUTJqbjVyTDVuU3VtMHN5dHpEZWtGODFZNFVheVU3WV9oX3JleDhuOXdUU0pLNVA5V2NyeEMxZmpRMA?oc=5" target="_blank">原文</a>
+            <span class="tag">Google News - MedTech</span>
+            <span class="tag tag-foreign">EN</span>
+        </div>
+    </div>
+    <div class="news-item">
+        <div class="news-date">12-10 08:00</div>
+        <h3>34. 美国FDA pilots allowing 数字化 health 器械s access to CMS payment program - MedTech Dive</h3>
+        <p class="snippet">FDA pilots allowing digital health devices access to</p>
+        <div class="news-meta">
+            <a href="https://news.google.com/rss/articles/CBMigAFBVV95cUxPOHZfRTFUZlRkdmNuWDBuNVRXbi1MWjRfcE1SdHdVN254NnprZEx5c2FCRzA1dzAtLWlGUmF3ckhWRkJMUlJLZ1JLcW5maHc1U2RIb2VPdk0tOGVzR2xXWFJxRnUwRzFuYklEcXBkQ1ZseG5NN3hBY042OVAyVkhRUw?oc=5" target="_blank">原文</a>
+            <span class="tag">Google News - MedTech</span>
+            <span class="tag tag-foreign">EN</span>
+        </div>
+    </div>
+    <div class="news-item">
+        <div class="news-date">12-04 08:00</div>
+        <h3>35. Medtronic’s Hugo 外科 机器人 earns 美国FDA 获批 - MedTech Dive</h3>
+        <p class="snippet">Medtronic’s Hugo surgical robot earns F</p>
+        <div class="news-meta">
+            <a href="https://news.google.com/rss/articles/CBMiiwFBVV95cUxOMEVmdmlfSndpWFZUNXctV3V1Q3U1aHhNQWZEdkR2NlRBRnlsZ083UElkZExwYXJJbkVwdVIyZmVfNEx2d2FKT3poc0hzWkgydEZXckpoU3pjYnpPdDJDZm14c0JTRU1LRmdzXzlEeWt4TEp3VWFJNUdtYWtBeU5xSHludFpSZXFOV1M4?oc=5" target="_blank">原文</a>
+            <span class="tag">Google News - MedTech</span>
+            <span class="tag tag-foreign">EN</span>
+        </div>
+    </div>
+    <div class="news-item">
+        <div class="news-date">01-13 08:00</div>
+        <h3>36. Medtronic gets 美国FDA 获批 for smart insulin pen app - MedTech Dive</h3>
+        <p class="snippet">Medtronic gets FDA clearance for smart</p>
+        <div class="news-meta">
+            <a href="https://news.google.com/rss/articles/CBMiiwFBVV95cUxQZjViZTFrbGZUOWpWRk15bzNnSENIdGx3Vm5fRXRYUXlpbWZNU3g2Sm1yN3htZV9STmItSldKdE1lSDNlRnBpRVZiV2F2Q1d6aEFYRm1YYjRGSTB3Sm5WV3FPblFkQUNheGlnQTBZbjU2N0h2NURNdGRzeHQ0WElDOU9Ca0NQcGVaMDdV?oc=5" target="_blank">原文</a>
+            <span class="tag">Google News - MedTech</span>
+            <span class="tag tag-foreign">EN</span>
+        </div>
+    </div>
+    <div class="news-item">
+        <div class="news-date">12-17 08:00</div>
+        <h3>37. CMR Surgical gains 美国FDA 获批 for 新 机器人 - MedTech Dive</h3>
+        <p class="snippet">CMR Surgical gains FDA clearance</p>
+        <div class="news-meta">
+            <a href="https://news.google.com/rss/articles/CBMijwFBVV95cUxPNXMyenlrYmVicG1scjBsczhvU0p4QVp3ZURIV2tQMG9oSy1TR0xLUG9DWFJWNVE1akNTLTF6LVlOODF4QUlQdm9Ua3BzenJ2ekJGNS1IWG9iZk80dHh0dkFaYUdPeHp4VmUxaFY3czI4OGZqcGFCY1VSSTlUSVhFd1lyUGxhbTc4RmhfNmE5TQ?oc=5" target="_blank">原文</a>
+            <span class="tag">Google News - MedTech</span>
+            <span class="tag tag-foreign">EN</span>
+        </div>
+    </div>
+    <div class="news-item">
+        <div class="news-date">02-02 08:00</div>
+        <h3>38. Grail files for 美国FDA 批准 of multi-cancer early detection test - MedTech Dive</h3>
+        <p class="snippet"><a href="https://news.google.com/rss/articles/CBMiqgFBVV95cUxNZzBHMWlBZ25sVHhnalI2bW1peWQyUkI5ZEZFWVZ5SEd0Z1BkZEsyNEMyOS1JZXFzV1BDOHlqbXU0TF9XZHNSb05RV25EWHJuUmlCeG5ja1NSR0hZbHJZdnVqWUhWSGhjdV84SVZyQWtrcjU4Y1VFRzdhUHh4dkhaUDFDUW1QS3p6ZU82WjIxT1pRb2pUZ1hZSHpZNlcwbXJ1bzJnNFhvNkxKZw?oc=5" target="_blan</p>
+        <div class="news-meta">
+            <a href="https://news.google.com/rss/articles/CBMiqgFBVV95cUxNZzBHMWlBZ25sVHhnalI2bW1peWQyUkI5ZEZFWVZ5SEd0Z1BkZEsyNEMyOS1JZXFzV1BDOHlqbXU0TF9XZHNSb05RV25EWHJuUmlCeG5ja1NSR0hZbHJZdnVqWUhWSGhjdV84SVZyQWtrcjU4Y1VFRzdhUHh4dkhaUDFDUW1QS3p6ZU82WjIxT1pRb2pUZ1hZSHpZNlcwbXJ1bzJnNFhvNkxKZw?oc=5" target="_blank">原文</a>
+            <span class="tag">Google News - MedTech</span>
+            <span class="tag tag-foreign">EN</span>
+        </div>
+    </div>
+    <div class="news-item">
+        <div class="news-date">12-23 08:00</div>
+        <h3>39. Edwards receives 美国FDA 批准 for mitral valve replacement system - MedTech Dive</h3>
+        <p class="snippet">Edwards receives FDA approval for</p>
+        <div class="news-meta">
+            <a href="https://news.google.com/rss/articles/CBMijwFBVV95cUxPaEFpV05BcjZ6d2FVbmI0bEk4SFJQeDRWajFocjFGdldVU1lZWHQydUlCUjRUWVZuV0pNemFQOHFfc3gxNlpYT19sdm1KemdxNy1RdFZjZkswNl9aZUdwUkFHNWdCZFRWWkxSWGt0Y29Sa3JJSWowcUh1X0VuQWF5SFYwSXd3SkgtRHpmRnlRbw?oc=5" target="_blank">原文</a>
+            <span class="tag">Google News - MedTech</span>
+            <span class="tag tag-foreign">EN</span>
+        </div>
+    </div>
+    <div class="news-item">
+        <div class="news-date">12-16 08:00</div>
+        <h3>40. 美国FDA gets mixed feedback on performance 监测 for 人工智能 - MedTech Dive</h3>
+        <p class="snippet">FDA gets mixed feedback on performance monito</p>
+        <div class="news-meta">
+            <a href="https://news.google.com/rss/articles/CBMihgFBVV95cUxOcXp5eW1oanM5Nnczdm5DdUVjdUFZTmNZcE5NTjNKb09abGN5MWREaGp1X09FWjJmRE9DWERxNFYydl9VX0FoTE1KQmpRd3RxUnZMMHljaVZabG5QQkxHR1ViT0VtOFJjRTFaUEVGaF90SjBONjI0Mk02ZXBxVEFnREtoUXdsQQ?oc=5" target="_blank">原文</a>
+            <span class="tag">Google News - MedTech</span>
+            <span class="tag tag-foreign">EN</span>
+        </div>
+    </div>
+    <div class="news-item">
+        <div class="news-date">0, 2026 10:</div>
+        <h3>41. Boston Scientific’s Watchman heart 植入物 measures up to blood thinners in ACC trial</h3>
+        <p class="snippet">Boston Scientific’s Watchman implant cut bleeding risks almost in half compared to long-term anticoagulant regimens, while showing it was non-inferior in composite measures of stroke and death in people with atrial fibrillation.</p>
+        <div class="news-meta">
+            <a href="https://www.fiercebiotech.com/medtech/boston-scientifics-watchman-heart-implant-measures-blood-thinners-acc-trial" target="_blank">原文</a>
+            <span class="tag">FierceBiotech</span>
+            <span class="tag tag-foreign">EN</span>
+        </div>
+    </div>
+    <div class="footer">
+        Generated by Medical Device News Assistant
+    </div>
+</body>
+</html>

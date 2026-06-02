@@ -1,0 +1,406 @@
+{
+  "date": "2026-05-09",
+  "count": 50,
+  "news": [
+    {
+      "title": "Meta’s Embrace of A.I. Is Making Its Employees Miserable",
+      "url": "https://www.nytimes.com/2026/05/08/technology/meta-ai-employees-miserable.html",
+      "snippet": "As it adapts to the artificial intelligence era, the company is pushing many of its 78,000 workers to use the technology, and preparing to lay some of them off.",
+      "keyword": "NYTimes",
+      "region": "Foreign",
+      "published": "Fri, 08 May 2026 14:18:51 +0000"
+    },
+    {
+      "title": "Elon Musk’s SpaceX Plans $55 Billion Investment to Make A.I. Chips",
+      "url": "https://www.nytimes.com/2026/05/07/business/spacex-chips-terafab.html",
+      "snippet": "The rocket company’s new semiconductor factory, called Terafab, is part of the billionaire’s increasing efforts to dominate artificial intelligence.",
+      "keyword": "NYTimes",
+      "region": "Foreign",
+      "published": "Fri, 08 May 2026 13:05:05 +0000"
+    },
+    {
+      "title": "Elon Musk’s Confidante Shivon Zilis Is Cast as His Inside Source at OpenAI",
+      "url": "https://www.nytimes.com/2026/05/06/technology/elon-musk-shivon-zilis-openai-trial.html",
+      "snippet": "Shivon Zilis worked closely with Elon Musk while she was on OpenAI’s board. Her ties to the world’s richest man were detailed in a landmark trial on Wednesday.",
+      "keyword": "NYTimes",
+      "region": "Foreign",
+      "published": "Wed, 06 May 2026 23:50:25 +0000"
+    },
+    {
+      "title": "Anthropic’s C.E.O. Says It Could Grow by 80 Times This Year",
+      "url": "https://www.nytimes.com/2026/05/06/technology/anthropic-ceo-ai-growth.html",
+      "snippet": "The chief executive, Dario Amodei, said the rapid growth had exponentially increased the start-up’s need for more computing power.",
+      "keyword": "NYTimes",
+      "region": "Foreign",
+      "published": "Thu, 07 May 2026 01:09:53 +0000"
+    },
+    {
+      "title": "Elon Musk Wanted OpenAI to Go Commercial, Greg Brockman Testifies",
+      "url": "https://www.nytimes.com/2026/05/05/technology/openai-trial-elon-musk-greg-brockman.html",
+      "snippet": "Greg Brockman, OpenAI’s president, testified in a trial pitting Mr. Musk against his company that the world’s richest man was eager to change how it operated as a nonprofit.",
+      "keyword": "NYTimes",
+      "region": "Foreign",
+      "published": "Wed, 06 May 2026 00:52:04 +0000"
+    },
+    {
+      "title": "Apple Reaches $250 Million Settlement Over Claims It Misled People on A.I.",
+      "url": "https://www.nytimes.com/2026/05/05/technology/apple-intelligence-lawsuit-settlement.html",
+      "snippet": "Some iPhone owners will be eligible to receive $25 to $95 over claims that the tech giant oversold its artificial intelligence system, Apple Intelligence.",
+      "keyword": "NYTimes",
+      "region": "Foreign",
+      "published": "Tue, 05 May 2026 20:57:07 +0000"
+    },
+    {
+      "title": "Coinbase Lays Off 14% of Employees as A.I. Changes Work",
+      "url": "https://www.nytimes.com/2026/05/05/technology/coinbase-layoffs-ai.html",
+      "snippet": "The largest U.S. crypto exchange said it was cutting jobs because of cryptocurrency market volatility and to “optimize” for the artificial intelligence era.",
+      "keyword": "NYTimes",
+      "region": "Foreign",
+      "published": "Tue, 05 May 2026 18:19:51 +0000"
+    },
+    {
+      "title": "S.E.C. Settles Lawsuit Against Elon Musk Over His Twitter Disclosures",
+      "url": "https://www.nytimes.com/2026/05/04/technology/musk-sec-settlement-twitter.html",
+      "snippet": "The agency, which has been pulling back on lawsuits against major companies, ended a case that had accused Mr. Musk of hiding his purchases of Twitter stock. He agreed to pay $1.5 million.",
+      "keyword": "NYTimes",
+      "region": "Foreign",
+      "published": "Tue, 05 May 2026 01:22:06 +0000"
+    },
+    {
+      "title": "Elon Musk’s Lawyers Ask OpenAI’s President Why He Is Worth $30 Billion",
+      "url": "https://www.nytimes.com/2026/05/04/technology/elon-musk-greg-brockman-openai-trial.html",
+      "snippet": "The legal team implied in a federal trial that Greg Brockman, OpenAI’s president and co-founder, was driven by greed rather than building safe A.I.",
+      "keyword": "NYTimes",
+      "region": "Foreign",
+      "published": "Mon, 04 May 2026 22:24:31 +0000"
+    },
+    {
+      "title": "TikTok scales back AI-generated video descriptions after absurd errors",
+      "url": "https://www.bbc.com/news/articles/c5yerd05n01o?at_medium=RSS&at_campaign=rss",
+      "snippet": "While only rolled out to some users, the feature's bizarre AI-generated descriptions were shared widely.",
+      "keyword": "BBC",
+      "region": "Foreign",
+      "published": "Fri, 08 May 2026 09:20:40 GMT"
+    },
+    {
+      "title": "Instagram privacy tech is turned off today - what does this mean for your DMs?",
+      "url": "https://www.bbc.com/news/articles/clypzxl3lvqo?at_medium=RSS&at_campaign=rss",
+      "snippet": "The platform said it would remove end-to-end encrypted messages, a major U‑turn by parent company Meta.",
+      "keyword": "BBC",
+      "region": "Foreign",
+      "published": "Fri, 08 May 2026 01:31:55 GMT"
+    },
+    {
+      "title": "Meta brings High Court challenge over Ofcom fees",
+      "url": "https://www.bbc.com/news/articles/cj0pqpgvvn2o?at_medium=RSS&at_campaign=rss",
+      "snippet": "Meta said Ofcom's calculations were \"disproportionate\"; the regulator said it would defend its position.",
+      "keyword": "BBC",
+      "region": "Foreign",
+      "published": "Thu, 07 May 2026 16:30:55 GMT"
+    },
+    {
+      "title": "Former OpenAI board member says Elon Musk offered her sperm donations",
+      "url": "https://www.bbc.com/news/articles/c33243j44p8o?at_medium=RSS&at_campaign=rss",
+      "snippet": "Shivon Zilis is the mother of four of Musk's children. That relationship began as she advised OpenAI.",
+      "keyword": "BBC",
+      "region": "Foreign",
+      "published": "Wed, 06 May 2026 20:05:02 GMT"
+    },
+    {
+      "title": "Robot wars - what an operation in Ukraine tells us about the battlefield of the near future",
+      "url": "https://www.bbc.com/news/articles/c9d35v126vyo?at_medium=RSS&at_campaign=rss",
+      "snippet": "After Ukraine's President Zelensky said territory had been captured using just robots and drones, what is the future of unmanned warfare?",
+      "keyword": "BBC",
+      "region": "Foreign",
+      "published": "Wed, 06 May 2026 11:59:44 GMT"
+    },
+    {
+      "title": "'I thought he was going to hit me,' OpenAI co-founder says of Musk",
+      "url": "https://www.bbc.com/news/articles/cn7pg8ymgezo?at_medium=RSS&at_campaign=rss",
+      "snippet": "OpenAI president Greg Brockman spoke during the second week of a month-long trial between Elon Musk and OpenAI's Sam Altman.",
+      "keyword": "BBC",
+      "region": "Foreign",
+      "published": "Wed, 06 May 2026 07:10:16 GMT"
+    },
+    {
+      "title": "Apple to pay up to $95 to some US iPhone buyers over AI lawsuit",
+      "url": "https://www.bbc.com/news/articles/c0j2nydnzy7o?at_medium=RSS&at_campaign=rss",
+      "snippet": "Claims from last year said the tech firm’s advertising of Apple Intelligence fooled iPhone buyers.",
+      "keyword": "BBC",
+      "region": "Foreign",
+      "published": "Wed, 06 May 2026 00:15:14 GMT"
+    },
+    {
+      "title": "US to safety test new AI models from Google, Microsoft, xAI",
+      "url": "https://www.bbc.com/news/articles/cgjp2we2j8go?at_medium=RSS&at_campaign=rss",
+      "snippet": "New agreements between the companies and the Commerce department build on Biden-era pacts.",
+      "keyword": "BBC",
+      "region": "Foreign",
+      "published": "Tue, 05 May 2026 20:16:24 GMT"
+    },
+    {
+      "title": "Pornhub to become accessible again for some UK users",
+      "url": "https://www.bbc.com/news/articles/cwy27q05gj2o?at_medium=RSS&at_campaign=rss",
+      "snippet": "UK iPhone users who have completed Apple's device-based age checks will no longer be blocked from the site's adult content.",
+      "keyword": "BBC",
+      "region": "Foreign",
+      "published": "Tue, 05 May 2026 14:09:28 GMT"
+    },
+    {
+      "title": "Oscars says AI actors and writing cannot win awards",
+      "url": "https://www.bbc.com/news/articles/cx21dl3v7d3o?at_medium=RSS&at_campaign=rss",
+      "snippet": "The academy that controls the Oscars on Friday issued new award eligibility requirements around the use of artificial intelligence in film.",
+      "keyword": "BBC",
+      "region": "Foreign",
+      "published": "Fri, 01 May 2026 22:30:59 GMT"
+    },
+    {
+      "title": "Tech Life",
+      "url": "https://www.bbc.co.uk/sounds/play/w3ct8jxs?at_medium=RSS&at_campaign=rss",
+      "snippet": "Workers train AI to identify everyday objects by labelling items in photos and videos.",
+      "keyword": "BBC",
+      "region": "Foreign",
+      "published": "Tue, 28 Apr 2026 19:32:00 GMT"
+    },
+    {
+      "title": "Tesla’s Latest Recall? Wheels May Fall Off Cybertrucks",
+      "url": "https://www.wired.com/story/the-latest-tesla-recall-wheels-may-fall-off-cybertrucks/",
+      "snippet": "In what is the 11th Cybertruck recall, certain models of Elon Musk’s embattled pickup could experience a sudden, unexpected wheel separation, thanks to the wrong grease and loose nuts.",
+      "keyword": "Wired",
+      "region": "Foreign",
+      "published": "Fri, 08 May 2026 18:12:42 +0000"
+    },
+    {
+      "title": "Nick Bostrom Has a Plan for Humanity’s ‘Big Retirement’",
+      "url": "https://www.wired.com/story/nick-bostrom-has-a-plan-for-humanitys-big-retirement/",
+      "snippet": "The philosopher thinks humans should pursue advanced AI and the promise of a “solved world.”",
+      "keyword": "Wired",
+      "region": "Foreign",
+      "published": "Fri, 08 May 2026 15:00:00 +0000"
+    },
+    {
+      "title": "There’s a Long-Shot Proposal to Protect California Workers From AI",
+      "url": "https://www.wired.com/story/tom-steyer-proposes-jobs-guarantee-to-protect-california-workers-from-ai/",
+      "snippet": "California gubernatorial candidate Tom Steyer is proposing a new jobs guarantee for workers displaced by artificial intelligence.",
+      "keyword": "Wired",
+      "region": "Foreign",
+      "published": "Fri, 08 May 2026 15:00:00 +0000"
+    },
+    {
+      "title": "The New Wild West of AI Kids’ Toys",
+      "url": "https://www.wired.com/story/the-new-wild-west-of-ai-kids-toys/",
+      "snippet": "These cuddly, connected companions could disrupt everything from make-believe to bedtime stories. No wonder some lawmakers want them banned.",
+      "keyword": "Wired",
+      "region": "Foreign",
+      "published": "Fri, 08 May 2026 10:00:00 +0000"
+    },
+    {
+      "title": "The Best Cat Water Fountains of 2026: Petlibro, Petkit, Oneisall",
+      "url": "https://www.wired.com/gallery/the-best-cat-water-fountains/",
+      "snippet": "Ensuring your cat stays hydrated is one of the best ways to keep your pet healthy. The right pet water fountain can help.",
+      "keyword": "Wired",
+      "region": "Foreign",
+      "published": "Fri, 08 May 2026 09:32:00 +0000"
+    },
+    {
+      "title": "Meet Rassvet, Russia’s Answer to Starlink",
+      "url": "https://www.wired.com/story/meet-rassvet-russias-answer-to-starlink/",
+      "snippet": "With the launch of the first 16 satellites, Russia begins construction of a network for satellite internet that aims to cover the entire country by 2030. But getting there won’t be easy.",
+      "keyword": "Wired",
+      "region": "Foreign",
+      "published": "Fri, 08 May 2026 08:30:00 +0000"
+    },
+    {
+      "title": "Musk v. Altman Evidence Shows What Microsoft Executives Thought of OpenAI",
+      "url": "https://www.wired.com/story/microsoft-executives-discuss-openai-sam-altman-2018/",
+      "snippet": "Leaders at the tech giant were skeptical of OpenAI—but wary of pushing it into the arms of Amazon, according to emails dating back to 2018.",
+      "keyword": "Wired",
+      "region": "Foreign",
+      "published": "Fri, 08 May 2026 01:42:14 +0000"
+    },
+    {
+      "title": "Laid-off Oracle workers tried to negotiate better severance. Oracle said no.",
+      "url": "https://techcrunch.com/2026/05/08/laid-off-oracle-workers-tried-to-negotiate-better-severance-oracle-said-no/",
+      "snippet": "Some found out they didn't qualify for WARN Act protections like two-months notice because the company had classified them as remote workers.",
+      "keyword": "TechCrunch",
+      "region": "Foreign",
+      "published": "Fri, 08 May 2026 22:59:05 +0000"
+    },
+    {
+      "title": "Prime Video follows Netflix and Disney by adding a TikTok-like ‘Clips’ feed in its app",
+      "url": "https://techcrunch.com/2026/05/08/prime-video-follows-netflix-and-disney-by-adding-a-tiktok-like-clips-feed-in-its-app/",
+      "snippet": "The Clips feed aims to enable discovery by offering users a scrollable feed with short snippets of shows and movies.",
+      "keyword": "TechCrunch",
+      "region": "Foreign",
+      "published": "Fri, 08 May 2026 20:50:03 +0000"
+    },
+    {
+      "title": "Cloudflare says AI made 1,100 jobs obsolete, even as revenue hit a record high",
+      "url": "https://techcrunch.com/2026/05/08/cloudflare-says-ai-made-1100-jobs-obsolete-even-as-revenue-hit-a-record-high/",
+      "snippet": "Cloudflare announced its first large-scale layoff. CEO Matthew Prince says because of AI efficiency gains, the company doesn't need as many support roles.",
+      "keyword": "TechCrunch",
+      "region": "Foreign",
+      "published": "Fri, 08 May 2026 18:33:21 +0000"
+    },
+    {
+      "title": "Porsche shutters e-bike, battery, software subsidiaries as part of company overhaul",
+      "url": "https://techcrunch.com/2026/05/08/porsche-shutters-e-bike-battery-software-subsidiaries-as-part-of-company-overhaul/",
+      "snippet": "More than 500 people will be affected by the closures. “We must refocus on our core business,” Porsche CEO and executive chair Michael Leiters said in a statement. \"This is the indispensable foundatio",
+      "keyword": "TechCrunch",
+      "region": "Foreign",
+      "published": "Fri, 08 May 2026 18:25:29 +0000"
+    },
+    {
+      "title": "Mother Ventures is looking at moms as the ‘economic engine’",
+      "url": "https://techcrunch.com/2026/05/08/mother-ventures-is-looking-at-moms-as-the-economic-engine/",
+      "snippet": "The VC firm, which focuses on mothers as consumers, raised a $10 million debut fund.",
+      "keyword": "TechCrunch",
+      "region": "Foreign",
+      "published": "Fri, 08 May 2026 17:46:08 +0000"
+    },
+    {
+      "title": "Poland says hackers breached water treatment plants, and the US is facing the same threat",
+      "url": "https://techcrunch.com/2026/05/08/poland-says-hackers-breached-water-treatment-plants-and-the-u-s-is-facing-the-same-threat/",
+      "snippet": "A report by Poland’s top intelligence agency accused Russia of sabotage and hacking activities against the country’s military and civilian infrastructure.",
+      "keyword": "TechCrunch",
+      "region": "Foreign",
+      "published": "Fri, 08 May 2026 17:20:37 +0000"
+    },
+    {
+      "title": "Pentagon releases UFO files on new website",
+      "url": "https://techcrunch.com/2026/05/08/pentagon-releases-ufo-files-on-new-website/",
+      "snippet": "The initial set of files housed on the site will include those containing unidentified anomalous phenomena (UAP) videos, photos, and original source documents from across the entire U.S. government. T",
+      "keyword": "TechCrunch",
+      "region": "Foreign",
+      "published": "Fri, 08 May 2026 15:56:36 +0000"
+    },
+    {
+      "title": "Live only at TechCrunch Disrupt 2026: Why most founders are already behind on raising a Series A in 2027",
+      "url": "https://techcrunch.com/2026/05/08/live-only-at-techcrunch-disrupt-2026-why-most-founders-are-already-behind-on-raising-a-series-a-in-2027/",
+      "snippet": "Learn what it takes to build a Series A in 2027 from top VCs at TechCrunch Disrupt 2026, taking place at San Francisco’s Moscone West on October 13-15. Register today to hear this session live on the",
+      "keyword": "TechCrunch",
+      "region": "Foreign",
+      "published": "Fri, 08 May 2026 14:30:00 +0000"
+    },
+    {
+      "title": "火山引擎携手中国移动，首创机密模型服务新模式",
+      "url": "https://www.leiphone.com/category/industrynews/qMyCzGke8pn9Ddrk.html",
+      "snippet": "5月8日，在2026移动云大会上，中国移动与火山引擎正式发布“移动引擎机密模型服务”专区，为各行业提供兼具技术领先与安全可信的AI服务，包括豆包大模型MaaS服务、Agent开发平台和工具等。<img src=\"https://static.leiphone.com/uploads/new/images/20260508/",
+      "keyword": "雷锋网",
+      "region": "China",
+      "published": "Fri, 08 May 2026 22:36:00 +0800"
+    },
+    {
+      "title": "百度搭子DuMate登顶PinchBench，超越Anthropic拿下全球龙虾执行争霸赛冠军",
+      "url": "https://www.leiphone.com/category/industrynews/Oh9CnFrZHHOodA9n.html",
+      "snippet": "5月8日凌晨，百度搭子DuMate登顶智能体评测基准PinchBench榜首，并在前5位中占据3席，超越Anthropic和OpenAI拿下全球龙虾执行争霸赛冠军。在另外一项DeepResearch深度研究榜单中，DuMate同样位列第一。PinchBench是OpenClaw赛道最能体现Agent真实工作能力的评测基准，重点考察Agent在23个真实工作场景下147个任务的多",
+      "keyword": "雷锋网",
+      "region": "China",
+      "published": "Fri, 08 May 2026 18:36:00 +0800"
+    },
+    {
+      "title": "中国移动与火山引擎推出机密模型服务，为企业提供安全可信AI服务",
+      "url": "https://www.leiphone.com/category/industrynews/aZWpqeMDsRB841I1.html",
+      "snippet": "5月8日，在2026移动云大会上，中国移动与火山引擎正式发布“移动引擎机密模型服务”专区，为各行业提供兼具技术领先与安全可信的AI服务，包括豆包大模型MaaS服务、Agent开发平台和工具等。<img src=\"https://static.leiphone.com/uploads/new/images/20260508/",
+      "keyword": "雷锋网",
+      "region": "China",
+      "published": "Fri, 08 May 2026 18:23:00 +0800"
+    },
+    {
+      "title": "当AI开始懂情绪，AI奇妙物语点亮全民创意风潮",
+      "url": "https://www.leiphone.com/category/industrynews/iAOqSCD9VnjVkekb.html",
+      "snippet": "2026年社交网络的“活人感”，一定是AI给的。从朋友圈的“赛博旅行照”到聊天框里的“AI扩图”，生成式AI已不再是极客的玩具，而是普通人记录生活、表达情绪的第六感。当技术门槛被踏平，一场关于“谁更会玩”的创意竞赛悄然开启。近日，由「AI奇妙物语」与安慕希联合发起的“即梦X安慕希整颗蓝莓AI创作大赛” 正在社交平台卷起一场创意风暴。这场事关想象力的全民狂欢折射出的是“AI奇妙物",
+      "keyword": "雷锋网",
+      "region": "China",
+      "published": "Fri, 08 May 2026 16:55:00 +0800"
+    },
+    {
+      "title": "海信&Vidda“非电视”发布会：六大3C潮品齐发，RGB-Mini LED领衔技术下放",
+      "url": "https://www.leiphone.com/category/weiwu/w3z7rUtQyVlcwUoc.html",
+      "snippet": "5月8日，主题为“有态度 就登场”的海信&Vidda全场景新品发布会正式拉开帷幕。作为全球显示产业的领跑者，海信视像在这一次的发布会上，打破传统屏幕的物理界限，以显示技术为原点，向声音、智能感知与移动能源全面延伸。这",
+      "keyword": "雷锋网",
+      "region": "China",
+      "published": "Fri, 08 May 2026 16:42:00 +0800"
+    },
+    {
+      "title": "研发投入同比增长25.44%，奇瑞以科技创新推动高质量发展",
+      "url": "https://www.leiphone.com/category/industrynews/9W0R1Vr4Xt3eTXyg.html",
+      "snippet": "2026年4月，奇瑞集团销量再创新高：单月总销量25.14万辆，同比增长25.2%，稳居中国品牌销量第二；新能源销量10.03万辆，同比增长63.8%，规模与增速均居行业前列；出口17.76万辆，同比增长102.4%，再创中国汽车单月出口新纪录。<p style=\"text-align: justify; margin-top: 0; margin-bott",
+      "keyword": "雷锋网",
+      "region": "China",
+      "published": "Fri, 08 May 2026 10:01:00 +0800"
+    },
+    {
+      "title": "总部人均奖金610万，中国厂却一毛不拔！三星、SK海力士国内员工集体求涨薪；昆仑芯启动A股IPO；男子五一加班身亡！涉事公司：假期自愿",
+      "url": "https://www.leiphone.com/category/zaobao/tqf2pEDQn63OH1d6.html",
+      "snippet": "要闻提示</str",
+      "keyword": "雷锋网",
+      "region": "China",
+      "published": "Fri, 08 May 2026 08:35:00 +0800"
+    },
+    {
+      "title": "我所知道的胡峥楠",
+      "url": "https://www.leiphone.com/category/transportation/ObpVY9BieePGe8w6.html",
+      "snippet": "2024年的初夏，小米SU7的爆单与偶发的几起事故，将这家初出茅庐的造车新势力拉入了冰火两重天的舆论场。在新技术的冲击面前，有人感叹诺基亚式的倾覆就在眼前，但真正的局内人眼里，却浮现出另一番光景。当一些狂热的粉丝在社交网络上对着传统车企疯狂输出时，雷军却在牌桌底下，做着最务实、甚至是最传统的算计。这个算计的核心，叫胡峥楠。2026年4月，胡峥楠成为小",
+      "keyword": "雷锋网",
+      "region": "China",
+      "published": "Thu, 07 May 2026 14:10:00 +0800"
+    },
+    {
+      "title": "Anthropic 2千亿豪赌，谷歌云成最大赢家？",
+      "url": "https://www.leiphone.com/category/yanxishe/61V72k9RQozzfeX2.html",
+      "snippet": "<sect",
+      "keyword": "雷锋网",
+      "region": "China",
+      "published": "Thu, 07 May 2026 11:44:00 +0800"
+    },
+    {
+      "title": "中国高校科研 AI 云市场，阿里云第一！",
+      "url": "https://www.leiphone.com/category/industrynews/oue4W89QPv8sRtVl.html",
+      "snippet": "5 月 6 日，国际市场调研机构沙利文（Frost & Sullivan）发布《中国高校科研机构AI4S市场追踪报告，2025年》。报告显示，阿里云以26%的市场份额领跑中国高校科研机构AI4S云市场，稳居第一。<img src=\"https://static.leiphone.com/uploads/new/im",
+      "keyword": "雷锋网",
+      "region": "China",
+      "published": "Thu, 07 May 2026 11:35:00 +0800"
+    },
+    {
+      "title": "OpenAI 将补齐 Codex 跨端连接拼图，安卓版 ChatGPT 酝酿远程接管功能",
+      "url": "https://www.ithome.com/0/948/049.htm",
+      "snippet": "IT之家 5 月 9 日消息，科技媒体 Android Authority 昨日（5 月 8 日）发布博文，通过挖掘安卓 1.2026.125 版 ChatGPT 之后，发现 OpenAI 正为 Codex 酝酿远程控制能力。根据代码描述，用户未来先在桌面打开 Codex，并登录同一 ChatGPT 账号，然后再用手机连接、恢复或重连远程会话。",
+      "keyword": "IT之家",
+      "region": "China",
+      "published": "Sat, 09 May 2026 01:47:36 GMT"
+    },
+    {
+      "title": "华为 Sound X5 智能音箱开售：全新悦彰音质、升级 AI 大模型，2199~2499 元",
+      "url": "https://www.ithome.com/0/948/043.htm",
+      "snippet": "IT之家 5 月 9 日消息，华为 Pura 90 标准版、华为 Sound X 5 宣布 10:08 正式开售，后者主打“全新悦彰音质 + 鸿蒙 AI + 全场景互联”，定价 2199~2499 元。<span class=",
+      "keyword": "IT之家",
+      "region": "China",
+      "published": "Sat, 09 May 2026 01:40:06 GMT"
+    },
+    {
+      "title": "解散 xAI ，马斯克想用造火箭的方法，重造 AI 公司",
+      "url": "https://www.tmtpost.com/7981712.html",
+      "snippet": "用造火箭的方法，重造 AI 公司",
+      "keyword": "钛媒体",
+      "region": "China",
+      "published": "Sat, 09 May 2026 09:37:23 +0800"
+    },
+    {
+      "title": "Edge AI Daily 早报（5月9日）",
+      "url": "https://www.tmtpost.com/7981637.html",
+      "snippet": "OpenAI发布三款实时音频模型，开启AI智能体实时交互新范式。Anthropic估值突破1.2万亿美元反超OpenAI，Claude 3技术优势重塑AI行业竞争格局。谷歌试点AI辅助工程师面试流程，允许候选人使用Gemini模型，反映AI时代工作流变革。亚马逊AWS北弗吉尼亚数据中心因过热引发服务中断，暴露云基础设施脆弱性。",
+      "keyword": "钛媒体",
+      "region": "China",
+      "published": "Sat, 09 May 2026 08:12:55 +0800"
+    },
+    {
+      "title": "【钛晨报】促进智能体规范应用与创新发展，三部门最新部署；Anthropic将筹集数百亿美元，估值或近万亿超OpenAI；人工智能终端国家标准上新，涉及眼镜、电视、耳机等",
+      "url": "https://www.tmtpost.com/7976970.html",
+      "snippet": "小米汽车加码出海：副总裁于立国兼任海外业务筹备组组长，直接向雷军和卢伟冰双线汇报；消息称DeepSeek拟募资最高500亿元人民币；英伟达CEO黄仁勋：下一代AI基础设施将需要大量的光学连接，铜线已无法满足需求；任天堂将在日本上调Switch 2售价；三星罢工或损失1398亿元；四部门：推动人工智能自主可控软硬件在能源领域深度应用；三部门：力争到2030年，人工智能算力设施的清洁能源供给保障能力和",
+      "keyword": "钛媒体",
+      "region": "China",
+      "published": "Sat, 09 May 2026 07:20:00 +0800"
+    }
+  ]
+}

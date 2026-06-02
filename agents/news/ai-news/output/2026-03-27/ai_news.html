@@ -1,0 +1,972 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI News - 2026-03-27</title>
+    <style>
+        body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; max-width: 800px; margin: 0 auto; padding: 20px; background: #f5f5f5; }
+        .header { background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); color: white; padding: 30px; border-radius: 10px; margin-bottom: 20px; }
+        .header h1 { margin: 0; font-size: 28px; }
+        .header p { margin: 10px 0 0 0; opacity: 0.9; }
+        .top10-section { background: white; padding: 25px; margin-bottom: 25px; border-radius: 12px; box-shadow: 0 2px 8px rgba(0,0,0,0.1); }
+        .top10-section h2 { margin: 0 0 15px 0; color: #1a1a1a; font-size: 20px; padding-bottom: 10px; border-bottom: 2px solid #ff6b6b; }
+        .top10-china { border-left: 4px solid #ff6b6b; }
+        .top10-china h2 { border-bottom-color: #ff6b6b; }
+        .top10-china .top10-item { background: #fff5f5; border-left-color: #ff6b6b; }
+        .top10-china .top10-num { background: #ff6b6b; }
+        .top10-global { border-left: 4px solid #1976d2; }
+        .top10-global h2 { border-bottom-color: #1976d2; }
+        .top10-global .top10-item { background: #f0f7ff; border-left-color: #1976d2; }
+        .top10-global .top10-num { background: #1976d2; }
+        .top10-list { display: flex; flex-direction: column; gap: 10px; }
+        .top10-item { display: flex; gap: 12px; padding: 12px; border-radius: 8px; }
+        .top10-num { color: white; width: 24px; height: 24px; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 12px; font-weight: bold; flex-shrink: 0; }
+        .top10-content { flex: 1; }
+        .top10-title { font-size: 14px; font-weight: 600; color: #333; line-height: 1.4; }
+        .top10-title a { color: #333; text-decoration: none; }
+        .top10-title a:hover { color: #667eea; }
+        .top10-desc { font-size: 13px; color: #666; line-height: 1.4; margin-top: 4px; }
+        .summary-section { background: white; padding: 25px; margin-bottom: 25px; border-radius: 12px; box-shadow: 0 2px 8px rgba(0,0,0,0.1); }
+        .summary-section h2 { margin: 0 0 20px 0; color: #1a1a1a; font-size: 20px; padding-bottom: 15px; border-bottom: 2px solid #667eea; }
+        .category-tags { display: flex; flex-wrap: wrap; gap: 10px; margin-bottom: 20px; }
+        .cat-tag { background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); color: white; padding: 8px 16px; border-radius: 20px; font-size: 14px; }
+        .highlight-list { display: flex; flex-direction: column; gap: 12px; }
+        .highlight-item { display: flex; align-items: flex-start; gap: 12px; padding: 15px; background: #f8f9fa; border-radius: 10px; border-left: 4px solid #667eea; }
+        .highlight-num { background: #667eea; color: white; width: 28px; height: 28px; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 14px; font-weight: bold; flex-shrink: 0; }
+        .highlight-content { flex: 1; }
+        .highlight-title { font-size: 16px; font-weight: 600; color: #333; line-height: 1.5; margin-bottom: 5px; }
+        .highlight-title a { color: #333; text-decoration: none; }
+        .highlight-title a:hover { color: #667eea; }
+        .highlight-snippet { font-size: 13px; color: #666; line-height: 1.5; margin: 5px 0; }
+        .highlight-meta { font-size: 13px; color: #888; }
+        .chinese-summary { margin-top: 20px; }
+        .chinese-summary h3 { color: #333; font-size: 18px; margin-bottom: 15px; }
+        .news-item { background: white; padding: 20px; margin-bottom: 15px; border-radius: 8px; box-shadow: 0 2px 4px rgba(0,0,0,0.1); }
+        .news-date { color: #999; font-size: 12px; margin-bottom: 5px; }
+        .news-item h3 { margin: 0 0 10px 0; color: #333; }
+        .news-item a { color: #667eea; text-decoration: none; }
+        .snippet { color: #666; font-size: 14px; line-height: 1.6; }
+        .tag { display: inline-block; background: #e8f4f8; color: #2a7bb0; padding: 2px 8px; border-radius: 4px; font-size: 12px; margin-right: 8px; }
+        .tag-china { background: #ffeaea; color: #d32f2f; }
+        .tag-foreign { background: #e3f2fd; color: #1976d2; }
+        .news-meta { margin-top: 10px; display: flex; align-items: center; flex-wrap: wrap; gap: 5px; }
+        .section-title { font-size: 16px; font-weight: bold; color: #333; margin: 20px 0 15px 0; padding-bottom: 10px; border-bottom: 2px solid #667eea; }
+        .footer { text-align: center; color: #999; margin-top: 30px; font-size: 12px; }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h1>AI News Daily</h1>
+        <p>2026-03-27 | 56 articles</p>
+    </div>
+
+    
+    <div class="top10-section top10-china">
+        <h2>🇨🇳 中国科技新闻 Top 10</h2>
+        <div class="top10-list">
+            <div class="top10-item">
+                <span class="top10-num">1</span>
+                <div class="top10-content">
+                    <div class="top10-title"><a href="https://36kr.com/p/3736563677396994?f=rss" target="_blank">智能庭院机器人Yarbo获近 2亿元融资 ，新品众筹首发 6小时破 150万美金 ｜硬氪首发</a></div>
+                    <div class="top10-desc">作者｜黄楠
+  编辑｜袁斯来
+  硬氪获悉智能庭院机器人品牌汉阳科技Yarbo已完成近 2亿元新一轮融资。本轮融资由松禾资本、温润投资（温氏股份旗下 ）、安乃达、芯联资本、龙华资本投资 ，涵盖了头部财务投</div>
+                </div>
+            </div>
+            <div class="top10-item">
+                <span class="top10-num">2</span>
+                <div class="top10-content">
+                    <div class="top10-title"><a href="https://36kr.com/p/3736574177345799?f=rss" target="_blank">云鲸联创吴一昊Hower即将离职创业 | 硬氪独家</a></div>
+                    <div class="top10-desc">作者 | 黄楠 袁斯来
+  编辑 | 袁斯来
+  近日浩硬氪通过多个渠道独家获悉尔云鲸联合创始人吴一昊（ Hower ）即将从公司离职。Hower 根据硬氪了解即将创业，但产品本身还在高度保密阶段。</div>
+                </div>
+            </div>
+            <div class="top10-item">
+                <span class="top10-num">3</span>
+                <div class="top10-content">
+                    <div class="top10-title"><a href="https://36kr.com/p/3740427947426049?f=rss" target="_blank">8 点1氪丨雷军辞去金山云董事长 ；苹果回应 iPhone半夜自动打电话 ；速效救心丸成交额同比增长超 10倍</a></div>
+                    <div class="top10-desc">今日热点导览
+  评春秋航空发通知分：国内航线燃油附加费确定 4月 5日上涨
+  “老头乐”起诉小米汽车 ，当事企业称已和解
+  广东多地优化调整住房公积金政策措施
+  斯柯达将退出中国，大众中国回应 ：销售到年</div>
+                </div>
+            </div>
+            <div class="top10-item">
+                <span class="top10-num">4</span>
+                <div class="top10-content">
+                    <div class="top10-title"><a href="https://36kr.com/p/3739769424593154?f=rss" target="_blank">浙大博士造出「机器人界的F1」 ：不卷脑子卷身体 ，要比博尔特跑得快</a></div>
+                    <div class="top10-desc"></div>
+                </div>
+            </div>
+            <div class="top10-item">
+                <span class="top10-num">5</span>
+                <div class="top10-content">
+                    <div class="top10-title"><a href="https://36kr.com/p/3739636054999040?f=rss" target="_blank">StoReel 获3400万美元融资 ：用 AI重构故事生产 ，打造工具社区与平台双轮驱动的内容生态 ｜涌现新项目</a></div>
+                    <div class="top10-desc">文｜王欣逸
+  编辑｜王毓婵
+  一句话介绍
+  StoReel 是一家全球化AI原生娱乐内容平台 ，核心产品分别是 AI剧集平台 StoReel App以及 AI剧集工具社区 StoReel Canvas ，致力</div>
+                </div>
+            </div>
+            <div class="top10-item">
+                <span class="top10-num">6</span>
+                <div class="top10-content">
+                    <div class="top10-title"><a href="https://36kr.com/p/3739460842078470?f=rss" target="_blank">氪星晚报｜淘天集团推出 “AI生产力计划” ，向实习生全员开放;过去五年北京已牵头制定国际标准超 500项 ；欧洲议会表决通过欧美贸易协议</a></div>
+                    <div class="top10-desc">大公司：
+  三星、SK等韩国企业实施车辆限行等节能措施 ，响应政府节能政策
+  据报道，以</div>
+                </div>
+            </div>
+            <div class="top10-item">
+                <span class="top10-num">7</span>
+                <div class="top10-content">
+                    <div class="top10-title"><a href="https://36kr.com/p/3739712915816457?f=rss" target="_blank">速腾聚创首次实现单季盈利， 2025年机器人产品销量激增 25倍 ｜最前线</a></div>
+                    <div class="top10-desc">作者｜黄楠
+  编辑｜袁斯来
+  3 月25日 ，速腾聚创 （ 02498.HK ）公布 2025年第四季度及全年业绩报告。
+  财报显示， 2025年全年 ，速腾聚创实现营收约 19.41亿元 ，激光雷达总销量约 91.</div>
+                </div>
+            </div>
+            <div class="top10-item">
+                <span class="top10-num">8</span>
+                <div class="top10-content">
+                    <div class="top10-title"><a href="https://36kr.com/p/3739662958854150?f=rss" target="_blank">36 氪官方Skill上线 ClawHub ，解锁 OpenClaw新技能</a></div>
+                    <div class="top10-desc">36 氪已正式入驻ClawHub平台 ，重磅推出三款官方 Skill专为 ，用户打造 OpenClaw无需繁琐操作 ，一键安装即可让你的 OpenClaw升级为新经济信息中枢 ，轻松抢占信息先机。
+  OpenCl</div>
+                </div>
+            </div>
+            <div class="top10-item">
+                <span class="top10-num">9</span>
+                <div class="top10-content">
+                    <div class="top10-title"><a href="https://www.leiphone.com/category/industrynews/6l0Z5iCtQyWp0RZu.html" target="_blank">王兴将争取把美团APP率先升级成 AI-powered APP</a></div>
+                    <div class="top10-desc">3月月26日日美团财报电话会上， CEO王兴表示 ：视为一个战略机遇 “我们将乃至彻底革新我们在本地生活核心业务上的产品与运营AI用以改善、强化 ，率先升级成 AI-powered我们将争取把美团 Ap”</div>
+                </div>
+            </div>
+            <div class="top10-item">
+                <span class="top10-num">10</span>
+                <div class="top10-content">
+                    <div class="top10-title"><a href="https://www.leiphone.com/category/transportation/ualyzr4FuEVr8zr1.html" target="_blank">当小米不再需要"奇迹"</a></div>
+                    <div class="top10-desc">小米发布了新一代小米SU7短短一周不到的时间小米做出了两件瞩目的大事。首先 ， SU7在配置全面提升后 ，新一代 SU7标准版 21.99万元 ， Pro版 24.99万元 ， Max版 30.39万元 ，全系相比老款涨价 40</div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="top10-section top10-global">
+        <h2>🌍 全球科技新闻 Top 10</h2>
+        <div class="top10-list">
+            <div class="top10-item">
+                <span class="top10-num">1</span>
+                <div class="top10-content">
+                    <div class="top10-title"><a href="https://www.nytimes.com/2026/03/26/technology/social-media-verdicts-child-safety.html" target="_blank">陪审团带头推动儿童在线安全</a></div>
+                    <div class="top10-desc">两项判决要求社交媒体公司对伤害年轻用户负责，强调</div>
+                </div>
+            </div>
+            <div class="top10-item">
+                <span class="top10-num">2</span>
+                <div class="top10-content">
+                    <div class="top10-title"><a href="https://www.nytimes.com/2026/03/26/business/snapchat-europe-child-safety.html" target="_blank">Snapchat在欧洲因儿童安全政策受到调查</a></div>
+                    <div class="top10-desc">布鲁塞尔的监管机构指责社交媒体平台维持较弱的年龄验证系统</div>
+                </div>
+            </div>
+            <div class="top10-item">
+                <span class="top10-num">3</span>
+                <div class="top10-content">
+                    <div class="top10-title"><a href="https://www.nytimes.com/2026/03/25/technology/meta-layoffs-ai-executives.html" target="_blank">Meta裁员700人，同时奖励高管</a></div>
+                    <div class="top10-desc">裁员和针对高管的新股票计划出台之际， Meta继续将重点转向AR</div>
+                </div>
+            </div>
+            <div class="top10-item">
+                <span class="top10-num">4</span>
+                <div class="top10-content">
+                    <div class="top10-title"><a href="https://www.nytimes.com/2026/03/25/business/media/leonid-radvinsky-dead.html" target="_blank">列昂尼德·拉德文斯基（ Leonid Radvinsky ） ， 43岁，去世；建造了仅限成人娱乐巨头粉丝</a></div>
+                    <div class="top10-desc">通过利用社交媒体和影响者经济，他将自己的网站变成了在线的代名词</div>
+                </div>
+            </div>
+            <div class="top10-item">
+                <span class="top10-num">5</span>
+                <div class="top10-content">
+                    <div class="top10-title"><a href="https://www.nytimes.com/video/technology/100000010801833/why-the-verdict-against-meta-and-youtube-could-change-social-media.html" target="_blank">为什么对Meta和YouTube的判决可能会改变社交媒体</a></div>
+                    <div class="top10-desc">在一起具有里程碑意义的案件中，陪审团裁定Meta和YouTube犯有创造令人上瘾的产品的罪行。R</div>
+                </div>
+            </div>
+            <div class="top10-item">
+                <span class="top10-num">6</span>
+                <div class="top10-content">
+                    <div class="top10-title"><a href="https://www.nytimes.com/2026/03/26/technology/anthropic-pentagon-risk-injunction.html" target="_blank">法官坚持五角大楼将人性化标记为“供应链风险”</a></div>
+                    <div class="top10-desc">这一决定是人工智能公司在激烈的法律斗争中的早期胜利</div>
+                </div>
+            </div>
+            <div class="top10-item">
+                <span class="top10-num">7</span>
+                <div class="top10-content">
+                    <div class="top10-title"><a href="https://www.nytimes.com/2026/03/26/business/laguardia-airport-air-canada-safety.html" target="_blank">安全专家认为拉瓜迪亚具有挑战性，但不是异常值</a></div>
+                    <div class="top10-desc">监管机构、飞行员和其他航空业者一直担心发生的跑道事故</div>
+                </div>
+            </div>
+            <div class="top10-item">
+                <span class="top10-num">8</span>
+                <div class="top10-content">
+                    <div class="top10-title"><a href="https://www.nytimes.com/2026/03/26/technology/binance-iran-us-sanctions.html" target="_blank">币安错过的线索导致数十亿加密货币流向伊朗</a></div>
+                    <div class="top10-desc">这家全球最大的加密货币交易所在调查人员发现账户转移$ 17亿后受到抨击</div>
+                </div>
+            </div>
+            <div class="top10-item">
+                <span class="top10-num">9</span>
+                <div class="top10-content">
+                    <div class="top10-title"><a href="https://www.nytimes.com/2026/03/26/business/dealbook/shield-ai-drones-aechelon-fund-raising.html" target="_blank">Shield AI是一家制造军用无人机的初创公司，筹集了20亿美元$</a></div>
+                    <div class="top10-desc">该公司开发自主军事技术，还计划收购一家仿真制造商</div>
+                </div>
+            </div>
+            <div class="top10-item">
+                <span class="top10-num">10</span>
+                <div class="top10-content">
+                    <div class="top10-title"><a href="https://www.nytimes.com/2026/03/26/movies/the-ai-doc-movie-anthropic-openai-claude-chatgpt.html" target="_blank">在“人工智能文档”中， Sam Altman和Dario Amodei记录在案</a></div>
+                    <div class="top10-desc">“The AI Doc: Or How I Became an Apocaloptimist”试图涵盖如此多的内容，以至于它最终变得更加</div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    
+    <div class="summary-section">
+        <h2>AI Daily Highlights</h2>
+        <div class="category-tags"><span class="cat-tag">AI AI Product (27)</span><span class="cat-tag">News Other (26)</span><span class="cat-tag">LLM LLM/Model (3)</span></div>
+
+        <div class="chinese-summary">
+            <h3>Top 10 AI News</h3>
+            
+            <div class="highlight-item">
+                <span class="highlight-num">1</span>
+                <div class="highlight-content">
+                    <div class="highlight-title">
+                        <a href="https://www.nytimes.com/2026/03/26/technology/social-media-verdicts-child-safety.html" target="_blank" style="color: #333; text-decoration: none;">陪审团带头推动儿童在线安全</a>
+                    </div>
+                    <p class="highlight-snippet" style="color: #555; font-size: 13px; margin: 5px 0; line-height: 1.4;">两项判决要求社交媒体公司对伤害年轻用户负责，突显出随着国会努力通过立法，越来越多的反弹。</p>
+                    <div class="highlight-meta">
+                        <span class="highlight-date">03-26 15:00</span> |
+                        <span class="highlight-source">NYTimes</span> |
+                        <span style="color: #1976d2;">🌍 全球</span>
+                    </div>
+                </div>
+            </div>
+            <div class="highlight-item">
+                <span class="highlight-num">2</span>
+                <div class="highlight-content">
+                    <div class="highlight-title">
+                        <a href="https://www.nytimes.com/2026/03/26/business/snapchat-europe-child-safety.html" target="_blank" style="color: #333; text-decoration: none;">Snapchat在欧洲因儿童安全政策受到调查</a>
+                    </div>
+                    <p class="highlight-snippet" style="color: #555; font-size: 13px; margin: 5px 0; line-height: 1.4;">布鲁塞尔的监管机构指责该社交媒体平台的年龄验证系统薄弱，并引导年轻用户体验不当。</p>
+                    <div class="highlight-meta">
+                        <span class="highlight-date">03-26 18:04</span> |
+                        <span class="highlight-source">NYTimes</span> |
+                        <span style="color: #1976d2;">🌍 全球</span>
+                    </div>
+                </div>
+            </div>
+            <div class="highlight-item">
+                <span class="highlight-num">3</span>
+                <div class="highlight-content">
+                    <div class="highlight-title">
+                        <a href="https://www.nytimes.com/2026/03/25/technology/meta-layoffs-ai-executives.html" target="_blank" style="color: #333; text-decoration: none;">Meta裁员700人，同时奖励高管</a>
+                    </div>
+                    <p class="highlight-snippet" style="color: #555; font-size: 13px; margin: 5px 0; line-height: 1.4;">随着Meta继续将重点转向人工智能，裁员和针对高管的新股票计划也随之而来。</p>
+                    <div class="highlight-meta">
+                        <span class="highlight-date">03-25 19:22</span> |
+                        <span class="highlight-source">NYTimes</span> |
+                        <span style="color: #1976d2;">🌍 全球</span>
+                    </div>
+                </div>
+            </div>
+            <div class="highlight-item">
+                <span class="highlight-num">4</span>
+                <div class="highlight-content">
+                    <div class="highlight-title">
+                        <a href="https://www.nytimes.com/2026/03/25/business/media/leonid-radvinsky-dead.html" target="_blank" style="color: #333; text-decoration: none;">列昂尼德·拉德文斯基（ Leonid Radvinsky ） ， 43岁，去世；建造了仅限成人娱乐巨头粉丝</a>
+                    </div>
+                    <p class="highlight-snippet" style="color: #555; font-size: 13px; margin: 5px 0; line-height: 1.4;">通过利用社交媒体和网红经济，他将自己的网站变成了21世纪在线色情的代名词。</p>
+                    <div class="highlight-meta">
+                        <span class="highlight-date">03-26 16:21</span> |
+                        <span class="highlight-source">NYTimes</span> |
+                        <span style="color: #1976d2;">🌍 全球</span>
+                    </div>
+                </div>
+            </div>
+            <div class="highlight-item">
+                <span class="highlight-num">5</span>
+                <div class="highlight-content">
+                    <div class="highlight-title">
+                        <a href="https://www.nytimes.com/video/technology/100000010801833/why-the-verdict-against-meta-and-youtube-could-change-social-media.html" target="_blank" style="color: #333; text-decoration: none;">为什么对Meta和YouTube的判决可能会改变社交媒体</a>
+                    </div>
+                    <p class="highlight-snippet" style="color: #555; font-size: 13px; margin: 5px 0; line-height: 1.4;">在一起具有里程碑意义的案件中，陪审团裁定Meta和YouTube犯有创造令人上瘾的产品的罪行。Ryan Mac解释了结果及其对科技公司未来的意义。</p>
+                    <div class="highlight-meta">
+                        <span class="highlight-date">03-27 00:39</span> |
+                        <span class="highlight-source">NYTimes</span> |
+                        <span style="color: #1976d2;">🌍 全球</span>
+                    </div>
+                </div>
+            </div>
+            <div class="highlight-item">
+                <span class="highlight-num">6</span>
+                <div class="highlight-content">
+                    <div class="highlight-title">
+                        <a href="https://www.nytimes.com/2026/03/26/technology/anthropic-pentagon-risk-injunction.html" target="_blank" style="color: #333; text-decoration: none;">法官坚持五角大楼将人性化标记为“供应链风险”</a>
+                    </div>
+                    <p class="highlight-snippet" style="color: #555; font-size: 13px; margin: 5px 0; line-height: 1.4;">该决定是这家人工智能公司在与国防部的激烈法律斗争中的早期胜利。</p>
+                    <div class="highlight-meta">
+                        <span class="highlight-date">03-27 01:06</span> |
+                        <span class="highlight-source">NYTimes</span> |
+                        <span style="color: #1976d2;">🌍 全球</span>
+                    </div>
+                </div>
+            </div>
+            <div class="highlight-item">
+                <span class="highlight-num">7</span>
+                <div class="highlight-content">
+                    <div class="highlight-title">
+                        <a href="https://www.nytimes.com/2026/03/26/business/laguardia-airport-air-canada-safety.html" target="_blank" style="color: #333; text-decoration: none;">安全专家认为拉瓜迪亚具有挑战性，但不是异常值</a>
+                    </div>
+                    <p class="highlight-snippet" style="color: #555; font-size: 13px; margin: 5px 0; line-height: 1.4;">监管机构、飞行员和其他航空人员一直担心周日在拉瓜迪亚机场发生的那种跑道事故。</p>
+                    <div class="highlight-meta">
+                        <span class="highlight-date">03-26 18:32</span> |
+                        <span class="highlight-source">NYTimes</span> |
+                        <span style="color: #1976d2;">🌍 全球</span>
+                    </div>
+                </div>
+            </div>
+            <div class="highlight-item">
+                <span class="highlight-num">8</span>
+                <div class="highlight-content">
+                    <div class="highlight-title">
+                        <a href="https://www.nytimes.com/2026/03/26/technology/binance-iran-us-sanctions.html" target="_blank" style="color: #333; text-decoration: none;">币安错过的线索导致数十亿加密货币流向伊朗</a>
+                    </div>
+                    <p class="highlight-snippet" style="color: #555; font-size: 13px; margin: 5px 0; line-height: 1.4;">这家全球最大的加密货币交易所受到抨击，此前调查人员发现账户向与伊朗有关的实体转移了17亿美元$。关于这些账户的线索在一年多的时间里显而易见。</p>
+                    <div class="highlight-meta">
+                        <span class="highlight-date">03-26 18:37</span> |
+                        <span class="highlight-source">NYTimes</span> |
+                        <span style="color: #1976d2;">🌍 全球</span>
+                    </div>
+                </div>
+            </div>
+            <div class="highlight-item">
+                <span class="highlight-num">9</span>
+                <div class="highlight-content">
+                    <div class="highlight-title">
+                        <a href="https://www.nytimes.com/2026/03/26/business/dealbook/shield-ai-drones-aechelon-fund-raising.html" target="_blank" style="color: #333; text-decoration: none;">Shield AI是一家制造军用无人机的初创公司，筹集了20亿美元$</a>
+                    </div>
+                    <p class="highlight-snippet" style="color: #555; font-size: 13px; margin: 5px 0; line-height: 1.4;">该公司开发自主军事技术，还计划收购一家仿真软件制造商，因为对下一代防御的兴趣飙升。</p>
+                    <div class="highlight-meta">
+                        <span class="highlight-date">03-27 00:24</span> |
+                        <span class="highlight-source">NYTimes</span> |
+                        <span style="color: #1976d2;">🌍 全球</span>
+                    </div>
+                </div>
+            </div>
+            <div class="highlight-item">
+                <span class="highlight-num">10</span>
+                <div class="highlight-content">
+                    <div class="highlight-title">
+                        <a href="https://www.nytimes.com/2026/03/26/movies/the-ai-doc-movie-anthropic-openai-claude-chatgpt.html" target="_blank" style="color: #333; text-decoration: none;">在“人工智能文档”中， Sam Altman和Dario Amodei记录在案</a>
+                    </div>
+                    <p class="highlight-snippet" style="color: #555; font-size: 13px; margin: 5px 0; line-height: 1.4;">“The AI Doc: Or How I Became an Apocaloptimist”试图涵盖太多内容，以至于它最终比澄清更令人困惑，但部分内容令人着迷。</p>
+                    <div class="highlight-meta">
+                        <span class="highlight-date">03-26 09:00</span> |
+                        <span class="highlight-source">NYTimes</span> |
+                        <span style="color: #1976d2;">🌍 全球</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="section-title">[All News]</div>
+    
+    <div class="news-item">
+        <div class="news-date">03-26 15:00</div>
+        <h3>1. Juries Take the Lead in the Push for Child Online Safety</h3>
+        <p class="snippet">A pair of verdicts held social media companies accountable for harming young users, highlighting a growing backlash as Congress struggles to pass legislation.</p>
+        <div class="news-meta">
+            <a href="https://www.nytimes.com/2026/03/26/technology/social-media-verdicts-child-safety.html" target="_blank">Original</a>
+            <span class="tag">NYTimes</span>
+            <span class="tag tag-foreign">EN</span>
+        </div>
+    </div>
+    <div class="news-item">
+        <div class="news-date">03-26 18:04</div>
+        <h3>2. Snapchat Investigated in Europe Over Child Safety Policies</h3>
+        <p class="snippet">Regulators in Brussels accused the social media platform of maintaining a weak age-verification system, and steering younger users toward inappropriate experiences.</p>
+        <div class="news-meta">
+            <a href="https://www.nytimes.com/2026/03/26/business/snapchat-europe-child-safety.html" target="_blank">Original</a>
+            <span class="tag">NYTimes</span>
+            <span class="tag tag-foreign">EN</span>
+        </div>
+    </div>
+    <div class="news-item">
+        <div class="news-date">03-25 19:22</div>
+        <h3>3. [Meta] Lays Off 700 Employees While Rewarding Top Executives</h3>
+        <p class="snippet">The jobs cuts and a new stock program for executives come as Meta continues to shift its focus to artificial intelligence.</p>
+        <div class="news-meta">
+            <a href="https://www.nytimes.com/2026/03/25/technology/meta-layoffs-ai-executives.html" target="_blank">Original</a>
+            <span class="tag">NYTimes</span>
+            <span class="tag tag-foreign">EN</span>
+        </div>
+    </div>
+    <div class="news-item">
+        <div class="news-date">03-26 16:21</div>
+        <h3>4. Leonid Radvinsky 43 Dies; Built the Adult-Entertainment Giant OnlyFans</h3>
+        <p class="snippet">By leveraging social media and the influencer economy, he turned his website into a byword for online pornography in the 21st century.</p>
+        <div class="news-meta">
+            <a href="https://www.nytimes.com/2026/03/25/business/media/leonid-radvinsky-dead.html" target="_blank">Original</a>
+            <span class="tag">NYTimes</span>
+            <span class="tag tag-foreign">EN</span>
+        </div>
+    </div>
+    <div class="news-item">
+        <div class="news-date">03-27 00:39</div>
+        <h3>5. Why the Verdict Against [Meta] and YouTube Could Change Social Media</h3>
+        <p class="snippet">In a landmark case, a jury found Meta and YouTube guilty of creating products that were addictive. Ryan Mac explains the outcome and what it could mean for tech companies going forward.</p>
+        <div class="news-meta">
+            <a href="https://www.nytimes.com/video/technology/100000010801833/why-the-verdict-against-meta-and-youtube-could-change-social-media.html" target="_blank">Original</a>
+            <span class="tag">NYTimes</span>
+            <span class="tag tag-foreign">EN</span>
+        </div>
+    </div>
+    <div class="news-item">
+        <div class="news-date">03-27 01:06</div>
+        <h3>6. Judge Stays Pentagon’s Labeling of Anthropic as ‘Supply Chain Risk’</h3>
+        <p class="snippet">The decision is an early victory for the artificial intelligence company in a rancorous legal battle with the Department of Defense.</p>
+        <div class="news-meta">
+            <a href="https://www.nytimes.com/2026/03/26/technology/anthropic-pentagon-risk-injunction.html" target="_blank">Original</a>
+            <span class="tag">NYTimes</span>
+            <span class="tag tag-foreign">EN</span>
+        </div>
+    </div>
+    <div class="news-item">
+        <div class="news-date">03-26 18:32</div>
+        <h3>7. Safety Experts Considered LaGuardia Challenging but Not an Outlier</h3>
+        <p class="snippet">Regulators, pilots and others in aviation have worried about the kind of runway accident that happened at LaGuardia Airport on Sunday.</p>
+        <div class="news-meta">
+            <a href="https://www.nytimes.com/2026/03/26/business/laguardia-airport-air-canada-safety.html" target="_blank">Original</a>
+            <span class="tag">NYTimes</span>
+            <span class="tag tag-foreign">EN</span>
+        </div>
+    </div>
+    <div class="news-item">
+        <div class="news-date">03-26 18:37</div>
+        <h3>8. The Clues Binance Missed That Led to Billions in Crypto Flowing to Iran</h3>
+        <p class="snippet">The world’s largest crypto exchange is under fire after investigators found accounts moving $1.7 billion to entities linked to Iran. Clues about those accounts were in plain sight for over a year.</p>
+        <div class="news-meta">
+            <a href="https://www.nytimes.com/2026/03/26/technology/binance-iran-us-sanctions.html" target="_blank">Original</a>
+            <span class="tag">NYTimes</span>
+            <span class="tag tag-foreign">EN</span>
+        </div>
+    </div>
+    <div class="news-item">
+        <div class="news-date">03-27 00:24</div>
+        <h3>9. Shield AI a Start-Up Making Military Drones Raises $2 Billion</h3>
+        <p class="snippet">The company, which develops autonomous military technology, also plans to buy a maker of simulation software as interest in next-generation defense soars.</p>
+        <div class="news-meta">
+            <a href="https://www.nytimes.com/2026/03/26/business/dealbook/shield-ai-drones-aechelon-fund-raising.html" target="_blank">Original</a>
+            <span class="tag">NYTimes</span>
+            <span class="tag tag-foreign">EN</span>
+        </div>
+    </div>
+    <div class="news-item">
+        <div class="news-date">03-26 09:00</div>
+        <h3>10. In ‘The AI Doc,’ Sam Altman and Dario Amodei Go on the Record</h3>
+        <p class="snippet">“The AI Doc: Or How I Became an Apocaloptimist” tries to cover so much that it ends up being more confusing than clarifying, but parts are fascinating.</p>
+        <div class="news-meta">
+            <a href="https://www.nytimes.com/2026/03/26/movies/the-ai-doc-movie-anthropic-openai-claude-chatgpt.html" target="_blank">Original</a>
+            <span class="tag">NYTimes</span>
+            <span class="tag tag-foreign">EN</span>
+        </div>
+    </div>
+    <div class="news-item">
+        <div class="news-date">03-24 23:07</div>
+        <h3>11. [OpenAI] Is Shutting Down Sora Its AI Video Generator</h3>
+        <p class="snippet">The start-up said it would discontinue Sora just three months after signing a multiyear deal to bring Disney characters to the service.</p>
+        <div class="news-meta">
+            <a href="https://www.nytimes.com/2026/03/24/technology/openai-shutting-down-sora.html" target="_blank">Original</a>
+            <span class="tag">NYTimes</span>
+            <span class="tag tag-foreign">EN</span>
+        </div>
+    </div>
+    <div class="news-item">
+        <div class="news-date">03-25 11:22</div>
+        <h3>12. [Epic游戏] Lays Off Over 1,000 Employees Citing Fortnite Slump</h3>
+        <p class="snippet">The cut represents about 20 percent of the video game company’s work force, a spokeswoman said.</p>
+        <div class="news-meta">
+            <a href="https://www.nytimes.com/2026/03/24/business/epic-games-layoffs-fortnite.html" target="_blank">Original</a>
+            <span class="tag">NYTimes</span>
+            <span class="tag tag-foreign">EN</span>
+        </div>
+    </div>
+    <div class="news-item">
+        <div class="news-date">03-26 17:29</div>
+        <h3>13. [马斯克]'s X advertising boycott 法律uit dismissed by US judge</h3>
+        <p class="snippet">US District Judge Jane Boyle said the company had failed to show it had suffered any harm under federal competition laws.</p>
+        <div class="news-meta">
+            <a href="https://www.bbc.com/news/articles/c05dlm0l0jgo?at_medium=RSS&at_campaign=rss" target="_blank">Original</a>
+            <span class="tag">BBC</span>
+            <span class="tag tag-foreign">EN</span>
+        </div>
+    </div>
+    <div class="news-item">
+        <div class="news-date">03-26 09:43</div>
+        <h3>14. Campaigners welcome [Meta] and YouTube's defeat in landmark social media addiction trial</h3>
+        <p class="snippet">A woman has been awarded $6m in a verdict that could have implications for hundreds of other cases in the US.</p>
+        <div class="news-meta">
+            <a href="https://www.bbc.com/news/articles/c747x7gz249o?at_medium=RSS&at_campaign=rss" target="_blank">Original</a>
+            <span class="tag">BBC</span>
+            <span class="tag tag-foreign">EN</span>
+        </div>
+    </div>
+    <div class="news-item">
+        <div class="news-date">03-26 00:31</div>
+        <h3>15. Parents should monitor children '24/7' on Roblox 称 开发者</h3>
+        <p class="snippet">Roblox said safety was a top priority and it had advanced safeguards in place to keep users safe.</p>
+        <div class="news-meta">
+            <a href="https://www.bbc.com/news/articles/cd6l07wwvlpo?at_medium=RSS&at_campaign=rss" target="_blank">Original</a>
+            <span class="tag">BBC</span>
+            <span class="tag tag-foreign">EN</span>
+        </div>
+    </div>
+    <div class="news-item">
+        <div class="news-date">03-25 04:48</div>
+        <h3>16. [OpenAI] 关闭s Sora 视频-making app and cancels $1bn Disney deal</h3>
+        <p class="snippet">The move comes less two years after the launch of the AI video app sent shockwaves through the media industry.</p>
+        <div class="news-meta">
+            <a href="https://www.bbc.com/news/articles/c3w3e467ewqo?at_medium=RSS&at_campaign=rss" target="_blank">Original</a>
+            <span class="tag">BBC</span>
+            <span class="tag tag-foreign">EN</span>
+        </div>
+    </div>
+    <div class="news-item">
+        <div class="news-date">03-22 00:45</div>
+        <h3>17. AI 视频s of sexualised black women removed from TikTok after BBC 投资igation</h3>
+        <p class="snippet">Dozens of Instagram and TikTok accounts have used AI avatars to promote explicit content, the BBC finds.</p>
+        <div class="news-meta">
+            <a href="https://www.bbc.com/news/articles/c070e283k8vo?at_medium=RSS&at_campaign=rss" target="_blank">Original</a>
+            <span class="tag">BBC</span>
+            <span class="tag tag-foreign">EN</span>
+        </div>
+    </div>
+    <div class="news-item">
+        <div class="news-date">03-24 20:30</div>
+        <h3>18. Tech Life</h3>
+        <p class="snippet">Artificial intelligence is already in use in many areas of healthcare.</p>
+        <div class="news-meta">
+            <a href="https://www.bbc.co.uk/sounds/play/w3ct6zq9?at_medium=RSS&at_campaign=rss" target="_blank">Original</a>
+            <span class="tag">BBC</span>
+            <span class="tag tag-foreign">EN</span>
+        </div>
+    </div>
+    <div class="news-item">
+        <div class="news-date">03-26 23:33</div>
+        <h3>19. Anthropic Supply-Chain-Risk Designation Halted by Judge</h3>
+        <p class="snippet">A judge temporarily blocked the Trump administration’s designation, clearing the way for Anthropic to keep doing business without the label starting next week.</p>
+        <div class="news-meta">
+            <a href="https://www.wired.com/story/anthropic-supply-chain-risk-designation-injunction/" target="_blank">Original</a>
+            <span class="tag">Wired</span>
+            <span class="tag tag-foreign">EN</span>
+        </div>
+    </div>
+    <div class="news-item">
+        <div class="news-date">03-26 21:42</div>
+        <h3>20. How Trump’s Plot to Grab Iran's Nuclear Fuel Would Actually Work</h3>
+        <p class="snippet">Experts say that an American ground operation targeting nuclear sites in Iran would be incredibly complicated, put troops’ lives at great risk—and might still fail.</p>
+        <div class="news-meta">
+            <a href="https://www.wired.com/story/us-iran-war-nuclear-extraction-ground-operation/" target="_blank">Original</a>
+            <span class="tag">Wired</span>
+            <span class="tag tag-foreign">EN</span>
+        </div>
+    </div>
+    <div class="news-item">
+        <div class="news-date">03-26 18:00</div>
+        <h3>21. Meet the Tech Reporters Using AI to Help Write and Edit Their Stories</h3>
+        <p class="snippet">Independent writers are using AI agents all throughout their reporting process. What’s the value of a human journalist, anyway?</p>
+        <div class="news-meta">
+            <a href="https://www.wired.com/story/tech-reporters-using-ai-write-edit-stories/" target="_blank">Original</a>
+            <span class="tag">Wired</span>
+            <span class="tag tag-foreign">EN</span>
+        </div>
+    </div>
+    <div class="news-item">
+        <div class="news-date">03-26 14:13</div>
+        <h3>22. The Sony Afeela Was Doomed to Fail</h3>
+        <p class="snippet">A six-year EV rollout ends with a thud.</p>
+        <div class="news-meta">
+            <a href="https://www.wired.com/story/sony-afeela-was-doomed-to-fail/" target="_blank">Original</a>
+            <span class="tag">Wired</span>
+            <span class="tag tag-foreign">EN</span>
+        </div>
+    </div>
+    <div class="news-item">
+        <div class="news-date">03-26 13:32</div>
+        <h3>23. Using a VPN May Subject You to NSA Spying</h3>
+        <p class="snippet">US lawmakers are pressing Tulsi Gabbard to reveal whether using a VPN can strip Americans of their constitutional protections against warrantless surveillance.</p>
+        <div class="news-meta">
+            <a href="https://www.wired.com/story/using-a-vpn-may-subject-you-to-nsa-spying/" target="_blank">Original</a>
+            <span class="tag">Wired</span>
+            <span class="tag tag-foreign">EN</span>
+        </div>
+    </div>
+    <div class="news-item">
+        <div class="news-date">03-26 11:30</div>
+        <h3>24. How to Buy Ethical and Eco-Friendly Electronics (2026)</h3>
+        <p class="snippet">Electronic waste, conflict minerals, and poor labor conditions are just a few issues blighting the tech industry. Here’s how to shop more sustainably.</p>
+        <div class="news-meta">
+            <a href="https://www.wired.com/story/how-to-buy-ethical-and-eco-friendly-electronics/" target="_blank">Original</a>
+            <span class="tag">Wired</span>
+            <span class="tag tag-foreign">EN</span>
+        </div>
+    </div>
+    <div class="news-item">
+        <div class="news-date">03-27 01:26</div>
+        <h3>25. David Sacks is done as AI czar — here’s what he’s doing instead</h3>
+        <p class="snippet">Sacks will be much further from power center in Washington than since the outset of this second Trump administration.</p>
+        <div class="news-meta">
+            <a href="https://techcrunch.com/2026/03/26/david-sacks-is-done-as-ai-czar-heres-what-hes-doing-instead/" target="_blank">Original</a>
+            <span class="tag">TechCrunch</span>
+            <span class="tag tag-foreign">EN</span>
+        </div>
+    </div>
+    <div class="news-item">
+        <div class="news-date">03-27 01:18</div>
+        <h3>26. Anthropic wins injunction against Trump administration over Defense Department saga</h3>
+        <p class="snippet">A federal judge has ordered that the Trump administration rescind recent restrictions it placed on the AI company.</p>
+        <div class="news-meta">
+            <a href="https://techcrunch.com/2026/03/26/anthropic-wins-injunction-against-trump-administration-over-defense-department-saga/" target="_blank">Original</a>
+            <span class="tag">TechCrunch</span>
+            <span class="tag tag-foreign">EN</span>
+        </div>
+    </div>
+    <div class="news-item">
+        <div class="news-date">03-26 21:50</div>
+        <h3>27. Wikipedia cracks down on the use of AI in article writing</h3>
+        <p class="snippet">The site, whose policies are subject to change, has struggled with the issue of AI-generated writing.</p>
+        <div class="news-meta">
+            <a href="https://techcrunch.com/2026/03/26/wikipedia-cracks-down-on-the-use-of-ai-in-article-writing/" target="_blank">Original</a>
+            <span class="tag">TechCrunch</span>
+            <span class="tag tag-foreign">EN</span>
+        </div>
+    </div>
+    <div class="news-item">
+        <div class="news-date">03-26 20:42</div>
+        <h3>28. Mastodon is making its decentralized social network easier to use with its 最新 revamp</h3>
+        <p class="snippet">Mastodon is redesigning user profiles to simplify the experience and better appeal to mainstream users and organizations.</p>
+        <div class="news-meta">
+            <a href="https://techcrunch.com/2026/03/26/mastodon-is-making-its-decentralized-social-network-easier-to-use-with-its-latest-revamp/" target="_blank">Original</a>
+            <span class="tag">TechCrunch</span>
+            <span class="tag tag-foreign">EN</span>
+        </div>
+    </div>
+    <div class="news-item">
+        <div class="news-date">03-26 20:39</div>
+        <h3>29. Netflix confirms it’s raising prices again</h3>
+        <p class="snippet">The standard plan without ads now costs $19.99 per month, a $2 increase from the previous $17.99 subscription fee, while the premium plan is also going up by $2 and will now cost $26.99 per month.</p>
+        <div class="news-meta">
+            <a href="https://techcrunch.com/2026/03/26/netflix-confirms-its-raising-prices-again/" target="_blank">Original</a>
+            <span class="tag">TechCrunch</span>
+            <span class="tag tag-foreign">EN</span>
+        </div>
+    </div>
+    <div class="news-item">
+        <div class="news-date">03-26 19:30</div>
+        <h3>30. 16 of the most interesting 创业公司s from YC W26 Demo Day</h3>
+        <p class="snippet">From redirecting doomscrolling to training humanoid robots, these 16 startups stood out as the most interesting ones from an overflowing YC cohort.</p>
+        <div class="news-meta">
+            <a href="https://techcrunch.com/2026/03/26/16-of-the-most-interesting-startups-from-yc-w26-demo-day/" target="_blank">Original</a>
+            <span class="tag">TechCrunch</span>
+            <span class="tag tag-foreign">EN</span>
+        </div>
+    </div>
+    <div class="news-item">
+        <div class="news-date">03-26 18:34</div>
+        <h3>31. [OpenAI] abandons yet another side quest: ChatGPT’s erotic mode</h3>
+        <p class="snippet">It's only the latest of several side projects that the AI startup has ditched over the past week.</p>
+        <div class="news-meta">
+            <a href="https://techcrunch.com/2026/03/26/openai-abandons-yet-another-side-quest-chatgpts-erotic-mode/" target="_blank">Original</a>
+            <span class="tag">TechCrunch</span>
+            <span class="tag tag-foreign">EN</span>
+        </div>
+    </div>
+    <div class="news-item">
+        <div class="news-date">03-26 18:23</div>
+        <h3>32. Data centers get ready — the Senate wants to see your power bills</h3>
+        <p class="snippet">Senators Josh Hawley and Elizabeth Warren want the Energy Information Administration to gather more details about how data centers use power — and how that affects the grid.</p>
+        <div class="news-meta">
+            <a href="https://techcrunch.com/2026/03/26/data-centers-get-ready-the-senate-wants-to-see-your-power-bills/" target="_blank">Original</a>
+            <span class="tag">TechCrunch</span>
+            <span class="tag tag-foreign">EN</span>
+        </div>
+    </div>
+    <div class="news-item">
+        <div class="news-date">03-26 18:05</div>
+        <h3>33. Defense 创业公司 Shield AI lands $127B valuation up 140% after US Air Force deal</h3>
+        <p class="snippet">In one year, Shield AI's value has leaped 140%. This after it won a contract to be the software provider to Anduril's Fury fighter jet for the U.S. Air Force.</p>
+        <div class="news-meta">
+            <a href="https://techcrunch.com/2026/03/26/defense-startup-shield-ai-lands-12-7b-valuation-up-140-after-u-s-air-force-deal/" target="_blank">Original</a>
+            <span class="tag">TechCrunch</span>
+            <span class="tag tag-foreign">EN</span>
+        </div>
+    </div>
+    <div class="news-item">
+        <div class="news-date">03-26 16:06</div>
+        <h3>34. Silicon Valley’s two biggest dramas have intersected: Lite大模型 and Delve</h3>
+        <p class="snippet">LiteLLM offers an AI open source project used by millions that was infected by credential harvesting malware.</p>
+        <div class="news-meta">
+            <a href="https://techcrunch.com/2026/03/26/delve-did-the-security-compliance-on-litellm-an-ai-project-hit-by-malware/" target="_blank">Original</a>
+            <span class="tag">TechCrunch</span>
+            <span class="tag tag-foreign">EN</span>
+        </div>
+    </div>
+    <div class="news-item">
+        <div class="news-date">03-26 15:25</div>
+        <h3>35. ByteDance’s 新 AI 视频 generation 模型 Dreamina Seedance 20 comes to CapCut</h3>
+        <p class="snippet">The new model in CapCut will have built-in protections for making video from real faces or unauthorized intellectual property.</p>
+        <div class="news-meta">
+            <a href="https://techcrunch.com/2026/03/26/bytedances-new-ai-video-generation-model-dreamina-seedance-2-0-comes-to-capcut/" target="_blank">Original</a>
+            <span class="tag">TechCrunch</span>
+            <span class="tag tag-foreign">EN</span>
+        </div>
+    </div>
+    <div class="news-item">
+        <div class="news-date">03-27 10:00</div>
+        <h3>36. 智能庭院机器人Yarbo获近2亿元融资，新品众筹首发6小时破150万美金｜硬氪首发</h3>
+        <p class="snippet">作者｜黄楠
+  编辑｜袁斯来
+  硬氪获悉，智能庭院机器人品牌汉阳科技Yarbo已完成近2亿元新一轮融资。本轮融资由松禾资本、温润投资（温氏股份旗下）、安乃达、芯联资本、龙华资本投资，涵盖了头部财务投资机构、上市公司产业资本与地方政府引导基金。融资资金将主要用于深化技术研发、加速产品迭代及拓展全球市场渠道。庚辛资本担任长期财务顾问。
+  产业资本的注</p>
+        <div class="news-meta">
+            <a href="https://36kr.com/p/3736563677396994?f=rss" target="_blank">Original</a>
+            <span class="tag">36kr</span>
+            <span class="tag tag-china">CN</span>
+        </div>
+    </div>
+    <div class="news-item">
+        <div class="news-date">03-27 09:35</div>
+        <h3>37. 云鲸联创吴一昊Hower即将离职创业 | 硬氪独家</h3>
+        <p class="snippet">作者 | 黄楠 袁斯来
+  编辑 | 袁斯来
+  近日，硬氪通过多个渠道独家获悉，云鲸联合创始人吴一昊（Hower）即将从公司离职。根据硬氪了解， Hower即将创业，但产品本身还在高度保密阶段。
+  硬氪就此向吴一昊本人求证，对方证实消息属实；吴一昊表示，近期他将卸任管理职务、并准备创业，但仍保留云鲸首席战略顾问一职。
+  吴一昊与云</p>
+        <div class="news-meta">
+            <a href="https://36kr.com/p/3736574177345799?f=rss" target="_blank">Original</a>
+            <span class="tag">36kr</span>
+            <span class="tag tag-china">CN</span>
+        </div>
+    </div>
+    <div class="news-item">
+        <div class="news-date">03-27 08:04</div>
+        <h3>38. 8点1氪丨雷军辞去金山云董事长；苹果回应iPhone半夜自动打电话；速效救心丸成交额同比增长超10倍</h3>
+        <p class="snippet">今日热点导览
+  春秋航空发通知：国内航线燃油附加费确定4月5日上涨
+  “老头乐”起诉小米汽车，当事企业称已和解
+  广东多地优化调整住房公积金政策措施
+  斯柯达将退出中国，大众中国回应：销售到年中，持续提供售后
+  特朗普称将在5月中旬访华，外交部：中美此事保持着沟通
+  TOP3大新闻</p>
+        <div class="news-meta">
+            <a href="https://36kr.com/p/3740427947426049?f=rss" target="_blank">Original</a>
+            <span class="tag">36kr</span>
+            <span class="tag tag-china">CN</span>
+        </div>
+    </div>
+    <div class="news-item">
+        <div class="news-date">03-26 22:33</div>
+        <h3>39. 浙大博士造出「机器人界的F1」：不卷脑子卷身体，要比博尔特跑得快</h3>
+        <p class="snippet"></p>
+        <div class="news-meta">
+            <a href="https://36kr.com/p/3739769424593154?f=rss" target="_blank">Original</a>
+            <span class="tag">36kr</span>
+            <span class="tag tag-china">CN</span>
+        </div>
+    </div>
+    <div class="news-item">
+        <div class="news-date">03-26 20:14</div>
+        <h3>40. StoReel获3400万美元融资：用AI重构故事生产，打造工具社区与平台双轮驱动的内容生态｜涌现新项目</h3>
+        <p class="snippet">文｜王欣逸
+  编辑｜王毓婵
+  一句话介绍
+  StoReel是一家全球化AI原生娱乐内容平台，核心产品分别是AI剧集平台StoReel App以及AI剧集工具社区StoReel Canvas，致力于打造系列化剧集内容的创作、发行和变现体系。<</p>
+        <div class="news-meta">
+            <a href="https://36kr.com/p/3739636054999040?f=rss" target="_blank">Original</a>
+            <span class="tag">36kr</span>
+            <span class="tag tag-china">CN</span>
+        </div>
+    </div>
+    <div class="news-item">
+        <div class="news-date">03-26 20:00</div>
+        <h3>41. 氪星晚报｜淘天集团推出“AI生产力计划”，向实习生全员开放;过去五年北京已牵头制定国际标准超500项；欧洲议会表决通过欧美贸易协议</h3>
+        <p class="snippet">大公司：
+  三星、SK等韩国企业实施车辆限行等节能措施，响应政府节能政策
+  据报道，以</p>
+        <div class="news-meta">
+            <a href="https://36kr.com/p/3739460842078470?f=rss" target="_blank">Original</a>
+            <span class="tag">36kr</span>
+            <span class="tag tag-china">CN</span>
+        </div>
+    </div>
+    <div class="news-item">
+        <div class="news-date">03-26 19:58</div>
+        <h3>42. 速腾聚创首次实现单季盈利，2025年机器人产品销量激增25倍｜最前线</h3>
+        <p class="snippet">作者｜黄楠
+  编辑｜袁斯来
+  3月25日，速腾聚创（02498.HK）公布2025年第四季度及全年业绩报告。
+  财报显示，2025年全年，速腾聚创实现营收约19.41亿元，激光雷达总销量约91.2万台，毛利约5.14亿元，同比增长81.3%。第四季度表现尤为突出，单季度实现经营利润1.30亿元，净利润1.04亿元，首次实现单季度盈利。第四季度综</p>
+        <div class="news-meta">
+            <a href="https://36kr.com/p/3739712915816457?f=rss" target="_blank">Original</a>
+            <span class="tag">36kr</span>
+            <span class="tag tag-china">CN</span>
+        </div>
+    </div>
+    <div class="news-item">
+        <div class="news-date">03-26 19:28</div>
+        <h3>43. 36氪官方Skill上线ClawHub，解锁OpenClaw新技能</h3>
+        <p class="snippet">36氪已正式入驻ClawHub平台，重磅推出三款官方Skill，专为OpenClaw用户打造，无需繁琐操作，一键安装即可让你的OpenClaw升级为新经济信息中枢，轻松抢占信息先机。
+  OpenClaw的强大，源于其可无限扩展的Skill生态——这些“技能包”就像给AI助手装上了专属外挂，让原本强大的智能体拥有更精准、更高效的专项能力。而ClawHub作为OpenClaw官方</p>
+        <div class="news-meta">
+            <a href="https://36kr.com/p/3739662958854150?f=rss" target="_blank">Original</a>
+            <span class="tag">36kr</span>
+            <span class="tag tag-china">CN</span>
+        </div>
+    </div>
+    <div class="news-item">
+        <div class="news-date">03-27 07:48</div>
+        <h3>44. 王兴：将争取把美团App率先升级成AI-powered App</h3>
+        <p class="snippet">3月26日美团财报电话会上，CEO王兴表示：“我们将AI视为一个战略机遇，用以改善、强化，乃至彻底革新我们在本地生活核心业务上的产品与运营……我们将争取把美团App率先升级成AI-powered App，更好地满足消费者本地生活、即时零售端到端的完整体验。”雷峰网</p>
+        <div class="news-meta">
+            <a href="https://www.leiphone.com/category/industrynews/6l0Z5iCtQyWp0RZu.html" target="_blank">Original</a>
+            <span class="tag">雷锋网</span>
+            <span class="tag tag-china">CN</span>
+        </div>
+    </div>
+    <div class="news-item">
+        <div class="news-date">03-26 18:45</div>
+        <h3>45. 当小米不再需要"奇迹"</h3>
+        <p class="snippet">短短一周不到的时间，小米做出了两件瞩目的大事。首先，小米发布了新一代小米SU7，在配置全面提升后，新一代SU7标准版21.99万元，Pro版24.99万元，Max版30.39万元，全系相比老款涨价4000元。价格虽然有所上涨，但新小米SU7仍在开售34分钟锁单突破1.5万、开售3天锁单超过3万。这对于习惯了“卷”字当先的汽车行业来说，这是一件让人很难相信的事实。其</p>
+        <div class="news-meta">
+            <a href="https://www.leiphone.com/category/transportation/ualyzr4FuEVr8zr1.html" target="_blank">Original</a>
+            <span class="tag">雷锋网</span>
+            <span class="tag tag-china">CN</span>
+        </div>
+    </div>
+    <div class="news-item">
+        <div class="news-date">03-26 18:28</div>
+        <h3>46. 蚂蚁数科中关村论坛发声：Token效能将是衡量企业级AI价值的核心指标</h3>
+        <p class="snippet">以OpenClaw为代表的自主执行智能体爆火，标志着AI应用已从“对话交互”向“任务执行”加速演进。企业在加速拥抱的同时，也面临着算力浪费、安全合规等多重挑战。如何让智能体真正实现规模化、可持续地落地，成为产业界共同关注的核心议题。3月26日，在中关村论坛未来产业创新发展论坛中，蚂蚁数科大模型技术创新部总经理章鹏在演讲中表示，OpenClaw的爆发将带来企业级AI范式革命，推动</p>
+        <div class="news-meta">
+            <a href="https://www.leiphone.com/category/industrynews/MSFJpSgbK8Bx5l61.html" target="_blank">Original</a>
+            <span class="tag">雷锋网</span>
+            <span class="tag tag-china">CN</span>
+        </div>
+    </div>
+    <div class="news-item">
+        <div class="news-date">03-26 17:57</div>
+        <h3>47. AI时代需要什么样的VPU？</h3>
+        <p class="snippet">当视频成为AI系统中的主要数据形态，视频处理也在被重新定义。一方面，视频分辨率持续提升，从4K走向8K，多路视频流成为常态；另一方面，视频不再只是“被观看”，而是被用于分析、决策甚至训练模型。这使得视频处理不再只是简单的编解码问题，而是同时涉及性能、</p>
+        <div class="news-meta">
+            <a href="https://www.leiphone.com/category/chips/k7RlC1IavJo3GQ2B.html" target="_blank">Original</a>
+            <span class="tag">雷锋网</span>
+            <span class="tag tag-china">CN</span>
+        </div>
+    </div>
+    <div class="news-item">
+        <div class="news-date">03-26 16:02</div>
+        <h3>48. 单机架性能超x86两倍、每GW省100亿美元，Arm为智能体时代「重造」CPU</h3>
+        <p class="snippet">AI正在重塑全球计算基础设施，代理式计算正成为下一代算力革命的核心引擎，产业迫切需要更高效、更具能效比、更易规模化落地的原生部署方案。站在这一关键节点，Arm以全新姿态正式入场。当地时间2026年3月24日，Arm宣告推出自研Arm AGI CPU，卡位AI数据中心赛道，瞄准爆发式增长的代理式AI （agentic AI）工作负载</p>
+        <div class="news-meta">
+            <a href="https://www.leiphone.com/category/chips/EAhTJQupsCojX6Qo.html" target="_blank">Original</a>
+            <span class="tag">雷锋网</span>
+            <span class="tag tag-china">CN</span>
+        </div>
+    </div>
+    <div class="news-item">
+        <div class="news-date">03-26 15:16</div>
+        <h3>49. 速卖通英国站爆发：李宁大涨300%，亚马逊消费者转向速卖通</h3>
+        <p class="snippet">速卖通AliExpress英国站周年庆大促中，品牌商家迎来集体爆发。其中，国潮代表李宁表现最为抢眼，在速卖通“超级品牌出海计划”加持下，单日成交额环比日销增长超过300%，冲上鞋服类目Top1。除国潮服饰外，速卖通多个类目在英国也增速惊人：中国智能清洁电器品牌Lubluelu销量翻41倍，验证了“海外托管”模式对家电品类的巨大推动力；泡泡玛特盲盒销量翻13倍，去年速卖通直播间二</p>
+        <div class="news-meta">
+            <a href="https://www.leiphone.com/category/industrynews/mrTTWJr7PcSB3p2z.html" target="_blank">Original</a>
+            <span class="tag">雷锋网</span>
+            <span class="tag tag-china">CN</span>
+        </div>
+    </div>
+    <div class="news-item">
+        <div class="news-date">03-26 15:14</div>
+        <h3>50. 傲意科技完成C1轮15亿元融资</h3>
+        <p class="snippet">上海傲意信息科技有限公司（以下简称&quot;傲意科技&quot;）今日宣布完成C1轮融资，本轮融资由中金资本旗下深圳市脑科学与类脑智能产业投资基金（以下简称&quot;中金脑科学基金&quot;）领投，多家老股东持续跟投。傲意科技系中金脑科学基金首家投资企业，据悉，傲意科技曾于2023年、2025年先后获得来自三博脑科集团</p>
+        <div class="news-meta">
+            <a href="https://www.leiphone.com/category/industrynews/KlwYh9dMxCW8zBRR.html" target="_blank">Original</a>
+            <span class="tag">雷锋网</span>
+            <span class="tag tag-china">CN</span>
+        </div>
+    </div>
+    <div class="news-item">
+        <div class="news-date">03-26 11:14</div>
+        <h3>51. Quest Mobile：闲鱼活跃用户数首次超过小红书</h3>
+        <p class="snippet">第三方数据机构QuestMobile数据显示，3月以来，闲鱼活跃用户数首次并连续两周超过小红书。3月份闲鱼活跃用户数增幅明显，排名互联网行业第一。此前，闲鱼上线了 AI相机新功能，极大降低了用户参与闲置发布、交易的门槛，带来开年后用户活跃度的强劲增长。雷峰网</p>
+        <div class="news-meta">
+            <a href="https://www.leiphone.com/category/industrynews/yMRIRIJWZT3zdcOj.html" target="_blank">Original</a>
+            <span class="tag">雷锋网</span>
+            <span class="tag tag-china">CN</span>
+        </div>
+    </div>
+    <div class="news-item">
+        <div class="news-date">03-27 01:20</div>
+        <h3>52. 乐鑫发布双核 RISC-V 高性能 AIoT SoC 芯片 ESP32-S31，支持多协议连接</h3>
+        <p class="snippet">IT之家 3 月 27 日消息，乐鑫 Espressif 昨日宣布推出高性能 AIoT SoC 芯片 ESP32-S31，其采用双核 32-bit RISC-V CPU 设计，主频可达 320MHz，集成全面多协议连接。ESP32-S31 支持 2.4GHz 频段的 Wi-Fi 6、蓝牙 5.4（含 LE 与传统）、IEEE 802.15.4</p>
+        <div class="news-meta">
+            <a href="https://www.ithome.com/0/933/147.htm" target="_blank">Original</a>
+            <span class="tag">IT之家</span>
+            <span class="tag tag-china">CN</span>
+        </div>
+    </div>
+    <div class="news-item">
+        <div class="news-date">03-27 09:44</div>
+        <h3>53. 快手最后的筹码：260亿的豪赌</h3>
+        <p class="snippet">这是快手为2026年设定的资本支出预算。相比2025年，这笔开支陡增了110亿元，且几乎全部定向砸向可灵大模型与AI基础设施。</p>
+        <div class="news-meta">
+            <a href="https://www.tmtpost.com/7930641.html" target="_blank">Original</a>
+            <span class="tag">钛媒体</span>
+            <span class="tag tag-china">CN</span>
+        </div>
+    </div>
+    <div class="news-item">
+        <div class="news-date">03-27 09:36</div>
+        <h3>54. 首次全年盈利的禾赛，为何盯上了物理 AI？</h3>
+        <p class="snippet">禾赛正试图重新定义自己的角色。</p>
+        <div class="news-meta">
+            <a href="https://www.tmtpost.com/7930580.html" target="_blank">Original</a>
+            <span class="tag">钛媒体</span>
+            <span class="tag tag-china">CN</span>
+        </div>
+    </div>
+    <div class="news-item">
+        <div class="news-date">03-27 09:19</div>
+        <h3>55. GitHub修改Copilot隐私政策：4月24日起默认使用用户交互数据训练AI​</h3>
+        <p class="snippet">如果用户在私有仓库中激活并使用Copilot，其在实时交互过程中产生的代码片段和上下文，将被视为交互数据，纳入采集与训练的范畴。</p>
+        <div class="news-meta">
+            <a href="https://www.tmtpost.com/7930981.html" target="_blank">Original</a>
+            <span class="tag">钛媒体</span>
+            <span class="tag tag-china">CN</span>
+        </div>
+    </div>
+    <div class="news-item">
+        <div class="news-date">03-27 08:52</div>
+        <h3>56. AI，正在“杀死”哪些软件？</h3>
+        <p class="snippet">两类软件最先受到冲击。</p>
+        <div class="news-meta">
+            <a href="https://www.tmtpost.com/7930513.html" target="_blank">Original</a>
+            <span class="tag">钛媒体</span>
+            <span class="tag tag-china">CN</span>
+        </div>
+    </div>
+    <div class="footer">
+        Generated by AI News Assistant
+    </div>
+</body>
+</html>

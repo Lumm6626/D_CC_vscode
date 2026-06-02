@@ -1,0 +1,1295 @@
+/* ============================================
+   Basic English — The Quiet Study
+   Warm Paper & Ink 设计系统
+   ============================================ */
+
+/* Google Fonts fallback — Cormorant Garamond for display */
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;0,700;1,400&display=swap');
+
+/* CSS Variables */
+:root {
+    /* Colors — only 4 hues */
+    --ink: #1C1C1E;
+    --ink-light: #636366;
+    --ink-faint: #AEAEB2;
+    --paper: #FAF9F6;
+    --paper-dark: #F0EDE8;
+    --accent: #C75B39;
+    --accent-soft: rgba(199, 91, 57, 0.08);
+    --accent-soft-hover: rgba(199, 91, 57, 0.14);
+    --success: #4A8C6F;
+    --success-soft: rgba(74, 140, 111, 0.12);
+    --warning: #D4A853;
+    --warning-soft: rgba(212, 168, 83, 0.12);
+    --error: #C75B39;
+    --error-soft: rgba(199, 91, 57, 0.08);
+    --divider: rgba(0, 0, 0, 0.06);
+
+    /* Shadows */
+    --shadow-sm: 0 1px 2px rgba(0, 0, 0, 0.04);
+    --shadow-card: 0 2px 16px rgba(0, 0, 0, 0.06);
+    --shadow-hover: 0 4px 24px rgba(0, 0, 0, 0.10);
+
+    /* Typography */
+    --font-display: 'Cormorant Garamond', 'Georgia', 'Noto Serif SC', serif;
+    --font-body: -apple-system, BlinkMacSystemFont, 'SF Pro Text', sans-serif;
+    --font-mono: 'SF Mono', 'Fira Code', 'Consolas', monospace;
+
+    /* Font Sizes */
+    --text-hero: 56px;
+    --text-display: 36px;
+    --text-title: 24px;
+    --text-body: 17px;
+    --text-small: 14px;
+    --text-caption: 12px;
+
+    /* Spacing */
+    --space-xs: 4px;
+    --space-sm: 8px;
+    --space-md: 12px;
+    --space-lg: 16px;
+    --space-xl: 24px;
+    --space-2xl: 32px;
+    --space-3xl: 48px;
+    --space-4xl: 64px;
+    --space-5xl: 80px;
+
+    /* Border Radius */
+    --radius-sm: 8px;
+    --radius-md: 12px;
+    --radius-lg: 16px;
+    --radius-xl: 20px;
+    --radius-full: 9999px;
+
+    /* Transitions */
+    --ease-out: 350ms cubic-bezier(0, 0, 0.2, 1);
+    --ease-spring: 400ms cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    --ease-spring-strong: 600ms cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+/* Reset */
+*, *::before, *::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: var(--font-body);
+    background: var(--paper);
+    color: var(--ink);
+    min-height: 100vh;
+    overflow-x: hidden;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    line-height: 1.6;
+}
+
+#app {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+/* ============================================
+   Screens
+   ============================================ */
+.screen {
+    display: none;
+    flex: 1;
+    padding: var(--space-md) var(--space-lg);
+    max-width: 560px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.screen.active {
+    display: flex;
+    flex-direction: column;
+    animation: screenEnter 350ms ease-out;
+}
+
+@keyframes screenEnter {
+    from {
+        opacity: 0;
+        transform: translateY(8px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* ============================================
+   Progress Indicator (5-step)
+   ============================================ */
+.step-indicator {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0;
+    padding: var(--space-sm) 0;
+    margin-bottom: var(--space-xs);
+}
+
+.step-dot-group {
+    display: flex;
+    align-items: center;
+}
+
+.step-dot {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background: var(--paper-dark);
+    transition: all var(--ease-spring);
+    position: relative;
+    cursor: pointer;
+}
+
+.step-dot.completed {
+    background: var(--ink);
+}
+
+.step-dot.current {
+    background: var(--accent);
+    box-shadow: 0 0 0 3px var(--accent-soft);
+}
+
+.step-dot.locked {
+    background: var(--paper-dark);
+    border: 2px solid var(--divider);
+}
+
+.step-line {
+    width: 24px;
+    height: 2px;
+    background: var(--divider);
+    margin: 0 3px;
+    transition: background var(--ease-out);
+}
+
+.step-line.completed {
+    background: var(--ink);
+}
+
+.step-labels {
+    display: flex;
+    justify-content: center;
+    gap: 0;
+    margin-top: 2px;
+    margin-bottom: var(--space-md);
+}
+
+.step-label {
+    font-size: 10px;
+    color: var(--ink-faint);
+    text-align: center;
+    width: 52px;
+    transition: color var(--ease-out);
+}
+
+.step-label.completed {
+    color: var(--ink-light);
+}
+
+.step-label.current {
+    color: var(--accent);
+    font-weight: 600;
+}
+
+/* ============================================
+   Word Card (核心组件)
+   ============================================ */
+.word-card {
+    background: var(--paper);
+    border-radius: var(--radius-xl);
+    padding: var(--space-3xl) var(--space-xl);
+    text-align: center;
+    box-shadow: var(--shadow-card);
+    margin-bottom: var(--space-md);
+    animation: cardAppear 400ms cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+@keyframes cardAppear {
+    from {
+        opacity: 0;
+        transform: scale(0.96);
+    }
+    to {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+.word-card .phonetic {
+    font-size: var(--text-small);
+    color: var(--ink-faint);
+    margin-bottom: var(--space-md);
+    font-family: var(--font-mono);
+}
+
+.word-card .word-display {
+    font-family: var(--font-display);
+    font-size: var(--text-hero);
+    font-weight: 700;
+    color: var(--ink);
+    line-height: 1.1;
+    margin-bottom: var(--space-lg);
+    letter-spacing: -0.5px;
+}
+
+.word-card .chinese-meaning {
+    font-size: var(--text-body);
+    color: var(--ink-light);
+    font-weight: 400;
+    margin-bottom: var(--space-xl);
+}
+
+.word-card .audio-btn {
+    display: inline-flex;
+    align-items: center;
+    gap: var(--space-sm);
+    background: none;
+    border: 1px solid var(--divider);
+    color: var(--ink-light);
+    padding: var(--space-sm) var(--space-xl);
+    border-radius: var(--radius-full);
+    font-size: var(--text-small);
+    cursor: pointer;
+    transition: all var(--ease-out);
+    font-family: var(--font-body);
+}
+
+.word-card .audio-btn:hover {
+    border-color: var(--accent);
+    color: var(--accent);
+    background: var(--accent-soft);
+}
+
+.word-card .audio-btn:active {
+    transform: scale(0.97);
+}
+
+/* ============================================
+   Option Buttons
+   ============================================ */
+.options-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: var(--space-md);
+    margin-top: var(--space-lg);
+}
+
+.option-btn {
+    background: var(--paper-dark);
+    border: 2px solid transparent;
+    border-radius: var(--radius-md);
+    padding: var(--space-lg);
+    font-size: var(--text-body);
+    font-weight: 500;
+    color: var(--ink);
+    cursor: pointer;
+    transition: all 250ms ease;
+    text-align: center;
+    min-height: 48px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: var(--space-sm);
+    font-family: var(--font-body);
+    position: relative;
+}
+
+.option-btn:hover {
+    background: var(--paper);
+    border-color: var(--divider);
+    transform: translateY(-1px);
+    box-shadow: var(--shadow-sm);
+}
+
+.option-btn:active {
+    transform: translateY(0);
+}
+
+.option-btn.correct {
+    background: var(--success-soft);
+    border-color: var(--success);
+    color: var(--success);
+}
+
+.option-btn.wrong {
+    background: var(--error-soft);
+    border-color: var(--error);
+    color: var(--error);
+    animation: wrongShake 400ms cubic-bezier(0.36, 0.07, 0.19, 0.97);
+}
+
+.option-btn.dimmed {
+    opacity: 0.4;
+}
+
+@keyframes wrongShake {
+    0%, 100% { transform: translateX(0); }
+    20% { transform: translateX(-4px); }
+    40% { transform: translateX(4px); }
+    60% { transform: translateX(-4px); }
+    80% { transform: translateX(3px); }
+}
+
+.option-btn .feedback-icon {
+    font-size: var(--text-body);
+    opacity: 0;
+    transition: opacity 250ms ease;
+}
+
+.option-btn.correct .feedback-icon,
+.option-btn.wrong .feedback-icon {
+    opacity: 1;
+}
+
+/* ============================================
+   Paraphrasing Input (Step 4 核心)
+   ============================================ */
+.paraphrase-area {
+    margin-top: var(--space-xl);
+}
+
+.paraphrase-prompt {
+    font-size: var(--text-small);
+    color: var(--ink-light);
+    margin-bottom: var(--space-lg);
+    line-height: 1.5;
+}
+
+.paraphrase-original {
+    font-family: var(--font-display);
+    font-size: var(--text-title);
+    color: var(--ink);
+    font-style: italic;
+    padding: var(--space-xl);
+    background: var(--paper-dark);
+    border-radius: var(--radius-md);
+    margin-bottom: var(--space-xl);
+    line-height: 1.4;
+    quotes: '\201C' '\201D';
+}
+
+.paraphrase-original::before { content: '\201C'; }
+.paraphrase-original::after { content: '\201D'; }
+
+.paraphrase-input-wrapper {
+    position: relative;
+    margin-bottom: var(--space-lg);
+}
+
+.paraphrase-input {
+    width: 100%;
+    padding: var(--space-lg);
+    padding-bottom: var(--space-sm);
+    font-family: var(--font-mono);
+    font-size: var(--text-body);
+    line-height: 1.6;
+    border: none;
+    border-bottom: 2px solid var(--divider);
+    background: transparent;
+    color: var(--ink);
+    resize: vertical;
+    min-height: 80px;
+    transition: border-color var(--ease-out);
+    outline: none;
+}
+
+.paraphrase-input:focus {
+    border-color: var(--accent);
+}
+
+.paraphrase-input::placeholder {
+    color: var(--ink-faint);
+}
+
+/* Real-time feedback below input */
+.checker-feedback {
+    margin-top: var(--space-lg);
+    padding: var(--space-lg);
+    border-radius: var(--radius-md);
+    font-size: var(--text-small);
+    line-height: 1.6;
+}
+
+.checker-feedback.valid {
+    background: var(--success-soft);
+    color: var(--success);
+}
+
+.checker-feedback.invalid {
+    background: var(--error-soft);
+    color: var(--error);
+}
+
+.checker-feedback .feedback-title {
+    font-weight: 600;
+    margin-bottom: var(--space-sm);
+    font-size: var(--text-body);
+}
+
+.checker-feedback .invalid-word {
+    display: flex;
+    align-items: center;
+    gap: var(--space-sm);
+    padding: var(--space-xs) 0;
+}
+
+.checker-feedback .invalid-word .original {
+    text-decoration: underline;
+    text-decoration-color: var(--error);
+    text-underline-offset: 3px;
+    text-decoration-style: wavy;
+    font-family: var(--font-mono);
+}
+
+.checker-feedback .invalid-word .suggestion {
+    color: var(--success);
+}
+
+.checker-feedback .invalid-word .arrow {
+    color: var(--ink-faint);
+}
+
+/* Submit button for paraphrasing */
+.paraphrase-submit {
+    background: var(--paper-dark);
+    color: var(--ink-light);
+    border: none;
+    padding: var(--space-md) var(--space-2xl);
+    border-radius: var(--radius-full);
+    font-size: var(--text-body);
+    font-weight: 600;
+    cursor: pointer;
+    transition: all var(--ease-out);
+    font-family: var(--font-body);
+    margin-top: var(--space-lg);
+}
+
+.paraphrase-submit.has-input {
+    background: var(--accent);
+    color: white;
+}
+
+.paraphrase-submit.has-input:hover {
+    opacity: 0.9;
+    box-shadow: var(--shadow-card);
+}
+
+/* ============================================
+   Reading Screen
+   ============================================ */
+.reading-passage {
+    font-family: var(--font-display);
+    font-size: 20px;
+    line-height: 1.8;
+    color: var(--ink);
+    padding: var(--space-2xl);
+    background: var(--paper);
+    border-radius: var(--radius-lg);
+    box-shadow: var(--shadow-card);
+    margin-bottom: var(--space-2xl);
+    letter-spacing: 0.01em;
+}
+
+.reading-passage .passage-title {
+    font-size: var(--text-title);
+    font-weight: 700;
+    margin-bottom: var(--space-xl);
+    color: var(--ink);
+    text-align: center;
+}
+
+.reading-passage .passage-source {
+    font-size: var(--text-caption);
+    color: var(--ink-faint);
+    text-align: center;
+    margin-top: var(--space-xl);
+    font-family: var(--font-body);
+    font-style: italic;
+}
+
+.reading-questions {
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-xl);
+}
+
+.reading-question-card {
+    background: var(--paper-dark);
+    border-radius: var(--radius-lg);
+    padding: var(--space-xl);
+}
+
+.reading-question-card .question-text {
+    font-size: var(--text-body);
+    color: var(--ink);
+    font-weight: 600;
+    margin-bottom: var(--space-md);
+    line-height: 1.5;
+}
+
+.reading-question-card .options-grid {
+    margin-top: 0;
+}
+
+.reading-question-card .option-btn {
+    background: var(--paper);
+}
+
+/* Vocabulary notes */
+.vocab-notes {
+    margin-top: var(--space-xl);
+    padding: var(--space-xl);
+    background: var(--paper-dark);
+    border-radius: var(--radius-lg);
+}
+
+.vocab-notes h4 {
+    font-size: var(--text-small);
+    color: var(--ink-light);
+    margin-bottom: var(--space-md);
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+.vocab-note-item {
+    display: flex;
+    gap: var(--space-md);
+    padding: var(--space-sm) 0;
+    font-size: var(--text-small);
+    border-bottom: 1px solid var(--divider);
+}
+
+.vocab-note-item:last-child {
+    border-bottom: none;
+}
+
+.vocab-note-item .vn-word {
+    font-family: var(--font-display);
+    font-weight: 600;
+    font-size: var(--text-body);
+    color: var(--ink);
+    min-width: 100px;
+}
+
+.vocab-note-item .vn-meaning {
+    color: var(--ink-light);
+}
+
+/* ============================================
+   Replacement Showcase — 复杂词 → Basic 组合（核心视觉组件）
+   ============================================ */
+.replacement-showcase {
+    background: var(--paper);
+    border-radius: var(--radius-lg);
+    padding: var(--space-lg);
+    margin: var(--space-md) 0;
+    text-align: center;
+    box-shadow: var(--shadow-card);
+    border: 1px solid var(--divider);
+}
+
+.replacement-showcase .rs-label {
+    font-size: var(--text-caption);
+    color: var(--ink-faint);
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-bottom: var(--space-md);
+}
+
+.replacement-showcase .rs-complex {
+    font-family: var(--font-display);
+    font-size: var(--text-title);
+    color: var(--ink-faint);
+    text-decoration: line-through;
+    text-decoration-color: var(--error);
+    text-underline-offset: 6px;
+    margin-bottom: 2px;
+    line-height: 1.3;
+}
+
+.replacement-showcase .rs-arrow {
+    font-size: 24px;
+    color: var(--accent);
+    margin: 0;
+    font-weight: 700;
+    animation: arrowPulse 2s ease-in-out infinite;
+}
+
+@keyframes arrowPulse {
+    0%, 100% { opacity: 0.6; transform: translateY(0); }
+    50% { opacity: 1; transform: translateY(2px); }
+}
+
+.replacement-showcase .rs-verb {
+    font-family: var(--font-display);
+    font-size: 40px;
+    font-weight: 700;
+    color: var(--ink);
+    line-height: 1.1;
+}
+
+.replacement-showcase .rs-particle {
+    display: inline-block;
+    background: var(--accent-soft);
+    color: var(--accent);
+    padding: 2px var(--space-md);
+    border-radius: var(--radius-full);
+    font-family: var(--font-display);
+    font-size: var(--text-title);
+    font-weight: 700;
+    margin-left: var(--space-sm);
+}
+
+.replacement-showcase .rs-replaces {
+    font-size: var(--text-small);
+    color: var(--ink-light);
+    margin-top: var(--space-sm);
+}
+
+.replacement-showcase .rs-replaces strong {
+    color: var(--accent);
+    font-weight: 600;
+}
+
+.replacement-showcase .rs-example {
+    font-family: var(--font-display);
+    font-style: italic;
+    font-size: var(--text-body);
+    color: var(--ink);
+    margin-top: var(--space-md);
+    padding-top: var(--space-md);
+    border-top: 1px solid var(--divider);
+    line-height: 1.6;
+}
+
+/* Combination option buttons (enhanced) */
+.combination-option {
+    background: var(--paper-dark);
+    border: 2px solid transparent;
+    border-radius: var(--radius-md);
+    padding: var(--space-lg);
+    cursor: pointer;
+    transition: all 250ms ease;
+    text-align: center;
+    min-height: 48px;
+    font-family: var(--font-body);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 2px;
+}
+
+.combination-option:hover {
+    border-color: var(--accent);
+    background: var(--paper);
+    transform: translateY(-1px);
+    box-shadow: var(--shadow-sm);
+}
+
+.combination-option .co-verb {
+    font-family: var(--font-display);
+    font-size: var(--text-title);
+    font-weight: 700;
+    color: var(--ink);
+}
+
+.combination-option .co-particle {
+    font-family: var(--font-display);
+    font-size: var(--text-title);
+    font-weight: 700;
+    color: var(--accent);
+}
+
+.combination-option .co-replaces {
+    font-size: var(--text-caption);
+    color: var(--ink-faint);
+    margin-top: 2px;
+}
+
+.combination-option.correct {
+    background: var(--success-soft);
+    border-color: var(--success);
+}
+
+.combination-option.correct .co-verb,
+.combination-option.correct .co-particle {
+    color: var(--success);
+}
+
+.combination-option.wrong {
+    background: var(--error-soft);
+    border-color: var(--error);
+    animation: wrongShake 400ms cubic-bezier(0.36, 0.07, 0.19, 0.97);
+}
+
+.combination-option.wrong .co-verb,
+.combination-option.wrong .co-particle {
+    color: var(--error);
+}
+
+.combination-option.dimmed {
+    opacity: 0.35;
+}
+
+/* Combinations list in word card */
+.word-combinations {
+    margin-top: var(--space-lg);
+    padding-top: var(--space-lg);
+    border-top: 1px solid var(--divider);
+    text-align: left;
+}
+
+.word-combinations .wc-label {
+    font-size: var(--text-caption);
+    color: var(--ink-faint);
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    margin-bottom: var(--space-sm);
+}
+
+.word-combinations .wc-item {
+    display: inline-block;
+    font-family: var(--font-mono);
+    font-size: var(--text-small);
+    color: var(--accent);
+    background: var(--accent-soft);
+    padding: 2px var(--space-sm);
+    border-radius: var(--radius-sm);
+    margin: 2px 4px 2px 0;
+}
+
+.word-combinations .wc-item .wc-arrow {
+    color: var(--ink-faint);
+    margin: 0 2px;
+}
+
+/* ============================================
+   Stats / Results (文字为主的统计)
+   ============================================ */
+.stats-hero {
+    text-align: center;
+    padding: var(--space-xl) 0;
+}
+
+.stats-number {
+    font-family: var(--font-display);
+    font-size: 56px;
+    font-weight: 700;
+    color: var(--ink);
+    line-height: 1;
+    letter-spacing: -1px;
+}
+
+.stats-label {
+    font-size: var(--text-small);
+    color: var(--ink-light);
+    margin-top: var(--space-sm);
+}
+
+.stats-grid-compact {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: var(--space-md);
+    margin-top: var(--space-2xl);
+}
+
+.stat-item-compact {
+    text-align: center;
+    padding: var(--space-xl) var(--space-sm);
+}
+
+.stat-item-compact .stat-value-compact {
+    font-family: var(--font-display);
+    font-size: var(--text-display);
+    font-weight: 700;
+    color: var(--ink);
+    line-height: 1.1;
+}
+
+.stat-item-compact .stat-label-compact {
+    font-size: var(--text-caption);
+    color: var(--ink-faint);
+    margin-top: var(--space-xs);
+}
+
+/* Calm feedback text */
+.feedback-calm {
+    text-align: center;
+    font-size: var(--text-body);
+    color: var(--ink-light);
+    padding: var(--space-xl);
+    font-style: italic;
+    line-height: 1.6;
+}
+
+/* ============================================
+   Buttons
+   ============================================ */
+.btn-primary {
+    background: var(--accent);
+    color: white;
+    border: none;
+    padding: var(--space-md) var(--space-2xl);
+    border-radius: var(--radius-full);
+    font-size: var(--text-body);
+    font-weight: 600;
+    cursor: pointer;
+    transition: all var(--ease-out);
+    font-family: var(--font-body);
+    box-shadow: var(--shadow-sm);
+}
+
+.btn-primary:hover {
+    opacity: 0.92;
+    box-shadow: var(--shadow-card);
+    transform: translateY(-1px);
+}
+
+.btn-primary:active {
+    transform: translateY(0);
+}
+
+.btn-secondary {
+    background: transparent;
+    color: var(--ink);
+    border: 1px solid var(--divider);
+    padding: var(--space-md) var(--space-2xl);
+    border-radius: var(--radius-full);
+    font-size: var(--text-body);
+    font-weight: 500;
+    cursor: pointer;
+    transition: all var(--ease-out);
+    font-family: var(--font-body);
+}
+
+.btn-secondary:hover {
+    border-color: var(--ink-light);
+    background: var(--paper-dark);
+}
+
+.btn-back {
+    background: none;
+    border: none;
+    font-size: var(--text-body);
+    color: var(--ink-light);
+    cursor: pointer;
+    padding: var(--space-sm) var(--space-md);
+    border-radius: var(--radius-sm);
+    transition: color var(--ease-out);
+    font-family: var(--font-body);
+    align-self: flex-start;
+    margin-bottom: var(--space-lg);
+}
+
+.btn-back:hover {
+    color: var(--ink);
+}
+
+/* ============================================
+   Section Headers
+   ============================================ */
+.section-title {
+    font-family: var(--font-display);
+    font-size: var(--text-display);
+    font-weight: 700;
+    color: var(--ink);
+    margin-bottom: var(--space-sm);
+    letter-spacing: -0.5px;
+    line-height: 1.15;
+}
+
+.section-subtitle {
+    font-size: var(--text-body);
+    color: var(--ink-light);
+    margin-bottom: var(--space-2xl);
+    line-height: 1.6;
+}
+
+/* ============================================
+   Step Lock Overlay
+   ============================================ */
+.step-locked {
+    opacity: 0.5;
+    pointer-events: none;
+    filter: grayscale(0.5);
+    position: relative;
+}
+
+.lock-message {
+    text-align: center;
+    padding: var(--space-xl);
+    color: var(--ink-faint);
+    font-size: var(--text-small);
+    margin-top: var(--space-lg);
+}
+
+/* ============================================
+   Navigation
+   ============================================ */
+.bottom-nav {
+    display: flex;
+    justify-content: center;
+    gap: var(--space-xs);
+    padding: var(--space-lg);
+    padding-bottom: max(var(--space-lg), env(safe-area-inset-bottom));
+    background: var(--paper);
+    border-top: 1px solid var(--divider);
+    position: sticky;
+    bottom: 0;
+}
+
+.nav-step {
+    width: 40px;
+    height: 40px;
+    border-radius: var(--radius-full);
+    border: none;
+    background: transparent;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: var(--text-caption);
+    color: var(--ink-faint);
+    transition: all var(--ease-out);
+    font-family: var(--font-body);
+    font-weight: 600;
+    position: relative;
+}
+
+.nav-step:hover {
+    background: var(--paper-dark);
+    color: var(--ink);
+}
+
+.nav-step.active {
+    background: var(--accent-soft);
+    color: var(--accent);
+}
+
+.nav-step.completed {
+    color: var(--ink);
+}
+
+.nav-step.locked {
+    color: var(--ink-faint);
+    cursor: not-allowed;
+    opacity: 0.5;
+}
+
+/* ============================================
+   Empty / Greeting State
+   ============================================ */
+.greeting {
+    text-align: center;
+    padding: var(--space-xl) var(--space-lg);
+}
+
+.greeting .greeting-text {
+    font-family: var(--font-display);
+    font-size: var(--text-display);
+    color: var(--ink);
+    margin-bottom: var(--space-sm);
+}
+
+.greeting .greeting-detail {
+    font-size: var(--text-body);
+    color: var(--ink-light);
+}
+
+/* ============================================
+   Achievement / Progress feedback
+   ============================================ */
+.achievement-toast {
+    position: fixed;
+    bottom: 120px;
+    left: 50%;
+    transform: translateX(-50%);
+    background: var(--ink);
+    color: var(--paper);
+    padding: var(--space-md) var(--space-xl);
+    border-radius: var(--radius-full);
+    font-size: var(--text-small);
+    font-weight: 500;
+    z-index: 200;
+    animation: toastIn 400ms ease-out, toastOut 400ms 2s ease-out forwards;
+    white-space: nowrap;
+}
+
+@keyframes toastIn {
+    from { opacity: 0; transform: translateX(-50%) translateY(16px); }
+    to { opacity: 1; transform: translateX(-50%) translateY(0); }
+}
+
+@keyframes toastOut {
+    from { opacity: 1; }
+    to { opacity: 0; }
+}
+
+/* ============================================
+   Correct line indicator (under word card)
+   ============================================ */
+.word-card.correct-answer {
+    box-shadow: var(--shadow-card), 0 2px 0 0 var(--success);
+    transition: box-shadow 300ms ease;
+}
+
+.word-card.wrong-answer {
+    animation: cardShake 400ms cubic-bezier(0.36, 0.07, 0.19, 0.97);
+}
+
+@keyframes cardShake {
+    0%, 100% { transform: translateX(0); }
+    20% { transform: translateX(-3px); }
+    40% { transform: translateX(3px); }
+    60% { transform: translateX(-3px); }
+    80% { transform: translateX(2px); }
+}
+
+/* ============================================
+   Difficulty indicator
+   ============================================ */
+.difficulty-badge {
+    display: inline-block;
+    padding: 2px var(--space-sm);
+    border-radius: var(--radius-sm);
+    font-size: var(--text-caption);
+    font-weight: 500;
+    margin-left: var(--space-sm);
+}
+
+.difficulty-badge.easy {
+    background: var(--success-soft);
+    color: var(--success);
+}
+
+.difficulty-badge.medium {
+    background: var(--warning-soft);
+    color: var(--warning);
+}
+
+.difficulty-badge.hard {
+    background: var(--error-soft);
+    color: var(--error);
+}
+
+/* ============================================
+   Progress text
+   ============================================ */
+.progress-text {
+    font-size: var(--text-small);
+    color: var(--ink-faint);
+    text-align: center;
+    margin-bottom: var(--space-lg);
+    font-family: var(--font-mono);
+}
+
+/* ============================================
+   Responsive
+   ============================================ */
+
+/* 手机 (< 400px) */
+@media (max-width: 399px) {
+    :root {
+        --text-hero: 36px;
+        --text-display: 24px;
+        --text-title: 18px;
+    }
+
+    .screen {
+        padding: var(--space-sm) var(--space-md);
+    }
+
+    .options-grid {
+        grid-template-columns: 1fr;
+        gap: var(--space-sm);
+    }
+
+    .word-card {
+        padding: var(--space-xl) var(--space-lg);
+        border-radius: var(--radius-lg);
+    }
+
+    .word-card .word-display {
+        font-size: 40px;
+    }
+
+    .stats-grid-compact {
+        grid-template-columns: repeat(3, 1fr);
+        gap: var(--space-sm);
+    }
+
+    .stat-item-compact {
+        padding: var(--space-md) var(--space-xs);
+    }
+
+    .stat-item-compact .stat-value-compact {
+        font-size: 28px;
+    }
+
+    .stats-number {
+        font-size: 48px;
+    }
+
+    .stats-hero {
+        padding: var(--space-lg) 0;
+    }
+
+    .step-line {
+        width: 14px;
+    }
+
+    .step-label {
+        width: 40px;
+        font-size: 9px;
+    }
+
+    .replacement-showcase {
+        padding: var(--space-md);
+    }
+
+    .replacement-showcase .rs-verb {
+        font-size: 32px;
+    }
+
+    .replacement-showcase .rs-particle {
+        font-size: 18px;
+        padding: 2px var(--space-sm);
+    }
+
+    .replacement-showcase .rs-complex {
+        font-size: var(--text-body);
+    }
+
+    .bottom-nav {
+        padding: var(--space-sm);
+    }
+
+    .nav-step {
+        width: 36px;
+        height: 36px;
+        font-size: 11px;
+    }
+
+    .greeting .greeting-text {
+        font-size: var(--text-title);
+    }
+
+    .section-title {
+        font-size: var(--text-title);
+    }
+
+    .reading-passage {
+        font-size: 16px;
+        padding: var(--space-lg);
+    }
+
+    .combination-option {
+        padding: var(--space-md) var(--space-sm);
+    }
+
+    .combination-option .co-verb,
+    .combination-option .co-particle {
+        font-size: var(--text-body);
+    }
+}
+
+/* 手机/小平板 (400-768px) */
+@media (min-width: 400px) and (max-width: 768px) {
+    :root {
+        --text-hero: 44px;
+        --text-display: 28px;
+        --text-title: 20px;
+    }
+
+    .screen {
+        padding: var(--space-md) var(--space-lg);
+    }
+
+    .word-card {
+        padding: var(--space-2xl) var(--space-xl);
+    }
+
+    .options-grid {
+        gap: var(--space-sm);
+    }
+
+    .stats-hero {
+        padding: var(--space-xl) 0;
+    }
+
+    .greeting {
+        padding: var(--space-xl) var(--space-md);
+    }
+
+    .step-line {
+        width: 18px;
+    }
+
+    .step-label {
+        width: 48px;
+    }
+
+    .reading-passage {
+        padding: var(--space-xl);
+    }
+}
+
+/* 平板横屏及以上 (769px+) */
+@media (min-width: 769px) {
+    .screen {
+        max-width: 600px;
+    }
+
+    .paraphrase-layout {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: var(--space-xl);
+        align-items: start;
+    }
+
+    .paraphrase-layout .paraphrase-original {
+        margin-bottom: 0;
+    }
+
+    .options-grid {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .word-card {
+        padding: var(--space-3xl) var(--space-2xl);
+    }
+
+    .replacement-showcase {
+        padding: var(--space-xl);
+    }
+}
+
+/* iPad / 较大平板 (1024px+) */
+@media (min-width: 1024px) {
+    .screen {
+        max-width: 640px;
+    }
+
+    .word-card .word-display {
+        font-size: var(--text-hero);
+    }
+
+    .replacement-showcase .rs-verb {
+        font-size: 48px;
+    }
+}
+
+/* ============================================
+   Utility
+   ============================================ */
+.text-center { text-align: center; }
+.hidden { display: none !important; }

@@ -1,0 +1,41 @@
+{
+  "date": "2026-05-13",
+  "count": 5,
+  "news": [
+    {
+      "title": "OpenAI releases new GPT model",
+      "url": "https://openai.com",
+      "snippet": "OpenAI announces latest language model",
+      "keyword": "OpenAI",
+      "region": "Foreign"
+    },
+    {
+      "title": "Google launches Gemini 2.0",
+      "url": "https://blog.google",
+      "snippet": "Google AI new model release",
+      "keyword": "Google AI",
+      "region": "Foreign"
+    },
+    {
+      "title": "Meta open sources Llama 4",
+      "url": "https://meta.com",
+      "snippet": "Meta releases new open source LLM",
+      "keyword": "Meta AI",
+      "region": "Foreign"
+    },
+    {
+      "title": "China AI industry report",
+      "url": "https://tech.sina.com.cn",
+      "snippet": "Latest AI industry dynamics in China",
+      "keyword": "Sina Tech",
+      "region": "China"
+    },
+    {
+      "title": "Nvidia releases new AI chip",
+      "url": "https://nvidia.com",
+      "snippet": "GPU giant releases new AI hardware",
+      "keyword": "Nvidia",
+      "region": "Foreign"
+    }
+  ]
+}

@@ -1,0 +1,1343 @@
+[
+  {
+    "id": "op_001",
+    "word": "come",
+    "chinese": "来; 来到",
+    "type": "operation",
+    "phonetic": "/kʌm/",
+    "combinations": [
+      { "particles": "across", "replaces": ["discover", "encounter"], "example": "I came across an old photo." },
+      { "particles": "back", "replaces": ["return"], "example": "She came back from the store." },
+      { "particles": "in", "replaces": ["enter"], "example": "Please come in." },
+      { "particles": "out", "replaces": ["emerge", "exit"], "example": "The truth came out at last." },
+      { "particles": "up", "replaces": ["arise", "occur"], "example": "A problem came up at work." }
+    ],
+    "paraphrasing_examples": [
+      { "normal": "He arrived at six.", "basic": "He came at six." },
+      { "normal": "The sun rises.", "basic": "The sun comes up." },
+      { "normal": "How did this situation happen?", "basic": "How did this come about?" }
+    ]
+  },
+  {
+    "id": "op_002",
+    "word": "get",
+    "chinese": "得到; 获得; 变得",
+    "type": "operation",
+    "phonetic": "/ɡet/",
+    "combinations": [
+      { "particles": "up", "replaces": ["rise", "awaken"], "example": "I get up at seven every day." },
+      { "particles": "on", "replaces": ["board", "mount"], "example": "Get on the bus quickly." },
+      { "particles": "off", "replaces": ["dismount", "descend"], "example": "We got off at the next stop." },
+      { "particles": "through", "replaces": ["complete", "survive"], "example": "I got through all my work." },
+      { "particles": "over", "replaces": ["recover from"], "example": "She got over her illness." }
+    ],
+    "paraphrasing_examples": [
+      { "normal": "I received a letter.", "basic": "I got a letter." },
+      { "normal": "He became angry.", "basic": "He got angry." },
+      { "normal": "Do you understand?", "basic": "Do you get it?" }
+    ]
+  },
+  {
+    "id": "op_003",
+    "word": "give",
+    "chinese": "给; 给予",
+    "type": "operation",
+    "phonetic": "/ɡɪv/",
+    "combinations": [
+      { "particles": "up", "replaces": ["surrender", "quit"], "example": "Never give up on your dreams." },
+      { "particles": "away", "replaces": ["donate", "reveal"], "example": "She gave away her old clothes." },
+      { "particles": "back", "replaces": ["return"], "example": "Give back the book when you finish." },
+      { "particles": "in", "replaces": ["yield", "submit"], "example": "He gave in to their demands." },
+      { "particles": "out", "replaces": ["distribute"], "example": "They gave out free samples." }
+    ],
+    "paraphrasing_examples": [
+      { "normal": "He provided me with advice.", "basic": "He gave me advice." },
+      { "normal": "She donated money to the school.", "basic": "She gave money to the school." },
+      { "normal": "I yielded to temptation.", "basic": "I gave in to temptation." }
+    ]
+  },
+  {
+    "id": "op_004",
+    "word": "go",
+    "chinese": "去; 走; 变得",
+    "type": "operation",
+    "phonetic": "/ɡəʊ/",
+    "combinations": [
+      { "particles": "on", "replaces": ["continue"], "example": "Please go on with your story." },
+      { "particles": "away", "replaces": ["depart", "leave"], "example": "Go away and leave me alone." },
+      { "particles": "up", "replaces": ["increase", "rise"], "example": "Prices went up again." },
+      { "particles": "down", "replaces": ["decrease", "sink"], "example": "The sun goes down at six." },
+      { "particles": "out", "replaces": ["exit", "date"], "example": "They went out for dinner." }
+    ],
+    "paraphrasing_examples": [
+      { "normal": "He departed at noon.", "basic": "He went at noon." },
+      { "normal": "The machine stopped functioning.", "basic": "The machine went wrong." },
+      { "normal": "Please continue.", "basic": "Please go on." }
+    ]
+  },
+  {
+    "id": "op_005",
+    "word": "keep",
+    "chinese": "保持; 保留",
+    "type": "operation",
+    "phonetic": "/kiːp/",
+    "combinations": [
+      { "particles": "up", "replaces": ["maintain", "continue"], "example": "Keep up the good work." },
+      { "particles": "on", "replaces": ["continue"], "example": "He kept on talking." },
+      { "particles": "away", "replaces": ["avoid", "stay distant"], "example": "Keep away from the fire." },
+      { "particles": "down", "replaces": ["suppress", "control"], "example": "Keep your voice down." }
+    ],
+    "paraphrasing_examples": [
+      { "normal": "She retains all her letters.", "basic": "She keeps all her letters." },
+      { "normal": "Maintain your speed.", "basic": "Keep your speed." },
+      { "normal": "He continued to try.", "basic": "He kept trying." }
+    ]
+  },
+  {
+    "id": "op_006",
+    "word": "let",
+    "chinese": "让; 允许",
+    "type": "operation",
+    "phonetic": "/let/",
+    "combinations": [
+      { "particles": "down", "replaces": ["disappoint"], "example": "I will not let you down." },
+      { "particles": "in", "replaces": ["admit", "allow entry"], "example": "Please let me in." },
+      { "particles": "out", "replaces": ["release", "widen"], "example": "Let out the dog." },
+      { "particles": "go", "replaces": ["release", "free"], "example": "Let go of the rope." }
+    ],
+    "paraphrasing_examples": [
+      { "normal": "Allow me to help.", "basic": "Let me help." },
+      { "normal": "He permitted them to enter.", "basic": "He let them in." },
+      { "normal": "Don't disappoint me.", "basic": "Don't let me down." }
+    ]
+  },
+  {
+    "id": "op_007",
+    "word": "make",
+    "chinese": "做; 制造; 使",
+    "type": "operation",
+    "phonetic": "/meɪk/",
+    "combinations": [
+      { "particles": "up", "replaces": ["invent", "compose", "reconcile"], "example": "She made up a story." },
+      { "particles": "out", "replaces": ["discern", "distinguish"], "example": "I can't make out the words." },
+      { "particles": "over", "replaces": ["transfer legally"], "example": "He made over the property to his son." },
+      { "particles": "for", "replaces": ["compensate"], "example": "She made up for lost time." }
+    ],
+    "paraphrasing_examples": [
+      { "normal": "She constructed a chair.", "basic": "She made a chair." },
+      { "normal": "He compelled me to go.", "basic": "He made me go." },
+      { "normal": "They invented a story.", "basic": "They made up a story." }
+    ]
+  },
+  {
+    "id": "op_008",
+    "word": "put",
+    "chinese": "放; 放置",
+    "type": "operation",
+    "phonetic": "/pʊt/",
+    "combinations": [
+      { "particles": "off", "replaces": ["postpone", "delay"], "example": "We put off the meeting." },
+      { "particles": "up with", "replaces": ["tolerate", "endure"], "example": "I won't put up with this noise." },
+      { "particles": "on", "replaces": ["don", "wear"], "example": "Put on your coat." },
+      { "particles": "out", "replaces": ["extinguish"], "example": "Put out the fire." },
+      { "particles": "away", "replaces": ["store", "tidy"], "example": "Put away your toys." }
+    ],
+    "paraphrasing_examples": [
+      { "normal": "Place the book on the table.", "basic": "Put the book on the table." },
+      { "normal": "We postponed the event.", "basic": "We put off the event." },
+      { "normal": "He extinguished the light.", "basic": "He put out the light." }
+    ]
+  },
+  {
+    "id": "op_009",
+    "word": "seem",
+    "chinese": "似乎; 好像",
+    "type": "operation",
+    "phonetic": "/siːm/",
+    "combinations": [],
+    "paraphrasing_examples": [
+      { "normal": "She appears to be happy.", "basic": "She seems happy." },
+      { "normal": "It gives the impression of being easy.", "basic": "It seems easy." },
+      { "normal": "He looks like a nice person.", "basic": "He seems like a nice person." }
+    ]
+  },
+  {
+    "id": "op_010",
+    "word": "take",
+    "chinese": "拿; 取; 花费",
+    "type": "operation",
+    "phonetic": "/teɪk/",
+    "combinations": [
+      { "particles": "off", "replaces": ["remove", "depart"], "example": "Take off your shoes." },
+      { "particles": "up", "replaces": ["begin a hobby", "occupy"], "example": "She took up painting." },
+      { "particles": "out", "replaces": ["extract", "invite"], "example": "He took her out to dinner." },
+      { "particles": "over", "replaces": ["assume control"], "example": "He took over the business." },
+      { "particles": "care of", "replaces": ["attend to"], "example": "Take care of yourself." }
+    ],
+    "paraphrasing_examples": [
+      { "normal": "She removed her hat.", "basic": "She took off her hat." },
+      { "normal": "The journey required two hours.", "basic": "The journey took two hours." },
+      { "normal": "He assumed control of the project.", "basic": "He took over the project." }
+    ]
+  },
+  {
+    "id": "op_011",
+    "word": "be",
+    "chinese": "是; 在; 存在",
+    "type": "operation",
+    "phonetic": "/biː/",
+    "combinations": [],
+    "paraphrasing_examples": [
+      { "normal": "He exists as a teacher.", "basic": "He is a teacher." },
+      { "normal": "They are located in the garden.", "basic": "They are in the garden." },
+      { "normal": "The food has a good taste.", "basic": "The food is good." }
+    ]
+  },
+  {
+    "id": "op_012",
+    "word": "do",
+    "chinese": "做; 干; 行动",
+    "type": "operation",
+    "phonetic": "/duː/",
+    "combinations": [
+      { "particles": "without", "replaces": ["manage without"], "example": "We must do without sugar." },
+      { "particles": "away with", "replaces": ["abolish", "eliminate"], "example": "They did away with the old rule." },
+      { "particles": "over", "replaces": ["renovate", "repeat"], "example": "They did over the whole room." }
+    ],
+    "paraphrasing_examples": [
+      { "normal": "Perform your duty.", "basic": "Do your duty." },
+      { "normal": "I completed the work.", "basic": "I did the work." },
+      { "normal": "He manages without help.", "basic": "He does without help." }
+    ]
+  },
+  {
+    "id": "op_013",
+    "word": "have",
+    "chinese": "有; 拥有; 经历",
+    "type": "operation",
+    "phonetic": "/hæv/",
+    "combinations": [
+      { "particles": "on", "replaces": ["wear"], "example": "She had on a red dress." },
+      { "particles": "out", "replaces": ["invite out"], "example": "I had her out to the cinema." },
+      { "particles": "over", "replaces": ["entertain at home"], "example": "We had friends over for tea." }
+    ],
+    "paraphrasing_examples": [
+      { "normal": "I possess a car.", "basic": "I have a car." },
+      { "normal": "She experienced a good time.", "basic": "She had a good time." },
+      { "normal": "He consumed his breakfast.", "basic": "He had his breakfast." }
+    ]
+  },
+  {
+    "id": "op_014",
+    "word": "say",
+    "chinese": "说; 讲",
+    "type": "operation",
+    "phonetic": "/seɪ/",
+    "combinations": [],
+    "paraphrasing_examples": [
+      { "normal": "He spoke a few words.", "basic": "He said a few words." },
+      { "normal": "She expressed her opinion.", "basic": "She said what she thought." },
+      { "normal": "The clock indicates noon.", "basic": "The clock says noon." }
+    ]
+  },
+  {
+    "id": "op_015",
+    "word": "see",
+    "chinese": "看见; 理解; 会见",
+    "type": "operation",
+    "phonetic": "/siː/",
+    "combinations": [
+      { "particles": "off", "replaces": ["escort goodbye"], "example": "We saw her off at the station." },
+      { "particles": "through", "replaces": ["perceive truth despite"], "example": "I saw through his lies." },
+      { "particles": "to", "replaces": ["attend to", "ensure"], "example": "See to it that the door is locked." },
+      { "particles": "about", "replaces": ["deal with", "arrange"], "example": "I'll see about getting tickets." }
+    ],
+    "paraphrasing_examples": [
+      { "normal": "I perceived a light ahead.", "basic": "I saw a light ahead." },
+      { "normal": "Do you understand the point?", "basic": "Do you see the point?" },
+      { "normal": "I will visit the doctor.", "basic": "I will see the doctor." }
+    ]
+  },
+  {
+    "id": "op_016",
+    "word": "send",
+    "chinese": "发送; 寄; 派遣",
+    "type": "operation",
+    "phonetic": "/send/",
+    "combinations": [
+      { "particles": "for", "replaces": ["summon", "request"], "example": "Send for a doctor." },
+      { "particles": "back", "replaces": ["return"], "example": "They sent back the package." },
+      { "particles": "out", "replaces": ["emit", "dispatch"], "example": "The company sent out invitations." },
+      { "particles": "off", "replaces": ["dispatch", "mail"], "example": "I sent off the application." }
+    ],
+    "paraphrasing_examples": [
+      { "normal": "He dispatched a letter.", "basic": "He sent a letter." },
+      { "normal": "She summoned a doctor.", "basic": "She sent for a doctor." },
+      { "normal": "The flame emitted smoke.", "basic": "The flame sent out smoke." }
+    ]
+  },
+  {
+    "id": "op_017",
+    "word": "may",
+    "chinese": "可以; 可能",
+    "type": "operation",
+    "phonetic": "/meɪ/",
+    "combinations": [],
+    "paraphrasing_examples": [
+      { "normal": "It is possible that it will rain.", "basic": "It may rain." },
+      { "normal": "You are permitted to leave now.", "basic": "You may leave now." },
+      { "normal": "Perhaps she knows the answer.", "basic": "She may know the answer." }
+    ]
+  },
+  {
+    "id": "op_018",
+    "word": "will",
+    "chinese": "将; 会; 愿意",
+    "type": "operation",
+    "phonetic": "/wɪl/",
+    "combinations": [],
+    "paraphrasing_examples": [
+      { "normal": "He intends to help us.", "basic": "He will help us." },
+      { "normal": "The sun is going to rise at six.", "basic": "The sun will rise at six." },
+      { "normal": "Are you willing to go?", "basic": "Will you go?" }
+    ]
+  },
+  {
+    "id": "op_019",
+    "word": "about",
+    "chinese": "关于; 大约; 周围",
+    "type": "operation",
+    "phonetic": "/əˈbaʊt/",
+    "combinations": [],
+    "paraphrasing_examples": [
+      { "normal": "We discussed the matter.", "basic": "We talked about the matter." },
+      { "normal": "It is roughly ten miles.", "basic": "It is about ten miles." },
+      { "normal": "She walked here and there in the room.", "basic": "She walked about the room." }
+    ]
+  },
+  {
+    "id": "op_020",
+    "word": "across",
+    "chinese": "穿过; 横过; 在对面",
+    "type": "operation",
+    "phonetic": "/əˈkrɒs/",
+    "combinations": [],
+    "paraphrasing_examples": [
+      { "normal": "He traversed the bridge.", "basic": "He went across the bridge." },
+      { "normal": "They reside on the opposite side of the street.", "basic": "They live across the street." },
+      { "normal": "She encountered an old friend by chance.", "basic": "She came across an old friend." }
+    ]
+  },
+  {
+    "id": "op_021",
+    "word": "after",
+    "chinese": "在……之后; 追求",
+    "type": "operation",
+    "phonetic": "/ˈɑːftə/",
+    "combinations": [],
+    "paraphrasing_examples": [
+      { "normal": "Subsequent to the meal, they walked.", "basic": "After the meal, they walked." },
+      { "normal": "He is pursuing fame.", "basic": "He is after fame." },
+      { "normal": "The police are searching for him.", "basic": "The police are after him." }
+    ]
+  },
+  {
+    "id": "op_022",
+    "word": "against",
+    "chinese": "反对; 靠着; 防备",
+    "type": "operation",
+    "phonetic": "/əˈɡenst/",
+    "combinations": [],
+    "paraphrasing_examples": [
+      { "normal": "He opposed the plan.", "basic": "He was against the plan." },
+      { "normal": "She leaned on the wall.", "basic": "She leaned against the wall." },
+      { "normal": "You should prepare for emergencies.", "basic": "You should be ready against emergencies." }
+    ]
+  },
+  {
+    "id": "op_023",
+    "word": "among",
+    "chinese": "在……之中(三者及以上)",
+    "type": "operation",
+    "phonetic": "/əˈmʌŋ/",
+    "combinations": [],
+    "paraphrasing_examples": [
+      { "normal": "He was included in the group of winners.", "basic": "He was among the winners." },
+      { "normal": "Divide the cake between the children.", "basic": "Divide the cake among the children." },
+      { "normal": "She felt she was with friends.", "basic": "She felt she was among friends." }
+    ]
+  },
+  {
+    "id": "op_024",
+    "word": "at",
+    "chinese": "在; 在……点; 以",
+    "type": "operation",
+    "phonetic": "/æt/",
+    "combinations": [],
+    "paraphrasing_examples": [
+      { "normal": "He is located in the office.", "basic": "He is at the office." },
+      { "normal": "The train moves with a speed of sixty miles per hour.", "basic": "The train goes at sixty miles per hour." },
+      { "normal": "She glanced toward me.", "basic": "She looked at me." }
+    ]
+  },
+  {
+    "id": "op_025",
+    "word": "before",
+    "chinese": "在……之前; 以前",
+    "type": "operation",
+    "phonetic": "/bɪˈfɔː/",
+    "combinations": [],
+    "paraphrasing_examples": [
+      { "normal": "Prior to breakfast, he exercises.", "basic": "Before breakfast, he exercises." },
+      { "normal": "She stood in front of the door.", "basic": "She stood before the door." },
+      { "normal": "I have never encountered such a thing previously.", "basic": "I have never seen such a thing before." }
+    ]
+  },
+  {
+    "id": "op_026",
+    "word": "between",
+    "chinese": "在……之间(两者)",
+    "type": "operation",
+    "phonetic": "/bɪˈtwiːn/",
+    "combinations": [],
+    "paraphrasing_examples": [
+      { "normal": "He stood in the space separating the two trees.", "basic": "He stood between the two trees." },
+      { "normal": "The secret is only known to you and me.", "basic": "The secret is between you and me." },
+      { "normal": "She had to select one of the two.", "basic": "She had to choose between the two." }
+    ]
+  },
+  {
+    "id": "op_027",
+    "word": "by",
+    "chinese": "由; 通过; 在……旁边",
+    "type": "operation",
+    "phonetic": "/baɪ/",
+    "combinations": [],
+    "paraphrasing_examples": [
+      { "normal": "The book was authored by her.", "basic": "The book was written by her." },
+      { "normal": "She travels via train.", "basic": "She goes by train." },
+      { "normal": "He sat beside the window.", "basic": "He sat by the window." }
+    ]
+  },
+  {
+    "id": "op_028",
+    "word": "down",
+    "chinese": "向下; 沿着……往下",
+    "type": "operation",
+    "phonetic": "/daʊn/",
+    "combinations": [],
+    "paraphrasing_examples": [
+      { "normal": "He descended the stairs.", "basic": "He went down the stairs." },
+      { "normal": "Prices are decreasing.", "basic": "Prices are going down." },
+      { "normal": "She walked along the street.", "basic": "She walked down the street." }
+    ]
+  },
+  {
+    "id": "op_029",
+    "word": "from",
+    "chinese": "从; 来自; 因为",
+    "type": "operation",
+    "phonetic": "/frɒm/",
+    "combinations": [],
+    "paraphrasing_examples": [
+      { "normal": "He originated in London.", "basic": "He is from London." },
+      { "normal": "The shop opens starting at nine.", "basic": "The shop is open from nine." },
+      { "normal": "She was suffering due to a cold.", "basic": "She was suffering from a cold." }
+    ]
+  },
+  {
+    "id": "op_030",
+    "word": "in",
+    "chinese": "在……里面; 在……期间; 用",
+    "type": "operation",
+    "phonetic": "/ɪn/",
+    "combinations": [],
+    "paraphrasing_examples": [
+      { "normal": "They are inside the house.", "basic": "They are in the house." },
+      { "normal": "He will return during two hours.", "basic": "He will be back in two hours." },
+      { "normal": "She expressed it using English.", "basic": "She said it in English." }
+    ]
+  },
+  {
+    "id": "op_031",
+    "word": "off",
+    "chinese": "离开; 脱离; 关掉",
+    "type": "operation",
+    "phonetic": "/ɒf/",
+    "combinations": [],
+    "paraphrasing_examples": [
+      { "normal": "The bird flew away from the branch.", "basic": "The bird flew off the branch." },
+      { "normal": "Switch the light to the inactive position.", "basic": "Turn off the light." },
+      { "normal": "He removed his hat from his head.", "basic": "He took off his hat." }
+    ]
+  },
+  {
+    "id": "op_032",
+    "word": "on",
+    "chinese": "在……之上; 关于; 开着",
+    "type": "operation",
+    "phonetic": "/ɒn/",
+    "combinations": [],
+    "paraphrasing_examples": [
+      { "normal": "The book is resting upon the table.", "basic": "The book is on the table." },
+      { "normal": "He presented a lecture about history.", "basic": "He gave a talk on history." },
+      { "normal": "Please activate the light.", "basic": "Turn on the light." }
+    ]
+  },
+  {
+    "id": "op_033",
+    "word": "over",
+    "chinese": "在……上方; 超过; 结束",
+    "type": "operation",
+    "phonetic": "/ˈəʊvə/",
+    "combinations": [],
+    "paraphrasing_examples": [
+      { "normal": "A bridge spans above the river.", "basic": "A bridge is over the river." },
+      { "normal": "The match has finished.", "basic": "The match is over." },
+      { "normal": "He has more than a thousand books.", "basic": "He has over a thousand books." }
+    ]
+  },
+  {
+    "id": "op_034",
+    "word": "through",
+    "chinese": "穿过; 通过; 从头到尾",
+    "type": "operation",
+    "phonetic": "/θruː/",
+    "combinations": [],
+    "paraphrasing_examples": [
+      { "normal": "He entered via the door.", "basic": "He came through the door." },
+      { "normal": "She persisted and completed the task.", "basic": "She went through with it." },
+      { "normal": "I read the document completely.", "basic": "I read through the document." }
+    ]
+  },
+  {
+    "id": "op_035",
+    "word": "to",
+    "chinese": "到; 向; 对于",
+    "type": "operation",
+    "phonetic": "/tuː/",
+    "combinations": [],
+    "paraphrasing_examples": [
+      { "normal": "He traveled towards London.", "basic": "He went to London." },
+      { "normal": "She gave the book for me.", "basic": "She gave the book to me." },
+      { "normal": "It is a quarter before ten.", "basic": "It is a quarter to ten." }
+    ]
+  },
+  {
+    "id": "op_036",
+    "word": "under",
+    "chinese": "在……下面; 少于",
+    "type": "operation",
+    "phonetic": "/ˈʌndə/",
+    "combinations": [],
+    "paraphrasing_examples": [
+      { "normal": "The cat is beneath the table.", "basic": "The cat is under the table." },
+      { "normal": "The project is still in progress.", "basic": "The project is under way." },
+      { "normal": "Children below twelve years are not permitted.", "basic": "Children under twelve are not allowed." }
+    ]
+  },
+  {
+    "id": "op_037",
+    "word": "up",
+    "chinese": "向上; 起来; 完了",
+    "type": "operation",
+    "phonetic": "/ʌp/",
+    "combinations": [],
+    "paraphrasing_examples": [
+      { "normal": "He ascended the ladder.", "basic": "He went up the ladder." },
+      { "normal": "The time has expired.", "basic": "Time is up." },
+      { "normal": "What is happening?", "basic": "What is up?" }
+    ]
+  },
+  {
+    "id": "op_038",
+    "word": "with",
+    "chinese": "和; 用; 带着",
+    "type": "operation",
+    "phonetic": "/wɪð/",
+    "combinations": [],
+    "paraphrasing_examples": [
+      { "normal": "He cut it using a knife.", "basic": "He cut it with a knife." },
+      { "normal": "She arrived accompanied by her mother.", "basic": "She came with her mother." },
+      { "normal": "I am in agreement with you.", "basic": "I am with you." }
+    ]
+  },
+  {
+    "id": "op_039",
+    "word": "as",
+    "chinese": "作为; 如同; 当……时",
+    "type": "operation",
+    "phonetic": "/æz/",
+    "combinations": [],
+    "paraphrasing_examples": [
+      { "normal": "He works in the capacity of a teacher.", "basic": "He works as a teacher." },
+      { "normal": "While I was walking, it began to rain.", "basic": "As I was walking, it began to rain." },
+      { "normal": "She is equally tall as her brother.", "basic": "She is as tall as her brother." }
+    ]
+  },
+  {
+    "id": "op_040",
+    "word": "for",
+    "chinese": "为了; 给; 因为; 对于",
+    "type": "operation",
+    "phonetic": "/fɔː/",
+    "combinations": [],
+    "paraphrasing_examples": [
+      { "normal": "This gift is intended for you.", "basic": "This gift is for you." },
+      { "normal": "He stayed owing to his mother.", "basic": "He stayed for his mother." },
+      { "normal": "We walked a duration of three hours.", "basic": "We walked for three hours." }
+    ]
+  },
+  {
+    "id": "op_041",
+    "word": "of",
+    "chinese": "……的; 属于; 关于",
+    "type": "operation",
+    "phonetic": "/ɒv/",
+    "combinations": [],
+    "paraphrasing_examples": [
+      { "normal": "The color belonging to the sky is blue.", "basic": "The color of the sky is blue." },
+      { "normal": "He drank some water.", "basic": "He drank a glass of water." },
+      { "normal": "She is a woman possessing great wisdom.", "basic": "She is a woman of great wisdom." }
+    ]
+  },
+  {
+    "id": "op_042",
+    "word": "till",
+    "chinese": "直到……为止",
+    "type": "operation",
+    "phonetic": "/tɪl/",
+    "combinations": [],
+    "paraphrasing_examples": [
+      { "normal": "We waited until morning.", "basic": "We waited till morning." },
+      { "normal": "He will not stop until he succeeds.", "basic": "He will not stop till he succeeds." },
+      { "normal": "The shop stays open until nine.", "basic": "The shop is open till nine." }
+    ]
+  },
+  {
+    "id": "op_043",
+    "word": "than",
+    "chinese": "比; 比较",
+    "type": "operation",
+    "phonetic": "/ðæn/",
+    "combinations": [],
+    "paraphrasing_examples": [
+      { "normal": "She is more intelligent compared to me.", "basic": "She is smarter than me." },
+      { "normal": "He would sooner die rather than surrender.", "basic": "He would die rather than give up." },
+      { "normal": "There is no alternative except to go.", "basic": "There is no other choice than to go." }
+    ]
+  },
+  {
+    "id": "op_044",
+    "word": "a",
+    "chinese": "一个; 一",
+    "type": "operation",
+    "phonetic": "/ə/",
+    "combinations": [],
+    "paraphrasing_examples": []
+  },
+  {
+    "id": "op_045",
+    "word": "the",
+    "chinese": "这; 那; 这些; 那些",
+    "type": "operation",
+    "phonetic": "/ðə/",
+    "combinations": [],
+    "paraphrasing_examples": []
+  },
+  {
+    "id": "op_046",
+    "word": "all",
+    "chinese": "所有的; 全部的; 一切",
+    "type": "operation",
+    "phonetic": "/ɔːl/",
+    "combinations": [],
+    "paraphrasing_examples": [
+      { "normal": "Every one of the students passed.", "basic": "All the students passed." },
+      { "normal": "I consumed the entirety of the cake.", "basic": "I ate all of the cake." },
+      { "normal": "The total amount of money is gone.", "basic": "All the money is gone." }
+    ]
+  },
+  {
+    "id": "op_047",
+    "word": "any",
+    "chinese": "任何; 一些; 任一",
+    "type": "operation",
+    "phonetic": "/ˈeni/",
+    "combinations": [],
+    "paraphrasing_examples": [
+      { "normal": "Do you have even a small amount of money?", "basic": "Do you have any money?" },
+      { "normal": "Select whichever book you like.", "basic": "Take any book you like." },
+      { "normal": "I do not have ink at all.", "basic": "I have not any ink." }
+    ]
+  },
+  {
+    "id": "op_048",
+    "word": "every",
+    "chinese": "每个; 每一",
+    "type": "operation",
+    "phonetic": "/ˈevri/",
+    "combinations": [],
+    "paraphrasing_examples": [
+      { "normal": "Each individual student has a book.", "basic": "Every student has a book." },
+      { "normal": "He visits each Sunday.", "basic": "He comes every Sunday." },
+      { "normal": "All things are in order.", "basic": "Every thing is in order." }
+    ]
+  },
+  {
+    "id": "op_049",
+    "word": "little",
+    "chinese": "少的; 小的; 少量的",
+    "type": "operation",
+    "phonetic": "/ˈlɪtl/",
+    "combinations": [],
+    "paraphrasing_examples": [
+      { "normal": "She has a small amount of money.", "basic": "She has little money." },
+      { "normal": "The child is small in size.", "basic": "The little child is happy." },
+      { "normal": "A minor hope remains.", "basic": "There is little hope." }
+    ]
+  },
+  {
+    "id": "op_050",
+    "word": "much",
+    "chinese": "许多的; 大量的; 非常",
+    "type": "operation",
+    "phonetic": "/mʌtʃ/",
+    "combinations": [],
+    "paraphrasing_examples": [
+      { "normal": "He has a large amount of work.", "basic": "He has much work." },
+      { "normal": "I like it to a great extent.", "basic": "I like it very much." },
+      { "normal": "There is not a great quantity of time.", "basic": "There is not much time." }
+    ]
+  },
+  {
+    "id": "op_051",
+    "word": "no",
+    "chinese": "没有; 不",
+    "type": "operation",
+    "phonetic": "/nəʊ/",
+    "combinations": [],
+    "paraphrasing_examples": [
+      { "normal": "There is not any hope.", "basic": "There is no hope." },
+      { "normal": "He does not have a home.", "basic": "He has no home." },
+      { "normal": "That is not a small problem.", "basic": "That is no small problem." }
+    ]
+  },
+  {
+    "id": "op_052",
+    "word": "other",
+    "chinese": "其他的; 别的",
+    "type": "operation",
+    "phonetic": "/ˈʌðə/",
+    "combinations": [],
+    "paraphrasing_examples": [
+      { "normal": "The remaining persons went home.", "basic": "The other persons went home." },
+      { "normal": "Show me a different one.", "basic": "Show me the other one." },
+      { "normal": "They assist one another.", "basic": "They help each other." }
+    ]
+  },
+  {
+    "id": "op_053",
+    "word": "some",
+    "chinese": "一些; 某个; 大约",
+    "type": "operation",
+    "phonetic": "/sʌm/",
+    "combinations": [],
+    "paraphrasing_examples": [
+      { "normal": "A few people left early.", "basic": "Some people left early." },
+      { "normal": "Give me a bit of water.", "basic": "Give me some water." },
+      { "normal": "Certain day he will come.", "basic": "Some day he will come." }
+    ]
+  },
+  {
+    "id": "op_054",
+    "word": "such",
+    "chinese": "这样的; 如此的",
+    "type": "operation",
+    "phonetic": "/sʌtʃ/",
+    "combinations": [],
+    "paraphrasing_examples": [
+      { "normal": "A person of this kind is hard to find.", "basic": "Such a person is hard to find." },
+      { "normal": "The pain was so great that he cried.", "basic": "The pain was such that he cried." },
+      { "normal": "I have never encountered things like that.", "basic": "I have never seen such things." }
+    ]
+  },
+  {
+    "id": "op_055",
+    "word": "that",
+    "chinese": "那; 那个; 那种",
+    "type": "operation",
+    "phonetic": "/ðæt/",
+    "combinations": [],
+    "paraphrasing_examples": []
+  },
+  {
+    "id": "op_056",
+    "word": "this",
+    "chinese": "这; 这个; 这种",
+    "type": "operation",
+    "phonetic": "/ðɪs/",
+    "combinations": [],
+    "paraphrasing_examples": []
+  },
+  {
+    "id": "op_057",
+    "word": "I",
+    "chinese": "我",
+    "type": "operation",
+    "phonetic": "/aɪ/",
+    "combinations": [],
+    "paraphrasing_examples": []
+  },
+  {
+    "id": "op_058",
+    "word": "he",
+    "chinese": "他",
+    "type": "operation",
+    "phonetic": "/hiː/",
+    "combinations": [],
+    "paraphrasing_examples": []
+  },
+  {
+    "id": "op_059",
+    "word": "you",
+    "chinese": "你; 你们",
+    "type": "operation",
+    "phonetic": "/juː/",
+    "combinations": [],
+    "paraphrasing_examples": []
+  },
+  {
+    "id": "op_060",
+    "word": "who",
+    "chinese": "谁; 什么人",
+    "type": "operation",
+    "phonetic": "/huː/",
+    "combinations": [],
+    "paraphrasing_examples": [
+      { "normal": "Which person did this?", "basic": "Who did this?" },
+      { "normal": "The man that I saw was tall.", "basic": "The man who I saw was tall." },
+      { "normal": "For what person is this letter?", "basic": "Who is this letter for?" }
+    ]
+  },
+  {
+    "id": "op_061",
+    "word": "and",
+    "chinese": "和; 与; 而且",
+    "type": "operation",
+    "phonetic": "/ænd/",
+    "combinations": [],
+    "paraphrasing_examples": [
+      { "normal": "He likes tea as well as coffee.", "basic": "He likes tea and coffee." },
+      { "normal": "Come, then we will talk.", "basic": "Come and we will talk." },
+      { "normal": "She is clever in addition to being pretty.", "basic": "She is clever and pretty." }
+    ]
+  },
+  {
+    "id": "op_062",
+    "word": "because",
+    "chinese": "因为; 由于",
+    "type": "operation",
+    "phonetic": "/bɪˈkɒz/",
+    "combinations": [],
+    "paraphrasing_examples": [
+      { "normal": "He stayed home due to illness.", "basic": "He stayed home because he was ill." },
+      { "normal": "The reason for her tears was sadness.", "basic": "She cried because she was sad." },
+      { "normal": "I left, for I was tired.", "basic": "I left because I was tired." }
+    ]
+  },
+  {
+    "id": "op_063",
+    "word": "but",
+    "chinese": "但是; 然而; 除了",
+    "type": "operation",
+    "phonetic": "/bʌt/",
+    "combinations": [],
+    "paraphrasing_examples": [
+      { "normal": "He is wealthy, yet he is unhappy.", "basic": "He is rich but unhappy." },
+      { "normal": "All except one came.", "basic": "All but one came." },
+      { "normal": "She tried hard; however, she failed.", "basic": "She tried hard but failed." }
+    ]
+  },
+  {
+    "id": "op_064",
+    "word": "or",
+    "chinese": "或者; 否则; 还是",
+    "type": "operation",
+    "phonetic": "/ɔː/",
+    "combinations": [],
+    "paraphrasing_examples": [
+      { "normal": "Will you drink tea? Alternatively, will you drink coffee?", "basic": "Will you have tea or coffee?" },
+      { "normal": "Hurry up; otherwise you will be late.", "basic": "Hurry up or you will be late." },
+      { "normal": "I do not possess a house nor a car.", "basic": "I have no house or car." }
+    ]
+  },
+  {
+    "id": "op_065",
+    "word": "if",
+    "chinese": "如果; 是否; 即使",
+    "type": "operation",
+    "phonetic": "/ɪf/",
+    "combinations": [],
+    "paraphrasing_examples": [
+      { "normal": "In the event that it rains, we stay in.", "basic": "If it rains, we stay in." },
+      { "normal": "I wonder whether he is coming.", "basic": "I wonder if he is coming." },
+      { "normal": "Even supposing that I were rich, I would not be wasteful.", "basic": "Even if I were rich, I would not waste." }
+    ]
+  },
+  {
+    "id": "op_066",
+    "word": "though",
+    "chinese": "虽然; 尽管; 不过",
+    "type": "operation",
+    "phonetic": "/ðəʊ/",
+    "combinations": [],
+    "paraphrasing_examples": [
+      { "normal": "Despite the fact that it was raining, he went out.", "basic": "Though it was raining, he went out." },
+      { "normal": "He is old; nevertheless, he is strong.", "basic": "He is old; he is strong, though." },
+      { "normal": "Notwithstanding his poverty, he is honest.", "basic": "Though he is poor, he is honest." }
+    ]
+  },
+  {
+    "id": "op_067",
+    "word": "while",
+    "chinese": "当……的时候; 而; 虽然",
+    "type": "operation",
+    "phonetic": "/waɪl/",
+    "combinations": [],
+    "paraphrasing_examples": [
+      { "normal": "During the time that I read, she slept.", "basic": "While I read, she slept." },
+      { "normal": "He is tall whereas she is short.", "basic": "He is tall while she is short." },
+      { "normal": "Although admitting he was wrong, he did not apologize.", "basic": "While he was wrong, he did not say sorry." }
+    ]
+  },
+  {
+    "id": "op_068",
+    "word": "how",
+    "chinese": "如何; 怎样; 多么",
+    "type": "operation",
+    "phonetic": "/haʊ/",
+    "combinations": [],
+    "paraphrasing_examples": [
+      { "normal": "In what manner did you do it?", "basic": "How did you do it?" },
+      { "normal": "What an extremely beautiful sight!", "basic": "How beautiful!" },
+      { "normal": "Please explain the method of making it.", "basic": "Tell me how to make it." }
+    ]
+  },
+  {
+    "id": "op_069",
+    "word": "when",
+    "chinese": "何时; 当……时; 那时",
+    "type": "operation",
+    "phonetic": "/wen/",
+    "combinations": [],
+    "paraphrasing_examples": [
+      { "normal": "At what time will you come?", "basic": "When will you come?" },
+      { "normal": "At the moment that I saw him, I stopped.", "basic": "When I saw him, I stopped." },
+      { "normal": "The time at which he arrived was late.", "basic": "When he got there was late." }
+    ]
+  },
+  {
+    "id": "op_070",
+    "word": "where",
+    "chinese": "在哪里; 在……地方",
+    "type": "operation",
+    "phonetic": "/weə/",
+    "combinations": [],
+    "paraphrasing_examples": [
+      { "normal": "At what location do you live?", "basic": "Where do you live?" },
+      { "normal": "This is the place in which I was born.", "basic": "This is where I was born." },
+      { "normal": "To what destination are you going?", "basic": "Where are you going?" }
+    ]
+  },
+  {
+    "id": "op_071",
+    "word": "why",
+    "chinese": "为什么; ……的原因",
+    "type": "operation",
+    "phonetic": "/waɪ/",
+    "combinations": [],
+    "paraphrasing_examples": [
+      { "normal": "For what reason did you leave?", "basic": "Why did you leave?" },
+      { "normal": "The reason for which he came is unknown.", "basic": "Why he came is not clear." },
+      { "normal": "That explains the cause of your anger.", "basic": "That is why you are angry." }
+    ]
+  },
+  {
+    "id": "op_072",
+    "word": "again",
+    "chinese": "再; 又; 再次",
+    "type": "operation",
+    "phonetic": "/əˈɡen/",
+    "combinations": [],
+    "paraphrasing_examples": [
+      { "normal": "Please repeat what you said.", "basic": "Say it again." },
+      { "normal": "I will visit once more.", "basic": "I will come again." },
+      { "normal": "He reiterated his question.", "basic": "He said it again." }
+    ]
+  },
+  {
+    "id": "op_073",
+    "word": "ever",
+    "chinese": "曾经; 永远; 究竟",
+    "type": "operation",
+    "phonetic": "/ˈevə/",
+    "combinations": [],
+    "paraphrasing_examples": [
+      { "normal": "Have you visited Paris at any time?", "basic": "Have you ever been to Paris?" },
+      { "normal": "She lived happily for all time after.", "basic": "She lived happily ever after." },
+      { "normal": "This is the best I have encountered in my life.", "basic": "This is the best I have ever seen." }
+    ]
+  },
+  {
+    "id": "op_074",
+    "word": "far",
+    "chinese": "远; 遥远; 很",
+    "type": "operation",
+    "phonetic": "/fɑː/",
+    "combinations": [],
+    "paraphrasing_examples": [
+      { "normal": "The station is a long distance away.", "basic": "The station is far off." },
+      { "normal": "This is significantly better.", "basic": "This is far better." },
+      { "normal": "He traveled a great distance.", "basic": "He went far." }
+    ]
+  },
+  {
+    "id": "op_075",
+    "word": "forward",
+    "chinese": "向前; 前进; 将来",
+    "type": "operation",
+    "phonetic": "/ˈfɔːwəd/",
+    "combinations": [],
+    "paraphrasing_examples": [
+      { "normal": "He stepped ahead.", "basic": "He stepped forward." },
+      { "normal": "She put forth a suggestion.", "basic": "She put forward an idea." },
+      { "normal": "We are looking to the future.", "basic": "We are looking forward." }
+    ]
+  },
+  {
+    "id": "op_076",
+    "word": "here",
+    "chinese": "这里; 在这儿; 向这里",
+    "type": "operation",
+    "phonetic": "/hɪə/",
+    "combinations": [],
+    "paraphrasing_examples": [
+      { "normal": "Please arrive at this place.", "basic": "Come here." },
+      { "normal": "At this location is the book.", "basic": "Here is the book." },
+      { "normal": "Put the bag at this spot.", "basic": "Put the bag here." }
+    ]
+  },
+  {
+    "id": "op_077",
+    "word": "near",
+    "chinese": "附近; 靠近; 几乎",
+    "type": "operation",
+    "phonetic": "/nɪə/",
+    "combinations": [],
+    "paraphrasing_examples": [
+      { "normal": "The shop is in close proximity.", "basic": "The shop is near." },
+      { "normal": "She lives close to the school.", "basic": "She lives near the school." },
+      { "normal": "He was close to death.", "basic": "He was near death." }
+    ]
+  },
+  {
+    "id": "op_078",
+    "word": "now",
+    "chinese": "现在; 如今; 立刻",
+    "type": "operation",
+    "phonetic": "/naʊ/",
+    "combinations": [],
+    "paraphrasing_examples": [
+      { "normal": "At the present moment, we must go.", "basic": "Now we must go." },
+      { "normal": "Immediately after that, he understood.", "basic": "Now he saw the truth." },
+      { "normal": "In the current time, things are different.", "basic": "Things are different now." }
+    ]
+  },
+  {
+    "id": "op_079",
+    "word": "out",
+    "chinese": "出; 向外; 不在; 熄灭",
+    "type": "operation",
+    "phonetic": "/aʊt/",
+    "combinations": [],
+    "paraphrasing_examples": [
+      { "normal": "He exited from the room.", "basic": "He went out of the room." },
+      { "normal": "The fire has been extinguished.", "basic": "The fire is out." },
+      { "normal": "The secret has been revealed.", "basic": "The secret is out." }
+    ]
+  },
+  {
+    "id": "op_080",
+    "word": "still",
+    "chinese": "仍然; 还是; 静止的",
+    "type": "operation",
+    "phonetic": "/stɪl/",
+    "combinations": [],
+    "paraphrasing_examples": [
+      { "normal": "He continues to be alive.", "basic": "He is still living." },
+      { "normal": "Nevertheless, we must proceed.", "basic": "Still, we must go on." },
+      { "normal": "The night remained calm and quiet.", "basic": "The night was still." }
+    ]
+  },
+  {
+    "id": "op_081",
+    "word": "then",
+    "chinese": "然后; 那时; 那么",
+    "type": "operation",
+    "phonetic": "/ðen/",
+    "combinations": [],
+    "paraphrasing_examples": [
+      { "normal": "At that time, he was young.", "basic": "He was young then." },
+      { "normal": "We ate, and after that we left.", "basic": "We ate, then we left." },
+      { "normal": "If that is so, I will go.", "basic": "Then I will go." }
+    ]
+  },
+  {
+    "id": "op_082",
+    "word": "there",
+    "chinese": "那里; 在那儿; 到那里",
+    "type": "operation",
+    "phonetic": "/ðeə/",
+    "combinations": [],
+    "paraphrasing_examples": [
+      { "normal": "Your book is at that place.", "basic": "Your book is there." },
+      { "normal": "We traveled to that location.", "basic": "We went there." },
+      { "normal": "A man exists at the door.", "basic": "There is a man at the door." }
+    ]
+  },
+  {
+    "id": "op_083",
+    "word": "together",
+    "chinese": "一起; 共同; 同时",
+    "type": "operation",
+    "phonetic": "/təˈɡeðə/",
+    "combinations": [],
+    "paraphrasing_examples": [
+      { "normal": "They worked in cooperation.", "basic": "They worked together." },
+      { "normal": "The couple remains united.", "basic": "They are together." },
+      { "normal": "Mix all the parts into one.", "basic": "Put them together." }
+    ]
+  },
+  {
+    "id": "op_084",
+    "word": "well",
+    "chinese": "好; 很好地; 健康的",
+    "type": "operation",
+    "phonetic": "/wel/",
+    "combinations": [],
+    "paraphrasing_examples": [
+      { "normal": "He performed the task in a satisfactory manner.", "basic": "He did well." },
+      { "normal": "Is she in good health?", "basic": "Is she well?" },
+      { "normal": "She speaks English proficiently.", "basic": "She speaks English well." }
+    ]
+  },
+  {
+    "id": "op_085",
+    "word": "almost",
+    "chinese": "几乎; 差不多",
+    "type": "operation",
+    "phonetic": "/ˈɔːlməʊst/",
+    "combinations": [],
+    "paraphrasing_examples": [
+      { "normal": "The work is nearly complete.", "basic": "The work is almost done." },
+      { "normal": "He very nearly fell.", "basic": "He almost fell." },
+      { "normal": "It is practically ten o'clock.", "basic": "It is almost ten." }
+    ]
+  },
+  {
+    "id": "op_086",
+    "word": "enough",
+    "chinese": "足够的; 充足的; 够",
+    "type": "operation",
+    "phonetic": "/ɪˈnʌf/",
+    "combinations": [],
+    "paraphrasing_examples": [
+      { "normal": "We have a sufficient amount of food.", "basic": "We have enough food." },
+      { "normal": "He is adequately tall.", "basic": "He is tall enough." },
+      { "normal": "That is a sufficient quantity.", "basic": "That is enough." }
+    ]
+  },
+  {
+    "id": "op_087",
+    "word": "even",
+    "chinese": "甚至; 即使; 平坦的",
+    "type": "operation",
+    "phonetic": "/ˈiːvən/",
+    "combinations": [],
+    "paraphrasing_examples": [
+      { "normal": "He works on Sundays as well as other days.", "basic": "He works even on Sundays." },
+      { "normal": "The surface is flat and level.", "basic": "The surface is even." },
+      { "normal": "A child would understand that.", "basic": "Even a child would see that." }
+    ]
+  },
+  {
+    "id": "op_088",
+    "word": "not",
+    "chinese": "不; 没有; 不是",
+    "type": "operation",
+    "phonetic": "/nɒt/",
+    "combinations": [],
+    "paraphrasing_examples": [
+      { "normal": "I do in no way understand.", "basic": "I do not understand." },
+      { "normal": "He is completely unaware of the facts.", "basic": "He is not aware of the facts." },
+      { "normal": "She failed to arrive.", "basic": "She did not come." }
+    ]
+  },
+  {
+    "id": "op_089",
+    "word": "only",
+    "chinese": "只有; 仅仅; 唯一的",
+    "type": "operation",
+    "phonetic": "/ˈəʊnli/",
+    "combinations": [],
+    "paraphrasing_examples": [
+      { "normal": "He is merely a child.", "basic": "He is only a child." },
+      { "normal": "The sole reason for his absence was illness.", "basic": "The only reason he was out was illness." },
+      { "normal": "Just yesterday I saw him.", "basic": "Only yesterday I saw him." }
+    ]
+  },
+  {
+    "id": "op_090",
+    "word": "quite",
+    "chinese": "相当; 完全; 很",
+    "type": "operation",
+    "phonetic": "/kwaɪt/",
+    "combinations": [],
+    "paraphrasing_examples": [
+      { "normal": "He is rather clever.", "basic": "He is quite clever." },
+      { "normal": "I am entirely ready.", "basic": "I am quite ready." },
+      { "normal": "That is not completely correct.", "basic": "That is not quite right." }
+    ]
+  },
+  {
+    "id": "op_091",
+    "word": "so",
+    "chinese": "如此; 这么; 所以",
+    "type": "operation",
+    "phonetic": "/səʊ/",
+    "combinations": [],
+    "paraphrasing_examples": [
+      { "normal": "He is extremely kind.", "basic": "He is so kind." },
+      { "normal": "I was tired; therefore I went to bed.", "basic": "I was tired, so I went to bed." },
+      { "normal": "Do it in this manner.", "basic": "Do it so." }
+    ]
+  },
+  {
+    "id": "op_092",
+    "word": "very",
+    "chinese": "非常; 很; 极其",
+    "type": "operation",
+    "phonetic": "/ˈveri/",
+    "combinations": [],
+    "paraphrasing_examples": [
+      { "normal": "The book is extremely good.", "basic": "The book is very good." },
+      { "normal": "He is the exact person I need.", "basic": "He is the very person I need." },
+      { "normal": "I am greatly pleased.", "basic": "I am very pleased." }
+    ]
+  },
+  {
+    "id": "op_093",
+    "word": "tomorrow",
+    "chinese": "明天; 明日",
+    "type": "operation",
+    "phonetic": "/təˈmɒrəʊ/",
+    "combinations": [],
+    "paraphrasing_examples": [
+      { "normal": "We will go on the day after today.", "basic": "We will go tomorrow." },
+      { "normal": "The future will bring better days.", "basic": "Tomorrow will be better." },
+      { "normal": "The meeting is scheduled for the following day.", "basic": "The meeting is tomorrow." }
+    ]
+  },
+  {
+    "id": "op_094",
+    "word": "yesterday",
+    "chinese": "昨天; 昨日",
+    "type": "operation",
+    "phonetic": "/ˈjestədeɪ/",
+    "combinations": [],
+    "paraphrasing_examples": [
+      { "normal": "I saw him on the day before today.", "basic": "I saw him yesterday." },
+      { "normal": "She arrived the previous day.", "basic": "She came yesterday." },
+      { "normal": "The events of the prior day are forgotten.", "basic": "Yesterday is gone." }
+    ]
+  },
+  {
+    "id": "op_095",
+    "word": "north",
+    "chinese": "北; 北方; 向北",
+    "type": "operation",
+    "phonetic": "/nɔːθ/",
+    "combinations": [],
+    "paraphrasing_examples": [
+      { "normal": "They traveled in a direction opposite to the south.", "basic": "They went north." },
+      { "normal": "A cold wind came from the northern direction.", "basic": "A cold wind came from the north." },
+      { "normal": "The city is situated in the northern part of the country.", "basic": "The city is in the north of the country." }
+    ]
+  },
+  {
+    "id": "op_096",
+    "word": "south",
+    "chinese": "南; 南方; 向南",
+    "type": "operation",
+    "phonetic": "/saʊθ/",
+    "combinations": [],
+    "paraphrasing_examples": [
+      { "normal": "Birds fly in a direction opposite to the north in winter.", "basic": "Birds fly south in winter." },
+      { "normal": "A warm wind came from the southern direction.", "basic": "A warm wind came from the south." },
+      { "normal": "The island lies in the southern part of the sea.", "basic": "The island is in the south." }
+    ]
+  },
+  {
+    "id": "op_097",
+    "word": "east",
+    "chinese": "东; 东方; 向东",
+    "type": "operation",
+    "phonetic": "/iːst/",
+    "combinations": [],
+    "paraphrasing_examples": [
+      { "normal": "The sun rises in the direction opposite to the west.", "basic": "The sun rises in the east." },
+      { "normal": "They traveled toward the eastern region.", "basic": "They went east." },
+      { "normal": "The wind blows from the oriental direction.", "basic": "The wind is from the east." }
+    ]
+  },
+  {
+    "id": "op_098",
+    "word": "west",
+    "chinese": "西; 西方; 向西",
+    "type": "operation",
+    "phonetic": "/west/",
+    "combinations": [],
+    "paraphrasing_examples": [
+      { "normal": "The sun sets in the direction opposite to the east.", "basic": "The sun goes down in the west." },
+      { "normal": "They traveled toward the western region.", "basic": "They went west." },
+      { "normal": "The storm arrived from the occidental direction.", "basic": "The storm came from the west." }
+    ]
+  },
+  {
+    "id": "op_099",
+    "word": "please",
+    "chinese": "请; 使高兴; 愿意",
+    "type": "operation",
+    "phonetic": "/pliːz/",
+    "combinations": [],
+    "paraphrasing_examples": [
+      { "normal": "Kindly come in.", "basic": "Please come in." },
+      { "normal": "She made an effort to satisfy him.", "basic": "She tried to please him." },
+      { "normal": "Do as you wish.", "basic": "Do as you please." }
+    ]
+  },
+  {
+    "id": "op_100",
+    "word": "yes",
+    "chinese": "是; 是的; 好的",
+    "type": "operation",
+    "phonetic": "/jes/",
+    "combinations": [],
+    "paraphrasing_examples": [
+      { "normal": "Indeed, that is correct.", "basic": "Yes, that is right." },
+      { "normal": "He gave an affirmative answer.", "basic": "He said yes." },
+      { "normal": "Acknowledged, I understand.", "basic": "Yes, I see." }
+    ]
+  }
+]

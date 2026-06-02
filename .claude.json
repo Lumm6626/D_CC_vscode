@@ -4,7 +4,7 @@
       "type": "stdio",
       "command": "python",
       "args": [
-        "secretary-team/mcp_server.py"
+        "agents/mcp_server.py"
       ]
     }
   },

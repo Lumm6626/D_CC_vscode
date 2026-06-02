@@ -1,0 +1,8 @@
+{
+    "feishu_app_id": "cli_a92bd9b957f99bce",
+    "feishu_app_secret": "S5eEp923yZm62CSaAT8sGe2upa04JyG3",
+    "sync_folder": "D:/D_CC_vscode/agents/feishu-sync/docs",
+    "auto_sync": true,
+    "auto_sync_interval_minutes": 30,
+    "oauth_redirect_uri": "http://localhost:8080/callback"
+}

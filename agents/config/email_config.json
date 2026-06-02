@@ -1,0 +1,10 @@
+{
+    "imap_server": "imap.163.com",
+    "smtp_server": "smtp.163.com",
+    "smtp_port": 465,
+    "email": "lou_yao@163.com",
+    "password": "ULiyfiNaXfZ83DV8",
+    "recipient_email": "lou_yao@163.com",
+    "enable_email": true,
+    "output_folder": "D:/D_CC_vscode/agents/news/allergy-news-daily/output"
+}

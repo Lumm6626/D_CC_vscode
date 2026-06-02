@@ -1,0 +1,398 @@
+{
+  "date": "2026-04-24",
+  "count": 49,
+  "news": [
+    {
+      "title": "Meta to Lay Off 10 Percent of Work Force in A.I. Push",
+      "url": "https://www.nytimes.com/2026/04/23/technology/meta-layoffs.html",
+      "snippet": "The layoffs affect about 8,000 employees, with Meta also planning to close 6,000 open roles, as the company focuses on artificial intelligence.",
+      "keyword": "NYTimes",
+      "region": "Foreign",
+      "published": "Thu, 23 Apr 2026 20:20:56 +0000"
+    },
+    {
+      "title": "Elon Musk and Sam Altman’s Epic Fight Heads to Court",
+      "url": "https://www.nytimes.com/2026/04/23/technology/elon-musk-sam-altman-openai-trial.html",
+      "snippet": "A jury trial that is set to start on Monday could shift the course of the A.I. race, with Mr. Musk seeking billions of dollars in damages from Mr. Altman’s OpenAI.",
+      "keyword": "NYTimes",
+      "region": "Foreign",
+      "published": "Thu, 23 Apr 2026 18:40:57 +0000"
+    },
+    {
+      "title": "OpenAI Unveils Its New, More Powerful GPT-5.5 Model",
+      "url": "https://www.nytimes.com/2026/04/23/technology/openai-new-model.html",
+      "snippet": "The maker of ChatGPT is taking a more open approach to cybersecurity than its chief rival, Anthropic.",
+      "keyword": "NYTimes",
+      "region": "Foreign",
+      "published": "Thu, 23 Apr 2026 19:15:08 +0000"
+    },
+    {
+      "title": "Intel’s Revenues Soar, Aided by A.I. Boom",
+      "url": "https://www.nytimes.com/2026/04/23/technology/intel-ai-earnings.html",
+      "snippet": "The chip maker reported a 7 percent rise to $13.6 billion in its latest quarter, more than $1 billion more than Wall Street expected.",
+      "keyword": "NYTimes",
+      "region": "Foreign",
+      "published": "Thu, 23 Apr 2026 22:35:44 +0000"
+    },
+    {
+      "title": "Leaked Code for Anthropic’s Claude Code Tests Copyright Challenges in A.I. Era",
+      "url": "https://www.nytimes.com/2026/04/22/technology/anthropic-code-leak-copyright.html",
+      "snippet": "Artificial intelligence tools are making it faster than ever to reproduce creative work. Does copyright even matter anymore?",
+      "keyword": "NYTimes",
+      "region": "Foreign",
+      "published": "Wed, 22 Apr 2026 14:37:38 +0000"
+    },
+    {
+      "title": "Musk’s SpaceX Goals Shift Ahead of Its I.P.O.",
+      "url": "https://www.nytimes.com/2026/04/22/technology/elon-musk-spacex-ipo-goals.html",
+      "snippet": "As SpaceX prepares to go public, Mr. Musk has proposed moonshots that differ from the company’s original aim of reaching Mars.",
+      "keyword": "NYTimes",
+      "region": "Foreign",
+      "published": "Wed, 22 Apr 2026 14:56:26 +0000"
+    },
+    {
+      "title": "White House memo claims mass AI theft by Chinese firms",
+      "url": "https://www.bbc.com/news/articles/cpqxgxx9nrqo?at_medium=RSS&at_campaign=rss",
+      "snippet": "A memo from Michael Kratsios says firms, mainly in China, are wrongfully distilling US AI models.",
+      "keyword": "BBC",
+      "region": "Foreign",
+      "published": "Fri, 24 Apr 2026 00:58:58 GMT"
+    },
+    {
+      "title": "Meta says it will cut 8,000 jobs as AI spending soars",
+      "url": "https://www.bbc.com/news/articles/crm1y89vek8o?at_medium=RSS&at_campaign=rss",
+      "snippet": "The cuts, which employees had been expecting for weeks, will be Meta's largest layoff since 2023.",
+      "keyword": "BBC",
+      "region": "Foreign",
+      "published": "Thu, 23 Apr 2026 22:56:00 GMT"
+    },
+    {
+      "title": "UK Biobank health data listed for sale in China, government confirms",
+      "url": "https://www.bbc.com/news/articles/cpvxgl3n138o?at_medium=RSS&at_campaign=rss",
+      "snippet": "The government said medical data of 500,000 people was affected but no personally identifiable information had been made available.",
+      "keyword": "BBC",
+      "region": "Foreign",
+      "published": "Thu, 23 Apr 2026 11:45:41 GMT"
+    },
+    {
+      "title": "Xbox cuts prices for Game Pass but ends day-one Call of Duty access",
+      "url": "https://www.bbc.com/news/articles/cgrlvvrn409o?at_medium=RSS&at_campaign=rss",
+      "snippet": "New Call of Duty games will be added to the subscription service \"about a year\" after release, Microsoft said.",
+      "keyword": "BBC",
+      "region": "Foreign",
+      "published": "Wed, 22 Apr 2026 12:03:10 GMT"
+    },
+    {
+      "title": "Anthropic investigating claim of unauthorised access to Mythos AI tool",
+      "url": "https://www.bbc.com/news/articles/cy41zejp9pko?at_medium=RSS&at_campaign=rss",
+      "snippet": "The AI company has said the model is too dangerous to release publicly because of its hacking capabilities.",
+      "keyword": "BBC",
+      "region": "Foreign",
+      "published": "Wed, 22 Apr 2026 10:13:35 GMT"
+    },
+    {
+      "title": "UK gaming icon Peter Molyneux on AI, his final creation and a changing industry",
+      "url": "https://www.bbc.com/news/articles/c4glw5nyrggo?at_medium=RSS&at_campaign=rss",
+      "snippet": "The creator of iconic series such as Fable says Masters of Albion will be the last game he makes.",
+      "keyword": "BBC",
+      "region": "Foreign",
+      "published": "Tue, 21 Apr 2026 23:00:24 GMT"
+    },
+    {
+      "title": "Meta to track workers' clicks and keystrokes to train AI",
+      "url": "https://www.bbc.com/news/articles/cvglyklz49jo?at_medium=RSS&at_campaign=rss",
+      "snippet": "The firm will take data from the way employees work for its artificial intelligence models.",
+      "keyword": "BBC",
+      "region": "Foreign",
+      "published": "Tue, 21 Apr 2026 22:47:56 GMT"
+    },
+    {
+      "title": "New era as Apple names new boss to replace Tim Cook after 15 years",
+      "url": "https://www.bbc.com/news/articles/c1kr19lry18o?at_medium=RSS&at_campaign=rss",
+      "snippet": "Ternus will take over running the technology giant in September as Cook steps up to become executive chairman.",
+      "keyword": "BBC",
+      "region": "Foreign",
+      "published": "Tue, 21 Apr 2026 05:57:56 GMT"
+    },
+    {
+      "title": "Blue Origin rocket grounded after satellite 'mishap'",
+      "url": "https://www.bbc.com/news/articles/cjr9vwz48npo?at_medium=RSS&at_campaign=rss",
+      "snippet": "The firm founded by Amazon billionaire Jeff Bezos is investigating the failed launch.",
+      "keyword": "BBC",
+      "region": "Foreign",
+      "published": "Mon, 20 Apr 2026 19:56:11 GMT"
+    },
+    {
+      "title": "US Special Forces Soldier Arrested for Polymarket Bets on Maduro Raid",
+      "url": "https://www.wired.com/story/us-special-forces-soldier-allegedly-profited-off-of-maduro-capture-on-polymarket/",
+      "snippet": "The master sergeant allegedly used classified intel to profit on the capture of Venezuelan president Nicolás Maduro, marking the first US arrest for insider trading on a prediction market.",
+      "keyword": "Wired",
+      "region": "Foreign",
+      "published": "Thu, 23 Apr 2026 23:15:21 +0000"
+    },
+    {
+      "title": "At 'AI Coachella,' Stanford Students Line Up to Learn From Silicon Valley Royalty",
+      "url": "https://www.wired.com/story/stanford-cs-class-ai-coachella-ben-horowitz/",
+      "snippet": "CS 153 has gone viral on the Palo Alto campus—and on X. Not everyone is happy about it.",
+      "keyword": "Wired",
+      "region": "Foreign",
+      "published": "Thu, 23 Apr 2026 18:24:37 +0000"
+    },
+    {
+      "title": "Palantir Employees Are Starting to Wonder if They're the Bad Guys",
+      "url": "https://www.wired.com/story/palantir-employees-are-starting-to-wonder-if-theyre-the-bad-guys/",
+      "snippet": "Interviews with current and former Palantir employees, along with internal Slack messages obtained by WIRED, suggest a workforce in turmoil.",
+      "keyword": "Wired",
+      "region": "Foreign",
+      "published": "Thu, 23 Apr 2026 16:01:51 +0000"
+    },
+    {
+      "title": "These New Smart Glasses From Ex-OnePlus Engineers Have a Hidden Cost",
+      "url": "https://www.wired.com/story/latitude-52-n-smart-glasses-from-ex-oneplus-engineers-have-a-hidden-cost/",
+      "snippet": "The Kickstarter-funded glasses from L'Atitude 52°N have AI features bundled for one year, but the company doesn't know yet how much it will charge for access after that.",
+      "keyword": "Wired",
+      "region": "Foreign",
+      "published": "Thu, 23 Apr 2026 12:00:00 +0000"
+    },
+    {
+      "title": "The Best Robotic Pool Cleaners of 2026: Beatbot, iGarden, Dreame",
+      "url": "https://www.wired.com/story/best-pool-cleaning-robots/",
+      "snippet": "Send the pool guy packing. One of these robotic buddies can maintain your water quality instead.",
+      "keyword": "Wired",
+      "region": "Foreign",
+      "published": "Thu, 23 Apr 2026 11:11:00 +0000"
+    },
+    {
+      "title": "The Adidas Hyperboost Edge Is Your New Super Trainer",
+      "url": "https://www.wired.com/story/adidas-hyperboost-edge-super-trainer/",
+      "snippet": "How do shoe companies translate superfast racing shoe tech into your daily trainers? We break it down with some of the best new running shoes on the market.",
+      "keyword": "Wired",
+      "region": "Foreign",
+      "published": "Thu, 23 Apr 2026 09:30:00 +0000"
+    },
+    {
+      "title": "These are the countries moving to ban social media for children",
+      "url": "https://techcrunch.com/2026/04/23/social-media-ban-children-countries-list/",
+      "snippet": "Australia was the first country to issue a ban in late 2025, aiming to reduce the pressures and risks that young users may face on social media, including cyberbullying, social media addiction, and ex",
+      "keyword": "TechCrunch",
+      "region": "Foreign",
+      "published": "Thu, 23 Apr 2026 21:33:51 +0000"
+    },
+    {
+      "title": "Bret Taylor’s Sierra buys YC-backed AI startup Fragment",
+      "url": "https://techcrunch.com/2026/04/23/bret-taylors-sierra-buys-yc-backed-ai-startup-fragment/",
+      "snippet": "Sierra, the AI customer service agent startup founded by technologist Bret Taylor, announced today that it has acquired the YC-backed French startup Fragment.",
+      "keyword": "TechCrunch",
+      "region": "Foreign",
+      "published": "Thu, 23 Apr 2026 21:00:00 +0000"
+    },
+    {
+      "title": "Instagram tests a new ‘Instants’ app for sharing disappearing photos",
+      "url": "https://techcrunch.com/2026/04/23/instagram-tests-a-new-instants-app-for-sharing-disappearing-photos/",
+      "snippet": "The app lets users share disappearing photos with their friends that can be viewed only once and remain available for 24 hours.",
+      "keyword": "TechCrunch",
+      "region": "Foreign",
+      "published": "Thu, 23 Apr 2026 20:03:53 +0000"
+    },
+    {
+      "title": "Meet Noscroll, an AI bot that does your doomscrolling for you",
+      "url": "https://techcrunch.com/2026/04/23/meet-noscroll-an-ai-bot-that-does-your-doomscrolling-for-you/",
+      "snippet": "Noscroll wants to cure doomscrolling with an AI bot that reads the internet for you.",
+      "keyword": "TechCrunch",
+      "region": "Foreign",
+      "published": "Thu, 23 Apr 2026 19:38:25 +0000"
+    },
+    {
+      "title": "Don’t stop hiring humans — stop hiring the wrong humans, Artisan’s founder says",
+      "url": "https://techcrunch.com/2026/04/23/dont-stop-hiring-humans-stop-hiring-the-wrong-humans-artisans-founder-says/",
+      "snippet": "Artisan may be known for their bold “Stop Hiring Humans” campaign but the reality is every founder needs to assemble the right team if they want to scale.",
+      "keyword": "TechCrunch",
+      "region": "Foreign",
+      "published": "Thu, 23 Apr 2026 18:49:38 +0000"
+    },
+    {
+      "title": "OpenAI releases GPT-5.5, bringing company one step closer to an AI ‘super app’",
+      "url": "https://techcrunch.com/2026/04/23/openai-chatgpt-gpt-5-5-ai-model-superapp/",
+      "snippet": "OpenAI says its latest model offers increased capabilities across a broad variety of categories.",
+      "keyword": "TechCrunch",
+      "region": "Foreign",
+      "published": "Thu, 23 Apr 2026 18:29:29 +0000"
+    },
+    {
+      "title": "Era raises $11M to build a software platform for AI gadgets",
+      "url": "https://techcrunch.com/2026/04/23/era-computer-raises-11m-to-build-a-software-platform-for-ai-gadgets/",
+      "snippet": "Era thinks that we will see many form factors of AI hardware, including glasses, rings, and pendants.",
+      "keyword": "TechCrunch",
+      "region": "Foreign",
+      "published": "Thu, 23 Apr 2026 16:00:00 +0000"
+    },
+    {
+      "title": "博裕、经纬、顺为等投资前新石器COO超亿元，押注AI超便携电子纸｜硬氪独家",
+      "url": "https://36kr.com/p/3778175428777218?f=rss",
+      "snippet": "作者｜黄楠\n  编辑｜袁斯来\n  当智能手机陷入性能过剩、AI功能同质化内卷，用户注意力被无限拆解与争夺时，一个被长期忽视的角落正悄然打开新赛道——手机背面的闲置空间。\n  硬氪独家获悉，AI超便携电子纸品牌阅星曈近日完成天使轮至A轮融资，累计五轮金额超亿元人民币，投资方包括博裕创投、清流资本、希扬资本、小红书、经纬创投、顺为资本，多数股东持续追加。",
+      "keyword": "36kr",
+      "region": "China",
+      "published": "2026-04-24 09:30:00  +0800"
+    },
+    {
+      "title": "8点1氪丨华谊兄弟被申请破产重整；普华永道因恒大审计赔偿10亿港元；伊朗将恢复往返中国的航班",
+      "url": "https://36kr.com/p/3780065714148610?f=rss",
+      "snippet": "今日热点导览\n  抖音整治AI不当内容，重点处置利用AI技术换脸、盗声\n  受燃油价格冲击，德国汉莎拟削减2万架次航班\n  刹车功能或丧失，大众在美召回18853辆汽车\n  光线传媒：公司第一款3A游戏开发进展比较顺利\n  TOP3大新闻\n  华谊兄弟被申请破产重整<",
+      "keyword": "36kr",
+      "region": "China",
+      "published": "2026-04-24 08:05:57  +0800"
+    },
+    {
+      "title": "打造生物智能基础设施，AI4S企业「奥明星程」获超亿元A轮融资｜36氪首发",
+      "url": "https://36kr.com/p/3778831119897600?f=rss",
+      "snippet": "36氪获悉，AI for Science公司「奥明星程」近日完成超亿元A轮战略融资。本轮投资方包括深创投、复星医药（复健资本）、太平股权、广东中医药大健康基金、杭实集团等多家头部投资机构、产业链龙头企业及多地国资。同时，公司也与包括深圳湾实验室在内的多家国际顶尖科研机构建立了深度成果转化合作机制，形成覆盖技术研发、临床应用及产业生态赋能的全链条布局。\n  2025年被视作AI4",
+      "keyword": "36kr",
+      "region": "China",
+      "published": "2026-04-24 08:00:00  +0800"
+    },
+    {
+      "title": "美国百年太妃糖易手，Roca乐家被全资收购",
+      "url": "https://36kr.com/p/3779468716938499?f=rss",
+      "snippet": "作者 | 钟艺璇\n  编辑 | 乔芊\n  36氪获悉，BHM集团已完成对美国百年糖巧制造商Brown & Haley公司的全资收购，Brown & Haley是一家总部位于美国，成立于1912年的百年糖巧制造商，旗下拥有Almond ROCA、Mountain等糖巧品牌。交易于2026年4月17日正式完成交割",
+      "keyword": "36kr",
+      "region": "China",
+      "published": "2026-04-23 22:01:47  +0800"
+    },
+    {
+      "title": "破局“智驾双雄”，千里科技如何以AI之力重塑行业格局",
+      "url": "https://36kr.com/p/3779369343144965?f=rss",
+      "snippet": "智驾圈杀出了一匹“黑马”，智能驾驶的市场格局正面临重新洗牌的变量。\n  在4月22日举办的千里科技AI战略暨产品发布会上，千里科技公布了一组数据：千里智驾装车量已突破46万辆，覆盖极氪、领克17款车型，并预计在2026年正式跨入“百万量级俱乐部”。\n  <img src=\"https://img.36krcdn.com/",
+      "keyword": "36kr",
+      "region": "China",
+      "published": "2026-04-23 20:14:28  +0800"
+    },
+    {
+      "title": "氪星晚报｜ThinkPad发布AI主机，可一键部署“龙虾”、较云主机三年总成本可节省48%；量化投资先驱马丁·卢克警告勿将交易决策全盘交予人工智能；国家知识产权局：2025年我国共授权发明专利97.2万件",
+      "url": "https://36kr.com/p/3774776226923272?f=rss",
+      "snippet": "大公司：\n  三星电子工会举行集会，要求公司发放占营业利润15%的绩效奖金并废除奖金上限\n  <",
+      "keyword": "36kr",
+      "region": "China",
+      "published": "2026-04-23 18:28:15  +0800"
+    },
+    {
+      "title": "创·问｜炜璨医疗李强：从理解规则，到建立规则——重塑植入式给药路径",
+      "url": "https://36kr.com/p/3779145497515269?f=rss",
+      "snippet": "优秀的企业长什么样，成功的创业者都有哪些特质？在他们的奋斗路上，有哪些需要避开的“坑”，最重要的改变是什么？\n  创·问 向一些优秀的华创派、投资人、业界牛人抛出问题，也希望分享他们的想法给你。\n  本期主角是炜璨医疗创始人、董事长李强。炜璨医疗是目前全球首个涵盖静脉、动脉、脊柱、腹腔、透析、颅内等全场景植入式给药装置+智能化植入式自体给药装置的创新型医疗器械公司",
+      "keyword": "36kr",
+      "region": "China",
+      "published": "2026-04-23 17:51:25  +0800"
+    },
+    {
+      "title": "固态激光雷达“像素竞赛”加速，速腾聚创VGA大面阵SPAD-SoC产品发布｜最前线",
+      "url": "https://36kr.com/p/3779194648876292?f=rss",
+      "snippet": "作者｜黄楠\n  编辑｜袁斯来\n  近日，RoboSense速腾聚创正式发布了全新“创世”数字化架构及基于该架构的两款旗舰芯片。“创世”架构是一套可快速迭代的SPAD-SoC芯片级解决方案平台，可为激光雷达的规模化与高性能迭代提供核心支撑。\n  基于该架构推出的凤凰芯片，是全球首颗单片集成原生2160线的车规级SPAD-SoC，实现超400万像素分辨率",
+      "keyword": "36kr",
+      "region": "China",
+      "published": "2026-04-23 17:37:09  +0800"
+    },
+    {
+      "title": "36氪官方AI专属社群，正式开放招募！",
+      "url": "https://36kr.com/p/3777870287737860?f=rss",
+      "snippet": "36氪AI测评官方社群现已正式开放， 从入门认知到实战应用，从工具使用到项目落地。\n  36氪AI测评正式开放三大垂直社群：AI启航群、AI实战群、OPC超级个体群。面向不同阶段、不同目标的用户，帮助你更高效地理解AI、使用AI，并推动真实成长与结果落地。\n  <p class=\"wx-app-wr",
+      "keyword": "36kr",
+      "region": "China",
+      "published": "2026-04-23 11:31:49  +0800"
+    },
+    {
+      "title": "别克×火山引擎：至境E7行业首发搭载豆包大模型最新版",
+      "url": "https://www.leiphone.com/category/industrynews/c8rGA0s3Z9EolPet.html",
+      "snippet": "当豆包大模型进入汽车座舱，人车交互不再是你问我答的“客服”，而是能像人一样思考、交流、成长的“数字家人”。</p",
+      "keyword": "雷锋网",
+      "region": "China",
+      "published": "Mon, 13 Apr 2026 16:24:00 +0800"
+    },
+    {
+      "title": "推理卡毛利率下滑超7%，天数智芯「降价换量」的买卖值不值？",
+      "url": "https://www.leiphone.com/category/chips/bwKuuKUGYn8a3IbY.html",
+      "snippet": "2个多月前在港股上市的天数智芯，近期发布了2025年财报。公布当天，股价下跌了10个点。在此之前，天数股价已从342港元的高位大幅回调。财报显示，天数全年营收10.34亿元，同比增长91.6%。一级市场投资人林云直言，这个表现没有达到大家的心理预期。对比其他几家国产公司这两年来的增长速度，市场给天数的营收底线预期是：12亿元。但另一方面，分析师Ethan透露，资本",
+      "keyword": "雷锋网",
+      "region": "China",
+      "published": "Mon, 13 Apr 2026 12:56:00 +0800"
+    },
+    {
+      "title": "明日新程完成连续两轮融资，领跑Harness群体多智能体赛道",
+      "url": "https://www.leiphone.com/category/industrynews/aiDP2A7dwvwQL6Ue.html",
+      "snippet": "日前，由微软小冰原班人马成立的新公司“明日新程”宣布已连续完成两轮融资，重仓布局Harness群体多智能体赛道。其中，天使轮融资由创新工场和Atypical Ventures联合领投，奇绩创坛继续跟投，其余参投方包括原微软全球副总裁David Ku等个人投资者、公司独家财务顾问安可资本等。目前，公司已募得供未来三到五年持续创新的所需资金。明日新程（英文名：Next",
+      "keyword": "雷锋网",
+      "region": "China",
+      "published": "Mon, 13 Apr 2026 12:12:00 +0800"
+    },
+    {
+      "title": "「作弊」内幕曝光！3DMark回应将某知名国产手机除名；李想朋友圈炮轰东风日产恶意拉踩，后者高管回应；美的空调又发行业首创产品",
+      "url": "https://www.leiphone.com/category/zaobao/aAthIc8n66aAjB1c.html",
+      "snippet": "要闻提示1.“作弊” 内幕曝光！3DMark回应将某知名国产手机除名：实测性能相差24%、温度超过50℃<p style=\"text-a",
+      "keyword": "雷锋网",
+      "region": "China",
+      "published": "Mon, 13 Apr 2026 09:34:00 +0800"
+    },
+    {
+      "title": "移远通信把汽车“下半场”的野心，搬进北京车展",
+      "url": "https://www.leiphone.com/category/transportation/DYvxVVejv1XSyLKZ.html",
+      "snippet": "智能汽车行业竞争加剧，行业普遍认为已经进入下半场的淘汰赛。然而，一家名叫移远通信的公司在全球车载网联市场持续领跑，稳居全球第一梯队。在汽车工业漫长的百年历史里，移远通信无疑是一位后来者。2015年，移远通信才正式以通信与定位技术为支点，切入汽车前装领",
+      "keyword": "雷锋网",
+      "region": "China",
+      "published": "Thu, 23 Apr 2026 22:47:00 +0800"
+    },
+    {
+      "title": "PC 正在「物种进化」：英特尔如何用混合 AI 制造你的数字分身？",
+      "url": "https://www.leiphone.com/category/chips/qlFI2y6BTOx6TwAS.html",
+      "snippet": "从ChatGPT引爆“头脑竞争”，到工具调用补齐“四肢能力”，再到智能体补全“身体”，AI正在完成一次从能力到形态的跃迁。但真正的分水岭，不在模型参数规模，而在计算范式的迁移——当AI开始接管任务执行、理解长期记忆、主动调用资源，传统PC的角色也被迫改写。2026年，一个新的命题浮出水面：PC是否正在从“人使用的工具”，转变为“替人行动的智能体载体",
+      "keyword": "雷锋网",
+      "region": "China",
+      "published": "Thu, 23 Apr 2026 18:45:00 +0800"
+    },
+    {
+      "title": "千里科技发布Robotaxi战略规划：2030年剑指全球30万辆",
+      "url": "https://www.leiphone.com/category/transportation/GM5hjtVDz78ikExT.html",
+      "snippet": "2026年4月22日在北京举行的“行千里、AI 相伴”主题发布会，千里科技公布了其在自动驾驶出行服务领域的明确路线图。公司宣布，计划于2027年正式面向市场推出Robotaxi综合解决方案，并制定了清晰明确的市场目标：预计到2030年，全球范围内将有超过30万辆Robotaxi搭载千里科技的解决方案。千里科技联席董事长赵明指出，这一规划是基于千里科技在L4级统一技术架构与规模化",
+      "keyword": "雷锋网",
+      "region": "China",
+      "published": "Thu, 23 Apr 2026 18:36:00 +0800"
+    },
+    {
+      "title": "抖音整治AI不当内容，重点处置利用AI技术换脸、盗声",
+      "url": "https://www.leiphone.com/category/industrynews/XCmxz8i2qtt7XP5D.html",
+      "snippet": "近日，抖音正式发布“AI生成不当内容及侵犯他人权益”的专项治理公告。公告对外披露了阶段性治理成效，截至目前已累计下架AI侵权视频超53.8万条，处罚违规账号4000余个，同时明确了重点整治场景与长效管控举措。平台将重点处置利用AI技术换脸、盗声，利用AI生成内容仿冒、蹭热他人等典型违规行为。抖音相关负责人也表示，平台会持续投入提升相关治理能力，但需要承认，当",
+      "keyword": "雷锋网",
+      "region": "China",
+      "published": "Thu, 23 Apr 2026 17:35:00 +0800"
+    },
+    {
+      "title": "GPT-5.5亮剑，三将辞营，DALL-E谢幕：OpenAI的“成人礼”",
+      "url": "https://www.tmtpost.com/7965308.html",
+      "snippet": "不要再拿“聊天模型”的框架来理解它了。",
+      "keyword": "钛媒体",
+      "region": "China",
+      "published": "Fri, 24 Apr 2026 09:41:00 +0800"
+    },
+    {
+      "title": "统治 AI 十年的英伟达，要被谷歌NPU 掀桌子了？",
+      "url": "https://www.tmtpost.com/7964729.html",
+      "snippet": "云厂商集体自研 NPU，围剿黄仁勋。",
+      "keyword": "钛媒体",
+      "region": "China",
+      "published": "Fri, 24 Apr 2026 09:41:00 +0800"
+    },
+    {
+      "title": "量产完美面孔后，AI互动剧接棒新风口",
+      "url": "https://www.tmtpost.com/7964697.html",
+      "snippet": "拍的个个像顶流，看的心里直发愁。",
+      "keyword": "钛媒体",
+      "region": "China",
+      "published": "Fri, 24 Apr 2026 09:35:00 +0800"
+    },
+    {
+      "title": "这家管道公司刚刚提高了股息，AI电力需求正为其增长提供动力",
+      "url": "https://www.tmtpost.com/7965269.html",
+      "snippet": "金德尔·摩根在公布第一季度业绩后上调了股息，而由人工智能带动的电力需求增长可能会支撑其长期增长。",
+      "keyword": "钛媒体",
+      "region": "China",
+      "published": "Fri, 24 Apr 2026 09:17:34 +0800"
+    }
+  ]
+}

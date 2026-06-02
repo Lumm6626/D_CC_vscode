@@ -1,0 +1,526 @@
+{
+  "date": "2026-05-20",
+  "count": 65,
+  "news": [
+    {
+      "title": "How Google Is Starting to Win the A.I. Race",
+      "url": "https://www.nytimes.com/2026/05/19/technology/personaltech/google-gemini-ai.html",
+      "snippet": "Despite its early stumbles, Google’s Gemini has leapfrogged ChatGPT in relevance and usefulness. Soon, it will be ubiquitous.",
+      "keyword": "NYTimes",
+      "region": "Foreign",
+      "published": "Tue, 19 May 2026 19:41:47 +0000"
+    },
+    {
+      "title": "As OpenAI Celebrates Court Win Against Musk, Other Challenges Lie Ahead",
+      "url": "https://www.nytimes.com/2026/05/19/technology/openai-musk-legal-challenges.html",
+      "snippet": "A jury’s rejection of Elon Musk’s $150 billion lawsuit against OpenAI was a major hurdle crossed. But the maker of ChatGPT faces a list of other problems.",
+      "keyword": "NYTimes",
+      "region": "Foreign",
+      "published": "Tue, 19 May 2026 13:32:36 +0000"
+    },
+    {
+      "title": "Bipartisan Bill Would Impose New Annual Fee on Electric Vehicles",
+      "url": "https://www.nytimes.com/2026/05/19/business/energy-environment/electrc-vehicles-annual-fee-congress.html",
+      "snippet": "A House transportation bill introduced this week would require owners of electric cars to pay $130 to cover the cost of road repairs.",
+      "keyword": "NYTimes",
+      "region": "Foreign",
+      "published": "Tue, 19 May 2026 18:24:51 +0000"
+    },
+    {
+      "title": "After Elon Musk’s Court Loss Comes the Long Hot A.I. Summer",
+      "url": "https://www.nytimes.com/2026/05/18/technology/elon-musk-openai-trial.html",
+      "snippet": "Even as protests increase, the collapse of Mr. Musk’s suit against OpenAI and Sam Altman will speed up the artificial intelligence juggernaut.",
+      "keyword": "NYTimes",
+      "region": "Foreign",
+      "published": "Tue, 19 May 2026 00:12:22 +0000"
+    },
+    {
+      "title": "Elon Musk Loses $150 Billion Suit Against OpenAI and Sam Altman",
+      "url": "https://www.nytimes.com/2026/05/18/technology/elon-musk-lawsuit-openai-sam-altman.html",
+      "snippet": "A nine-member jury found that Mr. Musk had waited too long to sue. The setback for the tech mogul frees OpenAI to continue in the artificial intelligence race.",
+      "keyword": "NYTimes",
+      "region": "Foreign",
+      "published": "Tue, 19 May 2026 22:26:41 +0000"
+    },
+    {
+      "title": "Five Takeaways From the Blockbuster Trial Pitting Elon Musk Against OpenAI",
+      "url": "https://www.nytimes.com/2026/05/18/technology/elon-musk-openai-trial-takeaways.html",
+      "snippet": "It took a jury less than two hours to decide that Mr. Musk had waited too long to sue. But the testimony over three weeks was still illuminating.",
+      "keyword": "NYTimes",
+      "region": "Foreign",
+      "published": "Mon, 18 May 2026 22:45:53 +0000"
+    },
+    {
+      "title": "What to Know About Elon Musk’s Trial Against OpenAI",
+      "url": "https://www.nytimes.com/2026/05/18/technology/openai-trial-elon-musk-sam-altman.html",
+      "snippet": "A jury in Oakland, Calif., reached a decision after a three-week-long trial seen as pivotal for the future of OpenAI and the artificial intelligence race.",
+      "keyword": "NYTimes",
+      "region": "Foreign",
+      "published": "Mon, 18 May 2026 19:35:29 +0000"
+    },
+    {
+      "title": "Google to release first smart glasses since Google Glass flop",
+      "url": "https://www.bbc.com/news/articles/cvgz1ynq1nqo?at_medium=RSS&at_campaign=rss",
+      "snippet": "The glasses will go on sale sometime in autumn and allow Google's artificial intelligence product to interact with a user.",
+      "keyword": "BBC",
+      "region": "Foreign",
+      "published": "Tue, 19 May 2026 21:00:12 GMT"
+    },
+    {
+      "title": "Zoe Kleinman: Why the AI industry is the real winner of the Musk-Altman trial",
+      "url": "https://www.bbc.com/news/articles/crlp991nw41o?at_medium=RSS&at_campaign=rss",
+      "snippet": "The trial in Oakland, California has helped lift the veil on the AI sector - and the huge egos of the men at the heart of it.",
+      "keyword": "BBC",
+      "region": "Foreign",
+      "published": "Tue, 19 May 2026 11:05:09 GMT"
+    },
+    {
+      "title": "Elon Musk has lost yet another legal battle. Why he'll still keep fighting",
+      "url": "https://www.bbc.com/news/articles/cqlpz4w6v13o?at_medium=RSS&at_campaign=rss",
+      "snippet": "Musk has lost his high-profile lawsuit against OpenAI, but is not likely to change his aggressive style.",
+      "keyword": "BBC",
+      "region": "Foreign",
+      "published": "Tue, 19 May 2026 08:45:23 GMT"
+    },
+    {
+      "title": "Satellites and AI used to track UK hedgehogs in bid to slow decline",
+      "url": "https://www.bbc.com/news/articles/c202g60qrlpo?at_medium=RSS&at_campaign=rss",
+      "snippet": "Researchers hope the project will also help to identify barriers preventing hedgehogs from finding food and mates in the wild.",
+      "keyword": "BBC",
+      "region": "Foreign",
+      "published": "Mon, 18 May 2026 23:04:03 GMT"
+    },
+    {
+      "title": "Musk loses OpenAI court battle after jury finds he waited too long to sue",
+      "url": "https://www.bbc.com/news/articles/cewpyv79pw1o?at_medium=RSS&at_campaign=rss",
+      "snippet": "Jurors spent weeks hearing about Musk's claim that Altman had \"stolen a charity.\"",
+      "keyword": "BBC",
+      "region": "Foreign",
+      "published": "Mon, 18 May 2026 22:08:37 GMT"
+    },
+    {
+      "title": "Instant AI answers can trivialise human intelligence, warns Royal Observatory",
+      "url": "https://www.bbc.com/news/articles/c2023l60370o?at_medium=RSS&at_campaign=rss",
+      "snippet": "Paddy Rodgers said the Observatory's rich history showed the power of human knowledge and the need to avoid \"dependence\" on AI.",
+      "keyword": "BBC",
+      "region": "Foreign",
+      "published": "Mon, 18 May 2026 09:33:53 GMT"
+    },
+    {
+      "title": "X pledges quicker action on hate and terror content in the UK",
+      "url": "https://www.bbc.com/news/articles/clyp9652v18o?at_medium=RSS&at_campaign=rss",
+      "snippet": "Ofcom said the commitments were of particular importance after recent crimes targeting Jewish communities in the UK.",
+      "keyword": "BBC",
+      "region": "Foreign",
+      "published": "Fri, 15 May 2026 12:57:30 GMT"
+    },
+    {
+      "title": "Claim, counter-claim and tech's seedy side exposed: Five things we learned in the Musk-Altman trial",
+      "url": "https://www.bbc.com/news/articles/cg7pj8p5mv4o?at_medium=RSS&at_campaign=rss",
+      "snippet": "As the jury deliberates, this is what we found out during the weeks-long trial with two tech titans at its heart.",
+      "keyword": "BBC",
+      "region": "Foreign",
+      "published": "Fri, 15 May 2026 05:03:31 GMT"
+    },
+    {
+      "title": "AI could put people off tech jobs and hurt the economy, warns Raspberry Pi boss",
+      "url": "https://www.bbc.com/news/articles/clypr8p2lewo?at_medium=RSS&at_campaign=rss",
+      "snippet": "Eben Upton warns against claims that Artificial Intelligence will destroy vast numbers of computing roles over the coming years.",
+      "keyword": "BBC",
+      "region": "Foreign",
+      "published": "Thu, 14 May 2026 23:01:20 GMT"
+    },
+    {
+      "title": "'Millions' of pounds saved by replacing Palantir tech in refugee system",
+      "url": "https://www.bbc.com/news/articles/c2l2j1lxdk5o?at_medium=RSS&at_campaign=rss",
+      "snippet": "The government said its in-house IT system was \"more flexible\" while meeting \"high standards\" of security.",
+      "keyword": "BBC",
+      "region": "Foreign",
+      "published": "Thu, 14 May 2026 21:09:02 GMT"
+    },
+    {
+      "title": "HMRC to use AI from British tech firm to spot fraud and tax return errors",
+      "url": "https://www.bbc.com/news/articles/c7v9ld262n4o?at_medium=RSS&at_campaign=rss",
+      "snippet": "Quantexa, a financial data platform, won the £175m contract to spot fraud and tax return errors.",
+      "keyword": "BBC",
+      "region": "Foreign",
+      "published": "Thu, 14 May 2026 05:10:45 GMT"
+    },
+    {
+      "title": "Tech Life",
+      "url": "https://www.bbc.co.uk/sounds/play/w3ct8jxw?at_medium=RSS&at_campaign=rss",
+      "snippet": "We talk to an expert about the risks from AI hackers.",
+      "keyword": "BBC",
+      "region": "Foreign",
+      "published": "Tue, 19 May 2026 20:00:00 GMT"
+    },
+    {
+      "title": "Literary Prizewinners Are Facing AI Allegations. It Feels Like the New Normal",
+      "url": "https://www.wired.com/story/commonwealth-short-story-prize-ai-allegations/",
+      "snippet": "Three of five regional winners of the prestigious Commonwealth Short Story Prize are suspected of relying on chatbots. They’re certainly not alone.",
+      "keyword": "Wired",
+      "region": "Foreign",
+      "published": "Tue, 19 May 2026 22:53:04 +0000"
+    },
+    {
+      "title": "Everything Announced at Google I/O 2026: Gemini, Search, Smart Glasses",
+      "url": "https://www.wired.com/story/everything-google-announced-at-google-io-2026/",
+      "snippet": "Google is sprucing up its Gemini models, revamping search, and enabling AI agents in everything. There are also some spiffy new smart glasses coming this fall.",
+      "keyword": "Wired",
+      "region": "Foreign",
+      "published": "Tue, 19 May 2026 20:00:48 +0000"
+    },
+    {
+      "title": "Google Search Goes Agentic—and Doesn’t Need You Anymore",
+      "url": "https://www.wired.com/story/google-search-goes-agentic-and-doesnt-need-you-anymore/",
+      "snippet": "Vibe-coded results! Super widgets! Bots that never sleep! Google’s vision for the future of Search is hyper-personalized, automated, and extremely AI.",
+      "keyword": "Wired",
+      "region": "Foreign",
+      "published": "Tue, 19 May 2026 17:45:00 +0000"
+    },
+    {
+      "title": "Demis Hassabis Thinks AI Job Cuts Are Dumb",
+      "url": "https://www.wired.com/story/demis-hassabis-ai-layoffs-deepmind-google-io/",
+      "snippet": "The CEO of Google DeepMind tells WIRED that companies should use the productivity gains of AI to do more, not lay people off.",
+      "keyword": "Wired",
+      "region": "Foreign",
+      "published": "Tue, 19 May 2026 17:45:00 +0000"
+    },
+    {
+      "title": "Google Makes It Easy to Deepfake Yourself",
+      "url": "https://www.wired.com/story/google-makes-it-easy-to-make-a-deepfake-of-yourself/",
+      "snippet": "Google’s overhaul of its AI creation software, Flow, includes a new video model and a tool for generating selfie videos called avatars.",
+      "keyword": "Wired",
+      "region": "Foreign",
+      "published": "Tue, 19 May 2026 17:45:00 +0000"
+    },
+    {
+      "title": "Gemini Spark Is Google’s Response to OpenClaw’s 24/7 AI Agent",
+      "url": "https://www.wired.com/story/googles-response-to-openclaws-24-7-ai-agent/",
+      "snippet": "Google’s always-running, data-hungry AI agent is designed to spend your money and send your emails.",
+      "keyword": "Wired",
+      "region": "Foreign",
+      "published": "Tue, 19 May 2026 17:45:00 +0000"
+    },
+    {
+      "title": "Former OpenAI Staffers Warn That xAI’s Poor Safety Record Could Complicate SpaceX’s IPO",
+      "url": "https://www.wired.com/story/ex-openai-staffers-warn-spacex-investors-of-ai-safety-risks/",
+      "snippet": "The ex-employees, who cofounded a new AI watchdog group, say investors deserve more information about xAI’s safety practices before SpaceX goes public.",
+      "keyword": "Wired",
+      "region": "Foreign",
+      "published": "Tue, 19 May 2026 15:00:28 +0000"
+    },
+    {
+      "title": "The Zuckerbergs Are Hiring a Lifeguard but Calling It a ‘Beach Water Person’",
+      "url": "https://www.wired.com/story/mark-zuckerberg-priscilla-chan-lifeguard-beach-water-person/",
+      "snippet": "The job, which is associated with the Zuckerberg family office, is located in Kauai, Hawaii, where the Meta CEO owns a massive compound.",
+      "keyword": "Wired",
+      "region": "Foreign",
+      "published": "Tue, 19 May 2026 14:00:47 +0000"
+    },
+    {
+      "title": "The US Built a Site to Ensure Fair Access to Public Lands. Then Everything Went Wrong",
+      "url": "https://www.wired.com/story/the-us-built-a-site-to-ensure-fair-access-to-public-lands-then-everything-went-wrong/",
+      "snippet": "Recreation.gov was supposed to make access to public lands more equitable and streamlined. Instead, it’s rife with bots and inequality, while a government contractor benefits.",
+      "keyword": "Wired",
+      "region": "Foreign",
+      "published": "Tue, 19 May 2026 11:00:00 +0000"
+    },
+    {
+      "title": "Google just declared itself a contender in AI design at IO 2026",
+      "url": "https://techcrunch.com/2026/05/19/ai-design-tools-are-the-next-big-battleground-and-google-is-going-all-in-at-io-2026/",
+      "snippet": "Google says it's designed the app to be accessible to everyone, from teachers to small business owners.",
+      "keyword": "TechCrunch",
+      "region": "Foreign",
+      "published": "Tue, 19 May 2026 21:33:30 +0000"
+    },
+    {
+      "title": "You can now talk to your Gmail inbox, as seen at Google IO 2026",
+      "url": "https://techcrunch.com/2026/05/19/you-can-now-talk-to-your-gmail-inbox-as-seen-at-google-io-2026/",
+      "snippet": "Google expands Gmail’s AI Inbox with conversational voice search, letting users ask Gemini to find buried email details.",
+      "keyword": "TechCrunch",
+      "region": "Foreign",
+      "published": "Tue, 19 May 2026 21:25:31 +0000"
+    },
+    {
+      "title": "How to use Google’s new AI agents to go beyond your standard searches",
+      "url": "https://techcrunch.com/2026/05/19/how-to-use-googles-new-ai-agents-to-go-beyond-your-standard-searches/",
+      "snippet": "Google is launching AI-powered “information agents” that can monitor topics in the background and proactively alert users to updates and changes.",
+      "keyword": "TechCrunch",
+      "region": "Foreign",
+      "published": "Tue, 19 May 2026 21:16:25 +0000"
+    },
+    {
+      "title": "From teen hacker to Iron Dome researcher, this founder raised $28M to fight AI phishing",
+      "url": "https://techcrunch.com/2026/05/19/from-teen-hacker-to-iron-dome-researcher-this-founder-raised-28m-to-fight-ai-phishing/",
+      "snippet": "Ocean, an agentic email security platform, claims its AI can thoroughly analyze the context of every incoming email to detect fraud and impersonation attempts.",
+      "keyword": "TechCrunch",
+      "region": "Foreign",
+      "published": "Tue, 19 May 2026 21:08:51 +0000"
+    },
+    {
+      "title": "Elon Musk said Sam Altman ‘stole’ a non-profit — but the trial showed he had similar aims",
+      "url": "https://techcrunch.com/2026/05/19/elon-musk-said-sam-altman-stole-a-non-profit-but-the-trial-showed-he-had-similar-aims/",
+      "snippet": "The jury's speedy decision to reject Elon Musk's lawsuit against the other founders of OpenAI and Microsoft confirmed what we saw in the courtroom: Musk's case was a weak one, in part because he waite",
+      "keyword": "TechCrunch",
+      "region": "Foreign",
+      "published": "Tue, 19 May 2026 20:11:00 +0000"
+    },
+    {
+      "title": "With Gemini 3.5 Flash, Google bets its next AI wave on agents, not chatbots",
+      "url": "https://techcrunch.com/2026/05/19/with-gemini-3-5-flash-google-bets-its-next-ai-wave-on-agents-not-chatbots/",
+      "snippet": "Google launched Gemini 3.5 Flash, its most powerful coding and agentic AI model yet, at the company's annual developer conference. It is capable of autonomously executing complex tasks and building so",
+      "keyword": "TechCrunch",
+      "region": "Foreign",
+      "published": "Tue, 19 May 2026 17:51:30 +0000"
+    },
+    {
+      "title": "Google Search as you know it is over",
+      "url": "https://techcrunch.com/2026/05/19/google-search-as-you-know-it-is-over/",
+      "snippet": "Google is transforming Search from a list of links into an AI-powered experience filled with conversational answers, autonomous agents, and interactive interfaces — a shift that could further reduce t",
+      "keyword": "TechCrunch",
+      "region": "Foreign",
+      "published": "Tue, 19 May 2026 17:46:00 +0000"
+    },
+    {
+      "title": "Google’s AI Studio now lets anyone build Android apps in minutes",
+      "url": "https://techcrunch.com/2026/05/19/googles-ai-studio-now-lets-anyone-build-android-apps-in-minutes/",
+      "snippet": "Google unveiled new web-based AI tools that can generate native Android apps in minutes, as the company expands its push into AI-powered software development.",
+      "keyword": "TechCrunch",
+      "region": "Foreign",
+      "published": "Tue, 19 May 2026 17:45:00 +0000"
+    },
+    {
+      "title": "Google updates its Gemini app to take on ChatGPT and Claude at IO 2026",
+      "url": "https://techcrunch.com/2026/05/19/google-updates-its-gemini-app-to-take-on-chatgpt-and-claude-at-io-2026/",
+      "snippet": "The updates signal Google’s push to turn its Gemini app into an all-purpose AI hub rather than a stand-alone chatbot.",
+      "keyword": "TechCrunch",
+      "region": "Foreign",
+      "published": "Tue, 19 May 2026 17:45:00 +0000"
+    },
+    {
+      "title": "Agentic app coding gets an upgrade with Google’s release of Android CLI",
+      "url": "https://techcrunch.com/2026/05/19/agentic-app-coding-gets-an-upgrade-with-googles-release-of-android-cli/",
+      "snippet": "Google is embracing the rise of AI coding agents with new Android tools designed to work with platforms like Claude Code and OpenAI’s Codex, allowing developers — or their AI assistants — to build And",
+      "keyword": "TechCrunch",
+      "region": "Foreign",
+      "published": "Tue, 19 May 2026 17:45:00 +0000"
+    },
+    {
+      "title": "Google’s new Universal Cart wants to follow your entire shopping journey across the internet",
+      "url": "https://techcrunch.com/2026/05/19/googles-new-universal-cart-wants-to-follow-your-entire-shopping-journey-across-the-internet/",
+      "snippet": "Most people shop across multiple devices, many retailers, and over the course of many days, which is why Google is launching Universal Cart.",
+      "keyword": "TechCrunch",
+      "region": "Foreign",
+      "published": "Tue, 19 May 2026 17:45:00 +0000"
+    },
+    {
+      "title": "早期项目 | Chance AI获美图等数百万美元投资，用户数已达20万",
+      "url": "https://36kr.com/p/3816947890471812?f=rss",
+      "snippet": "作者丨欧雪\n  编辑丨袁斯来\n  硬氪获悉，Visual Agent（视觉智能体）创业公司Chance AI宣布完成数百万美元天使轮融资。本轮由美图领投，NYX Ventures、阿里系投资机构等跟投。融资将用于模型能力迭代、北美学生群体增长、以及社区与商业化探索。\n  Chance AI成立于2025年，核心产品是全球第一款以摄像头为主要交互入口的",
+      "keyword": "36kr",
+      "region": "China",
+      "published": "2026-05-20 09:20:43  +0800"
+    },
+    {
+      "title": "8点1氪丨谷歌推出Gemini 3.5系列模型；DeepSeek回应用户“对话泄露”疑虑；全国存款十强城市出炉",
+      "url": "https://36kr.com/p/3816885092910212?f=rss",
+      "snippet": "今日热点导览\n  \n   谷歌推出Gemini 3.5系列模型\n   洁丽雅回应豪门内斗传闻，“毛巾少爷”1个月带货超500万元\n   巨力索具连续第二日跌停\n   前三星芯片负责人：明年内存将降价\n   自费流感疫苗也可使用医保报销\n   谷歌搜索宣布大改版，AI模式与代理",
+      "keyword": "36kr",
+      "region": "China",
+      "published": "2026-05-20 08:20:10  +0800"
+    },
+    {
+      "title": "当“躺平”、Gap被歧视，我们该如何度过奥德赛时期？ | 职场极端气候 ②",
+      "url": "https://36kr.com/p/3816045694098952?f=rss",
+      "snippet": "<img src=\"https://img.36krcdn.com/hsossms/20260519/v2_9f2621726e444ecd9c0cd20ba6da2f8a@5509299_oswg1149144oswg1080oswg1068_img_png?x-oss-process=image/quality,q_90/format,jpg/",
+      "keyword": "36kr",
+      "region": "China",
+      "published": "2026-05-20 08:02:42  +0800"
+    },
+    {
+      "title": "影石：重新定义性价比",
+      "url": "https://36kr.com/p/3815841756028425?f=rss",
+      "snippet": "作者 | 张帆\n  坚持做后来者\n  近日，影石创新发布了登陆资本市场后的首份年报。2025年，公司实现营业收入97.41亿元，同比大幅增长74.76%，创下成立以来的最高营收纪录。然而，同期由于研发、销售等费用高企，公司归母净利润仅为9.29亿元，同比下降了6.62%。\n  面对这样一份“营收大增、利润下滑”的",
+      "keyword": "36kr",
+      "region": "China",
+      "published": "2026-05-19 14:58:30  +0800"
+    },
+    {
+      "title": "鲸跃动力获星海图数千万元种子轮投资，用「数据+模型+末端执行」打造开箱即用的Robo Labor丨涌现新项目",
+      "url": "https://36kr.com/p/3814860909600261?f=rss",
+      "snippet": "文｜王欣逸\n  编辑｜邱晓芬\n  一句话介绍\n  鲸跃动力成立于2026年，以「数据+模型+末端执行」闭环，提供面向场景、可快速部署的Robo Labor（机器人劳动力），让物理劳动力像AWS算力一样，可订阅、可弹性扩容、开箱即用，替代人类从事高",
+      "keyword": "36kr",
+      "region": "China",
+      "published": "2026-05-19 10:00:00  +0800"
+    },
+    {
+      "title": "高瓴出手了一家AI体育科技公司，曾获李泽湘天使轮融资｜硬氪首发",
+      "url": "https://36kr.com/p/3805660478184966?f=rss",
+      "snippet": "作者｜黄楠\n  编辑｜袁斯来\n  硬氪获悉，AI体育科技公司SportVision近日已完成天使+轮融资，高瓴创投（GL Ventures）领投，谦恒资本担任独家财务顾问。本轮资金将重点用于核心技术研发、产品量产落地及市场的拓展推广。其新款AI网球训练相机产品计划发售中。\n  SportVision隶属于深圳思博威视体育科技有限公司‌，长期专注运动算",
+      "keyword": "36kr",
+      "region": "China",
+      "published": "2026-05-19 09:30:00  +0800"
+    },
+    {
+      "title": "8点1氪丨贾跃亭又融资4.77亿元；巨力索具旗下十余家企业已注销；超越茅台，A股“新股王”诞生",
+      "url": "https://36kr.com/p/3815459487587847?f=rss",
+      "snippet": "今日热点导览\n  \n   瑞幸咖啡正式上线两款含酒精的特调饮品\n   京张高铁试点推出“自行车随身行”服务\n   马斯克：计划今年进行首例用于治疗失明的Neuralink植入手术\n   韩国法院要求三星电子罢工行动不得影响产量\n   多家理财公司集中提前终止理财产品",
+      "keyword": "36kr",
+      "region": "China",
+      "published": "2026-05-19 08:08:58  +0800"
+    },
+    {
+      "title": "氪星晚报 ｜百度：一季度营收321亿元，AI业务收入136亿元；马斯克预计今年美国将广泛使用自动驾驶汽车；巨力索具旗下十余家企业已注销",
+      "url": "https://36kr.com/p/3814695536336387?f=rss",
+      "snippet": "大公司：\n  索辰科技：物理AI业务目前尚处于布局初期\n  36氪获悉，索辰科技公告，公司股票于2026年5月14日至5月18日连续三个交易日内收盘价格涨幅偏离值累计达到30%，属于股票交易异常波动情形。公司近期实施的募投项目“物理合成数据核心技术基座构建与多领域场景示范应用项目”尚处于筹备阶段，若出现募集资金投资项目未能顺利",
+      "keyword": "36kr",
+      "region": "China",
+      "published": "2026-05-18 19:11:14  +0800"
+    },
+    {
+      "title": "“声智融合、智启未来”全场景语音AI技术与产业发展战略研讨会在北京大学成功召开，开启语音交互的未来生活方式",
+      "url": "https://www.leiphone.com/category/ai/53JyW4GyXsHriUqD.html",
+      "snippet": "近日，由北京大学前沿工程博士联合会与声智科技（SoundAI）联合主办的“声智融合、智启未来”全场景语音AI技术与产业发展战略研讨会在北京大学圆满落幕。值此北京大学建校128周年之际，活动汇聚了海淀区人才工作局、北京市科技装备业商会等政府机构代表，以及来自华为鸿蒙、字节跳动、中信证券等领军企业与金融机构的专家。研讨会由声智科技首席产品官、北大光华校友黄赟贺担任主持。<p",
+      "keyword": "雷锋网",
+      "region": "China",
+      "published": "Tue, 19 May 2026 23:08:00 +0800"
+    },
+    {
+      "title": "Ozon Global调研：超七成俄买家认可中国商品质量改善，评价超越价格成首选中国商品依据",
+      "url": "https://www.leiphone.com/category/industrynews/7honxyrNzc3eDlLD.html",
+      "snippet": "雷峰网了解到，俄罗斯领先的跨境电商平台Ozon Globa于近日开展了一项消费者调研，旨在深入洞察俄罗斯跨境电商消费者的行为与偏好。调研围绕平台买家的跨境购物习惯、对中国商品的印象、消费决策及购物旅程等方面展开，样本涵盖超1,000名18至55岁的Ozon平台消费者，男女比例为1:1。该调研结果为中国跨境卖家了解俄罗斯消费者提供了极高的参考价值。<p class=\"heading-3",
+      "keyword": "雷锋网",
+      "region": "China",
+      "published": "Tue, 19 May 2026 18:16:00 +0800"
+    },
+    {
+      "title": "代码驱动的视觉感知：为什么说「看得懂代码」才是大模型攻克理科题的真正钥匙 ｜CVPR 2026",
+      "url": "https://www.leiphone.com/category/ai/5V1IJOdYhKnzkAmF.html",
+      "snippet": "<img class=\"rich_pages wxw-img\" src=\"https://static.leiphone.com/uploads/new/images/20260519/6a0c25928fa3e.j",
+      "keyword": "雷锋网",
+      "region": "China",
+      "published": "Tue, 19 May 2026 16:58:00 +0800"
+    },
+    {
+      "title": "理想汽车×火山引擎：AI智能助手纵深防御体系，为AI系上“安全带”",
+      "url": "https://www.leiphone.com/category/industrynews/3d7wgLxoRj4pYMiV.html",
+      "snippet": "从研发设计到生产制造，从供应链管理到客户服务，智能体正在渗透汽车产业的每一个环节。如何确保其安全、合规、可控，已成为车企的必答题。<img src=\"https://static.leiphone.com/uploads/new/images/202605",
+      "keyword": "雷锋网",
+      "region": "China",
+      "published": "Tue, 19 May 2026 14:07:00 +0800"
+    },
+    {
+      "title": "权威报告：中国AI云市场爆发，阿里云占比38.1%稳居第一，超二三四名总和",
+      "url": "https://www.leiphone.com/category/industrynews/XiAlt8gfPDXIbTgO.html",
+      "snippet": "5月19日，国际权威市场调研机构英富曼（Omdia）发布最新的《中国AI云市场份额2025》报告，2025年中国AI云市场总规模达567亿元人民币，其中，阿里云在AI IaaS和MaaS两大领域均位列第一，总份额从上半年的35.8%上涨至38.1%，整体稳居第一，超过二到四名总和。 <img src=\"https",
+      "keyword": "雷锋网",
+      "region": "China",
+      "published": "Tue, 19 May 2026 13:37:00 +0800"
+    },
+    {
+      "title": "端启未来 万物新生｜｜江原科技携新品亮相2026全球人工智能终端展",
+      "url": "https://www.leiphone.com/category/chips/XFKljHkhQqUvbD9s.html",
+      "snippet": "5月14日—16日，2026全球人工智能终端展暨第七届深圳国际人工智能展在深圳福田会展中心隆重举办，展会以“端启未来 万物新生”为主题，汇聚AI全产业链企业，围绕AI终端迭代、边缘智算、信创融合、行业落地等前沿方向，共探产业新机遇。<img src=\"https://static.leiphone.com/uploads/new/ima",
+      "keyword": "雷锋网",
+      "region": "China",
+      "published": "Tue, 19 May 2026 10:44:00 +0800"
+    },
+    {
+      "title": "自动跟价再打八折引商家不满，京东采销怒斥：可去竞对平台寻找机会；Meta 计划全球裁员约7800人，AI转型引员工抗议；马斯克告OpenAI败诉",
+      "url": "https://www.leiphone.com/category/zaobao/8xg9IGXft71EuqZA.html",
+      "snippet": "要闻提示</str",
+      "keyword": "雷锋网",
+      "region": "China",
+      "published": "Tue, 19 May 2026 08:27:00 +0800"
+    },
+    {
+      "title": "20万级满配运动SUV昊铂S600开启预售，权益价18.89万起",
+      "url": "https://www.leiphone.com/category/industrynews/yne3Fm0PxYViXV0g.html",
+      "snippet": "5月17日，广汽昊铂新豪华智慧运动SUV昊铂S600预售发布会正式举行，新车推出纯电660Max、纯电660Max+、增程230Max、增程215四驱Ultra+四款配置版本，官方预售价为20.99-2<",
+      "keyword": "雷锋网",
+      "region": "China",
+      "published": "Mon, 18 May 2026 23:02:00 +0800"
+    },
+    {
+      "title": "消息称台积电推进 310×310 毫米面板级封装，CoPoS 最早 2028 年量产",
+      "url": "https://www.ithome.com/0/952/579.htm",
+      "snippet": "IT之家 5 月 20 日消息，集邦咨询昨日（5 月 19 日）发布博文，基于德国设备商 SCHMID 透露信息，台积电正推进面板级封装，重点规格为 310×310 毫米，并在同尺寸上评估玻璃材料整合。<img class=\"no-alt-img\" src=\"https://img.ith",
+      "keyword": "IT之家",
+      "region": "China",
+      "published": "Wed, 20 May 2026 01:11:44 GMT"
+    },
+    {
+      "title": "谷歌 DeepMind CEO 哈萨比斯痛批“AI 裁员论”：别有用心，取代开发者是重大错误",
+      "url": "https://www.ithome.com/0/952/577.htm",
+      "snippet": "北京时间 5 月 20 日，据《连线》杂志报道，谷歌旗下 AI 公司 DeepMind CEO 戴米斯 · 哈萨比斯 (Demis Hassabis) 表示，企业应利用 AI 带来的生产力提升去做更多事情，而不是裁员。<img alt=\"哈萨比斯\" src=\"https:",
+      "keyword": "IT之家",
+      "region": "China",
+      "published": "Wed, 20 May 2026 01:10:19 GMT"
+    },
+    {
+      "title": "微软 Win11 预览版 26300.8493 优化搜索结果，排序优先显示本地文件和应用",
+      "url": "https://www.ithome.com/0/952/574.htm",
+      "snippet": "IT之家 5 月 20 日消息，科技媒体 Windows Latest 今天（5 月 20 日）发布博文，报道称在 Experimental 频道 Windows 11 Build 26300.8493 预览版中，微软调整搜索排序逻辑，会优先显示本地文件和应用。IT之家曾于 5 月 16 日报道，微软在 Windows 11 预览版中，宣布改进",
+      "keyword": "IT之家",
+      "region": "China",
+      "published": "Wed, 20 May 2026 00:57:29 GMT"
+    },
+    {
+      "title": "华为与云南联通推出 2000Mbps 宽带套餐，同步上线 Wi-Fi 7 FTTR 组网方案",
+      "url": "https://www.ithome.com/0/952/573.htm",
+      "snippet": "IT之家 5 月 20 日消息，据华为官方公告，中国联通云南公司于 5 月 14 日在昆明正式发布 2000M 超高速宽带套餐，并联合华为推出搭载 Wi-Fi 7 的 FTTR 全光组网方案及 AI 智慧盒，标志着云南家庭宽带服务正式迈入“超千兆”时代。<img class=\"no-alt-img\" src=\"https:",
+      "keyword": "IT之家",
+      "region": "China",
+      "published": "Wed, 20 May 2026 00:51:54 GMT"
+    },
+    {
+      "title": "英特尔数据中心 AI 推理 GPU \"Crescent Island\" PCB 曝光",
+      "url": "https://www.ithome.com/0/952/571.htm",
+      "snippet": "IT之家 5 月 20 日消息，爆料人 @结城安穗-YuuKi_AnS 北京时间今日凌晨释出了英特尔数据中心 GPU 新品 \"Crescent Island\" 的 PCB 图片，让我们对这块 AI 推理工作负载优化产品有了更多的了解。<img class=\"no-alt-img\" src=\"https://img.itho",
+      "keyword": "IT之家",
+      "region": "China",
+      "published": "Wed, 20 May 2026 00:48:09 GMT"
+    },
+    {
+      "title": "华为 AI 眼镜 钛丝半框光学镜 方形款今日预售，2499 元",
+      "url": "https://www.ithome.com/0/952/567.htm",
+      "snippet": "IT之家 5 月 20 日消息，华为官方今日宣布，华为 AI 眼镜 钛丝半框光学镜 方形款将于 5 月 20 日 10:08 开启预售，售价 2499 元。<span class=\"card m",
+      "keyword": "IT之家",
+      "region": "China",
+      "published": "Wed, 20 May 2026 00:44:30 GMT"
+    },
+    {
+      "title": "芯片下沉，AI硬件全面开花",
+      "url": "https://www.tmtpost.com/7993789.html",
+      "snippet": "算力向下，AI硬件向上。",
+      "keyword": "钛媒体",
+      "region": "China",
+      "published": "Wed, 20 May 2026 08:28:06 +0800"
+    },
+    {
+      "title": "Edge AI Daily 早报（5月20日）",
+      "url": "https://www.tmtpost.com/7994207.html",
+      "snippet": "谷歌在2026年I/O大会发布Gemini 3.5 Flash与Omni多模态模型，月活突破9亿，搜索业务迎25年最大改版转向AI智能体范式。Anthropic吸纳OpenAI联合创始人Karpathy，与OpenAI合计占据AI市场89%营收，监管机构因Mythos模型风险暂停银行安全检查。xAI开放Grok接入OpenClaw推动开源生态，五角大楼11亿美元部署AI无人机集群，AMD上海开发者",
+      "keyword": "钛媒体",
+      "region": "China",
+      "published": "Wed, 20 May 2026 08:22:21 +0800"
+    },
+    {
+      "title": "【钛晨报】事关小微企业金融服务工作，国家金融监督管理总局最新部署；DeepSeek:特殊字符引发模型幻觉，不涉及安全问题或隐私泄露；长江存储发布首次公开发行股票并上市辅导备案报告",
+      "url": "https://www.tmtpost.com/7994015.html",
+      "snippet": "美团：董事会定于6月1日举行会议并公布2026年第一季度的未经审核财务业绩；月之暗面Kimi融资获国资加持，国智投等多家基金入场；多款贵州茅台酒将上架i茅台；周大生回应去年关店五百多家；AI芯片初创公司Tenstorrent传出被收购意向，估值或超50亿美元；Meta内部文件曝5月20日重组细节：拟裁员10%，全面转向AI架构；黑石与谷歌成立合资企业，投资50亿美元打造TPU算力平台；谷歌Deep",
+      "keyword": "钛媒体",
+      "region": "China",
+      "published": "Wed, 20 May 2026 07:20:00 +0800"
+    },
+    {
+      "title": "一季度AI广告收入暴涨170%，B站：模型没有，广告管够",
+      "url": "https://www.tmtpost.com/7994018.html",
+      "snippet": "B站至今没有拿得出手的AI模型和应用，但它硬生生地把自己解构成了“AI淘金热的卖水人”。",
+      "keyword": "钛媒体",
+      "region": "China",
+      "published": "Tue, 19 May 2026 22:09:55 +0800"
+    }
+  ]
+}

@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Allergy News Daily - 2026-05-22</title>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, 'SF Pro Text', 'Segoe UI', sans-serif;
+      background: #F0F2F5;
+      color: #333;
+      line-height: 1.5;
+    }
+
+    .header {
+      background: #1976D2;
+      color: #fff;
+      padding: 24px 32px;
+      position: sticky;
+      top: 0;
+      z-index: 100;
+    }
+
+    .header h1 {
+      font-size: 24px;
+      font-weight: 600;
+      margin-bottom: 4px;
+    }
+
+    .header .subtitle {
+      font-size: 14px;
+      opacity: 0.9;
+    }
+
+    .container {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 24px;
+    }
+
+    .stats-bar {
+      display: flex;
+      gap: 16px;
+      margin-bottom: 24px;
+      flex-wrap: wrap;
+    }
+
+    .stat-card {
+      background: #fff;
+      border-radius: 12px;
+      padding: 16px 24px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+      min-width: 120px;
+    }
+
+    .stat-card .label {
+      font-size: 12px;
+      color: #666;
+      margin-bottom: 4px;
+    }
+
+    .stat-card .value {
+      font-size: 28px;
+      font-weight: 700;
+      color: #1976D2;
+    }
+
+    .stat-card.allergy .value { color: #FF5722; }
+
+    .filters {
+      background: #fff;
+      border-radius: 12px;
+      padding: 16px 24px;
+      margin-bottom: 24px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+    }
+
+    .filter-group {
+      margin-bottom: 12px;
+    }
+
+    .filter-group:last-child { margin-bottom: 0; }
+
+    .filter-label {
+      font-size: 12px;
+      color: #666;
+      margin-bottom: 8px;
+      font-weight: 500;
+    }
+
+    .filter-pills {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+    }
+
+    .pill {
+      padding: 6px 14px;
+      border-radius: 20px;
+      font-size: 13px;
+      border: 1px solid #D2D2D7;
+      background: #fff;
+      color: #333;
+      cursor: pointer;
+      transition: all 0.15s;
+    }
+
+    .pill:hover { border-color: #1976D2; color: #1976D2; }
+
+    .pill.active {
+      background: #1976D2;
+      border-color: #1976D2;
+      color: #fff;
+    }
+
+    .search-box {
+      width: 100%;
+      padding: 12px 16px;
+      border: 1px solid #D2D2D7;
+      border-radius: 10px;
+      font-size: 14px;
+      outline: none;
+      transition: border-color 0.2s, box-shadow 0.2s;
+    }
+
+    .search-box:focus {
+      border-color: #1976D2;
+      box-shadow: 0 0 0 3px rgba(25, 118, 210, 0.2);
+    }
+
+    .news-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(340px, 1fr));
+      gap: 16px;
+    }
+
+    .news-card {
+      background: #fff;
+      border-radius: 12px;
+      padding: 20px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+      border-left: 4px solid #1976D2;
+      transition: transform 0.2s, box-shadow 0.2s;
+      cursor: pointer;
+      text-decoration: none;
+      color: inherit;
+      display: block;
+    }
+
+    .news-card:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 8px 24px rgba(0,0,0,0.12);
+    }
+
+    .news-card.allergy {
+      border-left-color: #FF5722;
+    }
+
+    .news-card .source-tag {
+      display: inline-block;
+      font-size: 11px;
+      font-weight: 600;
+      padding: 3px 8px;
+      border-radius: 4px;
+      background: #E3F2FD;
+      color: #1976D2;
+      margin-bottom: 10px;
+    }
+
+    .news-card.allergy .source-tag {
+      background: #FBE9E7;
+      color: #FF5722;
+    }
+
+    .news-card .region-tag {
+      font-size: 11px;
+      color: #86868B;
+      margin-left: 8px;
+    }
+
+    .news-card h3 {
+      font-size: 15px;
+      font-weight: 500;
+      line-height: 1.4;
+      margin-bottom: 10px;
+      color: #1D1D1F;
+    }
+
+    .news-card .snippet {
+      font-size: 13px;
+      color: #666;
+      line-height: 1.5;
+    }
+
+    .news-card .date {
+      font-size: 12px;
+      color: #86868B;
+      margin-top: 12px;
+    }
+
+    .empty-state {
+      text-align: center;
+      padding: 60px 20px;
+      color: #86868B;
+    }
+
+    .empty-state .icon {
+      font-size: 48px;
+      margin-bottom: 16px;
+    }
+
+    @media (max-width: 768px) {
+      .header { padding: 16px 20px; }
+      .container { padding: 16px; }
+      .news-grid { grid-template-columns: 1fr; }
+      .stats-bar { gap: 12px; }
+      .stat-card { min-width: 100px; padding: 12px 16px; }
+      .stat-card .value { font-size: 22px; }
+    }
+  </style>
+</head>
+<body>
+  <header class="header">
+    <h1>Allergy News Daily</h1>
+    <div class="subtitle">过敏专科行业资讯日报 · 2026-05-22</div>
+  </header>
+
+  <main class="container">
+    <div class="stats-bar">
+      <div class="stat-card">
+        <div class="label">总新闻数</div>
+        <div class="value" id="totalCount">130</div>
+      </div>
+      <div class="stat-card allergy">
+        <div class="label">过敏相关内容</div>
+        <div class="value" id="allergyCount">0</div>
+      </div>
+      <div class="stat-card">
+        <div class="label">信息来源</div>
+        <div class="value" id="sourceCount">17</div>
+      </div>
+    </div>
+
+    <div class="filters">
+      <div class="filter-group">
+        <div class="filter-label">地区筛选</div>
+        <div class="filter-pills" id="regionFilters">
+          <span class="pill active" data-region="all">全部</span>
+          <span class="pill" data-region="Europe">欧洲</span>
+          <span class="pill" data-region="USA">美国</span>
+          <span class="pill" data-region="Australia">澳大利亚</span>
+          <span class="pill" data-region="China">中国</span>
+          <span class="pill" data-region="International">国际</span>
+        </div>
+      </div>
+      <div class="filter-group">
+        <div class="filter-label">来源筛选</div>
+        <div class="filter-pills" id="sourceFilters"></div>
+      </div>
+      <div class="filter-group">
+        <input type="text" class="search-box" id="searchBox" placeholder="搜索新闻标题或内容...">
+      </div>
+    </div>
+
+    <div class="news-grid" id="newsGrid"></div>
+  </main>
+
+  <script src="news_data.js"></script>
+  <script>
+    const ALLERGY_KEYWORDS = ['allergy', 'allergen', 'allergic', 'anaphylaxis', 'asthma', 'eczema', 'immunotherapy', 'urticaria', 'hay fever', 'rhinitis', 'dermatitis', 'wheeze', 'latex', 'peanut', 'food allergy'];
+
+    let allNews = DATA.news;
+    let currentRegion = 'all';
+    let currentSource = 'all';
+    let searchTerm = '';
+
+    function isAllergyRelated(item) {
+      const text = (item.title + ' ' + item.snippet).toLowerCase();
+      return ALLERGY_KEYWORDS.some(kw => text.includes(kw));
+    }
+
+    function getRegionDisplay(region) {
+      const map = { Europe: '欧洲', USA: '美国', Australia: '澳大利亚', China: '中国', International: '国际' };
+      return map[region] || region;
+    }
+
+    function renderNews() {
+      const grid = document.getElementById('newsGrid');
+      const filtered = allNews.filter(item => {
+        if (currentRegion !== 'all' && item.region !== currentRegion) return false;
+        if (currentSource !== 'all' && item.keyword !== currentSource) return false;
+        if (searchTerm) {
+          const text = (item.title + ' ' + item.snippet).toLowerCase();
+          if (!text.includes(searchTerm.toLowerCase())) return false;
+        }
+        return true;
+      });
+
+      document.getElementById('totalCount').textContent = allNews.length;
+      document.getElementById('allergyCount').textContent = allNews.filter(isAllergyRelated).length;
+
+      if (filtered.length === 0) {
+        grid.innerHTML = '<div class="empty-state"><div class="icon">📭</div><p>没有找到匹配的新闻</p></div>';
+        return;
+      }
+
+      grid.innerHTML = filtered.map(item => {
+        const allergy = isAllergyRelated(item);
+        return `
+          <a class="news-card ${allergy ? 'allergy' : ''}" href="${item.url}" target="_blank" rel="noopener">
+            <div>
+              <span class="source-tag">${item.keyword}</span>
+              <span class="region-tag">${getRegionDisplay(item.region)}</span>
+            </div>
+            <h3>${item.title}</h3>
+            <p class="snippet">${item.snippet}</p>
+          </a>
+        `;
+      }).join('');
+    }
+
+    function init() {
+      const sources = [...new Set(allNews.map(n => n.keyword))];
+      document.getElementById('sourceCount').textContent = sources.length;
+      document.getElementById('sourceFilters').innerHTML =
+        '<span class="pill active" data-source="all">全部</span>' +
+        sources.map(s => `<span class="pill" data-source="${s}">${s}</span>`).join('');
+
+      renderNews();
+
+      document.querySelectorAll('#regionFilters .pill').forEach(pill => {
+        pill.onclick = () => {
+          document.querySelectorAll('#regionFilters .pill').forEach(p => p.classList.remove('active'));
+          pill.classList.add('active');
+          currentRegion = pill.dataset.region;
+          renderNews();
+        };
+      });
+
+      document.querySelectorAll('#sourceFilters .pill').forEach(pill => {
+        pill.onclick = () => {
+          document.querySelectorAll('#sourceFilters .pill').forEach(p => p.classList.remove('active'));
+          pill.classList.add('active');
+          currentSource = pill.dataset.source;
+          renderNews();
+        };
+      });
+
+      document.getElementById('searchBox').oninput = (e) => {
+        searchTerm = e.target.value;
+        renderNews();
+      };
+    }
+
+    init();
+  </script>
+</body>
+</html>

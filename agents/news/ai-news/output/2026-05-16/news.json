@@ -1,0 +1,438 @@
+{
+  "date": "2026-05-16",
+  "count": 54,
+  "news": [
+    {
+      "title": "OpenAI Trial Heads to Jury After Closing Arguments in Musk vs. Altman Case",
+      "url": "https://www.nytimes.com/2026/05/14/technology/openai-trial-elon-musk-sam-altman.html",
+      "snippet": "Lawyers for Elon Musk and OpenAI made their closing arguments in the blockbuster federal trial on Thursday. Nine jurors are set to begin deliberations next week.",
+      "keyword": "NYTimes",
+      "region": "Foreign",
+      "published": "Fri, 15 May 2026 01:47:03 +0000"
+    },
+    {
+      "title": "Ishmael Reed Is Writing a Play About Elon Musk",
+      "url": "https://www.nytimes.com/2026/05/14/technology/ishmael-reed-elon-musk-play.html",
+      "snippet": "Ishmael Reed, provocateur and playwright, has a few words for the billionaires of Silicon Valley.",
+      "keyword": "NYTimes",
+      "region": "Foreign",
+      "published": "Thu, 14 May 2026 09:02:52 +0000"
+    },
+    {
+      "title": "Cerebras, A.I. Chip Maker, Rises 89% in Market Debut as Tech IPOs Ramp Up",
+      "url": "https://www.nytimes.com/2026/05/14/technology/cerebras-ipo-ai.html",
+      "snippet": "Cerebras, a Silicon Valley maker of artificial intelligence chips, began trading on the stock market on Thursday, as SpaceX, OpenAI and Anthropic also take steps to go public.",
+      "keyword": "NYTimes",
+      "region": "Foreign",
+      "published": "Thu, 14 May 2026 20:23:32 +0000"
+    },
+    {
+      "title": "Why A.I. Safety Controls Are Not Very Effective",
+      "url": "https://www.nytimes.com/2026/05/14/technology/artificial-intelligence-safety-controls.html",
+      "snippet": "Three years after the debut of ChatGPT, fooling A.I. systems into bad behavior is almost trivial.",
+      "keyword": "NYTimes",
+      "region": "Foreign",
+      "published": "Thu, 14 May 2026 17:28:21 +0000"
+    },
+    {
+      "title": "OpenAI Bought Company That Offered A.I. Tools for Cloning Voices",
+      "url": "https://www.nytimes.com/2026/05/15/technology/openai-weightsgg-voice-cloning.html",
+      "snippet": "The acquisition, Weights.gg, was a sort of social network for creating and sharing artificial intelligence algorithms.",
+      "keyword": "NYTimes",
+      "region": "Foreign",
+      "published": "Sat, 16 May 2026 00:33:56 +0000"
+    },
+    {
+      "title": "Nvidia’s Future in China Remains Unclear After Trump-Xi Summit",
+      "url": "https://www.nytimes.com/2026/05/15/business/nvidia-china-chips.html",
+      "snippet": "The standoff comes as Chinese firms increasingly turn to domestic chipmakers like Huawei, in a drive to reduce China’s dependence on Western technologies.",
+      "keyword": "NYTimes",
+      "region": "Foreign",
+      "published": "Fri, 15 May 2026 12:12:03 +0000"
+    },
+    {
+      "title": "OpenAI Considers Legal Action Against Apple in Strained Relationship",
+      "url": "https://www.nytimes.com/2026/05/14/technology/openai-apple-legal-action.html",
+      "snippet": "The A.I. company, which is in the middle of a court fight with Elon Musk, has been unhappy with how Apple has integrated ChatGPT into its devices.",
+      "keyword": "NYTimes",
+      "region": "Foreign",
+      "published": "Fri, 15 May 2026 00:48:16 +0000"
+    },
+    {
+      "title": "Microsoft’s C.E.O. testified about the company’s OpenAI investments.",
+      "url": "https://www.nytimes.com/live/2026/05/14/technology/openai-trial-sam-altman-elon-musk/microsofts-ceo-testified-about-the-companys-openai-investments",
+      "snippet": "",
+      "keyword": "NYTimes",
+      "region": "Foreign",
+      "published": "Thu, 14 May 2026 19:42:03 +0000"
+    },
+    {
+      "title": "X pledges quicker action on hate and terror content in the UK",
+      "url": "https://www.bbc.com/news/articles/clyp9652v18o?at_medium=RSS&at_campaign=rss",
+      "snippet": "Ofcom said the commitments were of particular importance after recent crimes targeting Jewish communities in the UK.",
+      "keyword": "BBC",
+      "region": "Foreign",
+      "published": "Fri, 15 May 2026 12:57:30 GMT"
+    },
+    {
+      "title": "Claim, counter-claim and tech's seedy side exposed: Five things we learned in the Musk-Altman trial",
+      "url": "https://www.bbc.com/news/articles/cg7pj8p5mv4o?at_medium=RSS&at_campaign=rss",
+      "snippet": "As the jury deliberates, this is what we found out during the weeks-long trial with two tech titans at its heart.",
+      "keyword": "BBC",
+      "region": "Foreign",
+      "published": "Fri, 15 May 2026 05:03:31 GMT"
+    },
+    {
+      "title": "AI could put people off tech jobs and hurt the economy, warns Raspberry Pi boss",
+      "url": "https://www.bbc.com/news/articles/clypr8p2lewo?at_medium=RSS&at_campaign=rss",
+      "snippet": "Eben Upton warns against claims that Artificial Intelligence will destroy vast numbers of computing roles over the coming years.",
+      "keyword": "BBC",
+      "region": "Foreign",
+      "published": "Thu, 14 May 2026 23:01:20 GMT"
+    },
+    {
+      "title": "'Millions' of pounds saved by replacing Palantir tech in refugee system",
+      "url": "https://www.bbc.com/news/articles/c2l2j1lxdk5o?at_medium=RSS&at_campaign=rss",
+      "snippet": "The government said its in-house IT system was \"more flexible\" while meeting \"high standards\" of security.",
+      "keyword": "BBC",
+      "region": "Foreign",
+      "published": "Thu, 14 May 2026 21:09:02 GMT"
+    },
+    {
+      "title": "HMRC to use AI from British tech firm to spot fraud and tax return errors",
+      "url": "https://www.bbc.com/news/articles/c7v9ld262n4o?at_medium=RSS&at_campaign=rss",
+      "snippet": "Quantexa, a financial data platform, won the £175m contract to spot fraud and tax return errors.",
+      "keyword": "BBC",
+      "region": "Foreign",
+      "published": "Thu, 14 May 2026 05:10:45 GMT"
+    },
+    {
+      "title": "WhatsApp launches totally private 'incognito' conversations with its AI chatbot",
+      "url": "https://www.bbc.com/news/articles/c99lmyr1dnxo?at_medium=RSS&at_campaign=rss",
+      "snippet": "A cyber security expert says deleting chat history could lead to a lack of accountability if things go wrong.",
+      "keyword": "BBC",
+      "region": "Foreign",
+      "published": "Wed, 13 May 2026 14:00:58 GMT"
+    },
+    {
+      "title": "Suicide forum fined £950,000 for not blocking UK users",
+      "url": "https://www.bbc.com/news/articles/cdxpyvvdyn7o?at_medium=RSS&at_campaign=rss",
+      "snippet": "The regulator said the forum had not done enough to protect UK users - but critics accuse Ofcom of acting too slowly.",
+      "keyword": "BBC",
+      "region": "Foreign",
+      "published": "Wed, 13 May 2026 11:52:58 GMT"
+    },
+    {
+      "title": "Elon Musk said control of OpenAI should go to his children, Sam Altman tells jury",
+      "url": "https://www.bbc.com/news/articles/czj2k2exdzlo?at_medium=RSS&at_campaign=rss",
+      "snippet": "Sam Altman said Elon Musk tried many times for total control of OpenAI, which he's now suing.",
+      "keyword": "BBC",
+      "region": "Foreign",
+      "published": "Tue, 12 May 2026 18:51:56 GMT"
+    },
+    {
+      "title": "Tech Life",
+      "url": "https://www.bbc.co.uk/sounds/play/w3ct8jxv?at_medium=RSS&at_campaign=rss",
+      "snippet": "Crumbling roads and other hazards - can AI make our streets safer?",
+      "keyword": "BBC",
+      "region": "Foreign",
+      "published": "Tue, 12 May 2026 19:45:00 GMT"
+    },
+    {
+      "title": "Tesla Reveals New Details About Robotaxi Crashes—and the Humans Involved",
+      "url": "https://www.wired.com/story/tesla-reveals-new-details-about-robotaxi-crashes-and-the-humans-involved/",
+      "snippet": "Remote operators (slowly) drove the automaker’s autonomous vehicles into a metal fence and a construction barricade, Tesla says.",
+      "keyword": "Wired",
+      "region": "Foreign",
+      "published": "Fri, 15 May 2026 19:51:16 +0000"
+    },
+    {
+      "title": "Spencer Pratt Is Creating Panic Over ‘Super Meth.’ It’s Not Even Real",
+      "url": "https://www.wired.com/story/spencer-pratt-is-creating-panic-over-super-meth-the-drug-trope-that-wont-die/",
+      "snippet": "The LA mayoral candidate and former reality TV star is fueling his campaign with fears about an ultra-potent meth. Experts say it’s drug war propaganda.",
+      "keyword": "Wired",
+      "region": "Foreign",
+      "published": "Fri, 15 May 2026 17:31:26 +0000"
+    },
+    {
+      "title": "Greg Brockman Officially Takes Control of OpenAI’s Products in Latest Shake-Up",
+      "url": "https://www.wired.com/story/openai-reorg-greg-brockman-product/",
+      "snippet": "OpenAI is once again reorganizing its executive ranks as part of its effort to unify ChatGPT and Codex into one core product experience.",
+      "keyword": "Wired",
+      "region": "Foreign",
+      "published": "Fri, 15 May 2026 17:09:17 +0000"
+    },
+    {
+      "title": "Trump’s Federal Gas Tax Holiday Isn't Likely to Bring Down Prices",
+      "url": "https://www.wired.com/story/why-gas-tax-holiday-is-risky-idea/",
+      "snippet": "Reducing the fee will have only a marginal impact on prices while depriving the government of revenue to maintain roads.",
+      "keyword": "Wired",
+      "region": "Foreign",
+      "published": "Fri, 15 May 2026 10:30:00 +0000"
+    },
+    {
+      "title": "The US Is Using AI to Hunt Down Insider Trading on Polymarket",
+      "url": "https://www.wired.com/story/polymarket-insider-trading-cftc-michael-selig-interview/",
+      "snippet": "CFTC chairman Michael Selig sat down with WIRED to discuss how the agency scours Polymarket and other prediction markets for illegal activity.",
+      "keyword": "Wired",
+      "region": "Foreign",
+      "published": "Fri, 15 May 2026 09:30:00 +0000"
+    },
+    {
+      "title": "Mira Murati Wants Her AI to ‘Keep Humans in the Loop’",
+      "url": "https://www.wired.com/story/mira-murati-humans-in-the-loop-ai-models-thinking-machines/",
+      "snippet": "The Thinking Machines Lab founder and former CTO of OpenAI tells WIRED she isn’t interested in automating people out of jobs. Instead, she’s building AI that can collaborate.",
+      "keyword": "Wired",
+      "region": "Foreign",
+      "published": "Fri, 15 May 2026 09:00:00 +0000"
+    },
+    {
+      "title": "RJ Scaringe has raised more than $12B across three startups and investors still want more",
+      "url": "https://techcrunch.com/2026/05/15/rj-scaringe-has-raised-more-than-12-billion-across-three-startups-and-investors-still-want-more/",
+      "snippet": "Investors can't seem to get enough of RJ Scaringe or his ideas. Storytelling and communication are one of his superpowers, according to Jiten Behl, who joined Rivian when the company had just a handfu",
+      "keyword": "TechCrunch",
+      "region": "Foreign",
+      "published": "Fri, 15 May 2026 20:30:20 +0000"
+    },
+    {
+      "title": "General Catalyst posted VC rage bait and it worked, especially on a16z",
+      "url": "https://techcrunch.com/2026/05/15/general-catalyst-posted-vc-rage-bait-and-it-worked-especially-on-a16z/",
+      "snippet": "Compulsive X user Marc Andreessen himself couldn't resist responding, many, many times.",
+      "keyword": "TechCrunch",
+      "region": "Foreign",
+      "published": "Fri, 15 May 2026 20:25:35 +0000"
+    },
+    {
+      "title": "A hotel check-in system left a million passports and driver’s licenses open for anyone to see",
+      "url": "https://techcrunch.com/2026/05/15/a-hotel-check-in-system-left-a-million-passports-and-drivers-licenses-open-for-anyone-to-see/",
+      "snippet": "The tech company that maintains the hotel check-in system set its cloud storage to public, allowing anyone to access customers' data without a password.",
+      "keyword": "TechCrunch",
+      "region": "Foreign",
+      "published": "Fri, 15 May 2026 18:51:33 +0000"
+    },
+    {
+      "title": "Silicon Valley’s vacationland needs a new energy provider just as AI is driving prices up",
+      "url": "https://techcrunch.com/2026/05/15/silicon-valleys-vacationland-needs-a-new-energy-provider-just-as-ai-is-driving-prices-up/",
+      "snippet": "Lake Tahoe, Silicon Valley's favorite vacation spot, is about to get hit with higher energy prices as AI drives demand for electricity.",
+      "keyword": "TechCrunch",
+      "region": "Foreign",
+      "published": "Fri, 15 May 2026 18:14:44 +0000"
+    },
+    {
+      "title": "OpenAI launches ChatGPT for personal finance, will let you connect bank accounts",
+      "url": "https://techcrunch.com/2026/05/15/openai-launches-chatgpt-for-personal-finance-will-let-you-connect-bank-accounts/",
+      "snippet": "Once users connect their accounts, they will see a dashboard of their portfolio performance, spending, subscriptions, and upcoming payments.",
+      "keyword": "TechCrunch",
+      "region": "Foreign",
+      "published": "Fri, 15 May 2026 16:00:00 +0000"
+    },
+    {
+      "title": "Power prices are up 76% on America’s biggest grid, and a watchdog is pointing fingers",
+      "url": "https://techcrunch.com/2026/05/15/power-prices-are-up-76-on-americas-biggest-grid-and-a-watchdog-is-pointing-fingers/",
+      "snippet": "The price spike is a reminder of a deeper problem: The U.S. power grid was not designed for the electricity demands of an AI-driven economy, and the gap between what the grid can deliver and what the",
+      "keyword": "TechCrunch",
+      "region": "Foreign",
+      "published": "Fri, 15 May 2026 15:45:53 +0000"
+    },
+    {
+      "title": "US orders travelers on Air Force One to throw away gifts, pins, and burner phones after China trip",
+      "url": "https://techcrunch.com/2026/05/15/us-orders-travelers-on-air-force-one-to-throw-away-gifts-pins-and-burner-phones-after-china-trip/",
+      "snippet": "While the summit appeared cordial, China remains a key adversary of the United States, given its advanced intelligence and espionage capabilities.",
+      "keyword": "TechCrunch",
+      "region": "Foreign",
+      "published": "Fri, 15 May 2026 15:42:11 +0000"
+    },
+    {
+      "title": "Runway started by helping filmmakers — now it wants to beat Google at AI",
+      "url": "https://techcrunch.com/2026/05/15/runway-started-by-helping-filmmakers-now-it-wants-to-beat-google-at-ai/",
+      "snippet": "AI video-generation startup Runway is betting that video generation is the path to world models. And that being an AI outsider is an advantage, not a liability.",
+      "keyword": "TechCrunch",
+      "region": "Foreign",
+      "published": "Fri, 15 May 2026 14:00:00 +0000"
+    },
+    {
+      "title": "Meridian Ventures launched a $35M fund with a focus on MBA-deferred founders",
+      "url": "https://techcrunch.com/2026/05/15/meridian-ventures-launched-35m-fund-to-back-mba-deferred-founders/",
+      "snippet": "This new fund will back founders building enterprise technology in the United States. Meridian is agnostic, co-founder Devon Gethers said, noting that the firm has already invested in companies in fin",
+      "keyword": "TechCrunch",
+      "region": "Foreign",
+      "published": "Fri, 15 May 2026 13:00:00 +0000"
+    },
+    {
+      "title": "Osaurus brings both local and cloud AI models to your Mac",
+      "url": "https://techcrunch.com/2026/05/15/osaurus-brings-both-local-and-cloud-ai-models-to-your-mac/",
+      "snippet": "Osaurus￼ combines local and cloud AI models in a Mac app that keeps users’ memory, files, and tools on their own hardware.",
+      "keyword": "TechCrunch",
+      "region": "Foreign",
+      "published": "Fri, 15 May 2026 12:19:48 +0000"
+    },
+    {
+      "title": "Indian Uber rival Rapido raises $240M at $3B valuation",
+      "url": "https://techcrunch.com/2026/05/15/indian-uber-rival-rapido-raises-240m-at-3b-valuation/",
+      "snippet": "Rapido has driven its growth by enabling ride-hailing for lower-cost and more flexible modes of transport such as motorbikes and auto-rickshaws.",
+      "keyword": "TechCrunch",
+      "region": "Foreign",
+      "published": "Fri, 15 May 2026 11:24:12 +0000"
+    },
+    {
+      "title": "Elon Musk’s SpaceXAI has been bleeding staff since its merger",
+      "url": "https://techcrunch.com/2026/05/14/elon-musks-spacexai-has-been-bleeding-staff-since-its-merger/",
+      "snippet": "More than 50 employees have reportedly left Elon Musk’s newly merged SpaceXAI since February, raising questions about burnout, leadership changes, talent poaching, and whether liquidity events weakene",
+      "keyword": "TechCrunch",
+      "region": "Foreign",
+      "published": "Thu, 14 May 2026 21:30:44 +0000"
+    },
+    {
+      "title": "36氪首发｜前苹果工程师跨界骨传导耳机，独创技术路线，打破头部企业专利垄断",
+      "url": "https://36kr.com/p/3810520138243593?f=rss",
+      "snippet": "作者 | 张子怡\n  编辑 | 袁斯来\n  硬氪获悉，苏州索迩电子技术有限公司（骨传导运动耳机品牌Mojawa的母公司，以下简称“索迩电子”）于近日完成数千万元人民币的A+轮融资，本轮融资由正海资本领投。\n  据悉，本轮资金将主要用于拓展海外线下渠道，以及推进产品的AI智能化研发。\n  在音频产品",
+      "keyword": "36kr",
+      "region": "China",
+      "published": "2026-05-16 10:00:00  +0800"
+    },
+    {
+      "title": "9点1氪丨央视6000万美元获得世界杯版权；英伟达总市值超过德国GDP；iPhone 17 Pro系列全线下调1000元",
+      "url": "https://36kr.com/p/3811265856626440?f=rss",
+      "snippet": "今日热点导览\n  \n   OpenAI正考虑采取法律手段起诉苹果公司\n   三星电子开发下一代HBM封装技术，或用于智能手机等移动设备\n   海南：加快培育火箭链、卫星链、数据链，打造风电装备制造产业集群\n   世界银行首席经济学家英德米特・吉尔将于8月卸任退休\n   “海淘”智能穿戴设备或被",
+      "keyword": "36kr",
+      "region": "China",
+      "published": "2026-05-16 09:03:11  +0800"
+    },
+    {
+      "title": "理想出牌：全新L9上市，45.98万元起｜最前线",
+      "url": "https://36kr.com/p/3810562142445058?f=rss",
+      "snippet": "<img src=\"https://img.36krcdn.com/hsossms/20260515/v2_90d236a32d4a4f71bd00c6834b43d348@6310690_oswg1021806oswg2622oswg1206_img_png?x-oss-process=image/quality,q_90/format,jpg/",
+      "keyword": "36kr",
+      "region": "China",
+      "published": "2026-05-15 22:28:10  +0800"
+    },
+    {
+      "title": "2026 Shokz Day圆满收官：韶音以「随我动听」开启全场景声态新时代",
+      "url": "https://36kr.com/p/3810607581634056?f=rss",
+      "snippet": "2026年5月15日，全球开放式耳机领导品牌Shokz韶音在深圳湾文化广场举办2026「随我动听」Shokz Day。活动期间，韶音围绕OpenDots 2、OpenSwim Pro 2与OpenDots Air三款新品展开集中分享，系统阐释了「随我动听」的品牌主张。韶音全球品牌大使张婧仪登台分享，由韶音与国际设计大师Matteo Menotto合作的「缮己新声」艺术礼盒也在现场展出，带来一",
+      "keyword": "36kr",
+      "region": "China",
+      "published": "2026-05-15 21:50:58  +0800"
+    },
+    {
+      "title": "36氪联合PureblueAI清蓝发布「2026消费品牌AI推荐力名册」丨AI时代，品牌如何抢占「推荐力」新战场？",
+      "url": "https://36kr.com/p/3810308239465986?f=rss",
+      "snippet": "<",
+      "keyword": "36kr",
+      "region": "China",
+      "published": "2026-05-15 16:51:47  +0800"
+    },
+    {
+      "title": "长安计划入股千里科技，千里智驾与奥迪推进合作｜36氪独家",
+      "url": "https://36kr.com/p/3810091479293449?f=rss",
+      "snippet": "36氪从多位产业人士处了解到，千里科技正积极与长安、奥迪、奇瑞等车企，洽谈智能化合作。\n  其中，长安不仅有意向搭载千里科技辅助驾驶方案，还计划入股千里科技，双方原定于今年年初完成股权变更。但目前，据知情人士透露，该计划暂无实质性进展。\n  36氪了解到，北汽是千里科技眼下最具确定性的外部客户，双方计划于今年内成立合资公司。\n  千里科技与北汽计划合",
+      "keyword": "36kr",
+      "region": "China",
+      "published": "2026-05-15 14:49:06  +0800"
+    },
+    {
+      "title": "CVPR 2026 四篇论文透视：大厂如何靠「算法瘦身」对抗算力涨价？",
+      "url": "https://www.leiphone.com/category/ai/y7bk8TpnoiBUFqSP.html",
+      "snippet": "<img class=\"rich_pages wxw-img\" src=\"https://static.leiphone.com/uploads/new/images/20260515/6a06ea6c0931e.j",
+      "keyword": "雷锋网",
+      "region": "China",
+      "published": "Fri, 15 May 2026 17:43:00 +0800"
+    },
+    {
+      "title": "OpenClaw预示未来：智能体角色范式转变，AI需要具备执行能力",
+      "url": "https://www.leiphone.com/category/chips/KwA81QLVp7mR8lj7.html",
+      "snippet": "要点：• 随着 Claude Cowork、Hermes、Perplexity Computer",
+      "keyword": "雷锋网",
+      "region": "China",
+      "published": "Fri, 15 May 2026 14:57:00 +0800"
+    },
+    {
+      "title": "桌面CNC元年：资本疯抢「小拓竹」，五轴是风口还是伪命题？",
+      "url": "https://www.leiphone.com/category/weiwu/JNy9AY58YfCIS2L0.html",
+      "snippet": "<p style=\"text-align: center; margin-bott",
+      "keyword": "雷锋网",
+      "region": "China",
+      "published": "Fri, 15 May 2026 10:49:00 +0800"
+    },
+    {
+      "title": "首次披露！载合卡车完成10亿元级战略融资，开创车云一体AI重卡全新赛道",
+      "url": "https://www.leiphone.com/category/industrynews/VTZD7tfMJuwiBTXE.html",
+      "snippet": "近日，载合卡车宣布累计完成10亿元级融资。作为AI重卡赛道的新锐领军者，载合卡车汇集了<span styl",
+      "keyword": "雷锋网",
+      "region": "China",
+      "published": "Fri, 15 May 2026 10:11:00 +0800"
+    },
+    {
+      "title": "端侧智能体迈入拐点，联发科如何把AI平台做成可交付的能力？",
+      "url": "https://www.leiphone.com/category/chipdesign/RLUtPCdwqljctm6g.html",
+      "snippet": "过去一年，端侧AI的竞争逻辑已经发生变化。<span style=\"font-family: Arial; font-size: 16px",
+      "keyword": "雷锋网",
+      "region": "China",
+      "published": "Thu, 14 May 2026 18:41:00 +0800"
+    },
+    {
+      "title": "对话销售易总裁邓永富：借力腾讯，能否在SaaS大洗牌中「攒足」筹码？ | SaaS+Agent十人谈",
+      "url": "https://www.leiphone.com/category/CorporateServices/VtqqTCKnnWrini0F.html",
+      "snippet": "“在这场优胜劣汰的行业洗牌中，仅靠单打独斗已难以站稳",
+      "keyword": "雷锋网",
+      "region": "China",
+      "published": "Thu, 14 May 2026 15:28:00 +0800"
+    },
+    {
+      "title": "周下载超 69 万次：热门 npm 包 node-ipc 被投毒，可窃取密码等敏感信息",
+      "url": "https://www.ithome.com/0/951/180.htm",
+      "snippet": "IT之家 5 月 16 日消息，科技媒体 NeoWin 昨日（5 月 15 日）发布博文，报道称 npm 热门包 node-ipc 遭遇新的供应链攻击，多个新发布版本被植入信息窃取恶意代码。IT之家注：node-ipc 是一个 Node.js 模块，支",
+      "keyword": "IT之家",
+      "region": "China",
+      "published": "Sat, 16 May 2026 01:58:55 GMT"
+    },
+    {
+      "title": "Stellantis 将利用法国工厂为东风组装汽车，规避欧盟关税",
+      "url": "https://www.ithome.com/0/951/179.htm",
+      "snippet": "IT之家 5 月 16 日消息，Stellantis 昨日宣布与东风集团签署战略合作协议，通过在中国共同生产标致和 Jeep 品牌汽车，来进一步拓展两家公司长达 34 年的合作伙伴关系。据法国媒体 France Info 于 5 月 15 日援引知情人士消息报道，Stellantis 已同意在其位于法国雷恩市的工厂为东风汽车集团组装至少一款车型，从而助其规避欧盟关税。报道称，为",
+      "keyword": "IT之家",
+      "region": "China",
+      "published": "Sat, 16 May 2026 01:56:00 GMT"
+    },
+    {
+      "title": "Win11 再次失守，Pwn2Own Berlin 2026 第 2 天发放 38.5 万美元奖金",
+      "url": "https://www.ithome.com/0/951/178.htm",
+      "snippet": "IT之家 5 月 16 日消息，科技媒体 bleepingcomputer 昨日（5 月 15 日）发布博文，报道称在 Pwn2Own Berlin 2026 活动第 2 天，Windows 11 系统再次被攻破。在 2026 年柏林 Pwn2Own 开赛首日，来自全球各地的安全研究员挖掘报告 24 个零日漏洞，成功拿到 523000 美元（现汇率约合 355.7 万元人民币）",
+      "keyword": "IT之家",
+      "region": "China",
+      "published": "Sat, 16 May 2026 01:47:12 GMT"
+    },
+    {
+      "title": "涉摆拍“盲人在盲道行走被电动车撞”等，北京警方通报 3 起典型案例",
+      "url": "https://www.ithome.com/0/951/177.htm",
+      "snippet": "IT之家 5 月 16 日消息，据“首都网警”公众号今日更新，为净化网络环境、营造清朗网络空间，北京警方通报 3 起典型案例：案例一：刘某（男，26 岁）和江某某（女，24 岁）为吸粉引流、博取关注、牟取私利，在朝阳区某路旁虚假摆拍“盲人在盲道行走被电动自行车撞击并遭骑车人斥责”内容</st",
+      "keyword": "IT之家",
+      "region": "China",
+      "published": "Sat, 16 May 2026 01:39:27 GMT"
+    },
+    {
+      "title": "上市首日暴涨68%，全球最大AI芯片公司，冲上670亿美元",
+      "url": "https://www.tmtpost.com/7989946.html",
+      "snippet": "英伟达的挑战者上市了。",
+      "keyword": "钛媒体",
+      "region": "China",
+      "published": "Sat, 16 May 2026 10:21:00 +0800"
+    },
+    {
+      "title": "曾亲赴霍尔木兹调研的Citrini判断：碳化硅是AI最大暗线",
+      "url": "https://www.tmtpost.com/7989918.html",
+      "snippet": "从电源到先进封装，一个千亿级市场正在重构。",
+      "keyword": "钛媒体",
+      "region": "China",
+      "published": "Sat, 16 May 2026 09:56:55 +0800"
+    },
+    {
+      "title": "百度大模型自救：这次还能逆风翻盘吗？",
+      "url": "https://www.tmtpost.com/7990101.html",
+      "snippet": "百度曾是中国AI大模型的先行者，却因根深蒂固的“流量变现”思维痛失好局。新成立的大模型委员会是一次组织自救，但真正的难题是：这一次，它能忍住不收割吗？",
+      "keyword": "钛媒体",
+      "region": "China",
+      "published": "Sat, 16 May 2026 09:39:58 +0800"
+    }
+  ]
+}

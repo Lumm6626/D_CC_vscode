@@ -1,0 +1,938 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI News - 2026-04-27</title>
+    <style>
+        body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; max-width: 800px; margin: 0 auto; padding: 20px; background: #f5f5f5; }
+        .header { background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); color: white; padding: 30px; border-radius: 10px; margin-bottom: 20px; }
+        .header h1 { margin: 0; font-size: 28px; }
+        .header p { margin: 10px 0 0 0; opacity: 0.9; }
+        .top10-section { background: white; padding: 25px; margin-bottom: 25px; border-radius: 12px; box-shadow: 0 2px 8px rgba(0,0,0,0.1); }
+        .top10-section h2 { margin: 0 0 15px 0; color: #1a1a1a; font-size: 20px; padding-bottom: 10px; border-bottom: 2px solid #ff6b6b; }
+        .top10-china { border-left: 4px solid #ff6b6b; }
+        .top10-china h2 { border-bottom-color: #ff6b6b; }
+        .top10-china .top10-item { background: #fff5f5; border-left-color: #ff6b6b; }
+        .top10-china .top10-num { background: #ff6b6b; }
+        .top10-global { border-left: 4px solid #1976d2; }
+        .top10-global h2 { border-bottom-color: #1976d2; }
+        .top10-global .top10-item { background: #f0f7ff; border-left-color: #1976d2; }
+        .top10-global .top10-num { background: #1976d2; }
+        .top10-list { display: flex; flex-direction: column; gap: 10px; }
+        .top10-item { display: flex; gap: 12px; padding: 12px; border-radius: 8px; }
+        .top10-num { color: white; width: 24px; height: 24px; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 12px; font-weight: bold; flex-shrink: 0; }
+        .top10-content { flex: 1; }
+        .top10-title { font-size: 14px; font-weight: 600; color: #333; line-height: 1.4; }
+        .top10-title a { color: #333; text-decoration: none; }
+        .top10-title a:hover { color: #667eea; }
+        .top10-desc { font-size: 13px; color: #666; line-height: 1.4; margin-top: 4px; }
+        .summary-section { background: white; padding: 25px; margin-bottom: 25px; border-radius: 12px; box-shadow: 0 2px 8px rgba(0,0,0,0.1); }
+        .summary-section h2 { margin: 0 0 20px 0; color: #1a1a1a; font-size: 20px; padding-bottom: 15px; border-bottom: 2px solid #667eea; }
+        .category-tags { display: flex; flex-wrap: wrap; gap: 10px; margin-bottom: 20px; }
+        .cat-tag { background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); color: white; padding: 8px 16px; border-radius: 20px; font-size: 14px; }
+        .highlight-list { display: flex; flex-direction: column; gap: 12px; }
+        .highlight-item { display: flex; align-items: flex-start; gap: 12px; padding: 15px; background: #f8f9fa; border-radius: 10px; border-left: 4px solid #667eea; }
+        .highlight-num { background: #667eea; color: white; width: 28px; height: 28px; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 14px; font-weight: bold; flex-shrink: 0; }
+        .highlight-content { flex: 1; }
+        .highlight-title { font-size: 16px; font-weight: 600; color: #333; line-height: 1.5; margin-bottom: 5px; }
+        .highlight-title a { color: #333; text-decoration: none; }
+        .highlight-title a:hover { color: #667eea; }
+        .highlight-snippet { font-size: 13px; color: #666; line-height: 1.5; margin: 5px 0; }
+        .highlight-meta { font-size: 13px; color: #888; }
+        .chinese-summary { margin-top: 20px; }
+        .chinese-summary h3 { color: #333; font-size: 18px; margin-bottom: 15px; }
+        .news-item { background: white; padding: 20px; margin-bottom: 15px; border-radius: 8px; box-shadow: 0 2px 4px rgba(0,0,0,0.1); }
+        .news-date { color: #999; font-size: 12px; margin-bottom: 5px; }
+        .news-item h3 { margin: 0 0 10px 0; color: #333; }
+        .news-item a { color: #667eea; text-decoration: none; }
+        .snippet { color: #666; font-size: 14px; line-height: 1.6; }
+        .tag { display: inline-block; background: #e8f4f8; color: #2a7bb0; padding: 2px 8px; border-radius: 4px; font-size: 12px; margin-right: 8px; }
+        .tag-china { background: #ffeaea; color: #d32f2f; }
+        .tag-foreign { background: #e3f2fd; color: #1976d2; }
+        .news-meta { margin-top: 10px; display: flex; align-items: center; flex-wrap: wrap; gap: 5px; }
+        .section-title { font-size: 16px; font-weight: bold; color: #333; margin: 20px 0 15px 0; padding-bottom: 10px; border-bottom: 2px solid #667eea; }
+        .footer { text-align: center; color: #999; margin-top: 30px; font-size: 12px; }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h1>AI News Daily</h1>
+        <p>2026-04-27 | 52 articles</p>
+    </div>
+
+    
+    <div class="top10-section top10-china">
+        <h2>🇨🇳 中国科技新闻 Top 10</h2>
+        <div class="top10-list">
+            <div class="top10-item">
+                <span class="top10-num">1</span>
+                <div class="top10-content">
+                    <div class="top10-title"><a href="https://36kr.com/p/3783828639571203?f=rss" target="_blank">前苹果工程师做了款体感游戏机，销量拳打 Xbox ，营收数亿美元</a></div>
+                    <div class="top10-desc">作者丨欧雪 
+  编辑丨袁斯来
+  2025年年黑五，美国游戏主机市场有些不同寻常。
+  根据追踪美国游戏主机与软件销售的Circana统计数据 ，在黑色星期五当周 ， PS5以 47%的市场份额领跑 ，任天堂 S</div>
+                </div>
+            </div>
+            <div class="top10-item">
+                <span class="top10-num">2</span>
+                <div class="top10-content">
+                    <div class="top10-title"><a href="https://36kr.com/p/3783824870317312?f=rss" target="_blank">早期项目 | 前地平线产品负责人死磕“拿放”动作 ，轮式机器人今年锁定百台出货</a></div>
+                    <div class="top10-desc">作者丨欧雪
+  编辑丨袁斯来
+  有一家公司选择了一条不太一样的路径：在具身智能行业普遍沉迷双足人形和仿真训练的当下聚焦仓储物流场景 ，用 “轮式底盘+双臂”死磕占人力成本 60%的 “拿放”动作。这是一家</div>
+                </div>
+            </div>
+            <div class="top10-item">
+                <span class="top10-num">3</span>
+                <div class="top10-content">
+                    <div class="top10-title"><a href="https://36kr.com/p/3784365164322055?f=rss" target="_blank">「破壳机器人」许华哲：两年内 ，中国将出现可用的家庭机器人</a></div>
+                    <div class="top10-desc">文｜邱晓芬
+  编辑｜苏建勋
+  2026年年，全球的具身智能机器人创业者不约而同将目光方向调转向深水区 ：家庭。
+  点燃这份热情的，是近期行业里闪烁着的一丝丝缩放定律苗头——
+  先是硅</div>
+                </div>
+            </div>
+            <div class="top10-item">
+                <span class="top10-num">4</span>
+                <div class="top10-content">
+                    <div class="top10-title"><a href="https://36kr.com/p/3784311487945735?f=rss" target="_blank">8 点1氪丨豆包提前查到 2026山东事业编成绩 ？最新回应 ；东方甄选主播集体离职 ，俞敏洪回应 ；花呗白条月付等面临重大调整</a></div>
+                    <div class="top10-desc">今日热点导览
+  美国白宫记者晚宴大厅发生枪击事件
+  王传福夫妇坐地铁参加北京车展被偶遇
+  DeepSeekV4 成OpenClaw默认模型
+  2025 年全国大型演唱会票房295.58亿
+  Op</div>
+                </div>
+            </div>
+            <div class="top10-item">
+                <span class="top10-num">5</span>
+                <div class="top10-content">
+                    <div class="top10-title"><a href="https://36kr.com/p/3783249100397570?f=rss" target="_blank">欧莱雅BRANDSTORM 2026中国总决赛落幕 ， AI成美妆创新核心议题 ｜最前线</a></div>
+                    <div class="top10-desc">欧莱雅全球青年创新策划大赛BRANDSTORM 2026中国总决赛于 4月 24日在上海收官。本届赛事聚焦奢华香氛领域 ，中国赛区吸引超 72000人报名经多轮选拔后六支队伍进入总决赛。最终 ， UNIBLOC</div>
+                </div>
+            </div>
+            <div class="top10-item">
+                <span class="top10-num">6</span>
+                <div class="top10-content">
+                    <div class="top10-title"><a href="https://36kr.com/p/3782960065108996?f=rss" target="_blank">36 氪首发 | 全球唯二、中国唯一造出微米级磁悬浮魔毯，已大规模量产</a></div>
+                    <div class="top10-desc">作者丨欧雪
+  编辑丨袁斯来
+  在传统工厂里，流水线像是被固定在铁轨上的火车 ——高效但僵硬。这种“效率与柔性不可兼得”的痛点 ，正被一家中国公司用 “磁悬浮”技术破解。
+  佛山市增广智能科技有限公司（</div>
+                </div>
+            </div>
+            <div class="top10-item">
+                <span class="top10-num">7</span>
+                <div class="top10-content">
+                    <div class="top10-title"><a href="https://36kr.com/p/3782901034785801?f=rss" target="_blank">润芯微“国产软硬一体AI智能基座”发布 ，破解行业稀缺难题带动多端智能变革</a></div>
+                    <div class="top10-desc">4 月25日 ，以 “芯视野·新格局”为主题的润芯微战略与产品发布会在北京车展期间举行。作为行业稀缺的 “芯片+操作系统 + AI”全栈解决方案提供商 ，润芯微首次完整展示已打造的可应用于多端场景的 “国产软硬一体A</div>
+                </div>
+            </div>
+            <div class="top10-item">
+                <span class="top10-num">8</span>
+                <div class="top10-content">
+                    <div class="top10-title"><a href="https://36kr.com/p/3782137908403457?f=rss" target="_blank">最前线｜ 2025年全年营收超 64亿 ，海康机器人表示将继续推进 AI融合与具身智能布局</a></div>
+                    <div class="top10-desc">作者 | 乔钰杰
+  编辑 | 袁斯来
+  当前，制造业正站在从 “自动化”向 “智能化”跨越的关键节点。
+  2026年是海康机器人成立十周年。作为工业智能化领域的创新者与实践者，海康机器人近年持续推进</div>
+                </div>
+            </div>
+            <div class="top10-item">
+                <span class="top10-num">9</span>
+                <div class="top10-content">
+                    <div class="top10-title"><a href="https://www.leiphone.com/category/industrynews/c8rGA0s3Z9EolPet.html" target="_blank">别克×火山引擎 ：至境 E7行业首发搭载豆包大模型最新版</a></div>
+                    <div class="top10-desc">人车交互不再是你问我答的“客服”当豆包大模型进入汽车座舱 ， “” ，而是能像人一样思考、交流、成长的 “数字家人”。 </p</div>
+                </div>
+            </div>
+            <div class="top10-item">
+                <span class="top10-num">10</span>
+                <div class="top10-content">
+                    <div class="top10-title"><a href="https://www.leiphone.com/category/chips/bwKuuKUGYn8a3IbY.html" target="_blank">推理卡毛利率下滑超7% ，天数智芯「降价换量」的买卖值不值 ？</a></div>
+                    <div class="top10-desc">2 个多月前在港股上市的天数智芯，近期发布了 2025年财报。公布当天 ，股价下跌了 10个点。在此之前 ，天数股价已从 342港元的高位大幅回调。财报显示 ，天数全年营收 10.34亿元 ，同比增长 91.6%。一级市</div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="top10-section top10-global">
+        <h2>🌍 全球科技新闻 Top 10</h2>
+        <div class="top10-list">
+            <div class="top10-item">
+                <span class="top10-num">1</span>
+                <div class="top10-content">
+                    <div class="top10-title"><a href="https://www.nytimes.com/2026/04/24/technology/elon-musk-spacex-loans.html" target="_blank">埃隆·马斯克如何利用SpaceX让自己和他的企业受益</a></div>
+                    <div class="top10-desc">这家火箭制造商一直是马斯克先生有用的金融工具，为亿万富翁提供贷款</div>
+                </div>
+            </div>
+            <div class="top10-item">
+                <span class="top10-num">2</span>
+                <div class="top10-content">
+                    <div class="top10-title"><a href="https://www.nytimes.com/2026/04/24/technology/sam-altman-openai-money.html" target="_blank">Sam Altman的下一个高端法案：让OpenAI赚更多钱</a></div>
+                    <div class="top10-desc">Altman先生因OpenAI的方向而受到批评，他剔除了公司项目，并试图</div>
+                </div>
+            </div>
+            <div class="top10-item">
+                <span class="top10-num">3</span>
+                <div class="top10-content">
+                    <div class="top10-title"><a href="https://www.nytimes.com/2026/04/24/podcasts/hardfork-tim-cook-yang-ubi.html" target="_blank">蒂姆·库克的遗产+ U.B.I.的未来与Andrew Yang + HatGPT</a></div>
+                    <div class="top10-desc">自蒂姆·库克（ Tim Cook ）接任首席执行官以来，苹果的亮点、弱点以及变化</div>
+                </div>
+            </div>
+            <div class="top10-item">
+                <span class="top10-num">4</span>
+                <div class="top10-content">
+                    <div class="top10-title"><a href="https://www.nytimes.com/2026/04/24/business/cohere-aleph-alpha-ai-merger.html" target="_blank">来自加拿大和德国的人工智能初创公司合并，接管硅谷</a></div>
+                    <div class="top10-desc">Cohere正在收购Aleph Alpha ，这笔交易针对的是对美国</div>
+                </div>
+            </div>
+            <div class="top10-item">
+                <span class="top10-num">5</span>
+                <div class="top10-content">
+                    <div class="top10-title"><a href="https://www.nytimes.com/2026/04/23/technology/intel-ai-earnings.html" target="_blank">在A.I. Boom的帮助下，英特尔的收入飙升</a></div>
+                    <div class="top10-desc">这家芯片制造商报告称，最近一个季度增长了7% ，达到136亿美元，超过10亿美元</div>
+                </div>
+            </div>
+            <div class="top10-item">
+                <span class="top10-num">6</span>
+                <div class="top10-content">
+                    <div class="top10-title"><a href="https://www.nytimes.com/2026/04/23/technology/meta-layoffs.html" target="_blank">Meta将在AI推动下裁员10 ％的劳动力</a></div>
+                    <div class="top10-desc">裁员影响了大约8,000名员工， Meta还计划关闭6,000个空缺职位，因为</div>
+                </div>
+            </div>
+            <div class="top10-item">
+                <span class="top10-num">7</span>
+                <div class="top10-content">
+                    <div class="top10-title"><a href="https://www.nytimes.com/2026/04/23/technology/openai-new-model.html" target="_blank">OpenAI推出新的更强大的GPT-5.5型号</a></div>
+                    <div class="top10-desc">ChatGPT的制造商正在采取比其主要竞争对手Anthropic更开放的网络安全方法</div>
+                </div>
+            </div>
+            <div class="top10-item">
+                <span class="top10-num">8</span>
+                <div class="top10-content">
+                    <div class="top10-title"><a href="https://www.nytimes.com/2026/04/23/technology/elon-musk-sam-altman-openai-trial.html" target="_blank">埃隆·马斯克和萨姆·奥尔特曼的史诗般的战斗走向法庭</a></div>
+                    <div class="top10-desc">定于周一开始的陪审团审判可能会改变人工智能竞赛的进程，马斯克先生</div>
+                </div>
+            </div>
+            <div class="top10-item">
+                <span class="top10-num">9</span>
+                <div class="top10-content">
+                    <div class="top10-title"><a href="https://www.bbc.com/news/articles/cq6je7e80r7o?at_medium=RSS&at_campaign=rss" target="_blank">OpenAI老板“深感遗憾”没有告诉警方大规模枪击嫌疑人的账户</a></div>
+                    <div class="top10-desc">Sam Altman周四向加拿大Tumbler Ridge的人们写了一封简短的道歉信，</div>
+                </div>
+            </div>
+            <div class="top10-item">
+                <span class="top10-num">10</span>
+                <div class="top10-content">
+                    <div class="top10-title"><a href="https://www.bbc.com/news/articles/cq8wnzly5j5o?at_medium=RSS&at_campaign=rss" target="_blank">英国网络酋长说，是时候抛弃密码以获取密钥了--它们是什么？</a></div>
+                    <div class="top10-desc">长期以来，密码一直是我们在线保护帐户的默认方式，但NCSC表示，</div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    
+    <div class="summary-section">
+        <h2>AI Daily Highlights</h2>
+        <div class="category-tags"><span class="cat-tag">News Other (24)</span><span class="cat-tag">AI AI Product (23)</span><span class="cat-tag">LLM LLM/Model (4)</span><span class="cat-tag">Biz AI Industry (1)</span></div>
+
+        <div class="chinese-summary">
+            <h3>Top 10 AI News</h3>
+            
+            <div class="highlight-item">
+                <span class="highlight-num">1</span>
+                <div class="highlight-content">
+                    <div class="highlight-title">
+                        <a href="https://www.nytimes.com/2026/04/24/technology/elon-musk-spacex-loans.html" target="_blank" style="color: #333; text-decoration: none;">埃隆·马斯克如何利用SpaceX让自己和他的企业受益</a>
+                    </div>
+                    <p class="highlight-snippet" style="color: #555; font-size: 13px; margin: 5px 0; line-height: 1.4;">《纽约时报》的一项调查发现，这家火箭制造商一直是马斯克的一个有用的金融工具，为这位亿万富翁提供贷款，并帮助他陷入困境的公司。</p>
+                    <div class="highlight-meta">
+                        <span class="highlight-date">04-24 13:27</span> |
+                        <span class="highlight-source">NYTimes</span> |
+                        <span style="color: #1976d2;">🌍 全球</span>
+                    </div>
+                </div>
+            </div>
+            <div class="highlight-item">
+                <span class="highlight-num">2</span>
+                <div class="highlight-content">
+                    <div class="highlight-title">
+                        <a href="https://www.nytimes.com/2026/04/24/technology/sam-altman-openai-money.html" target="_blank" style="color: #333; text-decoration: none;">Sam Altman的下一个高端法案：让OpenAI赚更多钱</a>
+                    </div>
+                    <p class="highlight-snippet" style="color: #555; font-size: 13px; margin: 5px 0; line-height: 1.4;">奥尔特曼先生曾因OpenAI的方向而受到批评，他剔除了公司项目，并试图在战略上更加自律。</p>
+                    <div class="highlight-meta">
+                        <span class="highlight-date">04-24 09:02</span> |
+                        <span class="highlight-source">NYTimes</span> |
+                        <span style="color: #1976d2;">🌍 全球</span>
+                    </div>
+                </div>
+            </div>
+            <div class="highlight-item">
+                <span class="highlight-num">3</span>
+                <div class="highlight-content">
+                    <div class="highlight-title">
+                        <a href="https://www.nytimes.com/2026/04/24/podcasts/hardfork-tim-cook-yang-ubi.html" target="_blank" style="color: #333; text-decoration: none;">蒂姆·库克的遗产+ U.B.I.的未来与Andrew Yang + HatGPT</a>
+                    </div>
+                    <p class="highlight-snippet" style="color: #555; font-size: 13px; margin: 5px 0; line-height: 1.4;">自蒂姆·库克（ Tim Cook ）接任首席执行官以来，苹果的亮点、低调以及变化。</p>
+                    <div class="highlight-meta">
+                        <span class="highlight-date">04-24 11:00</span> |
+                        <span class="highlight-source">NYTimes</span> |
+                        <span style="color: #1976d2;">🌍 全球</span>
+                    </div>
+                </div>
+            </div>
+            <div class="highlight-item">
+                <span class="highlight-num">4</span>
+                <div class="highlight-content">
+                    <div class="highlight-title">
+                        <a href="https://www.nytimes.com/2026/04/24/business/cohere-aleph-alpha-ai-merger.html" target="_blank" style="color: #333; text-decoration: none;">来自加拿大和德国的人工智能初创公司合并，接管硅谷</a>
+                    </div>
+                    <p class="highlight-snippet" style="color: #555; font-size: 13px; margin: 5px 0; line-height: 1.4;">Cohere正在收购Aleph Alpha ，该交易针对的是对美国公司在人工智能领域的主导地位感到不安的客户。</p>
+                    <div class="highlight-meta">
+                        <span class="highlight-date">04-24 15:42</span> |
+                        <span class="highlight-source">NYTimes</span> |
+                        <span style="color: #1976d2;">🌍 全球</span>
+                    </div>
+                </div>
+            </div>
+            <div class="highlight-item">
+                <span class="highlight-num">5</span>
+                <div class="highlight-content">
+                    <div class="highlight-title">
+                        <a href="https://www.nytimes.com/2026/04/23/technology/intel-ai-earnings.html" target="_blank" style="color: #333; text-decoration: none;">在A.I. Boom的帮助下，英特尔的收入飙升</a>
+                    </div>
+                    <p class="highlight-snippet" style="color: #555; font-size: 13px; margin: 5px 0; line-height: 1.4;">这家芯片制造商报告称，最近一个季度增长了7% ，达到136亿美元，比华尔街预期高出10多亿美元。</p>
+                    <div class="highlight-meta">
+                        <span class="highlight-date">04-23 22:35</span> |
+                        <span class="highlight-source">NYTimes</span> |
+                        <span style="color: #1976d2;">🌍 全球</span>
+                    </div>
+                </div>
+            </div>
+            <div class="highlight-item">
+                <span class="highlight-num">6</span>
+                <div class="highlight-content">
+                    <div class="highlight-title">
+                        <a href="https://www.nytimes.com/2026/04/23/technology/meta-layoffs.html" target="_blank" style="color: #333; text-decoration: none;">Meta将在AI推动下裁员10 ％的劳动力</a>
+                    </div>
+                    <p class="highlight-snippet" style="color: #555; font-size: 13px; margin: 5px 0; line-height: 1.4;">此次裁员影响了大约8,000名员工， Meta还计划关闭6,000个空缺职位，因为该公司专注于人工智能。</p>
+                    <div class="highlight-meta">
+                        <span class="highlight-date">04-24 16:53</span> |
+                        <span class="highlight-source">NYTimes</span> |
+                        <span style="color: #1976d2;">🌍 全球</span>
+                    </div>
+                </div>
+            </div>
+            <div class="highlight-item">
+                <span class="highlight-num">7</span>
+                <div class="highlight-content">
+                    <div class="highlight-title">
+                        <a href="https://www.nytimes.com/2026/04/23/technology/openai-new-model.html" target="_blank" style="color: #333; text-decoration: none;">OpenAI推出新的更强大的GPT-5.5型号</a>
+                    </div>
+                    <p class="highlight-snippet" style="color: #555; font-size: 13px; margin: 5px 0; line-height: 1.4;">ChatGPT的制造商正在采取比其主要竞争对手Anthropic更开放的网络安全方法。</p>
+                    <div class="highlight-meta">
+                        <span class="highlight-date">04-23 19:15</span> |
+                        <span class="highlight-source">NYTimes</span> |
+                        <span style="color: #1976d2;">🌍 全球</span>
+                    </div>
+                </div>
+            </div>
+            <div class="highlight-item">
+                <span class="highlight-num">8</span>
+                <div class="highlight-content">
+                    <div class="highlight-title">
+                        <a href="https://www.nytimes.com/2026/04/23/technology/elon-musk-sam-altman-openai-trial.html" target="_blank" style="color: #333; text-decoration: none;">埃隆·马斯克和萨姆·奥尔特曼的史诗般的战斗走向法庭</a>
+                    </div>
+                    <p class="highlight-snippet" style="color: #555; font-size: 13px; margin: 5px 0; line-height: 1.4;">定于周一开始的陪审团审判可能会改变人工智能竞赛的进程，马斯克将向奥特曼的OpenAI寻求数十亿美元的赔偿。</p>
+                    <div class="highlight-meta">
+                        <span class="highlight-date">04-23 18:40</span> |
+                        <span class="highlight-source">NYTimes</span> |
+                        <span style="color: #1976d2;">🌍 全球</span>
+                    </div>
+                </div>
+            </div>
+            <div class="highlight-item">
+                <span class="highlight-num">9</span>
+                <div class="highlight-content">
+                    <div class="highlight-title">
+                        <a href="https://www.bbc.com/news/articles/cq6je7e80r7o?at_medium=RSS&at_campaign=rss" target="_blank" style="color: #333; text-decoration: none;">OpenAI老板“深感遗憾”没有告诉警方大规模枪击嫌疑人的账户</a>
+                    </div>
+                    <p class="highlight-snippet" style="color: #555; font-size: 13px; margin: 5px 0; line-height: 1.4;">1月份大规模枪击事件发生后， Sam Altman周四向加拿大Tumbler Ridge的人民写了一封简短的道歉信。</p>
+                    <div class="highlight-meta">
+                        <span class="highlight-date">04-24 22:45</span> |
+                        <span class="highlight-source">BBC</span> |
+                        <span style="color: #1976d2;">🌍 全球</span>
+                    </div>
+                </div>
+            </div>
+            <div class="highlight-item">
+                <span class="highlight-num">10</span>
+                <div class="highlight-content">
+                    <div class="highlight-title">
+                        <a href="https://www.bbc.com/news/articles/cq8wnzly5j5o?at_medium=RSS&at_campaign=rss" target="_blank" style="color: #333; text-decoration: none;">英国网络酋长说，是时候抛弃密码以获取密钥了--它们是什么？</a>
+                    </div>
+                    <p class="highlight-snippet" style="color: #555; font-size: 13px; margin: 5px 0; line-height: 1.4;">长期以来，密码一直是我们在线保护帐户的默认方式，但NCSC表示密钥是更好的选择。</p>
+                    <div class="highlight-meta">
+                        <span class="highlight-date">04-24 14:40</span> |
+                        <span class="highlight-source">BBC</span> |
+                        <span style="color: #1976d2;">🌍 全球</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="section-title">[All News]</div>
+    
+    <div class="news-item">
+        <div class="news-date">04-24 13:27</div>
+        <h3>1. How [马斯克] Used SpaceX to Benefit Himself and His Businesses</h3>
+        <p class="snippet">The rocket maker has been a useful financial tool for Mr. Musk, providing the billionaire with loans and aiding his struggling companies, a Times examination found.</p>
+        <div class="news-meta">
+            <a href="https://www.nytimes.com/2026/04/24/technology/elon-musk-spacex-loans.html" target="_blank">Original</a>
+            <span class="tag">NYTimes</span>
+            <span class="tag tag-foreign">EN</span>
+        </div>
+    </div>
+    <div class="news-item">
+        <div class="news-date">04-24 09:02</div>
+        <h3>2. Sam Altman’s Next High-Wire Act: Getting [OpenAI] to Make More Money</h3>
+        <p class="snippet">Mr. Altman, who has faced criticism over OpenAI’s direction, has culled company projects and is trying to be more disciplined with strategy.</p>
+        <div class="news-meta">
+            <a href="https://www.nytimes.com/2026/04/24/technology/sam-altman-openai-money.html" target="_blank">Original</a>
+            <span class="tag">NYTimes</span>
+            <span class="tag tag-foreign">EN</span>
+        </div>
+    </div>
+    <div class="news-item">
+        <div class="news-date">04-24 11:00</div>
+        <h3>3. Tim Cook’s Legacy + The Future of UBI With Andrew Yang + HatGPT</h3>
+        <p class="snippet">The highlights, the lowlights, and how Apple changed in the years since Tim Cook took over as chief executive.</p>
+        <div class="news-meta">
+            <a href="https://www.nytimes.com/2026/04/24/podcasts/hardfork-tim-cook-yang-ubi.html" target="_blank">Original</a>
+            <span class="tag">NYTimes</span>
+            <span class="tag tag-foreign">EN</span>
+        </div>
+    </div>
+    <div class="news-item">
+        <div class="news-date">04-24 15:42</div>
+        <h3>4. AI Start-Ups From Canada and Germany Merge to Take On Silicon Valley</h3>
+        <p class="snippet">Cohere is acquiring Aleph Alpha in a deal aimed at customers uneasy about the dominance of American companies in artificial intelligence.</p>
+        <div class="news-meta">
+            <a href="https://www.nytimes.com/2026/04/24/business/cohere-aleph-alpha-ai-merger.html" target="_blank">Original</a>
+            <span class="tag">NYTimes</span>
+            <span class="tag tag-foreign">EN</span>
+        </div>
+    </div>
+    <div class="news-item">
+        <div class="news-date">04-23 22:35</div>
+        <h3>5. Intel’s Revenues Soar Aided by AI Boom</h3>
+        <p class="snippet">The chip maker reported a 7 percent rise to $13.6 billion in its latest quarter, more than $1 billion more than Wall Street expected.</p>
+        <div class="news-meta">
+            <a href="https://www.nytimes.com/2026/04/23/technology/intel-ai-earnings.html" target="_blank">Original</a>
+            <span class="tag">NYTimes</span>
+            <span class="tag tag-foreign">EN</span>
+        </div>
+    </div>
+    <div class="news-item">
+        <div class="news-date">04-24 16:53</div>
+        <h3>6. [Meta] to Lay Off 10 Percent of Work Force in AI Push</h3>
+        <p class="snippet">The layoffs affect about 8,000 employees, with Meta also planning to close 6,000 open roles, as the company focuses on artificial intelligence.</p>
+        <div class="news-meta">
+            <a href="https://www.nytimes.com/2026/04/23/technology/meta-layoffs.html" target="_blank">Original</a>
+            <span class="tag">NYTimes</span>
+            <span class="tag tag-foreign">EN</span>
+        </div>
+    </div>
+    <div class="news-item">
+        <div class="news-date">04-23 19:15</div>
+        <h3>7. [OpenAI] Unveils Its New More Powerful GPT-55 Model</h3>
+        <p class="snippet">The maker of ChatGPT is taking a more open approach to cybersecurity than its chief rival, Anthropic.</p>
+        <div class="news-meta">
+            <a href="https://www.nytimes.com/2026/04/23/technology/openai-new-model.html" target="_blank">Original</a>
+            <span class="tag">NYTimes</span>
+            <span class="tag tag-foreign">EN</span>
+        </div>
+    </div>
+    <div class="news-item">
+        <div class="news-date">04-23 18:40</div>
+        <h3>8. [马斯克] and Sam Altman’s Epic Fight Heads to Court</h3>
+        <p class="snippet">A jury trial that is set to start on Monday could shift the course of the A.I. race, with Mr. Musk seeking billions of dollars in damages from Mr. Altman’s OpenAI.</p>
+        <div class="news-meta">
+            <a href="https://www.nytimes.com/2026/04/23/technology/elon-musk-sam-altman-openai-trial.html" target="_blank">Original</a>
+            <span class="tag">NYTimes</span>
+            <span class="tag tag-foreign">EN</span>
+        </div>
+    </div>
+    <div class="news-item">
+        <div class="news-date">04-24 22:45</div>
+        <h3>9. [OpenAI] boss 'deeply sorry' for not telling police of mass shooting suspect's account</h3>
+        <p class="snippet">Sam Altman on Thursday wrote a brief letter of apology to the people of Tumbler Ridge, Canada in the wake of a January mass shooting.</p>
+        <div class="news-meta">
+            <a href="https://www.bbc.com/news/articles/cq6je7e80r7o?at_medium=RSS&at_campaign=rss" target="_blank">Original</a>
+            <span class="tag">BBC</span>
+            <span class="tag tag-foreign">EN</span>
+        </div>
+    </div>
+    <div class="news-item">
+        <div class="news-date">04-24 14:40</div>
+        <h3>10. UK cyber chiefs say it's time to ditch passwords for passkeys - what are they?</h3>
+        <p class="snippet">Passwords have long been the default way we secure accounts online but the NCSC has said passkeys are a better option.</p>
+        <div class="news-meta">
+            <a href="https://www.bbc.com/news/articles/cq8wnzly5j5o?at_medium=RSS&at_campaign=rss" target="_blank">Original</a>
+            <span class="tag">BBC</span>
+            <span class="tag tag-foreign">EN</span>
+        </div>
+    </div>
+    <div class="news-item">
+        <div class="news-date">04-24 10:00</div>
+        <h3>11. Biobank 数据 incident caused by 'a few bad apples' boss 称</h3>
+        <p class="snippet">Professor Sir Rory Collins said he was "angry" and "upset" about the incident, as both the bank's boss and a participant.</p>
+        <div class="news-meta">
+            <a href="https://www.bbc.com/news/articles/clyedyn6pz7o?at_medium=RSS&at_campaign=rss" target="_blank">Original</a>
+            <span class="tag">BBC</span>
+            <span class="tag tag-foreign">EN</span>
+        </div>
+    </div>
+    <div class="news-item">
+        <div class="news-date">04-24 07:31</div>
+        <h3>12. [Meta] to cut one in 10 jobs after spending 十亿s on AI</h3>
+        <p class="snippet">The cuts, which employees had been expecting for weeks, will be Meta's largest layoff since 2023.</p>
+        <div class="news-meta">
+            <a href="https://www.bbc.com/news/articles/crm1y89vek8o?at_medium=RSS&at_campaign=rss" target="_blank">Original</a>
+            <span class="tag">BBC</span>
+            <span class="tag tag-foreign">EN</span>
+        </div>
+    </div>
+    <div class="news-item">
+        <div class="news-date">04-24 00:58</div>
+        <h3>13. White House memo claims mass AI theft by Chinese firms</h3>
+        <p class="snippet">A memo from Michael Kratsios says firms, mainly in China, are wrongfully distilling US AI models.</p>
+        <div class="news-meta">
+            <a href="https://www.bbc.com/news/articles/cpqxgxx9nrqo?at_medium=RSS&at_campaign=rss" target="_blank">Original</a>
+            <span class="tag">BBC</span>
+            <span class="tag tag-foreign">EN</span>
+        </div>
+    </div>
+    <div class="news-item">
+        <div class="news-date">04-23 11:45</div>
+        <h3>14. UK Biobank health 数据 listed for sale in 中国 政府 confirms</h3>
+        <p class="snippet">The government said medical data of 500,000 people was affected but no personally identifiable information had been made available.</p>
+        <div class="news-meta">
+            <a href="https://www.bbc.com/news/articles/cpvxgl3n138o?at_medium=RSS&at_campaign=rss" target="_blank">Original</a>
+            <span class="tag">BBC</span>
+            <span class="tag tag-foreign">EN</span>
+        </div>
+    </div>
+    <div class="news-item">
+        <div class="news-date">04-22 12:03</div>
+        <h3>15. Xbox cuts prices for Game Pass but ends day-one Call of Duty access</h3>
+        <p class="snippet">New Call of Duty games will be added to the subscription service "about a year" after release, Microsoft said.</p>
+        <div class="news-meta">
+            <a href="https://www.bbc.com/news/articles/cgrlvvrn409o?at_medium=RSS&at_campaign=rss" target="_blank">Original</a>
+            <span class="tag">BBC</span>
+            <span class="tag tag-foreign">EN</span>
+        </div>
+    </div>
+    <div class="news-item">
+        <div class="news-date">04-22 10:13</div>
+        <h3>16. Anthropic 投资igating claim of unauthorised access to Mythos AI tool</h3>
+        <p class="snippet">The AI company has said the model is too dangerous to release publicly because of its hacking capabilities.</p>
+        <div class="news-meta">
+            <a href="https://www.bbc.com/news/articles/cy41zejp9pko?at_medium=RSS&at_campaign=rss" target="_blank">Original</a>
+            <span class="tag">BBC</span>
+            <span class="tag tag-foreign">EN</span>
+        </div>
+    </div>
+    <div class="news-item">
+        <div class="news-date">04-21 23:00</div>
+        <h3>17. UK gaming icon Peter Molyneux on AI his final creation and a changing industry</h3>
+        <p class="snippet">The creator of iconic series such as Fable says Masters of Albion will be the last game he makes.</p>
+        <div class="news-meta">
+            <a href="https://www.bbc.com/news/articles/c4glw5nyrggo?at_medium=RSS&at_campaign=rss" target="_blank">Original</a>
+            <span class="tag">BBC</span>
+            <span class="tag tag-foreign">EN</span>
+        </div>
+    </div>
+    <div class="news-item">
+        <div class="news-date">04-21 22:47</div>
+        <h3>18. [Meta] to track workers' clicks and keystrokes to train AI</h3>
+        <p class="snippet">The firm will take data from the way employees work for its artificial intelligence models.</p>
+        <div class="news-meta">
+            <a href="https://www.bbc.com/news/articles/cvglyklz49jo?at_medium=RSS&at_campaign=rss" target="_blank">Original</a>
+            <span class="tag">BBC</span>
+            <span class="tag tag-foreign">EN</span>
+        </div>
+    </div>
+    <div class="news-item">
+        <div class="news-date">04-26 10:00</div>
+        <h3>19. Ikea's New Blow-Up Chair Was Tested by Cats</h3>
+        <p class="snippet">Part of the new PS 2026 collection, it's taken the Swedish company 26 years to finally nail inflatable furniture.</p>
+        <div class="news-meta">
+            <a href="https://www.wired.com/story/ikea-new-blow-up-chair-was-tested-by-cats/" target="_blank">Original</a>
+            <span class="tag">Wired</span>
+            <span class="tag tag-foreign">EN</span>
+        </div>
+    </div>
+    <div class="news-item">
+        <div class="news-date">04-26 09:38</div>
+        <h3>20. Della Optima TP Series Mini-Split AC Review: Cheap Smart and (Mostly) Reliable</h3>
+        <p class="snippet">Ductless AC systems get smart tech features—and the growing pains that come with them.</p>
+        <div class="news-meta">
+            <a href="https://www.wired.com/review/della-optima-tp-series-mini-split-air-conditioner/" target="_blank">Original</a>
+            <span class="tag">Wired</span>
+            <span class="tag tag-foreign">EN</span>
+        </div>
+    </div>
+    <div class="news-item">
+        <div class="news-date">04-26 09:14</div>
+        <h3>21. What Type of Mattress Is Right for You? (2026)</h3>
+        <p class="snippet">Here’s how to pick the best mattress for your sleep needs, straight from a professional mattress tester.</p>
+        <div class="news-meta">
+            <a href="https://www.wired.com/story/mattress-types-explained/" target="_blank">Original</a>
+            <span class="tag">Wired</span>
+            <span class="tag tag-foreign">EN</span>
+        </div>
+    </div>
+    <div class="news-item">
+        <div class="news-date">04-25 10:30</div>
+        <h3>22. Discord Sleuths Gained Unauthorized Access to Anthropic’s Mythos</h3>
+        <p class="snippet">Plus: Spy firms tap into a global telecom weakness to track targets, 500,000 UK health records go up for sale on Alibaba, Apple patches a revealing notification bug, and more.</p>
+        <div class="news-meta">
+            <a href="https://www.wired.com/story/security-news-this-week-discord-sleuths-gained-unauthorized-access-to-anthropics-mythos/" target="_blank">Original</a>
+            <span class="tag">Wired</span>
+            <span class="tag tag-foreign">EN</span>
+        </div>
+    </div>
+    <div class="news-item">
+        <div class="news-date">04-25 10:00</div>
+        <h3>23. The Online Civil War About ‘Michael’ Is a Battle Over Truth</h3>
+        <p class="snippet">Fans want to reclaim the music and myth of Michael Jackson in the new biopic while critics call for accountability. Who’s right?</p>
+        <div class="news-meta">
+            <a href="https://www.wired.com/story/the-online-civil-war-about-michael-is-a-battle-over-truth/" target="_blank">Original</a>
+            <span class="tag">Wired</span>
+            <span class="tag tag-foreign">EN</span>
+        </div>
+    </div>
+    <div class="news-item">
+        <div class="news-date">04-25 21:43</div>
+        <h3>24. Anthropic created a test marketplace for agent-on-agent commerce</h3>
+        <p class="snippet">In a recent experiment, Anthropic created a classified marketplace where AI agents represented both buyers and sellers, striking real deals for real goods and real money.</p>
+        <div class="news-meta">
+            <a href="https://techcrunch.com/2026/04/25/anthropic-created-a-test-marketplace-for-agent-on-agent-commerce/" target="_blank">Original</a>
+            <span class="tag">TechCrunch</span>
+            <span class="tag tag-foreign">EN</span>
+        </div>
+    </div>
+    <div class="news-item">
+        <div class="news-date">04-25 20:57</div>
+        <h3>25. Maine’s governor vetoes 数据 center moratorium</h3>
+        <p class="snippet">L.D. 307 would have imposed the country’s first statewide moratorium on new data centers — lasting, in this case, until November 1, 2027.</p>
+        <div class="news-meta">
+            <a href="https://techcrunch.com/2026/04/25/maines-governor-vetoes-data-center-moratorium/" target="_blank">Original</a>
+            <span class="tag">TechCrunch</span>
+            <span class="tag tag-foreign">EN</span>
+        </div>
+    </div>
+    <div class="news-item">
+        <div class="news-date">04-25 17:17</div>
+        <h3>26. [OpenAI] CEO apologizes to Tumbler Ridge community</h3>
+        <p class="snippet">In a letter to the residents of Tumbler Ridge, Canada, OpenAI CEO Sam Altman said he is “deeply sorry” that his company failed to alert law enforcement about the suspect in a recent mass shooting.</p>
+        <div class="news-meta">
+            <a href="https://techcrunch.com/2026/04/25/openai-ceo-apologizes-to-tumbler-ridge-community/" target="_blank">Original</a>
+            <span class="tag">TechCrunch</span>
+            <span class="tag tag-foreign">EN</span>
+        </div>
+    </div>
+    <div class="news-item">
+        <div class="news-date">04-25 16:33</div>
+        <h3>27. The climate tech IPO window could finally be cracking open</h3>
+        <p class="snippet">Nuclear startup X-energy went public, geothermal startup Fervo is about to. Could this be the moment that climate tech investors have been waiting for?</p>
+        <div class="news-meta">
+            <a href="https://techcrunch.com/2026/04/25/the-climate-tech-ipo-window-could-finally-be-cracking-open/" target="_blank">Original</a>
+            <span class="tag">TechCrunch</span>
+            <span class="tag tag-foreign">EN</span>
+        </div>
+    </div>
+    <div class="news-item">
+        <div class="news-date">04-25 16:00</div>
+        <h3>28. Why Cohere is merging with Aleph Alpha</h3>
+        <p class="snippet">Canadian AI startup Cohere is taking over Germany-based Aleph Alpha with support from Lidl’s owner, Schwarz Group. With the blessing of their governments, the companies intend to offer a sovereign alt</p>
+        <div class="news-meta">
+            <a href="https://techcrunch.com/2026/04/25/why-cohere-is-merging-with-aleph-alpha/" target="_blank">Original</a>
+            <span class="tag">TechCrunch</span>
+            <span class="tag tag-foreign">EN</span>
+        </div>
+    </div>
+    <div class="news-item">
+        <div class="news-date">04-25 15:03</div>
+        <h3>29. Why Tokyo is the most important tech destination of 2026</h3>
+        <p class="snippet">SusHi Tech Tokyo 2026 has four tightly defined technology domains, each backed by live demonstrations, dedicated exhibit floors, and sessions featuring the people actually building and funding these t</p>
+        <div class="news-meta">
+            <a href="https://techcrunch.com/2026/04/25/why-tokyo-is-the-most-important-tech-destination-of-2026/" target="_blank">Original</a>
+            <span class="tag">TechCrunch</span>
+            <span class="tag tag-foreign">EN</span>
+        </div>
+    </div>
+    <div class="news-item">
+        <div class="news-date">04-27 09:15</div>
+        <h3>30. 前苹果工程师做了款体感游戏机，销量拳打Xbox，营收数亿美元</h3>
+        <p class="snippet">作者丨欧雪 
+  编辑丨袁斯来
+  2025年黑五，美国游戏主机市场有些不同寻常。
+  根据追踪美国游戏主机与软件销售的Circana统计数据，在黑色星期五当周，PS5以47%的市场份额领跑，任天堂Switch2占据24%，而一款名为Nex Playground的体感游戏机，则以14%的市占率冲上第三名——将Xbox挤出了前三位置。</p>
+        <div class="news-meta">
+            <a href="https://36kr.com/p/3783828639571203?f=rss" target="_blank">Original</a>
+            <span class="tag">36kr</span>
+            <span class="tag tag-china">CN</span>
+        </div>
+    </div>
+    <div class="news-item">
+        <div class="news-date">04-27 09:10</div>
+        <h3>31. 早期项目 | 前地平线产品负责人死磕“拿放”动作，轮式机器人今年锁定百台出货</h3>
+        <p class="snippet">作者丨欧雪
+  编辑丨袁斯来
+  在具身智能行业普遍沉迷双足人形和仿真训练的当下，有一家公司选择了一条不太一样的路径：聚焦仓储物流场景，用“轮式底盘+双臂”死磕占人力成本60%的“拿放”动作。这是一家由中科南京软件技术研究院孵化出来的具身智能企业——智往未来。
+  智往未来2025年11月成立于南京，创始人孙浚凯曾在地平线担任智能座舱产品线总经理，推</p>
+        <div class="news-meta">
+            <a href="https://36kr.com/p/3783824870317312?f=rss" target="_blank">Original</a>
+            <span class="tag">36kr</span>
+            <span class="tag tag-china">CN</span>
+        </div>
+    </div>
+    <div class="news-item">
+        <div class="news-date">04-27 09:00</div>
+        <h3>32. 「破壳机器人」许华哲：两年内，中国将出现可用的家庭机器人</h3>
+        <p class="snippet">文｜邱晓芬
+  编辑｜苏建勋
+  2026年，全球的具身智能机器人创业者不约而同将目光方向调转向深水区：家庭。
+  点燃这份热情的，是近期行业里闪烁着的一丝丝Scaling Law苗头——
+  先是硅谷具身智能公司Generalist AI在GEN-1模型上验证了确定性</p>
+        <div class="news-meta">
+            <a href="https://36kr.com/p/3784365164322055?f=rss" target="_blank">Original</a>
+            <span class="tag">36kr</span>
+            <span class="tag tag-china">CN</span>
+        </div>
+    </div>
+    <div class="news-item">
+        <div class="news-date">04-27 08:03</div>
+        <h3>33. 8点1氪丨豆包提前查到2026山东事业编成绩？最新回应；东方甄选主播集体离职，俞敏洪回应；花呗白条月付等面临重大调整</h3>
+        <p class="snippet">今日热点导览
+  美国白宫记者晚宴大厅发生枪击事件
+  王传福夫妇坐地铁参加北京车展被偶遇
+  DeepSeekV4成OpenClaw默认模型
+  2025年全国大型演唱会票房295.58亿
+  OpenAI首席执行官就未通报枪击案嫌疑人道歉
+  TOP3大新闻
+  豆包</p>
+        <div class="news-meta">
+            <a href="https://36kr.com/p/3784311487945735?f=rss" target="_blank">Original</a>
+            <span class="tag">36kr</span>
+            <span class="tag tag-china">CN</span>
+        </div>
+    </div>
+    <div class="news-item">
+        <div class="news-date">04-26 14:00</div>
+        <h3>34. 欧莱雅BRANDSTORM 2026中国总决赛落幕，AI成美妆创新核心议题｜最前线</h3>
+        <p class="snippet">欧莱雅全球青年创新策划大赛BRANDSTORM 2026中国总决赛于4月24日在上海收官。本届赛事聚焦奢华香氛领域，中国赛区吸引超72000人报名，经多轮选拔后六支队伍进入总决赛。最终，UNIBLOCK、SOS和Move with Scent三支队伍分获冠亚季军，将代表中国赛区赴巴黎参加全球总决赛。
+  BRANDSTORM大赛已举办34年，覆盖全球40多个国家和地区，累计参与</p>
+        <div class="news-meta">
+            <a href="https://36kr.com/p/3783249100397570?f=rss" target="_blank">Original</a>
+            <span class="tag">36kr</span>
+            <span class="tag tag-china">CN</span>
+        </div>
+    </div>
+    <div class="news-item">
+        <div class="news-date">04-26 09:06</div>
+        <h3>35. 36氪首发 | 全球唯二、中国唯一造出微米级磁悬浮魔毯，已大规模量产</h3>
+        <p class="snippet">作者丨欧雪
+  编辑丨袁斯来
+  在传统工厂里，流水线像是被固定在铁轨上的火车——高效但僵硬。这种“效率与柔性不可兼得”的痛点，正被一家中国公司用“磁悬浮”技术破解。
+  佛山市增广智能科技有限公司（下称“增广智能”）成立于2018年，总部位于佛山，是全球唯二、中国唯一掌握六自由度平面磁悬浮输送系统核心技术的企业。
+  “这个技术涉及面</p>
+        <div class="news-meta">
+            <a href="https://36kr.com/p/3782960065108996?f=rss" target="_blank">Original</a>
+            <span class="tag">36kr</span>
+            <span class="tag tag-china">CN</span>
+        </div>
+    </div>
+    <div class="news-item">
+        <div class="news-date">04-26 08:08</div>
+        <h3>36. 润芯微“国产软硬一体AI智能基座”发布，破解行业稀缺难题带动多端智能变革</h3>
+        <p class="snippet">4月25日，以“芯视野·新格局”为主题的润芯微战略与产品发布会在北京车展期间举行。作为行业稀缺的“芯片+操作系统+AI”全栈解决方案提供商，润芯微首次完整展示已打造的可应用于多端场景的“国产软硬一体AI智能基座”。本次发布会通过战略、技术、产品、生态的完整呈现，全面展现润芯微在多端智能领域的进展情况。从百万量产上车到openvela通过兼容性认证，从车载座舱到两轮车智能终端、机器人算力平台，</p>
+        <div class="news-meta">
+            <a href="https://36kr.com/p/3782901034785801?f=rss" target="_blank">Original</a>
+            <span class="tag">36kr</span>
+            <span class="tag tag-china">CN</span>
+        </div>
+    </div>
+    <div class="news-item">
+        <div class="news-date">04-25 19:15</div>
+        <h3>37. 最前线｜2025年全年营收超64亿，海康机器人表示将继续推进AI融合与具身智能布局</h3>
+        <p class="snippet">作者 | 乔钰杰
+  编辑 | 袁斯来
+  当前，制造业正站在从“自动化”向“智能化”跨越的关键节点。
+  2026年是海康机器人成立十周年。作为工业智能化领域的创新者与实践者，海康机器人近年持续推进机器视觉、移动机器人与柔性制造技术的深度融合，构建起“眼、脚、手”一体化的全栈技术能力，形成了以机器视觉、关节机</p>
+        <div class="news-meta">
+            <a href="https://36kr.com/p/3782137908403457?f=rss" target="_blank">Original</a>
+            <span class="tag">36kr</span>
+            <span class="tag tag-china">CN</span>
+        </div>
+    </div>
+    <div class="news-item">
+        <div class="news-date">04-13 16:24</div>
+        <h3>38. 别克×火山引擎：至境E7行业首发搭载豆包大模型最新版</h3>
+        <p class="snippet">当豆包大模型进入汽车座舱，人车交互不再是你问我答的“客服”，而是能像人一样思考、交流、成长的“数字家人”。</p</p>
+        <div class="news-meta">
+            <a href="https://www.leiphone.com/category/industrynews/c8rGA0s3Z9EolPet.html" target="_blank">Original</a>
+            <span class="tag">雷锋网</span>
+            <span class="tag tag-china">CN</span>
+        </div>
+    </div>
+    <div class="news-item">
+        <div class="news-date">04-13 12:56</div>
+        <h3>39. 推理卡毛利率下滑超7%，天数智芯「降价换量」的买卖值不值？</h3>
+        <p class="snippet">2个多月前在港股上市的天数智芯，近期发布了2025年财报。公布当天，股价下跌了10个点。在此之前，天数股价已从342港元的高位大幅回调。财报显示，天数全年营收10.34亿元，同比增长91.6%。一级市场投资人林云直言，这个表现没有达到大家的心理预期。对比其他几家国产公司这两年来的增长速度，市场给天数的营收底线预期是：12亿元。但另一方面，分析师Ethan透露，资本</p>
+        <div class="news-meta">
+            <a href="https://www.leiphone.com/category/chips/bwKuuKUGYn8a3IbY.html" target="_blank">Original</a>
+            <span class="tag">雷锋网</span>
+            <span class="tag tag-china">CN</span>
+        </div>
+    </div>
+    <div class="news-item">
+        <div class="news-date">04-13 12:12</div>
+        <h3>40. 明日新程完成连续两轮融资，领跑Harness群体多智能体赛道</h3>
+        <p class="snippet">日前，由微软小冰原班人马成立的新公司“明日新程”宣布已连续完成两轮融资，重仓布局Harness群体多智能体赛道。其中，天使轮融资由创新工场和Atypical Ventures联合领投，奇绩创坛继续跟投，其余参投方包括原微软全球副总裁David Ku等个人投资者、公司独家财务顾问安可资本等。目前，公司已募得供未来三到五年持续创新的所需资金。明日新程（英文名：Next</p>
+        <div class="news-meta">
+            <a href="https://www.leiphone.com/category/industrynews/aiDP2A7dwvwQL6Ue.html" target="_blank">Original</a>
+            <span class="tag">雷锋网</span>
+            <span class="tag tag-china">CN</span>
+        </div>
+    </div>
+    <div class="news-item">
+        <div class="news-date">04-13 09:34</div>
+        <h3>41. 「作弊」内幕曝光！3DMark回应将某知名国产手机除名；李想朋友圈炮轰东风日产恶意拉踩，后者高管回应；美的空调又发行业首创产品</h3>
+        <p class="snippet">要闻提示1.“作弊” 内幕曝光！3DMark回应将某知名国产手机除名：实测性能相差24%、温度超过50℃<p style="text-a</p>
+        <div class="news-meta">
+            <a href="https://www.leiphone.com/category/zaobao/aAthIc8n66aAjB1c.html" target="_blank">Original</a>
+            <span class="tag">雷锋网</span>
+            <span class="tag tag-china">CN</span>
+        </div>
+    </div>
+    <div class="news-item">
+        <div class="news-date">04-26 21:15</div>
+        <h3>42. 李力耘加入众擎，全栈智驾大脑与顶级人形本体的双向奔赴</h3>
+        <p class="snippet">“上个月融2亿美金我都没有这么开心。”“千军易得，一将难求！”“得一悍将！！晚上喝酒庆祝！”众擎创始人赵同阳，最近发了一条数百字的朋友圈，字里行间难掩喜悦的心情，透露着一种具身行业里少见的“活人感”。<img src="https://static.leiphone.com/upl</p>
+        <div class="news-meta">
+            <a href="https://www.leiphone.com/category/robot/EbmFRcvpt7TBjb3P.html" target="_blank">Original</a>
+            <span class="tag">雷锋网</span>
+            <span class="tag tag-china">CN</span>
+        </div>
+    </div>
+    <div class="news-item">
+        <div class="news-date">04-25 23:56</div>
+        <h3>43. 从“新”出发，启“程”远航：neueHCT踏上品牌焕新征程</h3>
+        <p class="snippet">2026年4月25日，2026北京车展媒体日期间，neueHCT于首都国际会展中心B2馆B41展台，重磅举办「新大陆・新征程」品牌焕新发布会。本次发布会聚焦品牌焕新、战略升级、生态共建三大核心维度，正式揭晓neueHCT全新品牌形象与发展蓝图，携手生态合作伙伴，共同打造全场景出行生态，开启全球智驾普惠新征程。<img sr</p>
+        <div class="news-meta">
+            <a href="https://www.leiphone.com/category/industrynews/4rQtoyVlOs1IRN18.html" target="_blank">Original</a>
+            <span class="tag">雷锋网</span>
+            <span class="tag tag-china">CN</span>
+        </div>
+    </div>
+    <div class="news-item">
+        <div class="news-date">04-25 23:16</div>
+        <h3>44. Momenta曹旭东：希望和中国所有AI公司书写东方硅谷传奇</h3>
+        <p class="snippet">2026年4月25日，Momenta于北京国际车展举办“Momenta R7，物理AI序章”主题分享会。四位合伙人同台出席，围绕Momenta技术理念、产品能力与全球商业化落地等话题展开深度对话，正式宣布Momenta R7强化学习世界模型实现量产首发，标志着智能驾驶从“看见世界”到“理解世界”的全新跨越，物理AI正式从技术理念走向规模化量产落地。Momenta宣布，已成功交付</p>
+        <div class="news-meta">
+            <a href="https://www.leiphone.com/category/industrynews/7rRKjs2EaP3lQ7uT.html" target="_blank">Original</a>
+            <span class="tag">雷锋网</span>
+            <span class="tag tag-china">CN</span>
+        </div>
+    </div>
+    <div class="news-item">
+        <div class="news-date">04-27 01:57</div>
+        <h3>45. 飞傲翡声地平线 1 号高清音频功率放大器开售：2×300W 功率，799 元</h3>
+        <p class="snippet">IT之家 4 月 27 日消息，飞傲翡声地平线 1 号高清音频功率放大器今日 10:00 正式开售，售价 799 元。<img src="https://img.ithome.com/newsuploadfiles/2026/4/83d0eb8b-f592-4d28-9462-46d816</p>
+        <div class="news-meta">
+            <a href="https://www.ithome.com/0/943/792.htm" target="_blank">Original</a>
+            <span class="tag">IT之家</span>
+            <span class="tag tag-china">CN</span>
+        </div>
+    </div>
+    <div class="news-item">
+        <div class="news-date">04-27 01:45</div>
+        <h3>46. Gartner 预测：全球数据中心系统支出将连续 2 年增长 50+%</h3>
+        <p class="snippet">IT之家 4 月 27 日消息，根据机构 Gartner（高德纳）本月 22 日的最新一期预测，全球数据中心系统支出在 2026 年将达 7879.90 亿美元（IT之家注：现汇率约合 5.39 万亿元人民币），连续第二年增速超过 50%。而从更广的统计口径来看，Gartner 认为 20</p>
+        <div class="news-meta">
+            <a href="https://www.ithome.com/0/943/790.htm" target="_blank">Original</a>
+            <span class="tag">IT之家</span>
+            <span class="tag tag-china">CN</span>
+        </div>
+    </div>
+    <div class="news-item">
+        <div class="news-date">04-27 01:41</div>
+        <h3>47. 目标到 2030 年实现人类与机器人协同工作，富士通与美国卡内基梅隆大学联合开发物理 AI 操作系统</h3>
+        <p class="snippet">IT之家 4 月 27 日消息，富士通于当地时间 4 月 23 日发布了关于自主驱动机器人的“物理 AI”领域的新战略。富士通宣布，与该领域全球领先的美国卡内基梅隆大学成立了物理 AI 联合研究中心。双方将联合研发通过 AI 驱动机器人的操作系统，将在 2026 年内公开首个版本。<p style="text-align: center</p>
+        <div class="news-meta">
+            <a href="https://www.ithome.com/0/943/787.htm" target="_blank">Original</a>
+            <span class="tag">IT之家</span>
+            <span class="tag tag-china">CN</span>
+        </div>
+    </div>
+    <div class="news-item">
+        <div class="news-date">04-27 01:21</div>
+        <h3>48. 奥尔特曼宣布 [OpenAI] 五大原则：确保 AGI 惠及全人类，反对技术权力集中在少数人手中</h3>
+        <p class="snippet">IT之家 4 月 27 日消息，OpenAI CEO 萨姆 · 奥尔特曼（Sam Altman）于当地时间 4 月 26 日发文，阐述了该公司在人工智能发展过程中的核心原则与长期目标。<img class="no-alt-img" src="https://img.ithome.com/newsuploadfiles/20</p>
+        <div class="news-meta">
+            <a href="https://www.ithome.com/0/943/783.htm" target="_blank">Original</a>
+            <span class="tag">IT之家</span>
+            <span class="tag tag-china">CN</span>
+        </div>
+    </div>
+    <div class="news-item">
+        <div class="news-date">04-27 09:15</div>
+        <h3>49. 大模型的“雅尔塔时刻”</h3>
+        <p class="snippet">站队的时刻到了。</p>
+        <div class="news-meta">
+            <a href="https://www.tmtpost.com/7968014.html" target="_blank">Original</a>
+            <span class="tag">钛媒体</span>
+            <span class="tag tag-china">CN</span>
+        </div>
+    </div>
+    <div class="news-item">
+        <div class="news-date">04-27 08:58</div>
+        <h3>50. 15k Star，37个AI投资大师，一款开源工具正在“拆掉”金融圈的围墙</h3>
+        <p class="snippet">年费20万的彭博终端，被一个GitHub项目“掀了桌子”。</p>
+        <div class="news-meta">
+            <a href="https://www.tmtpost.com/7967230.html" target="_blank">Original</a>
+            <span class="tag">钛媒体</span>
+            <span class="tag tag-china">CN</span>
+        </div>
+    </div>
+    <div class="news-item">
+        <div class="news-date">04-27 08:20</div>
+        <h3>51. Edge AI Daily 早报（4月27日）</h3>
+        <p class="snippet">OpenAI启动GPT-5.5生物安全漏洞赏金计划，强化高风险领域防护能力。微软AI业务面临能源供给挑战，与核聚变企业Helion Energy合作探索零碳电力解决方案。英伟达将8%投资组合配置于边缘AI芯片公司，瞄准2000亿美元企业级市场。半导体行业受AI需求驱动，费城指数实现18连胜。佐治亚州110亿美元AI投资引发能源消耗与监管争议。</p>
+        <div class="news-meta">
+            <a href="https://www.tmtpost.com/7967966.html" target="_blank">Original</a>
+            <span class="tag">钛媒体</span>
+            <span class="tag tag-china">CN</span>
+        </div>
+    </div>
+    <div class="news-item">
+        <div class="news-date">04-26 22:25</div>
+        <h3>52. 剔除MSP影响收入增166%，网宿科技以边缘AI与安全重塑成长逻辑</h3>
+        <p class="snippet">瘦身健体释放盈利韧性。</p>
+        <div class="news-meta">
+            <a href="https://www.tmtpost.com/7967855.html" target="_blank">Original</a>
+            <span class="tag">钛媒体</span>
+            <span class="tag tag-china">CN</span>
+        </div>
+    </div>
+    <div class="footer">
+        Generated by AI News Assistant
+    </div>
+</body>
+</html>

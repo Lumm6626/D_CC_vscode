@@ -1,0 +1,15 @@
+# 通用平台下载
+yt-dlp>=2024.0
+
+# 语音识别
+torch>=2.0
+openai-whisper>=20231117
+
+# 抖音 API 调用 + 视频下载
+requests>=2.28
+
+# 小红书 Playwright 浏览器自动化
+playwright>=1.40
+
+# Web UI
+flask>=2.3.0

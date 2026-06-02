@@ -6,12 +6,12 @@ chcp 65001 >nul
 set PYTHONIOENCODING=utf-8
 cd /d D:\D_CC_vscode
 
-set "OUTPUT_DIR=D:\D_CC_vscode\secretary-team\news-daily\output\%TODAY%"
+set "OUTPUT_DIR=D:\D_CC_vscode\agents\news\ai-news\output\%TODAY%"
 set "HTML_FILE=%OUTPUT_DIR%\ai_news.html"
 if exist "%HTML_FILE%" (
     echo [AI新闻采集] 今日报告已存在，跳过执行
     exit /b 0
 )
 echo [AI新闻采集] 开始运行...
-python D:\D_CC_vscode\secretary-team\ai-news\server.py
+python D:\D_CC_vscode\agents\news\ai-news\server.py
 echo [AI新闻采集] 完成

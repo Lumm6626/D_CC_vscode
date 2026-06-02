@@ -1,0 +1,462 @@
+{
+  "date": "2026-04-20",
+  "count": 57,
+  "news": [
+    {
+      "title": "White House and Anthropic Hold ‘Productive’ Meeting, Aiming for a Compromise",
+      "url": "https://www.nytimes.com/2026/04/17/technology/white-house-anthropic-artificial-intelligence.html",
+      "snippet": "Friday’s meeting at the White House followed the introduction of Anthropic’s powerful new artificial intelligence model, Mythos, which U.S. officials believe could be critical for security.",
+      "keyword": "NYTimes",
+      "region": "Foreign",
+      "published": "Fri, 17 Apr 2026 23:45:46 +0000"
+    },
+    {
+      "title": "Cerebras, an A.I. Chip Maker, Files to Go Public as Tech Offerings Ramp Up",
+      "url": "https://www.nytimes.com/2026/04/17/technology/cerebras-public-offering-ai.html",
+      "snippet": "The Silicon Valley chip maker filed a prospectus just as SpaceX, Anthropic and OpenAI prepared for their own listings, in what is shaping up to be a wave of enormous initial public offerings.",
+      "keyword": "NYTimes",
+      "region": "Foreign",
+      "published": "Sun, 19 Apr 2026 18:00:42 +0000"
+    },
+    {
+      "title": "Pentagon Seeks Help From Ford and G.M.",
+      "url": "https://www.nytimes.com/2026/04/16/business/pentagon-ford-general-motors-defense-production.html",
+      "snippet": "Concerned about the slow pace and high cost of weapons production, Pentagon officials have begun talks with General Motors and Ford Motor about producing certain parts.",
+      "keyword": "NYTimes",
+      "region": "Foreign",
+      "published": "Thu, 16 Apr 2026 21:23:00 +0000"
+    },
+    {
+      "title": "Sneaker Company Allbirds Plans to Pivot to A.I. Yes, A.I.",
+      "url": "https://www.nytimes.com/2026/04/15/us/allbirds-shoes-ai-pivot.html",
+      "snippet": "After selling its business for $39 million last month, the company said it planned to buy powerful computer chips and rebrand itself NewBird AI.",
+      "keyword": "NYTimes",
+      "region": "Foreign",
+      "published": "Thu, 16 Apr 2026 00:31:58 +0000"
+    },
+    {
+      "title": "Ad Companies Settle With F.T.C. Over Claims of Harm to Conservative Sites",
+      "url": "https://www.nytimes.com/2026/04/15/technology/ftc-ad-companies-settlement.html",
+      "snippet": "WPP, Dentsu and Publicis settled claims they colluded on policies to combat misinformation, denying ad revenue to publishers on the right.",
+      "keyword": "NYTimes",
+      "region": "Foreign",
+      "published": "Wed, 15 Apr 2026 18:08:36 +0000"
+    },
+    {
+      "title": "What Is ‘Jagged Intelligence’ and How Can It Reframe the AI Debate?",
+      "url": "https://www.nytimes.com/2026/04/15/technology/how-jagged-intelligence-can-reframe-the-ai-debate.html",
+      "snippet": "A.I. has always been compared to human intelligence, but that may not be the right way to think about it. What it does well can help predict what jobs it may replace.",
+      "keyword": "NYTimes",
+      "region": "Foreign",
+      "published": "Thu, 16 Apr 2026 17:36:09 +0000"
+    },
+    {
+      "title": "Spice Up Your Cooking Skills With Help From Your Phone",
+      "url": "https://www.nytimes.com/2026/04/15/technology/personaltech/recipes-cooking-ai.html",
+      "snippet": "Recipe apps and artificial intelligence can give you a boost, but free tools already on your device can also assist with meal planning and preparation.",
+      "keyword": "NYTimes",
+      "region": "Foreign",
+      "published": "Wed, 15 Apr 2026 09:04:06 +0000"
+    },
+    {
+      "title": "We Don’t Really Know How A.I. Works. That’s a Problem.",
+      "url": "https://www.nytimes.com/2026/04/15/magazine/ai-black-box-interpretability-research.html",
+      "snippet": "For us to trust it on certain subjects, researchers in the growing field of interpretability might need to learn how to open the black box of its brain.",
+      "keyword": "NYTimes",
+      "region": "Foreign",
+      "published": "Wed, 15 Apr 2026 15:27:27 +0000"
+    },
+    {
+      "title": "They Were YouTube’s First Stars. Here’s What They Wish They’d Known.",
+      "url": "https://www.nytimes.com/2026/04/15/arts/television/early-youtube-stars-success-learnings.html",
+      "snippet": "MatPat, Miranda Sings, Grace Helbig and WheezyWaiter hit it big on YouTube long before it became a behemoth. They have thoughts about what it takes to succeed there.",
+      "keyword": "NYTimes",
+      "region": "Foreign",
+      "published": "Thu, 16 Apr 2026 14:30:51 +0000"
+    },
+    {
+      "title": "How Older Adults Are Using VR to Counter Social Isolation",
+      "url": "https://www.nytimes.com/2026/04/15/technology/vr-technology-elderly-community-social-isolation.html",
+      "snippet": "New tools tailored for use in senior living communities allow for shared experiences and social bonding.",
+      "keyword": "NYTimes",
+      "region": "Foreign",
+      "published": "Wed, 15 Apr 2026 09:00:11 +0000"
+    },
+    {
+      "title": "White House and Anthropic hold 'productive' meeting amid fears over Mythos model",
+      "url": "https://www.bbc.com/news/articles/cyv10e1d13po?at_medium=RSS&at_campaign=rss",
+      "snippet": "The discussion is a sign the AI firm's technology may be too critical for even the US government to do without.",
+      "keyword": "BBC",
+      "region": "Foreign",
+      "published": "Sat, 18 Apr 2026 00:37:06 GMT"
+    },
+    {
+      "title": "Tinder and Zoom offer 'proof of humanity' eye-scans to combat AI",
+      "url": "https://www.bbc.com/news/articles/cp9vppem4evo?at_medium=RSS&at_campaign=rss",
+      "snippet": "The tech aims to identify people's irises and stop the rise of fake accounts and malicious scams.",
+      "keyword": "BBC",
+      "region": "Foreign",
+      "published": "Fri, 17 Apr 2026 19:05:43 GMT"
+    },
+    {
+      "title": "What is Claude Mythos and what risks does it pose?",
+      "url": "https://www.bbc.com/news/articles/crk1py1jgzko?at_medium=RSS&at_campaign=rss",
+      "snippet": "The company's claim the AI tool can outperform humans at some hacking and cyber-security tasks has sparked fears in the financial world.",
+      "keyword": "BBC",
+      "region": "Foreign",
+      "published": "Fri, 17 Apr 2026 13:41:01 GMT"
+    },
+    {
+      "title": "Booking.com customers warned of 'reservation hijacking' after hack",
+      "url": "https://www.bbc.com/news/articles/cly00jnnxypo?at_medium=RSS&at_campaign=rss",
+      "snippet": "The travel platform said it had changed Pins to protect customers but would not say how many were affected.",
+      "keyword": "BBC",
+      "region": "Foreign",
+      "published": "Wed, 15 Apr 2026 12:05:58 GMT"
+    },
+    {
+      "title": "Google to punish sites that trap people in with back button tricks",
+      "url": "https://www.bbc.com/news/articles/c05dd2yj3z3o?at_medium=RSS&at_campaign=rss",
+      "snippet": "The tech giant said it will punish sites that block back button navigation from June.",
+      "keyword": "BBC",
+      "region": "Foreign",
+      "published": "Wed, 15 Apr 2026 10:02:19 GMT"
+    },
+    {
+      "title": "Man charged with attempted murder over attack on home of OpenAI's Sam Altman",
+      "url": "https://www.bbc.com/news/articles/cq597n1pg6lo?at_medium=RSS&at_campaign=rss",
+      "snippet": "The Texas man, who also faces federal felony charges, allegedly had documents advocating for violence against AI executives.",
+      "keyword": "BBC",
+      "region": "Foreign",
+      "published": "Tue, 14 Apr 2026 01:05:54 GMT"
+    },
+    {
+      "title": "GTA-maker Rockstar Games hacked again but downplays impact",
+      "url": "https://www.bbc.com/news/articles/cx2dg5g1le7o?at_medium=RSS&at_campaign=rss",
+      "snippet": "The incident marks the second time the games giant has been hacked by young, English-speaking hackers.",
+      "keyword": "BBC",
+      "region": "Foreign",
+      "published": "Mon, 13 Apr 2026 15:10:38 GMT"
+    },
+    {
+      "title": "Roblox defends expanded age‑checks after parents raise concerns over errors",
+      "url": "https://www.bbc.com/news/articles/cj94y9r0p10o?at_medium=RSS&at_campaign=rss",
+      "snippet": "With 144m daily users, the gaming company is extending its tech to introduce two age‑specific accounts.",
+      "keyword": "BBC",
+      "region": "Foreign",
+      "published": "Mon, 13 Apr 2026 12:19:13 GMT"
+    },
+    {
+      "title": "OpenAI boss Sam Altman's home targeted with Molotov cocktail",
+      "url": "https://www.bbc.com/news/articles/czx91rdxpyeo?at_medium=RSS&at_campaign=rss",
+      "snippet": "San Francisco police have arrested a 20-year-old suspect after a perimeter gate was set alight.",
+      "keyword": "BBC",
+      "region": "Foreign",
+      "published": "Fri, 10 Apr 2026 21:01:18 GMT"
+    },
+    {
+      "title": "Great at gaming? US air traffic control wants you to apply",
+      "url": "https://www.bbc.com/news/articles/ce84rvx0e6do?at_medium=RSS&at_campaign=rss",
+      "snippet": "A new government ad campaign is trying to persuade gamers to apply for air safety roles.",
+      "keyword": "BBC",
+      "region": "Foreign",
+      "published": "Fri, 10 Apr 2026 19:35:24 GMT"
+    },
+    {
+      "title": "Tech Life",
+      "url": "https://www.bbc.co.uk/sounds/play/w3ct8jxp?at_medium=RSS&at_campaign=rss",
+      "snippet": "Is there a way to fix AI's problem with trust?",
+      "keyword": "BBC",
+      "region": "Foreign",
+      "published": "Tue, 07 Apr 2026 20:00:00 GMT"
+    },
+    {
+      "title": "The 11 Best Fans to Buy Before It Gets Hot Again (2026)",
+      "url": "https://www.wired.com/story/the-best-fans-2026/",
+      "snippet": "Swap out your creaky old box fan for a new model that lights up, mists, or even follows you around the room.",
+      "keyword": "Wired",
+      "region": "Foreign",
+      "published": "Sun, 19 Apr 2026 10:00:00 +0000"
+    },
+    {
+      "title": "It Takes 2 Minutes to Hack the EU’s New Age-Verification App",
+      "url": "https://www.wired.com/story/security-news-this-week-it-takes-2-minutes-to-hack-the-eus-new-age-verification-app/",
+      "snippet": "Plus: Major data breaches at a gym chain and hotel giant, a disruptive DDoS attack against Bluesky, dubious ICE hires, and more.",
+      "keyword": "Wired",
+      "region": "Foreign",
+      "published": "Sat, 18 Apr 2026 10:30:00 +0000"
+    },
+    {
+      "title": "Schematik Is ‘Cursor for Hardware.’ Anthropic Wants In",
+      "url": "https://www.wired.com/story/schematik-is-cursor-for-hardware-anthropic-wants-in-on-it/",
+      "snippet": "Schematik is a program that aims to help people vibe code for physical devices. Hopefully, it won’t blow anything up.",
+      "keyword": "Wired",
+      "region": "Foreign",
+      "published": "Sat, 18 Apr 2026 10:30:00 +0000"
+    },
+    {
+      "title": "OpenAI Executive Kevin Weil Is Leaving the Company",
+      "url": "https://www.wired.com/story/openai-executive-kevin-weil-is-leaving-the-company/",
+      "snippet": "The former Instagram VP is departing the ChatGPT-maker, which is folding the AI science application he led into Codex.",
+      "keyword": "Wired",
+      "region": "Foreign",
+      "published": "Fri, 17 Apr 2026 19:56:42 +0000"
+    },
+    {
+      "title": "OpenAI’s existential questions",
+      "url": "https://techcrunch.com/2026/04/19/openais-existential-questions/",
+      "snippet": "On the latest episode of Equity, we discuss OpenAI's latest acquisitions and whether they address \"two big existential problems\" for the company.",
+      "keyword": "TechCrunch",
+      "region": "Foreign",
+      "published": "Sun, 19 Apr 2026 21:24:06 +0000"
+    },
+    {
+      "title": "The 12-month window",
+      "url": "https://techcrunch.com/2026/04/19/the-12-month-window/",
+      "snippet": "A lot of AI startups exist partly because the foundation models haven't expanded into their category yet. As many jokingly acknowledge, that won't last forever.",
+      "keyword": "TechCrunch",
+      "region": "Foreign",
+      "published": "Sun, 19 Apr 2026 19:30:00 +0000"
+    },
+    {
+      "title": "Blue Origin’s New Glenn put a customer satellite in the wrong orbit during its third launch",
+      "url": "https://techcrunch.com/2026/04/19/blue-origins-new-glenn-put-a-customer-satellite-in-the-wrong-orbit-during-its-third-launch/",
+      "snippet": "The first major failure of Blue Origin's new heavy-launch system could create delays to its ambition to help NASA and the Trump administration return to the Moon.",
+      "keyword": "TechCrunch",
+      "region": "Foreign",
+      "published": "Sun, 19 Apr 2026 19:02:09 +0000"
+    },
+    {
+      "title": "TechCrunch Mobility: Uber enters its assetmaxxing era",
+      "url": "https://techcrunch.com/2026/04/19/techcrunch-mobility-uber-enters-its-assetmaxxing-era/",
+      "snippet": "Welcome back to TechCrunch Mobility, your hub for the future of transportation and now, more than ever, how AI is playing a part.",
+      "keyword": "TechCrunch",
+      "region": "Foreign",
+      "published": "Sun, 19 Apr 2026 16:01:00 +0000"
+    },
+    {
+      "title": "AI chip startup Cerebras files for IPO",
+      "url": "https://techcrunch.com/2026/04/18/ai-chip-startup-cerebras-files-for-ipo/",
+      "snippet": "In recent months, the company announced an agreement with Amazon Web Services to use Cerebras chips in Amazon data centers, as well as a deal with OpenAI reportedly worth more than $10 billion.",
+      "keyword": "TechCrunch",
+      "region": "Foreign",
+      "published": "Sat, 18 Apr 2026 19:19:11 +0000"
+    },
+    {
+      "title": "Anthropic’s relationship with the Trump administration seems to be thawing",
+      "url": "https://techcrunch.com/2026/04/18/anthropics-relationship-with-the-trump-administration-seems-to-be-thawing/",
+      "snippet": "Despite recently being designated a supply-chain risk by the Pentagon, Anthropic is still talking to high-level members of the Trump administration.",
+      "keyword": "TechCrunch",
+      "region": "Foreign",
+      "published": "Sat, 18 Apr 2026 14:56:48 +0000"
+    },
+    {
+      "title": "The App Store is booming again, and AI may be why",
+      "url": "https://techcrunch.com/2026/04/18/the-app-store-is-booming-again-and-ai-may-be-why/",
+      "snippet": "New data from Appfigures shows a swell of new app launches in 2026, suggesting AI tools could be fueling a mobile software boom.",
+      "keyword": "TechCrunch",
+      "region": "Foreign",
+      "published": "Sat, 18 Apr 2026 13:00:00 +0000"
+    },
+    {
+      "title": "Once close enough for an acquisition, Stripe and Airwallex are now going after each other",
+      "url": "https://techcrunch.com/2026/04/17/once-close-enough-for-an-acquisition-stripe-and-airwallex-are-now-going-after-each-other/",
+      "snippet": "For most of its life, Airwallex and Stripe have mostly operated in different geographies, selling to different buyers. That's changing.",
+      "keyword": "TechCrunch",
+      "region": "Foreign",
+      "published": "Sat, 18 Apr 2026 05:20:11 +0000"
+    },
+    {
+      "title": "Sam Altman’s project World looks to scale its human verification empire. First stop: Tinder.",
+      "url": "https://techcrunch.com/2026/04/17/sam-altmans-project-world-looks-to-scale-its-human-verification-empire-first-stop-tinder/",
+      "snippet": "World, which has raised eyebrows (but also a lot of interest) with its Orb-centered anonymous verification project, is looking to expand its influence via a bevy of new partnerships.",
+      "keyword": "TechCrunch",
+      "region": "Foreign",
+      "published": "Fri, 17 Apr 2026 22:34:02 +0000"
+    },
+    {
+      "title": "36氪首发｜「东犁退休俱乐部」完成亿元级B轮融资，为300万活力银发族打造“线上+线下”社交生活方式",
+      "url": "https://36kr.com/p/3719736708200068?f=rss",
+      "snippet": "36氪独家获悉，「上海东犁退休俱乐部」近日完成亿元级B轮融资，由恒旭资本领投，德同资本跟投。本轮资金将用于拓展多元化银发服务场景、加强上游供应链合作，以及推动AI技术与数据中台升级。\n  上海东犁退休俱乐部（以下简称“东犁”）是一家面向退休人群的社交娱乐服务平台，专注为50-80岁活力银发群体提供旅游、聚会、商品、兴趣爱好等综合性服务。\n  截至目前，东犁已累计服",
+      "keyword": "36kr",
+      "region": "China",
+      "published": "2026-04-20 09:00:00  +0800"
+    },
+    {
+      "title": "8点1氪丨12306五一已拒绝抢票软件105.6万张票；万达电影宣布更名；DeepSeek被曝首次启动外部融资，估值超680亿",
+      "url": "https://36kr.com/p/3774401650656001?f=rss",
+      "snippet": "今日热点导览\n  张雪坦言流量已成为甜蜜负担\n  泰坦尼克号救生衣拍出90.6万美元\n  涉案金额2.6亿元，中国摧毁山西特大假酒网络\n  小米集团人事调整，首次任命汽车部CTO\n  国产光纤全球爆单，光纤价格暴涨650% \n  TOP3大新闻\n  12306五",
+      "keyword": "36kr",
+      "region": "China",
+      "published": "2026-04-20 08:02:52  +0800"
+    },
+    {
+      "title": "36氪首发 | 前华为工程师创业，实现临时键合载板存量循环，龙头客户已验证",
+      "url": "https://36kr.com/p/3773090942321155?f=rss",
+      "snippet": "作者丨欧雪\n  编辑丨袁斯来\n  硬氪获悉，环晶芯科技已于近期完成数千万元天使轮融资。本轮由啟赋资本领投，盛世投资、海益资本及湖南省大学生创业投资基金跟投。资金将主要用于公司在无锡的首条量产线建设、研发投入及补充流动资金。\n  环晶芯科技成立于2025年5月，是国内首家提出临时键合载板无损回收复用方案的公司。公司创始人张介元拥有中科院、中科大、哈工大",
+      "keyword": "36kr",
+      "region": "China",
+      "published": "2026-04-19 09:46:49  +0800"
+    },
+    {
+      "title": "智元机器人，要做AI大模型平台和开放生态",
+      "url": "https://36kr.com/p/3770721219035649?f=rss",
+      "snippet": "文｜王毓婵\n  编辑｜杨轩\n  当一家机器人公司决定做AI大模型平台和开放生态，它会给行业带来什么？\n  上个月，智元刚刚跨过“机器人量产下线一万台”的门槛。4月17日，这家由前华为“天才少年”彭志辉与前华为副总裁邓泰华共同创立的机器人公司在合作伙伴大会上，花了大量的时间和篇幅介绍软件上的新产品。相较之下，硬件的篇幅反倒很少。\n  智元",
+      "keyword": "36kr",
+      "region": "China",
+      "published": "2026-04-18 10:00:00  +0800"
+    },
+    {
+      "title": "9点1氪丨霍尔木兹海峡完全开放；雷军称未来几年不会做十万元以内车型；四大一线城市房价全涨",
+      "url": "https://36kr.com/p/3771628958843398?f=rss",
+      "snippet": "今日热点导览\n  瑞幸将上线瓶装咖啡，售价6-7元\n  阿嬷手作新品一杯48元，被吐槽太贵，创始人回应\n  新增海外工作地，字节跳动面向全球招募技术人才\n  苹果31年元老、营销副总",
+      "keyword": "36kr",
+      "region": "China",
+      "published": "2026-04-18 09:06:04  +0800"
+    },
+    {
+      "title": "小米汽车重磅任命：胡峥楠任CTO，宋钢任参谋长｜36氪独家",
+      "url": "https://36kr.com/p/3770688595214857?f=rss",
+      "snippet": "36 氪从多个独立信源获悉，4月17日，小米集团通过内部邮件宣布：胡峥楠出任小米集团副总裁、汽车部 CTO；宋钢出任小米集团汽车部副总裁、参谋长。这是小米汽车自 2021 年宣布成立以来首次设立 CTO 岗位。\n  据 36 氪了解，两位新任高管在汽车行业均有超过二十年的从业积累，履历横跨传统车企与新能源赛道。\n  截至目前，小米汽车研发人员接近万人。一大批各有所",
+      "keyword": "36kr",
+      "region": "China",
+      "published": "2026-04-17 19:23:40  +0800"
+    },
+    {
+      "title": "专访荣耀AI专家李向东：端侧AI方向还没收敛，但AI手机是最好的载体",
+      "url": "https://36kr.com/p/3770819743728131?f=rss",
+      "snippet": "文｜邱晓芬\n  编辑｜苏建勋\n  2026年，AI正在加速从云端落地到端侧。近期，模型厂商和手机厂商都在背后开始发力——\n  3月下旬，国内几大手机厂商几乎同时推送了端侧AI的大规模更新，把原本仅限于旗舰机的AI能力下放到中端和千元机市场。自此，端侧AI终于成为大部分智能手机的标配。",
+      "keyword": "36kr",
+      "region": "China",
+      "published": "2026-04-17 19:17:58  +0800"
+    },
+    {
+      "title": "AI PC下半场，荣耀想让所有人先用上消费级龙虾",
+      "url": "https://36kr.com/p/3770787623404293?f=rss",
+      "snippet": "文｜王欣逸\n  编辑｜苏建勋\n  龙虾热还在继续。\n  4月16日，荣耀进行了一场史上最短的发布会，正式发布此前预热的“养虾本”——荣耀MagicBook系列轻薄本。\n  即便OpenClaw已经刷屏了两个多月，但对于普通用户而言，要养一只原装龙虾，并没有想象中的容易。",
+      "keyword": "36kr",
+      "region": "China",
+      "published": "2026-04-17 19:02:56  +0800"
+    },
+    {
+      "title": "求购长征火箭老股份额；求购多家机器人公司老股份额｜资情留言板第182期",
+      "url": "https://36kr.com/p/3770718127964928?f=rss",
+      "snippet": "资产交易市场，信息瞬息万变，消息真假难辨，即使买卖双方花费大量的时间、精力，推动成交往往困难重重。为了能够帮助买卖双方更快速链接市场信息和潜在交易对手，避免不必要的投入与浪费，我们特地打造了这样一档栏目。\n  本文是这个栏目的第182期。如果你对本文提到的相关的交易线索感兴趣，希望接触这些潜在的交易对手，或者如果你手中直接握有希望交易的资金或者资产，欢迎与我们联系。（邮箱：zc",
+      "keyword": "36kr",
+      "region": "China",
+      "published": "2026-04-17 17:34:38  +0800"
+    },
+    {
+      "title": "别克×火山引擎：至境E7行业首发搭载豆包大模型最新版",
+      "url": "https://www.leiphone.com/category/industrynews/c8rGA0s3Z9EolPet.html",
+      "snippet": "当豆包大模型进入汽车座舱，人车交互不再是你问我答的“客服”，而是能像人一样思考、交流、成长的“数字家人”。</p",
+      "keyword": "雷锋网",
+      "region": "China",
+      "published": "Mon, 13 Apr 2026 16:24:00 +0800"
+    },
+    {
+      "title": "推理卡毛利率下滑超7%，天数智芯「降价换量」的买卖值不值？",
+      "url": "https://www.leiphone.com/category/chips/bwKuuKUGYn8a3IbY.html",
+      "snippet": "2个多月前在港股上市的天数智芯，近期发布了2025年财报。公布当天，股价下跌了10个点。在此之前，天数股价已从342港元的高位大幅回调。财报显示，天数全年营收10.34亿元，同比增长91.6%。一级市场投资人林云直言，这个表现没有达到大家的心理预期。对比其他几家国产公司这两年来的增长速度，市场给天数的营收底线预期是：12亿元。但另一方面，分析师Ethan透露，资本",
+      "keyword": "雷锋网",
+      "region": "China",
+      "published": "Mon, 13 Apr 2026 12:56:00 +0800"
+    },
+    {
+      "title": "明日新程完成连续两轮融资，领跑Harness群体多智能体赛道",
+      "url": "https://www.leiphone.com/category/industrynews/aiDP2A7dwvwQL6Ue.html",
+      "snippet": "日前，由微软小冰原班人马成立的新公司“明日新程”宣布已连续完成两轮融资，重仓布局Harness群体多智能体赛道。其中，天使轮融资由创新工场和Atypical Ventures联合领投，奇绩创坛继续跟投，其余参投方包括原微软全球副总裁David Ku等个人投资者、公司独家财务顾问安可资本等。目前，公司已募得供未来三到五年持续创新的所需资金。明日新程（英文名：Next",
+      "keyword": "雷锋网",
+      "region": "China",
+      "published": "Mon, 13 Apr 2026 12:12:00 +0800"
+    },
+    {
+      "title": "「作弊」内幕曝光！3DMark回应将某知名国产手机除名；李想朋友圈炮轰东风日产恶意拉踩，后者高管回应；美的空调又发行业首创产品",
+      "url": "https://www.leiphone.com/category/zaobao/aAthIc8n66aAjB1c.html",
+      "snippet": "要闻提示1.“作弊” 内幕曝光！3DMark回应将某知名国产手机除名：实测性能相差24%、温度超过50℃<p style=\"text-a",
+      "keyword": "雷锋网",
+      "region": "China",
+      "published": "Mon, 13 Apr 2026 09:34:00 +0800"
+    },
+    {
+      "title": "广州一斗虾赛现场各路选手比拼蒸馏，现场诞生近50个“技能包”",
+      "url": "https://www.leiphone.com/category/industrynews/3Z4Dznh0Tsbg24UJ.html",
+      "snippet": "最近你一定在网上刷到过这些：有人把同事蒸馏成了Skill，让AI模仿他说话的语气；有人蒸馏了老板的决策逻辑，汇报前先让AI预判会不会挨骂；甚至还有人蒸馏了“女娲Skill”，只为能够让龙虾成为“任何一个人”。4月18日，这些网上的脑洞被搬到了现实——近百位虾友齐聚腾讯广州大厦，现场PK“蒸馏万物”。外卖骑手、广告人、电商运营、中专老师……各行各业的人带着各自的真实经验，把人、把",
+      "keyword": "雷锋网",
+      "region": "China",
+      "published": "Sun, 19 Apr 2026 22:51:00 +0800"
+    },
+    {
+      "title": "智元 ×Hitch Open｜深耕具身智能，共建全球物理智能学术生态",
+      "url": "https://www.leiphone.com/category/industrynews/DNm9uCEqB79qKm8k.html",
+      "snippet": "2026 年 4 月 17 日，上海。在汇聚来自 34 个国家与地区 2,500 位合作伙伴的 2026 智元全球合作伙伴大会（AGIBOT Global Partner Conference 2026） 主会场上，智元（AGIBOT）正式官宣加入 Hitch Open AI 自主决策乒乓挑战赛（HOPE），成为具身智能本体战略合作伙伴。这一合作标志着中国具身智能头部企业率先通过国",
+      "keyword": "雷锋网",
+      "region": "China",
+      "published": "Sun, 19 Apr 2026 21:32:00 +0800"
+    },
+    {
+      "title": "2026广汽科技日重磅发布五大核心技术，以“科技向心”引领智能出行时代",
+      "url": "https://www.leiphone.com/category/industrynews/bsKgrHerzusfozkK.html",
+      "snippet": "4月12日，2026广汽科技日在广汽集团番禺总部举行。本届科技日集中发布了星灵架构4.0、芯片生态、星源动力、星舰车身及星河智舱五大领域的最新技术成果，展示了广汽在底层架构、自研芯片及动力集成上的硬核进阶。<img src=\"https://static.leiphone.com/uploads/new/images/20",
+      "keyword": "雷锋网",
+      "region": "China",
+      "published": "Sat, 18 Apr 2026 19:36:00 +0800"
+    },
+    {
+      "title": "一汽大众与卓驭科技的七年协同，交出一份燃油车智能化的成绩单",
+      "url": "https://www.leiphone.com/category/transportation/3pblKpMDYAFjKOTt.html",
+      "snippet": "当前汽车产业正处于电动化与智能化深度融合的转型期，尽管新能源车型快速普及，但燃油车仍是国内汽车市场的核心组成部分",
+      "keyword": "雷锋网",
+      "region": "China",
+      "published": "Sat, 18 Apr 2026 18:46:00 +0800"
+    },
+    {
+      "title": "神牛 MF-T76 微距双头闪光灯开售：TTL 自动闪光、1.2s 高速回电，1299 元",
+      "url": "https://www.ithome.com/0/940/989.htm",
+      "snippet": "IT之家 4 月 20 日消息，神牛 MF-T76 微距双头闪光灯发布于 4 月 15 日，有佳能 / 索尼 / 尼康三版本可选，售价 1299 元；适用于美食、产品、昆虫、植物、珠宝、牙科等微距拍摄。<img class=\"no-alt-img\" src=\"https://img.ith",
+      "keyword": "IT之家",
+      "region": "China",
+      "published": "Mon, 20 Apr 2026 01:00:14 GMT"
+    },
+    {
+      "title": "美光正式上线 24Gb (3GB) GDDR7 内存，提供 32 / 28 Gbps 规格",
+      "url": "https://www.ithome.com/0/940/990.htm",
+      "snippet": "IT之家 4 月 20 日消息，Micron（美光）官网显示，其已正式提供 24Gb (3GB) 容量版本的 GDDR7 显存（内存），提供 32Gbps 和 28Gbps 两种规格。这意味着三大 DRAM 原厂的 24Gb GDDR7 均已正式推出。<img class=\"no-alt-",
+      "keyword": "IT之家",
+      "region": "China",
+      "published": "Mon, 20 Apr 2026 00:58:39 GMT"
+    },
+    {
+      "title": "杨立昆开喷 Anthropic CEO：别信那个卖 AI 的人",
+      "url": "https://www.tmtpost.com/7958990.html",
+      "snippet": "AI 老艺术家的从容。",
+      "keyword": "钛媒体",
+      "region": "China",
+      "published": "Mon, 20 Apr 2026 08:27:00 +0800"
+    },
+    {
+      "title": "开源插件引爆大模型暗战：Claude‑mem爆红背后，是 AI 大厂最不想公开的赚钱秘密",
+      "url": "https://www.tmtpost.com/7958792.html",
+      "snippet": "就这一行代码，差点把大模型巨头们的算盘给砸了。",
+      "keyword": "钛媒体",
+      "region": "China",
+      "published": "Mon, 20 Apr 2026 08:12:00 +0800"
+    },
+    {
+      "title": "眼镜之后，AI指环、项链争抢智能穿戴万亿风口",
+      "url": "https://www.tmtpost.com/7958958.html",
+      "snippet": "AI穿戴设备带你“开挂”。",
+      "keyword": "钛媒体",
+      "region": "China",
+      "published": "Sun, 19 Apr 2026 20:22:24 +0800"
+    },
+    {
+      "title": "【数智周报】DeepSeek据悉正首次洽谈外部资本，估值超100亿美元；台积电CEO：全力扩产仍难以满足强劲AI需求；斯坦福报告：中美顶级大模型差距“实质性消除”",
+      "url": "https://www.tmtpost.com/7958991.html",
+      "snippet": "（4月13日-19日）HappyHorse-1.0上线Arena，将于两周后正式发布；算力涨价潮席卷全球：阿里、Anthropic连续调价，严重算力荒再现；Meta据悉计划裁员10%；英伟达推出全球首个开源量子人工智能模型“ISING”",
+      "keyword": "钛媒体",
+      "region": "China",
+      "published": "Sun, 19 Apr 2026 20:05:56 +0800"
+    }
+  ]
+}

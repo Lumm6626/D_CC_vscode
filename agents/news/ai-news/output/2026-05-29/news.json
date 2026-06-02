@@ -1,0 +1,478 @@
+{
+  "date": "2026-05-29",
+  "count": 59,
+  "news": [
+    {
+      "title": "Anthropic Tops OpenAI to Become the World’s Most Valuable A.I. Start-Up",
+      "url": "https://www.nytimes.com/2026/05/28/technology/anthropic-tops-openai-valuation.html",
+      "snippet": "Anthropic raised $65 billion in new fund-raising that put its value at $900 billion, ahead of OpenAI’s last valuation of $730 billion, as the companies duel for A.I. dominance.",
+      "keyword": "NYTimes",
+      "region": "Foreign",
+      "published": "Thu, 28 May 2026 19:50:31 +0000"
+    },
+    {
+      "title": "In Argentina, U.S. Tech Billionaire Peter Thiel Finds An Escape",
+      "url": "https://www.nytimes.com/2026/05/28/world/americas/peter-thiel-argentina.html",
+      "snippet": "The billionaire’s new roots in Argentina are said to be partly motivated by concerns about the future of the United States and shared beliefs with Argentina’s right-wing leader.",
+      "keyword": "NYTimes",
+      "region": "Foreign",
+      "published": "Thu, 28 May 2026 12:22:29 +0000"
+    },
+    {
+      "title": "At the A.I. Epicenter, Technologists Dismiss Pope Leo’s Warnings About the New Technology",
+      "url": "https://www.nytimes.com/2026/05/26/technology/pope-leo-ai-religion.html",
+      "snippet": "Pope Leo XIV’s spiritual message on artificial intelligence arrived as Silicon Valley’s A.I. enthusiasts pursue their own spirituality through technology.",
+      "keyword": "NYTimes",
+      "region": "Foreign",
+      "published": "Tue, 26 May 2026 21:54:36 +0000"
+    },
+    {
+      "title": "SpaceX IPO Filing Reveals Favorable Terms for Elon Musk",
+      "url": "https://www.nytimes.com/2026/05/26/technology/spacex-elon-musk-pay-board-governance.html",
+      "snippet": "The ways it set up its board and Mr. Musk’s pay appear to benefit him at the expense of other shareholders, corporate governance experts said.",
+      "keyword": "NYTimes",
+      "region": "Foreign",
+      "published": "Tue, 26 May 2026 18:59:37 +0000"
+    },
+    {
+      "title": "‘The Maids,’ With Yerin Ha, Asks: Has Life Become One Big Performance?",
+      "url": "https://www.nytimes.com/2026/05/26/theater/the-maids-play-nyc-genet-yerin-ha-kip-williams.html",
+      "snippet": "In his rethinking of Jean Genet’s classic work about class and power, Kip Williams ponders “a world that gives you every opportunity not to be yourself.”",
+      "keyword": "NYTimes",
+      "region": "Foreign",
+      "published": "Tue, 26 May 2026 09:02:55 +0000"
+    },
+    {
+      "title": "Massachusetts Uber and Lyft Drivers Form First Union for Ride-Share Workers",
+      "url": "https://www.nytimes.com/2026/05/25/business/uber-lyft-app-drivers-union-massachusetts.html",
+      "snippet": "The App Drivers Union said it was the first organization in the country to be formally certified to represent drivers for apps such as Uber and Lyft.",
+      "keyword": "NYTimes",
+      "region": "Foreign",
+      "published": "Mon, 25 May 2026 21:29:58 +0000"
+    },
+    {
+      "title": "As A.I. Fever Rises in Silicon Valley, Pope Leo Has a Few Words",
+      "url": "https://www.nytimes.com/2026/05/25/technology/pope-ai-silicon-valley.html",
+      "snippet": "The American pope wants to take artificial intelligence down a notch. Is he challenging the tech companies, or will tech take over the papacy?",
+      "keyword": "NYTimes",
+      "region": "Foreign",
+      "published": "Mon, 25 May 2026 18:35:03 +0000"
+    },
+    {
+      "title": "UK Institute Is Hunting for Dangers Lurking in AI",
+      "url": "https://www.nytimes.com/2026/05/24/technology/uk-ai-safety-institute.html",
+      "snippet": "The government’s A.I. Security Institute, staffed by alumni from OpenAI and Google, is becoming a model for countries grappling with A.I.’s emerging risks.",
+      "keyword": "NYTimes",
+      "region": "Foreign",
+      "published": "Sun, 24 May 2026 09:01:43 +0000"
+    },
+    {
+      "title": "One Job That Is Growing in the A.I. Era? Cybersecurity Experts.",
+      "url": "https://www.nytimes.com/2026/05/24/technology/ai-cybersecurity-jobs.html",
+      "snippet": "Demand for security engineers has surged as artificial intelligence generates a glut of new code and models like Anthropic’s Mythos create new concerns.",
+      "keyword": "NYTimes",
+      "region": "Foreign",
+      "published": "Mon, 25 May 2026 12:46:11 +0000"
+    },
+    {
+      "title": "Valve hikes Steam Deck prices by more than 40%, blaming rising costs",
+      "url": "https://www.bbc.com/news/articles/cz725d5d1x7o?at_medium=RSS&at_campaign=rss",
+      "snippet": "The gaming giant said the handheld had not changed but the rise reflected \"the current state of component costs\"",
+      "keyword": "BBC",
+      "region": "Foreign",
+      "published": "Thu, 28 May 2026 10:22:55 GMT"
+    },
+    {
+      "title": "Meta repeatedly snubs EU body over Facebook and Instagram user bans",
+      "url": "https://www.bbc.com/news/articles/c152yvwjwkko?at_medium=RSS&at_campaign=rss",
+      "snippet": "The BBC has been contacted by hundreds of users who claimed they had been wrongly banned from the sites.",
+      "keyword": "BBC",
+      "region": "Foreign",
+      "published": "Thu, 28 May 2026 08:28:43 GMT"
+    },
+    {
+      "title": "Porn company fined £600,000 by Ofcom over age check failings",
+      "url": "https://www.bbc.com/news/articles/clypxw6penno?at_medium=RSS&at_campaign=rss",
+      "snippet": "Ofcom said Youngtek Solutions Ltd did not have checks between July and September 2025, but has since brought in verification.",
+      "keyword": "BBC",
+      "region": "Foreign",
+      "published": "Wed, 27 May 2026 10:33:46 GMT"
+    },
+    {
+      "title": "Champion ethical hacker warns AI tools like Mythos will make competing harder",
+      "url": "https://www.bbc.com/news/articles/c3r2zjpryzro?at_medium=RSS&at_campaign=rss",
+      "snippet": "Chompie, one of the world's tops ethical hackers, says AI like Claude Mythos will make it harder for people like her to compete.",
+      "keyword": "BBC",
+      "region": "Foreign",
+      "published": "Wed, 27 May 2026 00:43:55 GMT"
+    },
+    {
+      "title": "Instagram betting ads featuring Kane and Haaland banned",
+      "url": "https://www.bbc.com/news/articles/c3w220y2l8xo?at_medium=RSS&at_campaign=rss",
+      "snippet": "The advertising watchdog said the adverts featuring top footballers had a strong appeal to under-18s.",
+      "keyword": "BBC",
+      "region": "Foreign",
+      "published": "Tue, 26 May 2026 23:33:40 GMT"
+    },
+    {
+      "title": "Starmer vows to act on social media after meeting bereaved parents",
+      "url": "https://www.bbc.com/news/articles/c5y7r9gqp6jo?at_medium=RSS&at_campaign=rss",
+      "snippet": "Some parents believe whether the government will take strong enough action remains to be seen.",
+      "keyword": "BBC",
+      "region": "Foreign",
+      "published": "Tue, 26 May 2026 16:29:53 GMT"
+    },
+    {
+      "title": "AI may speed up search for drugs to treat brain conditions",
+      "url": "https://www.bbc.com/news/articles/cdrp3zzzp71o?at_medium=RSS&at_campaign=rss",
+      "snippet": "Researchers hope the work will help identify affordable, effective drugs to treat conditions like MND.",
+      "keyword": "BBC",
+      "region": "Foreign",
+      "published": "Fri, 22 May 2026 21:30:06 GMT"
+    },
+    {
+      "title": "Waymo pauses robotaxis in five US cities after cars drive into flooded roads",
+      "url": "https://www.bbc.com/news/articles/ckgplyxxl75o?at_medium=RSS&at_campaign=rss",
+      "snippet": "A Waymo spokesperson said it had expanded the temporary pause \"out of an abundance of caution\".",
+      "keyword": "BBC",
+      "region": "Foreign",
+      "published": "Fri, 22 May 2026 16:10:21 GMT"
+    },
+    {
+      "title": "Tech Life",
+      "url": "https://www.bbc.co.uk/sounds/play/live:bbc_world_service?at_medium=RSS&at_campaign=rss",
+      "snippet": "What is the role of a teacher once AI arrives in the school classroom?",
+      "keyword": "BBC",
+      "region": "Foreign",
+      "published": "Tue, 26 May 2026 19:30:00 GMT"
+    },
+    {
+      "title": "The GOP’s Attacks on James Talarico Are Straight Out of the Incel Handbook",
+      "url": "https://www.wired.com/story/gop-attacks-on-james-talarico-incel-handbook/",
+      "snippet": "Claims about low testosterone and false accusations of veganism might play well to the online far right, but will they win an election?",
+      "keyword": "Wired",
+      "region": "Foreign",
+      "published": "Thu, 28 May 2026 23:49:53 +0000"
+    },
+    {
+      "title": "Meta Copies Snapchat’s Homework Again With ‘Plus’ Features for Instagram and Facebook",
+      "url": "https://www.wired.com/story/meta-copies-snapchats-homework-again/",
+      "snippet": "Meta’s upcoming Instagram Plus and Facebook Plus subscriptions are the latest example of the company seeing what works elsewhere and mimicking it.",
+      "keyword": "Wired",
+      "region": "Foreign",
+      "published": "Thu, 28 May 2026 19:09:17 +0000"
+    },
+    {
+      "title": "Here Comes Ojai, Waymo’s New Chinese-Made Robotaxi",
+      "url": "https://www.wired.com/story/here-comes-ojai-waymos-new-chinese-made-robotaxi/",
+      "snippet": "The pale-blue Ojai vehicles will start picking up members of the public in California and Arizona in the next few weeks.",
+      "keyword": "Wired",
+      "region": "Foreign",
+      "published": "Thu, 28 May 2026 15:00:00 +0000"
+    },
+    {
+      "title": "Oura’s New Ring 5 Is Smaller and Lighter—and Adds an AI Health Coach",
+      "url": "https://www.wired.com/story/oura-ring-5/",
+      "snippet": "It’s slimmer, lighter, and more durable. But the real upgrade is Oura’s push into AI-powered health insights and proactive monitoring.",
+      "keyword": "Wired",
+      "region": "Foreign",
+      "published": "Thu, 28 May 2026 12:00:00 +0000"
+    },
+    {
+      "title": "Cotopaxi Allpa 35L Travel Pack Del Día Dark: Sustainable and Chic",
+      "url": "https://www.wired.com/story/bag-check-rave-cotopaxi-allpa-35l-travel-pack-del-dia-dark/",
+      "snippet": "Created from fabric scraps that would otherwise end up in a landfill, this thoughtfully constructed bag looks great and can carry everything you need for a weeklong trip.",
+      "keyword": "Wired",
+      "region": "Foreign",
+      "published": "Thu, 28 May 2026 11:01:00 +0000"
+    },
+    {
+      "title": "New Moms Are Returning to Coding Jobs Radically Reshaped by AI",
+      "url": "https://www.wired.com/story/women-parental-leave-return-office-ai/",
+      "snippet": "New mothers working in software development are staring down an AI-pilled workplace they barely recognize.",
+      "keyword": "Wired",
+      "region": "Foreign",
+      "published": "Thu, 28 May 2026 11:00:00 +0000"
+    },
+    {
+      "title": "Vertu Is Back With a Folding Phone Powered by—Surprise—an AI Agent",
+      "url": "https://www.wired.com/story/vertu-alphafold-folding-phone-powered-by-hermes-agent-ai/",
+      "snippet": "The beleaguered luxury phone maker is pushing the AlphaFold, which has decent specs and comes with Vertu’s new Hermes Agent on board, to wealthy would-be buyers.",
+      "keyword": "Wired",
+      "region": "Foreign",
+      "published": "Thu, 28 May 2026 07:00:00 +0000"
+    },
+    {
+      "title": "Glean’s top line crosses $300M as AI budget-cutting becomes its major selling point",
+      "url": "https://techcrunch.com/2026/05/28/gleans-top-line-crosses-300m-as-ai-budget-cutting-becomes-its-major-selling-point/",
+      "snippet": "The enterprise AI search startup tripled its annual revenue even as tech giants entered the category.",
+      "keyword": "TechCrunch",
+      "region": "Foreign",
+      "published": "Fri, 29 May 2026 00:44:37 +0000"
+    },
+    {
+      "title": "Waymo dominates autonomous vehicle registrations as Tesla trails behind",
+      "url": "https://techcrunch.com/2026/05/28/waymo-dominates-texas-autonomous-vehicle-registrations-as-tesla-trails-behind/",
+      "snippet": "A new law and AV tracker tool gives the clearest accounting yet of how many robotaxis and self-driving trucks are in Texas.",
+      "keyword": "TechCrunch",
+      "region": "Foreign",
+      "published": "Fri, 29 May 2026 00:14:35 +0000"
+    },
+    {
+      "title": "The internet is being rebuilt for machines",
+      "url": "https://techcrunch.com/2026/05/28/the-internet-is-being-rebuilt-for-machines/",
+      "snippet": "As AI agents move from experiments to production, AWS, Cloudflare, and others are redesigning cloud infrastructure for a future dominated by machine-generated internet traffic instead of human users.",
+      "keyword": "TechCrunch",
+      "region": "Foreign",
+      "published": "Thu, 28 May 2026 21:24:01 +0000"
+    },
+    {
+      "title": "Asana acquires no-code agent-builder StackAI",
+      "url": "https://techcrunch.com/2026/05/28/asana-acquires-no-code-agent-builder-stack-ai/",
+      "snippet": "Asana will incorporate StackAI into its growing suite of AI workflow tools.",
+      "keyword": "TechCrunch",
+      "region": "Foreign",
+      "published": "Thu, 28 May 2026 20:06:07 +0000"
+    },
+    {
+      "title": "Hackers are trying to steal Signal users’ backups in new wave of phishing attacks",
+      "url": "https://techcrunch.com/2026/05/28/hackers-are-trying-to-steal-signal-users-backups-in-new-wave-of-phishing-attacks/",
+      "snippet": "A new hacking campaign is trying to trick Signal users to give up their secret recovery key, which can be used to access online backups containing past messages.",
+      "keyword": "TechCrunch",
+      "region": "Foreign",
+      "published": "Thu, 28 May 2026 19:07:24 +0000"
+    },
+    {
+      "title": "Anthropic raises $65 billion, nears $1T valuation ahead of IPO",
+      "url": "https://techcrunch.com/2026/05/28/anthropic-raises-65-billion-nears-1t-valuation-ahead-of-ipo/",
+      "snippet": "Anthropic has closed a $65 billion Series H round at a $965 billion post-money valuation, marking what could be the AI startup's final private fundraise before a highly anticipated IPO.",
+      "keyword": "TechCrunch",
+      "region": "Foreign",
+      "published": "Thu, 28 May 2026 18:52:51 +0000"
+    },
+    {
+      "title": "Just like gold and oil, we’ll soon be able to trade AI token futures",
+      "url": "https://techcrunch.com/2026/05/28/just-like-gold-and-oil-well-soon-be-able-to-trade-ai-token-futures/",
+      "snippet": "Large exchanges are designing derivative products around AI tokens, which are increasingly being considered less a computational output and more a raw material input, like electricity or bandwidth.",
+      "keyword": "TechCrunch",
+      "region": "Foreign",
+      "published": "Thu, 28 May 2026 18:32:25 +0000"
+    },
+    {
+      "title": "H1 secures $40M from CVS, proving SaaS startups can still attract investment",
+      "url": "https://techcrunch.com/2026/05/28/h1-secures-40m-from-cvs-proving-saas-startups-can-still-attract-investment/",
+      "snippet": "CEO Ariel Katz argues that while AI can replicate workflow SaaS, it can't copy H1’s unique doctor data.",
+      "keyword": "TechCrunch",
+      "region": "Foreign",
+      "published": "Thu, 28 May 2026 18:08:37 +0000"
+    },
+    {
+      "title": "A security lapse at prison pay phone service Pay Tel publicly exposed over 300K callers’ driver’s licenses",
+      "url": "https://techcrunch.com/2026/05/28/a-security-lapse-at-prison-payphone-service-pay-tel-publicly-exposed-over-300000-callers-drivers-licenses/",
+      "snippet": "Pay Tel secured the publicly exposed data after security researchers discovered the leak containing callers' sensitive ID documents and inmate communications.",
+      "keyword": "TechCrunch",
+      "region": "Foreign",
+      "published": "Thu, 28 May 2026 18:00:00 +0000"
+    },
+    {
+      "title": "Why Paris may be the most important AI city outside Silicon Valley",
+      "url": "https://techcrunch.com/2026/05/28/why-paris-may-be-the-most-important-ai-city-outside-silicon-valley/",
+      "snippet": "Europe’s startup ecosystem has matured significantly; its founders are increasingly willing to scale companies domestically instead of immediately looking to relocate to the U.S.",
+      "keyword": "TechCrunch",
+      "region": "Foreign",
+      "published": "Thu, 28 May 2026 17:35:30 +0000"
+    },
+    {
+      "title": "36氪首发 | 李泽湘系投过的星空摄影设备品牌再获数百万美金融资，产品即将登陆众筹",
+      "url": "https://36kr.com/p/3829705374098823?f=rss",
+      "snippet": "作者 | 乔钰杰\n  编辑 | 袁斯来\n  硬氪获悉，星空原野（重庆）科技有限公司（以下简称“星空原野”）近日完成新一轮融资，由线性资本独家投资数百万美金，安可资本担任公司独家财务顾问。此前公司曾获明月湖国际智能产业科创基地（XbotPark 重庆）孵化基金，及重庆市种子投资基金投资。\n  星空原野成立于202",
+      "keyword": "36kr",
+      "region": "China",
+      "published": "2026-05-29 09:39:23  +0800"
+    },
+    {
+      "title": "「卡玺CardChic」  获天使轮融资，以中国文化IP＋精品化打造收藏卡品牌 | 36氪首发",
+      "url": "https://36kr.com/p/3829202710045827?f=rss",
+      "snippet": "文 | 小葵\n  编辑 | 刘士武\n  36氪获悉，专注于中国文化IP的精品卡牌发行品牌「卡玺CardChic」近日已完成近千万级人民币天使轮融资。本轮资金将用于重磅IP的签约储备、产品工艺升级以及新一代TCG对战卡牌的研发与推广。 \n  卡玺CardChic创办于2025年，总部位于杭州。核心团队中，创始",
+      "keyword": "36kr",
+      "region": "China",
+      "published": "2026-05-29 09:01:06  +0800"
+    },
+    {
+      "title": "半年访谈600+用户、获千万元融资，这名清华毕业生想把脑机“戴”进运动场｜早期项目",
+      "url": "https://36kr.com/p/3827323136004992?f=rss",
+      "snippet": "文｜胡香赟\n  编辑｜海若镜\n  “运动场景中的脑状态监测，正在成为高水平训练和运动健康管理中的新需求。”创业两年，张昊天这样判断。\n  张昊天毕业于清华大学，研究生期间开始探索如何将脑机接口技术应用在C端场景。他坦言，自己最初也没想好具体的落地方向，研究过程中，团队陆续接触过一些运动类企业，发现“重视运动表现结果的场景，对大脑状态监测都存在一定需求",
+      "keyword": "36kr",
+      "region": "China",
+      "published": "2026-05-29 08:30:00  +0800"
+    },
+    {
+      "title": "8点1氪丨Anthropic完成650亿融资，估值9650亿首次反超OpenAI；售卖不合格足银手镯，周六福被罚；黄仁勋加入清华大学，任经管学院顾问",
+      "url": "https://36kr.com/p/3829622140593288?f=rss",
+      "snippet": "今日热点导览\n  \n   盒马APP可下单租地种菜？客服：正在小范围试点\n   追觅回应“机构报价一天4980元，能与追觅核心高管面对面交流”\n   京东：未来5年培养10万名工程师\n   蔚来CEO李斌：原材料价格上涨，整车成本已涨了1万元左右\n   加密币集体下跌，加密币24小时超16万人",
+      "keyword": "36kr",
+      "region": "China",
+      "published": "2026-05-29 08:15:27  +0800"
+    },
+    {
+      "title": "快手基本面韧性凸显，可灵AI成第二增长曲线",
+      "url": "https://36kr.com/p/3828915666441090?f=rss",
+      "snippet": "封面来源 |  官方供图\n  5月27日，快手（证券代码：1024.HK）公布了2026年一季度财报。\n  财报显示，快手在2026年一季度实现营业收入337亿元，同比增长3.4%，符合市场预期；利润方面，同期实现经营利润36亿元，同比减少15.6%；同期经调整净利润录得34亿元，对应的经调整净利率为10%",
+      "keyword": "36kr",
+      "region": "China",
+      "published": "2026-05-28 20:17:29  +0800"
+    },
+    {
+      "title": "科氪 | 雷神联合AMD发布覆盖三大形态AI工作站产品矩阵",
+      "url": "https://36kr.com/p/3828898785858185?f=rss",
+      "snippet": "5月28日，雷神在北京举办以《聚势共生 智算同行》为主题的AI工作站新品发布会，正式推出覆盖塔式、迷你PC和移动三大类别的AI工作站全场景产品矩阵。这是业内首批完成三大形态全覆盖的AI工作站产品发布，以行业领先的品类矩阵和旗舰级算力水准，重新定义了AI工作站的性能基准。\n  <img src=\"https://img.36krcdn.",
+      "keyword": "36kr",
+      "region": "China",
+      "published": "2026-05-28 19:57:48  +0800"
+    },
+    {
+      "title": "氪星晚报 ｜微博：第一季度总营收4.213亿美元，同比增长6%；科大讯飞发布讯飞AI眼镜；日本太空企业AstroX计划从气球上发射火箭",
+      "url": "https://36kr.com/p/3828874222555782?f=rss",
+      "snippet": "大公司：\n  格林生物创业板IPO过会\n  36氪获悉，深交所上市审核委员会召开2026年第27次上市审核委员会审议会议，审议结果显示，格林生物科技股份有限公司首发符合发行条件、上市条件和信息披露要求。\n  晨光股份：拟以5亿元至10亿元回购股份用于股权激励或员工持股计划",
+      "keyword": "36kr",
+      "region": "China",
+      "published": "2026-05-28 19:35:17  +0800"
+    },
+    {
+      "title": "科氪 | 一天连签10所高校！京东养车构建产教融合型技师培育体系破解人才缺口难",
+      "url": "https://36kr.com/p/3828856781099910?f=rss",
+      "snippet": "5月28日，2026京东养车合作伙伴大会在北京举行，全国各地超2000名加盟商合作伙伴及产业链合作伙伴齐聚一堂，围绕提升用户体验、增强用户信任、以创新驱动门店更高盈利空间等核心议题深入交流。京东养车宣布2025年年底其门店数量已突破4000家，且门店盈利能力保持稳健增长。京东养车也公布了最新招商政策，推出“3年加盟费低至0元、管理费至高减免12月”等扶持举措。活动现场，京东养车还与10所高校",
+      "keyword": "36kr",
+      "region": "China",
+      "published": "2026-05-28 19:14:39  +0800"
+    },
+    {
+      "title": "科氪 | 雷鸟创新双品齐发：GT 系列、V4 同台亮相，次世代 AI 眼镜雷鸟 iO 提前预告",
+      "url": "https://36kr.com/p/3828851140350592?f=rss",
+      "snippet": "2026 年 5 月 27 日，全球领先消费级 AR 品牌雷鸟创新（RayNeo）携手 TCL 好莱坞中国剧院举办夏季新品发布会，正式推出行业首款专业影视级 AR 眼镜雷鸟 GT 系列，以极致巨幕、影院级音画与轻盈佩戴，带来真正媲美影院的随身观影体验，售价 1899 元起；同时，新一代 AI 拍摄眼镜雷鸟 V4，在 AI 响应、超长续航、暗光拍摄、防水防尘等核心体验上全面刷新行业上限，带来真",
+      "keyword": "36kr",
+      "region": "China",
+      "published": "2026-05-28 19:08:59  +0800"
+    },
+    {
+      "title": "智象未来CEO梅涛：多模态模型Token的毛利率，远高于语言模型",
+      "url": "https://36kr.com/p/3820602297208966?f=rss",
+      "snippet": "文｜王欣逸 李嘉星\n  编辑｜周鑫雨\n  一家Day 1就在做多模态大模型的公司，无法拒绝参与到具身智能和世界模型热潮之中。\n  2026年，随着Seedance 2.0、GPT Image 2.0等模型的爆火，多模态能力越来越成为行业内绕不开的关键词。5月19日，智象未来首届开放日",
+      "keyword": "36kr",
+      "region": "China",
+      "published": "2026-05-28 16:20:12  +0800"
+    },
+    {
+      "title": "2026粤港澳大湾区车展前瞻：何以成为“湾区风向标”？",
+      "url": "https://www.leiphone.com/category/industrynews/R6G0ZteT8JRCxgAK.html",
+      "snippet": "2026年5月29日至6月7日，粤港澳大湾区车展将在深圳国际会展中心（宝安）举行。<p style=\"text-align: left; m",
+      "keyword": "雷锋网",
+      "region": "China",
+      "published": "Thu, 28 May 2026 22:11:00 +0800"
+    },
+    {
+      "title": "拼多多推动生态治理常态化：上半年出台40余项举措 主动筑牢合规防线",
+      "url": "https://www.leiphone.com/category/industrynews/gguT0yJQDBSmeUmf.html",
+      "snippet": "AI技术应用越广泛，越要守住合规底线。近日，拼多多发布公告称，禁止平台商家发布及售卖AI押题、AI数据投毒、AI托管网络账号、AI起号、转售AI虚拟账号等相关服务、课程及工具。以AI押题为例，治理范围不仅涵盖以AI押题工具为核心卖点的商品，更延伸至其他各类隐蔽化、变相化服务。比如，一些商家借语文、数学、英语等不同科目，售卖所谓的“押题卷”。此类商品一经发现，将从严处置。",
+      "keyword": "雷锋网",
+      "region": "China",
+      "published": "Thu, 28 May 2026 18:24:00 +0800"
+    },
+    {
+      "title": "腾讯云AI加速出海 ：Agent基建升级，WorkBuddy、Miora全球上线",
+      "url": "https://www.leiphone.com/category/industrynews/50cgx7AdZ3LM8Ka1.html",
+      "snippet": "5月28日，在香港Tencent Cloud Day 上，腾讯云宣布面向 Agent完成全栈升级，新升级 Agent Runtime构建覆盖运行、存储、记忆与安全访问的Agent Infra原生底座。腾讯云国际化进一步加速，腾讯 WorkBuddy、AI 创意工作室 Miora、大模型服务平台 TokenHub 正式面向海外市场开放。腾讯公司高级执行副总裁、云与智慧产业事业群",
+      "keyword": "雷锋网",
+      "region": "China",
+      "published": "Thu, 28 May 2026 18:22:00 +0800"
+    },
+    {
+      "title": "一个时间更早、热点更高的年中大促，和它带来的交易新节奏",
+      "url": "https://www.leiphone.com/category/industrynews/RCvh604hK1zYqVlf.html",
+      "snippet": "2026年夏天还没到，一场围绕它的电商战事已经提前在海外悄然打响。亚马逊今年Prime Day从传统的7月提前至6月23日至26日，促销提报在3月24日就已全面开启。卖家的夏季备战周期整体前移了至少一个月。另一边，被业界认为是对标Prime Day的TikTok Shop年中大促也在6月18日启动，时间更早、跨度更长，覆盖美区、英国、欧盟四国、墨西哥和日本等多个市场",
+      "keyword": "雷锋网",
+      "region": "China",
+      "published": "Thu, 28 May 2026 17:04:00 +0800"
+    },
+    {
+      "title": "ICRA 2026｜EFM: 探索性与聚焦性机器人操作",
+      "url": "https://www.leiphone.com/category/robot/beuqAKLElV9zqrOy.html",
+      "snippet": "原文作者：RIL-Lab实验室ICRA2026录用论文 （https://arxiv",
+      "keyword": "雷锋网",
+      "region": "China",
+      "published": "Thu, 28 May 2026 16:50:00 +0800"
+    },
+    {
+      "title": "华为全面升级星河 AI 网络，Token 生产效率提升 2 至 5 倍",
+      "url": "https://www.ithome.com/0/956/878.htm",
+      "snippet": "IT之家 5 月 29 日消息，昨日，华为数据通信创新峰会 2026· 中国在上海举行，大会吸引了 800 余位行业领袖、技术专家和生态伙伴参与。华为此次围绕智联与安全两大核心能力，对星河 AI 网络全系列产品和解决方案进行了系统性升级。华为数据通信产品线总裁王雷在会上表示，AI Agent 的大规模应用正驱动网络向两个方向全面升级：一方面是面向 AI 的智联升级，打造以 To",
+      "keyword": "IT之家",
+      "region": "China",
+      "published": "Fri, 29 May 2026 01:41:54 GMT"
+    },
+    {
+      "title": "华为超新星手表 X1 系列开售：首搭 HarmonyOS 6.1、支持跨品牌加好友，1598 元起",
+      "url": "https://www.ithome.com/0/956/872.htm",
+      "snippet": "IT之家 5 月 29 日消息，华为超新星手表 X1 系列今日 10:08 正式开售。系列新品分为标准版和 Pro 款，首搭 HarmonyOS 6.1 系统（华为终端鸿蒙智能设备操作系统软件 V6.0）、支持与小天才等品牌儿童手表跨品牌加好友等功能。",
+      "keyword": "IT之家",
+      "region": "China",
+      "published": "Fri, 29 May 2026 01:32:37 GMT"
+    },
+    {
+      "title": "消息称微软有望携手英伟达在台北电脑展公布 N1/N1X 芯片版 Surface 笔记本",
+      "url": "https://www.ithome.com/0/956/871.htm",
+      "snippet": "IT之家 5 月 29 日消息，科技媒体 The Verge 今天（5 月 29 日）发布博文，基于现有的爆料信息，指出微软可能会和英伟达公司合作，推出搭载 NVIDIA N1 系列芯片的 Surface 产品。<img class=\"no-alt-img\" src=\"https://im",
+      "keyword": "IT之家",
+      "region": "China",
+      "published": "Fri, 29 May 2026 01:24:28 GMT"
+    },
+    {
+      "title": "比亚迪天神之眼 C 平台今年将 OTA 升级准城市领航功能：搭载无图端到端大模型，可达天神之眼 4.0 水平",
+      "url": "https://www.ithome.com/0/956/870.htm",
+      "snippet": "IT之家 5 月 29 日消息，在昨晚举行的发布会上，比亚迪公布了天神之眼智驾系统的一系列新动作，覆盖系统升级、选装方案与安全服务等多个层面。就天神之眼 C 版本而言，比亚迪宣布该系统将跳过此前规划中的“城市记忆领航”功能，直接升级为基于无图端到端架构的天神之眼 4.0 版本，实现所谓的“准城市领航”能力 —— 即在不依赖高精地图的前提下，于城区道路提供领航辅助驾驶体验。该功能",
+      "keyword": "IT之家",
+      "region": "China",
+      "published": "Fri, 29 May 2026 01:21:36 GMT"
+    },
+    {
+      "title": "国产AI芯片三国杀：从算力竞争到生态战争",
+      "url": "https://www.tmtpost.com/8006210.html",
+      "snippet": "国产AI芯片三国杀：从算力竞争到生态战争——华为、寒武纪、海光与NVIDIA的差距正在从制程走向开发者生态",
+      "keyword": "钛媒体",
+      "region": "China",
+      "published": "Fri, 29 May 2026 09:39:12 +0800"
+    },
+    {
+      "title": "Edge AI Daily 早报（5月29日）",
+      "url": "https://www.tmtpost.com/8006663.html",
+      "snippet": "Anthropic完成650亿美元H轮融资，估值达9650亿美元，刷新AI初创企业估值纪录。美国政府向量子计算企业注资20亿美元，IBM获10亿建设全球首个300毫米量子晶圆代工厂。欧盟芯片法案2.0扩容至1200亿欧元，强化本土半导体制造。微软Build 2026将发布多款自研AI模型，挑战OpenAI与Anthropic市场地位。超大规模企业2026年资本支出预计达7700亿美元，2027年突",
+      "keyword": "钛媒体",
+      "region": "China",
+      "published": "Fri, 29 May 2026 08:08:43 +0800"
+    },
+    {
+      "title": "【钛晨报】事关城市更新，国务院最新规划；比亚迪发布中国首款4nm智驾芯片“璇玑A3”；太空经济市场规模或将超万亿美元",
+      "url": "https://www.tmtpost.com/8006406.html",
+      "snippet": "中国车企首次突破产销量1亿大关；丰田4月全球销量连续3个月同比减少；澳大利亚起诉美国3M公司，索赔20亿澳元；马斯克：SpaceX尚未承诺长期租赁Colossus；两部门联手，系统布局人工智能计量能力建设；明年6月起实施，光伏组件两项强制性国家标准发布；《国家基本医疗保险医疗服务项目目录（第一批）制定工作方案》公开征求意见；工信部：正在抓紧编制《医药工业发展“十五五”规划》；《煤矿重大事故隐患判定",
+      "keyword": "钛媒体",
+      "region": "China",
+      "published": "Fri, 29 May 2026 07:20:00 +0800"
+    },
+    {
+      "title": "这只油田服务类股票才刚刚起步",
+      "url": "https://www.tmtpost.com/8006483.html",
+      "snippet": "SLB——一家“面向能源的AI工厂”——也将从伊朗战后基础设施支出中受益。",
+      "keyword": "钛媒体",
+      "region": "China",
+      "published": "Thu, 28 May 2026 22:20:39 +0800"
+    },
+    {
+      "title": "Snowflake绩后暴涨36%：AI拐点已至，还是数据云的又一次虚晃？",
+      "url": "https://www.tmtpost.com/8006462.html",
+      "snippet": "市场视之为AI基础设施从硬件转向软件的风向标，产品收入增速34%创史上最强增量，AWS五年60亿协议落地，RPO增长38%。",
+      "keyword": "钛媒体",
+      "region": "China",
+      "published": "Thu, 28 May 2026 22:09:32 +0800"
+    }
+  ]
+}

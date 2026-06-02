@@ -1,0 +1,22 @@
+{
+  "date": "2026-03-28",
+  "count": 2,
+  "news": [
+    {
+      "title": "After local tumor approval, Novocure touts positive data in metastatic pancreatic cancer",
+      "url": "https://www.fiercebiotech.com/medtech/after-local-tumor-approval-novocure-touts-positive-data-metastatic-pancreatic-cancer",
+      "snippet": "After collecting an FDA approval earlier this year for local pancreatic cancer, Novocure is putting forward positive clinical data for its electric field-based treatment in metastatic cases of the aggressive disease.",
+      "keyword": "FierceBiotech",
+      "region": "Foreign",
+      "published": "Mar 27, 2026 10:32am"
+    },
+    {
+      "title": "CMR Surgical kicks off Versius Plus robot’s US commercial launch",
+      "url": "https://www.fiercebiotech.com/medtech/cmr-surgical-kicks-versius-plus-robots-us-commercial-launch",
+      "snippet": "Following FDA approval last December for its upgraded robot, CMR Surgical has begun rolling out its Versius Plus platform in the U.S.",
+      "keyword": "FierceBiotech",
+      "region": "Foreign",
+      "published": "Mar 26, 2026 12:04pm"
+    }
+  ]
+}

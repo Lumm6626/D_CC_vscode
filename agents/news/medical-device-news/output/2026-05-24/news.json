@@ -1,0 +1,20 @@
+{
+  "date": "2026-05-24",
+  "count": 2,
+  "news": [
+    {
+      "title": "FDA approves new AI diagnostic device",
+      "url": "https://www.fda.gov",
+      "snippet": "FDA approves AI-based diagnostic system",
+      "keyword": "FDA",
+      "region": "Foreign"
+    },
+    {
+      "title": "China NMPA approves domestic robot",
+      "url": "https://www.nmpa.gov.cn",
+      "snippet": "Domestic surgical robot receives NMPA approval",
+      "keyword": "NMPA",
+      "region": "China"
+    }
+  ]
+}

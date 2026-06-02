@@ -1,0 +1,873 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI News - 2026-04-22</title>
+    <style>
+        body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; max-width: 800px; margin: 0 auto; padding: 20px; background: #f5f5f5; }
+        .header { background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); color: white; padding: 30px; border-radius: 10px; margin-bottom: 20px; }
+        .header h1 { margin: 0; font-size: 28px; }
+        .header p { margin: 10px 0 0 0; opacity: 0.9; }
+        .top10-section { background: white; padding: 25px; margin-bottom: 25px; border-radius: 12px; box-shadow: 0 2px 8px rgba(0,0,0,0.1); }
+        .top10-section h2 { margin: 0 0 15px 0; color: #1a1a1a; font-size: 20px; padding-bottom: 10px; border-bottom: 2px solid #ff6b6b; }
+        .top10-china { border-left: 4px solid #ff6b6b; }
+        .top10-china h2 { border-bottom-color: #ff6b6b; }
+        .top10-china .top10-item { background: #fff5f5; border-left-color: #ff6b6b; }
+        .top10-china .top10-num { background: #ff6b6b; }
+        .top10-global { border-left: 4px solid #1976d2; }
+        .top10-global h2 { border-bottom-color: #1976d2; }
+        .top10-global .top10-item { background: #f0f7ff; border-left-color: #1976d2; }
+        .top10-global .top10-num { background: #1976d2; }
+        .top10-list { display: flex; flex-direction: column; gap: 10px; }
+        .top10-item { display: flex; gap: 12px; padding: 12px; border-radius: 8px; }
+        .top10-num { color: white; width: 24px; height: 24px; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 12px; font-weight: bold; flex-shrink: 0; }
+        .top10-content { flex: 1; }
+        .top10-title { font-size: 14px; font-weight: 600; color: #333; line-height: 1.4; }
+        .top10-title a { color: #333; text-decoration: none; }
+        .top10-title a:hover { color: #667eea; }
+        .top10-desc { font-size: 13px; color: #666; line-height: 1.4; margin-top: 4px; }
+        .summary-section { background: white; padding: 25px; margin-bottom: 25px; border-radius: 12px; box-shadow: 0 2px 8px rgba(0,0,0,0.1); }
+        .summary-section h2 { margin: 0 0 20px 0; color: #1a1a1a; font-size: 20px; padding-bottom: 15px; border-bottom: 2px solid #667eea; }
+        .category-tags { display: flex; flex-wrap: wrap; gap: 10px; margin-bottom: 20px; }
+        .cat-tag { background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); color: white; padding: 8px 16px; border-radius: 20px; font-size: 14px; }
+        .highlight-list { display: flex; flex-direction: column; gap: 12px; }
+        .highlight-item { display: flex; align-items: flex-start; gap: 12px; padding: 15px; background: #f8f9fa; border-radius: 10px; border-left: 4px solid #667eea; }
+        .highlight-num { background: #667eea; color: white; width: 28px; height: 28px; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 14px; font-weight: bold; flex-shrink: 0; }
+        .highlight-content { flex: 1; }
+        .highlight-title { font-size: 16px; font-weight: 600; color: #333; line-height: 1.5; margin-bottom: 5px; }
+        .highlight-title a { color: #333; text-decoration: none; }
+        .highlight-title a:hover { color: #667eea; }
+        .highlight-snippet { font-size: 13px; color: #666; line-height: 1.5; margin: 5px 0; }
+        .highlight-meta { font-size: 13px; color: #888; }
+        .chinese-summary { margin-top: 20px; }
+        .chinese-summary h3 { color: #333; font-size: 18px; margin-bottom: 15px; }
+        .news-item { background: white; padding: 20px; margin-bottom: 15px; border-radius: 8px; box-shadow: 0 2px 4px rgba(0,0,0,0.1); }
+        .news-date { color: #999; font-size: 12px; margin-bottom: 5px; }
+        .news-item h3 { margin: 0 0 10px 0; color: #333; }
+        .news-item a { color: #667eea; text-decoration: none; }
+        .snippet { color: #666; font-size: 14px; line-height: 1.6; }
+        .tag { display: inline-block; background: #e8f4f8; color: #2a7bb0; padding: 2px 8px; border-radius: 4px; font-size: 12px; margin-right: 8px; }
+        .tag-china { background: #ffeaea; color: #d32f2f; }
+        .tag-foreign { background: #e3f2fd; color: #1976d2; }
+        .news-meta { margin-top: 10px; display: flex; align-items: center; flex-wrap: wrap; gap: 5px; }
+        .section-title { font-size: 16px; font-weight: bold; color: #333; margin: 20px 0 15px 0; padding-bottom: 10px; border-bottom: 2px solid #667eea; }
+        .footer { text-align: center; color: #999; margin-top: 30px; font-size: 12px; }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h1>AI News Daily</h1>
+        <p>2026-04-22 | 45 articles</p>
+    </div>
+
+    
+    <div class="top10-section top10-china">
+        <h2>🇨🇳 中国科技新闻 Top 10</h2>
+        <div class="top10-list">
+            <div class="top10-item">
+                <span class="top10-num">1</span>
+                <div class="top10-content">
+                    <div class="top10-title"><a href="https://36kr.com/p/3774632804057607?f=rss" target="_blank">押注AAV体内 CAR-T ，「西湖云谷智药」即将启动 IIT研究</a></div>
+                    <div class="top10-desc">文｜胡香赟
+  编辑｜海若镜
+  近期万亿市值“药王”礼来斥资 24亿美元 （超 160亿人民币 ）完成的一笔收购 ，将医药行业的目光重新吸引回细胞与基因治疗 （ CGT ）领域。
+  被收购企业Orna Ther</div>
+                </div>
+            </div>
+            <div class="top10-item">
+                <span class="top10-num">2</span>
+                <div class="top10-content">
+                    <div class="top10-title"><a href="https://36kr.com/p/3777227930224900?f=rss" target="_blank">8 点1氪丨 MCN机构回应女孩挪用上千万打赏主播 ；苹果更换 CEO原因曝光 ；国内油价 2026年首次下调</a></div>
+                    <div class="top10-desc">今日热点导览
+  
+   航旅纵横致歉：部分功能出现使用异常 ，正全力抢修
+   星巴克中国回应开放加盟传闻：不实信息
+   微信：韩国、斯里兰卡、泰国、马来西亚、新加坡的国家码接入微信支付
+   截至</div>
+                </div>
+            </div>
+            <div class="top10-item">
+                <span class="top10-num">3</span>
+                <div class="top10-content">
+                    <div class="top10-title"><a href="https://36kr.com/p/3776458805904129?f=rss" target="_blank">氪星晚报｜星巴克中国回应开放加盟传闻 ：不实信息 ；苹果公司宣布特纳斯将接替库克担任首席执行官</a></div>
+                    <div class="top10-desc">大公司：
+  猛士汽车携手华为乾崑发布智能越野黑科技
+  36 氪获悉， 4月 20日 ，猛士汽车举办春季焕新发布会。发布会上，猛士汽车携手华为乾崑联合发布智能越野黑科技 ，同时完成全方位焕新。未来两年，猛士汽</div>
+                </div>
+            </div>
+            <div class="top10-item">
+                <span class="top10-num">4</span>
+                <div class="top10-content">
+                    <div class="top10-title"><a href="https://36kr.com/p/3769659305427459?f=rss" target="_blank">PettiChat 获百万美元种子投资，造出宠物穿戴 AI翻译器</a></div>
+                    <div class="top10-desc">36 氪获悉，宠物 AI科技初创公司 PettiChat于近期完成 100万美元的种子轮融资。由浙大校友基金藕舫天使与华旦天使联合投资 ，本轮融资将主要用于动物行为世界模型的研发、高质量数据集的构建以及首款硬件</div>
+                </div>
+            </div>
+            <div class="top10-item">
+                <span class="top10-num">5</span>
+                <div class="top10-content">
+                    <div class="top10-title"><a href="https://36kr.com/p/3774891479712514?f=rss" target="_blank">奇世智能CheeChips完成天使轮融资 ，专注 AI +母婴智能硬件生态 ｜最前线</a></div>
+                    <div class="top10-desc">专注于AI +母婴智能生态的奇世智能 CheeChips正式宣布完成天使轮融资。
+  本轮资金近半数将被投入技术研发，用于 AI模型迭代、新产品原型打磨与专利布局 ； 30%用于引进顶尖人才、扩充研发与运营团队</div>
+                </div>
+            </div>
+            <div class="top10-item">
+                <span class="top10-num">6</span>
+                <div class="top10-content">
+                    <div class="top10-title"><a href="https://36kr.com/p/3774707915440897?f=rss" target="_blank">智能锂电园林公司完成数千万元融资，出货量破万台 ｜硬氪首发</a></div>
+                    <div class="top10-desc">作者｜黄楠
+  编辑｜袁斯来
+  硬氪获悉，劳尼克斯科技 （南京 ）有限公司 （以下简称 “劳尼克斯”）近日完成数千万元融资 ，投资方为苏州天空工场、宜宾高新前沿科技产业基金、翼朴资本。资金将重点投向核心产品研</div>
+                </div>
+            </div>
+            <div class="top10-item">
+                <span class="top10-num">7</span>
+                <div class="top10-content">
+                    <div class="top10-title"><a href="https://36kr.com/p/3775892441301511?f=rss" target="_blank">专访Eight Sleep CTO ：被马斯克们买爆的 AI床垫 ，进中国先砍一刀订阅费</a></div>
+                    <div class="top10-desc">作者丨欧雪
+  编辑丨袁斯来
+  估值破15在海外风行几年亿美元后 ， AI睡眠系统独角兽 Eight Sleep终于决定进入中国。
+  4 月，他们在深圳南山 INNO100全球创新旗舰店正式发布了售价 19</div>
+                </div>
+            </div>
+            <div class="top10-item">
+                <span class="top10-num">8</span>
+                <div class="top10-content">
+                    <div class="top10-title"><a href="https://36kr.com/p/3775833331286530?f=rss" target="_blank">8 点1氪丨库克将不再担任苹果 CEO ；爱奇艺回应 AI艺人库争议 ：入驻仅代表有接洽意愿 ；日本修正震级为 7.7级</a></div>
+                    <div class="top10-desc">今日热点导览
+  
+   美关税退款系统上线
+   字节跳动2025年海外营收占比创新高 ， AI投入致公司净利大降 70%
+   “五一”临近航班遭取消 ？航空公司：优先签转 ，保障旅客顺利成行
+   贵州茅</div>
+                </div>
+            </div>
+            <div class="top10-item">
+                <span class="top10-num">9</span>
+                <div class="top10-content">
+                    <div class="top10-title"><a href="https://www.leiphone.com/category/industrynews/c8rGA0s3Z9EolPet.html" target="_blank">别克×火山引擎 ：至境 E7行业首发搭载豆包大模型最新版</a></div>
+                    <div class="top10-desc">人车交互不再是你问我答的“客服”当豆包大模型进入汽车座舱 ， “” ，而是能像人一样思考、交流、成长的 “数字家人”。 </p</div>
+                </div>
+            </div>
+            <div class="top10-item">
+                <span class="top10-num">10</span>
+                <div class="top10-content">
+                    <div class="top10-title"><a href="https://www.leiphone.com/category/chips/bwKuuKUGYn8a3IbY.html" target="_blank">推理卡毛利率下滑超7% ，天数智芯「降价换量」的买卖值不值 ？</a></div>
+                    <div class="top10-desc">2 个多月前在港股上市的天数智芯，近期发布了 2025年财报。公布当天 ，股价下跌了 10个点。在此之前 ，天数股价已从 342港元的高位大幅回调。财报显示 ，天数全年营收 10.34亿元 ，同比增长 91.6%。一级市</div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="top10-section top10-global">
+        <h2>🌍 全球科技新闻 Top 10</h2>
+        <div class="top10-list">
+            <div class="top10-item">
+                <span class="top10-num">1</span>
+                <div class="top10-content">
+                    <div class="top10-title"><a href="https://www.bbc.com/news/articles/c4glw5nyrggo?at_medium=RSS&at_campaign=rss" target="_blank">英国游戏偶像Peter Molyneux谈人工智能、他的最终创作和不断变化的行业</a></div>
+                    <div class="top10-desc">寓言等标志性系列的创作者表示，《阿尔比恩大师》将是他制作的最后一款游戏。</div>
+                </div>
+            </div>
+            <div class="top10-item">
+                <span class="top10-num">2</span>
+                <div class="top10-content">
+                    <div class="top10-title"><a href="https://www.bbc.com/news/articles/cvglyklz49jo?at_medium=RSS&at_campaign=rss" target="_blank">用于跟踪工人点击和击键以训练AI的元数据</a></div>
+                    <div class="top10-desc">该公司将从员工为人工智能模型工作的方式中获取数据。</div>
+                </div>
+            </div>
+            <div class="top10-item">
+                <span class="top10-num">3</span>
+                <div class="top10-content">
+                    <div class="top10-title"><a href="https://www.bbc.com/news/articles/cy41zejp9pko?at_medium=RSS&at_campaign=rss" target="_blank">顶级网络官员表示，像Mythos这样的人工智能黑客工具可能是“净积极的”</a></div>
+                    <div class="top10-desc">国家网络安全中心负责人表示，前沿人工智能工具可以成为一股向善的力量--如果</div>
+                </div>
+            </div>
+            <div class="top10-item">
+                <span class="top10-num">4</span>
+                <div class="top10-content">
+                    <div class="top10-title"><a href="https://www.bbc.com/news/articles/c1kr19lry18o?at_medium=RSS&at_campaign=rss" target="_blank">苹果在15年后任命新老板接替蒂姆·库克的新时代</a></div>
+                    <div class="top10-desc">随着库克晋升为高管， Ternus将于9月接管这家科技巨头的运营</div>
+                </div>
+            </div>
+            <div class="top10-item">
+                <span class="top10-num">5</span>
+                <div class="top10-content">
+                    <div class="top10-title"><a href="https://www.bbc.com/news/articles/cjr9vwz48npo?at_medium=RSS&at_campaign=rss" target="_blank">蓝色起源火箭在卫星“事故”后停飞</a></div>
+                    <div class="top10-desc">亚马逊亿万富翁杰夫·贝索斯（ Jeff Bezos ）创立的这家公司正在调查此次失败</div>
+                </div>
+            </div>
+            <div class="top10-item">
+                <span class="top10-num">6</span>
+                <div class="top10-content">
+                    <div class="top10-title"><a href="https://www.bbc.com/news/articles/cyv10e1d13po?at_medium=RSS&at_campaign=rss" target="_blank">出于对神话模式的担忧，白宫和人类组织举行“富有成效”的会议</a></div>
+                    <div class="top10-desc">这场讨论表明，这家人工智能公司的技术可能对美国政府来说太关键了，</div>
+                </div>
+            </div>
+            <div class="top10-item">
+                <span class="top10-num">7</span>
+                <div class="top10-content">
+                    <div class="top10-title"><a href="https://www.bbc.com/news/articles/cp9vppem4evo?at_medium=RSS&at_campaign=rss" target="_blank">Tinder和Zoom提供“人性化证明”眼睛扫描来对抗人工智能</a></div>
+                    <div class="top10-desc">该技术旨在识别人们的虹膜，并阻止虚假账户和恶意诈骗的兴起。</div>
+                </div>
+            </div>
+            <div class="top10-item">
+                <span class="top10-num">8</span>
+                <div class="top10-content">
+                    <div class="top10-title"><a href="https://www.bbc.com/news/articles/crk1py1jgzko?at_medium=RSS&at_campaign=rss" target="_blank">什么是Claude Mythos ？它会带来哪些风险？</a></div>
+                    <div class="top10-desc">该公司声称人工智能工具可以在一些黑客和网络安全任务中超越人类，</div>
+                </div>
+            </div>
+            <div class="top10-item">
+                <span class="top10-num">9</span>
+                <div class="top10-content">
+                    <div class="top10-title"><a href="https://www.wired.com/story/openai-beefs-up-chatgpts-image-generation-model/" target="_blank">OpenAI提升ChatGPT的图像生成模型</a></div>
+                    <div class="top10-desc">ChatGPT Images 2.0模型在这里。我们的测试表明，它更擅长创建更详细的图像</div>
+                </div>
+            </div>
+            <div class="top10-item">
+                <span class="top10-num">10</span>
+                <div class="top10-content">
+                    <div class="top10-title"><a href="https://www.wired.com/story/mozilla-used-anthropics-mythos-to-find-271-bugs-in-firefox/" target="_blank">Mozilla使用Anthropic的神话来查找和修复Firefox中的271个Bug</a></div>
+                    <div class="top10-desc">Firefox团队并不认为新兴的人工智能功能会长期颠覆网络安全，但他们</div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    
+    <div class="summary-section">
+        <h2>AI Daily Highlights</h2>
+        <div class="category-tags"><span class="cat-tag">AI AI Product (20)</span><span class="cat-tag">News Other (16)</span><span class="cat-tag">LLM LLM/Model (7)</span><span class="cat-tag">HW AI Chip (1)</span><span class="cat-tag">Biz AI Industry (1)</span></div>
+
+        <div class="chinese-summary">
+            <h3>Top 10 AI News</h3>
+            
+            <div class="highlight-item">
+                <span class="highlight-num">1</span>
+                <div class="highlight-content">
+                    <div class="highlight-title">
+                        <a href="https://www.bbc.com/news/articles/c4glw5nyrggo?at_medium=RSS&at_campaign=rss" target="_blank" style="color: #333; text-decoration: none;">英国游戏偶像Peter Molyneux谈人工智能、他的最终创作和不断变化的行业</a>
+                    </div>
+                    <p class="highlight-snippet" style="color: #555; font-size: 13px; margin: 5px 0; line-height: 1.4;">寓言等标志性系列的创作者表示，《阿尔比恩大师》将是他制作的最后一款游戏。</p>
+                    <div class="highlight-meta">
+                        <span class="highlight-date">04-21 23:00</span> |
+                        <span class="highlight-source">BBC</span> |
+                        <span style="color: #1976d2;">🌍 全球</span>
+                    </div>
+                </div>
+            </div>
+            <div class="highlight-item">
+                <span class="highlight-num">2</span>
+                <div class="highlight-content">
+                    <div class="highlight-title">
+                        <a href="https://www.bbc.com/news/articles/cvglyklz49jo?at_medium=RSS&at_campaign=rss" target="_blank" style="color: #333; text-decoration: none;">用于跟踪工人点击和击键以训练AI的元数据</a>
+                    </div>
+                    <p class="highlight-snippet" style="color: #555; font-size: 13px; margin: 5px 0; line-height: 1.4;">该公司将从员工为人工智能模型工作的方式中获取数据。</p>
+                    <div class="highlight-meta">
+                        <span class="highlight-date">04-21 22:47</span> |
+                        <span class="highlight-source">BBC</span> |
+                        <span style="color: #1976d2;">🌍 全球</span>
+                    </div>
+                </div>
+            </div>
+            <div class="highlight-item">
+                <span class="highlight-num">3</span>
+                <div class="highlight-content">
+                    <div class="highlight-title">
+                        <a href="https://www.bbc.com/news/articles/cy41zejp9pko?at_medium=RSS&at_campaign=rss" target="_blank" style="color: #333; text-decoration: none;">顶级网络官员表示，像Mythos这样的人工智能黑客工具可能是“净积极的”</a>
+                    </div>
+                    <p class="highlight-snippet" style="color: #555; font-size: 13px; margin: 5px 0; line-height: 1.4;">国家网络安全中心负责人表示，如果不让不法分子掌握，前沿人工智能工具可以成为一股永恒的力量。</p>
+                    <div class="highlight-meta">
+                        <span class="highlight-date">04-21 21:43</span> |
+                        <span class="highlight-source">BBC</span> |
+                        <span style="color: #1976d2;">🌍 全球</span>
+                    </div>
+                </div>
+            </div>
+            <div class="highlight-item">
+                <span class="highlight-num">4</span>
+                <div class="highlight-content">
+                    <div class="highlight-title">
+                        <a href="https://www.bbc.com/news/articles/c1kr19lry18o?at_medium=RSS&at_campaign=rss" target="_blank" style="color: #333; text-decoration: none;">苹果在15年后任命新老板接替蒂姆·库克的新时代</a>
+                    </div>
+                    <p class="highlight-snippet" style="color: #555; font-size: 13px; margin: 5px 0; line-height: 1.4;">随着库克晋升为执行董事长，特纳斯将于9月接管这家科技巨头的运营。</p>
+                    <div class="highlight-meta">
+                        <span class="highlight-date">04-21 05:57</span> |
+                        <span class="highlight-source">BBC</span> |
+                        <span style="color: #1976d2;">🌍 全球</span>
+                    </div>
+                </div>
+            </div>
+            <div class="highlight-item">
+                <span class="highlight-num">5</span>
+                <div class="highlight-content">
+                    <div class="highlight-title">
+                        <a href="https://www.bbc.com/news/articles/cjr9vwz48npo?at_medium=RSS&at_campaign=rss" target="_blank" style="color: #333; text-decoration: none;">蓝色起源火箭在卫星“事故”后停飞</a>
+                    </div>
+                    <p class="highlight-snippet" style="color: #555; font-size: 13px; margin: 5px 0; line-height: 1.4;">亚马逊亿万富翁杰夫·贝索斯（ Jeff Bezos ）创立的这家公司正在调查此次失败</p>
+                    <div class="highlight-meta">
+                        <span class="highlight-date">04-20 19:56</span> |
+                        <span class="highlight-source">BBC</span> |
+                        <span style="color: #1976d2;">🌍 全球</span>
+                    </div>
+                </div>
+            </div>
+            <div class="highlight-item">
+                <span class="highlight-num">6</span>
+                <div class="highlight-content">
+                    <div class="highlight-title">
+                        <a href="https://www.bbc.com/news/articles/cyv10e1d13po?at_medium=RSS&at_campaign=rss" target="_blank" style="color: #333; text-decoration: none;">出于对神话模式的担忧，白宫和人类组织举行“富有成效”的会议</a>
+                    </div>
+                    <p class="highlight-snippet" style="color: #555; font-size: 13px; margin: 5px 0; line-height: 1.4;">这场讨论表明，这家AI公司的技术可能过于关键，即使是美国政府也无法忽视。</p>
+                    <div class="highlight-meta">
+                        <span class="highlight-date">04-18 00:37</span> |
+                        <span class="highlight-source">BBC</span> |
+                        <span style="color: #1976d2;">🌍 全球</span>
+                    </div>
+                </div>
+            </div>
+            <div class="highlight-item">
+                <span class="highlight-num">7</span>
+                <div class="highlight-content">
+                    <div class="highlight-title">
+                        <a href="https://www.bbc.com/news/articles/cp9vppem4evo?at_medium=RSS&at_campaign=rss" target="_blank" style="color: #333; text-decoration: none;">Tinder和Zoom提供“人性化证明”眼睛扫描来对抗人工智能</a>
+                    </div>
+                    <p class="highlight-snippet" style="color: #555; font-size: 13px; margin: 5px 0; line-height: 1.4;">该技术旨在识别人们的虹膜，并阻止虚假账户和恶意诈骗的兴起。</p>
+                    <div class="highlight-meta">
+                        <span class="highlight-date">04-17 19:05</span> |
+                        <span class="highlight-source">BBC</span> |
+                        <span style="color: #1976d2;">🌍 全球</span>
+                    </div>
+                </div>
+            </div>
+            <div class="highlight-item">
+                <span class="highlight-num">8</span>
+                <div class="highlight-content">
+                    <div class="highlight-title">
+                        <a href="https://www.bbc.com/news/articles/crk1py1jgzko?at_medium=RSS&at_campaign=rss" target="_blank" style="color: #333; text-decoration: none;">什么是Claude Mythos ？它会带来哪些风险？</a>
+                    </div>
+                    <p class="highlight-snippet" style="color: #555; font-size: 13px; margin: 5px 0; line-height: 1.4;">该公司声称，人工智能工具在某些黑客和网络安全任务上可以超越人类，这引发了金融界的担忧。</p>
+                    <div class="highlight-meta">
+                        <span class="highlight-date">04-17 13:41</span> |
+                        <span class="highlight-source">BBC</span> |
+                        <span style="color: #1976d2;">🌍 全球</span>
+                    </div>
+                </div>
+            </div>
+            <div class="highlight-item">
+                <span class="highlight-num">9</span>
+                <div class="highlight-content">
+                    <div class="highlight-title">
+                        <a href="https://www.wired.com/story/openai-beefs-up-chatgpts-image-generation-model/" target="_blank" style="color: #333; text-decoration: none;">OpenAI提升ChatGPT的图像生成模型</a>
+                    </div>
+                    <p class="highlight-snippet" style="color: #555; font-size: 13px; margin: 5px 0; line-height: 1.4;">ChatGPT Images 2.0模型在这里。我们的测试表明，它更擅长创建更详细的图像和渲染文本，但它仍然难以使用英语以外的语言。</p>
+                    <div class="highlight-meta">
+                        <span class="highlight-date">04-21 19:00</span> |
+                        <span class="highlight-source">Wired</span> |
+                        <span style="color: #1976d2;">🌍 全球</span>
+                    </div>
+                </div>
+            </div>
+            <div class="highlight-item">
+                <span class="highlight-num">10</span>
+                <div class="highlight-content">
+                    <div class="highlight-title">
+                        <a href="https://www.wired.com/story/mozilla-used-anthropics-mythos-to-find-271-bugs-in-firefox/" target="_blank" style="color: #333; text-decoration: none;">Mozilla使用Anthropic的神话来查找和修复Firefox中的271个Bug</a>
+                    </div>
+                    <p class="highlight-snippet" style="color: #555; font-size: 13px; margin: 5px 0; line-height: 1.4;">Firefox团队认为，新兴的人工智能功能不会长期颠覆网络安全，但他们警告说，软件开发人员可能会面临艰难的转型。</p>
+                    <div class="highlight-meta">
+                        <span class="highlight-date">04-21 18:30</span> |
+                        <span class="highlight-source">Wired</span> |
+                        <span style="color: #1976d2;">🌍 全球</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="section-title">[All News]</div>
+    
+    <div class="news-item">
+        <div class="news-date">04-21 23:00</div>
+        <h3>1. UK gaming icon Peter Molyneux on AI his final creation and a changing industry</h3>
+        <p class="snippet">The creator of iconic series such as Fable says Masters of Albion will be the last game he makes.</p>
+        <div class="news-meta">
+            <a href="https://www.bbc.com/news/articles/c4glw5nyrggo?at_medium=RSS&at_campaign=rss" target="_blank">Original</a>
+            <span class="tag">BBC</span>
+            <span class="tag tag-foreign">EN</span>
+        </div>
+    </div>
+    <div class="news-item">
+        <div class="news-date">04-21 22:47</div>
+        <h3>2. [Meta] to track workers' clicks and keystrokes to train AI</h3>
+        <p class="snippet">The firm will take data from the way employees work for its artificial intelligence models.</p>
+        <div class="news-meta">
+            <a href="https://www.bbc.com/news/articles/cvglyklz49jo?at_medium=RSS&at_campaign=rss" target="_blank">Original</a>
+            <span class="tag">BBC</span>
+            <span class="tag tag-foreign">EN</span>
+        </div>
+    </div>
+    <div class="news-item">
+        <div class="news-date">04-21 21:43</div>
+        <h3>3. AI hacking tools like Mythos can be 'net positive' 称 top cyber official</h3>
+        <p class="snippet">The head of the National Cyber Security Centre says frontier AI tools can be a force for good - if kept out of the wrong hands.</p>
+        <div class="news-meta">
+            <a href="https://www.bbc.com/news/articles/cy41zejp9pko?at_medium=RSS&at_campaign=rss" target="_blank">Original</a>
+            <span class="tag">BBC</span>
+            <span class="tag tag-foreign">EN</span>
+        </div>
+    </div>
+    <div class="news-item">
+        <div class="news-date">04-21 05:57</div>
+        <h3>4. New era as [苹果] names 新 boss to replace Tim Cook after 15 years</h3>
+        <p class="snippet">Ternus will take over running the technology giant in September as Cook steps up to become executive chairman.</p>
+        <div class="news-meta">
+            <a href="https://www.bbc.com/news/articles/c1kr19lry18o?at_medium=RSS&at_campaign=rss" target="_blank">Original</a>
+            <span class="tag">BBC</span>
+            <span class="tag tag-foreign">EN</span>
+        </div>
+    </div>
+    <div class="news-item">
+        <div class="news-date">04-20 19:56</div>
+        <h3>5. Blue Origin rocket grounded after satellite 'mishap'</h3>
+        <p class="snippet">The firm founded by Amazon billionaire Jeff Bezos is investigating the failed launch.</p>
+        <div class="news-meta">
+            <a href="https://www.bbc.com/news/articles/cjr9vwz48npo?at_medium=RSS&at_campaign=rss" target="_blank">Original</a>
+            <span class="tag">BBC</span>
+            <span class="tag tag-foreign">EN</span>
+        </div>
+    </div>
+    <div class="news-item">
+        <div class="news-date">04-18 00:37</div>
+        <h3>6. White House and Anthropic hold 'productive' meeting amid fears over Mythos 模型</h3>
+        <p class="snippet">The discussion is a sign the AI firm's technology may be too critical for even the US government to do without.</p>
+        <div class="news-meta">
+            <a href="https://www.bbc.com/news/articles/cyv10e1d13po?at_medium=RSS&at_campaign=rss" target="_blank">Original</a>
+            <span class="tag">BBC</span>
+            <span class="tag tag-foreign">EN</span>
+        </div>
+    </div>
+    <div class="news-item">
+        <div class="news-date">04-17 19:05</div>
+        <h3>7. Tinder and Zoom offer 'proof of humanity' eye-scans to combat AI</h3>
+        <p class="snippet">The tech aims to identify people's irises and stop the rise of fake accounts and malicious scams.</p>
+        <div class="news-meta">
+            <a href="https://www.bbc.com/news/articles/cp9vppem4evo?at_medium=RSS&at_campaign=rss" target="_blank">Original</a>
+            <span class="tag">BBC</span>
+            <span class="tag tag-foreign">EN</span>
+        </div>
+    </div>
+    <div class="news-item">
+        <div class="news-date">04-17 13:41</div>
+        <h3>8. What is Claude Mythos and what risks does it pose?</h3>
+        <p class="snippet">The company's claim the AI tool can outperform humans at some hacking and cyber-security tasks has sparked fears in the financial world.</p>
+        <div class="news-meta">
+            <a href="https://www.bbc.com/news/articles/crk1py1jgzko?at_medium=RSS&at_campaign=rss" target="_blank">Original</a>
+            <span class="tag">BBC</span>
+            <span class="tag tag-foreign">EN</span>
+        </div>
+    </div>
+    <div class="news-item">
+        <div class="news-date">04-21 19:00</div>
+        <h3>9. [OpenAI] Beefs Up ChatGPT’s Image Generation Model</h3>
+        <p class="snippet">The ChatGPT Images 2.0 model is here. Our testing shows it’s better at creating more detailed images and rendering text, but it still struggles with languages other than English.</p>
+        <div class="news-meta">
+            <a href="https://www.wired.com/story/openai-beefs-up-chatgpts-image-generation-model/" target="_blank">Original</a>
+            <span class="tag">Wired</span>
+            <span class="tag tag-foreign">EN</span>
+        </div>
+    </div>
+    <div class="news-item">
+        <div class="news-date">04-21 18:30</div>
+        <h3>10. Mozilla Used Anthropic’s Mythos to Find and Fix 271 Bugs in Firefox</h3>
+        <p class="snippet">The Firefox team doesn’t think emerging AI capabilities will upend cybersecurity long term, but they warn that software developers are likely in for a rocky transition.</p>
+        <div class="news-meta">
+            <a href="https://www.wired.com/story/mozilla-used-anthropics-mythos-to-find-271-bugs-in-firefox/" target="_blank">Original</a>
+            <span class="tag">Wired</span>
+            <span class="tag tag-foreign">EN</span>
+        </div>
+    </div>
+    <div class="news-item">
+        <div class="news-date">04-21 17:35</div>
+        <h3>11. Tim Cook’s Legacy Is Turning [苹果] Into a Subscription</h3>
+        <p class="snippet">The soon-to-exit Apple CEO went all in on services. Now, the incoming CEO, John Ternus, will need to embrace the AI era.</p>
+        <div class="news-meta">
+            <a href="https://www.wired.com/story/apple-tim-cook-subscription-business/" target="_blank">Original</a>
+            <span class="tag">Wired</span>
+            <span class="tag tag-foreign">EN</span>
+        </div>
+    </div>
+    <div class="news-item">
+        <div class="news-date">04-21 16:00</div>
+        <h3>12. The Best Casio Watches You Can Wear Anywhere</h3>
+        <p class="snippet">From calculators to simple daily beaters, these are my favorite Casio watches on sale today.</p>
+        <div class="news-meta">
+            <a href="https://www.wired.com/gallery/best-casio-watches/" target="_blank">Original</a>
+            <span class="tag">Wired</span>
+            <span class="tag tag-foreign">EN</span>
+        </div>
+    </div>
+    <div class="news-item">
+        <div class="news-date">04-21 11:00</div>
+        <h3>13. This Scammer Used an AI-Generated MAGA Girl to Grift ‘Super Dumb’ Men</h3>
+        <p class="snippet">A med student says he’s made thousands of dollars selling photos and videos of a young conservative woman he created using generative tools. He’s not alone.</p>
+        <div class="news-meta">
+            <a href="https://www.wired.com/story/ai-generated-maga-girls/" target="_blank">Original</a>
+            <span class="tag">Wired</span>
+            <span class="tag tag-foreign">EN</span>
+        </div>
+    </div>
+    <div class="news-item">
+        <div class="news-date">04-21 10:30</div>
+        <h3>14. H2O Audio Tri Run Workout Headphones Review: A Little Underwhelming</h3>
+        <p class="snippet">H2O Audio’s stab at a sub-$100 pair of bone-conduction workout headphones just misses the mark.</p>
+        <div class="news-meta">
+            <a href="https://www.wired.com/review/h2o-audio-tri-run-workout-headphones/" target="_blank">Original</a>
+            <span class="tag">Wired</span>
+            <span class="tag tag-foreign">EN</span>
+        </div>
+    </div>
+    <div class="news-item">
+        <div class="news-date">04-21 10:30</div>
+        <h3>15. The Internet’s Favorite Lawyer Says We’re Living Through ‘Multiple Watergates per Week’</h3>
+        <p class="snippet">Devin Stone turned punchy legal explainers into a YouTube empire. Now he’s warning that the sheer volume of Trump administration scandals is distorting reality itself.</p>
+        <div class="news-meta">
+            <a href="https://www.wired.com/story/the-big-interview-podcast-legal-eagle-devin-stone/" target="_blank">Original</a>
+            <span class="tag">Wired</span>
+            <span class="tag tag-foreign">EN</span>
+        </div>
+    </div>
+    <div class="news-item">
+        <div class="news-date">04-22 00:37</div>
+        <h3>16. Redwood Materials lays off 10% in restructuring to chase energy storage business</h3>
+        <p class="snippet">The company is restructuring some teams to accommodate a booming energy storage business, according to emails viewed by TechCrunch.</p>
+        <div class="news-meta">
+            <a href="https://techcrunch.com/2026/04/21/redwood-materials-lays-off-10-in-restructuring-to-chase-energy-storage-business/" target="_blank">Original</a>
+            <span class="tag">TechCrunch</span>
+            <span class="tag tag-foreign">EN</span>
+        </div>
+    </div>
+    <div class="news-item">
+        <div class="news-date">04-21 23:45</div>
+        <h3>17. [Meta] will record 员工’ keystrokes and use it to train its AI 模型s</h3>
+        <p class="snippet">Meta says that it has a new internal tool that is converting mouse movements and button clicks into data that can train its AI models.</p>
+        <div class="news-meta">
+            <a href="https://techcrunch.com/2026/04/21/meta-will-record-employees-keystrokes-and-use-it-to-train-its-ai-models/" target="_blank">Original</a>
+            <span class="tag">TechCrunch</span>
+            <span class="tag tag-foreign">EN</span>
+        </div>
+    </div>
+    <div class="news-item">
+        <div class="news-date">04-21 23:26</div>
+        <h3>18. Unauthorized group has gained access to Anthropic’s exclusive cyber tool Mythos 报告 claims</h3>
+        <p class="snippet">Anthropic told TechCrunch it is investigating the claims, but maintains that there is no evidence that its systems have been impacted.</p>
+        <div class="news-meta">
+            <a href="https://techcrunch.com/2026/04/21/unauthorized-group-has-gained-access-to-anthropics-exclusive-cyber-tool-mythos-report-claims/" target="_blank">Original</a>
+            <span class="tag">TechCrunch</span>
+            <span class="tag tag-foreign">EN</span>
+        </div>
+    </div>
+    <div class="news-item">
+        <div class="news-date">04-21 19:11</div>
+        <h3>19. AI re搜索 lab NeoCognition lands $40M seed to build agents that learn like humans</h3>
+        <p class="snippet">Founded by an OSU researcher, the startup is developing AI agents that can become experts in any domain.</p>
+        <div class="news-meta">
+            <a href="https://techcrunch.com/2026/04/21/ai-research-lab-neocognition-lands-40m-seed-to-build-agents-that-learn-like-humans/" target="_blank">Original</a>
+            <span class="tag">TechCrunch</span>
+            <span class="tag tag-foreign">EN</span>
+        </div>
+    </div>
+    <div class="news-item">
+        <div class="news-date">04-21 19:09</div>
+        <h3>20. [苹果]’s Cal AI crackdown signals it’s still policing the App Store</h3>
+        <p class="snippet">Apple tells TechCrunch Cal AI was removed not for web payments alone, but for deceptive billing, manipulative tactics, and App Store rule violations.</p>
+        <div class="news-meta">
+            <a href="https://techcrunch.com/2026/04/21/apples-cal-ai-crackdown-signals-its-still-policing-the-app-store/" target="_blank">Original</a>
+            <span class="tag">TechCrunch</span>
+            <span class="tag tag-foreign">EN</span>
+        </div>
+    </div>
+    <div class="news-item">
+        <div class="news-date">04-21 19:00</div>
+        <h3>21. ChatGPT’s 新 Images 20 模型 is surprisingly good at generating text</h3>
+        <p class="snippet">ChatGPT Images 2.0, the newest image-generation model from OpenAI, shows just how much AI capabilities have evolved over the last few years.</p>
+        <div class="news-meta">
+            <a href="https://techcrunch.com/2026/04/21/chatgpts-new-images-2-0-model-is-surprisingly-good-at-generating-text/" target="_blank">Original</a>
+            <span class="tag">TechCrunch</span>
+            <span class="tag tag-foreign">EN</span>
+        </div>
+    </div>
+    <div class="news-item">
+        <div class="news-date">04-21 18:51</div>
+        <h3>22. Sam Altman throws shade at Anthropic’s cyber 模型 Mythos: ‘fear-based marketing’</h3>
+        <p class="snippet">This week, during a podcast appearance, OpenAI CEO Sam Altman called out his competitor's new cybersecurity model, noting that the company was using fear to make its product sound more impressive than</p>
+        <div class="news-meta">
+            <a href="https://techcrunch.com/2026/04/21/sam-altman-throws-shade-at-anthropics-cyber-model-mythos-fear-based-marketing/" target="_blank">Original</a>
+            <span class="tag">TechCrunch</span>
+            <span class="tag tag-foreign">EN</span>
+        </div>
+    </div>
+    <div class="news-item">
+        <div class="news-date">04-21 17:11</div>
+        <h3>23. Clarifai deletes 3 百万 photos that OkCupid provided to train facial recognition AI 报告 称</h3>
+        <p class="snippet">The photo deletion comes after an FTC settlement with Clarifai. The company had asked OkCupid — whose executives had invested in Clarifai — to share data in 2014, according to court documents.</p>
+        <div class="news-meta">
+            <a href="https://techcrunch.com/2026/04/21/clarifai-okcupid-facial-recognition-ai-ftc-settlement/" target="_blank">Original</a>
+            <span class="tag">TechCrunch</span>
+            <span class="tag tag-foreign">EN</span>
+        </div>
+    </div>
+    <div class="news-item">
+        <div class="news-date">04-21 16:00</div>
+        <h3>24. Former Pinterest team redesigns email with Extra — and it’s actually good</h3>
+        <p class="snippet">Extra, from a team of former Pinterest designers and engineers, reimagines email around your life instead of the traditional inbox.</p>
+        <div class="news-meta">
+            <a href="https://techcrunch.com/2026/04/21/former-pinterest-team-redesigns-email-with-extra-and-its-actually-good/" target="_blank">Original</a>
+            <span class="tag">TechCrunch</span>
+            <span class="tag tag-foreign">EN</span>
+        </div>
+    </div>
+    <div class="news-item">
+        <div class="news-date">04-21 16:00</div>
+        <h3>25. AI Dungeon maker Latitude 发布 Voyage a 平台 for creating AI-powered RPGs</h3>
+        <p class="snippet">Latitude's new AI-native platform, Voyage, aims to help gamers create their very own role-playing game.</p>
+        <div class="news-meta">
+            <a href="https://techcrunch.com/2026/04/21/voyage-is-an-ai-rpg-platform-for-creating-custom-gaming-worlds-with-ai-generated-npc-interactions/" target="_blank">Original</a>
+            <span class="tag">TechCrunch</span>
+            <span class="tag tag-foreign">EN</span>
+        </div>
+    </div>
+    <div class="news-item">
+        <div class="news-date">04-21 15:56</div>
+        <h3>26. Ransomware negotiator pleads guilty to helping ransomware gang</h3>
+        <p class="snippet">A former employee of a cybersecurity firm pleaded guilty to aiding ransomware criminals to maximize their profits, with the goal of taking a cut of the ransom.</p>
+        <div class="news-meta">
+            <a href="https://techcrunch.com/2026/04/21/ransomware-negotiator-pleads-guilty-to-helping-ransomware-gang/" target="_blank">Original</a>
+            <span class="tag">TechCrunch</span>
+            <span class="tag tag-foreign">EN</span>
+        </div>
+    </div>
+    <div class="news-item">
+        <div class="news-date">04-22 08:30</div>
+        <h3>27. 押注AAV体内CAR-T，「西湖云谷智药」即将启动IIT研究</h3>
+        <p class="snippet">文｜胡香赟
+  编辑｜海若镜
+  近期，万亿市值“药王”礼来斥资24亿美元（超160亿人民币）完成的一笔收购，将医药行业的目光重新吸引回细胞与基因治疗（CGT）领域。
+  被收购企业Orna Therapeutics主要从事环状RNA研究，核心药物是一款靶向CD19的体内CAR-T，即将步入临床试验阶段。相较动辄百万元一针的传统CAR-T，体内CAR</p>
+        <div class="news-meta">
+            <a href="https://36kr.com/p/3774632804057607?f=rss" target="_blank">Original</a>
+            <span class="tag">36kr</span>
+            <span class="tag tag-china">CN</span>
+        </div>
+    </div>
+    <div class="news-item">
+        <div class="news-date">04-22 07:59</div>
+        <h3>28. 8点1氪丨MCN机构回应女孩挪用上千万打赏主播；苹果更换CEO原因曝光；国内油价2026年首次下调</h3>
+        <p class="snippet">今日热点导览
+  
+   航旅纵横致歉：部分功能出现使用异常，正全力抢修
+   星巴克中国回应开放加盟传闻：不实信息
+   微信：韩国、斯里兰卡、泰国、马来西亚、新加坡的国家码接入微信支付
+   截至3月底，全国5G基站总数已达495.8万个
+   猪价开启“回暖”模式，5家公司去年净利润超1</p>
+        <div class="news-meta">
+            <a href="https://36kr.com/p/3777227930224900?f=rss" target="_blank">Original</a>
+            <span class="tag">36kr</span>
+            <span class="tag tag-china">CN</span>
+        </div>
+    </div>
+    <div class="news-item">
+        <div class="news-date">04-21 19:20</div>
+        <h3>29. 氪星晚报｜星巴克中国回应开放加盟传闻：不实信息；苹果公司宣布特纳斯将接替库克担任CEO</h3>
+        <p class="snippet">大公司：
+  猛士汽车携手华为乾崑发布智能越野黑科技
+  36氪获悉，4月20日，猛士汽车举办春季焕新发布会。发布会上，猛士汽车携手华为乾崑联合发布智能越野黑科技，同时完成全方位焕新。未来两年，猛士汽车将会把智能越野的新技术逐步落地到4款以上的全新车型上。
+  长安汽车朱华荣：2030年力争实现营</p>
+        <div class="news-meta">
+            <a href="https://36kr.com/p/3776458805904129?f=rss" target="_blank">Original</a>
+            <span class="tag">36kr</span>
+            <span class="tag tag-china">CN</span>
+        </div>
+    </div>
+    <div class="news-item">
+        <div class="news-date">04-21 16:19</div>
+        <h3>30. PettiChat获百万美元种子投资，造出宠物穿戴AI翻译器</h3>
+        <p class="snippet">36氪获悉，宠物AI科技初创公司PettiChat于近期完成100万美元的种子轮融资。由浙大校友基金藕舫天使与华旦天使联合投资，本轮融资将主要用于动物行为世界模型的研发、高质量数据集的构建以及首款硬件产品的市场推广。
+  在通用人工智能（AGI）横扫人类语言世界的今天，一个被忽视的语言场景被一家初创企业投入了密切关注——那就是人类与动物之间的沟通。
+  长期以来，</p>
+        <div class="news-meta">
+            <a href="https://36kr.com/p/3769659305427459?f=rss" target="_blank">Original</a>
+            <span class="tag">36kr</span>
+            <span class="tag tag-china">CN</span>
+        </div>
+    </div>
+    <div class="news-item">
+        <div class="news-date">04-21 12:45</div>
+        <h3>31. 奇世智能CheeChips完成天使轮融资，专注AI+母婴智能硬件生态｜最前线</h3>
+        <p class="snippet">专注于AI+母婴智能生态的奇世智能CheeChips正式宣布完成天使轮融资。
+  本轮资金近半数将被投入技术研发，用于AI模型迭代、新产品原型打磨与专利布局；30%用于引进顶尖人才、扩充研发与运营团队；剩余25%投入市场调研、品牌建设与用户需求挖掘。
+  奇世智能推出了家用AI模拟全彩胎儿记录仪，这款硬件能够记录全孕期胎儿成长，改变准妈妈们的孕期体验，让孕期不再是</p>
+        <div class="news-meta">
+            <a href="https://36kr.com/p/3774891479712514?f=rss" target="_blank">Original</a>
+            <span class="tag">36kr</span>
+            <span class="tag tag-china">CN</span>
+        </div>
+    </div>
+    <div class="news-item">
+        <div class="news-date">04-21 09:31</div>
+        <h3>32. 智能锂电园林公司完成数千万元融资，出货量破万台｜硬氪首发</h3>
+        <p class="snippet">作者｜黄楠
+  编辑｜袁斯来
+  硬氪获悉，劳尼克斯科技（南京）有限公司（以下简称“劳尼克斯”）近日完成数千万元融资，投资方为苏州天空工场、宜宾高新前沿科技产业基金、翼朴资本。资金将重点投向核心产品研发迭代、人才团队扩容升级，同时全力支撑海外市场的布局拓展与本地化落地。
+  劳尼克斯核心团队成员来自智能硬件、消费机器人与园林工具等相关领域的头部企业。</p>
+        <div class="news-meta">
+            <a href="https://36kr.com/p/3774707915440897?f=rss" target="_blank">Original</a>
+            <span class="tag">36kr</span>
+            <span class="tag tag-china">CN</span>
+        </div>
+    </div>
+    <div class="news-item">
+        <div class="news-date">04-21 09:17</div>
+        <h3>33. 专访Eight Sleep CTO：被马斯克们买爆的AI床垫，进中国先砍一刀订阅费</h3>
+        <p class="snippet">作者丨欧雪
+  编辑丨袁斯来
+  在海外风行几年，估值破15亿美元后，AI睡眠系统独角兽Eight Sleep终于决定进入中国。
+  4月，他们在深圳南山INNO100全球创新旗舰店正式发布了售价19999元起的Pod 5智能深眠系统，通过微信小程序、京东、天猫等渠道销售。前所未有地，Eight Sleep为中国普通版用户免除了199美元的软件订阅费</p>
+        <div class="news-meta">
+            <a href="https://36kr.com/p/3775892441301511?f=rss" target="_blank">Original</a>
+            <span class="tag">36kr</span>
+            <span class="tag tag-china">CN</span>
+        </div>
+    </div>
+    <div class="news-item">
+        <div class="news-date">04-21 08:19</div>
+        <h3>34. 8点1氪丨库克将不再担任苹果CEO；爱奇艺回应AI艺人库争议：入驻仅代表有接洽意愿；日本修正震级为77级</h3>
+        <p class="snippet">今日热点导览
+  
+   美关税退款系统上线
+   字节跳动2025年海外营收占比创新高，AI投入致公司净利大降70%
+   “五一”临近航班遭取消？航空公司：优先签转，保障旅客顺利成行
+   贵州茅台盘中股价反超源杰科技，重新成为A股“一哥”
+  
+  TOP 3大新闻</p>
+        <div class="news-meta">
+            <a href="https://36kr.com/p/3775833331286530?f=rss" target="_blank">Original</a>
+            <span class="tag">36kr</span>
+            <span class="tag tag-china">CN</span>
+        </div>
+    </div>
+    <div class="news-item">
+        <div class="news-date">04-13 16:24</div>
+        <h3>35. 别克×火山引擎：至境E7行业首发搭载豆包大模型最新版</h3>
+        <p class="snippet">当豆包大模型进入汽车座舱，人车交互不再是你问我答的“客服”，而是能像人一样思考、交流、成长的“数字家人”。</p</p>
+        <div class="news-meta">
+            <a href="https://www.leiphone.com/category/industrynews/c8rGA0s3Z9EolPet.html" target="_blank">Original</a>
+            <span class="tag">雷锋网</span>
+            <span class="tag tag-china">CN</span>
+        </div>
+    </div>
+    <div class="news-item">
+        <div class="news-date">04-13 12:56</div>
+        <h3>36. 推理卡毛利率下滑超7%，天数智芯「降价换量」的买卖值不值？</h3>
+        <p class="snippet">2个多月前在港股上市的天数智芯，近期发布了2025年财报。公布当天，股价下跌了10个点。在此之前，天数股价已从342港元的高位大幅回调。财报显示，天数全年营收10.34亿元，同比增长91.6%。一级市场投资人林云直言，这个表现没有达到大家的心理预期。对比其他几家国产公司这两年来的增长速度，市场给天数的营收底线预期是：12亿元。但另一方面，分析师Ethan透露，资本</p>
+        <div class="news-meta">
+            <a href="https://www.leiphone.com/category/chips/bwKuuKUGYn8a3IbY.html" target="_blank">Original</a>
+            <span class="tag">雷锋网</span>
+            <span class="tag tag-china">CN</span>
+        </div>
+    </div>
+    <div class="news-item">
+        <div class="news-date">04-13 12:12</div>
+        <h3>37. 明日新程完成连续两轮融资，领跑Harness群体多智能体赛道</h3>
+        <p class="snippet">日前，由微软小冰原班人马成立的新公司“明日新程”宣布已连续完成两轮融资，重仓布局Harness群体多智能体赛道。其中，天使轮融资由创新工场和Atypical Ventures联合领投，奇绩创坛继续跟投，其余参投方包括原微软全球副总裁David Ku等个人投资者、公司独家财务顾问安可资本等。目前，公司已募得供未来三到五年持续创新的所需资金。明日新程（英文名：Next</p>
+        <div class="news-meta">
+            <a href="https://www.leiphone.com/category/industrynews/aiDP2A7dwvwQL6Ue.html" target="_blank">Original</a>
+            <span class="tag">雷锋网</span>
+            <span class="tag tag-china">CN</span>
+        </div>
+    </div>
+    <div class="news-item">
+        <div class="news-date">04-13 09:34</div>
+        <h3>38. 「作弊」内幕曝光！3DMark回应将某知名国产手机除名；李想朋友圈炮轰东风日产恶意拉踩，后者高管回应；美的空调又发行业首创产品</h3>
+        <p class="snippet">要闻提示1.“作弊” 内幕曝光！3DMark回应将某知名国产手机除名：实测性能相差24%、温度超过50℃<p style="text-a</p>
+        <div class="news-meta">
+            <a href="https://www.leiphone.com/category/zaobao/aAthIc8n66aAjB1c.html" target="_blank">Original</a>
+            <span class="tag">雷锋网</span>
+            <span class="tag tag-china">CN</span>
+        </div>
+    </div>
+    <div class="news-item">
+        <div class="news-date">04-21 20:24</div>
+        <h3>39. RoboSense速腾聚创发布芯片战略，SPAD-SoC技术代际领先，年内量产交付</h3>
+        <p class="snippet">2026年4月21日，RoboSense速腾聚创在深圳举办2026 Tech Day技术开放日，首次系统性公开芯片战略演进路线与技术成果。现场，两款基于全新“创世”数字化架构的旗舰SPAD-SoC同步亮相：凤凰系列定位单片原生超高线数，孔雀系列定位全固态高分辨率超大面阵。两款芯片均实现行业代际级领先，且将于2026年内量产落地。 凤凰芯片是全球首颗原生单片集成2160</p>
+        <div class="news-meta">
+            <a href="https://www.leiphone.com/category/industrynews/reb1v7Y22QImJyCv.html" target="_blank">Original</a>
+            <span class="tag">雷锋网</span>
+            <span class="tag tag-china">CN</span>
+        </div>
+    </div>
+    <div class="news-item">
+        <div class="news-date">04-21 14:37</div>
+        <h3>40. 蚂蚁技术研究院副院长吕乐当选美国医学与生物工程院（AIMBE）Fellow</h3>
+        <p class="snippet">美国医学与生物工程院（Amer</p>
+        <div class="news-meta">
+            <a href="https://www.leiphone.com/category/ai/p9I1luhTnfcQURAm.html" target="_blank">Original</a>
+            <span class="tag">雷锋网</span>
+            <span class="tag tag-china">CN</span>
+        </div>
+    </div>
+    <div class="news-item">
+        <div class="news-date">04-21 11:40</div>
+        <h3>41. 马斯克未竟的十年物流梦，被一家中国公司实现</h3>
+        <p class="snippet">近日，DeepWay深向宣布Pre-IPO轮再增大额融资，累计募集超3.1亿美元，创下重卡自动驾驶行业近五年最大单轮融资规模纪录。此次融资中，投资机构阵容堪称豪华。不仅阿联酋磊石资本（Stone）领投，还有澳大利亚知名养老基金NGS Super、厦门国升基金跟投，亚洲影响力私募股权基金ABC Impact、南京融和创投作为老股东持续加注。特斯拉CEO马斯克曾畅想，</p>
+        <div class="news-meta">
+            <a href="https://www.leiphone.com/category/transportation/JCFlS1rHlp6C2WKw.html" target="_blank">Original</a>
+            <span class="tag">雷锋网</span>
+            <span class="tag tag-china">CN</span>
+        </div>
+    </div>
+    <div class="news-item">
+        <div class="news-date">04-22 01:10</div>
+        <h3>42. vivo Y600 Pro 手机官宣 4 月 27 日发布，搭载 10200mAh 耐低温电池</h3>
+        <p class="snippet">IT之家 4 月 22 日消息，今日 vivo 官方宣布，vivo Y600 Pro 手机将于 4 月 27 日发布，搭载 10200mAh 耐低温蓝海电池。<img class="no-alt-img" src="https://img.ithome.com/newsuploadfiles/2026/4/f2687dd0</p>
+        <div class="news-meta">
+            <a href="https://www.ithome.com/0/941/891.htm" target="_blank">Original</a>
+            <span class="tag">IT之家</span>
+            <span class="tag tag-china">CN</span>
+        </div>
+    </div>
+    <div class="news-item">
+        <div class="news-date">04-22 00:55</div>
+        <h3>43. Framework Laptop 13 Pro 模块化笔记本电脑发布，搭载 LPCAMM2 内存模组</h3>
+        <p class="snippet">IT之家 4 月 22 日消息，Framework 在北京时间今日凌晨正式发布了 Framework Laptop 13 Pro 笔记本电脑。这一型号延续了该企业产品的模块化设计，拥有完整的 Linux 支持（提供预装 Ubuntu 选项），定位“为 Linux 用户打造的 MacBook Pro”。<p style="text-align: cen</p>
+        <div class="news-meta">
+            <a href="https://www.ithome.com/0/941/882.htm" target="_blank">Original</a>
+            <span class="tag">IT之家</span>
+            <span class="tag tag-china">CN</span>
+        </div>
+    </div>
+    <div class="news-item">
+        <div class="news-date">04-22 08:59</div>
+        <h3>44. 医药投资人：AI时代，Biotech最稀缺的是商业化能力</h3>
+        <p class="snippet">创新药公司要懂临床、懂医保，还要懂市场、懂销售。</p>
+        <div class="news-meta">
+            <a href="https://www.tmtpost.com/7961794.html" target="_blank">Original</a>
+            <span class="tag">钛媒体</span>
+            <span class="tag tag-china">CN</span>
+        </div>
+    </div>
+    <div class="news-item">
+        <div class="news-date">04-22 08:50</div>
+        <h3>45. 押注AI艺人，龚宇给爱奇艺下了剂「猛药」</h3>
+        <p class="snippet">AI艺人库问题在哪？</p>
+        <div class="news-meta">
+            <a href="https://www.tmtpost.com/7961703.html" target="_blank">Original</a>
+            <span class="tag">钛媒体</span>
+            <span class="tag tag-china">CN</span>
+        </div>
+    </div>
+    <div class="footer">
+        Generated by AI News Assistant
+    </div>
+</body>
+</html>

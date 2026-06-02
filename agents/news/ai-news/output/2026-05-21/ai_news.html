@@ -1,0 +1,999 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI News - 2026-05-21</title>
+    <style>
+        body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; max-width: 800px; margin: 0 auto; padding: 20px; background: #f5f5f5; }
+        .header { background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); color: white; padding: 30px; border-radius: 10px; margin-bottom: 20px; }
+        .header h1 { margin: 0; font-size: 28px; }
+        .header p { margin: 10px 0 0 0; opacity: 0.9; }
+        .top10-section { background: white; padding: 25px; margin-bottom: 25px; border-radius: 12px; box-shadow: 0 2px 8px rgba(0,0,0,0.1); }
+        .top10-section h2 { margin: 0 0 15px 0; color: #1a1a1a; font-size: 20px; padding-bottom: 10px; border-bottom: 2px solid #ff6b6b; }
+        .top10-china { border-left: 4px solid #ff6b6b; }
+        .top10-china h2 { border-bottom-color: #ff6b6b; }
+        .top10-china .top10-item { background: #fff5f5; border-left-color: #ff6b6b; }
+        .top10-china .top10-num { background: #ff6b6b; }
+        .top10-global { border-left: 4px solid #1976d2; }
+        .top10-global h2 { border-bottom-color: #1976d2; }
+        .top10-global .top10-item { background: #f0f7ff; border-left-color: #1976d2; }
+        .top10-global .top10-num { background: #1976d2; }
+        .top10-list { display: flex; flex-direction: column; gap: 10px; }
+        .top10-item { display: flex; gap: 12px; padding: 12px; border-radius: 8px; }
+        .top10-num { color: white; width: 24px; height: 24px; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 12px; font-weight: bold; flex-shrink: 0; }
+        .top10-content { flex: 1; }
+        .top10-title { font-size: 14px; font-weight: 600; color: #333; line-height: 1.4; }
+        .top10-title a { color: #333; text-decoration: none; }
+        .top10-title a:hover { color: #667eea; }
+        .top10-desc { font-size: 13px; color: #666; line-height: 1.4; margin-top: 4px; }
+        .summary-section { background: white; padding: 25px; margin-bottom: 25px; border-radius: 12px; box-shadow: 0 2px 8px rgba(0,0,0,0.1); }
+        .summary-section h2 { margin: 0 0 20px 0; color: #1a1a1a; font-size: 20px; padding-bottom: 15px; border-bottom: 2px solid #667eea; }
+        .category-tags { display: flex; flex-wrap: wrap; gap: 10px; margin-bottom: 20px; }
+        .cat-tag { background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); color: white; padding: 8px 16px; border-radius: 20px; font-size: 14px; }
+        .highlight-list { display: flex; flex-direction: column; gap: 12px; }
+        .highlight-item { display: flex; align-items: flex-start; gap: 12px; padding: 15px; background: #f8f9fa; border-radius: 10px; border-left: 4px solid #667eea; }
+        .highlight-num { background: #667eea; color: white; width: 28px; height: 28px; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 14px; font-weight: bold; flex-shrink: 0; }
+        .highlight-content { flex: 1; }
+        .highlight-title { font-size: 16px; font-weight: 600; color: #333; line-height: 1.5; margin-bottom: 5px; }
+        .highlight-title a { color: #333; text-decoration: none; }
+        .highlight-title a:hover { color: #667eea; }
+        .highlight-snippet { font-size: 13px; color: #666; line-height: 1.5; margin: 5px 0; }
+        .highlight-meta { font-size: 13px; color: #888; }
+        .chinese-summary { margin-top: 20px; }
+        .chinese-summary h3 { color: #333; font-size: 18px; margin-bottom: 15px; }
+        .news-item { background: white; padding: 20px; margin-bottom: 15px; border-radius: 8px; box-shadow: 0 2px 4px rgba(0,0,0,0.1); }
+        .news-date { color: #999; font-size: 12px; margin-bottom: 5px; }
+        .news-item h3 { margin: 0 0 10px 0; color: #333; }
+        .news-item a { color: #667eea; text-decoration: none; }
+        .snippet { color: #666; font-size: 14px; line-height: 1.6; }
+        .tag { display: inline-block; background: #e8f4f8; color: #2a7bb0; padding: 2px 8px; border-radius: 4px; font-size: 12px; margin-right: 8px; }
+        .tag-china { background: #ffeaea; color: #d32f2f; }
+        .tag-foreign { background: #e3f2fd; color: #1976d2; }
+        .news-meta { margin-top: 10px; display: flex; align-items: center; flex-wrap: wrap; gap: 5px; }
+        .section-title { font-size: 16px; font-weight: bold; color: #333; margin: 20px 0 15px 0; padding-bottom: 10px; border-bottom: 2px solid #667eea; }
+        .footer { text-align: center; color: #999; margin-top: 30px; font-size: 12px; }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h1>AI News Daily</h1>
+        <p>2026-05-21 | 59 articles</p>
+    </div>
+
+    
+    <div class="top10-section top10-china">
+        <h2>🇨🇳 中国科技新闻 Top 10</h2>
+        <div class="top10-list">
+            <div class="top10-item">
+                <span class="top10-num">1</span>
+                <div class="top10-content">
+                    <div class="top10-title"><a href="https://36kr.com/p/3818280989443202?f=rss" target="_blank">8 点1氪丨英伟达 Q1净利润 583亿美元 ；谷歌 CEO ： Gemini月活跃用户达 9亿 ；寿司郎回应 “盘子抽检10抽 10脏”</a></div>
+                    <div class="top10-desc">今日热点导览
+  俄罗斯将延长对中国公民的免签制度
+  张雪首度谈及签约德比斯原因
+  微信再度开放520大额红包 ，限时 1天 
+  罗欣药业回应阿奇霉素劣药事件
+  段永平最新持仓公布
+  TOP3大</div>
+                </div>
+            </div>
+            <div class="top10-item">
+                <span class="top10-num">2</span>
+                <div class="top10-content">
+                    <div class="top10-title"><a href="https://36kr.com/p/3817849322964098?f=rss" target="_blank">网易520发布会 ：质量为先 ，狙击细分赛道</a></div>
+                    <div class="top10-desc">5 月20日 ， 2026年『网易游戏 520线上发布会』正式举办 ，公布了 40余款游戏及 IP的最新动态。其中， 520发布会上公布的部分重要新品如下 ： 
+  《遗忘之海》
+  < img src = "https:/</div>
+                </div>
+            </div>
+            <div class="top10-item">
+                <span class="top10-num">3</span>
+                <div class="top10-content">
+                    <div class="top10-title"><a href="https://36kr.com/p/3816942423000196?f=rss" target="_blank">氪星晚报｜ 2026年福布斯中国人工智能科技企业TOP50发布中关村科金入选三星劳资谈判破裂 ，威刚董事长称 DRAM、 NAND恐再掀涨价潮 ；新交所与中国银行签署新版战略合作备忘录</a></div>
+                    <div class="top10-desc">大公司：
+  新加坡加码人工智能布局，英伟达将落地本地研发中心
+  全球AI芯片巨头英伟达</div>
+                </div>
+            </div>
+            <div class="top10-item">
+                <span class="top10-num">4</span>
+                <div class="top10-content">
+                    <div class="top10-title"><a href="https://36kr.com/p/3817353357968516?f=rss" target="_blank">第四届中国AIGC产业峰会在京顺利举办 ！近 20位行业大咖解码代理与非共识机遇</a></div>
+                    <div class="top10-desc">今日，由量子位主办的第四届中国 AIGC产业峰会在京启幕。
+  2026 年， AI产业一路高歌猛进。从到“龙虾线束” ，爆款代理接连出圈、风靡全网。面对层出不穷的新业态与新玩法，不少从业</div>
+                </div>
+            </div>
+            <div class="top10-item">
+                <span class="top10-num">5</span>
+                <div class="top10-content">
+                    <div class="top10-title"><a href="https://36kr.com/p/3817039204139908?f=rss" target="_blank">长鑫科技更新招股书，碧桂园错失 300亿</a></div>
+                    <div class="top10-desc">地产行业内收获一个又一个首次曾有望跑出两家明星创投企业公开发行一家是世纪金源另一家是碧桂园。前者现在做得顺风顺水，首次公开发行而碧桂园因为地产业务暴雷，首次公开被迫中断了在科技领域的投资发行需要大量资金保交楼大爆发，首。</div>
+                </div>
+            </div>
+            <div class="top10-item">
+                <span class="top10-num">6</span>
+                <div class="top10-content">
+                    <div class="top10-title"><a href="https://36kr.com/p/3816909945029760?f=rss" target="_blank">要做数字劳动力生产工厂，「未来式智能」完成 Pre-A轮融资</a></div>
+                    <div class="top10-desc">文｜王欣逸
+  编辑｜邓咏仪
+  36 氪获悉，未来式智能 （ AutoAgents.ai ）近日完成 Pre-A轮融资 ，新进投资方包括凡创资本、中关村资本、探元资本 ，老股东东证创新、麟阁创投跟投 ，本轮融资主要</div>
+                </div>
+            </div>
+            <div class="top10-item">
+                <span class="top10-num">7</span>
+                <div class="top10-content">
+                    <div class="top10-title"><a href="https://36kr.com/p/3816947890471812?f=rss" target="_blank">早期项目 |概率AI获美图等数百万美元投资 ，用户数已达 20万</a></div>
+                    <div class="top10-desc">作者丨欧雪
+  编辑丨袁斯来
+  硬氪获悉，视觉特工（ Visual Agent视觉智能体 ）创业公司 Chance AI宣布完成数百万美元天使轮融资。本轮由美图领投NYX Ventures、阿里系投资机构等跟投</div>
+                </div>
+            </div>
+            <div class="top10-item">
+                <span class="top10-num">8</span>
+                <div class="top10-content">
+                    <div class="top10-title"><a href="https://www.leiphone.com/category/industrynews/qlFtSPjNd1qD0RVw.html" target="_blank">全球首部95分钟 AI长片将在戛纳电影节首映 ，由 Seedance 2.0制作</a></div>
+                    <div class="top10-desc">法国当地时间5月 19日 ，字节跳动旗下火山引擎携 Seedance 2.0亮相第 79届戛纳电影节。多家国际级企业现场披露了与 Seedance 2.0的合作进展 ，顶尖视觉特效公司 Outpost VFX、全球</div>
+                </div>
+            </div>
+            <div class="top10-item">
+                <span class="top10-num">9</span>
+                <div class="top10-content">
+                    <div class="top10-title"><a href="https://www.leiphone.com/category/industrynews/oFWmY9nYLzEJkh6o.html" target="_blank">拆解有道“子曰4”全量开源 ：如何通过重构思维链打下落地成本 ？</a></div>
+                    <div class="top10-desc">近日网易有道宣布“子曰”大模型迎来 4.0 版本的全方位升级。“子曰4” 正式迈入全模态时代不仅全面支持文本、图片、音频的融合交互，有道更宣布将核心的与 “多模态模型”语音合成 （ TTS ）</div>
+                </div>
+            </div>
+            <div class="top10-item">
+                <span class="top10-num">10</span>
+                <div class="top10-content">
+                    <div class="top10-title"><a href="https://www.leiphone.com/category/industrynews/aCL3eqdE7TkJiPWs.html" target="_blank">国产GPU进军 AIPC ：铠大师与摩尔线程达成生态共建合作</a></div>
+                    <div class="top10-desc">2026年年5月月18日日，摩尔线程在北京发布 “云边- -端”全栈智算矩阵从夸娥智算集群 ，到 MTT、 AICUBE AIBOOK、 MT Lambda和 MUSA生态 ，展示了国产 GPU企业从云端算力走向家庭、边缘</div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="top10-section top10-global">
+        <h2>🌍 全球科技新闻 Top 10</h2>
+        <div class="top10-list">
+            <div class="top10-item">
+                <span class="top10-num">1</span>
+                <div class="top10-content">
+                    <div class="top10-title"><a href="https://www.nytimes.com/2026/05/20/technology/openai-ipo.html" target="_blank">OpenAI准备在未来几周内申请IPO</a></div>
+                    <div class="top10-desc">OpenAI将是最受期待的潜在首次公开募股之一，</div>
+                </div>
+            </div>
+            <div class="top10-item">
+                <span class="top10-num">2</span>
+                <div class="top10-content">
+                    <div class="top10-title"><a href="https://www.nytimes.com/2026/05/20/business/nvidia-earnings.html" target="_blank">英伟达的利润达到583亿美元，因为A.I. Boom聚集了更多的蒸汽</a></div>
+                    <div class="top10-desc">这家芯片制造商表示，其最近一个季度的利润比去年同期增长了211% ，</div>
+                </div>
+            </div>
+            <div class="top10-item">
+                <span class="top10-num">3</span>
+                <div class="top10-content">
+                    <div class="top10-title"><a href="https://www.nytimes.com/2026/05/20/technology/meta-layoffs-ai-song.html" target="_blank">8,000首裁员原声带： Meta Worker的裁员主题人工智能歌曲</a></div>
+                    <div class="top10-desc">在Meta裁员的黑暗日子里，一名员工做出回应，创建了一个内部广播电台，</div>
+                </div>
+            </div>
+            <div class="top10-item">
+                <span class="top10-num">4</span>
+                <div class="top10-content">
+                    <div class="top10-title"><a href="https://www.nytimes.com/2026/05/19/technology/meta-layoffs-ai.html" target="_blank">Meta裁减8,000名员工，作为A.I.人员伤亡</a></div>
+                    <div class="top10-desc">员工签署了反对被人工智能跟踪的请愿书，并试图找出是谁</div>
+                </div>
+            </div>
+            <div class="top10-item">
+                <span class="top10-num">5</span>
+                <div class="top10-content">
+                    <div class="top10-title"><a href="https://www.nytimes.com/2026/05/19/technology/personaltech/google-gemini-ai.html" target="_blank">谷歌如何开始赢得人工智能竞赛</a></div>
+                    <div class="top10-desc">尽管谷歌的Gemini在早期遭遇了挫折，但在相关性和实用性方面已经超越了ChatGPT。Soo</div>
+                </div>
+            </div>
+            <div class="top10-item">
+                <span class="top10-num">6</span>
+                <div class="top10-content">
+                    <div class="top10-title"><a href="https://www.nytimes.com/2026/05/19/technology/openai-musk-legal-challenges.html" target="_blank">随着OpenAI庆祝法庭战胜马斯克，其他挑战也即将到来</a></div>
+                    <div class="top10-desc">陪审团驳回了埃隆·马斯克（ Elon Musk ）对OpenAI的1500亿美元诉讼，这是一个主要障碍。Bu</div>
+                </div>
+            </div>
+            <div class="top10-item">
+                <span class="top10-num">7</span>
+                <div class="top10-content">
+                    <div class="top10-title"><a href="https://www.nytimes.com/2026/05/19/business/energy-environment/electrc-vehicles-annual-fee-congress.html" target="_blank">两党法案将对电动汽车征收新的年费</a></div>
+                    <div class="top10-desc">本周推出的众议院交通法案将要求电动汽车车主支付$ 130吨</div>
+                </div>
+            </div>
+            <div class="top10-item">
+                <span class="top10-num">8</span>
+                <div class="top10-content">
+                    <div class="top10-title"><a href="https://www.nytimes.com/2026/05/18/technology/elon-musk-openai-trial.html" target="_blank">在埃隆·马斯克（ Elon Musk ）的法庭失利之后，漫长的炎热A.I.夏天来临</a></div>
+                    <div class="top10-desc">即使抗议活动增加，马斯克对OpenAI和山姆·奥尔特曼的诉讼也将加速</div>
+                </div>
+            </div>
+            <div class="top10-item">
+                <span class="top10-num">9</span>
+                <div class="top10-content">
+                    <div class="top10-title"><a href="https://www.nytimes.com/2026/05/18/technology/elon-musk-lawsuit-openai-sam-altman.html" target="_blank">伊隆·马斯克（ Elon Musk ）对OpenAI和山姆·奥尔特曼（ Sam Altman ）输了1500亿美元的</a></div>
+                    <div class="top10-desc">一个由9名成员组成的陪审团发现，马斯克等了太久才起诉。科技大亨的挫折</div>
+                </div>
+            </div>
+            <div class="top10-item">
+                <span class="top10-num">10</span>
+                <div class="top10-content">
+                    <div class="top10-title"><a href="https://www.nytimes.com/2026/05/18/technology/elon-musk-openai-trial-takeaways.html" target="_blank">伊隆·马斯克（ Elon Musk ）对阵OpenAI的重磅试验的五个要点</a></div>
+                    <div class="top10-desc">陪审团花了不到两个小时就认定马斯克先生等了太久才起诉。但</div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    
+    <div class="summary-section">
+        <h2>AI Daily Highlights</h2>
+        <div class="category-tags"><span class="cat-tag">AI AI Product (32)</span><span class="cat-tag">News Other (23)</span><span class="cat-tag">HW AI Chip (2)</span><span class="cat-tag">LLM LLM/Model (1)</span><span class="cat-tag">VID AI Video (1)</span></div>
+
+        <div class="chinese-summary">
+            <h3>Top 10 AI News</h3>
+            
+            <div class="highlight-item">
+                <span class="highlight-num">1</span>
+                <div class="highlight-content">
+                    <div class="highlight-title">
+                        <a href="https://www.nytimes.com/2026/05/20/technology/openai-ipo.html" target="_blank" style="color: #333; text-decoration: none;">OpenAI准备在未来几周内申请IPO</a>
+                    </div>
+                    <p class="highlight-snippet" style="color: #555; font-size: 13px; margin: 5px 0; line-height: 1.4;">OpenAI将是最受期待的潜在首次公开募股之一，这将是硅谷IPO的重要一年。</p>
+                    <div class="highlight-meta">
+                        <span class="highlight-date">05-20 18:41</span> |
+                        <span class="highlight-source">NYTimes</span> |
+                        <span style="color: #1976d2;">🌍 全球</span>
+                    </div>
+                </div>
+            </div>
+            <div class="highlight-item">
+                <span class="highlight-num">2</span>
+                <div class="highlight-content">
+                    <div class="highlight-title">
+                        <a href="https://www.nytimes.com/2026/05/20/business/nvidia-earnings.html" target="_blank" style="color: #333; text-decoration: none;">英伟达的利润达到583亿美元，因为A.I. Boom聚集了更多的蒸汽</a>
+                    </div>
+                    <p class="highlight-snippet" style="color: #555; font-size: 13px; margin: 5px 0; line-height: 1.4;">这家芯片制造商表示，由于其他大型科技公司的极端需求，其最近一个季度的利润同比增长211%。</p>
+                    <div class="highlight-meta">
+                        <span class="highlight-date">05-20 22:54</span> |
+                        <span class="highlight-source">NYTimes</span> |
+                        <span style="color: #1976d2;">🌍 全球</span>
+                    </div>
+                </div>
+            </div>
+            <div class="highlight-item">
+                <span class="highlight-num">3</span>
+                <div class="highlight-content">
+                    <div class="highlight-title">
+                        <a href="https://www.nytimes.com/2026/05/20/technology/meta-layoffs-ai-song.html" target="_blank" style="color: #333; text-decoration: none;">8,000首裁员原声带： Meta Worker的裁员主题人工智能歌曲</a>
+                    </div>
+                    <p class="highlight-snippet" style="color: #555; font-size: 13px; margin: 5px 0; line-height: 1.4;">在Meta裁员的黑暗日子里，一名员工做出了回应，创建了一个内部广播电台，播放有关裁员的歌曲—当然是由人工智能产生的。</p>
+                    <div class="highlight-meta">
+                        <span class="highlight-date">05-20 22:57</span> |
+                        <span class="highlight-source">NYTimes</span> |
+                        <span style="color: #1976d2;">🌍 全球</span>
+                    </div>
+                </div>
+            </div>
+            <div class="highlight-item">
+                <span class="highlight-num">4</span>
+                <div class="highlight-content">
+                    <div class="highlight-title">
+                        <a href="https://www.nytimes.com/2026/05/19/technology/meta-layoffs-ai.html" target="_blank" style="color: #333; text-decoration: none;">Meta裁减8,000名员工，作为A.I.人员伤亡</a>
+                    </div>
+                    <p class="highlight-snippet" style="color: #555; font-size: 13px; margin: 5px 0; line-height: 1.4;">随着这家硅谷巨头试图转型为AI优先公司，员工们已经签署了反对被AI跟踪的请愿书，并试图找出谁在周三被解雇。</p>
+                    <div class="highlight-meta">
+                        <span class="highlight-date">05-20 21:56</span> |
+                        <span class="highlight-source">NYTimes</span> |
+                        <span style="color: #1976d2;">🌍 全球</span>
+                    </div>
+                </div>
+            </div>
+            <div class="highlight-item">
+                <span class="highlight-num">5</span>
+                <div class="highlight-content">
+                    <div class="highlight-title">
+                        <a href="https://www.nytimes.com/2026/05/19/technology/personaltech/google-gemini-ai.html" target="_blank" style="color: #333; text-decoration: none;">谷歌如何开始赢得人工智能竞赛</a>
+                    </div>
+                    <p class="highlight-snippet" style="color: #555; font-size: 13px; margin: 5px 0; line-height: 1.4;">尽管早期遭遇了挫折，但谷歌的Gemini在相关性和实用性方面已经超越了ChatGPT。很快，它将无处不在。</p>
+                    <div class="highlight-meta">
+                        <span class="highlight-date">05-19 19:41</span> |
+                        <span class="highlight-source">NYTimes</span> |
+                        <span style="color: #1976d2;">🌍 全球</span>
+                    </div>
+                </div>
+            </div>
+            <div class="highlight-item">
+                <span class="highlight-num">6</span>
+                <div class="highlight-content">
+                    <div class="highlight-title">
+                        <a href="https://www.nytimes.com/2026/05/19/technology/openai-musk-legal-challenges.html" target="_blank" style="color: #333; text-decoration: none;">随着OpenAI庆祝法庭战胜马斯克，其他挑战也即将到来</a>
+                    </div>
+                    <p class="highlight-snippet" style="color: #555; font-size: 13px; margin: 5px 0; line-height: 1.4;">陪审团驳回了埃隆·马斯克（ Elon Musk ）对OpenAI的1500亿美元诉讼，这是一个主要障碍。但ChatGPT的制造商面临着一系列其他问题。</p>
+                    <div class="highlight-meta">
+                        <span class="highlight-date">05-19 13:32</span> |
+                        <span class="highlight-source">NYTimes</span> |
+                        <span style="color: #1976d2;">🌍 全球</span>
+                    </div>
+                </div>
+            </div>
+            <div class="highlight-item">
+                <span class="highlight-num">7</span>
+                <div class="highlight-content">
+                    <div class="highlight-title">
+                        <a href="https://www.nytimes.com/2026/05/19/business/energy-environment/electrc-vehicles-annual-fee-congress.html" target="_blank" style="color: #333; text-decoration: none;">两党法案将对电动汽车征收新的年费</a>
+                    </div>
+                    <p class="highlight-snippet" style="color: #555; font-size: 13px; margin: 5px 0; line-height: 1.4;">本周推出的众议院交通法案将要求电动汽车车主支付130 $来支付道路维修费用。</p>
+                    <div class="highlight-meta">
+                        <span class="highlight-date">05-19 18:24</span> |
+                        <span class="highlight-source">NYTimes</span> |
+                        <span style="color: #1976d2;">🌍 全球</span>
+                    </div>
+                </div>
+            </div>
+            <div class="highlight-item">
+                <span class="highlight-num">8</span>
+                <div class="highlight-content">
+                    <div class="highlight-title">
+                        <a href="https://www.nytimes.com/2026/05/18/technology/elon-musk-openai-trial.html" target="_blank" style="color: #333; text-decoration: none;">在埃隆·马斯克（ Elon Musk ）的法庭失利之后，漫长的炎热A.I.夏天来临</a>
+                    </div>
+                    <p class="highlight-snippet" style="color: #555; font-size: 13px; margin: 5px 0; line-height: 1.4;">即使抗议活动增加，马斯克对OpenAI和山姆·奥尔特曼的诉讼的失败也将加速人工智能的发展。</p>
+                    <div class="highlight-meta">
+                        <span class="highlight-date">05-19 00:12</span> |
+                        <span class="highlight-source">NYTimes</span> |
+                        <span style="color: #1976d2;">🌍 全球</span>
+                    </div>
+                </div>
+            </div>
+            <div class="highlight-item">
+                <span class="highlight-num">9</span>
+                <div class="highlight-content">
+                    <div class="highlight-title">
+                        <a href="https://www.nytimes.com/2026/05/18/technology/elon-musk-lawsuit-openai-sam-altman.html" target="_blank" style="color: #333; text-decoration: none;">伊隆·马斯克（ Elon Musk ）对OpenAI和山姆·奥尔特曼（ Sam Altman ）输了1500亿美元的</a>
+                    </div>
+                    <p class="highlight-snippet" style="color: #555; font-size: 13px; margin: 5px 0; line-height: 1.4;">一个由9名成员组成的陪审团发现，马斯克等了太久才起诉。这位科技大亨的挫折让OpenAI得以继续参与人工智能竞赛。</p>
+                    <div class="highlight-meta">
+                        <span class="highlight-date">05-19 22:26</span> |
+                        <span class="highlight-source">NYTimes</span> |
+                        <span style="color: #1976d2;">🌍 全球</span>
+                    </div>
+                </div>
+            </div>
+            <div class="highlight-item">
+                <span class="highlight-num">10</span>
+                <div class="highlight-content">
+                    <div class="highlight-title">
+                        <a href="https://www.nytimes.com/2026/05/18/technology/elon-musk-openai-trial-takeaways.html" target="_blank" style="color: #333; text-decoration: none;">伊隆·马斯克（ Elon Musk ）对阵OpenAI的重磅试验的五个要点</a>
+                    </div>
+                    <p class="highlight-snippet" style="color: #555; font-size: 13px; margin: 5px 0; line-height: 1.4;">陪审团花了不到两个小时就认定马斯克等了太久才起诉。但三个星期的证词仍然很有启发性。</p>
+                    <div class="highlight-meta">
+                        <span class="highlight-date">05-18 22:45</span> |
+                        <span class="highlight-source">NYTimes</span> |
+                        <span style="color: #1976d2;">🌍 全球</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="section-title">[All News]</div>
+    
+    <div class="news-item">
+        <div class="news-date">05-20 18:41</div>
+        <h3>1. [OpenAI] Prepares to File for an IPO in Coming Weeks</h3>
+        <p class="snippet">OpenAI would be one of the most highly anticipated potential initial public offerings, in what is set to be a major year of I.P.O.s for Silicon Valley.</p>
+        <div class="news-meta">
+            <a href="https://www.nytimes.com/2026/05/20/technology/openai-ipo.html" target="_blank">Original</a>
+            <span class="tag">NYTimes</span>
+            <span class="tag tag-foreign">EN</span>
+        </div>
+    </div>
+    <div class="news-item">
+        <div class="news-date">05-20 22:54</div>
+        <h3>2. [英伟达]’s Profit Hits $583 Billion as AI Boom Gathers More Steam</h3>
+        <p class="snippet">The chip maker said its profit in its most recent quarter jumped 211 percent from a year earlier thanks to extreme demand from other big technology companies.</p>
+        <div class="news-meta">
+            <a href="https://www.nytimes.com/2026/05/20/business/nvidia-earnings.html" target="_blank">Original</a>
+            <span class="tag">NYTimes</span>
+            <span class="tag tag-foreign">EN</span>
+        </div>
+    </div>
+    <div class="news-item">
+        <div class="news-date">05-20 22:57</div>
+        <h3>3. Soundtrack to 8,000 Job Cuts: A [Meta] Worker’s Layoff-Themed AI Songs</h3>
+        <p class="snippet">On a dark day of layoffs at Meta, one employee responded by creating an internal radio station that plays songs about job cuts — generated by artificial intelligence, of course.</p>
+        <div class="news-meta">
+            <a href="https://www.nytimes.com/2026/05/20/technology/meta-layoffs-ai-song.html" target="_blank">Original</a>
+            <span class="tag">NYTimes</span>
+            <span class="tag tag-foreign">EN</span>
+        </div>
+    </div>
+    <div class="news-item">
+        <div class="news-date">05-20 21:56</div>
+        <h3>4. [Meta] Lays Off 8,000 Employees as AI Casualties Mount</h3>
+        <p class="snippet">Employees have signed petitions against being tracked by A.I. and were trying to figure out who had been let go on Wednesday, as the Silicon Valley giant tries to transform into an A.I.-first company.</p>
+        <div class="news-meta">
+            <a href="https://www.nytimes.com/2026/05/19/technology/meta-layoffs-ai.html" target="_blank">Original</a>
+            <span class="tag">NYTimes</span>
+            <span class="tag tag-foreign">EN</span>
+        </div>
+    </div>
+    <div class="news-item">
+        <div class="news-date">05-19 19:41</div>
+        <h3>5. How [谷歌] Is Starting to Win the AI Race</h3>
+        <p class="snippet">Despite its early stumbles, Google’s Gemini has leapfrogged ChatGPT in relevance and usefulness. Soon, it will be ubiquitous.</p>
+        <div class="news-meta">
+            <a href="https://www.nytimes.com/2026/05/19/technology/personaltech/google-gemini-ai.html" target="_blank">Original</a>
+            <span class="tag">NYTimes</span>
+            <span class="tag tag-foreign">EN</span>
+        </div>
+    </div>
+    <div class="news-item">
+        <div class="news-date">05-19 13:32</div>
+        <h3>6. As [OpenAI] Celebrates Court Win Against Musk Other Challenges Lie Ahead</h3>
+        <p class="snippet">A jury’s rejection of Elon Musk’s $150 billion lawsuit against OpenAI was a major hurdle crossed. But the maker of ChatGPT faces a list of other problems.</p>
+        <div class="news-meta">
+            <a href="https://www.nytimes.com/2026/05/19/technology/openai-musk-legal-challenges.html" target="_blank">Original</a>
+            <span class="tag">NYTimes</span>
+            <span class="tag tag-foreign">EN</span>
+        </div>
+    </div>
+    <div class="news-item">
+        <div class="news-date">05-19 18:24</div>
+        <h3>7. Bipartisan Bill Would Impose New Annual Fee on Electric Vehicles</h3>
+        <p class="snippet">A House transportation bill introduced this week would require owners of electric cars to pay $130 to cover the cost of road repairs.</p>
+        <div class="news-meta">
+            <a href="https://www.nytimes.com/2026/05/19/business/energy-environment/electrc-vehicles-annual-fee-congress.html" target="_blank">Original</a>
+            <span class="tag">NYTimes</span>
+            <span class="tag tag-foreign">EN</span>
+        </div>
+    </div>
+    <div class="news-item">
+        <div class="news-date">05-19 00:12</div>
+        <h3>8. After [马斯克]’s Court Loss Comes the Long Hot AI Summer</h3>
+        <p class="snippet">Even as protests increase, the collapse of Mr. Musk’s suit against OpenAI and Sam Altman will speed up the artificial intelligence juggernaut.</p>
+        <div class="news-meta">
+            <a href="https://www.nytimes.com/2026/05/18/technology/elon-musk-openai-trial.html" target="_blank">Original</a>
+            <span class="tag">NYTimes</span>
+            <span class="tag tag-foreign">EN</span>
+        </div>
+    </div>
+    <div class="news-item">
+        <div class="news-date">05-19 22:26</div>
+        <h3>9. [马斯克] Loses $150 Billion Suit Against [OpenAI] and Sam Altman</h3>
+        <p class="snippet">A nine-member jury found that Mr. Musk had waited too long to sue. The setback for the tech mogul frees OpenAI to continue in the artificial intelligence race.</p>
+        <div class="news-meta">
+            <a href="https://www.nytimes.com/2026/05/18/technology/elon-musk-lawsuit-openai-sam-altman.html" target="_blank">Original</a>
+            <span class="tag">NYTimes</span>
+            <span class="tag tag-foreign">EN</span>
+        </div>
+    </div>
+    <div class="news-item">
+        <div class="news-date">05-18 22:45</div>
+        <h3>10. Five Takeaways From the Blockbuster Trial Pitting [马斯克] Against [OpenAI]</h3>
+        <p class="snippet">It took a jury less than two hours to decide that Mr. Musk had waited too long to sue. But the testimony over three weeks was still illuminating.</p>
+        <div class="news-meta">
+            <a href="https://www.nytimes.com/2026/05/18/technology/elon-musk-openai-trial-takeaways.html" target="_blank">Original</a>
+            <span class="tag">NYTimes</span>
+            <span class="tag tag-foreign">EN</span>
+        </div>
+    </div>
+    <div class="news-item">
+        <div class="news-date">05-21 00:47</div>
+        <h3>11. TikTok and YouTube 'not safe enough' for kids 称 Ofcom</h3>
+        <p class="snippet">YouTube said it worked with experts to provide appropriate experiences. TikTok said it was disappointed Ofcom had not acknowledged its safety features.</p>
+        <div class="news-meta">
+            <a href="https://www.bbc.com/news/articles/cn0pky4zpxxo?at_medium=RSS&at_campaign=rss" target="_blank">Original</a>
+            <span class="tag">BBC</span>
+            <span class="tag tag-foreign">EN</span>
+        </div>
+    </div>
+    <div class="news-item">
+        <div class="news-date">05-20 23:11</div>
+        <h3>12. SpaceX files for IPO that could make [马斯克] a trillionaire</h3>
+        <p class="snippet">Musk's rocket-maker and satellite internet provider will trade under the ticker SPCX</p>
+        <div class="news-meta">
+            <a href="https://www.bbc.com/news/articles/cg4pe2953q1o?at_medium=RSS&at_campaign=rss" target="_blank">Original</a>
+            <span class="tag">BBC</span>
+            <span class="tag tag-foreign">EN</span>
+        </div>
+    </div>
+    <div class="news-item">
+        <div class="news-date">05-20 10:27</div>
+        <h3>13. US groups urge 投资igation into child safety and spending on Roblox</h3>
+        <p class="snippet">Roblox said it had "clear policies" banning actual and simulated gambling, as well as rules governing paid random items.</p>
+        <div class="news-meta">
+            <a href="https://www.bbc.com/news/articles/cgqpz809e7lo?at_medium=RSS&at_campaign=rss" target="_blank">Original</a>
+            <span class="tag">BBC</span>
+            <span class="tag tag-foreign">EN</span>
+        </div>
+    </div>
+    <div class="news-item">
+        <div class="news-date">05-19 21:00</div>
+        <h3>14. [谷歌] to 发布 首个 smart glasses since [谷歌] Glass flop</h3>
+        <p class="snippet">The glasses will go on sale sometime in autumn and allow Google's artificial intelligence product to interact with a user.</p>
+        <div class="news-meta">
+            <a href="https://www.bbc.com/news/articles/cvgz1ynq1nqo?at_medium=RSS&at_campaign=rss" target="_blank">Original</a>
+            <span class="tag">BBC</span>
+            <span class="tag tag-foreign">EN</span>
+        </div>
+    </div>
+    <div class="news-item">
+        <div class="news-date">05-19 11:05</div>
+        <h3>15. Zoe Kleinman: Why the AI industry is the real winner of the Musk-Altman trial</h3>
+        <p class="snippet">The trial in Oakland, California has helped lift the veil on the AI sector - and the huge egos of the men at the heart of it.</p>
+        <div class="news-meta">
+            <a href="https://www.bbc.com/news/articles/crlp991nw41o?at_medium=RSS&at_campaign=rss" target="_blank">Original</a>
+            <span class="tag">BBC</span>
+            <span class="tag tag-foreign">EN</span>
+        </div>
+    </div>
+    <div class="news-item">
+        <div class="news-date">05-19 08:45</div>
+        <h3>16. [马斯克] has lost yet another legal battle Why he'll still keep fighting</h3>
+        <p class="snippet">Musk has lost his high-profile lawsuit against OpenAI, but is not likely to change his aggressive style.</p>
+        <div class="news-meta">
+            <a href="https://www.bbc.com/news/articles/cqlpz4w6v13o?at_medium=RSS&at_campaign=rss" target="_blank">Original</a>
+            <span class="tag">BBC</span>
+            <span class="tag tag-foreign">EN</span>
+        </div>
+    </div>
+    <div class="news-item">
+        <div class="news-date">05-18 23:04</div>
+        <h3>17. Satellites and AI used to track UK hedgehogs in bid to slow decline</h3>
+        <p class="snippet">Researchers hope the project will also help to identify barriers preventing hedgehogs from finding food and mates in the wild.</p>
+        <div class="news-meta">
+            <a href="https://www.bbc.com/news/articles/c202g60qrlpo?at_medium=RSS&at_campaign=rss" target="_blank">Original</a>
+            <span class="tag">BBC</span>
+            <span class="tag tag-foreign">EN</span>
+        </div>
+    </div>
+    <div class="news-item">
+        <div class="news-date">05-18 22:08</div>
+        <h3>18. Musk loses [OpenAI] court battle after jury finds he waited too long to sue</h3>
+        <p class="snippet">Jurors spent weeks hearing about Musk's claim that Altman had "stolen a charity."</p>
+        <div class="news-meta">
+            <a href="https://www.bbc.com/news/articles/cewpyv79pw1o?at_medium=RSS&at_campaign=rss" target="_blank">Original</a>
+            <span class="tag">BBC</span>
+            <span class="tag tag-foreign">EN</span>
+        </div>
+    </div>
+    <div class="news-item">
+        <div class="news-date">05-18 09:33</div>
+        <h3>19. Instant AI answers can trivialise human intelligence warns Royal Observatory</h3>
+        <p class="snippet">Paddy Rodgers said the Observatory's rich history showed the power of human knowledge and the need to avoid "dependence" on AI.</p>
+        <div class="news-meta">
+            <a href="https://www.bbc.com/news/articles/c2023l60370o?at_medium=RSS&at_campaign=rss" target="_blank">Original</a>
+            <span class="tag">BBC</span>
+            <span class="tag tag-foreign">EN</span>
+        </div>
+    </div>
+    <div class="news-item">
+        <div class="news-date">05-15 12:57</div>
+        <h3>20. X pledges quicker action on hate and terror content in the UK</h3>
+        <p class="snippet">Ofcom said the commitments were of particular importance after recent crimes targeting Jewish communities in the UK.</p>
+        <div class="news-meta">
+            <a href="https://www.bbc.com/news/articles/clyp9652v18o?at_medium=RSS&at_campaign=rss" target="_blank">Original</a>
+            <span class="tag">BBC</span>
+            <span class="tag tag-foreign">EN</span>
+        </div>
+    </div>
+    <div class="news-item">
+        <div class="news-date">05-15 05:03</div>
+        <h3>21. Claim counter-claim and tech's seedy side exposed: Five things we learned in the Musk-Altman trial</h3>
+        <p class="snippet">As the jury deliberates, this is what we found out during the weeks-long trial with two tech titans at its heart.</p>
+        <div class="news-meta">
+            <a href="https://www.bbc.com/news/articles/cg7pj8p5mv4o?at_medium=RSS&at_campaign=rss" target="_blank">Original</a>
+            <span class="tag">BBC</span>
+            <span class="tag tag-foreign">EN</span>
+        </div>
+    </div>
+    <div class="news-item">
+        <div class="news-date">05-19 20:00</div>
+        <h3>22. Tech Life</h3>
+        <p class="snippet">We talk to an expert about the risks from AI hackers</p>
+        <div class="news-meta">
+            <a href="https://www.bbc.co.uk/sounds/play/w3ct8jxw?at_medium=RSS&at_campaign=rss" target="_blank">Original</a>
+            <span class="tag">BBC</span>
+            <span class="tag tag-foreign">EN</span>
+        </div>
+    </div>
+    <div class="news-item">
+        <div class="news-date">05-21 00:43</div>
+        <h3>23. SpaceX Listed Grok’s ‘Spicy’ Mode as a Risk in Its IPO Filing</h3>
+        <p class="snippet">The rocket company has set aside more than $500 million for potential litigation losses, in part to account for complaints alleging that Grok created sexualized images.</p>
+        <div class="news-meta">
+            <a href="https://www.wired.com/story/spacex-ipo-grok-spicy-mode-risks/" target="_blank">Original</a>
+            <span class="tag">Wired</span>
+            <span class="tag tag-foreign">EN</span>
+        </div>
+    </div>
+    <div class="news-item">
+        <div class="news-date">05-20 23:30</div>
+        <h3>24. SpaceX Is Spending $28 Billion to Buy Gas Turbines for Its AI Data Centers</h3>
+        <p class="snippet">The investment comes as Elon Musk’s AI unit faces complaints about the carbon-emitting units and looks to become a big player in cloud computing.</p>
+        <div class="news-meta">
+            <a href="https://www.wired.com/story/elon-musk-spacex-spending-gas-turbines-grok/" target="_blank">Original</a>
+            <span class="tag">Wired</span>
+            <span class="tag tag-foreign">EN</span>
+        </div>
+    </div>
+    <div class="news-item">
+        <div class="news-date">05-20 21:43</div>
+        <h3>25. SpaceX IPO Filing Reveals Anthropic Is Paying $15 Billion a Year to Access Its Data Centers</h3>
+        <p class="snippet">The long-awaited documents SpaceX filed with US regulators Wednesday included details about a lucrative deal to lend GPUs to a major AI rival.</p>
+        <div class="news-meta">
+            <a href="https://www.wired.com/story/spacex-ipo-anthropic-compute-finances-risks/" target="_blank">Original</a>
+            <span class="tag">Wired</span>
+            <span class="tag tag-foreign">EN</span>
+        </div>
+    </div>
+    <div class="news-item">
+        <div class="news-date">05-20 18:00</div>
+        <h3>26. I Gave My OpenClaw Agent a Physical Body</h3>
+        <p class="snippet">The coding skills of AI models are about to make it much easier to build and deploy robots.</p>
+        <div class="news-meta">
+            <a href="https://www.wired.com/story/i-gave-my-openclaw-agent-physical-body-robot/" target="_blank">Original</a>
+            <span class="tag">Wired</span>
+            <span class="tag tag-foreign">EN</span>
+        </div>
+    </div>
+    <div class="news-item">
+        <div class="news-date">05-20 16:24</div>
+        <h3>27. A New York Cop Got Injured at a Boxing Match Now Madison Square Garden Is Banning His Lawyer</h3>
+        <p class="snippet">Attorney John Scola is representing a police officer who is suing over injuries allegedly sustained while working security at an MSG property in 2025.</p>
+        <div class="news-meta">
+            <a href="https://www.wired.com/story/msg-bans-lawyer-representing-new-york-cop-injured-at-a-boxing-match/" target="_blank">Original</a>
+            <span class="tag">Wired</span>
+            <span class="tag tag-foreign">EN</span>
+        </div>
+    </div>
+    <div class="news-item">
+        <div class="news-date">05-20 15:00</div>
+        <h3>28. It’s Officially Election Season in Trumpworld</h3>
+        <p class="snippet">With Trump nemesis Thomas Massie vanquished, Republican strategists are now eyeing races in Texas, California, and Maine.</p>
+        <div class="news-meta">
+            <a href="https://www.wired.com/story/after-kentucky-the-trump-white-house-has-its-sights-on-these-primaries/" target="_blank">Original</a>
+            <span class="tag">Wired</span>
+            <span class="tag tag-foreign">EN</span>
+        </div>
+    </div>
+    <div class="news-item">
+        <div class="news-date">05-20 13:16</div>
+        <h3>29. ‘Perfect Storm’: How Trump’s Aid Cuts Are Fueling the Ebola Outbreak</h3>
+        <p class="snippet">One health provider who works on the ground says that basic medical equipment like masks and hand sanitizers are in short supply due to funding cuts.</p>
+        <div class="news-meta">
+            <a href="https://www.wired.com/story/how-trumps-aid-cuts-are-fueling-the-ebola-outbreak/" target="_blank">Original</a>
+            <span class="tag">Wired</span>
+            <span class="tag tag-foreign">EN</span>
+        </div>
+    </div>
+    <div class="news-item">
+        <div class="news-date">05-21 00:28</div>
+        <h3>30. Jensen Huang 称 he’s found a ‘brand 新’ $200B market for [英伟达]</h3>
+        <p class="snippet">The next big thing for Nvidia will be CPUs for AI agents, $200 billion worth, CEO Jensen Huang predicts.</p>
+        <div class="news-meta">
+            <a href="https://techcrunch.com/2026/05/20/jensen-huang-says-hes-found-a-brand-new-200b-market-for-nvidia/" target="_blank">Original</a>
+            <span class="tag">TechCrunch</span>
+            <span class="tag tag-foreign">EN</span>
+        </div>
+    </div>
+    <div class="news-item">
+        <div class="news-date">05-20 23:03</div>
+        <h3>31. The SpaceX IPO filing is filled with AI bets Starship dreams and [马斯克] at the center</h3>
+        <p class="snippet">SpaceX has finally made the contents of its IPO filing public, weeks ahead of what is expected to be the largest IPO ever and one that will make Musk the CEO, CTO, and chairman of the board.</p>
+        <div class="news-meta">
+            <a href="https://techcrunch.com/2026/05/20/the-spacex-ipo-filing-ai-bets-starship-dreams-elon-musk/" target="_blank">Original</a>
+            <span class="tag">TechCrunch</span>
+            <span class="tag tag-foreign">EN</span>
+        </div>
+    </div>
+    <div class="news-item">
+        <div class="news-date">05-20 22:30</div>
+        <h3>32. Clouted wants to take the guesswork out of making short 视频s go viral</h3>
+        <p class="snippet">The video clipping startup raised a $7 million seed round led by Slow Ventures.</p>
+        <div class="news-meta">
+            <a href="https://techcrunch.com/2026/05/20/clouted-wants-to-take-the-guesswork-out-of-making-short-videos-go-viral/" target="_blank">Original</a>
+            <span class="tag">TechCrunch</span>
+            <span class="tag tag-foreign">EN</span>
+        </div>
+    </div>
+    <div class="news-item">
+        <div class="news-date">05-20 22:26</div>
+        <h3>33. xAI burned $64B last year — SpaceX’s IPO filing shows why the spending is far from over</h3>
+        <p class="snippet">SpaceX's IPO filing reveals xAI lost $6.4 billion in 2025 while planning a massive Grok expansion — offering the first public look at Elon Musk's AI financials and more details about his ambitions.</p>
+        <div class="news-meta">
+            <a href="https://techcrunch.com/2026/05/20/xai-burned-6-4b-last-year-spacexs-ipo-filing-shows-why-the-spending-is-far-from-over/" target="_blank">Original</a>
+            <span class="tag">TechCrunch</span>
+            <span class="tag tag-foreign">EN</span>
+        </div>
+    </div>
+    <div class="news-item">
+        <div class="news-date">05-20 21:55</div>
+        <h3>34. Musk’s xAI is being sued over its 数据 center 生成器s — now it’s buying $28B more</h3>
+        <p class="snippet">Elon Musk's xAI said it will buy $2.8 billion worth of natural gas turbines over the next three years, according to SpaceX's IPO filing.</p>
+        <div class="news-meta">
+            <a href="https://techcrunch.com/2026/05/20/musks-xai-is-being-sued-over-its-data-center-generators-now-its-buying-2-8b-more/" target="_blank">Original</a>
+            <span class="tag">TechCrunch</span>
+            <span class="tag tag-foreign">EN</span>
+        </div>
+    </div>
+    <div class="news-item">
+        <div class="news-date">05-20 21:29</div>
+        <h3>35. Anthropic will pay xAI $125B per month for compute</h3>
+        <p class="snippet">Elon Musk's xAI surprised the AI world when it made a deal to sell compute to Anthropic. Now we know how much it's worth.</p>
+        <div class="news-meta">
+            <a href="https://techcrunch.com/2026/05/20/anthropic-will-pay-xai-1-25-billion-per-month-for-compute/" target="_blank">Original</a>
+            <span class="tag">TechCrunch</span>
+            <span class="tag tag-foreign">EN</span>
+        </div>
+    </div>
+    <div class="news-item">
+        <div class="news-date">05-20 21:23</div>
+        <h3>36. Sam Altman makes ‘mic drop’ offer to every Y Combinator 创业公司</h3>
+        <p class="snippet">Altman offered to have OpenAI invest in every single startup in this Y Combinator class: tokens for equity.</p>
+        <div class="news-meta">
+            <a href="https://techcrunch.com/2026/05/20/sam-altman-makes-mic-drop-offer-to-every-y-combinator-startup/" target="_blank">Original</a>
+            <span class="tag">TechCrunch</span>
+            <span class="tag tag-foreign">EN</span>
+        </div>
+    </div>
+    <div class="news-item">
+        <div class="news-date">05-20 21:21</div>
+        <h3>37. You don’t need to be an AI 创业公司 to raise Lucra has $20M to prove it</h3>
+        <p class="snippet">Slapping &#8220;AI&#8221; on your&#160;startup’s&#160;pitch deck is&#160;basically table&#160;stakes right now. When a founder&#160;raised $20 million from Cathie Wood&#8217;s ARK Invest&#160;for an e</p>
+        <div class="news-meta">
+            <a href="https://techcrunch.com/video/you-dont-need-to-be-an-ai-startup-to-raise-lucra-has-20m-to-prove-it/" target="_blank">Original</a>
+            <span class="tag">TechCrunch</span>
+            <span class="tag tag-foreign">EN</span>
+        </div>
+    </div>
+    <div class="news-item">
+        <div class="news-date">05-20 20:28</div>
+        <h3>38. [OpenAI] claims it solved an 80-year-old math problem — for real this time</h3>
+        <p class="snippet">OpenAI claims its reasoning model disproved a geometry conjecture unsolved since 1946 — and this time, the mathematicians who exposed its last embarrassing claim are backing it up.</p>
+        <div class="news-meta">
+            <a href="https://techcrunch.com/2026/05/20/openai-claims-it-solved-an-80-year-old-math-problem-for-real-this-time/" target="_blank">Original</a>
+            <span class="tag">TechCrunch</span>
+            <span class="tag tag-foreign">EN</span>
+        </div>
+    </div>
+    <div class="news-item">
+        <div class="news-date">05-20 19:47</div>
+        <h3>39. IrisGo a 创业公司 backed by Andrew Ng looks to become the AI desktop buddy you never k新 you needed</h3>
+        <p class="snippet">Initially billed as an "AI butler," Iris watches what happens on a user's desktop and automatically learns how to do tasks for them, its co-founder says.</p>
+        <div class="news-meta">
+            <a href="https://techcrunch.com/2026/05/20/irisgo-a-startup-backed-by-andrew-ng-looks-to-become-the-ai-desktop-buddy-you-never-knew-you-needed/" target="_blank">Original</a>
+            <span class="tag">TechCrunch</span>
+            <span class="tag tag-foreign">EN</span>
+        </div>
+    </div>
+    <div class="news-item">
+        <div class="news-date">05-20 18:14</div>
+        <h3>40. Airbnb gets into hotels expands AI for host onboarding and customer support</h3>
+        <p class="snippet">Airbnb will soon let you book luggage storage and car rental services on its app.</p>
+        <div class="news-meta">
+            <a href="https://techcrunch.com/2026/05/20/airbnb-gets-into-hotels-expands-ai-for-host-onboarding-and-customer-support/" target="_blank">Original</a>
+            <span class="tag">TechCrunch</span>
+            <span class="tag tag-foreign">EN</span>
+        </div>
+    </div>
+    <div class="news-item">
+        <div class="news-date">05-21 07:59</div>
+        <h3>41. 8点1氪丨英伟达Q1净利润583亿美元；谷歌CEO：Gemini月活跃用户达9亿；寿司郎回应“盘子抽检10抽10脏”</h3>
+        <p class="snippet">今日热点导览
+  俄罗斯将延长对中国公民的免签制度
+  张雪首度谈及签约德比斯原因
+  微信再度开放520大额红包，限时1天 
+  罗欣药业回应阿奇霉素劣药事件
+  段永平最新持仓公布
+  TOP3大新闻
+  英伟达：第一财季净利润583亿美元，同比增长211%</p>
+        <div class="news-meta">
+            <a href="https://36kr.com/p/3818280989443202?f=rss" target="_blank">Original</a>
+            <span class="tag">36kr</span>
+            <span class="tag tag-china">CN</span>
+        </div>
+    </div>
+    <div class="news-item">
+        <div class="news-date">05-21 07:00</div>
+        <h3>42. 网易520发布会：质量为先，狙击细分赛道</h3>
+        <p class="snippet">5月20日，2026年『网易游戏520线上发布会』正式举办，公布了40余款游戏及IP的最新动态。其中，520发布会上公布的部分重要新品如下： 
+  《遗忘之海》
+  <img src="https://img.36krcdn.com/hsossms/20260521/v2_8e</p>
+        <div class="news-meta">
+            <a href="https://36kr.com/p/3817849322964098?f=rss" target="_blank">Original</a>
+            <span class="tag">36kr</span>
+            <span class="tag tag-china">CN</span>
+        </div>
+    </div>
+    <div class="news-item">
+        <div class="news-date">05-20 19:40</div>
+        <h3>43. 氪星晚报｜2026福布斯中国人工智能科技企业TOP 50发布，中关村科金入选；三星劳资谈判破裂，威刚董事长称DRAM、NAND恐再掀涨价潮；新交所与中国银行签署新版战略合作备忘录</h3>
+        <p class="snippet">大公司：
+  新加坡加码人工智能布局，英伟达将落地本地研发中心
+  全球AI芯片巨头英伟达</p>
+        <div class="news-meta">
+            <a href="https://36kr.com/p/3816942423000196?f=rss" target="_blank">Original</a>
+            <span class="tag">36kr</span>
+            <span class="tag tag-china">CN</span>
+        </div>
+    </div>
+    <div class="news-item">
+        <div class="news-date">05-20 16:22</div>
+        <h3>44. 第四届中国AIGC产业峰会在京顺利举办！近20位行业大咖解码Agent与非共识机遇</h3>
+        <p class="snippet">今日，由量子位主办的第四届中国AIGC产业峰会在京启幕。
+  2026年，AI产业一路高歌猛进。从“龙虾”到“Harness”，爆款Agent接连出圈、风靡全网。面对层出不穷的新业态与新玩法，不少从业者和普通用户都感到困惑：如何找准AI的使用方式？怎样把握产业机遇？又该如何跟上行业发展的步伐？
+  正是在这一背景下，本届大会以「@所有人，马上AI起来」为主题，集结</p>
+        <div class="news-meta">
+            <a href="https://36kr.com/p/3817353357968516?f=rss" target="_blank">Original</a>
+            <span class="tag">36kr</span>
+            <span class="tag tag-china">CN</span>
+        </div>
+    </div>
+    <div class="news-item">
+        <div class="news-date">05-20 10:54</div>
+        <h3>45. 长鑫科技更新招股书，碧桂园错失300亿</h3>
+        <p class="snippet">地产行业内，曾有望跑出两家明星创投企业，一家是世纪金源，另一家是碧桂园。前者现在做得顺风顺水，收获一个又一个IPO，而碧桂园因为地产业务暴雷，需要大量资金保交楼，被迫中断了在科技领域的投资“大爆发”。
+  01
+  5月17日，计划登陆科创板的长鑫科技集团股份有限公司（以下简称：长鑫科技）更新了招股书。新招股书的财务数据显示，</p>
+        <div class="news-meta">
+            <a href="https://36kr.com/p/3817039204139908?f=rss" target="_blank">Original</a>
+            <span class="tag">36kr</span>
+            <span class="tag tag-china">CN</span>
+        </div>
+    </div>
+    <div class="news-item">
+        <div class="news-date">05-20 09:21</div>
+        <h3>46. 要做数字劳动力生产工厂，「未来式智能」完成Pre-A轮融资</h3>
+        <p class="snippet">文｜王欣逸
+  编辑｜邓咏仪
+  36氪获悉，未来式智能（AutoAgents.ai）近日完成Pre-A轮融资，新进投资方包括凡创资本、中关村资本、探元资本，老股东东证创新、麟阁创投跟投，本轮融资主要用于算力投入、团队扩张以及新产品的生态建设运营。
+  未来式智能成立于2023年6月</p>
+        <div class="news-meta">
+            <a href="https://36kr.com/p/3816909945029760?f=rss" target="_blank">Original</a>
+            <span class="tag">36kr</span>
+            <span class="tag tag-china">CN</span>
+        </div>
+    </div>
+    <div class="news-item">
+        <div class="news-date">05-20 09:20</div>
+        <h3>47. 早期项目 | Chance AI获美图等数百万美元投资，用户数已达20万</h3>
+        <p class="snippet">作者丨欧雪
+  编辑丨袁斯来
+  硬氪获悉，Visual Agent（视觉智能体）创业公司Chance AI宣布完成数百万美元天使轮融资。本轮由美图领投，NYX Ventures、阿里系投资机构等跟投。融资将用于模型能力迭代、北美学生群体增长、以及社区与商业化探索。
+  Chance AI成立于2025年，核心产品是全球第一款以摄像头为主要交互入口的</p>
+        <div class="news-meta">
+            <a href="https://36kr.com/p/3816947890471812?f=rss" target="_blank">Original</a>
+            <span class="tag">36kr</span>
+            <span class="tag tag-china">CN</span>
+        </div>
+    </div>
+    <div class="news-item">
+        <div class="news-date">05-20 18:07</div>
+        <h3>48. 全球首部95分钟AI长片将在戛纳电影节首映，由Seedance 20制作</h3>
+        <p class="snippet">法国当地时间5月19日，字节跳动旗下火山引擎携Seedance 2.0亮相第79届戛纳电影节。多家国际级企业现场披露了与Seedance 2.0的合作进展，顶尖视觉特效公司Outpost VFX、全球广告传播集团WPP，以及欧洲领先的AIGC平台Magnific等，均已将Seedance 2.0接入其日常内容生产工作流。电影节期间，Seedance 2.0参与制作的8部AI影片也</p>
+        <div class="news-meta">
+            <a href="https://www.leiphone.com/category/industrynews/qlFtSPjNd1qD0RVw.html" target="_blank">Original</a>
+            <span class="tag">雷锋网</span>
+            <span class="tag tag-china">CN</span>
+        </div>
+    </div>
+    <div class="news-item">
+        <div class="news-date">05-20 18:04</div>
+        <h3>49. 拆解有道“子曰4”全量开源：如何通过重构思维链打下落地成本？</h3>
+        <p class="snippet">近日，网易有道宣布“子曰”大模型迎来 4.0 版本的全方位升级。“子曰4&quot; 正式迈入全模态时代，不仅全面支持文本、图片、音频的融合交互，有道更宣布将核心的“多模态模型”与“语音合成（TTS）模型”正式开源。与此同时，翻译模型也迎来了深度的技术重构，翻译质量与效率实现双重提升。多模态模型视觉与数理斩获SOTA，纯文本数理难题性能行业领先据介绍，开源的“子曰4”多模态模型在 27B 参</p>
+        <div class="news-meta">
+            <a href="https://www.leiphone.com/category/industrynews/oFWmY9nYLzEJkh6o.html" target="_blank">Original</a>
+            <span class="tag">雷锋网</span>
+            <span class="tag tag-china">CN</span>
+        </div>
+    </div>
+    <div class="news-item">
+        <div class="news-date">05-20 17:14</div>
+        <h3>50. 国产GPU进军AIPC：铠大师与摩尔线程达成生态共建合作</h3>
+        <p class="snippet">2026年5月18日，摩尔线程在北京发布“云-边-端”全栈智算矩阵，从夸娥智算集群，到MTT AICUBE、AIBOOK、MT Lambda和MUSA生态，展示了国产GPU企业从云端算力走向家庭、边缘和具身智能的完整布局。其中最值得关注的是摩尔线程首款AI电脑的发布，国内全功能GPU领军企业摩尔线程与应用生态融合AI服务领航者晟为数科正式宣布达成深度战略合作，双方将以软硬件协同</p>
+        <div class="news-meta">
+            <a href="https://www.leiphone.com/category/industrynews/aCL3eqdE7TkJiPWs.html" target="_blank">Original</a>
+            <span class="tag">雷锋网</span>
+            <span class="tag tag-china">CN</span>
+        </div>
+    </div>
+    <div class="news-item">
+        <div class="news-date">05-20 15:03</div>
+        <h3>51. 2026 字节跳动奖学金启动！首次开放全球申请，奖励名额增加</h3>
+        <p class="snippet">5月20日消息，2026“字节跳动奖学金”正式启动申请。该奖学金面向前沿科技领域的高校在校生，为每位获奖学生及导师提供高达30万元人民币的现金奖励。项目今年首次将申请范围扩大至全球高校，同时获奖名额也将突破去年的20位。<img src="https://static.leiphone.com/uploads/new/im</p>
+        <div class="news-meta">
+            <a href="https://www.leiphone.com/category/industrynews/qd7LG7yGHXg8UNQR.html" target="_blank">Original</a>
+            <span class="tag">雷锋网</span>
+            <span class="tag tag-china">CN</span>
+        </div>
+    </div>
+    <div class="news-item">
+        <div class="news-date">05-20 14:59</div>
+        <h3>52. 上线一周登顶 Skill 商店热榜，AnySearch 正在重构“AI 时代搜索引擎”</h3>
+        <p class="snippet">2026 年的 AI 圈，一个看似反直觉的现象正在发生：当大模型能力不断跃升、参数规模持续膨胀时，开发者和资本的目光反而开始回流到一个“古早”的环节——搜索<span style="font-</p>
+        <div class="news-meta">
+            <a href="https://www.leiphone.com/category/industrynews/YGgzHZMx750pe4Ot.html" target="_blank">Original</a>
+            <span class="tag">雷锋网</span>
+            <span class="tag tag-china">CN</span>
+        </div>
+    </div>
+    <div class="news-item">
+        <div class="news-date">05-20 13:51</div>
+        <h3>53. 2026上半年最大IPO：Cerebras 上市，撕开美股「五大AI阵营」权力裂缝</h3>
+        <p class="snippet"><p style="text-align: center; margin-bott</p>
+        <div class="news-meta">
+            <a href="https://www.leiphone.com/category/industrynews/RRZPwn3VBJFO0oGj.html" target="_blank">Original</a>
+            <span class="tag">雷锋网</span>
+            <span class="tag tag-china">CN</span>
+        </div>
+    </div>
+    <div class="news-item">
+        <div class="news-date">05-20 13:40</div>
+        <h3>54. 阿里云面向Agentic时代全面升级，重磅发布全新“芯-云-模型-推理”技术体系</h3>
+        <p class="snippet">5月20日，阿里云在峰会上宣布完成&quot;芯片-云-模型-推理&quot;全栈Agent化升级，同步推出全新AI产品官网&quot;千问云&quot;、搭载自研AI芯片真武M890的超节点服务器，以及最新旗舰模型Qwen3.7-Max。这是国内云厂商首次围绕Agent进行全栈产品发布。阿里云资深副总裁刘伟光表示， Agent突破临界点之后可以24小时不间断工作，对AI和云的</p>
+        <div class="news-meta">
+            <a href="https://www.leiphone.com/category/industrynews/XPUqxfmP2onQobKO.html" target="_blank">Original</a>
+            <span class="tag">雷锋网</span>
+            <span class="tag tag-china">CN</span>
+        </div>
+    </div>
+    <div class="news-item">
+        <div class="news-date">05-20 12:43</div>
+        <h3>55. 贝塔无限连续完成种子轮、种子+轮数亿元融资，以系统工程重构消费级具身智能</h3>
+        <p class="snippet">近日，据雷峰网了解，聚焦消费级通用具身智能的先锋企业 贝塔无限 Beta Infinity 宣布，公司已先后完成种子轮、种子+轮数亿元融资。种子轮由洪泰基金、正景基金、银杏谷资本、水木清华校友种子基金、粤科金融等知名投资机构联合投资，种子+轮由世纪华通参与的盛趣泰和基金与和利资本联合领投，毅达资本、南山战新投等知名机构跟投，义柏资本担任财务顾问。两轮资金将主要用于核心技术研发、产品试制等。<</p>
+        <div class="news-meta">
+            <a href="https://www.leiphone.com/category/ai/W4jduezsmWldd7E0.html" target="_blank">Original</a>
+            <span class="tag">雷锋网</span>
+            <span class="tag tag-china">CN</span>
+        </div>
+    </div>
+    <div class="news-item">
+        <div class="news-date">05-21 01:49</div>
+        <h3>56. iPhone 11 以来首次：ACSI 报告三星超苹果成 2026 美国手机满意度最高厂商</h3>
+        <p class="snippet">IT之家 5 月 21 日消息，美国顾客满意度指数（ACSI）基于 26963 份调查问卷，指出苹果客户满意度在 2026 年降至 80%，低于三星的 81%，是自 iPhone 11（2019 年 9 月发布）时期后首次失去榜首位置。ACSI 本周公布《2026 年电信、手机与智能手表研究</</p>
+        <div class="news-meta">
+            <a href="https://www.ithome.com/0/953/133.htm" target="_blank">Original</a>
+            <span class="tag">IT之家</span>
+            <span class="tag tag-china">CN</span>
+        </div>
+    </div>
+    <div class="news-item">
+        <div class="news-date">05-21 01:46</div>
+        <h3>57. 1555 元：绿联推出雷电 5 硬盘盒扩展坞，10 合一设计</h3>
+        <p class="snippet">IT之家 5 月 21 日消息，绿联今天推出雷电 5 硬盘盒扩展坞，新品采用 10 合一设计，具备 DP 视频接口，售价 1555 元。<img src="https://img.ithome.com/newsuploadfiles/2026/5/7593f2d0-df6a-4121-a6</p>
+        <div class="news-meta">
+            <a href="https://www.ithome.com/0/953/130.htm" target="_blank">Original</a>
+            <span class="tag">IT之家</span>
+            <span class="tag tag-china">CN</span>
+        </div>
+    </div>
+    <div class="news-item">
+        <div class="news-date">05-21 01:19</div>
+        <h3>58. 刚拿下 400 亿美元 Anthropic 大单，马斯克称 SpaceX 正洽谈向其他公司提供 AI 计算服务</h3>
+        <p class="snippet">IT之家 5 月 21 日消息，马斯克当地时间 5 月 20 日发文称，SpaceX 正向 Anthropic 公司提供大规模人工智能 AI 计算服务，并正在与其他公司洽谈提供类似服务。马斯克表示，随着时间推移，尤其是随着在轨数据中心的建设，预计将以极高规模为 AI 提供服务。<p style="text-align: center;"</p>
+        <div class="news-meta">
+            <a href="https://www.ithome.com/0/953/123.htm" target="_blank">Original</a>
+            <span class="tag">IT之家</span>
+            <span class="tag tag-china">CN</span>
+        </div>
+    </div>
+    <div class="news-item">
+        <div class="news-date">05-21 09:05</div>
+        <h3>59. “国标”发布，AI终端硬件要"考级"了</h3>
+        <p class="snippet">AI，正式进入物理世界。</p>
+        <div class="news-meta">
+            <a href="https://www.tmtpost.com/7995944.html" target="_blank">Original</a>
+            <span class="tag">钛媒体</span>
+            <span class="tag tag-china">CN</span>
+        </div>
+    </div>
+    <div class="footer">
+        Generated by AI News Assistant
+    </div>
+</body>
+</html>

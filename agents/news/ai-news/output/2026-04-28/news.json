@@ -1,0 +1,430 @@
+{
+  "date": "2026-04-28",
+  "count": 53,
+  "news": [
+    {
+      "title": "From Indiana to Idaho, a Backlash Against A.I. Gathers Momentum",
+      "url": "https://www.nytimes.com/2026/04/27/technology/ai-artificial-intelligence-backlash.html",
+      "snippet": "The widening movement is pulling in people from all walks of life, united by a worry that Big Tech will cash in while average Americans bear the costs.",
+      "keyword": "NYTimes",
+      "region": "Foreign",
+      "published": "Mon, 27 Apr 2026 16:11:56 +0000"
+    },
+    {
+      "title": "Microsoft and OpenAI Loosen Their Partnership",
+      "url": "https://www.nytimes.com/2026/04/27/technology/microsoft-openai-partnership.html",
+      "snippet": "Microsoft, OpenAI’s biggest financial partner, will continue to license the start-up’s technology but will no longer be its exclusive licensee.",
+      "keyword": "NYTimes",
+      "region": "Foreign",
+      "published": "Mon, 27 Apr 2026 16:34:44 +0000"
+    },
+    {
+      "title": "Elon Musk and Sam Altman Bring OpenAI Trial Spectacle to Oakland",
+      "url": "https://www.nytimes.com/2026/04/27/technology/altman-musk-openai-ai-oakland.html",
+      "snippet": "Oakland, Calif., where Elon Musk’s trial against OpenAI and its chief executive, Sam Altman, starts on Monday, is not exactly known as a hub of the tech industry.",
+      "keyword": "NYTimes",
+      "region": "Foreign",
+      "published": "Mon, 27 Apr 2026 16:34:17 +0000"
+    },
+    {
+      "title": "China Will Require Meta to Unwind Acquisition of AI Start-Up Manus",
+      "url": "https://www.nytimes.com/2026/04/27/business/china-meta-manus-ai-deal.html",
+      "snippet": "The impact of the ruling was not immediately clear, but it could send a chilling signal to Chinese tech founders seeking to team up with foreign companies.",
+      "keyword": "NYTimes",
+      "region": "Foreign",
+      "published": "Mon, 27 Apr 2026 14:08:53 +0000"
+    },
+    {
+      "title": "Sergey Brin Moves to the Right, With a ‘MAGA Girlfriend’ by His Side",
+      "url": "https://www.nytimes.com/2026/04/27/us/politics/sergey-brin-gg-soto-trump-california-billionaire-tax.html",
+      "snippet": "After once backing liberal causes, the Google co-founder has praised President Trump, donated to Republicans and spent $57 million to try to block a California billionaire tax.",
+      "keyword": "NYTimes",
+      "region": "Foreign",
+      "published": "Mon, 27 Apr 2026 20:12:38 +0000"
+    },
+    {
+      "title": "Tim Cook’s Legacy + The Future of U.B.I. With Andrew Yang + HatGPT",
+      "url": "https://www.nytimes.com/2026/04/24/podcasts/hardfork-tim-cook-yang-ubi.html",
+      "snippet": "The highlights, the lowlights, and how Apple changed in the years since Tim Cook took over as chief executive.",
+      "keyword": "NYTimes",
+      "region": "Foreign",
+      "published": "Fri, 24 Apr 2026 11:00:03 +0000"
+    },
+    {
+      "title": "A.I. Start-Ups From Canada and Germany Merge to Take On Silicon Valley",
+      "url": "https://www.nytimes.com/2026/04/24/business/cohere-aleph-alpha-ai-merger.html",
+      "snippet": "Cohere is acquiring Aleph Alpha in a deal aimed at customers uneasy about the dominance of American companies in artificial intelligence.",
+      "keyword": "NYTimes",
+      "region": "Foreign",
+      "published": "Mon, 27 Apr 2026 03:03:00 +0000"
+    },
+    {
+      "title": "Sam Altman’s Next High-Wire Act: Getting OpenAI to Make More Money",
+      "url": "https://www.nytimes.com/2026/04/24/technology/sam-altman-openai-money.html",
+      "snippet": "Mr. Altman, who has faced criticism over OpenAI’s direction, has culled company projects and is trying to be more disciplined with strategy.",
+      "keyword": "NYTimes",
+      "region": "Foreign",
+      "published": "Fri, 24 Apr 2026 09:02:25 +0000"
+    },
+    {
+      "title": "Why Spotify has no button to filter out AI music",
+      "url": "https://www.bbc.com/news/articles/cd7jpg4w181o?at_medium=RSS&at_campaign=rss",
+      "snippet": "Music streamer Deezer allows users to filter out AI music, so why does Spotify not offer the same?",
+      "keyword": "BBC",
+      "region": "Foreign",
+      "published": "Mon, 27 Apr 2026 23:03:10 GMT"
+    },
+    {
+      "title": "China blocks Meta's $2bn acquisition of AI start-up Manus",
+      "url": "https://www.bbc.com/news/articles/cj0v0gr2yz7o?at_medium=RSS&at_campaign=rss",
+      "snippet": "It comes after months of scrutiny by Chinese regulators over deal struck with Facebook owner.",
+      "keyword": "BBC",
+      "region": "Foreign",
+      "published": "Mon, 27 Apr 2026 12:21:42 GMT"
+    },
+    {
+      "title": "OpenAI boss 'deeply sorry' for not telling police of mass shooting suspect's account",
+      "url": "https://www.bbc.com/news/articles/cq6je7e80r7o?at_medium=RSS&at_campaign=rss",
+      "snippet": "Sam Altman on Thursday wrote a brief letter of apology to the people of Tumbler Ridge, Canada in the wake of a January mass shooting.",
+      "keyword": "BBC",
+      "region": "Foreign",
+      "published": "Fri, 24 Apr 2026 22:45:28 GMT"
+    },
+    {
+      "title": "UK cyber chiefs say it's time to ditch passwords for passkeys - what are they?",
+      "url": "https://www.bbc.com/news/articles/cq8wnzly5j5o?at_medium=RSS&at_campaign=rss",
+      "snippet": "Passwords have long been the default way we secure accounts online but the NCSC has said passkeys are a better option.",
+      "keyword": "BBC",
+      "region": "Foreign",
+      "published": "Fri, 24 Apr 2026 14:40:23 GMT"
+    },
+    {
+      "title": "Biobank data incident caused by 'a few bad apples', boss says",
+      "url": "https://www.bbc.com/news/articles/clyedyn6pz7o?at_medium=RSS&at_campaign=rss",
+      "snippet": "Professor Sir Rory Collins said he was \"angry\" and \"upset\" about the incident, as both the bank's boss and a participant.",
+      "keyword": "BBC",
+      "region": "Foreign",
+      "published": "Fri, 24 Apr 2026 10:00:42 GMT"
+    },
+    {
+      "title": "Meta to cut one in 10 jobs after spending billions on AI",
+      "url": "https://www.bbc.com/news/articles/crm1y89vek8o?at_medium=RSS&at_campaign=rss",
+      "snippet": "The cuts, which employees had been expecting for weeks, will be Meta's largest layoff since 2023.",
+      "keyword": "BBC",
+      "region": "Foreign",
+      "published": "Fri, 24 Apr 2026 07:31:35 GMT"
+    },
+    {
+      "title": "White House memo claims mass AI theft by Chinese firms",
+      "url": "https://www.bbc.com/news/articles/cpqxgxx9nrqo?at_medium=RSS&at_campaign=rss",
+      "snippet": "A memo from Michael Kratsios says firms, mainly in China, are wrongfully distilling US AI models.",
+      "keyword": "BBC",
+      "region": "Foreign",
+      "published": "Fri, 24 Apr 2026 00:58:58 GMT"
+    },
+    {
+      "title": "UK Biobank health data listed for sale in China, government confirms",
+      "url": "https://www.bbc.com/news/articles/cpvxgl3n138o?at_medium=RSS&at_campaign=rss",
+      "snippet": "The government said medical data of 500,000 people was affected but no personally identifiable information had been made available.",
+      "keyword": "BBC",
+      "region": "Foreign",
+      "published": "Thu, 23 Apr 2026 11:45:41 GMT"
+    },
+    {
+      "title": "Xbox cuts prices for Game Pass but ends day-one Call of Duty access",
+      "url": "https://www.bbc.com/news/articles/cgrlvvrn409o?at_medium=RSS&at_campaign=rss",
+      "snippet": "New Call of Duty games will be added to the subscription service \"about a year\" after release, Microsoft said.",
+      "keyword": "BBC",
+      "region": "Foreign",
+      "published": "Wed, 22 Apr 2026 12:03:10 GMT"
+    },
+    {
+      "title": "Anthropic investigating claim of unauthorised access to Mythos AI tool",
+      "url": "https://www.bbc.com/news/articles/cy41zejp9pko?at_medium=RSS&at_campaign=rss",
+      "snippet": "The AI company has said the model is too dangerous to release publicly because of its hacking capabilities.",
+      "keyword": "BBC",
+      "region": "Foreign",
+      "published": "Wed, 22 Apr 2026 10:13:35 GMT"
+    },
+    {
+      "title": "Some Musk v. Altman Jurors Don't Like Elon Musk",
+      "url": "https://www.wired.com/story/some-musk-v-altman-jurors-dont-like-elon-musk/",
+      "snippet": "Musk’s lawsuit challenges OpenAI’s evolution under Sam Altman. But during jury selection, several potential jurors voiced negative views of Musk himself.",
+      "keyword": "Wired",
+      "region": "Foreign",
+      "published": "Tue, 28 Apr 2026 00:39:30 +0000"
+    },
+    {
+      "title": "The M5 MacBook Air Has Never Been Cheaper",
+      "url": "https://www.wired.com/story/m5-macbook-air-never-been-cheaper/",
+      "snippet": "Despite launching less than two months ago, the M5 MacBook Air has dropped back down to its lowest price since launching.",
+      "keyword": "Wired",
+      "region": "Foreign",
+      "published": "Mon, 27 Apr 2026 20:27:01 +0000"
+    },
+    {
+      "title": "Elon Musk Boosts New Yorker’s Sam Altman Exposé on X as Trial Begins",
+      "url": "https://www.wired.com/story/elon-musk-boost-new-yorker-article-sam-altman-x/",
+      "snippet": "The move comes as the trial for Elon Musk’s lawsuit against OpenAI kicks off in federal court in Oakland.",
+      "keyword": "Wired",
+      "region": "Foreign",
+      "published": "Mon, 27 Apr 2026 20:08:51 +0000"
+    },
+    {
+      "title": "Cole Allen Charged With Attempting to Assassinate Trump",
+      "url": "https://www.wired.com/story/cole-allen-charged-with-attempting-to-assassinate-trump/",
+      "snippet": "The suspected shooter at Saturday night’s White House Correspondents’ Dinner faces three felony charges. He remains in custody following Monday’s hearing.",
+      "keyword": "Wired",
+      "region": "Foreign",
+      "published": "Mon, 27 Apr 2026 19:07:34 +0000"
+    },
+    {
+      "title": "A Brain Implant for Depression Is About to Be Tested in Humans",
+      "url": "https://www.wired.com/story/a-brain-implant-for-depression-is-about-to-be-tested-in-humans/",
+      "snippet": "While many brain-computer interface companies are focused on helping paralyzed people communicate, Motif Neurotech is targeting mental health disorders.",
+      "keyword": "Wired",
+      "region": "Foreign",
+      "published": "Mon, 27 Apr 2026 17:02:29 +0000"
+    },
+    {
+      "title": "The Man Behind AlphaGo Thinks AI Is Taking the Wrong Path",
+      "url": "https://www.wired.com/story/david-silver-ai-ineffable-intelligence-reinforcement-learning/",
+      "snippet": "David Silver has a new billion-dollar company that aims to build AI “superlearners.”",
+      "keyword": "Wired",
+      "region": "Foreign",
+      "published": "Mon, 27 Apr 2026 14:00:00 +0000"
+    },
+    {
+      "title": "Best Smart Glasses (2026): Meta, Viture, Xreal, and More",
+      "url": "https://www.wired.com/gallery/best-smart-glasses/",
+      "snippet": "This burgeoning wearable tech category lets you talk to an AI assistant, listen to music, or check out a display screen right from the comfort of your very own face.",
+      "keyword": "Wired",
+      "region": "Foreign",
+      "published": "Mon, 27 Apr 2026 13:03:00 +0000"
+    },
+    {
+      "title": "The Tech Bros Are All In on Zyn",
+      "url": "https://www.wired.com/story/tech-bros-are-all-in-on-zyn/",
+      "snippet": "Nicotine pouches are revered among tech workers, who tout them as the perfect brain-boosting, productivity-jacking stimulants.",
+      "keyword": "Wired",
+      "region": "Foreign",
+      "published": "Mon, 27 Apr 2026 11:00:00 +0000"
+    },
+    {
+      "title": "Here’s How Much San Francisco Tech Companies Pay for Police Protection",
+      "url": "https://www.wired.com/story/heres-how-much-san-francisco-tech-companies-are-paying-for-police-protection/",
+      "snippet": "A recent attack on Sam Altman’s home and OpenAI offices has put corporate security under renewed scrutiny. Records reveal how much some tech firms spend to arm up.",
+      "keyword": "Wired",
+      "region": "Foreign",
+      "published": "Mon, 27 Apr 2026 10:00:00 +0000"
+    },
+    {
+      "title": "OpenAI ends Microsoft legal peril over its $50B Amazon deal",
+      "url": "https://techcrunch.com/2026/04/27/openai-ends-microsoft-legal-peril-over-its-50b-amazon-deal/",
+      "snippet": "OpenAI has won major concessions from its largest shareholder, Microsoft, that will allow it to sell products on AWS, while Microsoft gets more cash in a revenue-share agreement.",
+      "keyword": "TechCrunch",
+      "region": "Foreign",
+      "published": "Mon, 27 Apr 2026 17:40:38 +0000"
+    },
+    {
+      "title": "DeepMind’s David Silver just raised $1.1B to build an AI that learns without human data",
+      "url": "https://techcrunch.com/2026/04/27/deepminds-david-silver-just-raised-1-1b-to-build-an-ai-that-learns-without-human-data/",
+      "snippet": "Ineffable Intelligence, a British AI lab founded a mere few months ago by former DeepMind researcher David Silver, has raised $1.1 billion in funding at a valuation of $5.1 billion.",
+      "keyword": "TechCrunch",
+      "region": "Foreign",
+      "published": "Mon, 27 Apr 2026 17:24:21 +0000"
+    },
+    {
+      "title": "Investors back Skye’s AI home screen app for iPhone ahead of launch",
+      "url": "https://techcrunch.com/2026/04/27/investors-back-skye-signull-labs-ai-home-screen-app-for-iphone-ahead-of-launch/",
+      "snippet": "Skye's new AI app attracted investors before it even launched — a sign of interest in a more AI-aware iPhone.",
+      "keyword": "TechCrunch",
+      "region": "Foreign",
+      "published": "Mon, 27 Apr 2026 16:13:02 +0000"
+    },
+    {
+      "title": "China blocks Meta’s $2B Manus deal after months-long probe",
+      "url": "https://techcrunch.com/2026/04/27/china-vetoes-metas-2b-manus-deal-after-months-long-probe/",
+      "snippet": "China has ordered Meta to unwind its multibillion-dollar Manus acquisition, dealing a potential setback to Zuckerberg’s push into AI agents.",
+      "keyword": "TechCrunch",
+      "region": "Foreign",
+      "published": "Mon, 27 Apr 2026 13:16:55 +0000"
+    },
+    {
+      "title": "OpenAI could be making a phone with AI agents replacing apps",
+      "url": "https://techcrunch.com/2026/04/27/openai-could-be-making-a-phone-with-ai-agents-replacing-apps/",
+      "snippet": "There have been plenty of rumors about OpenAI's hardware plans, which involve launching a pair of earbuds. A new note from industry analyst Ming-Chi Kuo suggests that the AI company might be working o",
+      "keyword": "TechCrunch",
+      "region": "Foreign",
+      "published": "Mon, 27 Apr 2026 13:08:59 +0000"
+    },
+    {
+      "title": "Truecaller faces mounting pressures as its growth matures",
+      "url": "https://techcrunch.com/2026/04/26/truecaller-faces-mounting-pressures-as-its-growth-matures/",
+      "snippet": "As growth slows, Truecaller is leaning on subscriptions, business services, and new features to sustain momentum beyond India.",
+      "keyword": "TechCrunch",
+      "region": "Foreign",
+      "published": "Mon, 27 Apr 2026 03:00:00 +0000"
+    },
+    {
+      "title": "8点1氪：中方禁止外资收购Manus；上海迪士尼回应游客吸烟冲突事件；泡泡玛特LABUBU 冰箱未发售已溢价3000元",
+      "url": "https://36kr.com/p/3785730095127817?f=rss",
+      "snippet": "TOP3大新闻\n  DeepSeek 输入缓存降价\n  多家美国廉价航空公司寻求政府资金纾困\n  东方甄选回应大量用户申请退会员\n  穿西装开空调太费电，日本东京鼓励公务员穿短裤\n  印度移动支付平台MobiKwik获央行批准\n  TOP3大事件\n  国家发展改革委：依法",
+      "keyword": "36kr",
+      "region": "China",
+      "published": "2026-04-28 08:04:02  +0800"
+    },
+    {
+      "title": "用AI做IP，文娱科技公司星迹互动完成数千万元天使轮融资｜36氪融资首发",
+      "url": "https://36kr.com/p/3784697499786503?f=rss",
+      "snippet": "近期，数字科技文娱公司星迹互动完成了数千万元的天使轮融资。本轮投资方包括正大集团、北京大融文化传媒、禹牧智能以及麦迈科技等。36氪获悉，此次融资将主要用于公司人员规模的扩张、产能拉升以及平台建设。\n  星迹互动于2025年成立，以AI为核心驱动力，专注于精品IP的开发与运营。具体来讲，公司的业务包括新老IP的开发与运营、漫剧的承制与出海、儿童原创动画孵化，以及数字人IP与虚拟偶",
+      "keyword": "36kr",
+      "region": "China",
+      "published": "2026-04-28 08:00:00  +0800"
+    },
+    {
+      "title": "「寻明生科」完成3500万美元A+轮融资，首个抗体药物即将进入临床｜36氪首发",
+      "url": "https://36kr.com/p/3784480103455748?f=rss",
+      "snippet": "文｜胡香赟\n  编辑｜海若镜\n  36氪获悉，寻明生科（Aureka Biotechnologies）近期已完成3500万美元A+轮融资。本轮融资由红杉中国领投，经纬创投、博远资本跟投，老股东五源资本、启明创投、纽尔利资本等持续加注。\n  去年底，寻明生科就曾获得一笔数千万美元的<a href=\"https://36kr.com/p/35328322",
+      "keyword": "36kr",
+      "region": "China",
+      "published": "2026-04-28 08:00:00  +0800"
+    },
+    {
+      "title": "最前线｜爱芯元智仇肖莘：大算力芯片将成为企业明年的主要增长引擎",
+      "url": "https://36kr.com/p/3784806758243587?f=rss",
+      "snippet": "在汽车行业越来越强调降本的今天，车企心中的天平逐渐偏向了更具性价比的国产芯片。爱芯元智看到了这一发展机遇，北京车展前期，爱芯元智与千里科技、阶跃星辰等企业成立“千里联盟”，同时企业将于今年三季度发布M97这颗大算力辅助驾驶芯片。\n  爱芯元智创始人仇肖莘在北京车展上公开表示，“大算力产品已成功流片，正进入正常的开发周期”，2026年将逐步导入多款车型，成为业绩增长的重要引擎。目",
+      "keyword": "36kr",
+      "region": "China",
+      "published": "2026-04-28 00:27:19  +0800"
+    },
+    {
+      "title": "未岚大陆第100万台智能割草机器人下线，马来西亚��线已完成、全面启动生产｜最前线",
+      "url": "https://36kr.com/p/3784879395134465?f=rss",
+      "snippet": "作者｜黄楠\n  编辑｜袁斯来\n  近日，智能割草机器人公司未岚大陆第100万台智能割草机器人下线仪式在其常州研发生产基地举办。未岚大陆CEO任冠佼、总裁兼CTO陈子冲、德国莱茵TÜV电子电气产品服务全球高级副总裁郝福来（Frank Holzmann）等出席仪式。\n  在割草机器人赛道竞争白热化的节点，百万台是对技术路线选择、供应链韧性与全球化布局的一",
+      "keyword": "36kr",
+      "region": "China",
+      "published": "2026-04-27 19:41:44  +0800"
+    },
+    {
+      "title": "氪星晚报｜五一假期约600万人次进出香港；谷歌将在韩国新建人工智能园区，韩国总统府证实；英国大型企业普遍不清楚自身数据在海外被人工智能如何使用",
+      "url": "https://36kr.com/p/3784957482523648?f=rss",
+      "snippet": "大公司：\n  谷歌将在韩国新建人工智能园区，韩国总统府证实\n  韩国总统政策顾问金龙范于周",
+      "keyword": "36kr",
+      "region": "China",
+      "published": "2026-04-27 19:25:19  +0800"
+    },
+    {
+      "title": "前苹果工程师做了款体感游戏机，销量拳打Xbox，营收数亿美元",
+      "url": "https://36kr.com/p/3783828639571203?f=rss",
+      "snippet": "作者丨欧雪 \n  编辑丨袁斯来\n  2025年黑五，美国游戏主机市场有些不同寻常。\n  根据追踪美国游戏主机与软件销售的Circana统计数据，在黑色星期五当周，PS5以47%的市场份额领跑，任天堂Switch2占据24%，而一款名为Nex Playground的体感游戏机，则以14%的市占率冲上第三名——将Xbox挤出了前三位置。",
+      "keyword": "36kr",
+      "region": "China",
+      "published": "2026-04-27 09:15:00  +0800"
+    },
+    {
+      "title": "早期项目 | 前地平线产品负责人死磕“拿放”动作，轮式机器人今年锁定百台出货",
+      "url": "https://36kr.com/p/3783824870317312?f=rss",
+      "snippet": "作者丨欧雪\n  编辑丨袁斯来\n  在具身智能行业普遍沉迷双足人形和仿真训练的当下，有一家公司选择了一条不太一样的路径：聚焦仓储物流场景，用“轮式底盘+双臂”死磕占人力成本60%的“拿放”动作。这是一家由中科南京软件技术研究院孵化出来的具身智能企业——智往未来。\n  智往未来2025年11月成立于南京，创始人孙浚凯曾在地平线担任智能座舱产品线总经理，推",
+      "keyword": "36kr",
+      "region": "China",
+      "published": "2026-04-27 09:10:00  +0800"
+    },
+    {
+      "title": "别克×火山引擎：至境E7行业首发搭载豆包大模型最新版",
+      "url": "https://www.leiphone.com/category/industrynews/c8rGA0s3Z9EolPet.html",
+      "snippet": "当豆包大模型进入汽车座舱，人车交互不再是你问我答的“客服”，而是能像人一样思考、交流、成长的“数字家人”。</p",
+      "keyword": "雷锋网",
+      "region": "China",
+      "published": "Mon, 13 Apr 2026 16:24:00 +0800"
+    },
+    {
+      "title": "推理卡毛利率下滑超7%，天数智芯「降价换量」的买卖值不值？",
+      "url": "https://www.leiphone.com/category/chips/bwKuuKUGYn8a3IbY.html",
+      "snippet": "2个多月前在港股上市的天数智芯，近期发布了2025年财报。公布当天，股价下跌了10个点。在此之前，天数股价已从342港元的高位大幅回调。财报显示，天数全年营收10.34亿元，同比增长91.6%。一级市场投资人林云直言，这个表现没有达到大家的心理预期。对比其他几家国产公司这两年来的增长速度，市场给天数的营收底线预期是：12亿元。但另一方面，分析师Ethan透露，资本",
+      "keyword": "雷锋网",
+      "region": "China",
+      "published": "Mon, 13 Apr 2026 12:56:00 +0800"
+    },
+    {
+      "title": "明日新程完成连续两轮融资，领跑Harness群体多智能体赛道",
+      "url": "https://www.leiphone.com/category/industrynews/aiDP2A7dwvwQL6Ue.html",
+      "snippet": "日前，由微软小冰原班人马成立的新公司“明日新程”宣布已连续完成两轮融资，重仓布局Harness群体多智能体赛道。其中，天使轮融资由创新工场和Atypical Ventures联合领投，奇绩创坛继续跟投，其余参投方包括原微软全球副总裁David Ku等个人投资者、公司独家财务顾问安可资本等。目前，公司已募得供未来三到五年持续创新的所需资金。明日新程（英文名：Next",
+      "keyword": "雷锋网",
+      "region": "China",
+      "published": "Mon, 13 Apr 2026 12:12:00 +0800"
+    },
+    {
+      "title": "「作弊」内幕曝光！3DMark回应将某知名国产手机除名；李想朋友圈炮轰东风日产恶意拉踩，后者高管回应；美的空调又发行业首创产品",
+      "url": "https://www.leiphone.com/category/zaobao/aAthIc8n66aAjB1c.html",
+      "snippet": "要闻提示1.“作弊” 内幕曝光！3DMark回应将某知名国产手机除名：实测性能相差24%、温度超过50℃<p style=\"text-a",
+      "keyword": "雷锋网",
+      "region": "China",
+      "published": "Mon, 13 Apr 2026 09:34:00 +0800"
+    },
+    {
+      "title": "荣威联合火山引擎发布全球首个AI原生汽车序列“家越”，开启AI汽车新时代",
+      "url": "https://www.leiphone.com/category/transportation/K7ZQKtmfjAKjmf9X.html",
+      "snippet": "4月21日，以“第一家”为主题的荣威20周年暨AI新序列产品发布会盛大举行。荣威携手火山引擎，正式发布全球首个AI原生汽车序列“家越”，并推出行业首个AI原生技术架构“CPP”。家越序列首款概念车家越07震撼亮相，以颠覆性技术实力开创AI原生汽车新纪元，为中国家庭带来划时代的智能出行体验。<img src=\"h",
+      "keyword": "雷锋网",
+      "region": "China",
+      "published": "Mon, 27 Apr 2026 22:24:00 +0800"
+    },
+    {
+      "title": "小红书首次公布AI治理主张：坚决反对四类AI行为，给AI创作划出清晰边界",
+      "url": "https://www.leiphone.com/category/industrynews/DldZG5e71BHuJ0ts.html",
+      "snippet": "4月27日，小红书首次公布平台对AI内容的治理主张，并在北京举办首届AI治理开放日。此次AI治理主张共分为“平台鼓励的AI内容及行为”和“平台反对的AI内容及行为”两大板块，以给到创作者清晰指引。小红书明确了对待AI相关现象的核心态度：鼓励AI作为创意放大器，反对AI作为造假工具与低质内容生产机器，所有AI参与创作的内容均需主动标识。<p st",
+      "keyword": "雷锋网",
+      "region": "China",
+      "published": "Mon, 27 Apr 2026 19:54:00 +0800"
+    },
+    {
+      "title": "阿里HappyHorse开启灰测，720P视频生成低至0.44元/秒",
+      "url": "https://www.leiphone.com/category/industrynews/WaEF3n0dN5OeDEt9.html",
+      "snippet": "2026年4月27日，阿里巴巴视频生成模型HappyHorse 1.0开启灰测。全球专业创作者和企业级客户可在HappyHorse官网（www.happyhorse.cn）和阿里云百炼平台注册使用，大众用户可在千问App体验。官网720P视频生成刊例价0.9元/秒。<img src=\"https://static",
+      "keyword": "雷锋网",
+      "region": "China",
+      "published": "Mon, 27 Apr 2026 18:52:00 +0800"
+    },
+    {
+      "title": "当创新拥有脉搏：美的如何用16.5万件专利重写家居叙事",
+      "url": "https://www.leiphone.com/category/smarthome/QQXSWwGo9zvawIlW.html",
+      "snippet": "世界知识产权日前夕，美的将自家最核心的“技术家底”摊开在数十家媒体面前。四个场次，十余位顶尖研发与企划专家轮番上阵，详解从一粒米到整个家的AI进化。<p style=\"text-align: left; line-height: 2em; margin-b",
+      "keyword": "雷锋网",
+      "region": "China",
+      "published": "Mon, 27 Apr 2026 18:34:00 +0800"
+    },
+    {
+      "title": "瞄准重大升级，Valve 称正努力开发 Steam Deck 2 掌机",
+      "url": "https://www.ithome.com/0/944/236.htm",
+      "snippet": "IT之家 4 月 28 日消息，Valve 官宣北京时间 5 月 5 日凌晨 1 点发售 Steam Controller 手柄外，其程序员 Pierre-Loup Griffais 表示目前正积极推进 Steam Deck 2 游戏掌机。IT之家今天报道，Valve 确认将于 5 月向玩家交付 Steam Controller，而 Steam",
+      "keyword": "IT之家",
+      "region": "China",
+      "published": "Tue, 28 Apr 2026 01:12:25 GMT"
+    },
+    {
+      "title": "红旗 × Unity 中国签署深化合作协议，首发下一代 AIOS 前瞻设计",
+      "url": "https://www.ithome.com/0/944/235.htm",
+      "snippet": "IT之家 4 月 28 日消息，据“红旗研发新视界”公众号分享，红旗于 4 月 26 日与实时 3D 内容创作平台 Unity 中国正式签署深化合作协议。<img alt=\"图片\" src=\"https://img.ithome.com/newsuploadfiles/2026/4/aa650a51-01da-40c4-8",
+      "keyword": "IT之家",
+      "region": "China",
+      "published": "Tue, 28 Apr 2026 01:10:05 GMT"
+    },
+    {
+      "title": "新拼姆，AI时代的另类玩家",
+      "url": "https://www.tmtpost.com/7969130.html",
+      "snippet": "这是一单大买卖。",
+      "keyword": "钛媒体",
+      "region": "China",
+      "published": "Tue, 28 Apr 2026 08:51:00 +0800"
+    },
+    {
+      "title": "正大集团首次入局AI文娱，领投星迹互动，用“IP+出海”重做内容生意｜独家",
+      "url": "https://www.tmtpost.com/7969398.html",
+      "snippet": "国际资本入局AI文娱，中国创业公司计划用AI把中国IP卖向全球。",
+      "keyword": "钛媒体",
+      "region": "China",
+      "published": "Tue, 28 Apr 2026 08:47:00 +0800"
+    }
+  ]
+}

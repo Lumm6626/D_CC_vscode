@@ -1,0 +1,516 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>文件合并工具 - PDF & 图片合并</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            background: #f5f7fa;
+            min-height: 100vh;
+            padding: 20px;
+        }
+        .container {
+            max-width: 1400px;
+            margin: 0 auto;
+        }
+        h1 {
+            text-align: center;
+            color: #333;
+            margin-bottom: 30px;
+        }
+        .main-layout {
+            display: flex;
+            gap: 24px;
+        }
+        .left-panel, .right-panel {
+            flex: 1;
+            background: white;
+            border-radius: 12px;
+            padding: 30px;
+            box-shadow: 0 2px 12px rgba(0,0,0,0.08);
+        }
+        .panel-title {
+            font-size: 18px;
+            font-weight: 600;
+            color: #333;
+            margin-bottom: 20px;
+            padding-bottom: 12px;
+            border-bottom: 1px solid #eee;
+        }
+        .form-group {
+            margin-bottom: 20px;
+        }
+        label {
+            display: block;
+            margin-bottom: 8px;
+            font-weight: 500;
+            color: #333;
+        }
+        .radio-group {
+            display: flex;
+            gap: 20px;
+        }
+        .radio-group label {
+            display: flex;
+            align-items: center;
+            gap: 6px;
+            font-weight: normal;
+            cursor: pointer;
+        }
+        select {
+            width: 100%;
+            padding: 10px 14px;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            font-size: 14px;
+            background: white;
+        }
+        .drop-zone {
+            border: 2px dashed #ccc;
+            border-radius: 12px;
+            padding: 40px;
+            text-align: center;
+            cursor: pointer;
+            transition: all 0.3s;
+            min-height: 200px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+        .drop-zone:hover, .drop-zone.dragover {
+            border-color: #4a90d9;
+            background: #f0f7ff;
+        }
+        .drop-zone-icon {
+            font-size: 48px;
+            color: #ccc;
+            margin-bottom: 16px;
+        }
+        .drop-zone-text {
+            color: #666;
+            margin-bottom: 8px;
+        }
+        .drop-zone-hint {
+            font-size: 12px;
+            color: #999;
+        }
+        .file-list {
+            margin-top: 16px;
+            text-align: left;
+            max-height: 300px;
+            overflow-y: auto;
+        }
+        .file-item {
+            display: flex;
+            align-items: center;
+            padding: 8px 12px;
+            background: #f5f7fa;
+            border-radius: 6px;
+            margin-bottom: 6px;
+        }
+        .file-item-name {
+            flex: 1;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            white-space: nowrap;
+        }
+        .file-item-remove {
+            color: #999;
+            cursor: pointer;
+            margin-left: 8px;
+        }
+        .file-item-remove:hover {
+            color: #e74c3c;
+        }
+        .btn {
+            display: inline-block;
+            padding: 12px 32px;
+            border: none;
+            border-radius: 8px;
+            font-size: 16px;
+            font-weight: 500;
+            cursor: pointer;
+            transition: all 0.3s;
+        }
+        .btn-primary {
+            background: #4a90d9;
+            color: white;
+        }
+        .btn-primary:hover {
+            background: #3a7bc8;
+        }
+        .btn-primary:disabled {
+            background: #ccc;
+            cursor: not-allowed;
+        }
+        .btn-block {
+            display: block;
+            width: 100%;
+        }
+        /* Preview panel */
+        .preview-area {
+            min-height: 400px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            border: 2px dashed #eee;
+            border-radius: 12px;
+            padding: 20px;
+        }
+        .preview-placeholder {
+            text-align: center;
+            color: #999;
+        }
+        .preview-placeholder-icon {
+            font-size: 64px;
+            margin-bottom: 16px;
+        }
+        .preview-placeholder-text {
+            font-size: 14px;
+        }
+        .preview-content {
+            width: 100%;
+            height: 100%;
+            display: none;
+        }
+        .preview-content.active {
+            display: block;
+        }
+        .preview-info {
+            background: #f5f7fa;
+            border-radius: 8px;
+            padding: 16px;
+            margin-bottom: 16px;
+        }
+        .preview-info-row {
+            display: flex;
+            justify-content: space-between;
+            padding: 6px 0;
+            font-size: 14px;
+        }
+        .preview-info-label {
+            color: #666;
+        }
+        .preview-info-value {
+            color: #333;
+            font-weight: 500;
+        }
+        .preview-image {
+            max-width: 100%;
+            max-height: 500px;
+            border-radius: 8px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+            display: none;
+        }
+        .preview-image.visible {
+            display: block;
+        }
+        .preview-pdf-page {
+            max-width: 100%;
+            max-height: 500px;
+            border-radius: 8px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+        }
+        .result-actions {
+            display: flex;
+            gap: 12px;
+            margin-top: 16px;
+        }
+        .result-download {
+            display: inline-block;
+            padding: 12px 32px;
+            background: #27ae60;
+            color: white;
+            text-decoration: none;
+            border-radius: 8px;
+            font-weight: 500;
+        }
+        .result-download:hover {
+            background: #219a52;
+        }
+        .btn-secondary {
+            background: #6c757d;
+            color: white;
+        }
+        .btn-secondary:hover {
+            background: #5a6268;
+        }
+        .hidden {
+            display: none;
+        }
+        @media (max-width: 900px) {
+            .main-layout {
+                flex-direction: column;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>文件合并工具</h1>
+        <div class="main-layout">
+            <!-- Left Panel: Upload -->
+            <div class="left-panel">
+                <div class="panel-title">上传文件</div>
+
+                <div class="form-group">
+                    <label>文件类型</label>
+                    <div class="radio-group">
+                        <label><input type="radio" name="file_type" value="pdf" checked> PDF 合并</label>
+                        <label><input type="radio" name="file_type" value="image"> 图片 合并</label>
+                    </div>
+                </div>
+
+                <div class="form-group" id="output_format_group">
+                    <label>输出格式</label>
+                    <div class="radio-group">
+                        <label><input type="radio" name="output_format" value="pdf" checked> PDF</label>
+                        <label><input type="radio" name="output_format" value="jpg"> JPG</label>
+                    </div>
+                </div>
+
+                <div class="form-group hidden" id="layout_group">
+                    <label>布局模式</label>
+                    <select id="layout">
+                        <option value="single">单页 (每张图片一页)</option>
+                        <option value="2x2">2x2 网格布局</option>
+                        <option value="3x3">3x3 九宫格布局</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label>上传文件</label>
+                    <div class="drop-zone" id="drop_zone">
+                        <div class="drop-zone-icon">📁</div>
+                        <div class="drop-zone-text">拖拽文件到此处或点击选择</div>
+                        <div class="drop-zone-hint" id="file_hint">支持 PDF 格式</div>
+                    </div>
+                    <input type="file" id="file_input" multiple style="display: none">
+                    <div class="file-list" id="file_list"></div>
+                </div>
+
+                <button class="btn btn-primary btn-block" id="merge_btn" disabled>开始合并</button>
+            </div>
+
+            <!-- Right Panel: Preview -->
+            <div class="right-panel">
+                <div class="panel-title">预览结果</div>
+                <div class="preview-area">
+                    <div class="preview-placeholder" id="preview_placeholder">
+                        <div class="preview-placeholder-icon">📄</div>
+                        <div class="preview-placeholder-text">上传文件并合并后<br>此处显示预览</div>
+                    </div>
+                    <div class="preview-content" id="preview_content">
+                        <div class="preview-info" id="preview_info">
+                            <div class="preview-info-row">
+                                <span class="preview-info-label">文件名</span>
+                                <span class="preview-info-value" id="info_filename">-</span>
+                            </div>
+                            <div class="preview-info-row">
+                                <span class="preview-info-label">文件大小</span>
+                                <span class="preview-info-value" id="info_filesize">-</span>
+                            </div>
+                            <div class="preview-info-row">
+                                <span class="preview-info-label">页数/图片数</span>
+                                <span class="preview-info-value" id="info_count">-</span>
+                            </div>
+                        </div>
+                        <img id="preview_image" class="preview-image" alt="Preview">
+                        <div class="result-actions">
+                            <a href="#" class="result-download" id="download_btn">下载文件</a>
+                            <button class="btn btn-secondary" id="reset_btn">重新开始</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        const fileTypeRadios = document.querySelectorAll('input[name="file_type"]');
+        const outputFormatRadios = document.querySelectorAll('input[name="output_format"]');
+        const dropZone = document.getElementById('drop_zone');
+        const fileInput = document.getElementById('file_input');
+        const fileList = document.getElementById('file_list');
+        const fileHint = document.getElementById('file_hint');
+        const mergeBtn = document.getElementById('merge_btn');
+        const layoutGroup = document.getElementById('layout_group');
+        const previewPlaceholder = document.getElementById('preview_placeholder');
+        const previewContent = document.getElementById('preview_content');
+        const downloadBtn = document.getElementById('download_btn');
+        const resetBtn = document.getElementById('reset_btn');
+        const previewImage = document.getElementById('preview_image');
+
+        let selectedFiles = [];
+        let currentJobId = null;
+
+        function formatFileSize(bytes) {
+            if (bytes < 1024) return bytes + ' B';
+            if (bytes < 1024 * 1024) return (bytes / 1024).toFixed(1) + ' KB';
+            return (bytes / (1024 * 1024)).toFixed(1) + ' MB';
+        }
+
+        function updateUI() {
+            const fileType = document.querySelector('input[name="file_type"]:checked').value;
+
+            if (fileType === 'pdf') {
+                fileHint.textContent = '支持 PDF 格式';
+                layoutGroup.classList.add('hidden');
+            } else {
+                fileHint.textContent = '支持 JPG, PNG, WEBP, BMP 等图片格式';
+                layoutGroup.classList.remove('hidden');
+            }
+
+            mergeBtn.disabled = selectedFiles.length === 0;
+        }
+
+        fileTypeRadios.forEach(radio => {
+            radio.addEventListener('change', updateUI);
+        });
+
+        outputFormatRadios.forEach(radio => {
+            radio.addEventListener('change', updateUI);
+        });
+
+        dropZone.addEventListener('click', () => fileInput.click());
+
+        dropZone.addEventListener('dragover', (e) => {
+            e.preventDefault();
+            dropZone.classList.add('dragover');
+        });
+
+        dropZone.addEventListener('dragleave', () => {
+            dropZone.classList.remove('dragover');
+        });
+
+        dropZone.addEventListener('drop', (e) => {
+            e.preventDefault();
+            dropZone.classList.remove('dragover');
+            handleFiles(e.dataTransfer.files);
+        });
+
+        fileInput.addEventListener('change', (e) => {
+            handleFiles(e.target.files);
+        });
+
+        function handleFiles(files) {
+            const fileType = document.querySelector('input[name="file_type"]:checked').value;
+            let acceptedTypes = fileType === 'pdf' ? ['.pdf'] : ['.jpg', '.jpeg', '.png', '.webp', '.bmp', '.tiff', '.gif'];
+
+            for (let file of files) {
+                const ext = '.' + file.name.split('.').pop().toLowerCase();
+                if (acceptedTypes.includes(ext)) {
+                    const existingNames = selectedFiles.map(f => f.name);
+                    if (!existingNames.includes(file.name)) {
+                        selectedFiles.push(file);
+                    }
+                }
+            }
+            renderFileList();
+            updateUI();
+        }
+
+        function renderFileList() {
+            fileList.innerHTML = '';
+            selectedFiles.forEach((file, index) => {
+                const item = document.createElement('div');
+                item.className = 'file-item';
+                item.innerHTML = `
+                    <span class="file-item-name">${file.name}</span>
+                    <span class="file-item-size" style="color:#999;font-size:12px;margin-right:8px;">${formatFileSize(file.size)}</span>
+                    <span class="file-item-remove" onclick="removeFile(${index})">&times;</span>
+                `;
+                fileList.appendChild(item);
+            });
+        }
+
+        window.removeFile = function(index) {
+            selectedFiles.splice(index, 1);
+            renderFileList();
+            updateUI();
+        };
+
+        mergeBtn.addEventListener('click', async () => {
+            if (selectedFiles.length === 0) return;
+
+            mergeBtn.disabled = true;
+            mergeBtn.textContent = '处理中...';
+
+            const formData = new FormData();
+            const fileType = document.querySelector('input[name="file_type"]:checked').value;
+            const outputFormat = document.querySelector('input[name="output_format"]:checked').value;
+            const layout = document.getElementById('layout').value;
+
+            formData.append('file_type', fileType);
+            formData.append('output_format', outputFormat);
+            formData.append('layout', layout);
+
+            selectedFiles.forEach(file => {
+                formData.append('files', file);
+            });
+
+            try {
+                const response = await fetch('/api/merge', {
+                    method: 'POST',
+                    body: formData
+                });
+
+                const result = await response.json();
+
+                if (result.success) {
+                    currentJobId = result.job_id;
+                    downloadBtn.href = `/api/download/${result.job_id}`;
+                    showPreview(result);
+                } else {
+                    alert('合并失败: ' + result.error);
+                }
+            } catch (error) {
+                alert('请求失败: ' + error.message);
+            } finally {
+                mergeBtn.disabled = false;
+                mergeBtn.textContent = '开始合并';
+            }
+        });
+
+        function showPreview(result) {
+            previewPlaceholder.style.display = 'none';
+            previewContent.classList.add('active');
+
+            document.getElementById('info_filename').textContent = result.output_filename || 'merged.pdf';
+            document.getElementById('info_count').textContent = result.images_processed || result.files_merged || '-';
+
+            // Show preview using the preview API
+            previewImage.onload = function() {
+                previewImage.classList.add('visible');
+            };
+            previewImage.onerror = function() {
+                previewImage.classList.remove('visible');
+                console.error('Preview failed to load');
+            };
+            previewImage.src = `/api/preview/${result.job_id}?t=${Date.now()}`;
+        }
+
+        resetBtn.addEventListener('click', () => {
+            selectedFiles = [];
+            currentJobId = null;
+            renderFileList();
+            updateUI();
+            previewPlaceholder.style.display = 'block';
+            previewContent.classList.remove('active');
+            previewImage.classList.remove('visible');
+            fileInput.value = '';
+        });
+
+        updateUI();
+    </script>
+</body>
+</html>

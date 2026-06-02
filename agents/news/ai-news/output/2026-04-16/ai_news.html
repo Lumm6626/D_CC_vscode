@@ -1,0 +1,914 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI News - 2026-04-16</title>
+    <style>
+        body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; max-width: 800px; margin: 0 auto; padding: 20px; background: #f5f5f5; }
+        .header { background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); color: white; padding: 30px; border-radius: 10px; margin-bottom: 20px; }
+        .header h1 { margin: 0; font-size: 28px; }
+        .header p { margin: 10px 0 0 0; opacity: 0.9; }
+        .top10-section { background: white; padding: 25px; margin-bottom: 25px; border-radius: 12px; box-shadow: 0 2px 8px rgba(0,0,0,0.1); }
+        .top10-section h2 { margin: 0 0 15px 0; color: #1a1a1a; font-size: 20px; padding-bottom: 10px; border-bottom: 2px solid #ff6b6b; }
+        .top10-china { border-left: 4px solid #ff6b6b; }
+        .top10-china h2 { border-bottom-color: #ff6b6b; }
+        .top10-china .top10-item { background: #fff5f5; border-left-color: #ff6b6b; }
+        .top10-china .top10-num { background: #ff6b6b; }
+        .top10-global { border-left: 4px solid #1976d2; }
+        .top10-global h2 { border-bottom-color: #1976d2; }
+        .top10-global .top10-item { background: #f0f7ff; border-left-color: #1976d2; }
+        .top10-global .top10-num { background: #1976d2; }
+        .top10-list { display: flex; flex-direction: column; gap: 10px; }
+        .top10-item { display: flex; gap: 12px; padding: 12px; border-radius: 8px; }
+        .top10-num { color: white; width: 24px; height: 24px; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 12px; font-weight: bold; flex-shrink: 0; }
+        .top10-content { flex: 1; }
+        .top10-title { font-size: 14px; font-weight: 600; color: #333; line-height: 1.4; }
+        .top10-title a { color: #333; text-decoration: none; }
+        .top10-title a:hover { color: #667eea; }
+        .top10-desc { font-size: 13px; color: #666; line-height: 1.4; margin-top: 4px; }
+        .summary-section { background: white; padding: 25px; margin-bottom: 25px; border-radius: 12px; box-shadow: 0 2px 8px rgba(0,0,0,0.1); }
+        .summary-section h2 { margin: 0 0 20px 0; color: #1a1a1a; font-size: 20px; padding-bottom: 15px; border-bottom: 2px solid #667eea; }
+        .category-tags { display: flex; flex-wrap: wrap; gap: 10px; margin-bottom: 20px; }
+        .cat-tag { background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); color: white; padding: 8px 16px; border-radius: 20px; font-size: 14px; }
+        .highlight-list { display: flex; flex-direction: column; gap: 12px; }
+        .highlight-item { display: flex; align-items: flex-start; gap: 12px; padding: 15px; background: #f8f9fa; border-radius: 10px; border-left: 4px solid #667eea; }
+        .highlight-num { background: #667eea; color: white; width: 28px; height: 28px; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 14px; font-weight: bold; flex-shrink: 0; }
+        .highlight-content { flex: 1; }
+        .highlight-title { font-size: 16px; font-weight: 600; color: #333; line-height: 1.5; margin-bottom: 5px; }
+        .highlight-title a { color: #333; text-decoration: none; }
+        .highlight-title a:hover { color: #667eea; }
+        .highlight-snippet { font-size: 13px; color: #666; line-height: 1.5; margin: 5px 0; }
+        .highlight-meta { font-size: 13px; color: #888; }
+        .chinese-summary { margin-top: 20px; }
+        .chinese-summary h3 { color: #333; font-size: 18px; margin-bottom: 15px; }
+        .news-item { background: white; padding: 20px; margin-bottom: 15px; border-radius: 8px; box-shadow: 0 2px 4px rgba(0,0,0,0.1); }
+        .news-date { color: #999; font-size: 12px; margin-bottom: 5px; }
+        .news-item h3 { margin: 0 0 10px 0; color: #333; }
+        .news-item a { color: #667eea; text-decoration: none; }
+        .snippet { color: #666; font-size: 14px; line-height: 1.6; }
+        .tag { display: inline-block; background: #e8f4f8; color: #2a7bb0; padding: 2px 8px; border-radius: 4px; font-size: 12px; margin-right: 8px; }
+        .tag-china { background: #ffeaea; color: #d32f2f; }
+        .tag-foreign { background: #e3f2fd; color: #1976d2; }
+        .news-meta { margin-top: 10px; display: flex; align-items: center; flex-wrap: wrap; gap: 5px; }
+        .section-title { font-size: 16px; font-weight: bold; color: #333; margin: 20px 0 15px 0; padding-bottom: 10px; border-bottom: 2px solid #667eea; }
+        .footer { text-align: center; color: #999; margin-top: 30px; font-size: 12px; }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h1>AI News Daily</h1>
+        <p>2026-04-16 | 49 articles</p>
+    </div>
+
+    
+    <div class="top10-section top10-china">
+        <h2>🇨🇳 中国科技新闻 Top 10</h2>
+        <div class="top10-list">
+            <div class="top10-item">
+                <span class="top10-num">1</span>
+                <div class="top10-content">
+                    <div class="top10-title"><a href="https://36kr.com/p/3768734631527176?f=rss" target="_blank">8 点氪丨美国将退还超1 1万亿元关税多家银行密集停发信用卡 ；滴露回应使用宠物消毒液后 5只幼猫死亡</a></div>
+                    <div class="top10-desc">今日热点导览
+  京东宣布推出“机器人救护车”
+  抖音集团将投入5亿专项资金扶持真人短剧
+  永辉超市38亿追款获胜 ，王健林等承担连带保证责任
+  张雪机车LOGO抄袭 ？设计公司发声明回应
+  小米</div>
+                </div>
+            </div>
+            <div class="top10-item">
+                <span class="top10-num">2</span>
+                <div class="top10-content">
+                    <div class="top10-title"><a href="https://36kr.com/p/3767970803221251?f=rss" target="_blank">氪星晚报｜ Snap宣布将裁员约 1000人字节启动新一轮期权回购 ；苹果 CEO库克斥资 106万美元增持耐克</a></div>
+                    <div class="top10-desc">大公司：
+  SNAP 宣布将裁员约1000人
+  4 月15日 ，社交媒体公司 Snap宣布一系</div>
+                </div>
+            </div>
+            <div class="top10-item">
+                <span class="top10-num">3</span>
+                <div class="top10-content">
+                    <div class="top10-title"><a href="https://36kr.com/p/3766710136570368?f=rss" target="_blank">粗门完成数千万A +轮融资 ，在 AI时代让更多人 “出门” ｜ 36氪首发</a></div>
+                    <div class="top10-desc">36 氪获悉，线下兴趣活动社区 “粗门”已完成新一轮融资 ，投资方为一家长期关注消费与生活方式领域的香港家族基金。 本轮资金将主要用于扩大品牌影响力、提升优质主理人供给，并加速社区生态与玩法体系建设。这也是</div>
+                </div>
+            </div>
+            <div class="top10-item">
+                <span class="top10-num">4</span>
+                <div class="top10-content">
+                    <div class="top10-title"><a href="https://36kr.com/p/3767326268392199?f=rss" target="_blank">8 点1氪丨许家印一审当庭认罪悔罪交管部门回应新能源车牌绿色变白色 ；生成内容涉黄 ，哩布哩布 AI回应</a></div>
+                    <div class="top10-desc">今日热点导览
+  可能含有“永久性化学物” ， Lululemon在美被调查
+  近一周“一口价”黄金产品最高下跌 17%
+  中国将健全药品价格形成机制
+  离境退税2.0版措施预计 4月底前推出
+  苹果</div>
+                </div>
+            </div>
+            <div class="top10-item">
+                <span class="top10-num">5</span>
+                <div class="top10-content">
+                    <div class="top10-title"><a href="https://36kr.com/p/3766718158324489?f=rss" target="_blank">《明末》团队解散背后，国产单机究竟还缺什么 ？</a></div>
+                    <div class="top10-desc">文丨果脯
+  编辑丨刘士武
+  过去几天里，《明末 ：渊虚之羽》 （后称 ：明末 ）制作组解散、制作人夏思源离职创业的消息 ，让不少人感到唏嘘。
+  这款由灵泽科技开发的国产类魂动作游戏，曾被寄予厚望 ，后续也取</div>
+                </div>
+            </div>
+            <div class="top10-item">
+                <span class="top10-num">6</span>
+                <div class="top10-content">
+                    <div class="top10-title"><a href="https://36kr.com/p/3766487517594377?f=rss" target="_blank">氪星晚报｜高德首款具身机器人将亮相 ；日产发布转型计划 ：削减 20%车型冲刺中美百万销量 ，随着战略转向 ， OpenAI的 8520亿美元估值遭投资者质疑</a></div>
+                    <div class="top10-desc">大公司：
+  全球最大零食店“零食王国”将于 4月 17日开业
+  36 氪获悉，由鸣鸣</div>
+                </div>
+            </div>
+            <div class="top10-item">
+                <span class="top10-num">7</span>
+                <div class="top10-content">
+                    <div class="top10-title"><a href="https://36kr.com/p/3766434507440903?f=rss" target="_blank">宁德时代、智元、银河通用联合投资，六维力传感器头部企业「蓝点触控」完成超亿元 C +轮融资 | 36氪首发</a></div>
+                    <div class="top10-desc">文 | 张冰冰
+  编辑 | 阿至
+  36 氪获悉，蓝点触控 （北京 ）科技有限公司 （以下简称「蓝点触控」 ）近日宣布完成超亿元 C +轮融资 ，由宁德时代旗下溥泉资本、智元机器人、银河通用、奥普特、银河源汇等机</div>
+                </div>
+            </div>
+            <div class="top10-item">
+                <span class="top10-num">8</span>
+                <div class="top10-content">
+                    <div class="top10-title"><a href="https://36kr.com/p/3766410231726855?f=rss" target="_blank">「美股例外」何时休？</a></div>
+                    <div class="top10-desc">作者 | 黄绎达
+  编辑 | 张帆
+  进入4月以来 ，受地缘关系缓和、 “再通胀”预期走弱等利好的持续释放 ，美股三大指数持续走强。截至4月 13日 ，标普 500在 4月的前 8个交易日里实现 6连阳 ，纳指的同期</div>
+                </div>
+            </div>
+            <div class="top10-item">
+                <span class="top10-num">9</span>
+                <div class="top10-content">
+                    <div class="top10-title"><a href="https://www.leiphone.com/category/industrynews/c8rGA0s3Z9EolPet.html" target="_blank">别克×火山引擎 ：至境 E7行业首发搭载豆包大模型最新版</a></div>
+                    <div class="top10-desc">人车交互不再是你问我答的“客服”当豆包大模型进入汽车座舱 ， “” ，而是能像人一样思考、交流、成长的 “数字家人”。 </p</div>
+                </div>
+            </div>
+            <div class="top10-item">
+                <span class="top10-num">10</span>
+                <div class="top10-content">
+                    <div class="top10-title"><a href="https://www.leiphone.com/category/chips/bwKuuKUGYn8a3IbY.html" target="_blank">推理卡毛利率下滑超7% ，天数智芯「降价换量」的买卖值不值 ？</a></div>
+                    <div class="top10-desc">2 个多月前在港股上市的天数智芯，近期发布了 2025年财报。公布当天 ，股价下跌了 10个点。在此之前 ，天数股价已从 342港元的高位大幅回调。财报显示 ，天数全年营收 10.34亿元 ，同比增长 91.6%。一级市</div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="top10-section top10-global">
+        <h2>🌍 全球科技新闻 Top 10</h2>
+        <div class="top10-list">
+            <div class="top10-item">
+                <span class="top10-num">1</span>
+                <div class="top10-content">
+                    <div class="top10-title"><a href="https://www.bbc.com/news/articles/cly00jnnxypo?at_medium=RSS&at_campaign=rss" target="_blank">Booking.com客户在黑客入侵后警告“预订劫持”</a></div>
+                    <div class="top10-desc">该旅行平台表示，为了保护客户，它已更改了PIN码，但没有透露有多少人</div>
+                </div>
+            </div>
+            <div class="top10-item">
+                <span class="top10-num">2</span>
+                <div class="top10-content">
+                    <div class="top10-title"><a href="https://www.bbc.com/news/articles/c05dd2yj3z3o?at_medium=RSS&at_campaign=rss" target="_blank">谷歌惩罚使用后退按钮技巧诱骗人们的网站</a></div>
+                    <div class="top10-desc">这家科技巨头表示，它将从6月份开始惩罚阻止后退按钮导航的网站。</div>
+                </div>
+            </div>
+            <div class="top10-item">
+                <span class="top10-num">3</span>
+                <div class="top10-content">
+                    <div class="top10-title"><a href="https://www.bbc.com/news/articles/cdxdd0z2w11o?at_medium=RSS&at_campaign=rss" target="_blank">Snapchat老板裁员1000人，称人工智能将减少重复性工作</a></div>
+                    <div class="top10-desc">Snapchat的所有者正在裁员约16% ，并撤回了数百个空缺职位。</div>
+                </div>
+            </div>
+            <div class="top10-item">
+                <span class="top10-num">4</span>
+                <div class="top10-content">
+                    <div class="top10-title"><a href="https://www.bbc.com/news/articles/cq597n1pg6lo?at_medium=RSS&at_campaign=rss" target="_blank">一名男子因袭击OpenAI的Sam Altman的家而被控谋杀未遂</a></div>
+                    <div class="top10-desc">这名德克萨斯州男子也面临联邦重罪指控，据称他持有支持暴力行为的文件</div>
+                </div>
+            </div>
+            <div class="top10-item">
+                <span class="top10-num">5</span>
+                <div class="top10-content">
+                    <div class="top10-title"><a href="https://www.bbc.com/news/articles/cj94y9r0p10o?at_medium=RSS&at_campaign=rss" target="_blank">在父母提出对错误的担忧后， Roblox为扩大年龄检查辩护</a></div>
+                    <div class="top10-desc">这家游戏公司拥有1.44亿日常用户，正在扩展其技术，引入两种针对特定年龄段的用户</div>
+                </div>
+            </div>
+            <div class="top10-item">
+                <span class="top10-num">6</span>
+                <div class="top10-content">
+                    <div class="top10-title"><a href="https://www.bbc.com/news/articles/cx2dg5g1le7o?at_medium=RSS&at_campaign=rss" target="_blank">GTA制造商Rockstar Games再次遭到黑客攻击，但淡化了影响</a></div>
+                    <div class="top10-desc">这一事件标志着这家游戏巨头第二次被年轻的英语黑客入侵</div>
+                </div>
+            </div>
+            <div class="top10-item">
+                <span class="top10-num">7</span>
+                <div class="top10-content">
+                    <div class="top10-title"><a href="https://www.bbc.com/news/articles/czx91rdxpyeo?at_medium=RSS&at_campaign=rss" target="_blank">OpenAI老板山姆·奥尔特曼（ Sam Altman ）的家用自制燃烧弹</a></div>
+                    <div class="top10-desc">旧金山警方在周边大门被点燃后逮捕了一名20岁的嫌疑人。</div>
+                </div>
+            </div>
+            <div class="top10-item">
+                <span class="top10-num">8</span>
+                <div class="top10-content">
+                    <div class="top10-title"><a href="https://www.bbc.com/news/articles/cgqkz5lzvnwo?at_medium=RSS&at_campaign=rss" target="_blank">MND舞者再次通过数字头像在舞台上表演</a></div>
+                    <div class="top10-desc">Breanna Olson说，脑电波技术能够重新建立她所感受到的表情和联系。</div>
+                </div>
+            </div>
+            <div class="top10-item">
+                <span class="top10-num">9</span>
+                <div class="top10-content">
+                    <div class="top10-title"><a href="https://www.bbc.co.uk/sounds/play/w3ct8jxp?at_medium=RSS&at_campaign=rss" target="_blank">科技生活</a></div>
+                    <div class="top10-desc">有没有办法解决人工智能的信任问题？</div>
+                </div>
+            </div>
+            <div class="top10-item">
+                <span class="top10-num">10</span>
+                <div class="top10-content">
+                    <div class="top10-title"><a href="https://www.wired.com/story/the-last-airbender-leak-fans-say-paramount-deserves-fallout/" target="_blank">“Avatar: Aang, The Last Airbender”在线泄露。一些粉丝说派拉蒙应该受到影响</a></div>
+                    <div class="top10-desc">整部电影泄露后，动画师哀悼有机会按预期发布作品。其他</div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    
+    <div class="summary-section">
+        <h2>AI Daily Highlights</h2>
+        <div class="category-tags"><span class="cat-tag">AI AI Product (31)</span><span class="cat-tag">News Other (13)</span><span class="cat-tag">Biz AI Industry (3)</span><span class="cat-tag">LLM LLM/Model (2)</span></div>
+
+        <div class="chinese-summary">
+            <h3>Top 10 AI News</h3>
+            
+            <div class="highlight-item">
+                <span class="highlight-num">1</span>
+                <div class="highlight-content">
+                    <div class="highlight-title">
+                        <a href="https://www.bbc.com/news/articles/cly00jnnxypo?at_medium=RSS&at_campaign=rss" target="_blank" style="color: #333; text-decoration: none;">Booking.com客户在黑客入侵后警告“预订劫持”</a>
+                    </div>
+                    <p class="highlight-snippet" style="color: #555; font-size: 13px; margin: 5px 0; line-height: 1.4;">该旅行平台表示，为了保护客户，它已经更改了PIN码，但没有透露有多少人受到影响。</p>
+                    <div class="highlight-meta">
+                        <span class="highlight-date">04-15 12:05</span> |
+                        <span class="highlight-source">BBC</span> |
+                        <span style="color: #1976d2;">🌍 全球</span>
+                    </div>
+                </div>
+            </div>
+            <div class="highlight-item">
+                <span class="highlight-num">2</span>
+                <div class="highlight-content">
+                    <div class="highlight-title">
+                        <a href="https://www.bbc.com/news/articles/c05dd2yj3z3o?at_medium=RSS&at_campaign=rss" target="_blank" style="color: #333; text-decoration: none;">谷歌惩罚使用后退按钮技巧诱骗人们的网站</a>
+                    </div>
+                    <p class="highlight-snippet" style="color: #555; font-size: 13px; margin: 5px 0; line-height: 1.4;">这家科技巨头表示，它将从6月份开始惩罚阻止后退按钮导航的网站。</p>
+                    <div class="highlight-meta">
+                        <span class="highlight-date">04-15 10:02</span> |
+                        <span class="highlight-source">BBC</span> |
+                        <span style="color: #1976d2;">🌍 全球</span>
+                    </div>
+                </div>
+            </div>
+            <div class="highlight-item">
+                <span class="highlight-num">3</span>
+                <div class="highlight-content">
+                    <div class="highlight-title">
+                        <a href="https://www.bbc.com/news/articles/cdxdd0z2w11o?at_medium=RSS&at_campaign=rss" target="_blank" style="color: #333; text-decoration: none;">Snapchat老板裁员1000人，称人工智能将减少重复性工作</a>
+                    </div>
+                    <p class="highlight-snippet" style="color: #555; font-size: 13px; margin: 5px 0; line-height: 1.4;">Snapchat的所有者正在裁员约16% ，并撤回了数百个空缺职位。</p>
+                    <div class="highlight-meta">
+                        <span class="highlight-date">04-15 15:15</span> |
+                        <span class="highlight-source">BBC</span> |
+                        <span style="color: #1976d2;">🌍 全球</span>
+                    </div>
+                </div>
+            </div>
+            <div class="highlight-item">
+                <span class="highlight-num">4</span>
+                <div class="highlight-content">
+                    <div class="highlight-title">
+                        <a href="https://www.bbc.com/news/articles/cq597n1pg6lo?at_medium=RSS&at_campaign=rss" target="_blank" style="color: #333; text-decoration: none;">一名男子因袭击OpenAI的Sam Altman的家而被控谋杀未遂</a>
+                    </div>
+                    <p class="highlight-snippet" style="color: #555; font-size: 13px; margin: 5px 0; line-height: 1.4;">这名德克萨斯州男子也面临联邦重罪指控，据称他有文件主张对人工智能高管实施暴力。</p>
+                    <div class="highlight-meta">
+                        <span class="highlight-date">04-14 01:05</span> |
+                        <span class="highlight-source">BBC</span> |
+                        <span style="color: #1976d2;">🌍 全球</span>
+                    </div>
+                </div>
+            </div>
+            <div class="highlight-item">
+                <span class="highlight-num">5</span>
+                <div class="highlight-content">
+                    <div class="highlight-title">
+                        <a href="https://www.bbc.com/news/articles/cj94y9r0p10o?at_medium=RSS&at_campaign=rss" target="_blank" style="color: #333; text-decoration: none;">在父母提出对错误的担忧后， Roblox为扩大年龄检查辩护</a>
+                    </div>
+                    <p class="highlight-snippet" style="color: #555; font-size: 13px; margin: 5px 0; line-height: 1.4;">这家游戏公司拥有1.44亿日常用户，正在扩展其技术，推出两个特定年龄段的账户。</p>
+                    <div class="highlight-meta">
+                        <span class="highlight-date">04-13 12:19</span> |
+                        <span class="highlight-source">BBC</span> |
+                        <span style="color: #1976d2;">🌍 全球</span>
+                    </div>
+                </div>
+            </div>
+            <div class="highlight-item">
+                <span class="highlight-num">6</span>
+                <div class="highlight-content">
+                    <div class="highlight-title">
+                        <a href="https://www.bbc.com/news/articles/cx2dg5g1le7o?at_medium=RSS&at_campaign=rss" target="_blank" style="color: #333; text-decoration: none;">GTA制造商Rockstar Games再次遭到黑客攻击，但淡化了影响</a>
+                    </div>
+                    <p class="highlight-snippet" style="color: #555; font-size: 13px; margin: 5px 0; line-height: 1.4;">这一事件标志着这家游戏巨头第二次被说英语的年轻黑客入侵。</p>
+                    <div class="highlight-meta">
+                        <span class="highlight-date">04-13 15:10</span> |
+                        <span class="highlight-source">BBC</span> |
+                        <span style="color: #1976d2;">🌍 全球</span>
+                    </div>
+                </div>
+            </div>
+            <div class="highlight-item">
+                <span class="highlight-num">7</span>
+                <div class="highlight-content">
+                    <div class="highlight-title">
+                        <a href="https://www.bbc.com/news/articles/czx91rdxpyeo?at_medium=RSS&at_campaign=rss" target="_blank" style="color: #333; text-decoration: none;">OpenAI老板山姆·奥尔特曼（ Sam Altman ）的家用自制燃烧弹</a>
+                    </div>
+                    <p class="highlight-snippet" style="color: #555; font-size: 13px; margin: 5px 0; line-height: 1.4;">旧金山警方在周边大门被点燃后逮捕了一名20岁的嫌疑人。</p>
+                    <div class="highlight-meta">
+                        <span class="highlight-date">04-10 21:01</span> |
+                        <span class="highlight-source">BBC</span> |
+                        <span style="color: #1976d2;">🌍 全球</span>
+                    </div>
+                </div>
+            </div>
+            <div class="highlight-item">
+                <span class="highlight-num">8</span>
+                <div class="highlight-content">
+                    <div class="highlight-title">
+                        <a href="https://www.bbc.com/news/articles/cgqkz5lzvnwo?at_medium=RSS&at_campaign=rss" target="_blank" style="color: #333; text-decoration: none;">MND舞者再次通过数字头像在舞台上表演</a>
+                    </div>
+                    <p class="highlight-snippet" style="color: #555; font-size: 13px; margin: 5px 0; line-height: 1.4;">Breanna Olson说，脑电波技术能够重新建立她觉得已经消失的表情和联系。</p>
+                    <div class="highlight-meta">
+                        <span class="highlight-date">04-10 13:13</span> |
+                        <span class="highlight-source">BBC</span> |
+                        <span style="color: #1976d2;">🌍 全球</span>
+                    </div>
+                </div>
+            </div>
+            <div class="highlight-item">
+                <span class="highlight-num">9</span>
+                <div class="highlight-content">
+                    <div class="highlight-title">
+                        <a href="https://www.bbc.co.uk/sounds/play/w3ct8jxp?at_medium=RSS&at_campaign=rss" target="_blank" style="color: #333; text-decoration: none;">科技生活</a>
+                    </div>
+                    <p class="highlight-snippet" style="color: #555; font-size: 13px; margin: 5px 0; line-height: 1.4;">有没有办法解决人工智能的信任问题？</p>
+                    <div class="highlight-meta">
+                        <span class="highlight-date">04-07 20:00</span> |
+                        <span class="highlight-source">BBC</span> |
+                        <span style="color: #1976d2;">🌍 全球</span>
+                    </div>
+                </div>
+            </div>
+            <div class="highlight-item">
+                <span class="highlight-num">10</span>
+                <div class="highlight-content">
+                    <div class="highlight-title">
+                        <a href="https://www.wired.com/story/the-last-airbender-leak-fans-say-paramount-deserves-fallout/" target="_blank" style="color: #333; text-decoration: none;">“Avatar: Aang, The Last Airbender”在线泄露。一些粉丝说派拉蒙应该受到影响</a>
+                    </div>
+                    <p class="highlight-snippet" style="color: #555; font-size: 13px; margin: 5px 0; line-height: 1.4;">在完整的电影泄露后，动画师们哀悼有机会按预期发布他们的作品。其他人认为，鉴于派拉蒙的营销失误和与特朗普的联系，泄露是合理的。</p>
+                    <div class="highlight-meta">
+                        <span class="highlight-date">04-15 22:53</span> |
+                        <span class="highlight-source">Wired</span> |
+                        <span style="color: #1976d2;">🌍 全球</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="section-title">[All News]</div>
+    
+    <div class="news-item">
+        <div class="news-date">04-15 12:05</div>
+        <h3>1. Bookingcom customers warned of 'reservation hijacking' after hack</h3>
+        <p class="snippet">The travel platform said it had changed Pins to protect customers but would not say how many were affected.</p>
+        <div class="news-meta">
+            <a href="https://www.bbc.com/news/articles/cly00jnnxypo?at_medium=RSS&at_campaign=rss" target="_blank">Original</a>
+            <span class="tag">BBC</span>
+            <span class="tag tag-foreign">EN</span>
+        </div>
+    </div>
+    <div class="news-item">
+        <div class="news-date">04-15 10:02</div>
+        <h3>2. [谷歌] to punish sites that trap people in with back button tricks</h3>
+        <p class="snippet">The tech giant said it will punish sites that block back button navigation from June.</p>
+        <div class="news-meta">
+            <a href="https://www.bbc.com/news/articles/c05dd2yj3z3o?at_medium=RSS&at_campaign=rss" target="_blank">Original</a>
+            <span class="tag">BBC</span>
+            <span class="tag tag-foreign">EN</span>
+        </div>
+    </div>
+    <div class="news-item">
+        <div class="news-date">04-15 15:15</div>
+        <h3>3. Snapchat owner cuts 1,000 jobs as 称 AI will reduce repetitive work</h3>
+        <p class="snippet">The Snapchat owner is laying off around 16% of staff and withdrawn hundreds of open job roles.</p>
+        <div class="news-meta">
+            <a href="https://www.bbc.com/news/articles/cdxdd0z2w11o?at_medium=RSS&at_campaign=rss" target="_blank">Original</a>
+            <span class="tag">BBC</span>
+            <span class="tag tag-foreign">EN</span>
+        </div>
+    </div>
+    <div class="news-item">
+        <div class="news-date">04-14 01:05</div>
+        <h3>4. Man charged with attempted murder over attack on home of [OpenAI]'s Sam Altman</h3>
+        <p class="snippet">The Texas man, who also faces federal felony charges, allegedly had documents advocating for violence against AI executives.</p>
+        <div class="news-meta">
+            <a href="https://www.bbc.com/news/articles/cq597n1pg6lo?at_medium=RSS&at_campaign=rss" target="_blank">Original</a>
+            <span class="tag">BBC</span>
+            <span class="tag tag-foreign">EN</span>
+        </div>
+    </div>
+    <div class="news-item">
+        <div class="news-date">04-13 12:19</div>
+        <h3>5. Roblox defends expanded age‑checks after parents raise concerns over errors</h3>
+        <p class="snippet">With 144m daily users, the gaming company is extending its tech to introduce two age‑specific accounts.</p>
+        <div class="news-meta">
+            <a href="https://www.bbc.com/news/articles/cj94y9r0p10o?at_medium=RSS&at_campaign=rss" target="_blank">Original</a>
+            <span class="tag">BBC</span>
+            <span class="tag tag-foreign">EN</span>
+        </div>
+    </div>
+    <div class="news-item">
+        <div class="news-date">04-13 15:10</div>
+        <h3>6. GTA-maker Rockstar Games hacked again but downplays impact</h3>
+        <p class="snippet">The incident marks the second time the games giant has been hacked by young, English-speaking hackers.</p>
+        <div class="news-meta">
+            <a href="https://www.bbc.com/news/articles/cx2dg5g1le7o?at_medium=RSS&at_campaign=rss" target="_blank">Original</a>
+            <span class="tag">BBC</span>
+            <span class="tag tag-foreign">EN</span>
+        </div>
+    </div>
+    <div class="news-item">
+        <div class="news-date">04-10 21:01</div>
+        <h3>7. [OpenAI] boss Sam Altman's home targeted with Molotov cocktail</h3>
+        <p class="snippet">San Francisco police have arrested a 20-year-old suspect after a perimeter gate was set alight.</p>
+        <div class="news-meta">
+            <a href="https://www.bbc.com/news/articles/czx91rdxpyeo?at_medium=RSS&at_campaign=rss" target="_blank">Original</a>
+            <span class="tag">BBC</span>
+            <span class="tag tag-foreign">EN</span>
+        </div>
+    </div>
+    <div class="news-item">
+        <div class="news-date">04-10 13:13</div>
+        <h3>8. Dancer with MND performs on stage again through digital avatar</h3>
+        <p class="snippet">Breanna Olson said brainwave tech was able to re-establish the expression and connection she felt had gone.</p>
+        <div class="news-meta">
+            <a href="https://www.bbc.com/news/articles/cgqkz5lzvnwo?at_medium=RSS&at_campaign=rss" target="_blank">Original</a>
+            <span class="tag">BBC</span>
+            <span class="tag tag-foreign">EN</span>
+        </div>
+    </div>
+    <div class="news-item">
+        <div class="news-date">04-07 20:00</div>
+        <h3>9. Tech Life</h3>
+        <p class="snippet">Is there a way to fix AI's problem with trust?</p>
+        <div class="news-meta">
+            <a href="https://www.bbc.co.uk/sounds/play/w3ct8jxp?at_medium=RSS&at_campaign=rss" target="_blank">Original</a>
+            <span class="tag">BBC</span>
+            <span class="tag tag-foreign">EN</span>
+        </div>
+    </div>
+    <div class="news-item">
+        <div class="news-date">04-15 22:53</div>
+        <h3>10. ‘Avatar: Aang The Last Airbender’ Leaked Online Some Fans Say Paramount Deserves the Fallout</h3>
+        <p class="snippet">After the full movie leaked, animators mourned the chance to release their work as intended. Others feel the leak is justified in light of Paramount’s marketing blunders and association with Trump.</p>
+        <div class="news-meta">
+            <a href="https://www.wired.com/story/the-last-airbender-leak-fans-say-paramount-deserves-fallout/" target="_blank">Original</a>
+            <span class="tag">Wired</span>
+            <span class="tag tag-foreign">EN</span>
+        </div>
+    </div>
+    <div class="news-item">
+        <div class="news-date">04-15 18:00</div>
+        <h3>11. AI Could Democratize One of Tech's Most Valuable Resources</h3>
+        <p class="snippet">AI is making it easier to design chips and optimize software for different silicon. Some startups envision a revolution in chipmaking.</p>
+        <div class="news-meta">
+            <a href="https://www.wired.com/story/ai-could-democratize-one-of-techs-most-valuable-resources/" target="_blank">Original</a>
+            <span class="tag">Wired</span>
+            <span class="tag tag-foreign">EN</span>
+        </div>
+    </div>
+    <div class="news-item">
+        <div class="news-date">04-15 16:00</div>
+        <h3>12. The US Government Will Ask Data Centers How Much Power They Use</h3>
+        <p class="snippet">In a letter obtained by WIRED, the Energy Information Administration tells two senators that it plans to develop a mandatory assessment of data centers' energy use.</p>
+        <div class="news-meta">
+            <a href="https://www.wired.com/story/the-us-government-to-ask-data-centers-how-much-power-they-use/" target="_blank">Original</a>
+            <span class="tag">Wired</span>
+            <span class="tag tag-foreign">EN</span>
+        </div>
+    </div>
+    <div class="news-item">
+        <div class="news-date">04-15 14:58</div>
+        <h3>13. Allbirds Is Pivoting to AI Compute Sure Why Not</h3>
+        <p class="snippet">Once a $4 billion apparel juggernaut, Allbirds will rebrand as NewBird AI, a “GPU-as-a-Service” company. Hey, if you can't beat ’em, join ’em.</p>
+        <div class="news-meta">
+            <a href="https://www.wired.com/story/allbirds-is-pivoting-to-ai-compute-sure-why-not/" target="_blank">Original</a>
+            <span class="tag">Wired</span>
+            <span class="tag tag-foreign">EN</span>
+        </div>
+    </div>
+    <div class="news-item">
+        <div class="news-date">04-15 11:00</div>
+        <h3>14. AI Slop Is Making the Internet Fake-Happy</h3>
+        <p class="snippet">A new study examines the impact of the rise of AI-generated websites on the internet—and found some surprising results.</p>
+        <div class="news-meta">
+            <a href="https://www.wired.com/story/ai-slop-is-changing-the-internet-just-not-how-you-might-think/" target="_blank">Original</a>
+            <span class="tag">Wired</span>
+            <span class="tag tag-foreign">EN</span>
+        </div>
+    </div>
+    <div class="news-item">
+        <div class="news-date">04-15 22:44</div>
+        <h3>15. [亚马逊]-backed X-energy files to raise up to $800M in IPO</h3>
+        <p class="snippet">Nuclear startup X-energy hit the road today to sell prospective investors on its initial public offering.</p>
+        <div class="news-meta">
+            <a href="https://techcrunch.com/2026/04/15/amazon-backed-x-energy-files-to-raise-up-to-800m-in-ipo/" target="_blank">Original</a>
+            <span class="tag">TechCrunch</span>
+            <span class="tag tag-foreign">EN</span>
+        </div>
+    </div>
+    <div class="news-item">
+        <div class="news-date">04-15 21:38</div>
+        <h3>16. Wait could they still actually break up Live Nation?</h3>
+        <p class="snippet">A federal jury found that Live Nation has acted illegally as a monopoly -- but the company just came to a tentative settlement with the DOJ last month.</p>
+        <div class="news-meta">
+            <a href="https://techcrunch.com/2026/04/15/wait-could-they-still-actually-break-up-live-nation/" target="_blank">Original</a>
+            <span class="tag">TechCrunch</span>
+            <span class="tag tag-foreign">EN</span>
+        </div>
+    </div>
+    <div class="news-item">
+        <div class="news-date">04-15 21:05</div>
+        <h3>17. Monarch Tractor’s collapse ends with an 收购 by Caterpillar</h3>
+        <p class="snippet">The startup had faced mounting pressure from dealers, farmers, and a co-founder who complained that Monarch's tech didn't work properly.</p>
+        <div class="news-meta">
+            <a href="https://techcrunch.com/2026/04/15/monarch-tractors-collapse-ends-in-with-an-acquisition-by-caterpillar/" target="_blank">Original</a>
+            <span class="tag">TechCrunch</span>
+            <span class="tag tag-foreign">EN</span>
+        </div>
+    </div>
+    <div class="news-item">
+        <div class="news-date">04-15 19:28</div>
+        <h3>18. [OpenAI] 更新s its Agents SDK to help 企业s build safer more capable agents</h3>
+        <p class="snippet">OpenAI has expanded the capabilities of its agent-building toolkit, as agentic AI continues to grow in popularity.</p>
+        <div class="news-meta">
+            <a href="https://techcrunch.com/2026/04/15/openai-updates-its-agents-sdk-to-help-enterprises-build-safer-more-capable-agents/" target="_blank">Original</a>
+            <span class="tag">TechCrunch</span>
+            <span class="tag tag-foreign">EN</span>
+        </div>
+    </div>
+    <div class="news-item">
+        <div class="news-date">04-15 18:55</div>
+        <h3>19. Hightouch reaches $100M ARR fueled by marketing tools powered by AI</h3>
+        <p class="snippet">The startup says it grew its ARR by $70 million in just 20 months after launching an AI agent platform for marketers.</p>
+        <div class="news-meta">
+            <a href="https://techcrunch.com/2026/04/15/hightouch-reaches-100m-arr-fueled-by-marketing-tools-powered-by-ai/" target="_blank">Original</a>
+            <span class="tag">TechCrunch</span>
+            <span class="tag tag-foreign">EN</span>
+        </div>
+    </div>
+    <div class="news-item">
+        <div class="news-date">04-15 18:51</div>
+        <h3>20. LinkedIn 数据 shows AI isn’t to blame for hiring decline… yet</h3>
+        <p class="snippet">LinkedIn says hiring is down 20% since 2022, but blames higher interest rates — not AI — for the slowdown.</p>
+        <div class="news-meta">
+            <a href="https://techcrunch.com/2026/04/15/linkedin-data-shows-ai-isnt-to-blame-for-hiring-decline-yet/" target="_blank">Original</a>
+            <span class="tag">TechCrunch</span>
+            <span class="tag tag-foreign">EN</span>
+        </div>
+    </div>
+    <div class="news-item">
+        <div class="news-date">04-15 18:50</div>
+        <h3>21. Feds will require 数据 centers to show their power bills</h3>
+        <p class="snippet">In a first, the U.S. Energy Information Agency said it will require data centers to disclose details of their energy use.</p>
+        <div class="news-meta">
+            <a href="https://techcrunch.com/2026/04/15/feds-will-require-data-centers-to-show-their-power-bills/" target="_blank">Original</a>
+            <span class="tag">TechCrunch</span>
+            <span class="tag tag-foreign">EN</span>
+        </div>
+    </div>
+    <div class="news-item">
+        <div class="news-date">04-15 18:38</div>
+        <h3>22. AI learning app Gizmo levels up with 13M users and a $22M 投资ment</h3>
+        <p class="snippet">Gizmo, an AI-powered learning platform, has attracted more than 13 million users and just secured $22 million in Series A funding.</p>
+        <div class="news-meta">
+            <a href="https://techcrunch.com/2026/04/15/ai-learning-app-gizmo-levels-up-with-13m-users-and-a-22m-investment/" target="_blank">Original</a>
+            <span class="tag">TechCrunch</span>
+            <span class="tag tag-foreign">EN</span>
+        </div>
+    </div>
+    <div class="news-item">
+        <div class="news-date">04-15 18:33</div>
+        <h3>23. Can AI judge journalism? A Thiel-backed 创业公司 称 yes even if it risks chilling whistleblowers</h3>
+        <p class="snippet">Objection, a Thiel-backed startup, aims to use AI to judge journalism, letting users pay to challenge stories. Critics warn it could chill whistleblowers and reshape how media accountability works.</p>
+        <div class="news-meta">
+            <a href="https://techcrunch.com/2026/04/15/can-ai-judge-journalism-a-thiel-backed-startup-says-yes-even-if-it-risks-chilling-whistleblowers/" target="_blank">Original</a>
+            <span class="tag">TechCrunch</span>
+            <span class="tag tag-foreign">EN</span>
+        </div>
+    </div>
+    <div class="news-item">
+        <div class="news-date">04-15 17:46</div>
+        <h3>24. This Khosla-backed 自动驾驶 pod 创业公司 just raised $170M — now it’s aiming for more</h3>
+        <p class="snippet">Glydways is in talks to raise another $250 million as it prepares to launch three pilot programs.</p>
+        <div class="news-meta">
+            <a href="https://techcrunch.com/2026/04/15/this-khosla-backed-autonomous-pod-startup-just-raised-170m-now-its-aiming-for-more/" target="_blank">Original</a>
+            <span class="tag">TechCrunch</span>
+            <span class="tag tag-foreign">EN</span>
+        </div>
+    </div>
+    <div class="news-item">
+        <div class="news-date">04-15 17:37</div>
+        <h3>25. Accel raises $5B to back late-stage bets</h3>
+        <p class="snippet">Accel announced on Tuesday that it raised $5 billion in fresh capital to back late-stage companies building AI.</p>
+        <div class="news-meta">
+            <a href="https://techcrunch.com/2026/04/15/accel-raises-5b-to-back-late-stage-bets/" target="_blank">Original</a>
+            <span class="tag">TechCrunch</span>
+            <span class="tag tag-foreign">EN</span>
+        </div>
+    </div>
+    <div class="news-item">
+        <div class="news-date">04-15 17:24</div>
+        <h3>26. India’s vibe-coding 创业公司 Emergent enters OpenClaw-like AI agent space</h3>
+        <p class="snippet">Emergent's Wingman lets users manage and automate tasks through chat on platforms like WhatsApp and Telegram.</p>
+        <div class="news-meta">
+            <a href="https://techcrunch.com/2026/04/15/indias-vibe-coding-startup-emergent-enters-openclaw-like-ai-agent-space/" target="_blank">Original</a>
+            <span class="tag">TechCrunch</span>
+            <span class="tag tag-foreign">EN</span>
+        </div>
+    </div>
+    <div class="news-item">
+        <div class="news-date">04-15 16:21</div>
+        <h3>27. Anthropic shrugs off VC 融资 offers valuing it at $800B+ for now</h3>
+        <p class="snippet">VCs are frothing at the mouth to write more checks to Anthropic at a valuation that matches or beats OpenAI's.</p>
+        <div class="news-meta">
+            <a href="https://techcrunch.com/2026/04/15/anthropic-shrugs-off-vc-funding-offers-valuing-it-at-800b-for-now/" target="_blank">Original</a>
+            <span class="tag">TechCrunch</span>
+            <span class="tag tag-foreign">EN</span>
+        </div>
+    </div>
+    <div class="news-item">
+        <div class="news-date">04-16 08:00</div>
+        <h3>28. 8点1氪丨美国将退还超1万亿元关税；多家银行密集停发信用卡；滴露回应使用宠物消毒液后5只幼猫死亡</h3>
+        <p class="snippet">今日热点导览
+  京东宣布推出“机器人救护车”
+  抖音集团将投入5亿专项资金扶持真人短剧
+  永辉超市38亿追款获胜，王健林等承担连带保证责任
+  张雪机车LOGO抄袭？设计公司发声明回应
+  小米汽车公布降噪处理新专利
+  TOP 3大新闻
+  美国将退还超1万亿元关</p>
+        <div class="news-meta">
+            <a href="https://36kr.com/p/3768734631527176?f=rss" target="_blank">Original</a>
+            <span class="tag">36kr</span>
+            <span class="tag tag-china">CN</span>
+        </div>
+    </div>
+    <div class="news-item">
+        <div class="news-date">04-15 21:53</div>
+        <h3>29. 氪星晚报｜Snap宣布将裁员约1000人；字节启动新一轮期权回购；苹果CEO库克斥资106万美元增持耐克</h3>
+        <p class="snippet">大公司：
+  Snap宣布将裁员约1000人
+  4月15日，社交媒体公司Snap宣布一系</p>
+        <div class="news-meta">
+            <a href="https://36kr.com/p/3767970803221251?f=rss" target="_blank">Original</a>
+            <span class="tag">36kr</span>
+            <span class="tag tag-china">CN</span>
+        </div>
+    </div>
+    <div class="news-item">
+        <div class="news-date">04-15 10:39</div>
+        <h3>30. 粗门完成数千万A+轮融资，在AI时代让更多人“出门”｜36氪首发</h3>
+        <p class="snippet">36氪获悉，线下兴趣活动社区“粗门”已完成新一轮融资，投资方为一家长期关注消费与生活方式领域的香港家族基金。 本轮资金将主要用于扩大品牌影响力、提升优质主理人供给，并加速社区生态与玩法体系建设。这也是粗门继2023年获得Keep战略投资后的又一次融资。
+  粗门正在试图重构一件逐渐被忽视的事情——人们“如何在现实世界一起玩”。
+  当线上娱乐极度丰富，</p>
+        <div class="news-meta">
+            <a href="https://36kr.com/p/3766710136570368?f=rss" target="_blank">Original</a>
+            <span class="tag">36kr</span>
+            <span class="tag tag-china">CN</span>
+        </div>
+    </div>
+    <div class="news-item">
+        <div class="news-date">04-15 08:05</div>
+        <h3>31. 8点1氪丨许家印一审当庭认罪悔罪；交管部门回应新能源车牌绿色变白色；生成内容涉黄，哩布哩布AI回应</h3>
+        <p class="snippet">今日热点导览
+  可能含有“永久性化学物”，Lululemon在美被调查
+  近一周“一口价”黄金产品最高下跌17%
+  中国将健全药品价格形成机制
+  离境退税2.0版措施预计4月底前推出
+  苹果加码iPhone Fold
+  TOP3大新闻
+  恒大集团、恒大地产及</p>
+        <div class="news-meta">
+            <a href="https://36kr.com/p/3767326268392199?f=rss" target="_blank">Original</a>
+            <span class="tag">36kr</span>
+            <span class="tag tag-china">CN</span>
+        </div>
+    </div>
+    <div class="news-item">
+        <div class="news-date">04-15 08:00</div>
+        <h3>32. 《明末》团队解散背后，国产单机究竟还缺什么？</h3>
+        <p class="snippet">文丨果脯
+  编辑丨刘士武
+  过去几天里，《明末：渊虚之羽》（后称：明末）制作组解散、制作人夏思源离职创业的消息，让不少人感到唏嘘。
+  这款由灵泽科技开发的国产类魂动作游戏，曾被寄予厚望，后续也取得了不错的成绩。
+  据统计，2025年上线后，游戏在Steam预估销量约120万套，主机平台PS5约30至40万套，加上其他渠道总计约2</p>
+        <div class="news-meta">
+            <a href="https://36kr.com/p/3766718158324489?f=rss" target="_blank">Original</a>
+            <span class="tag">36kr</span>
+            <span class="tag tag-china">CN</span>
+        </div>
+    </div>
+    <div class="news-item">
+        <div class="news-date">04-14 18:01</div>
+        <h3>33. 氪星晚报｜高德首款具身机器人将亮相；日产发布转型计划：削减20%车型，冲刺中美百万销量；随着战略转向，[OpenAI]的8520亿美元估值遭投资者质疑</h3>
+        <p class="snippet">大公司：
+  全球最大零食店“零食王国”将于4月17日开业
+  36氪获悉，由鸣鸣</p>
+        <div class="news-meta">
+            <a href="https://36kr.com/p/3766487517594377?f=rss" target="_blank">Original</a>
+            <span class="tag">36kr</span>
+            <span class="tag tag-china">CN</span>
+        </div>
+    </div>
+    <div class="news-item">
+        <div class="news-date">04-14 17:09</div>
+        <h3>34. 宁德时代、智元、银河通用联合投资，六维力传感器头部企业「蓝点触控」完成超亿元C+轮融资 | 36氪首发</h3>
+        <p class="snippet">文 | 张冰冰
+  编辑 | 阿至
+  36氪获悉，蓝点触控（北京）科技有限公司（以下简称「蓝点触控」）近日宣布完成超亿元C+轮融资，由宁德时代旗下溥泉资本、智元机器人、银河通用、奥普特、银河源汇等机构联合投资。这是近一年内「蓝点触控」完成的第三轮过亿元融资。
+  「蓝点触控」</p>
+        <div class="news-meta">
+            <a href="https://36kr.com/p/3766434507440903?f=rss" target="_blank">Original</a>
+            <span class="tag">36kr</span>
+            <span class="tag tag-china">CN</span>
+        </div>
+    </div>
+    <div class="news-item">
+        <div class="news-date">04-14 16:33</div>
+        <h3>35. 「美股例外」何时休？</h3>
+        <p class="snippet">作者 | 黄绎达
+  编辑 | 张帆
+  进入4月以来，受地缘关系缓和、“再通胀”预期走弱等利好的持续释放，美股三大指数持续走强。截至4月13日，标普500在4月的前8个交易日里实现6连阳，纳指的同期区间涨幅则相对更高，录得7.38%。
+  行业板块方面，科技板块作为本轮美股短期上涨的“领头羊”</p>
+        <div class="news-meta">
+            <a href="https://36kr.com/p/3766410231726855?f=rss" target="_blank">Original</a>
+            <span class="tag">36kr</span>
+            <span class="tag tag-china">CN</span>
+        </div>
+    </div>
+    <div class="news-item">
+        <div class="news-date">04-13 16:24</div>
+        <h3>36. 别克×火山引擎：至境E7行业首发搭载豆包大模型最新版</h3>
+        <p class="snippet">当豆包大模型进入汽车座舱，人车交互不再是你问我答的“客服”，而是能像人一样思考、交流、成长的“数字家人”。</p</p>
+        <div class="news-meta">
+            <a href="https://www.leiphone.com/category/industrynews/c8rGA0s3Z9EolPet.html" target="_blank">Original</a>
+            <span class="tag">雷锋网</span>
+            <span class="tag tag-china">CN</span>
+        </div>
+    </div>
+    <div class="news-item">
+        <div class="news-date">04-13 12:56</div>
+        <h3>37. 推理卡毛利率下滑超7%，天数智芯「降价换量」的买卖值不值？</h3>
+        <p class="snippet">2个多月前在港股上市的天数智芯，近期发布了2025年财报。公布当天，股价下跌了10个点。在此之前，天数股价已从342港元的高位大幅回调。财报显示，天数全年营收10.34亿元，同比增长91.6%。一级市场投资人林云直言，这个表现没有达到大家的心理预期。对比其他几家国产公司这两年来的增长速度，市场给天数的营收底线预期是：12亿元。但另一方面，分析师Ethan透露，资本</p>
+        <div class="news-meta">
+            <a href="https://www.leiphone.com/category/chips/bwKuuKUGYn8a3IbY.html" target="_blank">Original</a>
+            <span class="tag">雷锋网</span>
+            <span class="tag tag-china">CN</span>
+        </div>
+    </div>
+    <div class="news-item">
+        <div class="news-date">04-13 12:12</div>
+        <h3>38. 明日新程完成连续两轮融资，领跑Harness群体多智能体赛道</h3>
+        <p class="snippet">日前，由微软小冰原班人马成立的新公司“明日新程”宣布已连续完成两轮融资，重仓布局Harness群体多智能体赛道。其中，天使轮融资由创新工场和Atypical Ventures联合领投，奇绩创坛继续跟投，其余参投方包括原微软全球副总裁David Ku等个人投资者、公司独家财务顾问安可资本等。目前，公司已募得供未来三到五年持续创新的所需资金。明日新程（英文名：Next</p>
+        <div class="news-meta">
+            <a href="https://www.leiphone.com/category/industrynews/aiDP2A7dwvwQL6Ue.html" target="_blank">Original</a>
+            <span class="tag">雷锋网</span>
+            <span class="tag tag-china">CN</span>
+        </div>
+    </div>
+    <div class="news-item">
+        <div class="news-date">04-13 09:34</div>
+        <h3>39. 「作弊」内幕曝光！3DMark回应将某知名国产手机除名；李想朋友圈炮轰东风日产恶意拉踩，后者高管回应；美的空调又发行业首创产品</h3>
+        <p class="snippet">要闻提示1.“作弊” 内幕曝光！3DMark回应将某知名国产手机除名：实测性能相差24%、温度超过50℃<p style="text-a</p>
+        <div class="news-meta">
+            <a href="https://www.leiphone.com/category/zaobao/aAthIc8n66aAjB1c.html" target="_blank">Original</a>
+            <span class="tag">雷锋网</span>
+            <span class="tag tag-china">CN</span>
+        </div>
+    </div>
+    <div class="news-item">
+        <div class="news-date">04-15 15:03</div>
+        <h3>40. 阿里ATH发布AI开发工具Meoo，已打通阿里云核心产品</h3>
+        <p class="snippet">4月15日，阿里ATH事业群发布旗下首款AI开发工具Meoo（秒悟），该工具集成了千问、Kimi、GLM、MiniMax四大顶尖模型，并内置阿里云数据库、存储等核心产品服务，用户无需任何编程基础，只需用自然语言描述想法，Meoo最快1分钟就能自动生成前端后端完整的网站、H5页面，并在阿里云上一键部署上线。即日起，所有用户可直接访问官网体验（Meoo入口：https://meoo.com/ ）</p>
+        <div class="news-meta">
+            <a href="https://www.leiphone.com/category/industrynews/IxgflozPQulEV4xG.html" target="_blank">Original</a>
+            <span class="tag">雷锋网</span>
+            <span class="tag tag-china">CN</span>
+        </div>
+    </div>
+    <div class="news-item">
+        <div class="news-date">04-15 15:00</div>
+        <h3>41. 美团闪购升级闪电仓供应链服务平台：向全行业商家开放即时零售供应链基建</h3>
+        <p class="snippet">4月15日，美团闪购面向全体闪电仓商家，升级供应链服务平台“闪电帮帮”，开放全套即时零售供应链基建：在帮助商家提升货盘质量、提高采购效率、优化服务体验三方面发力，帮助闪电仓商家迭代升级货盘、提高经营效率，远离“低价低质内卷”，实现更低成本采购、更高质量货盘、更稳用户复购，走向精耕细作、稳定可持续经营的发展新阶段。&nbsp</p>
+        <div class="news-meta">
+            <a href="https://www.leiphone.com/category/industrynews/9156gKIK4LMVgU6T.html" target="_blank">Original</a>
+            <span class="tag">雷锋网</span>
+            <span class="tag tag-china">CN</span>
+        </div>
+    </div>
+    <div class="news-item">
+        <div class="news-date">04-15 13:55</div>
+        <h3>42. 阿里云连续5年稳居游戏云市场份额第一！</h3>
+        <p class="snippet">4月15日，IDC《中国游戏云市场跟踪，2025H2》最新数据显示，2025年下半年阿里云市场份额位列第一，带动全年份额持续上涨。这也是阿里云连续第5年稳居中国游戏云市场第一。其中，在游戏云解决方案、基础设施两大细分市场，阿里云均为第一，份额分别为42%、39%。阿里云以23%增速领涨解决方案市场，其大数据及AI解决方案成为核心增长引擎。<span style="</p>
+        <div class="news-meta">
+            <a href="https://www.leiphone.com/category/industrynews/KNYld92kIlzwpITf.html" target="_blank">Original</a>
+            <span class="tag">雷锋网</span>
+            <span class="tag tag-china">CN</span>
+        </div>
+    </div>
+    <div class="news-item">
+        <div class="news-date">04-16 01:53</div>
+        <h3>43. 美国鞋类巨头 Allbirds 大举购入 GPU、全面倒向 AI，股价一度蹿升 721%</h3>
+        <p class="snippet">IT之家 4 月 16 日消息，美国服饰品牌 Allbirds 曾凭借 Wool Runner 鞋款走红，但在 2021 年以约 40 亿美元估值上市后，公司始终未能盈利，且 2022 年至 2025 年销售额几乎腰斩。公司近期宣布，将在关闭门店后以 3900 万美元出售品牌与资产。不过，这一上市壳资源仍具价值。英国《金融时</p>
+        <div class="news-meta">
+            <a href="https://www.ithome.com/0/939/707.htm" target="_blank">Original</a>
+            <span class="tag">IT之家</span>
+            <span class="tag tag-china">CN</span>
+        </div>
+    </div>
+    <div class="news-item">
+        <div class="news-date">04-16 01:36</div>
+        <h3>44. 曾设计高通 Oryon CPU 架构：传奇芯片设计师杰拉德 · 威廉姆斯三世再创业，要用 AI 改变 CPU</h3>
+        <p class="snippet">IT之家 4 月 16 日消息，芯片设计师、前高通工程师、Nuvia 联合创始人 Gerard Williams III（杰拉德 · 威廉姆斯三世）当地时间 4 月 15 日宣布，与前高通工程师 John Bruno、Ram Srinivasan 一同创立 NUVACORE 公司。NUVACORE 官方表示：CPU 的演进已历经数十载，而</p>
+        <div class="news-meta">
+            <a href="https://www.ithome.com/0/939/675.htm" target="_blank">Original</a>
+            <span class="tag">IT之家</span>
+            <span class="tag tag-china">CN</span>
+        </div>
+    </div>
+    <div class="news-item">
+        <div class="news-date">04-16 01:34</div>
+        <h3>45. 用户反馈 Claude 桌面应用不兼容微软 Win11 三月更新：安装失败、运行卡死、Cowork 崩溃</h3>
+        <p class="snippet">IT之家 4 月 16 日消息，科技媒体 NeoWin 昨日（4 月 15 日）发布博文，报道称 AI 编程工具 Claude Desktop 不兼容 Windows 11 三月安全更新 KB5079473，导致安装失败、Hyper-V 缺失导致崩溃、OAuth 流程异常等问题。不少用户，尤其是开发者反馈，AI 编程工具 Cla</p>
+        <div class="news-meta">
+            <a href="https://www.ithome.com/0/939/687.htm" target="_blank">Original</a>
+            <span class="tag">IT之家</span>
+            <span class="tag tag-china">CN</span>
+        </div>
+    </div>
+    <div class="news-item">
+        <div class="news-date">04-16 09:48</div>
+        <h3>46. 英伟达发布Ising模型家族：用AI破解量子纠错与校准</h3>
+        <p class="snippet">布局下一代算力生态。</p>
+        <div class="news-meta">
+            <a href="https://www.tmtpost.com/7954696.html" target="_blank">Original</a>
+            <span class="tag">钛媒体</span>
+            <span class="tag tag-china">CN</span>
+        </div>
+    </div>
+    <div class="news-item">
+        <div class="news-date">04-16 09:33</div>
+        <h3>47. 厘清了中国电力设备龙头的脉络，也就理解了本轮AI电力大周期</h3>
+        <p class="snippet">以思源电气为切口，洞悉本轮AI电力周期的演进逻辑。</p>
+        <div class="news-meta">
+            <a href="https://www.tmtpost.com/7954894.html" target="_blank">Original</a>
+            <span class="tag">钛媒体</span>
+            <span class="tag tag-china">CN</span>
+        </div>
+    </div>
+    <div class="news-item">
+        <div class="news-date">04-16 09:30</div>
+        <h3>48. [OpenAI]向Anthropic开炮，而中国AI在闷声赚钱</h3>
+        <p class="snippet">吵架没用，赚钱才是硬道理。</p>
+        <div class="news-meta">
+            <a href="https://www.tmtpost.com/7954459.html" target="_blank">Original</a>
+            <span class="tag">钛媒体</span>
+            <span class="tag tag-china">CN</span>
+        </div>
+    </div>
+    <div class="news-item">
+        <div class="news-date">04-16 09:25</div>
+        <h3>49. 亏损572亿、营收腰斩，启明星辰能靠AI自救吗？</h3>
+        <p class="snippet">网安龙头，至暗时刻。</p>
+        <div class="news-meta">
+            <a href="https://www.tmtpost.com/7954449.html" target="_blank">Original</a>
+            <span class="tag">钛媒体</span>
+            <span class="tag tag-china">CN</span>
+        </div>
+    </div>
+    <div class="footer">
+        Generated by AI News Assistant
+    </div>
+</body>
+</html>

@@ -1,0 +1,17 @@
+{
+    "app_name": "File Converter",
+    "version": "1.0.0",
+    "host": "0.0.0.0",
+    "port": 5001,
+    "output_dir": "output",
+    "max_file_size_mb": 50,
+    "allowed_extensions": {
+        "pdf": [".pdf"],
+        "image": [".jpg", ".jpeg", ".png", ".webp", ".bmp", ".tiff", ".gif"]
+    },
+    "layouts": {
+        "single": "每张图片一页",
+        "2x2": "2x2 网格布局",
+        "3x3": "3x3 九宫格布局"
+    }
+}

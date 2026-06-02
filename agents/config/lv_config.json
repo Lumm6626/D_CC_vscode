@@ -1,0 +1,31 @@
+{
+    "secretaries": {
+        "feishu": {
+            "name": "飞书助理",
+            "command": "python agents/feishu-sync/mcp_server.py",
+            "enabled": true
+        },
+        "news": {
+            "name": "新闻助理",
+            "command": "python agents/news/ai-news/mcp_server.py",
+            "enabled": true
+        },
+        "daily": {
+            "name": "日报助理",
+            "command": "python agents/daily-report/mcp_server.py",
+            "enabled": true
+        },
+        "review": {
+            "name": "复盘助理",
+            "command": "python agents/review-agent/mcp_server.py",
+            "enabled": true
+        },
+        "media": {
+            "name": "媒体管家",
+            "command": "python agents/media-manager/mcp_server.py",
+            "enabled": true
+        }
+    },
+    "project_docs_path": "D:/D_CC_vscode/agents/feishu-sync/docs",
+    "output_base": "D:/D_CC_vscode/agents"
+}

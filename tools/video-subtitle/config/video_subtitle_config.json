@@ -1,0 +1,16 @@
+{
+    "downloader": {
+        "output_dir": "video-subtitle/output/downloads",
+        "format": "bestvideo+bestaudio/best",
+        "timeout": 600
+    },
+    "recognizer": {
+        "model": "base",
+        "model_dir": "video-subtitle/models",
+        "device": "auto"
+    },
+    "subtitle": {
+        "output_dir": "video-subtitle/output/subtitles",
+        "encoding": "utf-8"
+    }
+}
