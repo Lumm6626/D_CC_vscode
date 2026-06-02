@@ -1,0 +1,15 @@
+{
+  "permissions": {
+    "defaultMode": "plan",
+    "allow": [
+      "Read",
+      "Edit",
+      "Write",
+      "Glob",
+      "Grep",
+      "LS",
+      "TodoRead",
+      "TodoWrite"
+    ]
+  }
+}
