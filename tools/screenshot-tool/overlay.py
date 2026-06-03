@@ -25,12 +25,17 @@ class OverlayManager(QObject):
     finished = Signal(object)
 
     def __init__(self, fullscreen_pixmap: QPixmap, luminance: np.ndarray,
-                 total_geometry: QRect, per_screen: dict):
+                 total_geometry: QRect, per_screen: dict,
+                 physical_pixmap: QPixmap = None, physical_rect: QRect = None,
+                 screen_dprs: dict = None):
         super().__init__()
         self.fullscreen_pixmap = fullscreen_pixmap
         self.luminance = luminance
         self.total_geometry = total_geometry
         self.per_screen = per_screen
+        self.physical_pixmap = physical_pixmap or QPixmap(fullscreen_pixmap)
+        self.physical_rect = physical_rect or QRect(total_geometry)
+        self.screen_dprs = screen_dprs or {}
 
         self.state = AnnotationState.SELECTING
         self.selection_start: QPoint | None = None
@@ -161,13 +166,21 @@ class OverlayManager(QObject):
 
     def _start_text_edit(self, rect: QRect):
         self.text_edit_rect = QRect(rect)
-        parent = self.overlays[0] if self.overlays else None
+        parent = None
+        for ov in self.overlays:
+            if ov.screen_geo.contains(rect.center()):
+                parent = ov
+                break
+        if parent is None:
+            parent = self.overlays[0] if self.overlays else None
         self.text_edit = QLineEdit(parent)
         self.text_edit.setPlaceholderText("输入文字...")
         self.text_edit.setStyleSheet(
             f"QLineEdit {{ background: white; border: 1px solid #007AFF; "
             f"padding: 4px 8px; font-size: {self.font_size}px; color: black; border-radius: 2px; }}")
-        self.text_edit.setGeometry(rect); self.text_edit.show(); self.text_edit.setFocus()
+        local_rect = QRect(rect.x() - parent.screen_geo.x(), rect.y() - parent.screen_geo.y(),
+                           rect.width(), rect.height())
+        self.text_edit.setGeometry(local_rect); self.text_edit.show(); self.text_edit.setFocus()
         self.text_edit.returnPressed.connect(self.confirm_text)
         self.text_edit.textChanged.connect(self.refresh_all)
 
@@ -194,16 +207,16 @@ class OverlayManager(QObject):
         r = self.drag_start_rect
         if r is None: return
         dx, dy = gpos.x() - self.drag_start_pos.x(), gpos.y() - self.drag_start_pos.y()
-        nr = QRect(r); tw, th = self.total_geometry.width(), self.total_geometry.height()
+        nr = QRect(r); g = self.total_geometry
         h = self.dragging_handle
         if h == 'move':
-            nr.moveTo(clamp(r.x() + dx, 0, tw - r.width()),
-                      clamp(r.y() + dy, 0, th - r.height()))
+            nr.moveTo(clamp(r.x() + dx, g.left(), g.right() - r.width()),
+                      clamp(r.y() + dy, g.top(), g.bottom() - r.height()))
         else:
-            if 'l' in (h or ''): nr.setLeft(clamp(r.left() + dx, 0, r.right() - 10))
-            elif 'r' in (h or ''): nr.setRight(clamp(r.right() + dx, r.left() + 10, tw))
-            if 't' in (h or ''): nr.setTop(clamp(r.top() + dy, 0, r.bottom() - 10))
-            elif 'b' in (h or ''): nr.setBottom(clamp(r.bottom() + dy, r.top() + 10, th))
+            if 'l' in (h or ''): nr.setLeft(clamp(r.left() + dx, g.left(), r.right() - 10))
+            elif 'r' in (h or ''): nr.setRight(clamp(r.right() + dx, r.left() + 10, g.right()))
+            if 't' in (h or ''): nr.setTop(clamp(r.top() + dy, g.top(), r.bottom() - 10))
+            elif 'b' in (h or ''): nr.setBottom(clamp(r.bottom() + dy, r.top() + 10, g.bottom()))
         self.selection_rect = nr
 
     def hit_handle(self, gpos: QPoint, rect: QRect) -> str | None:
@@ -233,12 +246,77 @@ class OverlayManager(QObject):
 
     def _render_result(self) -> QPixmap:
         rect = self.selection_rect or self.total_geometry
-        result = self.fullscreen_pixmap.copy(rect)
-        painter = QPainter(result); painter.setRenderHint(QPainter.RenderHint.Antialiasing)
-        painter.translate(-rect.topLeft())
-        for ann in self.annotations:
-            draw_annotation(painter, ann, self.fullscreen_pixmap)
+        max_dpr = max(self.screen_dprs.values()) if self.screen_dprs else 1
+        phys_origin = self.physical_rect.topLeft()
+
+        # 物理分辨率输出尺寸
+        out_w = int(rect.width() * max_dpr)
+        out_h = int(rect.height() * max_dpr)
+        result = QPixmap(out_w, out_h)
+        result.fill(0)
+        painter = QPainter(result)
+
+        # 逐屏合成物理像素
+        for s, (geo, _logical_grab) in self.per_screen.items():
+            if not geo.intersects(rect):
+                continue
+            dpr = self.screen_dprs.get(s, 1)
+            overlap = geo.intersected(rect)
+
+            # 物理图中当前屏幕的起始偏移
+            screen_phys_x = geo.x() * dpr - phys_origin.x()
+            screen_phys_y = geo.y() * dpr - phys_origin.y()
+
+            # 源区域在物理拼接图中的坐标
+            src_x = int((overlap.x() - geo.x()) * dpr + screen_phys_x)
+            src_y = int((overlap.y() - geo.y()) * dpr + screen_phys_y)
+            src_w = int(overlap.width() * dpr)
+            src_h = int(overlap.height() * dpr)
+
+            # 目标区域在输出图中的坐标（统一到 max_dpr）
+            dst_x = int((overlap.x() - rect.x()) * max_dpr)
+            dst_y = int((overlap.y() - rect.y()) * max_dpr)
+            dst_w = int(overlap.width() * max_dpr)
+            dst_h = int(overlap.height() * max_dpr)
+
+            portion = self.physical_pixmap.copy(QRect(src_x, src_y, src_w, src_h))
+            if dpr != max_dpr:
+                portion = portion.scaled(dst_w, dst_h,
+                                         Qt.AspectRatioMode.KeepAspectRatio,
+                                         Qt.TransformationMode.SmoothTransformation)
+            painter.drawPixmap(dst_x, dst_y, portion)
+
         painter.end()
+
+        # 标注：缩放到 max_dpr 物理坐标
+        ann_painter = QPainter(result)
+        ann_painter.setRenderHint(QPainter.RenderHint.Antialiasing)
+        ann_painter.scale(max_dpr, max_dpr)
+        ann_painter.translate(-rect.topLeft())
+
+        dpr = max_dpr
+        for ann in self.annotations:
+            if dpr > 1:
+                phys_ann = Annotation(
+                    tool_type=ann.tool_type,
+                    rect=QRect(int(ann.rect.x() * dpr), int(ann.rect.y() * dpr),
+                               int(ann.rect.width() * dpr), int(ann.rect.height() * dpr)),
+                    color=ann.color,
+                    line_width=ann.line_width * dpr,
+                    text=ann.text,
+                    font_size=int(ann.font_size * dpr),
+                    mosaic_block_size=ann.mosaic_block_size,
+                    arrow_start=QPoint(int(ann.arrow_start.x() * dpr),
+                                       int(ann.arrow_start.y() * dpr)),
+                    arrow_end=QPoint(int(ann.arrow_end.x() * dpr),
+                                     int(ann.arrow_end.y() * dpr)),
+                )
+                draw_annotation(ann_painter, phys_ann, self.physical_pixmap, phys_origin)
+            else:
+                draw_annotation(ann_painter, ann, self.physical_pixmap,
+                                self.total_geometry.topLeft())
+
+        ann_painter.end()
         return result
 
 
@@ -295,11 +373,13 @@ class ScreenOverlay(QWidget):
                 local_sel = self.to_local(m.selection_rect)
                 self._draw_border(p, local_sel)
                 self._draw_handles(p, local_sel)
-                p.save(); p.setClipRect(local_sel)
+                p.save()
+                p.translate(-self.screen_geo.x(), -self.screen_geo.y())
+                p.setClipRect(m.selection_rect)
                 for ann in m.annotations:
-                    draw_annotation(p, ann, m._source_for_mosaic)
+                    draw_annotation(p, ann, m._source_for_mosaic, m.total_geometry.topLeft())
                 if m.drawing_annotation:
-                    draw_annotation(p, m.drawing_annotation, m._source_for_mosaic)
+                    draw_annotation(p, m.drawing_annotation, m._source_for_mosaic, m.total_geometry.topLeft())
                 p.restore()
                 self._draw_size_label(p, m.selection_rect)
                 # 工具栏：在选区所在 overlay 上用本地坐标直接绘制
@@ -380,7 +460,13 @@ class ScreenOverlay(QWidget):
         if m.selection_start:
             raw = normalize_rect(m.selection_start, g)
             if raw.width() > 5 and raw.height() > 5:
-                if m.snap_enabled: raw = auto_snap_edges(m.luminance, raw)
+                if m.snap_enabled:
+                    offset = m.total_geometry.topLeft()
+                    snap_rect = QRect(raw.x() - offset.x(), raw.y() - offset.y(),
+                                      raw.width(), raw.height())
+                    snap_rect = auto_snap_edges(m.luminance, snap_rect)
+                    raw = QRect(snap_rect.x() + offset.x(), snap_rect.y() + offset.y(),
+                                snap_rect.width(), snap_rect.height())
                 m.selection_rect = raw; m.selection_start = None; m.selection_end = None
                 m.snap_enabled = False; m.state = AnnotationState.ANNOTATING
                 self.setCursor(Qt.CursorShape.ArrowCursor)

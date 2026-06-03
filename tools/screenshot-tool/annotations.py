@@ -49,7 +49,8 @@ class Annotation:
         )
 
 
-def draw_annotation(painter: QPainter, ann: Annotation, source_pixmap: QPixmap | None = None):
+def draw_annotation(painter: QPainter, ann: Annotation, source_pixmap: QPixmap | None = None,
+                    source_offset: QPoint = QPoint()):
     """在 painter 上绘制一个标注."""
     color = hex_to_qcolor(ann.color)
 
@@ -86,7 +87,7 @@ def draw_annotation(painter: QPainter, ann: Annotation, source_pixmap: QPixmap |
 
     elif ann.tool_type == ToolType.MOSAIC:
         if source_pixmap and not ann.rect.isEmpty():
-            _draw_mosaic(painter, source_pixmap, ann.rect, ann.mosaic_block_size)
+            _draw_mosaic(painter, source_pixmap, ann.rect, ann.mosaic_block_size, source_offset)
 
     elif ann.tool_type == ToolType.ARROW:
         pen = QPen(color, ann.line_width, Qt.PenStyle.SolidLine, Qt.PenCapStyle.RoundCap)
@@ -95,16 +96,19 @@ def draw_annotation(painter: QPainter, ann: Annotation, source_pixmap: QPixmap |
         _draw_arrow(painter, ann.arrow_start, ann.arrow_end, ann.line_width)
 
 
-def _draw_mosaic(painter: QPainter, source: QPixmap, rect: QRect, block_size: int = 8):
+def _draw_mosaic(painter: QPainter, source: QPixmap, rect: QRect, block_size: int = 8,
+                 source_offset: QPoint = QPoint()):
     """绘制马赛克效果——对区域做 downsample + nearest-neighbor upsample."""
     if rect.width() <= 0 or rect.height() <= 0:
         return
-    crop = source.copy(rect)
-    small_w = max(1, rect.width() // block_size)
-    small_h = max(1, rect.height() // block_size)
+    copy_rect = QRect(rect.x() - source_offset.x(), rect.y() - source_offset.y(),
+                      rect.width(), rect.height())
+    crop = source.copy(copy_rect)
+    small_w = max(1, copy_rect.width() // block_size)
+    small_h = max(1, copy_rect.height() // block_size)
     small = crop.scaled(small_w, small_h, Qt.AspectRatioMode.IgnoreAspectRatio,
                         Qt.TransformationMode.SmoothTransformation)
-    mosaic = small.scaled(rect.size(), Qt.AspectRatioMode.IgnoreAspectRatio,
+    mosaic = small.scaled(copy_rect.size(), Qt.AspectRatioMode.IgnoreAspectRatio,
                           Qt.TransformationMode.FastTransformation)
     painter.drawPixmap(rect.topLeft(), mosaic)
 

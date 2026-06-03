@@ -6,8 +6,12 @@ from PySide6.QtGui import QPixmap, QImage, QPainter
 from PySide6.QtCore import QRect
 
 
-def capture_fullscreen() -> tuple[QPixmap, np.ndarray, QRect, dict]:
-    """截取所有屏幕。返回 (全桌面拼接图, luminance数组, 虚拟几何, {screen: (geom, pixmap)})."""
+def capture_fullscreen():
+    """截取所有屏幕。
+
+    返回 (逻辑分辨率拼接图, luminance数组, 虚拟几何,
+           {screen: (geom, DPR-pixmap)}, 物理分辨率拼接图, DPR因子, {screen: DPR}).
+    """
     app = QApplication.instance()
     screens = app.screens()
 
@@ -19,25 +23,55 @@ def capture_fullscreen() -> tuple[QPixmap, np.ndarray, QRect, dict]:
     else:
         total_rect = QRect(virtual_geo)
 
-    # 每屏独立截取（不做缩放，保持原始 DPR 像素）
-    per_screen = {}
+    # 收集设备像素比
+    screen_dprs = {}
+    for s in screens:
+        screen_dprs[s] = int(s.devicePixelRatio())
+
+    # 每屏截取
+    per_screen_logical = {}
+    per_screen_physical = {}
     for s in screens:
         geo = s.geometry()
-        grab = s.grabWindow(0)
-        # 设置 DPR 以告知 Qt 该 pixmap 的物理像素密度，避免二次缩放
-        grab.setDevicePixelRatio(s.devicePixelRatio())
-        per_screen[s] = (QRect(geo), grab)
+        dpr = screen_dprs[s]
+        grab_raw = s.grabWindow(0)                   # 物理像素 + 自带 DPR
 
-    # 拼接为全桌面图（统一到逻辑坐标）
+        # 逻辑图：保持 DPR，drawPixmap 时 Qt 自动缩放到逻辑坐标
+        grab_dpr = QPixmap(grab_raw)
+        grab_dpr.setDevicePixelRatio(dpr)
+        per_screen_logical[s] = (QRect(geo), grab_dpr)
+
+        # 物理图：去掉 DPR，当纯像素 buffer 用
+        grab_phys = QPixmap(grab_raw)
+        grab_phys.setDevicePixelRatio(1.0)
+        per_screen_physical[s] = (QRect(geo), grab_phys)
+
+    # 逻辑分辨率拼接（UI 使用）
     pixmap = QPixmap(total_rect.size())
     pixmap.fill(0)
     painter = QPainter(pixmap)
-    for s, (geo, grab) in per_screen.items():
+    for s, (geo, grab) in per_screen_logical.items():
         offset = geo.topLeft() - total_rect.topLeft()
         painter.drawPixmap(offset, grab)
     painter.end()
 
-    # numpy luminance
+    # 物理分辨率拼接（输出使用）：用纯物理像素，不依赖 DPR 缩放
+    total_physical_rect = QRect()
+    screen_physical_offsets = {}
+    for s, (geo, grab) in per_screen_physical.items():
+        phys_geo = QRect(geo.topLeft() * screen_dprs[s], grab.size())
+        screen_physical_offsets[s] = phys_geo
+        total_physical_rect = total_physical_rect.united(phys_geo)
+
+    physical_pixmap = QPixmap(total_physical_rect.size())
+    physical_pixmap.fill(0)
+    phys_painter = QPainter(physical_pixmap)
+    for s, (geo, grab) in per_screen_physical.items():
+        offset = screen_physical_offsets[s].topLeft() - total_physical_rect.topLeft()
+        phys_painter.drawPixmap(offset, grab)
+    phys_painter.end()
+
+    # numpy luminance（用逻辑分辨率图，保持现有 snap 逻辑一致）
     img = pixmap.toImage()
     w, h = img.width(), img.height()
     raw = img.bits()
@@ -52,7 +86,8 @@ def capture_fullscreen() -> tuple[QPixmap, np.ndarray, QRect, dict]:
     b = (arr & 0xFF).astype(np.float32)
     luminance = 0.299 * r + 0.587 * g + 0.114 * b
 
-    return pixmap, luminance, total_rect, per_screen
+    return pixmap, luminance, total_rect, per_screen_logical, \
+        physical_pixmap, total_physical_rect, screen_dprs
 
 
 def auto_snap_edges(luminance: np.ndarray, rect: QRect, threshold: float = 30, radius: int = 30) -> QRect:

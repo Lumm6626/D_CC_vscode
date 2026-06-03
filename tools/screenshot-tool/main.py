@@ -212,8 +212,9 @@ class ScreenshotApp:
         if self.overlay_mgr is not None:
             return
         try:
-            pixmap, luminance, geometry, per_screen = capture_fullscreen()
-            self.overlay_mgr = OverlayManager(pixmap, luminance, geometry, per_screen)
+            pixmap, luminance, geometry, per_screen, physical_pixmap, physical_rect, screen_dprs = capture_fullscreen()
+            self.overlay_mgr = OverlayManager(pixmap, luminance, geometry, per_screen,
+                                              physical_pixmap, physical_rect, screen_dprs)
             self.overlay_mgr.finished.connect(self._on_capture_finished)
         except Exception as e:
             QMessageBox.warning(None, "截图失败", f"截取屏幕失败: {e}")
