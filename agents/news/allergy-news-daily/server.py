@@ -645,13 +645,14 @@ class AllergyNewsDaily:
 
         return html_template
 
-    def _send_email(self, html_content, config):
+    def _send_email(self, html_content, config, subject_prefix=None, recipient=None):
         """发送邮件"""
         smtp_server = config.get("smtp_server", "smtp.163.com")
         smtp_port = 465
         smtp_user = config.get("email", "")
         smtp_password = config.get("password", "")
-        recipient = config.get("email", "")
+        if recipient is None:
+            recipient = config.get("email", "")
 
         if not smtp_user or not smtp_password:
             print("[Email] 邮件配置不完整，跳过发送")
@@ -659,14 +660,20 @@ class AllergyNewsDaily:
 
         try:
             today = datetime.now().strftime("%Y-%m-%d")
-            subject = f"🏥 Allergy Clinics 日报 {today} ({self.stats['allergy']}条过敏相关)"
+            if subject_prefix:
+                subject = f"{subject_prefix} {today}"
+            else:
+                subject = f"🏥 Allergy Clinics 日报 {today} ({self.stats['allergy']}条过敏相关)"
 
             msg = MIMEMultipart('alternative')
             msg['Subject'] = Header(subject, 'utf-8')
             msg['From'] = smtp_user
             msg['To'] = recipient
 
-            plain_text = self._generate_plain_text()
+            try:
+                plain_text = self._generate_plain_text()
+            except (KeyError, AttributeError):
+                plain_text = f"Allergy Report - {today}\n\n请查看HTML版本获取完整内容。"
             msg.attach(MIMEText(plain_text, 'plain', 'utf-8'))
             msg.attach(MIMEText(html_content, 'html', 'utf-8'))
 
@@ -702,6 +709,147 @@ class AllergyNewsDaily:
             lines.append(f"  {region}: {count}条")
 
         return "\n".join(lines)
+
+    def _generate_market_brief_html(self, market_news, date_str):
+        """生成市场简报HTML报告"""
+        today_formatted = datetime.now().strftime("%Y年%m月%d日")
+
+        def stars_html(score):
+            s = min(5, max(1, score // 2))
+            filled = "★" * s
+            empty = "☆" * (5 - s)
+            return f'<span style="color:#ff9800;">{filled}</span><span style="color:#ddd;">{empty}</span>'
+
+        items_html = ""
+        for i, item in enumerate(market_news, 1):
+            score = item.get("importance_score", 5)
+            composite = item.get("composite_score", 0)
+            title = item.get("title", "")
+            url = item.get("url", "#")
+            source = item.get("source", "Unknown")
+            time_ago = self._format_time_ago(item.get("published", ""))
+            event_summary = item.get("event_summary", "")
+            why_important = item.get("why_important", "")
+            device_relevance = item.get("device_relevance", "")
+
+            items_html += f"""
+                <div style="background:white; border-radius:8px; padding:16px 18px; margin-bottom:14px; box-shadow:0 2px 8px rgba(0,0,0,0.06);">
+                    <div style="display:flex; align-items:center; gap:10px; margin-bottom:8px;">
+                        <span style="background:#1565c0; color:white; width:26px; height:26px; border-radius:50%; display:flex; align-items:center; justify-content:center; font-size:13px; font-weight:bold; flex-shrink:0;">{i}</span>
+                        <span style="font-weight:600; color:#222; font-size:15px; flex:1; line-height:1.3;">
+                            <a href="{url}" target="_blank" style="color:#1565c0; text-decoration:none;">{title}</a>
+                        </span>
+                    </div>
+                    <div style="margin-bottom:10px; font-size:12px; color:#888; display:flex; gap:12px; align-items:center;">
+                        <span>综合评分: <b>{composite}</b></span>
+                        <span>重要性: {stars_html(score)} ({score}/10)</span>
+                        <span>来源: {source}</span>
+                        <span>{time_ago}</span>
+                    </div>
+                    <div style="background:#f8f9fa; border-radius:6px; padding:12px 14px;">
+                        <div style="margin-bottom:6px;">
+                            <span style="color:#e64a19; font-weight:600; font-size:13px;">发生了什么：</span>
+                            <span style="color:#444; font-size:13px;">{event_summary}</span>
+                        </div>
+                        <div style="margin-bottom:6px;">
+                            <span style="color:#00838f; font-weight:600; font-size:13px;">为什么重要：</span>
+                            <span style="color:#444; font-size:13px;">{why_important}</span>
+                        </div>
+                        <div>
+                            <span style="color:#2e7d32; font-weight:600; font-size:13px;">器械耗材关联：</span>
+                            <span style="color:#444; font-size:13px;">{device_relevance}</span>
+                        </div>
+                    </div>
+                </div>"""
+
+        html = f"""<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>美国过敏诊所市场简报 - {date_str}</title>
+    <style>
+        * {{ box-sizing: border-box; }}
+        body {{ font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Microsoft YaHei", sans-serif; max-width:800px; margin:0 auto; padding:15px; background:#f5f5f5; }}
+        .header {{ background:linear-gradient(135deg, #1565c0 0%, #0d47a1 100%); color:white; padding:20px 25px; border-radius:12px; margin-bottom:20px; box-shadow:0 4px 12px rgba(21,101,192,0.3); }}
+        .header h1 {{ margin:0; font-size:22px; }}
+        .header .date {{ margin:8px 0 0 0; opacity:0.9; font-size:14px; }}
+        .header .stats {{ display:flex; gap:10px; margin-top:12px; flex-wrap:wrap; }}
+        .header .stats span {{ background:rgba(255,255,255,0.2); padding:5px 12px; border-radius:15px; font-size:12px; }}
+        .section {{ background:white; border-radius:10px; padding:18px 20px; margin-bottom:15px; box-shadow:0 2px 8px rgba(0,0,0,0.06); }}
+        .section h2 {{ color:#333; font-size:16px; margin:0 0 15px 0; padding-bottom:8px; border-bottom:2px solid #eee; }}
+        .footer {{ text-align:center; color:#bbb; margin-top:20px; font-size:11px; }}
+        a {{ color:#1565c0; text-decoration:none; }}
+        a:hover {{ text-decoration:underline; }}
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h1>🇺🇸 美国过敏诊所市场简报 {date_str}</h1>
+        <p class="date">{today_formatted}</p>
+        <div class="stats">
+            <span>Top {len(market_news)} 要闻</span>
+            <span>AI分析：DeepSeek</span>
+            <span>数据源：Google News RSS (US)</span>
+        </div>
+    </div>
+
+    <div class="section">
+        <h2>📊 市场要闻分析</h2>
+        {items_html}
+    </div>
+
+    <div class="footer">
+        <p>由 Allergy Market Brief 自动生成 · {date_str}</p>
+    </div>
+</body>
+</html>"""
+        return html
+
+    def generate_market_brief(self, date_str=None, send_email=True):
+        """市场简报主方法"""
+        import allergy_market_brief
+
+        if date_str is None:
+            date_str = datetime.now().strftime("%Y-%m-%d")
+
+        print(f"[Market Brief] 开始生成 {date_str} 市场简报...")
+
+        # 调用核心模块
+        result = allergy_market_brief.fetch_and_analyze(date_str)
+
+        if "error" in result:
+            print(f"[Market Brief] 生成失败: {result['error']}")
+            return result
+
+        news = result["news"]
+        if not news:
+            print("[Market Brief] 无新闻，不生成报告。")
+            return result
+
+        # 生成HTML
+        html_content = self._generate_market_brief_html(news, date_str)
+
+        # 保存HTML
+        output_dir = result["output_dir"]
+        html_path = os.path.join(output_dir, "allergy_market_brief.html")
+        with open(html_path, "w", encoding="utf-8") as f:
+            f.write(html_content)
+        print(f"  [Saved] {html_path}")
+
+        result["html_path"] = html_path
+
+        # 发送邮件
+        if send_email:
+            config = self._load_config()
+            self._send_email(
+                html_content,
+                config,
+                subject_prefix="🇺🇸 美国过敏诊所市场简报 Top 10",
+            )
+
+        print(f"[Market Brief] 完成! {result['count']} 条要闻。")
+        return result
 
     def save_report(self, date_str=None, send_email=True):
         """保存日报"""
