@@ -348,12 +348,14 @@ class ToolbarLayout:
 
     def _ic_text(self, p: QPainter, w: int, h: int):
         p.setPen(self.ICON)
-        p.setFont(QFont("Microsoft YaHei", 17, QFont.Weight.Bold))
+        icon_fs = min(max(self.font_size, 12), 28)
+        p.setFont(QFont("Microsoft YaHei", icon_fs, QFont.Weight.Bold))
         p.drawText(QRect(0, 0, w, h), Qt.AlignmentFlag.AlignCenter, "T")
 
     def _ic_font_size(self, p: QPainter, w: int, h: int):
         p.setPen(self.ICON)
-        p.setFont(QFont("Microsoft YaHei", 15, QFont.Weight.Bold))
+        icon_fs = min(max(self.font_size, 12), 28)
+        p.setFont(QFont("Microsoft YaHei", icon_fs, QFont.Weight.Bold))
         p.drawText(QRect(0, 0, w, h), Qt.AlignmentFlag.AlignCenter, "A")
 
     def _ic_mosaic(self, p: QPainter, w: int, h: int):

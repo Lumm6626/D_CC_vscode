@@ -4,7 +4,7 @@ from dataclasses import dataclass, field
 from enum import Enum, auto
 from PySide6.QtCore import QRect, QPoint, Qt, QLineF
 from PySide6.QtGui import QPainter, QColor, QPen, QFont, QBrush, QPainterPath, QPixmap, QImage, QFontMetrics
-from PySide6.QtWidgets import QLineEdit
+
 from utils import hex_to_qcolor
 
 
@@ -74,16 +74,17 @@ def draw_annotation(painter: QPainter, ann: Annotation, source_pixmap: QPixmap |
             painter.setBrush(Qt.BrushStyle.NoBrush)
             painter.drawRect(ann.rect)
         else:
-            # 底部色条
-            bar_height = 4
-            bar_rect = QRect(ann.rect.x(), ann.rect.bottom() - bar_height, ann.rect.width(), bar_height)
-            painter.fillRect(bar_rect, color)
-            # 白色文字
             font = QFont("Microsoft YaHei", ann.font_size)
             painter.setFont(font)
-            painter.setPen(QColor(255, 255, 255))
-            painter.drawText(ann.rect.adjusted(2, 2, -2, -bar_height - 2),
-                             Qt.TextFlag.TextSingleLine | Qt.TextFlag.TextWordWrap, ann.text)
+            # 阴影：保证文字在任意背景上可读
+            shadow_color = QColor(0, 0, 0, 180)
+            painter.setPen(shadow_color)
+            painter.drawText(ann.rect.adjusted(1, 1, 1, 1),
+                             Qt.TextFlag.TextWordWrap, ann.text)
+            # 正文
+            painter.setPen(color)
+            painter.drawText(ann.rect,
+                             Qt.TextFlag.TextWordWrap, ann.text)
 
     elif ann.tool_type == ToolType.MOSAIC:
         if source_pixmap and not ann.rect.isEmpty():

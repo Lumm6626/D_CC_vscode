@@ -3,8 +3,9 @@
 from PySide6.QtCore import Qt, QRect, QPoint, Signal, QObject
 from PySide6.QtGui import (
     QPainter, QColor, QPen, QBrush, QFont, QPainterPath, QPixmap,
+    QInputMethodEvent,
 )
-from PySide6.QtWidgets import QWidget, QLineEdit, QApplication
+from PySide6.QtWidgets import QWidget, QApplication
 
 from annotations import (
     Annotation, ToolType, AnnotationState, draw_annotation,
@@ -12,7 +13,7 @@ from annotations import (
 from toolbar import ToolbarLayout, ToolbarAction, make_crosshair_cursor
 from capture import auto_snap_edges
 from exporter import save_to_file, copy_to_clipboard, export_and_copy
-from utils import normalize_rect, clamp
+from utils import normalize_rect, clamp, hex_to_qcolor
 import numpy as np
 
 
@@ -61,8 +62,8 @@ class OverlayManager(QObject):
 
         self.toolbar = ToolbarLayout()
         self.color_panel_visible = False
-        self.text_edit: QLineEdit | None = None
-        self.text_edit_rect: QRect | None = None
+        self.editing_text: str = ""           # 文字编辑中的文本（无 widget）
+        self.editing_text_rect: QRect = QRect()
 
         self._crosshair_cursor = make_crosshair_cursor()
         self._source_for_mosaic = QPixmap(fullscreen_pixmap)
@@ -106,12 +107,18 @@ class OverlayManager(QObject):
                                self.current_line_width, self.font_size, self.current_color)
             self.toolbar.color_panel_visible = self.color_panel_visible
 
+    def _is_text_editing(self) -> bool:
+        """是否正在编辑文字."""
+        return bool(self.editing_text_rect and not self.editing_text_rect.isEmpty())
+
     def on_toolbar(self, action):
         if action == ToolbarAction.UNDO:
             if self.annotations: self.annotations.pop()
         elif action == ToolbarAction.CONFIRM: self.finish()
         elif action == ToolbarAction.CANCEL: self.cancel()
         elif action == ToolbarAction.SAVE:
+            if self._is_text_editing():
+                self.confirm_text()
             result = self._render_result()
             if save_to_file(result, None): self.finish()
         elif action in (ToolbarAction.RECT, ToolbarAction.CIRCLE, ToolbarAction.TEXT,
@@ -149,13 +156,6 @@ class OverlayManager(QObject):
         if not self.drawing_annotation: self.state = AnnotationState.ANNOTATING; return
         if self.draw_start:
             r = normalize_rect(self.draw_start, pos)
-            if self.drawing_annotation.tool_type == ToolType.TEXT:
-                if r.width() > 10 and r.height() > 10:
-                    sizes = [10, 12, 14, 16, 18, 20, 24, 28, 32]
-                    self.font_size = min(sizes, key=lambda s: abs(s - int(r.height() * 0.55)))
-                    self._start_text_edit(r)
-                self.drawing_annotation = None; self.draw_start = None
-                self.state = AnnotationState.ANNOTATING; self._update_toolbar(); return
             ms = 3 if self.drawing_annotation.tool_type == ToolType.ARROW else 5
             if self.drawing_annotation.tool_type == ToolType.ARROW or (r.width() > ms and r.height() > ms):
                 a = self.drawing_annotation
@@ -164,42 +164,30 @@ class OverlayManager(QObject):
         self.drawing_annotation = None; self.draw_start = None
         self.state = AnnotationState.ANNOTATING; self._update_toolbar()
 
-    def _start_text_edit(self, rect: QRect):
-        self.text_edit_rect = QRect(rect)
-        parent = None
-        for ov in self.overlays:
-            if ov.screen_geo.contains(rect.center()):
-                parent = ov
-                break
-        if parent is None:
-            parent = self.overlays[0] if self.overlays else None
-        self.text_edit = QLineEdit(parent)
-        self.text_edit.setPlaceholderText("输入文字...")
-        self.text_edit.setStyleSheet(
-            f"QLineEdit {{ background: white; border: 1px solid #007AFF; "
-            f"padding: 4px 8px; font-size: {self.font_size}px; color: black; border-radius: 2px; }}")
-        local_rect = QRect(rect.x() - parent.screen_geo.x(), rect.y() - parent.screen_geo.y(),
-                           rect.width(), rect.height())
-        self.text_edit.setGeometry(local_rect); self.text_edit.show(); self.text_edit.setFocus()
-        self.text_edit.returnPressed.connect(self.confirm_text)
-        self.text_edit.textChanged.connect(self.refresh_all)
+    def _start_text_edit_at(self, pos: QPoint):
+        """在点击位置开始文字编辑，无需拖拽框选."""
+        self.editing_text = ""
+        w = 800
+        if self.selection_rect:
+            w = max(200, min(800, self.selection_rect.right() - pos.x() - 10))
+        self.editing_text_rect = QRect(pos.x(), pos.y(), w, 2000)
+        self.refresh_all()
 
     def confirm_text(self):
-        if not self.text_edit or not hasattr(self, 'text_edit_rect'): return
-        t = self.text_edit.text().strip()
+        t = self.editing_text.strip()
         if t:
             self.annotations.append(Annotation(
-                tool_type=ToolType.TEXT, rect=QRect(self.text_edit_rect),
+                tool_type=ToolType.TEXT, rect=QRect(self.editing_text_rect),
                 color=self.tool_colors.get(ToolbarAction.TEXT, "#FFCC00"),
                 text=t, font_size=self.font_size))
-        self._cleanup_text_edit(); self._update_toolbar(); self.refresh_all()
+        self.editing_text = ""
+        self.editing_text_rect = QRect()
+        self._update_toolbar(); self.refresh_all()
 
     def cancel_text(self):
-        self._cleanup_text_edit(); self._update_toolbar(); self.refresh_all()
-
-    def _cleanup_text_edit(self):
-        if self.text_edit: self.text_edit.deleteLater(); self.text_edit = None
-        if hasattr(self, 'text_edit_rect'): del self.text_edit_rect
+        self.editing_text = ""
+        self.editing_text_rect = QRect()
+        self._update_toolbar(); self.refresh_all()
 
     # ─── 手柄 ────────────────────────────────────────
 
@@ -231,6 +219,8 @@ class OverlayManager(QObject):
     # ─── 完成 / 取消 ──────────────────────────────────
 
     def finish(self):
+        if self._is_text_editing():
+            self.confirm_text()
         result = self._render_result()
         copy_to_clipboard(result); export_and_copy(result)
         self._cleanup(); self.finished.emit(result)
@@ -239,7 +229,6 @@ class OverlayManager(QObject):
         self._cleanup(); self.finished.emit(None)
 
     def _cleanup(self):
-        self._cleanup_text_edit()
         for ov in self.overlays: ov.hide(); ov.deleteLater()
         self.overlays.clear()
         QApplication.processEvents()
@@ -294,27 +283,11 @@ class OverlayManager(QObject):
         ann_painter.scale(max_dpr, max_dpr)
         ann_painter.translate(-rect.topLeft())
 
-        dpr = max_dpr
         for ann in self.annotations:
-            if dpr > 1:
-                phys_ann = Annotation(
-                    tool_type=ann.tool_type,
-                    rect=QRect(int(ann.rect.x() * dpr), int(ann.rect.y() * dpr),
-                               int(ann.rect.width() * dpr), int(ann.rect.height() * dpr)),
-                    color=ann.color,
-                    line_width=ann.line_width * dpr,
-                    text=ann.text,
-                    font_size=int(ann.font_size * dpr),
-                    mosaic_block_size=ann.mosaic_block_size,
-                    arrow_start=QPoint(int(ann.arrow_start.x() * dpr),
-                                       int(ann.arrow_start.y() * dpr)),
-                    arrow_end=QPoint(int(ann.arrow_end.x() * dpr),
-                                     int(ann.arrow_end.y() * dpr)),
-                )
-                draw_annotation(ann_painter, phys_ann, self.physical_pixmap, phys_origin)
-            else:
-                draw_annotation(ann_painter, ann, self.physical_pixmap,
-                                self.total_geometry.topLeft())
+            # 标注坐标是逻辑坐标；painter 的 scale(max_dpr) 自动处理 DPR 转换
+            # 马赛克需要逻辑分辨率源图 + 逻辑坐标偏移
+            draw_annotation(ann_painter, ann, self._source_for_mosaic,
+                            self.total_geometry.topLeft())
 
         ann_painter.end()
         return result
@@ -338,6 +311,7 @@ class ScreenOverlay(QWidget):
         self.setMouseTracking(True)
         self.setFocusPolicy(Qt.FocusPolicy.StrongFocus)
         self.setCursor(Qt.CursorShape.CrossCursor)
+        self.setAttribute(Qt.WidgetAttribute.WA_InputMethodEnabled, True)
         self.show()
 
     # ─── 坐标 ─────────────────────────────────────────
@@ -380,6 +354,9 @@ class ScreenOverlay(QWidget):
                     draw_annotation(p, ann, m._source_for_mosaic, m.total_geometry.topLeft())
                 if m.drawing_annotation:
                     draw_annotation(p, m.drawing_annotation, m._source_for_mosaic, m.total_geometry.topLeft())
+                # 文字编辑预览
+                if m._is_text_editing():
+                    self._draw_text_edit_preview(p)
                 p.restore()
                 self._draw_size_label(p, m.selection_rect)
                 # 工具栏：在选区所在 overlay 上用本地坐标直接绘制
@@ -388,6 +365,36 @@ class ScreenOverlay(QWidget):
                     m._update_toolbar_at(local_sel)
                     m.toolbar.render(p)
         p.end()
+
+    def _draw_text_edit_preview(self, p: QPainter):
+        m = self.mgr
+        r = m.editing_text_rect
+        text_color = m.tool_colors.get(ToolbarAction.TEXT, "#FFCC00")
+        color = hex_to_qcolor(text_color)
+        font = QFont("Microsoft YaHei", m.font_size)
+
+        if m.editing_text:
+            p.setFont(font)
+            # 阴影
+            shadow_color = QColor(0, 0, 0, 180)
+            p.setPen(shadow_color)
+            p.drawText(r.adjusted(1, 1, 1, 1), Qt.TextFlag.TextWordWrap, m.editing_text)
+            # 正文
+            p.setPen(color)
+            p.drawText(r, Qt.TextFlag.TextWordWrap, m.editing_text)
+
+            # 光标
+            fm = p.fontMetrics()
+            cursor_x = r.x() + fm.horizontalAdvance(m.editing_text)
+            cursor_y = r.y() + fm.ascent()
+            if cursor_x < r.right() - 4:
+                p.setPen(QPen(color, 2))
+                p.drawLine(cursor_x, r.y() + 2, cursor_x, cursor_y + 2)
+        else:
+            # 占位提示
+            p.setFont(font)
+            p.setPen(QColor(180, 180, 180))
+            p.drawText(r.x(), r.y() + p.fontMetrics().ascent(), "输入文字")
 
     def _draw_mask(self, p: QPainter, hole: QRect):
         path = QPainterPath(); path.addRect(self.rect()); path.addRect(self.to_local(hole))
@@ -513,6 +520,10 @@ class ScreenOverlay(QWidget):
             m.toolbar.line_width_popup_visible = m.toolbar.font_size_popup_visible = m.color_panel_visible = False
             m.refresh_all(); return
 
+        # 文字编辑中，任意点击先确认文字
+        if m._is_text_editing():
+            m.confirm_text(); return
+
         # 手柄 / 选区
         if m.selection_rect:
             h = m.hit_handle(g, m.selection_rect)
@@ -521,7 +532,7 @@ class ScreenOverlay(QWidget):
                 t = m.current_tool
                 if t == ToolbarAction.RECT: m.start_drawing(ToolType.RECT, g)
                 elif t == ToolbarAction.CIRCLE: m.start_drawing(ToolType.CIRCLE, g)
-                elif t == ToolbarAction.TEXT: m.start_drawing(ToolType.TEXT, g)
+                elif t == ToolbarAction.TEXT: m._start_text_edit_at(g)
                 elif t == ToolbarAction.MOSAIC: m.start_drawing(ToolType.MOSAIC, g)
                 elif t == ToolbarAction.ARROW: m.start_drawing(ToolType.ARROW, g)
                 else: m.dragging_handle = 'move'; m.drag_start_rect = QRect(m.selection_rect); m.drag_start_pos = QPoint(g)
@@ -539,7 +550,12 @@ class ScreenOverlay(QWidget):
                     't': Qt.CursorShape.SizeVerCursor, 'b': Qt.CursorShape.SizeVerCursor}
             if h: self.setCursor(cmap.get(h, Qt.CursorShape.ArrowCursor))
             elif m.selection_rect.contains(g):
-                self.setCursor(m._crosshair_cursor if m.current_tool else Qt.CursorShape.ArrowCursor)
+                if m.current_tool == ToolbarAction.TEXT:
+                    self.setCursor(Qt.CursorShape.IBeamCursor)
+                elif m.current_tool:
+                    self.setCursor(m._crosshair_cursor)
+                else:
+                    self.setCursor(Qt.CursorShape.ArrowCursor)
             else: self.setCursor(Qt.CursorShape.ArrowCursor)
 
     def _ann_release(self, g: QPoint):
@@ -561,19 +577,34 @@ class ScreenOverlay(QWidget):
         m, k, mod = self.mgr, ev.key(), ev.modifiers()
         if k == Qt.Key.Key_Z and mod == Qt.KeyboardModifier.ControlModifier:
             if m.annotations: m.annotations.pop(); m.refresh_all(); return
+
+        # 文字编辑状态
+        if m._is_text_editing():
+            if k == Qt.Key.Key_Escape:
+                m.cancel_text(); return
+            if k in (Qt.Key.Key_Return, Qt.Key.Key_Enter):
+                m.confirm_text(); return
+            if k == Qt.Key.Key_Backspace:
+                m.editing_text = m.editing_text[:-1]
+                m.refresh_all(); return
+            # 其他可打印字符
+            text = ev.text()
+            if text and ord(text) >= 0x20 and text != '\x7f':
+                m.editing_text += text
+                m.refresh_all()
+            return
+
         if k == Qt.Key.Key_Escape:
-            if m.text_edit: m.cancel_text(); return
             if m.state == AnnotationState.DRAWING:
                 m.drawing_annotation = None; m.draw_start = None; m.state = AnnotationState.ANNOTATING; m.refresh_all(); return
             m.cancel(); return
         if k in (Qt.Key.Key_Return, Qt.Key.Key_Enter):
-            if m.text_edit: m.confirm_text(); return
             if m.state == AnnotationState.SELECTING and m.selection_rect:
                 m.state = AnnotationState.ANNOTATING; self.setCursor(Qt.CursorShape.ArrowCursor); m.refresh_all(); return
             if m.state == AnnotationState.ANNOTATING: m.finish(); return
             if m.state == AnnotationState.DRAWING: m.finish_drawing(ev.position().toPoint()); m.refresh_all(); return
             return
-        if m.state == AnnotationState.ANNOTATING and not m.text_edit:
+        if m.state == AnnotationState.ANNOTATING:
             if k == Qt.Key.Key_BracketLeft: m.current_line_width = max(1, m.current_line_width - 1); m.refresh_all(); return
             if k == Qt.Key.Key_BracketRight: m.current_line_width = min(6, m.current_line_width + 1); m.refresh_all(); return
             tm = {Qt.Key.Key_R: ToolbarAction.RECT, Qt.Key.Key_C: ToolbarAction.CIRCLE,
@@ -583,6 +614,29 @@ class ScreenOverlay(QWidget):
                 if m.current_tool in m.tool_colors: m.current_color = m.tool_colors[m.current_tool]
                 m.refresh_all(); return
         super().keyPressEvent(ev)
+
+    # ─── 输入法（中文等） ─────────────────────────────
+
+    def inputMethodEvent(self, ev: QInputMethodEvent):
+        m = self.mgr
+        if m._is_text_editing():
+            if ev.commitString():
+                m.editing_text += ev.commitString()
+            m.refresh_all()
+        ev.accept()
+
+    def inputMethodQuery(self, query):
+        """返回输入法需要的信息."""
+        if query == Qt.InputMethodQuery.ImEnabled:
+            return self.mgr._is_text_editing()
+        if query == Qt.InputMethodQuery.ImCursorRectangle:
+            # 返回光标位置所在的矩形
+            return QRect(10, 10, 2, 20)
+        if query == Qt.InputMethodQuery.ImSurroundingText:
+            return self.mgr.editing_text
+        if query == Qt.InputMethodQuery.ImCursorPosition:
+            return len(self.mgr.editing_text)
+        return super().inputMethodQuery(query)
 
     def closeEvent(self, ev):
         super().closeEvent(ev)
